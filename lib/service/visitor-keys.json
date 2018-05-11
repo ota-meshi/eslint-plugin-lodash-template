@@ -1,0 +1,42 @@
+{
+    "HTMLDocument": [
+        "children"
+    ],
+    "HTMLDocumentFragment": [
+        "children"
+    ],
+    "HTMLComment": [
+    ],
+    "HTMLDocumentType": [
+    ],
+    "HTMLText": [
+    ],
+    "HTMLElement": [
+        "children",
+        "startTag",
+        "endTag"
+    ],
+    "HTMLStartTag": [
+        "attributes"
+    ],
+    "HTMLEndTag": [
+    ],
+    "HTMLAttribute": [
+    ],
+    "MicroTemplateEscape": [
+        "expressionStart",
+        "expressionEnd"
+    ],
+    "MicroTemplateInterpolate": [
+        "expressionStart",
+        "expressionEnd"
+    ],
+    "MicroTemplateEvaluate": [
+        "expressionStart",
+        "expressionEnd"
+    ],
+    "MicroTemplateExpressionStart": [
+    ],
+    "MicroTemplateExpressionEnd": [
+    ]
+}

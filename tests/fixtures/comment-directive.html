@@ -1,0 +1,26 @@
+<% /* global hobbies, occupation */ %>
+<% /* eslint-disable local/no-html-comments */ %>
+<div class="content"></div>
+
+<ul>
+    <!-- eslint-disable-next-line -->
+    <%_.forEach(users,(user)=>{ %>
+
+        <li><%- user%></li><!-- eslint-disable-line -->
+
+    <!-- eslint-disable -->
+    <% });%>
+    <!-- eslint-enable -->
+</ul>
+
+<div>
+	<tab-test></tab-test>
+    <!-- eslint-disable max-len -->
+    <h1>My name is <%-name%></h1><!-- eslint-disable-line local/template-interpolation-spacing -->
+    <!-- eslint-enable max-len -->
+
+
+    <!-- eslint-disable-next-line local/template-interpolation-spacing -->
+    <p>I like <%-hobbies%> but hate being a <%-occupation%></p>
+</div>
+

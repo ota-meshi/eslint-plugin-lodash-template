@@ -1,0 +1,14 @@
+<% /* global users, hobbies, occupation */ %><div class="content"></div>
+
+<ul>
+    <%_.forEach(users,(user)=>{ %>
+        <li><%- user%></li>
+    <% });%>
+</ul>
+
+<div>
+    <h1>My name is <%-name%></h1>
+    <p>I like <%-hobbies%> but hate being a <%-occupation%></p>
+</div>
+
+<% print(new Date().toLocaleString()) %>
