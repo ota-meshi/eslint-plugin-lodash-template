@@ -152,7 +152,14 @@ describe("Basic tests", () => {
                     message: "Expected 1 space before '%>', but no spaces found.",
                     ruleId: "local/template-tag-spacing",
                 },
-
+                {
+                    column: 10,
+                    endColumn: 52,
+                    endLine: 14,
+                    line: 14,
+                    message: "Unexpected string concatenation.",
+                    ruleId: "prefer-template",
+                },
             ])
         })
 
