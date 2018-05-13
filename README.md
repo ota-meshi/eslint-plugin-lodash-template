@@ -9,7 +9,7 @@ ESLint plugin for John Resig-style micro templating.
 It can be used in projects using [Underscore.js](http://underscorejs.org/#template) and [Lodash](https://lodash.com/docs/#template) 's template.
 
 
-This plugin supports code checking for templates like the example below.
+This plugin supports code checking for templates like the examples below.
 
 ```html
 <div id="<%= id %>" class="<%= (i % 2 == 1 ? ' even': '') %>">
@@ -56,7 +56,7 @@ module.exports = {
 
 ### Attention
 
-This plugin special handling for the following rule warnings in the template.
+This plugin does special handling for the following rule warnings in the template.
 
 | Rule ID | Process Description |
 |:--------|:------------|
@@ -76,7 +76,7 @@ This plugin provides four predefined configs:
 - `plugin:lodash-template/base` - Settings and rules to enable correct ESLint parsing
 - `plugin:lodash-template/best-practices` - Above, plus rules to improve dev experience
 - `plugin:lodash-template/recommended` - Above, plus rules to improve code readability
-- `plugin:lodash-template/all` - This plugin all rules
+- `plugin:lodash-template/all` - All rules of this plugin are included
 
 ## Rules
 
@@ -86,7 +86,7 @@ The `--fix` option on the command line automatically fixes problems reported by 
 
 ### Base Rules (Enabling Correct ESLint Parsing)
 
-Enforce all the rules in this category, and all of the above rules, with:
+Enforce all the rules in this category and all of the above rules with:
 
 ```json
 {
@@ -100,7 +100,7 @@ Enforce all the rules in this category, and all of the above rules, with:
 
 ### Best Practices (Improve Development Experience)
 
-Enforce all the rules in this category, and all of the above rules, with:
+Enforce all the rules in this category and all of the above rules with:
 
 ```json
 {
@@ -116,7 +116,7 @@ Enforce all the rules in this category, and all of the above rules, with:
 
 ### Recommended (Improve Readability)
 
-Enforce all the rules in this category, and all of the above rules, with:
+Enforce all the rules in this category and all of the above rules with:
 
 ```json
 {
@@ -165,7 +165,7 @@ Please write the global comment in the file as follows for the variable to be us
 
 ### Suppress reports for specific rules in template files
 
-Please set as follows
+Please set as follows.
 
 **.eslintrc.json**:
 
@@ -187,7 +187,7 @@ The ESLint standard suppression method can also be used by using *interplate*, a
 
 ### Customize parser
 
-For example, if you set [Lodash `templateSettings`](https://lodash.com/docs/#templateSettings) as follows.
+For example, if you set [Lodash `templateSettings`](https://lodash.com/docs/#templateSettings) as follows,
 
 ```js
 _.templateSettings = {
@@ -197,7 +197,7 @@ _.templateSettings = {
 };
 ```
 
-Please set `parserOptions`(ex. **.eslintrc.js**) as follows.
+please set `parserOptions`(ex. **.eslintrc.js**) as follows.
 
 ```diff
       parserOptions: {
