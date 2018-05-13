@@ -1,4 +1,4 @@
-# prefer escape micro-template interpolations. (ex. :+1: `<%- ... %>`, :-1: `<%= ... %>`) (lodash-template/prefer-escape-template-interpolations)
+# prefer escape micro-template interpolations. (ex. :ok: `<%- ... %>`, :ng: `<%= ... %>`) (lodash-template/prefer-escape-template-interpolations)
 
 ## Rule Details
 

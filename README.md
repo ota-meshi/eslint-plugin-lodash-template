@@ -108,9 +108,9 @@ Enforce all the rules in this category, and all of the above rules, with:
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
-|  | [lodash-template/no-empty-template-tag](./docs/rules/no-empty-template-tag.md) | disallow empty micro-template interpolation/evaluate(s). (ex. :-1: `<% %>`) |
-|  | [lodash-template/no-html-comments](./docs/rules/no-html-comments.md) | disallow HTML comments. (ex. :-1: `<!-- comment -->`) |
-|  | [lodash-template/no-warning-html-comments](./docs/rules/no-warning-html-comments.md) | disallow specified warning terms in HTML comments. (ex. :-1: `<!-- TODO:task -->`) |
+|  | [lodash-template/no-empty-template-tag](./docs/rules/no-empty-template-tag.md) | disallow empty micro-template interpolation/evaluate(s). (ex. :ng: `<% %>`) |
+|  | [lodash-template/no-html-comments](./docs/rules/no-html-comments.md) | disallow HTML comments. (ex. :ng: `<!-- comment -->`) |
+|  | [lodash-template/no-warning-html-comments](./docs/rules/no-warning-html-comments.md) | disallow specified warning terms in HTML comments. (ex. :ng: `<!-- TODO:task -->`) |
 
 ### Recommended (Improve Readability)
 
@@ -124,13 +124,13 @@ Enforce all the rules in this category, and all of the above rules, with:
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
-| :wrench: | [lodash-template/template-tag-spacing](./docs/rules/template-tag-spacing.md) | enforce unified spacing in micro-template interpolation/evaluate(s). (ex. :+1: `<%= prop %>`, :-1: `<%=prop%>`) |
+| :wrench: | [lodash-template/template-tag-spacing](./docs/rules/template-tag-spacing.md) | enforce unified spacing in micro-template interpolation/evaluate(s). (ex. :ok: `<%= prop %>`, :ng: `<%=prop%>`) |
 
 ### Uncategorized
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
-|  | [lodash-template/prefer-escape-template-interpolations](./docs/rules/prefer-escape-template-interpolations.md) | prefer escape micro-template interpolations. (ex. :+1: `<%- ... %>`, :-1: `<%= ... %>`) |
+|  | [lodash-template/prefer-escape-template-interpolations](./docs/rules/prefer-escape-template-interpolations.md) | prefer escape micro-template interpolations. (ex. :ok: `<%- ... %>`, :ng: `<%= ... %>`) |
 
 <!--RULES_TABLE_END-->
 
