@@ -12,7 +12,7 @@ It can be used in projects using [Underscore.js](http://underscorejs.org/#templa
 This plugin supports code checking for templates like the example below.
 
 ```html
-<div id="<%= id %>" class="<%= (i % 2 == 1 ? " even" : "") %>">
+<div id="<%= id %>" class="<%= (i % 2 == 1 ? ' even': '') %>">
   <div class="grid_1 alpha right">
     <img class="righted" src="<%= profile_image_url %>"/>
   </div>
