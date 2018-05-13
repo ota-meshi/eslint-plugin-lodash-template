@@ -2,6 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/eslint-plugin-lodash-template.svg?style=flat)](https://npmjs.org/package/eslint-plugin-lodash-template)
 [![NPM downloads](https://img.shields.io/npm/dm/eslint-plugin-lodash-template.svg?style=flat)](https://npmjs.org/package/eslint-plugin-lodash-template)
+[![Build Status](https://travis-ci.org/ota-meshi/eslint-plugin-lodash-template.svg?branch=master)](https://travis-ci.org/ota-meshi/eslint-plugin-lodash-template)  
 
 ESLint plugin for John Resig-style micro templating.
 
