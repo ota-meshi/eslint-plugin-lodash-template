@@ -56,7 +56,7 @@ module.exports = {
 
 ### Attention
 
-Within the template file warnings of the following rules are processed with this plugin.
+This plugin special handling for the following rule warnings in the template.
 
 | Rule ID | Process Description |
 |:--------|:------------|
