@@ -1,7 +1,7 @@
 "use strict"
 
 const RuleTester = require("eslint").RuleTester
-const rule = require("../../../lib/rules/template-interpolation-spacing")
+const rule = require("../../../lib/rules/template-tag-spacing")
 
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
@@ -10,7 +10,7 @@ const tester = new RuleTester({
     },
 })
 
-tester.run("template-interpolation-spacing", rule, {
+tester.run("template-tag-spacing", rule, {
     valid: [
         {
             code: "<body></body>",

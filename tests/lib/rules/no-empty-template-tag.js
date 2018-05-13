@@ -3,7 +3,7 @@
 "use strict"
 
 const RuleTester = require("eslint").RuleTester
-const rule = require("../../../lib/rules/no-empty-template-interpolation")
+const rule = require("../../../lib/rules/no-empty-template-tag")
 
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
@@ -12,7 +12,7 @@ const tester = new RuleTester({
     },
 })
 
-tester.run("no-empty-template-interpolation", rule, {
+tester.run("no-empty-template-tag", rule, {
     valid: [
         "<% inter %>",
         `<div>
@@ -26,14 +26,14 @@ tester.run("no-empty-template-interpolation", rule, {
         {
             code: "<%    %>",
             output: null,
-            errors: ["Empty micro-template interpolation.",
+            errors: ["Empty micro-template interpolation/evaluate.",
             ],
             filename: "test.html",
         },
         {
             code: "<%%>",
             output: null,
-            errors: ["Empty micro-template interpolation.",
+            errors: ["Empty micro-template interpolation/evaluate.",
             ],
             filename: "test.html",
         },
@@ -43,7 +43,7 @@ tester.run("no-empty-template-interpolation", rule, {
             output: null,
             errors: [
                 {
-                    message: "Empty micro-template interpolation.",
+                    message: "Empty micro-template interpolation/evaluate.",
                     line: 1,
                     column: 1,
                     endLine: 2,
@@ -58,7 +58,7 @@ tester.run("no-empty-template-interpolation", rule, {
             output: null,
             errors: [
                 {
-                    message: "Empty micro-template interpolation.",
+                    message: "Empty micro-template interpolation/evaluate.",
                     line: 1,
                     column: 1,
                     endLine: 1,
@@ -76,7 +76,7 @@ tester.run("no-empty-template-interpolation", rule, {
         {
             code: "{{}}",
             output: null,
-            errors: ["Empty micro-template interpolation."],
+            errors: ["Empty micro-template interpolation/evaluate."],
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
@@ -88,7 +88,7 @@ tester.run("no-empty-template-interpolation", rule, {
         {
             code: "{{}}",
             output: null,
-            errors: ["Empty micro-template interpolation."],
+            errors: ["Empty micro-template interpolation/evaluate."],
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
@@ -100,7 +100,7 @@ tester.run("no-empty-template-interpolation", rule, {
         {
             code: "{{}}",
             output: null,
-            errors: ["Empty micro-template interpolation."],
+            errors: ["Empty micro-template interpolation/evaluate."],
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
@@ -112,7 +112,7 @@ tester.run("no-empty-template-interpolation", rule, {
         {
             code: "{{}}",
             output: null,
-            errors: ["Empty micro-template interpolation."],
+            errors: ["Empty micro-template interpolation/evaluate."],
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
@@ -124,7 +124,7 @@ tester.run("no-empty-template-interpolation", rule, {
         {
             code: "<%  %>",
             output: null,
-            errors: ["Empty micro-template interpolation."],
+            errors: ["Empty micro-template interpolation/evaluate."],
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {

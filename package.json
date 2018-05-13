@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-lodash-template",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "ESLint plugin for John Resig-style micro templating(Lodash/Underscore.js template)",
   "main": "lib/index.js",
   "scripts": {
@@ -9,7 +9,8 @@
     "test:base": "mocha \"tests/**/*.js\" --reporter dot",
     "test": "nyc --reporter=lcov npm run test:base -- --timeout 60000",
     "test:d": "mocha --inspect --debug-brk \"tests/**/*.js\" --reporter dot",
-    "update": "node ./tools/update.js"
+    "update": "node ./tools/update.js && npm run lint:fix",
+    "lint:fix": "eslint . --fix"
   },
   "files": [
     "lib"

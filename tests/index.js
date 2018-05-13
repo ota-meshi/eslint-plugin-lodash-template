@@ -57,7 +57,7 @@ describe("Basic tests", () => {
 
             assertMessages(messages, [
                 {
-                    ruleId: "local/template-interpolation-spacing",
+                    ruleId: "local/template-tag-spacing",
                     message: "Expected 1 space after '<%', but no spaces found.",
                     column: 5,
                     endColumn: 7,
@@ -89,7 +89,7 @@ describe("Basic tests", () => {
                     endColumn: 32,
                 },
                 {
-                    ruleId: "local/template-interpolation-spacing",
+                    ruleId: "local/template-tag-spacing",
                     message: "Expected 1 space before '%>', but no spaces found.",
                     line: 5,
                     endLine: 5,
@@ -102,7 +102,7 @@ describe("Basic tests", () => {
                     endLine: 6,
                     line: 6,
                     message: "Expected 1 space before '%>', but no spaces found.",
-                    ruleId: "local/template-interpolation-spacing",
+                    ruleId: "local/template-tag-spacing",
                 },
                 {
                     column: 20,
@@ -110,7 +110,7 @@ describe("Basic tests", () => {
                     endLine: 10,
                     line: 10,
                     message: "Expected 1 space after '<%-', but no spaces found.",
-                    ruleId: "local/template-interpolation-spacing",
+                    ruleId: "local/template-tag-spacing",
                 },
                 {
                     column: 27,
@@ -118,7 +118,7 @@ describe("Basic tests", () => {
                     endLine: 10,
                     line: 10,
                     message: "Expected 1 space before '%>', but no spaces found.",
-                    ruleId: "local/template-interpolation-spacing",
+                    ruleId: "local/template-tag-spacing",
                 },
                 {
                     column: 15,
@@ -126,7 +126,7 @@ describe("Basic tests", () => {
                     endLine: 11,
                     line: 11,
                     message: "Expected 1 space after '<%-', but no spaces found.",
-                    ruleId: "local/template-interpolation-spacing",
+                    ruleId: "local/template-tag-spacing",
                 },
                 {
                     column: 25,
@@ -134,7 +134,7 @@ describe("Basic tests", () => {
                     endLine: 11,
                     line: 11,
                     message: "Expected 1 space before '%>', but no spaces found.",
-                    ruleId: "local/template-interpolation-spacing",
+                    ruleId: "local/template-tag-spacing",
                 },
                 {
                     column: 45,
@@ -142,7 +142,7 @@ describe("Basic tests", () => {
                     endLine: 11,
                     line: 11,
                     message: "Expected 1 space after '<%-', but no spaces found.",
-                    ruleId: "local/template-interpolation-spacing",
+                    ruleId: "local/template-tag-spacing",
                 },
                 {
                     column: 58,
@@ -150,7 +150,7 @@ describe("Basic tests", () => {
                     endLine: 11,
                     line: 11,
                     message: "Expected 1 space before '%>', but no spaces found.",
-                    ruleId: "local/template-interpolation-spacing",
+                    ruleId: "local/template-tag-spacing",
                 },
 
             ])

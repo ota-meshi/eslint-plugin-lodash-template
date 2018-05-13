@@ -1,4 +1,4 @@
-# WIP:eslint-plugin-lodash-template
+# eslint-plugin-lodash-template
 
 [![NPM version](https://img.shields.io/npm/v/eslint-plugin-lodash-template.svg?style=flat)](https://npmjs.org/package/eslint-plugin-lodash-template)
 [![NPM downloads](https://img.shields.io/npm/dm/eslint-plugin-lodash-template.svg?style=flat)](https://npmjs.org/package/eslint-plugin-lodash-template)
@@ -107,7 +107,7 @@ Enforce all the rules in this category, and all of the above rules, with:
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
-|  | [lodash-template/no-empty-template-interpolation](./docs/rules/no-empty-template-interpolation.md) | disallow empty micro-template interpolations. (ex. `<% %>`) |
+|  | [lodash-template/no-empty-template-tag](./docs/rules/no-empty-template-tag.md) | disallow empty micro-template interpolation/evaluate(s). (ex. `<% %>`) |
 |  | [lodash-template/no-html-comments](./docs/rules/no-html-comments.md) | disallow HTML comments. (ex. `<!-- comment -->`) |
 |  | [lodash-template/no-warning-html-comments](./docs/rules/no-warning-html-comments.md) | disallow specified warning terms in HTML comments. (ex. `<!-- TODO:task -->`) |
 
@@ -123,7 +123,13 @@ Enforce all the rules in this category, and all of the above rules, with:
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
-| :wrench: | [lodash-template/template-interpolation-spacing](./docs/rules/template-interpolation-spacing.md) | enforce unified spacing in micro-template interpolations. (ex. `<%=prop%>`) |
+| :wrench: | [lodash-template/template-tag-spacing](./docs/rules/template-tag-spacing.md) | enforce unified spacing in micro-template interpolation/evaluate(s). (ex. `<%=prop%>`) |
+
+### Uncategorized
+
+|    | Rule ID | Description |
+|:---|:--------|:------------|
+|  | [lodash-template/prefer-escape-template-interpolations](./docs/rules/prefer-escape-template-interpolations.md) | prefer escape micro-template interpolations. (ex. `<%- ... %>`) |
 
 <!--RULES_TABLE_END-->
 
