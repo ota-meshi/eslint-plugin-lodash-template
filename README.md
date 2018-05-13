@@ -65,8 +65,10 @@ Within the template file warnings of the following rules are processed with this
 | `no-empty` | Disable warnings |
 | `max-statements-per-line` | Disable warnings |
 | `padded-blocks` | Disable warnings |
+| `no-implicit-globals` | Disable warnings |
 | `no-unused-expressions` | Disable warnings within interpolate(<%=...%>) |
 | `no-multi-spaces` | Disable warnings within interpolate(<%=...%>) |
+| `quotes` | Disable warnings if doublequote is set |
 
 ## Configs
 
