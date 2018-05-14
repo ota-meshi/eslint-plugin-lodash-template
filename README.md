@@ -152,7 +152,7 @@ Please set the global variable used in all templates as follows.
   {
       "rules": {
 +         "lodash-template/plugin-option": [2, {
-+             "globals": ["name"],
++             "globals": ["variableName"],
 +         }]
       }
   }
