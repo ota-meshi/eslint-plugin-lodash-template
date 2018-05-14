@@ -25,6 +25,7 @@ tester.run("no-html-comments", rule, {
             <%- a %>
         <% }) %>
         </div>`,
+        "<br>",
     ],
     invalid: [
         {
@@ -39,6 +40,12 @@ tester.run("no-html-comments", rule, {
                     endColumn: 17,
                 },
             ],
+            filename: "test.html",
+        },
+        {
+            code: "<div><!-- comment --></div>",
+            output: null,
+            errors: ["HTML comment are forbidden."],
             filename: "test.html",
         },
     ],
