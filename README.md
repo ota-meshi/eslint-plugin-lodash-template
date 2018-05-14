@@ -28,6 +28,10 @@ This plugin supports code checking for templates like the examples below.
 <% } %>
 ```
 
+output sample:
+
+[!sample-sublime-text](./images/sample-sublime-text.png)
+
 ## Installation
 
 ```bash
