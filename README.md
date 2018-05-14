@@ -28,9 +28,9 @@ This plugin supports code checking for templates like the examples below.
 <% } %>
 ```
 
-output sample:
+output sample(on SublimeText):
 
-[!sample-sublime-text](./images/sample-sublime-text.png)
+![sample-sublime-text](./images/sample-sublime-text.png)
 
 ## Installation
 
