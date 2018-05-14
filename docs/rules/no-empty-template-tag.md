@@ -1,4 +1,4 @@
-# disallow empty micro-template interpolation/evaluate(s). (ex. :ng: `<% %>`) (lodash-template/no-empty-template-tag)
+# disallow empty micro-template tag. (ex. :ng: `<% %>`) (lodash-template/no-empty-template-tag)
 
 - :gear: This rule is included in `"plugin:lodash-template/best-practices"` and `"plugin:lodash-template/recommended"`.
 

@@ -27,6 +27,7 @@
   "homepage": "https://github.com/ota-meshi/eslint-plugin-lodash-template#readme",
   "keywords": [
     "eslint",
+    "eslintplugin",
     "eslint-plugin",
     "eslint-config",
     "lodash-templates",

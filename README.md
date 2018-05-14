@@ -114,7 +114,7 @@ Enforce all the rules in this category and all of the above rules with:
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
-|  | [lodash-template/no-empty-template-tag](./docs/rules/no-empty-template-tag.md) | disallow empty micro-template interpolation/evaluate(s). (ex. :ng: `<% %>`) |
+|  | [lodash-template/no-empty-template-tag](./docs/rules/no-empty-template-tag.md) | disallow empty micro-template tag. (ex. :ng: `<% %>`) |
 |  | [lodash-template/no-html-comments](./docs/rules/no-html-comments.md) | disallow HTML comments. (ex. :ng: `<!-- comment -->`) |
 |  | [lodash-template/no-warning-html-comments](./docs/rules/no-warning-html-comments.md) | disallow specified warning terms in HTML comments. (ex. :ng: `<!-- TODO:task -->`) |
 
@@ -142,7 +142,7 @@ Enforce all the rules in this category and all of the above rules with:
 
 ## Plugin Option
 
-### Suppress `no-undef` warnings in the *interplate*
+### Suppress `no-undef` warnings in the template tag
 
 Please set the global variable used in all templates as follows.
 
@@ -177,16 +177,16 @@ Please set as follows.
   {
       "rules": {
 +         "lodash-template/plugin-option": [2, {
-+             "ignoreRules": ["no-tabs"],
++             "ignoreRules": ["no-undef", "no-tabs"],
 +         }]
       }
   }
 ```
 
-The ESLint standard suppression method can also be used by using *interplate*, as follows.
+The ESLint standard suppression method can also be used by using template tag, as follows.
 
 ```diff
-+ <% /* eslint no-tabs: 0 */ %>
++ <% /* eslint no-ternary: 0 */ %>
 ```
 
 ### Customize parser
