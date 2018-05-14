@@ -5,7 +5,6 @@
 <ul>
     <!-- eslint-disable-next-line -->
     <%_.forEach(users,(user)=>{ %>
-
         <li><%- user%></li><!-- eslint-disable-line -->
 
     <!-- eslint-disable -->
@@ -24,3 +23,8 @@
     <p>I like <%-hobbies%> but hate being a <%-occupation%></p>
 </div>
 
+<ul>
+    <!-- eslint-disable-next-line no-undef -->
+    <!-- eslint-disable local/template-tag-spacing,brace-style --> <% _.forEach(users, (user) => { %><!-- eslint-enable local/template-tag-spacing,brace-style --><li><%- user %></li><!-- eslint-disable-line max-len -->
+    <% }) %><!-- eslint-disable-line -->
+</ul>brace-style
