@@ -28,6 +28,7 @@ function assertMessages(actual, expected) {
     assert.strictEqual(actual.length, expected.length)
 }
 
+
 describe("Basic tests", () => {
     beforeEach(() => {
         fs.emptyDirSync(FIXTURE_DIR)
@@ -190,5 +191,21 @@ describe("Basic tests", () => {
 
             assertMessages(messages, [])
         })
+    })
+    describe("About fixtures/no-error", () => {
+        const result = fs.readdirSync(ORIGINAL_FIXTURE_DIR)
+        for (const name of result.filter(s => s.indexOf("no-error-") === 0)) {
+            it(`should no errors /${name}`, () => {
+                const cli = new CLIEngine({
+                    cwd: FIXTURE_DIR,
+                    configFile: CONFIG_PATH,
+                    useEslintrc: false,
+                })
+                const report = cli.executeOnFiles([name])
+                const messages = report.results[0].messages
+
+                assertMessages(messages, [])
+            })
+        }
     })
 })

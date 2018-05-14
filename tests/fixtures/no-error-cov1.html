@@ -1,0 +1,9 @@
+<% /* global users */ %>
+<% /* eslint local/no-html-comments:0,local/no-warning-html-comments:0 */ %>
+<div class="content"></div>
+
+<ul>
+    <% _.forEach(users, (user) => { %>
+        <li><%- user %></li>
+    <% }); %>
+</ul>
