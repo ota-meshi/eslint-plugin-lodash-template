@@ -178,5 +178,22 @@ tester.run("template-tag-spacing", rule, {
             },
             filename: "test.html",
         },
+        {
+            code: "<@-inner@><%=inner%>",
+            output: "<@- inner @><%= inner %>",
+            errors: [
+                "Expected 1 space after '<@-', but no spaces found.",
+                "Expected 1 space before '@>', but no spaces found.",
+                "Expected 1 space after '<%=', but no spaces found.",
+                "Expected 1 space before '%>', but no spaces found.",
+            ],
+            parserOptions: {
+                ecmaVersion: 2015,
+                templateSettings: {
+                    interpolate: "<[%@][=|-]([\\s\\S]+?)[%@]>",
+                },
+            },
+            filename: "test.html",
+        },
     ],
 })
