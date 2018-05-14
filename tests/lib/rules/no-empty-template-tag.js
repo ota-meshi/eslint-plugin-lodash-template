@@ -26,14 +26,14 @@ tester.run("no-empty-template-tag", rule, {
         {
             code: "<%    %>",
             output: null,
-            errors: ["Empty micro-template interpolation/evaluate.",
+            errors: ["Empty micro-template tag.",
             ],
             filename: "test.html",
         },
         {
             code: "<%%>",
             output: null,
-            errors: ["Empty micro-template interpolation/evaluate.",
+            errors: ["Empty micro-template tag.",
             ],
             filename: "test.html",
         },
@@ -43,7 +43,7 @@ tester.run("no-empty-template-tag", rule, {
             output: null,
             errors: [
                 {
-                    message: "Empty micro-template interpolation/evaluate.",
+                    message: "Empty micro-template tag.",
                     line: 1,
                     column: 1,
                     endLine: 2,
@@ -58,7 +58,7 @@ tester.run("no-empty-template-tag", rule, {
             output: null,
             errors: [
                 {
-                    message: "Empty micro-template interpolation/evaluate.",
+                    message: "Empty micro-template tag.",
                     line: 1,
                     column: 1,
                     endLine: 1,
@@ -76,7 +76,7 @@ tester.run("no-empty-template-tag", rule, {
         {
             code: "{{}}",
             output: null,
-            errors: ["Empty micro-template interpolation/evaluate."],
+            errors: ["Empty micro-template tag."],
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
@@ -88,7 +88,7 @@ tester.run("no-empty-template-tag", rule, {
         {
             code: "{{}}",
             output: null,
-            errors: ["Empty micro-template interpolation/evaluate."],
+            errors: ["Empty micro-template tag."],
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
@@ -100,7 +100,7 @@ tester.run("no-empty-template-tag", rule, {
         {
             code: "{{}}",
             output: null,
-            errors: ["Empty micro-template interpolation/evaluate."],
+            errors: ["Empty micro-template tag."],
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
@@ -112,7 +112,7 @@ tester.run("no-empty-template-tag", rule, {
         {
             code: "{{}}",
             output: null,
-            errors: ["Empty micro-template interpolation/evaluate."],
+            errors: ["Empty micro-template tag."],
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
@@ -124,7 +124,7 @@ tester.run("no-empty-template-tag", rule, {
         {
             code: "<%  %>",
             output: null,
-            errors: ["Empty micro-template interpolation/evaluate."],
+            errors: ["Empty micro-template tag."],
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
