@@ -191,9 +191,7 @@ text
                 "Expected \" \" character, but found \"\\t\" character.",
             ],
             filename: "tab.html",
-
         },
-
         {
             code: unIndent`
                 <% for ( var i = 0; i < users.length; i++ ) { %>
@@ -207,6 +205,23 @@ text
             `,
             errors: [
                 "Expected indentation of 2 spaces but found 0 spaces.",
+            ],
+            filename: "test.html",
+        },
+        {
+            code: unIndent`
+                  <% for ( var i = 0; i < users.length; i++ ) { %>
+                    <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
+                <% } %>
+            `,
+            output: unIndent`
+                <% for ( var i = 0; i < users.length; i++ ) { %>
+                  <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
+                <% } %>
+            `,
+            errors: [
+                "Expected indentation of 0 spaces but found 2 spaces.",
+                "Expected indentation of 2 spaces but found 4 spaces.",
             ],
             filename: "test.html",
         },
