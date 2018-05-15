@@ -45,33 +45,29 @@ This rule enforces a consistent HTML indentation style. The default style is 2 s
 :+1: Examples of **correct** code for `{attribute: 1, closeBracket: 1}`:
 
 ```html
-<template>
+<div>
   <div
     id="a"
     class="b"
-    other-attr=
-      "value"
-    other-attr2
-      ="value"
+    attr1="c"
+    attr2="d"
     >
     Text
   </div>
-</template>
+</div>
 ```
 
 :+1: Examples of **correct** code for `{attribute: 2, closeBracket: 1}`:
 
 ```html
-<template>
+<div>
   <div
       id="a"
       class="b"
-      other-attr=
-        "value"
-      other-attr2
-        ="value"
+      attr1="c"
+      attr2="d"
     >
     Text
   </div>
-</template>
+</div>
 ```
