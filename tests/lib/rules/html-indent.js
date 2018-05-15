@@ -118,24 +118,24 @@ tester.run("html-indent", rule, loadPatterns(
     [
         {
             code: unIndent`
-            <div>
-            <pre>
+                <div>
+                <pre>
+                    text
                 text
-            text
-            <!-- comment -->
-              text
-              </pre>
-            </div>
+                <!-- comment -->
+                  text
+                  </pre>
+                </div>
             `,
             output: unIndent`
-            <div>
-              <pre>
+                <div>
+                  <pre>
+                    text
                 text
-            text
-            <!-- comment -->
-              text
-              </pre>
-            </div>
+                <!-- comment -->
+                  text
+                  </pre>
+                </div>
             `,
             errors: [
                 {
@@ -187,6 +187,24 @@ text
             ],
             filename: "tab.html",
 
+        },
+
+        {
+            // want to indent...
+            code: unIndent`
+                <% for ( var i = 0; i < users.length; i++ ) { %>
+                  <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
+                <% } %>
+            `,
+            output: unIndent`
+                <% for ( var i = 0; i < users.length; i++ ) { %>
+                <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
+                <% } %>
+            `,
+            errors: [
+                "Expected indentation of 0 spaces but found 2 spaces.",
+            ],
+            filename: "test.html",
         },
     ]
 ))

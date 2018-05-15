@@ -135,13 +135,13 @@ Enforce all the rules in this category and all of the above rules with:
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
-| :wrench: | [lodash-template/html-indent](./docs/rules/html-indent.md) | enforce consistent HTML indentation |
 | :wrench: | [lodash-template/template-tag-spacing](./docs/rules/template-tag-spacing.md) | enforce unified spacing in micro-template tag. (ex. :ok: `<%= prop %>`, :ng: `<%=prop%>`) |
 
 ### Uncategorized
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
+| :wrench: | [lodash-template/html-indent](./docs/rules/html-indent.md) | enforce consistent HTML indentation |
 |  | [lodash-template/prefer-escape-template-interpolations](./docs/rules/prefer-escape-template-interpolations.md) | prefer escape micro-template interpolations. (ex. :ok: `<%- ... %>`, :ng: `<%= ... %>`) |
 
 <!--RULES_TABLE_END-->
