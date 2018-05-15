@@ -2,6 +2,9 @@
 
 const path = require("path")
 const fs = require("fs")
+const isWin = require("os")
+    .platform()
+    .startsWith("win")
 const eslint = require("eslint")
 
 /**
@@ -26,7 +29,7 @@ function readRules() {
 
 const rules = readRules()
 
-const content = `
+let content = `
 "use strict"
 
 const baseRules = [
@@ -67,6 +70,13 @@ module.exports = { rules, collectRules }
 `
 
 const filePath = path.resolve(__dirname, "../lib/utils/rules.js")
+
+if (isWin) {
+    content = content
+        .replace(/\r?\n/g, "\n")
+        .replace(/\r/g, "\n")
+        .replace(/\n/g, "\r\n")
+}
 
 // Update file.
 fs.writeFileSync(filePath, content)

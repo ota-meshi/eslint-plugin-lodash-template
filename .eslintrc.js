@@ -31,6 +31,7 @@ module.exports = {
             { tabWidth: 4, semi: false, trailingComma: "es5" },
         ],
         "no-warning-comments": "warn",
+        "linebreak-style": "off",
     },
 
     overrides: [

@@ -58,13 +58,18 @@ for (const rule of rules) {
         notes.push("", "")
     }
 
+    const isWin = require("os")
+        .platform()
+        .startsWith("win")
     fs.writeFileSync(
         filePath,
         fs
             .readFileSync(filePath, "utf8")
             .replace(
-                /^#[^\n]*\n+(?:- .+\n)*\n*/,
-                `${title}\n\n${notes.join("\n")}`
+                /^#[^\n]*(\r?\n)+(?:- .+\r?\n)*(\r?\n)*/,
+                `${title}${isWin ? "\r\n\r\n" : "\n\n"}${notes.join(
+                    isWin ? "\r\n" : "\n"
+                )}`
             )
     )
 }

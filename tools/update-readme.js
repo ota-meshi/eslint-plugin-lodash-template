@@ -2,6 +2,9 @@
 
 const fs = require("fs")
 const path = require("path")
+const isWin = require("os")
+    .platform()
+    .startsWith("win")
 const rules = require("../lib/utils/rules").rules
 const categories = require("./lib/categories")
 
@@ -79,6 +82,14 @@ ${deprecatedRules.map(toDeprecatedRuleRow).join("\n")}
 `
 }
 
+let insertText = `\n${rulesTableContent}\n`
+if (isWin) {
+    insertText = insertText
+        .replace(/\r?\n/g, "\n")
+        .replace(/\r/g, "\n")
+        .replace(/\n/g, "\r\n")
+}
+
 const readmeFilePath = path.resolve(__dirname, "../README.md")
 fs.writeFileSync(
     readmeFilePath,
@@ -86,6 +97,6 @@ fs.writeFileSync(
         .readFileSync(readmeFilePath, "utf8")
         .replace(
             /<!--RULES_TABLE_START-->[\s\S]*<!--RULES_TABLE_END-->/,
-            `<!--RULES_TABLE_START-->\n${rulesTableContent}\n<!--RULES_TABLE_END-->`
+            `<!--RULES_TABLE_START-->${insertText}<!--RULES_TABLE_END-->`
         )
 )

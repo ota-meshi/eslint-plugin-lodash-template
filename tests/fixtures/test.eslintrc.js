@@ -16,6 +16,7 @@ module.exports = {
             ignoreRules: ["no-tabs"],
             globals: ["name"],
         }],
+        "linebreak-style": "off",
     },
     globals: {
         _: true,
