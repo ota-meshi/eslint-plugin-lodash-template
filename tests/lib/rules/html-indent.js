@@ -122,6 +122,7 @@ tester.run("html-indent", rule, loadPatterns(
             <pre>
                 text
             text
+            <!-- comment -->
               text
               </pre>
             </div>
@@ -131,6 +132,7 @@ tester.run("html-indent", rule, loadPatterns(
               <pre>
                 text
             text
+            <!-- comment -->
               text
               </pre>
             </div>
@@ -145,7 +147,6 @@ tester.run("html-indent", rule, loadPatterns(
                 },
             ],
             filename: "pre-test.html",
-
         },
         {
             code: `
@@ -169,6 +170,22 @@ text
                 "Expected indentation of 0 spaces but found 2 spaces.",
             ],
             filename: "root-test.html",
+        },
+        {
+            code: `
+<div>
+\ttext
+</div>
+`,
+            output: `
+<div>
+  text
+</div>
+`,
+            errors: [
+                "Expected \" \" character, but found \"\\t\" character.",
+            ],
+            filename: "tab.html",
 
         },
     ]
