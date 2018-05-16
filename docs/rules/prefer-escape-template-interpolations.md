@@ -16,4 +16,5 @@ This rule reports no escape micro-template interpolates.
 
 ```html
 <div><%- text %></div>
+<div><% print(html) %></div>
 ```
