@@ -117,6 +117,20 @@ tester.run("html-indent", rule, loadPatterns(
           <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
         <% } %>
         `,
+        unIndent`
+<ul>
+  <% for ( var i = 0; i < users.length; i++ ) { %>
+    <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
+
+\u0020
+\u0020\u0020
+\u0020\u0020\u0020
+\u0020\u0020\u0020\u0020
+\u0020\u0020\u0020\u0020\u0020
+\u0020\u0020\u0020\u0020\u0020\u0020
+  <% } %>
+</ul>
+        `,
     ],
 
     // Invalid
