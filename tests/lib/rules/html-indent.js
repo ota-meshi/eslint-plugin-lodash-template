@@ -255,23 +255,5 @@ text
             ],
             filename: "test.html",
         },
-
-        {
-            // want to indent...
-            code: unIndent`
-                <% for ( var i = 0; i < users.length; i++ ) { %>
-                  <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
-                <% } %>
-            `,
-            output: unIndent`
-                <% for ( var i = 0; i < users.length; i++ ) { %>
-                <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
-                <% } %>
-            `,
-            errors: [
-                "Expected indentation of 0 spaces but found 2 spaces.",
-            ],
-            filename: "test.html",
-        },
     ]
 ))
