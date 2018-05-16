@@ -1,5 +1,6 @@
 # enforce consistent HTML indentation (lodash-template/html-indent)
 
+- :gear: This rule is included in `"plugin:lodash-template/all"`.
 - :wrench: The `--fix` option on the [command line](http://eslint.org/docs/user-guide/command-line-interface#fix) can automatically fix some of the problems reported by this rule.
 
 ## Rule Details
