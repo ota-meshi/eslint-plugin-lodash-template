@@ -44,7 +44,7 @@ let rulesTableContent = categories
         category => `
 ### ${category.title}
 
-${category.rulesDescription} with:
+${category.configDescription}
 
 \`\`\`json
 {

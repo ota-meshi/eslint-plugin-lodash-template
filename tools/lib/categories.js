@@ -8,7 +8,7 @@ const categoryTitles = {
     recommended: "Recommended (Improve Readability)",
 }
 
-const categoryRulesDescriptions = {
+const categoryConfigDescriptions = {
     base: "Enforce all the rules in this category with:",
     "best-practices":
         "Enforce all the rules in this category and all the rules in `Base` category with:",
@@ -37,7 +37,7 @@ module.exports = categoryIds
     .map(categoryId => ({
         categoryId,
         title: categoryTitles[categoryId],
-        rulesDescription: categoryRulesDescriptions[categoryId],
+        configDescription: categoryConfigDescriptions[categoryId],
         rules: (categoryRules[categoryId] || []).filter(
             rule => !rule.meta.deprecated
         ),

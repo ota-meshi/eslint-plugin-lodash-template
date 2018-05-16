@@ -95,7 +95,7 @@ The `--fix` option on the command line automatically fixes problems reported by 
 
 ### Base Rules (Enabling Correct ESLint Parsing)
 
-Enforce all the rules in this category with: with:
+Enforce all the rules in this category with:
 
 ```json
 {
@@ -109,7 +109,7 @@ Enforce all the rules in this category with: with:
 
 ### Best Practices (Improve Development Experience)
 
-Enforce all the rules in this category and all the rules in `Base` category with: with:
+Enforce all the rules in this category and all the rules in `Base` category with:
 
 ```json
 {
@@ -125,7 +125,7 @@ Enforce all the rules in this category and all the rules in `Base` category with
 
 ### Recommended (Improve Readability)
 
-Enforce all the rules in this category and all the rules in `Base`/`Best Practices` categories with: with:
+Enforce all the rules in this category and all the rules in `Base`/`Best Practices` categories with:
 
 ```json
 {
