@@ -1,0 +1,14 @@
+<!--{"options": ["tab"]}-->
+<% if (exp1) { %>
+	<% if (exp2 || exp3 || exp4) {%>
+		<div></div>
+	<% } %>
+	<% if (exp5) {%>
+		<div class="class-name">
+			<% array.forEach(function(data) { %>
+				<span class="<%= data.className %>">
+					<%= data.name %></span>
+			<% }) %>
+		</div>
+	<% } %>
+<% } %>

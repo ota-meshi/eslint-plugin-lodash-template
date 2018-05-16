@@ -17,6 +17,7 @@ module.exports = {
             globals: ["name"],
         }],
         "linebreak-style": "off",
+        "local/html-indent": "off",
     },
     globals: {
         _: true,

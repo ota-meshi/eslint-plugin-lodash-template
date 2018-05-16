@@ -44,7 +44,7 @@ let rulesTableContent = categories
         category => `
 ### ${category.title}
 
-Enforce all the rules in this category and all of the above rules with:
+${category.configDescription}
 
 \`\`\`json
 {

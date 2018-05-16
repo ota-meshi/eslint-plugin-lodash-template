@@ -95,7 +95,7 @@ The `--fix` option on the command line automatically fixes problems reported by 
 
 ### Base Rules (Enabling Correct ESLint Parsing)
 
-Enforce all the rules in this category and all of the above rules with:
+Enforce all the rules in this category with:
 
 ```json
 {
@@ -109,7 +109,7 @@ Enforce all the rules in this category and all of the above rules with:
 
 ### Best Practices (Improve Development Experience)
 
-Enforce all the rules in this category and all of the above rules with:
+Enforce all the rules in this category and all the rules in `Base` category with:
 
 ```json
 {
@@ -125,7 +125,7 @@ Enforce all the rules in this category and all of the above rules with:
 
 ### Recommended (Improve Readability)
 
-Enforce all the rules in this category and all of the above rules with:
+Enforce all the rules in this category and all the rules in `Base`/`Best Practices` categories with:
 
 ```json
 {
@@ -141,6 +141,7 @@ Enforce all the rules in this category and all of the above rules with:
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
+| :wrench: | [lodash-template/html-indent](./docs/rules/html-indent.md) | enforce consistent HTML indentation |
 |  | [lodash-template/prefer-escape-template-interpolations](./docs/rules/prefer-escape-template-interpolations.md) | prefer escape micro-template interpolations. (ex. :ok: `<%- ... %>`, :ng: `<%= ... %>`) |
 
 <!--RULES_TABLE_END-->

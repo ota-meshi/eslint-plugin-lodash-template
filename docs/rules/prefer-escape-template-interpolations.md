@@ -1,5 +1,7 @@
 # prefer escape micro-template interpolations. (ex. :ok: `<%- ... %>`, :ng: `<%= ... %>`) (lodash-template/prefer-escape-template-interpolations)
 
+- :gear: This rule is included in `"plugin:lodash-template/all"`.
+
 ## Rule Details
 
 This rule reports no escape micro-template interpolates.
@@ -14,4 +16,5 @@ This rule reports no escape micro-template interpolates.
 
 ```html
 <div><%- text %></div>
+<div><% print(html) %></div>
 ```
