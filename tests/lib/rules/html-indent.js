@@ -131,6 +131,22 @@ tester.run("html-indent", rule, loadPatterns(
   <% } %>
 </ul>
         `,
+        {
+            code: `
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>title</title>
+  </head>
+  <body>
+    <div id="a"></div>
+  </body>
+</html>
+`,
+            options: [2],
+        },
     ],
 
     // Invalid
