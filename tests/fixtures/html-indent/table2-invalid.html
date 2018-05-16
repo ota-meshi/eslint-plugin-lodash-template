@@ -1,0 +1,25 @@
+<!--{}-->
+<table>
+  <thead>
+    <th>header1</th>
+    <th>header2</th>
+    <th>header3</th>
+    <th>header4</th>
+  </thead>
+  <tbody>
+    <% _.forEach(list, function(data) { %>
+      <tr data-key="<%= data.id %>">
+        <td><%= data.name %></td>
+        <td><%= data.text %></td>
+        <td><%= data.comment %></td>
+        <td>
+          <%= data.action %>
+          <div class="actions">
+            <button class="button">button1</button>
+            <button class="button">button2</button>
+          </div>
+        </td>
+      </tr>
+    <% }); %>
+  </tbody>
+</table>
