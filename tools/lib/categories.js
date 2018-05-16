@@ -7,6 +7,15 @@ const categoryTitles = {
     "best-practices": "Best Practices (Improve Development Experience)",
     recommended: "Recommended (Improve Readability)",
 }
+
+const categoryRulesDescriptions = {
+    base: "Enforce all the rules in this category with:",
+    "best-practices":
+        "Enforce all the rules in this category and all the rules in `Base` category with:",
+    recommended:
+        "Enforce all the rules in this category and all the rules in `Base`/`Best Practices` categories with:",
+}
+
 const categoryIds = Object.keys(categoryTitles)
 const categoryRules = rules.reduce((obj, rule) => {
     const cat = rule.meta.docs.category || "uncategorized"
@@ -28,6 +37,7 @@ module.exports = categoryIds
     .map(categoryId => ({
         categoryId,
         title: categoryTitles[categoryId],
+        rulesDescription: categoryRulesDescriptions[categoryId],
         rules: (categoryRules[categoryId] || []).filter(
             rule => !rule.meta.deprecated
         ),
