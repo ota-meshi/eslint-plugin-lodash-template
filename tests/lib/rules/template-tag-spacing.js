@@ -195,5 +195,21 @@ tester.run("template-tag-spacing", rule, {
             },
             filename: "test.html",
         },
+        {
+            code: "<___>",
+            output: "<_ _ _>",
+            errors: [
+                "Expected 1 space after '<_', but no spaces found.",
+                "Expected 1 space before '_>', but no spaces found.",
+
+            ],
+            parserOptions: {
+                ecmaVersion: 2015,
+                templateSettings: {
+                    interpolate: "<_([\\s\\S]+?)_>",
+                },
+            },
+            filename: "test.html",
+        },
     ],
 })
