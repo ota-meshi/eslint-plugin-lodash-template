@@ -219,6 +219,37 @@ please set `parserOptions`(ex. **.eslintrc.js**) as follows.
       },
 ```
 
+## FAQ
+
+### Editor Settings
+
+About how to mark warnings on editor.
+
+* VSCode ([VS Code ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint))  
+
+    **settings.json**:
+
+    ```json
+    {
+        "eslint.validate": [ "javascript", "javascriptreact", { "language": "html", "autoFix": true } ]
+    }
+    ```
+
+* Sublime Text3 ([SublimeLinter-eslint](https://packagecontrol.io/packages/SublimeLinter-eslint)) 
+
+    [Preference] > [Package Settings] > [SublimeLinter] > [Settings]
+
+    ```json
+    // SublimeLinter Settings - User
+    {
+        "linters": {
+            "eslint": {
+                "selector": "text.html, source.js - meta.attribute-with-value"
+            }
+        }
+    }
+    ```
+
 ## License
 
 See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
