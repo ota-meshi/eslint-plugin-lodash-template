@@ -244,7 +244,7 @@ About how to mark warnings on editor.
     {
         "linters": {
             "eslint": {
-                "selector": "text.html.vue, text.html, source.js - meta.attribute-with-value"
+                "selector": "text.html, source.js - meta.attribute-with-value"
             }
         }
     }
