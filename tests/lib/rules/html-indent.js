@@ -145,7 +145,36 @@ tester.run("html-indent", rule, loadPatterns(
   </body>
 </html>
 `,
-            options: [2],
+            filename: "line-feed-at-last.html",
+        },
+        {
+            code: `
+<!DOCTYPE html>
+<html>
+  <head>
+    <style
+      type="text/css"
+    >
+        body {
+            width: 100%;
+        }
+    </style>
+    <script>
+                // script
+    </script>
+  </head>
+  <body>
+    <pre
+      id="a"
+    >aaaaaaaaa
+aaaaaaaaa
+  aaaaaaaaa
+      aaaaaaaaa
+    </pre>
+  </body>
+</html>
+`,
+            filename: "ignore-elements.html",
         },
     ],
 
