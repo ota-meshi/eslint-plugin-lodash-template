@@ -1,0 +1,24 @@
+<!--{}-->
+<%
+switch (a) {
+case 1:
+%>
+  <div class="case-1">
+    <span>case 1</span>
+    <%
+break;
+case 2:
+case 3:
+%>
+  <div class="case-2-3">
+    <span>case 2 or 3</span>
+    <%
+break;
+default:
+%>
+  <div class="case-def">
+    <span>case default</span>
+    <%
+}
+%>
+  </div>
