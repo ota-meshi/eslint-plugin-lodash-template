@@ -1,0 +1,13 @@
+<!--{}-->
+
+<% switch (a) {
+  case 1: %>
+<div class="case-1"></div>
+<% break
+  case 2:
+  case 3:
+    var arg = "arg"%>
+<div class="case-2-3" attr="<%= arg %>"></div>
+<% break
+  default:
+  } %>

@@ -1,0 +1,28 @@
+<!--{}-->
+
+<% 
+  try {
+%>
+<div class="try"></div>
+<%
+  } catch (
+    e
+  ) {
+%>
+<div class="<%= e.message %>"></div>
+<%
+  }
+%>
+
+
+<% 
+  try {
+%>
+<div class="try"></div>
+<%
+  } catch {
+%>
+<div class="error"></div>
+<%
+  }
+%>
