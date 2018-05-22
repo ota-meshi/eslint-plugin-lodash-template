@@ -91,9 +91,73 @@ tester.run("script-indent", rule, loadPatterns(
     // Valid
     [
         unIndent``,
+        unIndent`
+        <% for (
+            let i = 0;
+            i < arr.length;
+            i++
+          ) { %>
+          <div class="<%= arr[i] %>"></div>
+        <% } %>
+        `,
+        {
+            options: [2, { startIndent: 0 }],
+            code: unIndent`
+            <% for (
+              let i = 0;
+              i < arr.length;
+              i++
+            ) { %>
+              <div class="<%= arr[i] %>"></div>
+            <% } %>
+            `,
+        },
+        {
+            options: [2, { startIndent: 2 }],
+            code: unIndent`
+            <% for (
+                  let i = 0;
+                  i < arr.length;
+                  i++
+                ) { %>
+              <div class="<%= arr[i] %>"></div>
+            <% } %>
+            `,
+        },
     ],
 
     // Invalid
     [
+        {
+            options: [2, { startIndent: 2 }],
+            code: unIndent`
+            <% for (
+                  let i = 0;
+                i < arr.length;
+              i++
+                ) { %>
+              <div class="<%= arr[i] %>"></div>
+            <% } %>
+            `,
+            errors: [
+                {
+                    message: "Expected indentation of 6 spaces but found 4 spaces.",
+                    line: 3,
+                },
+                {
+                    message: "Expected indentation of 6 spaces but found 2 spaces.",
+                    line: 4,
+                },
+            ],
+            output: unIndent`
+            <% for (
+                  let i = 0;
+                  i < arr.length;
+                  i++
+                ) { %>
+              <div class="<%= arr[i] %>"></div>
+            <% } %>
+            `,
+        },
     ]
 ))
