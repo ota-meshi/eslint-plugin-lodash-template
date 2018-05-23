@@ -124,6 +124,28 @@ tester.run("script-indent", rule, loadPatterns(
             <% } %>
             `,
         },
+        unIndent`
+        <div>
+            <% for (
+                let i = 0;
+                i < arr.length;
+                i++
+              ) { %>
+              <div class="<%= arr[i] %>"></div>
+            <% } %>
+        </div>
+        `,
+        unIndent`
+        <div>
+        \t<% for (
+        \t    let i = 0;
+        \t    i < arr.length;
+        \t    i++
+        \t  ) { %>
+        \t  <div class="<%= arr[i] %>"></div>
+        \t<% } %>
+        </div>
+        `,
     ],
 
     // Invalid
@@ -158,6 +180,109 @@ tester.run("script-indent", rule, loadPatterns(
               <div class="<%= arr[i] %>"></div>
             <% } %>
             `,
+        },
+        {
+            options: [2, { startIndent: 2 }],
+            code: unIndent`
+            <% for (
+            \t\t\tlet i = 0;
+                  i < arr.length;
+                  i++
+                ) { %>
+              <div class="<%= arr[i] %>"></div>
+            <% } %>
+            `,
+            errors: [
+                {
+                    message: "Expected \" \" character, but found \"\\t\" character.",
+                    line: 2,
+                },
+            ],
+            output: unIndent`
+            <% for (
+                  let i = 0;
+                  i < arr.length;
+                  i++
+                ) { %>
+              <div class="<%= arr[i] %>"></div>
+            <% } %>
+            `,
+        },
+        {
+            code: unIndent`
+                <div>
+                \t<% for (
+                     let i = 0;
+                i < arr.length;
+                \t    i++
+                \t  ) { %>
+                \t  <div class="<%= arr[i] %>"></div>
+                \t<% } %>
+                </div>
+                `,
+            errors: [
+                {
+                    message: "Expected base point indentation of \"\\t\", but found \" \".",
+                    line: 3,
+                    column: 1,
+                    endLine: 3,
+                    endColumn: 6,
+                },
+                {
+                    message: "Expected base point indentation of \"\\t\", but not found.",
+                    line: 4,
+                    column: 1,
+                    endLine: 4,
+                    endColumn: 1,
+                },
+            ],
+            output: unIndent`
+                <div>
+                \t<% for (
+                \t    let i = 0;
+                \t    i < arr.length;
+                \t    i++
+                \t  ) { %>
+                \t  <div class="<%= arr[i] %>"></div>
+                \t<% } %>
+                </div>
+                `,
+        },
+        {
+            code: unIndent`
+                <div>
+                \t<% for (
+                \t  let i = 0;
+                \t  i < arr.length;
+                \t i++
+                \t) { %>
+                \t  <div class="<%= arr[i] %>"></div>
+                \t<% } %>
+                </div>
+                `,
+            errors: [
+                {
+                    message: "Expected relative indentation of 4 spaces but found 2 spaces.",
+                    line: 3,
+                    column: 2,
+                    endLine: 3,
+                    endColumn: 4,
+                },
+                "Expected relative indentation of 4 spaces but found 2 spaces.",
+                "Expected relative indentation of 4 spaces but found 1 space.",
+                "Expected relative indentation of 2 spaces but found 0 spaces.",
+            ],
+            output: unIndent`
+                <div>
+                \t<% for (
+                \t    let i = 0;
+                \t    i < arr.length;
+                \t    i++
+                \t  ) { %>
+                \t  <div class="<%= arr[i] %>"></div>
+                \t<% } %>
+                </div>
+                `,
         },
     ]
 ))
