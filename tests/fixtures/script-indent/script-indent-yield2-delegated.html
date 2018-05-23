@@ -1,0 +1,12 @@
+<!--{}-->
+
+<%
+  function * gen() {
+    yield *
+      gen2()
+  }
+  for (const e of gen()) { %>
+<div class="<%= arr[i] %>"></div>
+<%
+  }
+%>

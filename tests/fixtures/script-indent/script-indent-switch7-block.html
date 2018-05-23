@@ -1,0 +1,15 @@
+<!--{}-->
+
+<% switch (a) {
+  case 1:
+  case 2:
+  case 3: {
+    var arg = "arg"
+    break
+%>
+<div class="case" attr="<%= arg %>"></div>
+<%
+  }
+  default:%>
+<div class="def"></div>
+<% } %>

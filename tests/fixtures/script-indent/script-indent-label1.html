@@ -1,0 +1,14 @@
+<!--{}-->
+
+<% 
+  loop1:
+    for (
+      let i = 0;
+      i < arr.length;
+      i++
+    ) { %>
+<div class="<%= arr[i] %>"></div>
+<%
+      continue loop1
+    }
+%>

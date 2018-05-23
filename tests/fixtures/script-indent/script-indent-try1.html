@@ -1,0 +1,17 @@
+<!--{}-->
+
+<% 
+  try {
+%>
+<div class="try"></div>
+<%
+  }
+  finally
+  {
+    var a = 'a'
+%>
+<div class="<%=
+    a %>"></div>
+<%
+  }
+%>

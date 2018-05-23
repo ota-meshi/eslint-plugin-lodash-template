@@ -1,0 +1,17 @@
+<!--{}-->
+
+<%
+  const a = 'a',
+    b = 'b',
+    c = 'c',
+    arr = [a, b, c]
+%>
+<% arr.
+    forEach(
+      (e) =>
+      { %>
+<div class="<%= e %>"></div>
+<%
+      }
+    )
+%>

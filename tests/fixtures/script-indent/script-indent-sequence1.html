@@ -1,0 +1,22 @@
+<!--{}-->
+
+<%
+  const arr = (
+/*comment*/
+    a = 'a',
+    // comment
+    b = 'b',
+    c = 'c',
+    [a, b, c]
+// comment
+  )
+%>
+<% arr.
+    forEach(
+      (e) =>
+      { %>
+<div class="<%= e %>"></div>
+<%
+      }
+    )
+%>
