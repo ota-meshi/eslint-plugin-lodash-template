@@ -35,7 +35,7 @@ This rule enforces a consistent indentation style to script in micro-template ta
 
 ```json
 {
-  "lodash-template/html-indent": ["error", type, {
+  "lodash-template/script-indent": ["error", type, {
     "startIndent": 1,
     "switchCase": 0
   }]
