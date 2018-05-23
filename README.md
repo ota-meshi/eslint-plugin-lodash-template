@@ -135,6 +135,7 @@ Enforce all the rules in this category and all the rules in `Base`/`Best Practic
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
+| :wrench: | [lodash-template/script-indent](./docs/rules/script-indent.md) | enforce consistent indentation to script in micro-template tag. |
 | :wrench: | [lodash-template/template-tag-spacing](./docs/rules/template-tag-spacing.md) | enforce unified spacing in micro-template tag. (ex. :ok: `<%= prop %>`, :ng: `<%=prop%>`) |
 
 ### Uncategorized
@@ -143,7 +144,6 @@ Enforce all the rules in this category and all the rules in `Base`/`Best Practic
 |:---|:--------|:------------|
 | :wrench: | [lodash-template/html-indent](./docs/rules/html-indent.md) | enforce consistent HTML indentation. |
 |  | [lodash-template/prefer-escape-template-interpolations](./docs/rules/prefer-escape-template-interpolations.md) | prefer escape micro-template interpolations. (ex. :ok: `<%- ... %>`, :ng: `<%= ... %>`) |
-| :wrench: | [lodash-template/script-indent](./docs/rules/script-indent.md) | enforce consistent indentation to script in micro-template tag. |
 
 <!--RULES_TABLE_END-->
 
