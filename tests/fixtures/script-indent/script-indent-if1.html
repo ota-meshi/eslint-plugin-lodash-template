@@ -1,0 +1,33 @@
+<!--{}-->
+
+<%
+  if (
+    a === 1
+  ) { %>
+<div class="case-1"></div>
+<%
+  } else if (
+    a === 2 ||
+    a 
+    === 3
+  )
+  {
+    var arg = "arg" %>
+<div class="case-2-3" attr="<%= arg %>"></div>
+<%
+  }
+  else
+  { %>
+<div class="def"></div>
+<%
+  }
+%>
+
+<%
+  if (
+    a === 1
+  ) { %>
+<div class="case-1 no-else"></div>
+<%
+  }
+%>
