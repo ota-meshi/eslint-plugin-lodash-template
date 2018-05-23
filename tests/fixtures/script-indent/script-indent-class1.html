@@ -4,8 +4,25 @@
   class
     A extends
       B {
+        /* comment */
         constructor() {
           console.log('constructor')
         }
+        method() {
+          console.log('log')
+        }
+        // comment
+        get prop() {
+          return 'prop'
+        }
+        static get bar() {
+          return baz;
+        }
+        static
+        get
+        [computed.name]() {
+          return computed.value;
+        }
+        // comment
       }
 %>

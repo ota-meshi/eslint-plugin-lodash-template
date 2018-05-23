@@ -1,0 +1,30 @@
+<!--{}-->
+
+<%
+  const
+    obj
+      = {
+        // comment
+        prop: 'prop',
+        // comment
+        [arg]: 'arg',
+        /* comment */
+        method() {
+          console.log('log')
+        },
+        shorthand,
+        get getter() {
+          return 'value'
+        },
+        // comment
+      }
+%>
+<% Object.keys(obj).
+    forEach(
+      (name) =>
+      { %>
+<div class="<%= name %>"></div>
+<%
+      }
+    )
+%>
