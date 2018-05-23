@@ -1,0 +1,91 @@
+<!--{}-->
+<%
+  // NonSpecifier
+  import
+    "foo"
+  ;
+  import
+    "foo"
+  import
+  {}
+    from
+    "foo"
+  ;
+  import
+  {}
+    from
+    "foo"
+  // ImportDefaultSpecifier
+  //   ImportNamespaceSpecifier
+  import
+    foo,
+    *
+      as
+      foo
+    from
+    "foo"
+  ;
+  import
+    foo,
+    *
+      as
+      foo
+    from
+    "foo"
+  //
+  import
+    foo
+    from
+    "foo"
+  ;
+  import
+    foo,
+    {}
+    from
+    "foo"
+  ;
+  import
+    foo,
+    {a}
+    from
+    "foo"
+  ;
+  import
+    foo
+    from
+    "foo"
+  import
+    foo,
+    {}
+    from
+    "foo"
+  import
+    foo,
+    {a}
+    from
+    "foo"
+  // ImportNamespaceSpecifier
+  import
+    *
+      as
+      foo
+    from
+    "foo"
+  ;
+  import
+    *
+      as
+      foo
+    from
+    "foo"
+  // OtherSpecifier
+  import
+  {a}
+    from
+    "foo"
+  ;
+  import
+  {a}
+    from
+    "foo"
+%>
