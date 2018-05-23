@@ -1,0 +1,26 @@
+<!--{}-->
+<%
+  switch (a) {
+  case 1:
+    flg = 1
+%>
+<span><%= 1 %>
+<%
+    flg = 2
+    // comment
+    break;
+  case 2:
+  case 3:
+%>
+<span><%= 2 +
+    3 %>
+<%
+    break;
+  default:
+%>
+<span><%= 'default' %>
+<%
+    break;
+  }
+%>
+</span>
