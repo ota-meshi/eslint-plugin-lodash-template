@@ -137,6 +137,20 @@ tester.run("script-indent", rule, loadPatterns(
         `,
         unIndent`
         <div>
+            <%
+              for (
+                let i = 0;
+                i < arr.length;
+                i++
+              ) { %>
+              <div class="<%= arr[i] %>"></div>
+        <%
+              }
+            %>
+        </div>
+        `,
+        unIndent`
+        <div>
         \t<% for (
         \t    let i = 0;
         \t    i < arr.length;
@@ -281,6 +295,45 @@ tester.run("script-indent", rule, loadPatterns(
                 \t  ) { %>
                 \t  <div class="<%= arr[i] %>"></div>
                 \t<% } %>
+                </div>
+                `,
+        },
+
+        {
+            code: unIndent`
+                <%
+                // comment
+                var a = b;
+                /* comment */
+                %>
+                <div>
+                    <%
+                    // comment
+                    var a = b;
+                    /* comment */
+                    %>
+                </div>
+                `,
+            errors: [
+                "Expected indentation of 2 spaces but found 0 spaces.",
+                "Expected indentation of 2 spaces but found 0 spaces.",
+                "Expected indentation of 2 spaces but found 0 spaces.",
+                "Expected relative indentation of 2 spaces but found 0 spaces.",
+                "Expected relative indentation of 2 spaces but found 0 spaces.",
+                "Expected relative indentation of 2 spaces but found 0 spaces.",
+            ],
+            output: unIndent`
+                <%
+                  // comment
+                  var a = b;
+                  /* comment */
+                %>
+                <div>
+                    <%
+                      // comment
+                      var a = b;
+                      /* comment */
+                    %>
                 </div>
                 `,
         },
