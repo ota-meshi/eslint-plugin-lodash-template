@@ -68,6 +68,20 @@ tester.run("template-tag-spacing", rule, {
             options: ["never"],
             filename: "test.html",
         },
+        {
+            code: `<%=
+            always
+            %>`,
+            options: ["always"],
+            filename: "test.html",
+        },
+        {
+            code: `<%=
+            never
+            %>`,
+            options: ["never"],
+            filename: "test.html",
+        },
     ],
 
     invalid: [
