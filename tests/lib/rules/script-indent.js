@@ -338,5 +338,38 @@ tester.run("script-indent", rule, loadPatterns(
                 </div>
                 `,
         },
+        {
+            code: unIndent`
+                <div>
+                \t<% for (
+                \t \t  let i = 0;
+                \t    i < arr.length;
+                \t    i++
+                \t  ) { %>
+                \t  <div class="<%= arr[i] %>"></div>
+                \t<% } %>
+                </div>
+                `,
+            errors: [
+                {
+                    message: "Expected \" \" character, but found \"\\t\" character.",
+                    line: 3,
+                    column: 3,
+                    endLine: 3,
+                    endColumn: 4,
+                },
+            ],
+            output: unIndent`
+                <div>
+                \t<% for (
+                \t    let i = 0;
+                \t    i < arr.length;
+                \t    i++
+                \t  ) { %>
+                \t  <div class="<%= arr[i] %>"></div>
+                \t<% } %>
+                </div>
+                `,
+        },
     ]
 ))
