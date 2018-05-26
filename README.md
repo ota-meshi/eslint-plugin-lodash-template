@@ -225,13 +225,27 @@ For example, to parse like [EJS](http://ejs.co/), set as follows,
 ```diff
       parserOptions: {
 +         templateSettings: {
-+             evaluate:    '(?:(?:<%_)|(?:<%(?!%)))([\\s\\S]*?)[_\\-]?%>',
-+             interpolate: '<%-([\\s\\S]*?)[_\\-]?%>',
-+             escape:      '<%=([\\s\\S]*?)[_\\-]?%>',
++             evaluate:    "(?:(?:<%_)|(?:<%(?!%)))([\\s\\S]*?)[_\\-]?%>",
++             interpolate: "<%-([\\s\\S]*?)[_\\-]?%>",
++             escape:      "<%=([\\s\\S]*?)[_\\-]?%>",
 +         },
       },
 ```
 
+### Customize target extentions
+
+Please set `parserOptions` (**.eslintrc.js**) as follows.
+
+(For example, to [EJS](http://ejs.co/))
+
+```diff
+  "use strict"
+
++ const pluginLodashTemplate = require("eslint-plugin-lodash-template")
++ pluginLodashTemplate.addTargetExtensions(".ejs")
+
+  module.exports = {
+```
 
 ## FAQ
 
