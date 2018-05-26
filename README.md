@@ -232,6 +232,8 @@ For example, to parse like [EJS](http://ejs.co/), set as follows,
       },
 ```
 
+([EJS](http://ejs.co/) can also be used in part, but we do not provide complete support.)
+
 ### Customize target extentions
 
 Please set `parserOptions` (**.eslintrc.js**) as follows.
