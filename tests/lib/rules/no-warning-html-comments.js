@@ -17,7 +17,10 @@ tester.run("no-warning-html-comments", rule, {
             filename: "test.html",
         },
         "<!--comment-->",
-        "<div></div>",
+        {
+            code: "<div></div>",
+            filename: "test.html",
+        },
         `<div>
         <% arr.forEach((a)=>{ %>
             <%= a %>

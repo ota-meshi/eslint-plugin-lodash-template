@@ -103,15 +103,18 @@ tester.run("html-indent", rule, loadPatterns(
           ) %>
         </div>
         `,
-        unIndent`
-        <div>
-          <pre>
+        {
+            code: unIndent`
+            <div>
+              <pre>
+                text
             text
-        text
-          text
-          </pre>
-        </div>
-        `,
+              text
+              </pre>
+            </div>
+            `,
+            filename: "pre-test.html",
+        },
         unIndent`
         <% for ( var i = 0; i < users.length; i++ ) { %>
           <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
