@@ -236,9 +236,9 @@ For example, to parse like [EJS](http://ejs.co/), set as follows,
 
 ### Customize target extentions
 
-Please set `parserOptions` (**.eslintrc.js**) as follows.
+Please set **.eslintrc.js** as follows.
 
-(For example, to [EJS](http://ejs.co/))
+(For example, for [EJS](http://ejs.co/).)
 
 ```diff
   "use strict"
