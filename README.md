@@ -220,6 +220,19 @@ please set `parserOptions`(ex. **.eslintrc.js**) as follows.
       },
 ```
 
+For example, to parse like [EJS](http://ejs.co/), set as follows,
+
+```diff
+      parserOptions: {
++         templateSettings: {
++             evaluate:    '(?:(?:<%_)|(?:<%(?!%)))([\\s\\S]*?)[_\\-]?%>',
++             interpolate: '<%-([\\s\\S]*?)[_\\-]?%>',
++             escape:      '<%=([\\s\\S]*?)[_\\-]?%>',
++         },
+      },
+```
+
+
 ## FAQ
 
 ### Editor Settings
