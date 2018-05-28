@@ -18,23 +18,33 @@ tester.run("no-html-comments", rule, {
         },
         "(function() {})()",
         "<% inter %>",
-        "<div></div>",
+        {
+            code: "<div></div>",
+            filename: "test.html",
+        },
         `<div>
         <% arr.forEach((a)=>{ %>
             <%= a %>
             <%- a %>
         <% }) %>
         </div>`,
-        "<br>",
-        `
-        <!DOCTYPE html>
-        <html>
-        <body>
-            <h1>My First Heading</h1>
-            <p>My first paragraph.</p>
-        </body>
-        </html>
-        `,
+        {
+            code: "<br>",
+            filename: "test.html",
+        },
+        {
+            code:
+            `
+            <!DOCTYPE html>
+            <html>
+            <body>
+                <h1>My First Heading</h1>
+                <p>My first paragraph.</p>
+            </body>
+            </html>
+            `,
+            filename: "test.html",
+        },
     ],
     invalid: [
         {
