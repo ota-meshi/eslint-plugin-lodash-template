@@ -63,6 +63,7 @@
     "prettier": "^1.11.1"
   },
   "dependencies": {
-    "parse5": "^4.0.0"
+    "parse5": "^4.0.0",
+    "esquery": "^1.0.0"
   }
 }

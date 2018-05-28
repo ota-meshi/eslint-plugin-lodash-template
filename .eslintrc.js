@@ -32,6 +32,8 @@ module.exports = {
         ],
         "no-warning-comments": "warn",
         "linebreak-style": "off",
+        "prefer-rest-params": "off",
+        "prefer-spread": "off",
     },
 
     overrides: [
