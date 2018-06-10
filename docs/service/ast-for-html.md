@@ -35,9 +35,12 @@ export function create(context) {
 }
 ```
 
+See details: [../../lib/ast/html-nodes.js](../../lib/ast/html-nodes.js)
+
+
 ## Node
 
-```js
+```ts
 extend interface Node {
     range: [ number ]
 }
@@ -49,7 +52,7 @@ extend interface Node {
 
 ## HTMLDocument
 
-```js
+```ts
 interface HTMLDocument <: Node {
     type: "HTMLDocument",
     children: [ HTMLElement | HTMLText | HTMLComment ]
@@ -60,7 +63,7 @@ interface HTMLDocument <: Node {
 
 ## HTMLDocumentFragment
 
-```js
+```ts
 interface HTMLDocumentFragment <: Node  {
     type: "HTMLDocumentFragment",
     children: [ HTMLElement | HTMLText | HTMLComment ]
@@ -71,7 +74,7 @@ interface HTMLDocumentFragment <: Node  {
 
 ## HTMLDocumentType
 
-```js
+```ts
 interface HTMLDocumentType <: Node  {
     type: "HTMLDocumentType",
     name: string,
@@ -84,7 +87,7 @@ interface HTMLDocumentType <: Node  {
 
 ## HTMLComment
 
-```js
+```ts
 interface HTMLComment <: Node  {
     type: "HTMLComment",
     value: string
@@ -95,7 +98,7 @@ interface HTMLComment <: Node  {
 
 ## HTMLText
 
-```js
+```ts
 interface HTMLText <: Node  {
     type: "HTMLText",
     value: string
@@ -106,7 +109,7 @@ interface HTMLText <: Node  {
 
 ## HTMLElement
 
-```js
+```ts
 interface HTMLElement <: Node  {
     type: "HTMLElement",
     name: string,
@@ -120,7 +123,7 @@ interface HTMLElement <: Node  {
 
 ## HTMLStartTag
 
-```js
+```ts
 interface HTMLStartTag <: Node  {
     type: "HTMLStartTag",
     attributes: [ HTMLAttribute ]
@@ -131,7 +134,7 @@ interface HTMLStartTag <: Node  {
 
 ## HTMLAttribute
 
-```js
+```ts
 interface HTMLAttribute <: Node  {
     type: "HTMLAttribute",
     key: string,
@@ -143,7 +146,7 @@ interface HTMLAttribute <: Node  {
 
 ## HTMLEndTag
 
-```js
+```ts
 interface HTMLEndTag <: Node  {
     type: "HTMLEndTag"
 }
