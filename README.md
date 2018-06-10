@@ -280,6 +280,21 @@ About how to mark warnings on editor.
     }
     ```
 
+## Contributing
+
+Welcome contributing!
+
+Please use GitHub's Issues/PRs.
+
+### `parserServices`
+
+[Information provided by `parserServices` on this plugin](./docs/service/service.md)  
+
+### Development Tools
+
+- `npm test` runs tests and measures coverage.  
+- `npm run update` runs in order to update readme and recommended configuration.  
+
 ## License
 
 See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
