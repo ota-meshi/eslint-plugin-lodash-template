@@ -1,6 +1,6 @@
 # AST for HTML
 
-- [Token](#token)
+- [Node](#node)
 - [HTMLDocument](#htmldocument)
 - [HTMLDocumentFragment](#htmldocumentfragment)
 - [HTMLDocumentType](#htmldocumenttype)
@@ -35,11 +35,10 @@ export function create(context) {
 }
 ```
 
-
-## Token
+## Node
 
 ```js
-extend interface Token {
+extend interface Node {
     range: [ number ]
 }
 ```
@@ -51,8 +50,9 @@ extend interface Token {
 ## HTMLDocument
 
 ```js
-interface HTMLDocument <: Token {
-    type: "HTMLDocument"
+interface HTMLDocument <: Node {
+    type: "HTMLDocument",
+    children: [ HTMLElement | HTMLText | HTMLComment ]
 }
 ```
 
@@ -61,8 +61,9 @@ interface HTMLDocument <: Token {
 ## HTMLDocumentFragment
 
 ```js
-interface HTMLDocumentFragment <: Token  {
-    type: "HTMLDocumentFragment"
+interface HTMLDocumentFragment <: Node  {
+    type: "HTMLDocumentFragment",
+    children: [ HTMLElement | HTMLText | HTMLComment ]
 }
 ```
 
@@ -71,7 +72,7 @@ interface HTMLDocumentFragment <: Token  {
 ## HTMLDocumentType
 
 ```js
-interface HTMLDocumentType <: Token  {
+interface HTMLDocumentType <: Node  {
     type: "HTMLDocumentType",
     name: string,
     publicId: string,
@@ -84,7 +85,7 @@ interface HTMLDocumentType <: Token  {
 ## HTMLComment
 
 ```js
-interface HTMLComment <: Token  {
+interface HTMLComment <: Node  {
     type: "HTMLComment",
     value: string
 }
@@ -95,7 +96,7 @@ interface HTMLComment <: Token  {
 ## HTMLText
 
 ```js
-interface HTMLText <: Token  {
+interface HTMLText <: Node  {
     type: "HTMLText",
     value: string
 }
@@ -106,9 +107,10 @@ interface HTMLText <: Token  {
 ## HTMLElement
 
 ```js
-interface HTMLElement <: Token  {
+interface HTMLElement <: Node  {
     type: "HTMLElement",
     name: string,
+    children: [ HTMLElement | HTMLText | HTMLComment ]
     startTag: HTMLStartTag | null,
     endTag: HTMLEndTag | null
 }
@@ -119,9 +121,9 @@ interface HTMLElement <: Token  {
 ## HTMLStartTag
 
 ```js
-interface HTMLStartTag <: Token  {
+interface HTMLStartTag <: Node  {
     type: "HTMLStartTag",
-    attributes: [HTMLAttribute]
+    attributes: [ HTMLAttribute ]
 }
 ```
 
@@ -130,7 +132,7 @@ interface HTMLStartTag <: Token  {
 ## HTMLAttribute
 
 ```js
-interface HTMLAttribute <: Token  {
+interface HTMLAttribute <: Node  {
     type: "HTMLAttribute",
     key: string,
     vakue: string
@@ -142,11 +144,10 @@ interface HTMLAttribute <: Token  {
 ## HTMLEndTag
 
 ```js
-interface HTMLEndTag <: Token  {
+interface HTMLEndTag <: Node  {
     type: "HTMLEndTag"
 }
 ```
 
 - This is a HTML element end tag.
-
 

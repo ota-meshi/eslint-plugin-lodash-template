@@ -1,6 +1,7 @@
 # AST for `<%= templateTag %>`
 
 - [Token](#token)
+- [Node](#node)
 - [MicroTemplateEvaluate](#microtemplateevaluate)
 - [MicroTemplateInterpolate](#microtemplateinterpolate)
 - [MicroTemplateEscape](#microtemplateescape)
@@ -31,7 +32,6 @@ export function create(context) {
 }
 ```
 
-
 ## Token
 
 ```js
@@ -44,13 +44,26 @@ extend interface Token {
   The 1st integer is the offset of the start location of the node.
   The 2nd integer is the offset of the end location of the node.
 
+## Node
+
+```js
+extend interface Node {
+    range: [ number ]
+}
+```
+
+- The `range` property is an array which has 2 integers.
+  The 1st integer is the offset of the start location of the node.
+  The 2nd integer is the offset of the end location of the node.
+
 ## MicroTemplateEvaluate
 
 ```js
-interface MicroTemplateEvaluate <: Token {
+interface MicroTemplateEvaluate <: Node {
     type: "MicroTemplateEvaluate",
     expressionStart: MicroTemplateExpressionStart,
-    expressionEnd: MicroTemplateExpressionEnd
+    expressionEnd: MicroTemplateExpressionEnd,
+    code: string
 }
 ```
 
@@ -61,10 +74,11 @@ interface MicroTemplateEvaluate <: Token {
 ## MicroTemplateInterpolate
 
 ```js
-interface MicroTemplateInterpolate <: Token  {
+interface MicroTemplateInterpolate <: Node  {
     type: "MicroTemplateInterpolate",
     expressionStart: MicroTemplateExpressionStart,
-    expressionEnd: MicroTemplateExpressionEnd
+    expressionEnd: MicroTemplateExpressionEnd,
+    code: string
 }
 ```
 
@@ -75,10 +89,11 @@ interface MicroTemplateInterpolate <: Token  {
 ## MicroTemplateEscape
 
 ```js
-interface MicroTemplateInterpolate <: Token  {
+interface MicroTemplateInterpolate <: Node  {
     type: "MicroTemplateEscape",
     expressionStart: MicroTemplateExpressionStart,
-    expressionEnd: MicroTemplateExpressionEnd
+    expressionEnd: MicroTemplateExpressionEnd,
+    code: string
 }
 ```
 
@@ -109,6 +124,5 @@ interface MicroTemplateExpressionEnd <: Token  {
 
 - This is the end tag of the template tag.
 - The delimiter string is stored in the `chars` property.
-
 
 
