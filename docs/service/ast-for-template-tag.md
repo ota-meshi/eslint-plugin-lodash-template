@@ -32,9 +32,12 @@ export function create(context) {
 }
 ```
 
+See details: [../../lib/ast/micro-template-nodes.js](../../lib/ast/micro-template-nodes.js)
+
+
 ## Token
 
-```js
+```ts
 extend interface Token {
     range: [ number ]
 }
@@ -46,7 +49,7 @@ extend interface Token {
 
 ## Node
 
-```js
+```ts
 extend interface Node {
     range: [ number ]
 }
@@ -58,7 +61,7 @@ extend interface Node {
 
 ## MicroTemplateEvaluate
 
-```js
+```ts
 interface MicroTemplateEvaluate <: Node {
     type: "MicroTemplateEvaluate",
     expressionStart: MicroTemplateExpressionStart,
@@ -73,7 +76,7 @@ interface MicroTemplateEvaluate <: Node {
 
 ## MicroTemplateInterpolate
 
-```js
+```ts
 interface MicroTemplateInterpolate <: Node  {
     type: "MicroTemplateInterpolate",
     expressionStart: MicroTemplateExpressionStart,
@@ -88,7 +91,7 @@ interface MicroTemplateInterpolate <: Node  {
 
 ## MicroTemplateEscape
 
-```js
+```ts
 interface MicroTemplateInterpolate <: Node  {
     type: "MicroTemplateEscape",
     expressionStart: MicroTemplateExpressionStart,
@@ -103,7 +106,7 @@ interface MicroTemplateInterpolate <: Node  {
 
 ## MicroTemplateExpressionStart
 
-```js
+```ts
 interface MicroTemplateExpressionStart <: Token  {
     type: "MicroTemplateExpressionStart",
     chars: string
@@ -115,7 +118,7 @@ interface MicroTemplateExpressionStart <: Token  {
 
 ## MicroTemplateExpressionEnd
 
-```js
+```ts
 interface MicroTemplateExpressionEnd <: Token  {
     type: "MicroTemplateExpressionEnd",
     chars: string
