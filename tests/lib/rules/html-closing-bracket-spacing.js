@@ -42,6 +42,12 @@ tester.run("html-closing-bracket-spacing", rule, {
             code: "<body><div></div",
             options: [{ startTag: "never", endTag: "never" }],
         },
+        `
+        <div
+        >
+        </div
+        >
+        `,
     ],
     invalid: [
         {
