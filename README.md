@@ -75,8 +75,8 @@ This plugin does special handling for the following rule warnings in the templat
 | `max-statements-per-line` | Disable warnings |
 | `padded-blocks` | Disable warnings |
 | `no-implicit-globals` | Disable warnings |
+| `no-multi-spaces` | Disable warnings |
 | `no-unused-expressions` | Disable warnings within interpolate(<%=...%>) |
-| `no-multi-spaces` | Disable warnings within interpolate(<%=...%>) |
 | `quotes` | Disable warnings if doublequote is set |
 
 ## Configs
@@ -135,6 +135,7 @@ Enforce all the rules in this category and all the rules in `Base`/`Best Practic
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
+| :wrench: | [lodash-template/no-multi-spaces-in-script](./docs/rules/no-multi-spaces-in-script.md) | disallow multiple spaces in script. (ex. :ng: `<% if···(test)···{ %>`) |
 | :wrench: | [lodash-template/script-indent](./docs/rules/script-indent.md) | enforce consistent indentation to script in micro-template tag. |
 | :wrench: | [lodash-template/template-tag-spacing](./docs/rules/template-tag-spacing.md) | enforce unified spacing in micro-template tag. (ex. :ok: `<%= prop %>`, :ng: `<%=prop%>`) |
 
@@ -143,6 +144,7 @@ Enforce all the rules in this category and all the rules in `Base`/`Best Practic
 |    | Rule ID | Description |
 |:---|:--------|:------------|
 | :wrench: | [lodash-template/html-indent](./docs/rules/html-indent.md) | enforce consistent HTML indentation. |
+| :wrench: | [lodash-template/no-multi-spaces-in-html-tag](./docs/rules/no-multi-spaces-in-html-tag.md) | disallow multiple spaces in html tags. (ex. :ng: `<input···type="text">`) |
 |  | [lodash-template/prefer-escape-template-interpolations](./docs/rules/prefer-escape-template-interpolations.md) | prefer escape micro-template interpolations. (ex. :ok: `<%- ... %>`, :ng: `<%= ... %>`) |
 
 <!--RULES_TABLE_END-->
