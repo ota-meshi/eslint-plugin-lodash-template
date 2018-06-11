@@ -85,6 +85,7 @@ This plugin provides four predefined configs:
 - `plugin:lodash-template/base` - Settings and rules to enable correct ESLint parsing
 - `plugin:lodash-template/best-practices` - Above, plus rules to improve dev experience
 - `plugin:lodash-template/recommended` - Above, plus rules to improve code readability
+- `plugin:lodash-template/recommended-with-html` - Above, plus rules to improve code readability with HTML tamplate
 - `plugin:lodash-template/all` - All rules of this plugin are included
 
 ## Rules
@@ -139,13 +140,26 @@ Enforce all the rules in this category and all the rules in `Base`/`Best Practic
 | :wrench: | [lodash-template/script-indent](./docs/rules/script-indent.md) | enforce consistent indentation to script in micro-template tag. |
 | :wrench: | [lodash-template/template-tag-spacing](./docs/rules/template-tag-spacing.md) | enforce unified spacing in micro-template tag. (ex. :ok: `<%= prop %>`, :ng: `<%=prop%>`) |
 
-### Uncategorized
+### Recommended with HTML template (Improve Readability with HTML template)
+
+Enforce all the rules in this category and all the rules in `Base`/`Best Practices`/`Recommended` categories with:
+
+```json
+{
+  "extends": "plugin:lodash-template/recommended-with-html"
+}
+```
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
 | :wrench: | [lodash-template/html-closing-bracket-spacing](./docs/rules/html-closing-bracket-spacing.md) | require or disallow a space before tag's closing brackets |
 | :wrench: | [lodash-template/html-indent](./docs/rules/html-indent.md) | enforce consistent HTML indentation. |
 | :wrench: | [lodash-template/no-multi-spaces-in-html-tag](./docs/rules/no-multi-spaces-in-html-tag.md) | disallow multiple spaces in html tags. (ex. :ng: `<input···type="text">`) |
+
+### Uncategorized
+
+|    | Rule ID | Description |
+|:---|:--------|:------------|
 |  | [lodash-template/prefer-escape-template-interpolations](./docs/rules/prefer-escape-template-interpolations.md) | prefer escape micro-template interpolations. (ex. :ok: `<%- ... %>`, :ng: `<%= ... %>`) |
 
 <!--RULES_TABLE_END-->

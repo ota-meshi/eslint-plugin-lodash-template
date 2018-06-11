@@ -6,6 +6,8 @@ const categoryTitles = {
     base: "Base Rules (Enabling Correct ESLint Parsing)",
     "best-practices": "Best Practices (Improve Development Experience)",
     recommended: "Recommended (Improve Readability)",
+    "recommended-with-html":
+        "Recommended with HTML template (Improve Readability with HTML template)",
 }
 
 const categoryConfigDescriptions = {
@@ -14,6 +16,8 @@ const categoryConfigDescriptions = {
         "Enforce all the rules in this category and all the rules in `Base` category with:",
     recommended:
         "Enforce all the rules in this category and all the rules in `Base`/`Best Practices` categories with:",
+    "recommended-with-html":
+        "Enforce all the rules in this category and all the rules in `Base`/`Best Practices`/`Recommended` categories with:",
 }
 
 const categoryIds = Object.keys(categoryTitles)

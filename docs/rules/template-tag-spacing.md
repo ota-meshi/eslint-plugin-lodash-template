@@ -1,6 +1,6 @@
 # enforce unified spacing in micro-template tag. (ex. :ok: `<%= prop %>`, :ng: `<%=prop%>`) (lodash-template/template-tag-spacing)
 
-- :gear: This rule is included in `"plugin:lodash-template/recommended"` and `"plugin:lodash-template/all"`.
+- :gear: This rule is included in all of `"plugin:lodash-template/recommended"`, `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
 - :wrench: The `--fix` option on the [command line](http://eslint.org/docs/user-guide/command-line-interface#fix) can automatically fix some of the problems reported by this rule.
 
 ## Rule Details
