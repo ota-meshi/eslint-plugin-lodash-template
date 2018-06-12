@@ -161,6 +161,7 @@ Enforce all the rules in this category and all the rules in `Base`/`Best Practic
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
+|  | [lodash-template/no-duplicate-attributes](./docs/rules/no-duplicate-attributes.md) | disallow duplication of HTML attributes. (ex. :ng: `<div foo foo>`) |
 |  | [lodash-template/prefer-escape-template-interpolations](./docs/rules/prefer-escape-template-interpolations.md) | prefer escape micro-template interpolations. (ex. :ok: `<%- ... %>`, :ng: `<%= ... %>`) |
 
 <!--RULES_TABLE_END-->
