@@ -2,7 +2,7 @@
 
 - :gear: This rule is included in `"plugin:lodash-template/all"`.
 
-## :book: Rule Details
+## Rule Details
 
 This rule reports duplicate attributes.
 
