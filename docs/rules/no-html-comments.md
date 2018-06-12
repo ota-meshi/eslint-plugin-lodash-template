@@ -11,3 +11,9 @@ This rule reports HTML comments.
 ```html
 <!-- comment -->
 ```
+
+:+1: Examples of **correct** code for this rule:
+
+```html
+<% /* comment */ %>
+```

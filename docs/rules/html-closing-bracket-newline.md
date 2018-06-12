@@ -49,10 +49,10 @@ This rule enforces a line break (or no line break) before tag's closing brackets
 
 ```json
 {
-    "lodash-template/html-closing-bracket-newline": ["error", {
-        "singleline": "never",
-        "multiline": "never"
-    }]
+  "lodash-template/html-closing-bracket-newline": ["error", {
+    "singleline": "never",
+    "multiline": "never"
+  }]
 }
 ```
 

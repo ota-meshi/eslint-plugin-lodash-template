@@ -42,11 +42,11 @@ This rule enforces consistent spacing style before closing brackets `>` of tags.
 
 ```json
 {
-    "lodash-template/html-closing-bracket-spacing": ["error", {
-        "startTag": "always" | "never",
-        "endTag": "always" | "never",
-        "selfClosingTag": "always" | "never"
-    }]
+  "lodash-template/html-closing-bracket-spacing": ["error", {
+    "startTag": "always" | "never",
+    "endTag": "always" | "never",
+    "selfClosingTag": "always" | "never"
+  }]
 }
 ```
 

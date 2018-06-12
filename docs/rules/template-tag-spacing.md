@@ -24,8 +24,11 @@ This rule aims to enforce unified spacing in micro-template interpolate/evaluate
 
 Default spacing is set to `always`
 
-```
-'lodash-template/micro-template-interpolation-spacing': [2, 'always'|'never']
+
+```json
+{
+  "lodash-template/micro-template-interpolation-spacing": ["error", "always"|"never"]
+}
 ```
 
 ### `"always"` - Expect one space between expression and curly brackets.
