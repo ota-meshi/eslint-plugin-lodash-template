@@ -3,17 +3,14 @@
 - :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
 - :wrench: The `--fix` option on the [command line](http://eslint.org/docs/user-guide/command-line-interface#fix) can automatically fix some of the problems reported by this rule.
 
+## Rule Details
+
 This rule enforces consistent spacing style before closing brackets `>` of tags.
 
 ```html
 <div class="foo"> or <div class="foo" >
 <input class="foo"/> or <input class="foo" />
 ```
-
-## Rule Details
-
-This rule has options.
-
 
 :-1: Examples of **incorrect** code for this rule:
 
