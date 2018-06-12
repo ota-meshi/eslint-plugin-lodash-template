@@ -7,7 +7,7 @@ This rule enforces consistent spacing style before closing brackets `>` of tags.
 
 ```html
 <div class="foo"> or <div class="foo" >
-<div class="foo"/> or <div class="foo" />
+<input class="foo"/> or <input class="foo" />
 ```
 
 ## Rule Details
