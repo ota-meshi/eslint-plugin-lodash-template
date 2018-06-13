@@ -39,6 +39,7 @@ tester.run("attribute-value-quote", rule, {
             code: "<body><div class='foo'></div><div class=\"foo\"></div></body>",
             options: ["either"],
         },
+        "<body><a download>download</a></body>",
     ],
     invalid: [
         {
