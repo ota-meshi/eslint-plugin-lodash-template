@@ -70,5 +70,15 @@ tester.run("attribute-name-casing", rule, {
                 line: 1,
             }],
         },
+        {
+            filename: "test.html",
+            code: "<body><div><div MY-PROP<%='-JS'%>=\"prop\"></div></div></body>",
+            output: null,
+            errors: [{
+                message: "Attribute `MY-PROP` must be 'kebab-case'.",
+                type: "HTMLIdentifier",
+                line: 1,
+            }],
+        },
     ],
 })
