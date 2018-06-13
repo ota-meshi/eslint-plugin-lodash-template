@@ -22,9 +22,10 @@ This rule enforces the quotes style of HTML attributes.
 
 ## Options
 
-- `"double"` (default) ... requires double quotes.
+- `"double"` ... requires double quotes.
 - `"single"` ... requires single quotes.
-- `"either"` ... requires single quotes or double quotes.
+- `"either"` ... requires double quotes or single quotes.
+- `"prefer-double"` (default) ... requires double quotes or single quotes. if do not need escape double quotes, requires double quotes.
 
 :-1: Examples of **incorrect** code for this rule with `"single"` option:
 

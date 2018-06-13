@@ -57,8 +57,8 @@ tester.run("attribute-value-quote", rule, {
         {
             filename: "test.html",
             code: "<body><div class=foo+\"bar\"></div></body>",
-            output: "<body><div class=\"foo+&quot;bar&quot;\"></div></body>",
-            errors: ["Expected to be enclosed by double quotes."],
+            output: "<body><div class='foo+\"bar\"'></div></body>",
+            errors: ["Expected to be enclosed by single quotes."],
         },
         {
             filename: "test.html",
