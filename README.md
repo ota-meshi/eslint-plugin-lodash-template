@@ -154,6 +154,7 @@ Enforce all the rules in this category and all the rules in `Base`/`Best Practic
 |:---|:--------|:------------|
 | :wrench: | [lodash-template/attribute-name-casing](./docs/rules/attribute-name-casing.md) | enforce attribute name casing. (ex. :ok: `<div foo-bar>` :ng: `<div fooBar>` `<div FOO-BAR>`) |
 | :wrench: | [lodash-template/attribute-value-quote](./docs/rules/attribute-value-quote.md) | enforce quotes style of HTML attributes. (ex. :ok: `<div class="abc">` :ng: `<div class='abc'>` `<div class=abc>`) |
+| :wrench: | [lodash-template/element-name-casing](./docs/rules/element-name-casing.md) | enforce element name casing. (ex. :ok: `<xxx-element>` :ng: `<xxxElement>` `<DIV>`) |
 | :wrench: | [lodash-template/html-closing-bracket-newline](./docs/rules/html-closing-bracket-newline.md) | require or disallow a line break before tag's closing brackets |
 | :wrench: | [lodash-template/html-closing-bracket-spacing](./docs/rules/html-closing-bracket-spacing.md) | require or disallow a space before tag's closing brackets. (ex. :ok: `<input>` `<input·/>` :ng: `<input·>` `<input/>`) |
 | :wrench: | [lodash-template/html-indent](./docs/rules/html-indent.md) | enforce consistent HTML indentation. |
