@@ -1,4 +1,4 @@
-# require or disallow a space before tag's closing brackets. (ex. :ng: `<input·>` `<input/>`) (lodash-template/html-closing-bracket-spacing)
+# require or disallow a space before tag's closing brackets. (ex. :ok: `<input>` `<input·/>` :ng: `<input·>` `<input/>`) (lodash-template/html-closing-bracket-spacing)
 
 - :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
 - :wrench: The `--fix` option on the [command line](http://eslint.org/docs/user-guide/command-line-interface#fix) can automatically fix some of the problems reported by this rule.
