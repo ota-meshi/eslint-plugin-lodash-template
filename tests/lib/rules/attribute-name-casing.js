@@ -28,6 +28,11 @@ tester.run("attribute-name-casing", rule, {
             code: "<body><div data-id=\"foo\" aria-test=\"bar\"><a onclick=\"\" my-prop=\"prop\"></a></div></body>",
         },
         "<body><div><div data-id aria-test my-prop></div></div></body>",
+        {
+            filename: "test.html",
+            options: [{ ignore: ["onClick"] }],
+            code: "<body><div onClick=\"onClick\"></div></body>",
+        },
     ],
 
     invalid: [
