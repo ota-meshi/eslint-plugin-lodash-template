@@ -54,7 +54,7 @@ module.exports = {
   extends: [
     // add more generic rulesets here, such as:
     // 'eslint:recommended',
-    'plugin:lodash-template/recommended'
+    'plugin:lodash-template/recommended-with-html'
   ],
   rules: {
     // override/add rules settings here, such as:
