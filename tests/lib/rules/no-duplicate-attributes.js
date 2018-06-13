@@ -34,6 +34,8 @@ tester.run("no-duplicate-attributes", rule, {
             filename: "test.html",
             code: "<body><div><div style class></div></div></body>",
         },
+        // eslint-disable-next-line no-irregular-whitespace
+        "<label id='item'　class=\"class\">test</label>",
     ],
     invalid: [
         {
