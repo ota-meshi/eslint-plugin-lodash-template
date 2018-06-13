@@ -47,7 +47,7 @@ An attribute is considered to be in a new line when there is a line break betwee
 
 ```json
 {
-  "lodash-template/max-attributes-per-line": [2, {
+  "lodash-template/max-attributes-per-line": ["error", {
     "singleline": 1,
     "multiline": {
       "max": 1,
