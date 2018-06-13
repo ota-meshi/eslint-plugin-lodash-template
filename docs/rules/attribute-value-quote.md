@@ -22,6 +22,13 @@ This rule enforces the quotes style of HTML attributes.
 
 ## Options
 
+
+```json
+{
+  "lodash-template/attribute-value-quote": ["error", "double" | "single" | "either" | "prefer-double"]
+}
+```
+
 - `"double"` ... requires double quotes.
 - `"single"` ... requires single quotes.
 - `"either"` ... requires double quotes or single quotes.

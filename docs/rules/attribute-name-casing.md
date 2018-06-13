@@ -20,3 +20,19 @@ This rule enforces attribute name casing style (kebab-case).
 ```html
 <div foo-bar="abc">
 ```
+
+## Options
+
+```json
+{
+  "lodash-template/attribute-name-casing": ["error", {
+    "ignore": [],
+  }]
+}
+```
+
+:+1: Examples of **correct** code for this rule with `"ignore": ["onClick"]` option:
+
+```html
+<div onClick="abc">
+```
