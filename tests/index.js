@@ -4,6 +4,7 @@ const assert = require("assert")
 const path = require("path")
 const eslint = require("eslint")
 const fs = require("fs-extra")
+const plugin = require("..")
 
 const CLIEngine = eslint.CLIEngine
 
@@ -28,6 +29,41 @@ function assertMessages(actual, expected) {
     assert.strictEqual(actual.length, expected.length)
 }
 
+describe("index test", () => {
+    it("processor extension should be html", () => {
+        assert(Object.keys(plugin.processors).length, 1)
+        assert.ok(Boolean(plugin.processors[".html"]), "don't have html")
+    })
+    it("After adding the target extension, it should be included in the processor extension", () => {
+        plugin.addTargetExtensions(".ejs")
+
+        assert(Object.keys(plugin.processors).length, 2)
+        assert.ok(Boolean(plugin.processors[".html"]), "don't have html")
+        assert.ok(Boolean(plugin.processors[".ejs"]), "don't have ejs")
+
+        plugin.addTargetExtensions([".ejb"])
+
+        assert(Object.keys(plugin.processors).length, 3)
+        assert.ok(Boolean(plugin.processors[".html"]), "don't have html")
+        assert.ok(Boolean(plugin.processors[".ejs"]), "don't have ejs")
+        assert.ok(Boolean(plugin.processors[".ejb"]), "don't have ejb")
+
+        plugin.setTargetExtensions(".html")
+    })
+
+
+    it("After set the target extension, it should be included in the processor extension", () => {
+        plugin.setTargetExtensions(".ejs")
+
+        assert(Object.keys(plugin.processors).length, 1)
+        assert.ok(Boolean(plugin.processors[".ejs"]), "don't have ejs")
+
+        plugin.setTargetExtensions([".html"])
+
+        assert(Object.keys(plugin.processors).length, 1)
+        assert.ok(Boolean(plugin.processors[".html"]), "don't have html")
+    })
+})
 
 describe("Basic tests", () => {
     beforeEach(() => {
@@ -152,6 +188,12 @@ describe("Basic tests", () => {
                     line: 11,
                     message: "Expected 1 space before '%>', but no spaces found.",
                     ruleId: "local/template-tag-spacing",
+                },
+                {
+                    column: 63,
+                    line: 11,
+                    message: "Irregular whitespace (\\u3000) not allowed.",
+                    ruleId: "local/no-irregular-whitespace",
                 },
                 {
                     column: 10,
