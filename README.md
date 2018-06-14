@@ -78,6 +78,7 @@ This plugin does special handling for the following rule warnings in the templat
 | `no-multi-spaces` | Disable warnings |
 | `no-unused-expressions` | Disable warnings within interpolate(<%=...%>) |
 | `quotes` | Disable warnings if doublequote is set |
+| `no-irregular-whitespace` | Disable warnings outside template tags |
 
 ## Configs
 
@@ -136,6 +137,7 @@ Enforce all the rules in this category and all the rules in `Base`/`Best Practic
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
+| :wrench: | [lodash-template/no-irregular-whitespace](./docs/rules/no-irregular-whitespace.md) | disallow irregular whitespace outside the template tags. |
 | :wrench: | [lodash-template/no-multi-spaces-in-script](./docs/rules/no-multi-spaces-in-script.md) | disallow multiple spaces in script. (ex. :ng: `<% if···(test)···{ %>`) |
 | :wrench: | [lodash-template/script-indent](./docs/rules/script-indent.md) | enforce consistent indentation to script in micro-template tag. |
 | :wrench: | [lodash-template/template-tag-spacing](./docs/rules/template-tag-spacing.md) | enforce unified spacing in micro-template tag. (ex. :ok: `<%= prop %>`, :ng: `<%=prop%>`) |
