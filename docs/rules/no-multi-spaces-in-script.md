@@ -38,3 +38,7 @@ var arr = [1, 2];
 a ? b: c
 %>
 ```
+
+## Further Reading
+
+* [ESLint `no-multi-spaces` rule](https://eslint.org/docs/rules/no-multi-spaces)
