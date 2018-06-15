@@ -160,6 +160,7 @@ Enforce all the rules in this category and all the rules in `Base`/`Best Practic
 | :wrench: | [lodash-template/html-closing-bracket-newline](./docs/rules/html-closing-bracket-newline.md) | require or disallow a line break before tag's closing brackets |
 | :wrench: | [lodash-template/html-closing-bracket-spacing](./docs/rules/html-closing-bracket-spacing.md) | require or disallow a space before tag's closing brackets. (ex. :ok: `<input>` `<input·/>` :ng: `<input·>` `<input/>`) |
 | :wrench: | [lodash-template/html-comment-content-newline](./docs/rules/html-comment-content-newline.md) | require or disallow a line break before and after HTML comment contents |
+| :wrench: | [lodash-template/html-comment-spacing](./docs/rules/html-comment-spacing.md) | enforce unified spacing in HTML comment. (ex. :ok: `<!-- comment -->`, :ng: `<!--comment-->`) |
 | :wrench: | [lodash-template/html-content-newline](./docs/rules/html-content-newline.md) | require or disallow a line break before and after HTML contents |
 | :wrench: | [lodash-template/html-indent](./docs/rules/html-indent.md) | enforce consistent HTML indentation. |
 | :wrench: | [lodash-template/max-attributes-per-line](./docs/rules/max-attributes-per-line.md) | enforce the maximum number of HTML attributes per line |
