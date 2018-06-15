@@ -23,6 +23,16 @@ This rule disallows the irregular whitespaces.
 
 ## Options
 
+```json
+{
+  "lodash-template/no-irregular-whitespace": ["error", {
+    "skipComments": false,
+    "skipAttrValues": false,
+    "skipText": false
+  }]
+}
+```
+
 This rule has an object option for exceptions:
 
 * `"skipComments": true` allows any whitespace characters in HTML comments

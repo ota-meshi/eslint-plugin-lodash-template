@@ -27,7 +27,7 @@ Default spacing is set to `always`
 
 ```json
 {
-  "lodash-template/micro-template-interpolation-spacing": ["error", "always"|"never"]
+  "lodash-template/html-comment-spacing": ["error", "always"|"never"]
 }
 ```
 
