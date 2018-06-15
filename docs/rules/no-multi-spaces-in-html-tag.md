@@ -1,4 +1,4 @@
-# disallow multiple spaces in html tags. (ex. :ng: `<input···type="text">`) (lodash-template/no-multi-spaces-in-html-tag)
+# disallow multiple spaces in HTML tags. (ex. :ng: `<input···type="text">`) (lodash-template/no-multi-spaces-in-html-tag)
 
 - :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
 - :wrench: The `--fix` option on the [command line](http://eslint.org/docs/user-guide/command-line-interface#fix) can automatically fix some of the problems reported by this rule.

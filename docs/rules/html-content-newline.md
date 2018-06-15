@@ -1,11 +1,11 @@
-# require or disallow a line break before and after html contents (lodash-template/html-content-newline)
+# require or disallow a line break before and after HTML contents (lodash-template/html-content-newline)
 
 - :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
 - :wrench: The `--fix` option on the [command line](http://eslint.org/docs/user-guide/command-line-interface#fix) can automatically fix some of the problems reported by this rule.
 
 ## Rule Details
 
-This rule enforces a line break (or no line break) before and after html contents.
+This rule enforces a line break (or no line break) before and after HTML contents.
 
 
 :-1: Examples of **incorrect** for this rule:
@@ -74,7 +74,7 @@ This rule enforces a line break (or no line break) before and after html content
 :+1: Examples of **correct** code:
 
 ```html
-<% /*eslint lodash-template/html-content-newline: ["error", { "singleline": "always", "multiline": "never"}] */ */ %>
+<% /*eslint lodash-template/html-content-newline: ["error", { "singleline": "always", "multiline": "never"}] */ %>
 
 <div class="panel">
   content
