@@ -13,6 +13,10 @@ This rule enforces a line break (or no line break) before and after HTML comment
 ```html
 <!--
   comment
+-->
+
+<!--
+  comment
   comment -->
 ```
 
@@ -20,10 +24,6 @@ This rule enforces a line break (or no line break) before and after HTML comment
 
 ```html
 <!-- comment -->
-
-<!--
-  comment
--->
 
 <!--
   comment
@@ -37,15 +37,15 @@ This rule enforces a line break (or no line break) before and after HTML comment
 ```json
 {
     "lodash-template/html-comment-content-newline": ["error", {
-        "singleline": "ignore",
+        "singleline": "never",
         "multiline": "always",
     }]
 }
 ```
 
 - `singleline` ... the configuration for single-line comments.
-    - `"ignore"` ... Don't enforce line breaks style before and after the comments. This is the default.
-    - `"never"` ... disallow line breaks before and after the comments.
+    - `"ignore"` ... Don't enforce line breaks style before and after the comments.
+    - `"never"` ... disallow line breaks before and after the comments. This is the default.
     - `"always"` ... require one line break before and after the comments.
 - `multiline` ... the configuration for multiline comments.
     - `"ignore"` ... Don't enforce line breaks style before and after the comments.
@@ -78,3 +78,7 @@ This rule enforces a line break (or no line break) before and after HTML comment
 <!-- comment
   comment -->
 ```
+
+## Further Reading
+
+* [HTML5 Style Guide - W3Schools *HTML Comments*](https://www.w3schools.com/html/html5_syntax.asp)

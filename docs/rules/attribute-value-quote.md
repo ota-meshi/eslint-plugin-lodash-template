@@ -60,4 +60,7 @@ This rule enforces the quotes style of HTML attributes.
 <img src='./logo.png'>
 ```
 
+## Further Reading
 
+* [Google HTML/CSS Style Guide *HTML Quotation Marks*](https://google.github.io/styleguide/htmlcssguide.html#HTML_Quotation_Marks)
+* [HTML5 Style Guide - W3Schools *Quote Attribute Values*](https://www.w3schools.com/html/html5_syntax.asp)

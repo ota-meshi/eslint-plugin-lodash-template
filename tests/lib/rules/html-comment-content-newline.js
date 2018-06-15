@@ -16,11 +16,6 @@ tester.run("html-comment-content-newline", rule, {
         `
           <!--
             comment
-          -->
-        `,
-        `
-          <!--
-            comment
             comment
           -->
         `,
@@ -45,6 +40,19 @@ tester.run("html-comment-content-newline", rule, {
                 multiline: "never",
             }],
         },
+        {
+            code: `
+            <!--
+              comment
+            -->
+            <!-- comment
+              comment -->
+            `,
+            options: [{
+                singleline: "ignore",
+                multiline: "ignore",
+            }],
+        },
         // empty
         "<!---->",
         {
@@ -56,6 +64,18 @@ tester.run("html-comment-content-newline", rule, {
         },
     ],
     invalid: [
+        {
+            code: `
+            <!--
+              comment
+            -->
+            `,
+            output: `
+            <!--comment-->
+            `,
+            errors: ["Expected no line breaks after `<!--`, but 1 line break found.", "Expected no line breaks before `-->`, but 1 line break found.",
+            ],
+        },
         {
             code: `
             <!--comment

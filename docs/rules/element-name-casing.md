@@ -22,3 +22,8 @@ This rule enforces element name casing style (kebab-case).
 
 <xxx-element>
 ```
+
+
+## Further Reading
+
+* [Web Components | MDN  *Using custom elements*](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)
