@@ -27,7 +27,7 @@ tester.run("template-tag-spacing", rule, {
         },
         {
             code:
-                "<body> <div :style=\"  \" :class=\"       foo      \" v-if=foo   ></div>      </body>",
+                "<body> <div style=\"  \" class=\"       foo      \" attr=foo   ></div>      </body>",
             filename: "test.html",
         },
         {
