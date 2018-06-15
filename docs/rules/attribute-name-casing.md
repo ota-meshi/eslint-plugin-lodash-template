@@ -40,5 +40,5 @@ This rule enforces attribute name casing style (kebab-case).
 ## Further Reading
 
 * [Google HTML/CSS Style Guide *Capitalization*](https://google.github.io/styleguide/htmlcssguide.html#Capitalization)
-* [HTML - MDN - Mozilla  *`data-*`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
+* [HTML - MDN - Mozilla *`data-*`*](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
 * [HTML5 *Embedding custom non-visible data with the `data-*` attributes*](https://www.w3.org/TR/html5/dom.html#embedding-custom-non-visible-data-with-the-data-attributes)
