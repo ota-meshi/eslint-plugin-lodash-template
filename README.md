@@ -154,15 +154,16 @@ Enforce all the rules in this category and all the rules in `Base`/`Best Practic
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
-| :wrench: | [lodash-template/attribute-name-casing](./docs/rules/attribute-name-casing.md) | enforce attribute name casing. (ex. :ok: `<div foo-bar>` :ng: `<div fooBar>` `<div FOO-BAR>`) |
+| :wrench: | [lodash-template/attribute-name-casing](./docs/rules/attribute-name-casing.md) | enforce HTML attribute name casing. (ex. :ok: `<div foo-bar>` :ng: `<div fooBar>` `<div FOO-BAR>`) |
 | :wrench: | [lodash-template/attribute-value-quote](./docs/rules/attribute-value-quote.md) | enforce quotes style of HTML attributes. (ex. :ok: `<div class="abc">` :ng: `<div class='abc'>` `<div class=abc>`) |
-| :wrench: | [lodash-template/element-name-casing](./docs/rules/element-name-casing.md) | enforce element name casing. (ex. :ok: `<xxx-element>` :ng: `<xxxElement>` `<DIV>`) |
+| :wrench: | [lodash-template/element-name-casing](./docs/rules/element-name-casing.md) | enforce HTML element name casing. (ex. :ok: `<xxx-element>` :ng: `<xxxElement>` `<DIV>`) |
 | :wrench: | [lodash-template/html-closing-bracket-newline](./docs/rules/html-closing-bracket-newline.md) | require or disallow a line break before tag's closing brackets |
 | :wrench: | [lodash-template/html-closing-bracket-spacing](./docs/rules/html-closing-bracket-spacing.md) | require or disallow a space before tag's closing brackets. (ex. :ok: `<input>` `<input·/>` :ng: `<input·>` `<input/>`) |
-| :wrench: | [lodash-template/html-content-newline](./docs/rules/html-content-newline.md) | require or disallow a line break before and after html contents |
+| :wrench: | [lodash-template/html-comment-content-newline](./docs/rules/html-comment-content-newline.md) | require or disallow a line break before and after HTML comment contents |
+| :wrench: | [lodash-template/html-content-newline](./docs/rules/html-content-newline.md) | require or disallow a line break before and after HTML contents |
 | :wrench: | [lodash-template/html-indent](./docs/rules/html-indent.md) | enforce consistent HTML indentation. |
-| :wrench: | [lodash-template/max-attributes-per-line](./docs/rules/max-attributes-per-line.md) | enforce the maximum number of attributes per line |
-| :wrench: | [lodash-template/no-multi-spaces-in-html-tag](./docs/rules/no-multi-spaces-in-html-tag.md) | disallow multiple spaces in html tags. (ex. :ng: `<input···type="text">`) |
+| :wrench: | [lodash-template/max-attributes-per-line](./docs/rules/max-attributes-per-line.md) | enforce the maximum number of HTML attributes per line |
+| :wrench: | [lodash-template/no-multi-spaces-in-html-tag](./docs/rules/no-multi-spaces-in-html-tag.md) | disallow multiple spaces in HTML tags. (ex. :ng: `<input···type="text">`) |
 
 ### Uncategorized
 

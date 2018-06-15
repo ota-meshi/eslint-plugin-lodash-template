@@ -1,18 +1,7 @@
-/**
- * @author Yosuke Ota
- */
 "use strict"
-
-// ------------------------------------------------------------------------------
-// Requirements
-// ------------------------------------------------------------------------------
 
 const RuleTester = require("eslint").RuleTester
 const rule = require("../../../lib/rules/html-content-newline")
-
-// ------------------------------------------------------------------------------
-// Tests
-// ------------------------------------------------------------------------------
 
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
