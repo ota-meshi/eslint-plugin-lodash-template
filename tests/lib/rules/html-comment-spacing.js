@@ -82,6 +82,10 @@ tester.run("html-comment-spacing", rule, {
             options: ["never"],
             filename: "test.html",
         },
+        {
+            code: "<!comment>",
+            filename: "test.html",
+        },
     ],
 
     invalid: [

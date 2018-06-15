@@ -165,6 +165,7 @@ Enforce all the rules in this category and all the rules in `Base`/`Best Practic
 | :wrench: | [lodash-template/html-indent](./docs/rules/html-indent.md) | enforce consistent HTML indentation. |
 | :wrench: | [lodash-template/max-attributes-per-line](./docs/rules/max-attributes-per-line.md) | enforce the maximum number of HTML attributes per line |
 | :wrench: | [lodash-template/no-multi-spaces-in-html-tag](./docs/rules/no-multi-spaces-in-html-tag.md) | disallow multiple spaces in HTML tags. (ex. :ng: `<input···type="text">`) |
+| :wrench: | [lodash-template/no-space-attribute-equal-sign](./docs/rules/no-space-attribute-equal-sign.md) | disallow spacing around equal signs in attribute. (ex. :ok: `<div class="item">` :ng: `<div class = "item">`) |
 
 ### Uncategorized
 
