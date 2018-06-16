@@ -123,6 +123,7 @@ Enforce all the rules in this category and all the rules in `Base` category with
 |:---|:--------|:------------|
 |  | [lodash-template/no-empty-template-tag](./docs/rules/no-empty-template-tag.md) | disallow empty micro-template tag. (ex. :ng: `<% %>`) |
 |  | [lodash-template/no-html-comments](./docs/rules/no-html-comments.md) | disallow HTML comments. (ex. :ng: `<!-- comment -->`) |
+| :wrench: | [lodash-template/no-invalid-template-interpolation](./docs/rules/no-invalid-template-interpolation.md) | disallow other than expression in micro-template interpolation. (ex. :ng: `<%= if (test) { %>`) |
 |  | [lodash-template/no-warning-html-comments](./docs/rules/no-warning-html-comments.md) | disallow specified warning terms in HTML comments. (ex. :ng: `<!-- TODO:task -->`) |
 
 ### Recommended (Improve Readability)
