@@ -1,6 +1,8 @@
 # AST for HTML
 
-- [Node](#node)
+
+- [HTMLToken](#htmltoken)
+- [HTMLNode](#htmlnode)
 - [HTMLDocument](#htmldocument)
 - [HTMLDocumentFragment](#htmldocumentfragment)
 - [HTMLDocumentType](#htmldocumenttype)
@@ -37,11 +39,24 @@ export function create(context) {
 
 See details: [../../lib/ast/html-nodes.js](../../lib/ast/html-nodes.js)
 
-
-## Node
+## HTMLToken
 
 ```ts
-extend interface Node {
+extend interface HTMLToken {
+    range: [ number ],
+    htmlValue: string,
+    value: string,
+}
+```
+
+- The `range` property is an array which has 2 integers.
+  The 1st integer is the offset of the start location of the node.
+  The 2nd integer is the offset of the end location of the node.
+
+## HTMLNode
+
+```ts
+extend interface HTMLNode {
     range: [ number ]
 }
 ```
@@ -53,7 +68,7 @@ extend interface Node {
 ## HTMLDocument
 
 ```ts
-interface HTMLDocument <: Node {
+interface HTMLDocument <: HTMLNode {
     type: "HTMLDocument",
     children: [ HTMLElement | HTMLText | HTMLComment ]
 }
@@ -64,7 +79,7 @@ interface HTMLDocument <: Node {
 ## HTMLDocumentFragment
 
 ```ts
-interface HTMLDocumentFragment <: Node  {
+interface HTMLDocumentFragment <: HTMLNode  {
     type: "HTMLDocumentFragment",
     children: [ HTMLElement | HTMLText | HTMLComment ]
 }
@@ -75,7 +90,7 @@ interface HTMLDocumentFragment <: Node  {
 ## HTMLDocumentType
 
 ```ts
-interface HTMLDocumentType <: Node  {
+interface HTMLDocumentType <: HTMLNode  {
     type: "HTMLDocumentType",
     name: string,
     publicId: string,
@@ -88,9 +103,11 @@ interface HTMLDocumentType <: Node  {
 ## HTMLComment
 
 ```ts
-interface HTMLComment <: Node  {
+interface HTMLComment <: HTMLNode  {
     type: "HTMLComment",
-    value: string
+    value: string,
+    commentOpen: HTMLToken | null,
+    commentClose: HTMLToken | null,
 }
 ```
 
@@ -99,7 +116,7 @@ interface HTMLComment <: Node  {
 ## HTMLText
 
 ```ts
-interface HTMLText <: Node  {
+interface HTMLText <: HTMLNode  {
     type: "HTMLText",
     value: string
 }
@@ -110,7 +127,7 @@ interface HTMLText <: Node  {
 ## HTMLElement
 
 ```ts
-interface HTMLElement <: Node  {
+interface HTMLElement <: HTMLNode  {
     type: "HTMLElement",
     name: string,
     children: [ HTMLElement | HTMLText | HTMLComment ]
@@ -124,9 +141,13 @@ interface HTMLElement <: Node  {
 ## HTMLStartTag
 
 ```ts
-interface HTMLStartTag <: Node  {
+interface HTMLStartTag <: HTMLNode  {
     type: "HTMLStartTag",
-    attributes: [ HTMLAttribute ]
+    attributes: [ HTMLAttribute ],
+    tagOpen: HTMLToken,
+    tagClose: HTMLToken,
+    selfClosing: boolean,
+    ignoredAttributes: [ HTMLAttribute ],
 }
 ```
 
@@ -135,10 +156,13 @@ interface HTMLStartTag <: Node  {
 ## HTMLAttribute
 
 ```ts
-interface HTMLAttribute <: Node  {
+interface HTMLAttribute <: HTMLNode  {
     type: "HTMLAttribute",
     key: string,
-    vakue: string
+    vakue: string,
+    keyToken: HTMLToken,
+    eqToken: HTMLToken | null,
+    valueToken: HTMLToken | null,
 }
 ```
 
@@ -147,8 +171,10 @@ interface HTMLAttribute <: Node  {
 ## HTMLEndTag
 
 ```ts
-interface HTMLEndTag <: Node  {
-    type: "HTMLEndTag"
+interface HTMLEndTag <: HTMLNode  {
+    type: "HTMLEndTag",
+    tagOpen: HTMLToken,
+    tagClose: HTMLToken,
 }
 ```
 
