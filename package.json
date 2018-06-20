@@ -10,7 +10,8 @@
     "test": "nyc --reporter=lcov npm run test:base -- --timeout 60000",
     "test:d": "mocha --inspect --debug-brk \"tests/**/*.js\" --reporter dot",
     "update": "node ./tools/update.js && npm run lint:fix && npm run test",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "new": "node ./tools/new-rule.js"
   },
   "files": [
     "lib"

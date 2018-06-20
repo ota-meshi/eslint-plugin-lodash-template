@@ -57,21 +57,12 @@ tester.run("no-invalid-template-interpolation", rule, {
         `
         <div><%= 'str' %></div>
         `,
-        {
-            code:
-            `
-            <div><%= a;/*comment*/ %></div>
-            `,
-            options: [{ allowSemi: true }],
-        },
-        {
-            code:
-            `
-            <div><%= a; %></div>
-            `,
-            options: [{ allowSemi: true }],
-        },
-
+        `
+        <div><%= a;/*comment*/ %></div>
+        `,
+        `
+        <div><%= a; %></div>
+        `,
     ],
     invalid: [
         {
@@ -136,36 +127,19 @@ tester.run("no-invalid-template-interpolation", rule, {
         {
             code:
             `
-            <div><%= a;/*comment*/ %></div>
-            `,
-            output:
-            `
-            <div><%= a/*comment*/ %></div>
-            `,
-            errors: [
-                "Expected an expression, but a not expressions.",
-            ],
-        },
-        {
-            code:
-            `
-            <div><%= a; %></div>
-            `,
-            output:
-            `
-            <div><%= a %></div>
-            `,
-            errors: [
-                "Expected an expression, but a not expressions.",
-            ],
-        },
-        {
-            code:
-            `
             <div><%= a;; %></div>
             `,
             output: null,
-            options: [{ allowSemi: true }],
+            errors: [
+                "Expected an expression, but a not expressions.",
+            ],
+        },
+        {
+            code:
+            `
+            <div><%= ;/**/ %></div>
+            `,
+            output: null,
             errors: [
                 "Expected an expression, but a not expressions.",
             ],
