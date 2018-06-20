@@ -13,7 +13,6 @@ ESLint plugin for John Resig-style micro templating.
 
 It can be used in projects using [Underscore.js](http://underscorejs.org/#template) and [Lodash](https://lodash.com/docs/#template) 's template.
 
-
 This plugin supports code checking for templates like the examples below.
 
 ```html
@@ -32,6 +31,8 @@ This plugin supports code checking for templates like the examples below.
   <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
 <% } %>
 ```
+
+[***Playground on the Web***](https://ota-meshi.github.io/eslint-plugin-lodash-template/)
 
 output sample(on SublimeText):
 
