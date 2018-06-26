@@ -293,6 +293,29 @@ content
                 },
             ],
         },
+        {
+            code: `
+        <body>
+          <div>
+
+          <!--comment-->
+
+          </div>
+        </body>
+      `,
+            options: [{
+                singleline: "never",
+            }],
+            output: `
+        <body>
+          <div><!--comment--></div>
+        </body>
+      `,
+            errors: [
+                "Expected no line breaks after closing bracket of the \"div\" element, but 2 line breaks found.",
+                "Expected no line breaks before opening bracket of the \"div\" element, but 2 line breaks found.",
+            ],
+        },
         // one error
         {
             code: `

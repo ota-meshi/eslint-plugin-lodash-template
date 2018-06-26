@@ -95,7 +95,7 @@ describe("Basic tests", () => {
             assertMessages(messages, [
                 {
                     ruleId: "local/template-tag-spacing",
-                    message: "Expected 1 space after '<%', but no spaces found.",
+                    message: "Expected 1 space after `<%`, but no spaces found.",
                     column: 5,
                     endColumn: 7,
                     endLine: 4,
@@ -127,7 +127,7 @@ describe("Basic tests", () => {
                 },
                 {
                     ruleId: "local/template-tag-spacing",
-                    message: "Expected 1 space before '%>', but no spaces found.",
+                    message: "Expected 1 space before `%>`, but no spaces found.",
                     line: 5,
                     endLine: 5,
                     column: 21,
@@ -138,7 +138,7 @@ describe("Basic tests", () => {
                     endColumn: 13,
                     endLine: 6,
                     line: 6,
-                    message: "Expected 1 space before '%>', but no spaces found.",
+                    message: "Expected 1 space before `%>`, but no spaces found.",
                     ruleId: "local/template-tag-spacing",
                 },
                 {
@@ -146,7 +146,7 @@ describe("Basic tests", () => {
                     endColumn: 23,
                     endLine: 10,
                     line: 10,
-                    message: "Expected 1 space after '<%-', but no spaces found.",
+                    message: "Expected 1 space after `<%-`, but no spaces found.",
                     ruleId: "local/template-tag-spacing",
                 },
                 {
@@ -154,7 +154,7 @@ describe("Basic tests", () => {
                     endColumn: 29,
                     endLine: 10,
                     line: 10,
-                    message: "Expected 1 space before '%>', but no spaces found.",
+                    message: "Expected 1 space before `%>`, but no spaces found.",
                     ruleId: "local/template-tag-spacing",
                 },
                 {
@@ -162,7 +162,7 @@ describe("Basic tests", () => {
                     endColumn: 18,
                     endLine: 11,
                     line: 11,
-                    message: "Expected 1 space after '<%-', but no spaces found.",
+                    message: "Expected 1 space after `<%-`, but no spaces found.",
                     ruleId: "local/template-tag-spacing",
                 },
                 {
@@ -170,7 +170,7 @@ describe("Basic tests", () => {
                     endColumn: 27,
                     endLine: 11,
                     line: 11,
-                    message: "Expected 1 space before '%>', but no spaces found.",
+                    message: "Expected 1 space before `%>`, but no spaces found.",
                     ruleId: "local/template-tag-spacing",
                 },
                 {
@@ -178,7 +178,7 @@ describe("Basic tests", () => {
                     endColumn: 48,
                     endLine: 11,
                     line: 11,
-                    message: "Expected 1 space after '<%-', but no spaces found.",
+                    message: "Expected 1 space after `<%-`, but no spaces found.",
                     ruleId: "local/template-tag-spacing",
                 },
                 {
@@ -186,13 +186,13 @@ describe("Basic tests", () => {
                     endColumn: 60,
                     endLine: 11,
                     line: 11,
-                    message: "Expected 1 space before '%>', but no spaces found.",
+                    message: "Expected 1 space before `%>`, but no spaces found.",
                     ruleId: "local/template-tag-spacing",
                 },
                 {
                     column: 63,
                     line: 11,
-                    message: "Irregular whitespace (\\u3000) not allowed.",
+                    message: "Irregular whitespace '\\u3000' not allowed.",
                     ruleId: "local/no-irregular-whitespace",
                 },
                 {

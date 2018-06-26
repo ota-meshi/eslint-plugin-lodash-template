@@ -301,5 +301,29 @@ tester.run("html-closing-bracket-newline", rule, {
                 "Expected 1 line break before closing bracket, but no line breaks found.",
             ],
         },
+        {
+            code: `
+              <div id=""
+
+              >
+              </div
+
+              >
+            `,
+            output: `
+              <div id=""
+>
+              </div
+>
+            `,
+            options: [{
+                singleline: "always",
+                multiline: "always",
+            }],
+            errors: [
+                "Expected 1 line break before closing bracket, but 2 line breaks found.",
+                "Expected 1 line break before closing bracket, but 2 line breaks found.",
+            ],
+        },
     ],
 })

@@ -53,7 +53,7 @@ tester.run("no-duplicate-attributes", rule, {
             </body>`,
             errors: [
                 {
-                    message: "Duplicate attribute 'foo'.",
+                    message: "Duplicate attribute \"foo\".",
                     line: 5,
                     column: 19,
                     nodeType: "HTMLAttribute",
@@ -61,7 +61,7 @@ tester.run("no-duplicate-attributes", rule, {
                     endColumn: 22,
                 },
                 {
-                    message: "Duplicate attribute 'foo'.",
+                    message: "Duplicate attribute \"foo\".",
                     line: 6,
                     column: 19,
                     nodeType: "HTMLAttribute",
@@ -69,7 +69,7 @@ tester.run("no-duplicate-attributes", rule, {
                     endColumn: 22,
                 },
                 {
-                    message: "Duplicate attribute 'foo'.",
+                    message: "Duplicate attribute \"foo\".",
                     line: 7,
                     column: 19,
                     nodeType: "HTMLAttribute",
@@ -83,18 +83,18 @@ tester.run("no-duplicate-attributes", rule, {
             filename: "test.html",
             code: "<body><div><div foo : foo : ></div></div></body>",
             errors: [
-                "Duplicate attribute 'foo'.",
-                "Duplicate attribute ':'.",
-                "Duplicate attribute 'foo'.",
-                "Duplicate attribute ':'.",
+                "Duplicate attribute \"foo\".",
+                "Duplicate attribute \":\".",
+                "Duplicate attribute \"foo\".",
+                "Duplicate attribute \":\".",
             ],
         },
         {
             filename: "test.html",
             code: "<body><div><div foo foo></div></div></body>",
             errors: [
-                "Duplicate attribute 'foo'.",
-                "Duplicate attribute 'foo'.",
+                "Duplicate attribute \"foo\".",
+                "Duplicate attribute \"foo\".",
             ],
         },
     ],
