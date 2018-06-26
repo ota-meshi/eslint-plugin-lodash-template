@@ -246,6 +246,26 @@ comment
                 column: 17,
             }],
         },
+        {
+            code: `
+            <!--
+
+            comment
+
+            -->
+            `,
+            options: [{
+                singleline: "never",
+                multiline: "never",
+            }],
+            output: `
+            <!--comment-->
+            `,
+            errors: [
+                "Expected no line breaks after `<!--`, but 2 line breaks found.",
+                "Expected no line breaks before `-->`, but 2 line breaks found.",
+            ],
+        },
         // empty
         {
             code: `

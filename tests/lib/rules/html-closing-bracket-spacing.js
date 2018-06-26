@@ -54,25 +54,25 @@ tester.run("html-closing-bracket-spacing", rule, {
             code: "<body>\n  <div >\n  </div >\n  <div/>\n</body>",
             output: "<body>\n  <div>\n  </div>\n  <div />\n</body>",
             errors: [
-                { message: "Expected no space before '>', but found.", line: 2, column: 7, endColumn: 9 },
-                { message: "Expected no space before '>', but found.", line: 3, column: 8, endColumn: 10 },
-                { message: "Expected a space before '/>', but not found.", line: 4, column: 7, endColumn: 9 },
+                { message: "Expected no space before `>`, but found.", line: 2, column: 7, endColumn: 9 },
+                { message: "Expected no space before `>`, but found.", line: 3, column: 8, endColumn: 10 },
+                { message: "Expected a space before `/>`, but not found.", line: 4, column: 7, endColumn: 9 },
             ],
         },
         {
             code: "<body>\n  <div foo ></div>\n  <div foo/>\n</body>",
             output: "<body>\n  <div foo></div>\n  <div foo />\n</body>",
             errors: [
-                { message: "Expected no space before '>', but found.", line: 2, column: 11, endColumn: 13 },
-                { message: "Expected a space before '/>', but not found.", line: 3, column: 11, endColumn: 13 },
+                { message: "Expected no space before `>`, but found.", line: 2, column: 11, endColumn: 13 },
+                { message: "Expected a space before `/>`, but not found.", line: 3, column: 11, endColumn: 13 },
             ],
         },
         {
             code: "<body>\n  <div foo=\"1\" ></div>\n  <div foo=\"1\"/>\n</body>",
             output: "<body>\n  <div foo=\"1\"></div>\n  <div foo=\"1\" />\n</body>",
             errors: [
-                { message: "Expected no space before '>', but found.", line: 2, column: 15, endColumn: 17 },
-                { message: "Expected a space before '/>', but not found.", line: 3, column: 15, endColumn: 17 },
+                { message: "Expected no space before `>`, but found.", line: 2, column: 15, endColumn: 17 },
+                { message: "Expected a space before `/>`, but not found.", line: 3, column: 15, endColumn: 17 },
             ],
         },
         {
@@ -84,9 +84,9 @@ tester.run("html-closing-bracket-spacing", rule, {
                 selfClosingTag: "never",
             }],
             errors: [
-                { message: "Expected a space before '>', but not found.", line: 2, column: 7, endColumn: 8 },
-                { message: "Expected a space before '>', but not found.", line: 3, column: 8, endColumn: 9 },
-                { message: "Expected no space before '/>', but found.", line: 4, column: 7, endColumn: 10 },
+                { message: "Expected a space before `>`, but not found.", line: 2, column: 7, endColumn: 8 },
+                { message: "Expected a space before `>`, but not found.", line: 3, column: 8, endColumn: 9 },
+                { message: "Expected no space before `/>`, but found.", line: 4, column: 7, endColumn: 10 },
             ],
         },
     ],
