@@ -179,6 +179,12 @@ aaaaaaaaa
 `,
             filename: "ignore-elements.html",
         },
+        unIndent`
+        <div
+          attr="
+                              <%= 'data'%>">
+        </div>
+        `,
     ],
 
     // Invalid
