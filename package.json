@@ -67,5 +67,13 @@
   "dependencies": {
     "parse5": "^5.0.0",
     "esquery": "^1.0.0"
+  },
+  "greenkeeper": {
+    "ignore": [
+      "eslint",
+      "espree",
+      "parse5",
+      "fs-extra"
+    ]
   }
 }
