@@ -52,20 +52,20 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
-    "eslint": "4.15.0",
+    "eslint": "5.0.1",
     "eslint-config-mysticatea": "^13.0.2",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-eslint-plugin": "^1.4.0",
     "eslint-plugin-local": "^1.0.0",
     "eslint-plugin-prettier": "^2.6.0",
-    "espree": "3.5.2",
-    "fs-extra": "^5.0.0",
+    "espree": "4.0.0",
+    "fs-extra": "^6.0.1",
     "mocha": "^5.2.0",
-    "nyc": "^11.8.0",
+    "nyc": "^12.0.2",
     "prettier": "^1.11.1"
   },
   "dependencies": {
-    "parse5": "^4.0.0",
+    "parse5": "^5.0.0",
     "esquery": "^1.0.0"
   }
 }
