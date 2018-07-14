@@ -10,6 +10,7 @@
     "test": "npm run test:nyc && if-node-version \">=8\" npm run test:v:node8",
     "test:nyc": "nyc --reporter=lcov npm run test:base -- --timeout 60000",
     "test:d": "mocha --inspect --debug-brk \"tests/**/*.js\" --reporter dot",
+    "watch": "npm run test:base -- --watch",
     "update": "node ./tools/update.js && npm run lint:fix && npm run test",
     "lint:fix": "eslint . --fix",
     "test:sp": "mocha \"test_sp/**/*.js\" --reporter dot",
