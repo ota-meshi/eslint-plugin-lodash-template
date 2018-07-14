@@ -36,6 +36,17 @@ tester.run("no-duplicate-attributes", rule, {
         },
         // eslint-disable-next-line no-irregular-whitespace
         "<label id='item'　class=\"class\">test</label>",
+        //  alternate
+        `
+        <div
+            <% if (a) { %>
+                foo="a"
+            <% } else { %>
+                foo="b"
+            <% } %>
+        >
+        </div>
+        `,
     ],
     invalid: [
         {
@@ -96,6 +107,51 @@ tester.run("no-duplicate-attributes", rule, {
                 "Duplicate attribute \"foo\".",
                 "Duplicate attribute \"foo\".",
             ],
+        },
+        {
+            filename: "test.html",
+            code:
+            `
+            <div
+                <% if (a) { %>
+                    foo="a"
+                <% } else { %>
+                    foo="b"
+                <% } %>
+                    foo="c"
+            >
+            </div>
+            `,
+            errors: [
+                "Duplicate attribute \"foo\".",
+                "Duplicate attribute \"foo\".",
+                "Duplicate attribute \"foo\".",
+            ],
+        },
+        {
+            filename: "test.html",
+            code:
+            `
+            <div
+                <% if (a) { %>
+                    foo="a"
+                    foo="b"
+                <% } else { %>
+                    foo="c"
+                <% } %>
+            >
+            </div>
+            `,
+            errors: [{
+                message: "Duplicate attribute \"foo\".",
+                line: 4,
+                column: 21,
+            },
+            {
+                message: "Duplicate attribute \"foo\".",
+                line: 5,
+                column: 21,
+            }],
         },
     ],
 })

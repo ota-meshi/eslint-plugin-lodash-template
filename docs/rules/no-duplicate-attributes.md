@@ -1,6 +1,6 @@
 # disallow duplication of HTML attributes. (ex. :ng: `<div foo foo>`) (lodash-template/no-duplicate-attributes)
 
-- :gear: This rule is included in `"plugin:lodash-template/all"`.
+- :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
 
 ## Rule Details
 
