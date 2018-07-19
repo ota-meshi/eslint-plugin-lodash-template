@@ -7,15 +7,17 @@
     "lint": "eslint .",
     "pretest": "npm run lint",
     "test:base": "mocha \"tests/**/*.js\" --reporter dot",
-    "test": "npm run test:nyc && if-node-version \">=8\" npm run test:v:node8",
+    "test": "if-node-version \">=8\" npm run test:nyc && npm run test:v:node4 && if-node-version \">=8\" npm run test:v:node8",
     "test:nyc": "nyc --reporter=lcov npm run test:base -- --timeout 60000",
     "test:d": "mocha --inspect --debug-brk \"tests/**/*.js\" --reporter dot",
     "watch": "npm run test:base -- --watch",
     "update": "node ./tools/update.js && npm run lint:fix && npm run test",
     "lint:fix": "eslint . --fix",
     "test:sp": "mocha \"test_sp/**/*.js\" --reporter dot",
-    "test:v:node8": "npm run test:v:peer && npm run test:v:latest && npm i",
-    "test:v:peer": "npm i eslint@5.0.0 parse5@5.0.0 --no-save && npm run test:base",
+    "test:v:node8": "npm run test:v:high && npm run test:v:latest && npm i",
+    "test:v:node4": "npm run test:v:low && npm i",
+    "test:v:high": "npm i eslint@5.0.0 parse5@5.0.0 --no-save && npm run test:base",
+    "test:v:low": "npm i eslint@4.15.0 parse5@4.0.0 --no-save && npm run test:base",
     "test:v:latest": "npm i eslint@latest parse5@latest --no-save && npm run test:base",
     "new": "node ./tools/new-rule.js"
   },
@@ -72,7 +74,7 @@
   },
   "dependencies": {
     "esquery": "^1.0.0",
-    "parse5": "^4.0.0"
+    "parse5": "^4.0.0 || ^5.0.0"
   },
   "greenkeeper": {
     "ignore": [

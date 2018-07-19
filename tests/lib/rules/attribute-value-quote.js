@@ -95,13 +95,13 @@ tester.run("attribute-value-quote", rule, {
             options: ["double"],
             errors: ["Expected to be enclosed by double quotes."],
         },
-        // {
-        //     filename: "test.html",
-        //     code: "<body><div class=<%=foo+\"bar\"%>></div></body>",
-        //     output: null,
-        //     options: ["double"],
-        //     errors: ["Expected to be enclosed by double quotes."],
-        // },
+        {
+            filename: "test.html",
+            code: "<body><div class=<%=foo+\"bar\"%>></div></body>",
+            output: null,
+            options: ["double"],
+            errors: ["Expected to be enclosed by double quotes."],
+        },
         {
             filename: "test.html",
             code: "<body><div class=foo></div></body>",
