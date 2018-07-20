@@ -175,6 +175,7 @@ Enforce all the rules in this category and all the rules in `Base`/`Best Practic
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
+|  | [lodash-template/no-template-tag-in-start-tag](./docs/rules/no-template-tag-in-start-tag.md) | disallow template tag in start tag outside attribute values. (ex. :ng: `<input <%= 'disabled' %> >`) |
 |  | [lodash-template/prefer-escape-template-interpolations](./docs/rules/prefer-escape-template-interpolations.md) | prefer escape micro-template interpolations. (ex. :ok: `<%- ... %>`, :ng: `<%= ... %>`) |
 
 <!--RULES_TABLE_END-->
