@@ -7,7 +7,9 @@
 [![NPM downloads](https://img.shields.io/npm/dm/eslint-plugin-lodash-template.svg)](http://www.npmtrends.com/eslint-plugin-lodash-template)
 [![NPM downloads](https://img.shields.io/npm/dy/eslint-plugin-lodash-template.svg)](http://www.npmtrends.com/eslint-plugin-lodash-template)
 [![NPM downloads](https://img.shields.io/npm/dt/eslint-plugin-lodash-template.svg)](http://www.npmtrends.com/eslint-plugin-lodash-template)
-[![Build Status](https://travis-ci.org/ota-meshi/eslint-plugin-lodash-template.svg?branch=master)](https://travis-ci.org/ota-meshi/eslint-plugin-lodash-template) [![Greenkeeper badge](https://badges.greenkeeper.io/ota-meshi/eslint-plugin-lodash-template.svg)](https://greenkeeper.io/)  
+[![Build Status](https://travis-ci.org/ota-meshi/eslint-plugin-lodash-template.svg?branch=master)](https://travis-ci.org/ota-meshi/eslint-plugin-lodash-template)
+[![Coverage Status](https://coveralls.io/repos/github/ota-meshi/eslint-plugin-lodash-template/badge.svg?branch=master)](https://coveralls.io/github/ota-meshi/eslint-plugin-lodash-template?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/ota-meshi/eslint-plugin-lodash-template.svg)](https://greenkeeper.io/)  
 
 ESLint plugin for John Resig-style micro templating.
 
