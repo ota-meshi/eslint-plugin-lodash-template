@@ -94,7 +94,7 @@ This plugin provides four predefined configs:
 
 ## Rules
 
-The `--fix` option on the command line automatically fixes problems reported by rules which have a wrench :wrench: below.
+The `--fix` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) automatically fixes problems reported by rules which have a wrench :wrench: below.
 
 <!--RULES_TABLE_START-->
 
