@@ -153,5 +153,31 @@ tester.run("no-duplicate-attributes", rule, {
                 column: 21,
             }],
         },
+        {
+            filename: "test.html",
+            code:
+            `
+            <div
+                foo="a"
+                foo =
+            >
+            </div>
+            `,
+            errors: [{
+                message: "Duplicate attribute \"foo\".",
+                line: 3,
+                column: 17,
+                endLine: 3,
+                endColumn: 24,
+            },
+            {
+                message: "Duplicate attribute \"foo\".",
+                line: 4,
+                column: 17,
+                // The result changes depending on the version of parse5.
+                // endLine: 4,
+                // endColumn: 20,
+            }],
+        },
     ],
 })

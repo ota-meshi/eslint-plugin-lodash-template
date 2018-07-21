@@ -78,5 +78,9 @@ tester.run("no-template-tag-in-start-tag", rule, {
             code: "<input <%- disabled ? 'disabled' : '' %> >",
             errors: ["The template interpolate tag in start tag outside attribute values are forbidden."],
         },
+        {
+            code: "<input disabled <%= 'class=' + c  %> >",
+            errors: ["The template interpolate tag in start tag outside attribute values are forbidden."],
+        },
     ],
 })

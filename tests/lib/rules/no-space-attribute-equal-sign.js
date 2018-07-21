@@ -21,6 +21,7 @@ tester.run("no-space-attribute-equal-sign", rule, {
         "<div class=item>",
         "<div class>",
         "<div class=<%= aaa %>item>",
+        "<div dup=<%= aaa %>a dup=<%= bbb %>>",
     ],
 
     invalid: [
