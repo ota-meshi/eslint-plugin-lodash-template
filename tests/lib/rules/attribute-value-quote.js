@@ -40,6 +40,11 @@ tester.run("attribute-value-quote", rule, {
             options: ["either"],
         },
         "<body><a download>download</a></body>",
+        "<body><div class=></div></body>",
+        "<body><div class=  ></div></body>",
+        "<body><div class <%= '' %>  ></div></body>",
+        // duplicate
+        "<body><div a = v a = ></div></body>",
     ],
     invalid: [
         {
@@ -144,6 +149,24 @@ tester.run("attribute-value-quote", rule, {
             output: "<body><div class=\"foo+&quot;bar&quot;\"></div></body>",
             options: ["either"],
             errors: ["Expected to be enclosed by quotes."],
+        },
+        {
+            filename: "test.html",
+            code: "<body><div class =    v ></div></body>",
+            output: "<body><div class =    \"v\" ></div></body>",
+            errors: ["Expected to be enclosed by double quotes."],
+        },
+        {
+            filename: "test.html",
+            code: "<body><div a b = = = = ></div></body>",
+            output: "<body><div a b = \"=\" = = ></div></body>",
+            errors: ["Expected to be enclosed by double quotes."],
+        },
+        {
+            filename: "test.html",
+            code: "<body><div = = = ></div></body>",
+            output: "<body><div = = \"=\" ></div></body>",
+            errors: ["Expected to be enclosed by double quotes."],
         },
     ],
 })
