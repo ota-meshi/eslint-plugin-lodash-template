@@ -60,5 +60,10 @@ tester.run("no-space-attribute-equal-sign", rule, {
             output: "<div class<%= aaa %>=<%= aaa %>item>",
             errors: ["Equal signs in must not be spaced."],
         },
+        {
+            code: "<div class =>",
+            output: "<div class=>",
+            errors: ["Equal signs in must not be spaced."],
+        },
     ],
 })
