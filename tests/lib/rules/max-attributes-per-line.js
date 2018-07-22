@@ -226,5 +226,15 @@ petname="Snoopy" extra="foo">
                 line: 3,
             }],
         },
+        {
+            code: "<body><div name=\"John Doe\" age=\"30\" job=\"Vet\"></div></body>",
+            options: [{ singleline: {} }],
+            output: `<body><div name="John Doe" 
+age="30" job="Vet"></div></body>`,
+            errors: [
+                "Attribute \"age\" should be on a new line.",
+                "Attribute \"job\" should be on a new line.",
+            ],
+        },
     ],
 })

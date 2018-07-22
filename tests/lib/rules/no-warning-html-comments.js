@@ -70,6 +70,15 @@ tester.run("no-warning-html-comments", rule, {
             ],
             filename: "test.html",
         },
+        {
+            code: "<!-- %% -->",
+            options: [{ terms: ["%%"] }],
+            output: null,
+            errors: [
+                "Unexpected '%%' comment.",
+            ],
+            filename: "test.html",
+        },
 
 
     ],

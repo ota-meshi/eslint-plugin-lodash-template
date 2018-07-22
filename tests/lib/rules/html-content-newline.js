@@ -122,6 +122,10 @@ tester.run("html-content-newline", rule, {
           id=
           ""
     `,
+        // nothing end tag
+        `
+          <div>content
+        `,
     ],
     invalid: [
         {

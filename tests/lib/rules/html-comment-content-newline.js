@@ -62,6 +62,21 @@ tester.run("html-comment-content-newline", rule, {
                 multiline: "never",
             }],
         },
+        // other
+        {
+            code: "<!DOCTYPE html>",
+            options: [{
+                singleline: "always",
+                multiline: "always",
+            }],
+        },
+        {
+            code: "<!illegal>",
+            options: [{
+                singleline: "always",
+                multiline: "always",
+            }],
+        },
     ],
     invalid: [
         {
