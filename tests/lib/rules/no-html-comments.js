@@ -33,8 +33,7 @@ tester.run("no-html-comments", rule, {
             filename: "test.html",
         },
         {
-            code:
-            `
+            code: `
             <!DOCTYPE html>
             <html>
             <body>

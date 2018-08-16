@@ -3,7 +3,6 @@
 const assert = require("assert")
 const casing = require("../../../lib/utils/casing")
 
-
 describe("getConverter()", () => {
     it("should conver string to camelCase", () => {
         const converter = casing.getConverter("camelCase")

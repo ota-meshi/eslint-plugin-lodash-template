@@ -1,9 +1,7 @@
 "use strict"
 
-
 const RuleTester = require("eslint").RuleTester
 const rule = require("../../../lib/rules/element-name-casing")
-
 
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
@@ -11,7 +9,6 @@ const tester = new RuleTester({
         ecmaVersion: 2015,
     },
 })
-
 
 tester.run("element-name-casing", rule, {
     valid: [
@@ -22,10 +19,6 @@ tester.run("element-name-casing", rule, {
         "<body><div><slot></slot></div></body>",
 
         "<body><xxx-element></xxx-element></body>",
-        "<body><div/></body>",
-        "<body><img></body>",
-        "<body><svg><path/></svg></body>",
-        "<body><math><mspace/></math></body>",
     ],
     invalid: [
         {
@@ -59,9 +52,7 @@ tester.run("element-name-casing", rule, {
   <xxx-element id="id"/>
 </body>
 `,
-            errors: [
-                "Element name `<XXX-ELEMENT>` must be 'kebab-case'.",
-            ],
+            errors: ["Element name `<XXX-ELEMENT>` must be 'kebab-case'."],
         },
         {
             code: `
@@ -76,9 +67,7 @@ tester.run("element-name-casing", rule, {
     id="id"/>
 </body>
 `,
-            errors: [
-                "Element name `<XXX-ELEMENT>` must be 'kebab-case'.",
-            ],
+            errors: ["Element name `<XXX-ELEMENT>` must be 'kebab-case'."],
         },
         {
             code: `
@@ -91,9 +80,7 @@ tester.run("element-name-casing", rule, {
   <xxx-element/>
 </body>
 `,
-            errors: [
-                "Element name `<XXX-ELEMENT>` must be 'kebab-case'.",
-            ],
+            errors: ["Element name `<XXX-ELEMENT>` must be 'kebab-case'."],
         },
         {
             code: `
@@ -119,9 +106,7 @@ tester.run("element-name-casing", rule, {
 </body>
 `,
             output: null,
-            errors: [
-                "Element name `<xxxElement>` must be 'kebab-case'.",
-            ],
+            errors: ["Element name `<xxxElement>` must be 'kebab-case'."],
         },
         {
             code: `
@@ -130,9 +115,7 @@ tester.run("element-name-casing", rule, {
 </body>
 `,
             output: null,
-            errors: [
-                "Element name `<XxxElement>` must be 'kebab-case'.",
-            ],
+            errors: ["Element name `<XxxElement>` must be 'kebab-case'."],
         },
         {
             code: `

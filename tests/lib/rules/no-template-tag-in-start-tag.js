@@ -13,7 +13,7 @@ const tester = new RuleTester({
 tester.run("no-template-tag-in-start-tag", rule, {
     valid: [
         "<input disabled >",
-        "<input class=\"<%= classList %>\" >",
+        '<input class="<%= classList %>" >',
         "<input class=<%= classList %> >",
         {
             code: `
@@ -28,21 +28,27 @@ tester.run("no-template-tag-in-start-tag", rule, {
     invalid: [
         {
             code: "<input <%= 'disabled' %> >",
-            errors: [{
-                message: "The template interpolate tag in start tag outside attribute values are forbidden.",
-                type: "MicroTemplateInterpolate",
-                line: 1,
-                column: 8,
-            }],
+            errors: [
+                {
+                    message:
+                        "The template interpolate tag in start tag outside attribute values are forbidden.",
+                    type: "MicroTemplateInterpolate",
+                    line: 1,
+                    column: 8,
+                },
+            ],
         },
         {
             code: "<input <%= disabled ? 'disabled' : '' %> >",
-            errors: [{
-                message: "The template interpolate tag in start tag outside attribute values are forbidden.",
-                type: "MicroTemplateInterpolate",
-                line: 1,
-                column: 8,
-            }],
+            errors: [
+                {
+                    message:
+                        "The template interpolate tag in start tag outside attribute values are forbidden.",
+                    type: "MicroTemplateInterpolate",
+                    line: 1,
+                    column: 8,
+                },
+            ],
         },
         {
             code: `
@@ -53,7 +59,8 @@ tester.run("no-template-tag-in-start-tag", rule, {
             >`,
             errors: [
                 {
-                    message: "The template evaluate tag in start tag outside attribute values are forbidden.",
+                    message:
+                        "The template evaluate tag in start tag outside attribute values are forbidden.",
                     line: 3,
                     column: 15,
                     nodeType: "MicroTemplateEvaluate",
@@ -61,7 +68,8 @@ tester.run("no-template-tag-in-start-tag", rule, {
                     endColumn: 36,
                 },
                 {
-                    message: "The template evaluate tag in start tag outside attribute values are forbidden.",
+                    message:
+                        "The template evaluate tag in start tag outside attribute values are forbidden.",
                     line: 5,
                     column: 15,
                     nodeType: "MicroTemplateEvaluate",
@@ -72,15 +80,21 @@ tester.run("no-template-tag-in-start-tag", rule, {
         },
         {
             code: "<input <%- 'disabled' %> >",
-            errors: ["The template interpolate tag in start tag outside attribute values are forbidden."],
+            errors: [
+                "The template interpolate tag in start tag outside attribute values are forbidden.",
+            ],
         },
         {
             code: "<input <%- disabled ? 'disabled' : '' %> >",
-            errors: ["The template interpolate tag in start tag outside attribute values are forbidden."],
+            errors: [
+                "The template interpolate tag in start tag outside attribute values are forbidden.",
+            ],
         },
         {
             code: "<input disabled <%= 'class=' + c  %> >",
-            errors: ["The template interpolate tag in start tag outside attribute values are forbidden."],
+            errors: [
+                "The template interpolate tag in start tag outside attribute values are forbidden.",
+            ],
         },
     ],
 })

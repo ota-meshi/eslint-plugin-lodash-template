@@ -1,11 +1,9 @@
 "use strict"
 
-
 const fs = require("fs")
 const path = require("path")
 const RuleTester = require("eslint").RuleTester
 const rule = require("../../../lib/rules/html-indent")
-
 
 const FIXTURE_ROOT = path.resolve(__dirname, "../../fixtures/html-indent/")
 
@@ -25,33 +23,41 @@ const FIXTURE_ROOT = path.resolve(__dirname, "../../fixtures/html-indent/")
  * @returns {object} The loaded patterns.
  */
 function loadPatterns(additionalValid, additionalInvalid) {
-    const valid = fs
-        .readdirSync(FIXTURE_ROOT)
-        .map(filename => {
-            const code0 = fs.readFileSync(path.join(FIXTURE_ROOT, filename), "utf8")
-            const code = code0.replace(/^<!--(.+?)-->/, `<!--${filename}-->`)
-            const baseObj = JSON.parse(/^<!--(.+?)-->/.exec(code0)[1])
-            return Object.assign(baseObj, { code, filename })
-        })
+    const valid = fs.readdirSync(FIXTURE_ROOT).map(filename => {
+        const code0 = fs.readFileSync(path.join(FIXTURE_ROOT, filename), "utf8")
+        const code = code0.replace(/^<!--(.+?)-->/, `<!--${filename}-->`)
+        const baseObj = JSON.parse(/^<!--(.+?)-->/.exec(code0)[1])
+        return Object.assign(baseObj, { code, filename })
+    })
     const invalid = valid
         .map(pattern => {
-            const kind = ((pattern.options && pattern.options[0]) === "tab") ? "tab" : "space"
+            const kind =
+                (pattern.options && pattern.options[0]) === "tab"
+                    ? "tab"
+                    : "space"
             const output = pattern.code
-            const lines = output
-                .split("\n")
-                .map((text, number) => ({
-                    number,
-                    text,
-                    indentSize: (/^[ \t]+/.exec(text) || [""])[0].length,
-                }))
+            const lines = output.split("\n").map((text, number) => ({
+                number,
+                text,
+                indentSize: (/^[ \t]+/.exec(text) || [""])[0].length,
+            }))
             const code = lines
                 .map(line => line.text.replace(/^[ \t]+/, ""))
                 .join("\n")
             const errors = lines
-                .map(line =>
-                    line.indentSize === 0
-                        ? null
-                        : { message: `Expected indentation of ${line.indentSize} ${kind}${line.indentSize === 1 ? "" : "s"} but found 0 ${kind}s.`, line: line.number + 1 })
+                .map(
+                    line =>
+                        line.indentSize === 0
+                            ? null
+                            : {
+                                  message: `Expected indentation of ${
+                                      line.indentSize
+                                  } ${kind}${
+                                      line.indentSize === 1 ? "" : "s"
+                                  } but found 0 ${kind}s.`,
+                                  line: line.number + 1,
+                              }
+                )
                 .filter(Boolean)
 
             return Object.assign({}, pattern, { code, output, errors })
@@ -71,13 +77,17 @@ function loadPatterns(additionalValid, additionalInvalid) {
  */
 function unIndent(strings) {
     const templateValue = strings[0]
-    const lines = templateValue.replace(/^\n/, "").replace(/\n\s*$/, "").split("\n")
-    const lineIndents = lines.filter(line => line.trim()).map(line => line.match(/ */)[0].length)
+    const lines = templateValue
+        .replace(/^\n/, "")
+        .replace(/\n\s*$/, "")
+        .split("\n")
+    const lineIndents = lines
+        .filter(line => line.trim())
+        .map(line => line.match(/ */)[0].length)
     const minLineIndent = Math.min.apply(null, lineIndents)
 
     return lines.map(line => line.slice(minLineIndent)).join("\n")
 }
-
 
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
@@ -86,25 +96,28 @@ const tester = new RuleTester({
     },
 })
 
-tester.run("html-indent", rule, loadPatterns(
-    // Valid
-    [
-        unIndent`
+tester.run(
+    "html-indent",
+    rule,
+    loadPatterns(
+        // Valid
+        [
+            unIndent`
         <div>
           <% print(
             'value'
           ) %>
         </div>
         `,
-        unIndent`
+            unIndent`
         <div>
           <% print(
         'value'
           ) %>
         </div>
         `,
-        {
-            code: unIndent`
+            {
+                code: unIndent`
             <div>
               <pre>
                 text
@@ -113,14 +126,14 @@ tester.run("html-indent", rule, loadPatterns(
               </pre>
             </div>
             `,
-            filename: "pre-test.html",
-        },
-        unIndent`
+                filename: "pre-test.html",
+            },
+            unIndent`
         <% for ( var i = 0; i < users.length; i++ ) { %>
           <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
         <% } %>
         `,
-        unIndent`
+            unIndent`
 <ul>
   <% for ( var i = 0; i < users.length; i++ ) { %>
     <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
@@ -134,8 +147,8 @@ tester.run("html-indent", rule, loadPatterns(
   <% } %>
 </ul>
         `,
-        {
-            code: `
+            {
+                code: `
 <!DOCTYPE html>
 <html>
   <head>
@@ -148,10 +161,10 @@ tester.run("html-indent", rule, loadPatterns(
   </body>
 </html>
 `,
-            filename: "line-feed-at-last.html",
-        },
-        {
-            code: `
+                filename: "line-feed-at-last.html",
+            },
+            {
+                code: `
 <!DOCTYPE html>
 <html>
   <head>
@@ -177,20 +190,20 @@ aaaaaaaaa
   </body>
 </html>
 `,
-            filename: "ignore-elements.html",
-        },
-        unIndent`
+                filename: "ignore-elements.html",
+            },
+            unIndent`
         <div
           attr="
                               <%= 'data'%>">
         </div>
         `,
-    ],
+        ],
 
-    // Invalid
-    [
-        {
-            code: unIndent`
+        // Invalid
+        [
+            {
+                code: unIndent`
                 <div>
                 <pre>
                     text
@@ -200,7 +213,7 @@ aaaaaaaaa
                   </pre>
                 </div>
             `,
-            output: unIndent`
+                output: unIndent`
                 <div>
                   <pre>
                     text
@@ -210,88 +223,88 @@ aaaaaaaaa
                   </pre>
                 </div>
             `,
-            errors: [
-                {
-                    message: "Expected indentation of 2 spaces but found 0 spaces.",
-                    line: 2,
-                    column: 1,
-                    endLine: 2,
-                    endColumn: 1,
-                },
-            ],
-            filename: "pre-test.html",
-        },
-        {
-            code: `
+                errors: [
+                    {
+                        message:
+                            "Expected indentation of 2 spaces but found 0 spaces.",
+                        line: 2,
+                        column: 1,
+                        endLine: 2,
+                        endColumn: 1,
+                    },
+                ],
+                filename: "pre-test.html",
+            },
+            {
+                code: `
   <div></div>
   text
   <!-- comment -->
   <% print(
     'value') %>
 `,
-            output: `
+                output: `
 <div></div>
 text
 <!-- comment -->
 <% print(
     'value') %>
 `,
-            errors: [
-                "Expected indentation of 0 spaces but found 2 spaces.",
-                "Expected indentation of 0 spaces but found 2 spaces.",
-                "Expected indentation of 0 spaces but found 2 spaces.",
-                "Expected indentation of 0 spaces but found 2 spaces.",
-            ],
-            filename: "root-test.html",
-        },
-        {
-            code: `
+                errors: [
+                    "Expected indentation of 0 spaces but found 2 spaces.",
+                    "Expected indentation of 0 spaces but found 2 spaces.",
+                    "Expected indentation of 0 spaces but found 2 spaces.",
+                    "Expected indentation of 0 spaces but found 2 spaces.",
+                ],
+                filename: "root-test.html",
+            },
+            {
+                code: `
 <div>
 \ttext
 </div>
 `,
-            output: `
+                output: `
 <div>
   text
 </div>
 `,
-            errors: [
-                "Expected \" \" character, but found \"\\t\" character.",
-            ],
-            filename: "tab.html",
-        },
-        {
-            code: unIndent`
+                errors: ['Expected " " character, but found "\\t" character.'],
+                filename: "tab.html",
+            },
+            {
+                code: unIndent`
                 <% for ( var i = 0; i < users.length; i++ ) { %>
                 <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
                 <% } %>
             `,
-            output: unIndent`
+                output: unIndent`
                 <% for ( var i = 0; i < users.length; i++ ) { %>
                   <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
                 <% } %>
             `,
-            errors: [
-                "Expected indentation of 2 spaces but found 0 spaces.",
-            ],
-            filename: "test.html",
-        },
-        {
-            code: unIndent`
+                errors: [
+                    "Expected indentation of 2 spaces but found 0 spaces.",
+                ],
+                filename: "test.html",
+            },
+            {
+                code: unIndent`
                   <% for ( var i = 0; i < users.length; i++ ) { %>
                     <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
                 <% } %>
             `,
-            output: unIndent`
+                output: unIndent`
                 <% for ( var i = 0; i < users.length; i++ ) { %>
                   <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
                 <% } %>
             `,
-            errors: [
-                "Expected indentation of 0 spaces but found 2 spaces.",
-                "Expected indentation of 2 spaces but found 4 spaces.",
-            ],
-            filename: "test.html",
-        },
-    ]
-))
+                errors: [
+                    "Expected indentation of 0 spaces but found 2 spaces.",
+                    "Expected indentation of 2 spaces but found 4 spaces.",
+                ],
+                filename: "test.html",
+            },
+        ]
+    )
+)

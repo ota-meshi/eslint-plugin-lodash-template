@@ -25,20 +25,24 @@ tester.run("html-comment-content-newline", rule, {
               comment
             -->
             `,
-            options: [{
-                singleline: "always",
-                multiline: "never",
-            }],
+            options: [
+                {
+                    singleline: "always",
+                    multiline: "never",
+                },
+            ],
         },
         {
             code: `
             <!-- comment
               comment -->
             `,
-            options: [{
-                singleline: "always",
-                multiline: "never",
-            }],
+            options: [
+                {
+                    singleline: "always",
+                    multiline: "never",
+                },
+            ],
         },
         {
             code: `
@@ -48,34 +52,42 @@ tester.run("html-comment-content-newline", rule, {
             <!-- comment
               comment -->
             `,
-            options: [{
-                singleline: "ignore",
-                multiline: "ignore",
-            }],
+            options: [
+                {
+                    singleline: "ignore",
+                    multiline: "ignore",
+                },
+            ],
         },
         // empty
         "<!---->",
         {
             code: "<!---->",
-            options: [{
-                singleline: "never",
-                multiline: "never",
-            }],
+            options: [
+                {
+                    singleline: "never",
+                    multiline: "never",
+                },
+            ],
         },
         // other
         {
             code: "<!DOCTYPE html>",
-            options: [{
-                singleline: "always",
-                multiline: "always",
-            }],
+            options: [
+                {
+                    singleline: "always",
+                    multiline: "always",
+                },
+            ],
         },
         {
             code: "<!illegal>",
-            options: [{
-                singleline: "always",
-                multiline: "always",
-            }],
+            options: [
+                {
+                    singleline: "always",
+                    multiline: "always",
+                },
+            ],
         },
     ],
     invalid: [
@@ -88,7 +100,9 @@ tester.run("html-comment-content-newline", rule, {
             output: `
             <!--comment-->
             `,
-            errors: ["Expected no line breaks after `<!--`, but 1 line break found.", "Expected no line breaks before `-->`, but 1 line break found.",
+            errors: [
+                "Expected no line breaks after `<!--`, but 1 line break found.",
+                "Expected no line breaks before `-->`, but 1 line break found.",
             ],
         },
         {
@@ -104,14 +118,16 @@ comment
             `,
             errors: [
                 {
-                    message: "Expected 1 line break after `<!--`, but no line breaks found.",
+                    message:
+                        "Expected 1 line break after `<!--`, but no line breaks found.",
                     line: 2,
                     column: 17,
                     endLine: 2,
                     endColumn: 17,
                 },
                 {
-                    message: "Expected 1 line break before `-->`, but no line breaks found.",
+                    message:
+                        "Expected 1 line break before `-->`, but no line breaks found.",
                     line: 3,
                     column: 22,
                     endLine: 3,
@@ -123,31 +139,34 @@ comment
             code: `
             <!--comment-->
             `,
-            options: [{
-                singleline: "always",
-                multiline: "never",
-            }],
             output: `
             <!--
 comment
 -->
             `,
+            options: [
+                {
+                    singleline: "always",
+                    multiline: "never",
+                },
+            ],
             errors: [
                 {
-                    message: "Expected 1 line break after `<!--`, but no line breaks found.",
+                    message:
+                        "Expected 1 line break after `<!--`, but no line breaks found.",
                     line: 2,
                     column: 17,
                     endLine: 2,
                     endColumn: 17,
                 },
                 {
-                    message: "Expected 1 line break before `-->`, but no line breaks found.",
+                    message:
+                        "Expected 1 line break before `-->`, but no line breaks found.",
                     line: 2,
                     column: 24,
                     endLine: 2,
                     endColumn: 24,
                 },
-
             ],
         },
         {
@@ -157,24 +176,28 @@ comment
               comment
             -->
             `,
-            options: [{
-                singleline: "always",
-                multiline: "never",
-            }],
             output: `
             <!--comment
               comment-->
             `,
+            options: [
+                {
+                    singleline: "always",
+                    multiline: "never",
+                },
+            ],
             errors: [
                 {
-                    message: "Expected no line breaks after `<!--`, but 1 line break found.",
+                    message:
+                        "Expected no line breaks after `<!--`, but 1 line break found.",
                     line: 2,
                     column: 17,
                     endLine: 3,
                     endColumn: 15,
                 },
                 {
-                    message: "Expected no line breaks before `-->`, but 1 line break found.",
+                    message:
+                        "Expected no line breaks before `-->`, but 1 line break found.",
                     line: 4,
                     column: 22,
                     endLine: 5,
@@ -188,17 +211,20 @@ comment
             <!--comment
             -->
             `,
-            options: [{
-                singleline: "always",
-            }],
             output: `
             <!--
 comment
             -->
             `,
+            options: [
+                {
+                    singleline: "always",
+                },
+            ],
             errors: [
                 {
-                    message: "Expected 1 line break after `<!--`, but no line breaks found.",
+                    message:
+                        "Expected 1 line break after `<!--`, but no line breaks found.",
                     line: 2,
                     column: 17,
                 },
@@ -209,17 +235,20 @@ comment
             <!--
             comment-->
             `,
-            options: [{
-                singleline: "always",
-            }],
             output: `
             <!--
             comment
 -->
             `,
+            options: [
+                {
+                    singleline: "always",
+                },
+            ],
             errors: [
                 {
-                    message: "Expected 1 line break before `-->`, but no line breaks found.",
+                    message:
+                        "Expected 1 line break before `-->`, but no line breaks found.",
                     line: 3,
                     column: 20,
                 },
@@ -230,36 +259,46 @@ comment
             <!--comment
             -->
             `,
-            options: [{
-                singleline: "never",
-                multiline: "ignore",
-            }],
             output: `
             <!--comment-->
             `,
-            errors: [{
-                message: "Expected no line breaks before `-->`, but 1 line break found.",
-                line: 2,
-                column: 24,
-            }],
+            options: [
+                {
+                    singleline: "never",
+                    multiline: "ignore",
+                },
+            ],
+            errors: [
+                {
+                    message:
+                        "Expected no line breaks before `-->`, but 1 line break found.",
+                    line: 2,
+                    column: 24,
+                },
+            ],
         },
         {
             code: `
             <!--
             comment-->
             `,
-            options: [{
-                singleline: "never",
-                multiline: "ignore",
-            }],
             output: `
             <!--comment-->
             `,
-            errors: [{
-                message: "Expected no line breaks after `<!--`, but 1 line break found.",
-                line: 2,
-                column: 17,
-            }],
+            options: [
+                {
+                    singleline: "never",
+                    multiline: "ignore",
+                },
+            ],
+            errors: [
+                {
+                    message:
+                        "Expected no line breaks after `<!--`, but 1 line break found.",
+                    line: 2,
+                    column: 17,
+                },
+            ],
         },
         {
             code: `
@@ -269,13 +308,15 @@ comment
 
             -->
             `,
-            options: [{
-                singleline: "never",
-                multiline: "never",
-            }],
             output: `
             <!--comment-->
             `,
+            options: [
+                {
+                    singleline: "never",
+                    multiline: "never",
+                },
+            ],
             errors: [
                 "Expected no line breaks after `<!--`, but 2 line breaks found.",
                 "Expected no line breaks before `-->`, but 2 line breaks found.",
@@ -286,21 +327,25 @@ comment
             code: `
             <!---->
             `,
-            options: [{
-                singleline: "always",
-            }],
             output: `
             <!--
 -->
             `,
+            options: [
+                {
+                    singleline: "always",
+                },
+            ],
             errors: [
                 {
-                    message: "Expected 1 line break after `<!--`, but no line breaks found.",
+                    message:
+                        "Expected 1 line break after `<!--`, but no line breaks found.",
                     line: 2,
                     column: 17,
                 },
                 {
-                    message: "Expected 1 line break before `-->`, but no line breaks found.",
+                    message:
+                        "Expected 1 line break before `-->`, but no line breaks found.",
                     line: 2,
                     column: 17,
                 },
@@ -311,24 +356,27 @@ comment
             <!--
             -->
             `,
-            options: [{
-                singleline: "never",
-                multiline: "ignore",
-            }],
             output: `
             <!---->
             `,
+            options: [
+                {
+                    singleline: "never",
+                    multiline: "ignore",
+                },
+            ],
             errors: [
                 {
-                    message: "Expected no line breaks after `<!--`, but 1 line break found.",
+                    message:
+                        "Expected no line breaks after `<!--`, but 1 line break found.",
                     line: 2,
                     column: 17,
                 },
                 {
-                    message: "Expected no line breaks before `-->`, but 1 line break found.",
+                    message:
+                        "Expected no line breaks before `-->`, but 1 line break found.",
                     line: 2,
                     column: 17,
-
                 },
             ],
         },
@@ -341,22 +389,26 @@ comment
 
             -->
             `,
-            options: [{
-                singleline: "always",
-            }],
             output: `
             <!--
 comment
 -->
             `,
+            options: [
+                {
+                    singleline: "always",
+                },
+            ],
             errors: [
                 {
-                    message: "Expected 1 line break after `<!--`, but 2 line breaks found.",
+                    message:
+                        "Expected 1 line break after `<!--`, but 2 line breaks found.",
                     line: 2,
                     column: 17,
                 },
                 {
-                    message: "Expected 1 line break before `-->`, but 2 line breaks found.",
+                    message:
+                        "Expected 1 line break before `-->`, but 2 line breaks found.",
                     line: 4,
                     column: 22,
                 },

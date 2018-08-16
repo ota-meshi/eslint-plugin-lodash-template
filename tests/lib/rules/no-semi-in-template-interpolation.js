@@ -11,7 +11,6 @@ const tester = new RuleTester({
 })
 
 tester.run("no-semi-in-template-interpolation", rule, {
-
     valid: [
         "",
         `
@@ -75,16 +74,13 @@ tester.run("no-semi-in-template-interpolation", rule, {
           <div>
         <% } %>
         `,
-
     ],
     invalid: [
         {
-            code:
-            `
+            code: `
             <div><%= a;/*comment*/ %></div>
             `,
-            output:
-            `
+            output: `
             <div><%= a/*comment*/ %></div>
             `,
             errors: [
@@ -98,17 +94,13 @@ tester.run("no-semi-in-template-interpolation", rule, {
             ],
         },
         {
-            code:
-            `
+            code: `
             <div><%= a; %></div>
             `,
-            output:
-            `
+            output: `
             <div><%= a %></div>
             `,
-            errors: [
-                "Unnecessary semicolon.",
-            ],
+            errors: ["Unnecessary semicolon."],
         },
     ],
 })

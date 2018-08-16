@@ -22,12 +22,12 @@ tester.run("template-tag-spacing", rule, {
         },
         {
             code:
-                "<body>             <div id=\"               \"></div>         </body>",
+                '<body>             <div id="               "></div>         </body>',
             filename: "test.html",
         },
         {
             code:
-                "<body> <div style=\"  \" class=\"       foo      \" attr=foo   ></div>      </body>",
+                '<body> <div style="  " class="       foo      " attr=foo   ></div>      </body>',
             filename: "test.html",
         },
         {
@@ -168,61 +168,62 @@ tester.run("template-tag-spacing", rule, {
         {
             code: "<div>{{text}}</div>",
             output: "<div>{{ text }}</div>",
-            errors: [
-                {
-                    message: "Expected 1 space after `{{`, but no spaces found.",
-                    line: 1,
-                    column: 6,
-                    endLine: 1,
-                    endColumn: 8,
-                },
-                {
-                    message: "Expected 1 space before `}}`, but no spaces found.",
-                    line: 1,
-                    column: 12,
-                    endLine: 1,
-                    endColumn: 14,
-                },
-            ],
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
                     interpolate: ["{{", "}}"],
                 },
             },
+            errors: [
+                {
+                    message:
+                        "Expected 1 space after `{{`, but no spaces found.",
+                    line: 1,
+                    column: 6,
+                    endLine: 1,
+                    endColumn: 8,
+                },
+                {
+                    message:
+                        "Expected 1 space before `}}`, but no spaces found.",
+                    line: 1,
+                    column: 12,
+                    endLine: 1,
+                    endColumn: 14,
+                },
+            ],
             filename: "test.html",
         },
         {
             code: "<@-inner@><%=inner%>",
             output: "<@- inner @><%= inner %>",
-            errors: [
-                "Expected 1 space after `<@-`, but no spaces found.",
-                "Expected 1 space before `@>`, but no spaces found.",
-                "Expected 1 space after `<%=`, but no spaces found.",
-                "Expected 1 space before `%>`, but no spaces found.",
-            ],
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
                     interpolate: "<[%@][=|-]([\\s\\S]+?)[%@]>",
                 },
             },
+            errors: [
+                "Expected 1 space after `<@-`, but no spaces found.",
+                "Expected 1 space before `@>`, but no spaces found.",
+                "Expected 1 space after `<%=`, but no spaces found.",
+                "Expected 1 space before `%>`, but no spaces found.",
+            ],
             filename: "test.html",
         },
         {
             code: "<___>",
             output: "<_ _ _>",
-            errors: [
-                "Expected 1 space after `<_`, but no spaces found.",
-                "Expected 1 space before `_>`, but no spaces found.",
-
-            ],
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
                     interpolate: "<_([\\s\\S]+?)_>",
                 },
             },
+            errors: [
+                "Expected 1 space after `<_`, but no spaces found.",
+                "Expected 1 space before `_>`, but no spaces found.",
+            ],
             filename: "test.html",
         },
     ],

@@ -12,16 +12,12 @@ const tester = new RuleTester({
 
 tester.run("max-attributes-per-line", rule, {
     valid: [
-        {
-            code: "<body><div></div></body>",
-        },
-        {
-            code: `<body><div
+        "<body><div></div></body>",
+        `<body><div
                     name="John Doe"
                     age="30"
                     job="Vet"
                   ></div></body>`,
-        },
         {
             code: `<body><div
                     name="John Doe"
@@ -30,13 +26,11 @@ tester.run("max-attributes-per-line", rule, {
                   ></div></body>`,
             options: [{ multiline: { allowFirstLine: true } }],
         },
-        {
-            code: `<body><div
+        `<body><div
                     name="John Doe"
                     age="30"
                   >
                   </div></body>`,
-        },
         {
             code: `<body><div
                     name="John Doe"
@@ -47,18 +41,24 @@ tester.run("max-attributes-per-line", rule, {
         },
         {
             code: "<body><div></div></body>",
-            options: [{ singleline: 1, multiline: { max: 1, allowFirstLine: false } }],
+            options: [
+                { singleline: 1, multiline: { max: 1, allowFirstLine: false } },
+            ],
         },
         {
-            code: "<body><div name=\"John Doe\" age=\"30\" job=\"Vet\"></div></body>",
-            options: [{ singleline: 3, multiline: { max: 1, allowFirstLine: false } }],
+            code: '<body><div name="John Doe" age="30" job="Vet"></div></body>',
+            options: [
+                { singleline: 3, multiline: { max: 1, allowFirstLine: false } },
+            ],
         },
         {
             code: `<body><div name="John Doe"
                     age="30">
                     </div>
                   </body>`,
-            options: [{ singleline: 3, multiline: { max: 1, allowFirstLine: true } }],
+            options: [
+                { singleline: 3, multiline: { max: 1, allowFirstLine: true } },
+            ],
         },
         {
             code: `<body><div
@@ -66,7 +66,9 @@ tester.run("max-attributes-per-line", rule, {
                     age="30">
                     </div>
                   </body>`,
-            options: [{ singleline: 3, multiline: { max: 1, allowFirstLine: false } }],
+            options: [
+                { singleline: 3, multiline: { max: 1, allowFirstLine: false } },
+            ],
         },
         {
             code: `<body><div
@@ -74,16 +76,18 @@ tester.run("max-attributes-per-line", rule, {
                     job="Vet">
                     </div>
                   </body>`,
-            options: [{ singleline: 3, multiline: { max: 2, allowFirstLine: false } }],
+            options: [
+                { singleline: 3, multiline: { max: 2, allowFirstLine: false } },
+            ],
         },
     ],
 
     invalid: [
         {
-            code: "<body><div name=\"John Doe\" age=\"30\"></div></body>",
+            code: '<body><div name="John Doe" age="30"></div></body>',
             output: `<body><div name="John Doe" 
 age="30"></div></body>`,
-            errors: ["Attribute \"age\" should be on a new line."],
+            errors: ['Attribute "age" should be on a new line.'],
         },
         {
             code: `<body><div job="Vet"
@@ -97,54 +101,67 @@ job="Vet"
                       age="30">
                       </div>
                     </body>`,
-            errors: [{
-                message: "Attribute \"job\" should be on a new line.",
-                type: "HTMLAttribute",
-                line: 1,
-            }],
+            errors: [
+                {
+                    message: 'Attribute "job" should be on a new line.',
+                    type: "HTMLAttribute",
+                    line: 1,
+                },
+            ],
         },
         {
-            code: "<body><div name=\"John Doe\" age=\"30\" job=\"Vet\"></div></body>",
-            options: [{ singleline: { max: 2 } }],
+            code: '<body><div name="John Doe" age="30" job="Vet"></div></body>',
             output: `<body><div name="John Doe" age="30" 
 job="Vet"></div></body>`,
-            errors: [{
-                message: "Attribute \"job\" should be on a new line.",
-                type: "HTMLAttribute",
-                line: 1,
-            }],
+            options: [{ singleline: { max: 2 } }],
+            errors: [
+                {
+                    message: 'Attribute "job" should be on a new line.',
+                    type: "HTMLAttribute",
+                    line: 1,
+                },
+            ],
         },
         {
-            code: "<body><div name=\"John Doe\" age=\"30\" job=\"Vet\"></div></body>",
-            options: [{ singleline: 1, multiline: { max: 1, allowFirstLine: false } }],
+            code: '<body><div name="John Doe" age="30" job="Vet"></div></body>',
             output: `<body><div name="John Doe" 
 age="30" job="Vet"></div></body>`,
-            errors: [{
-                message: "Attribute \"age\" should be on a new line.",
-                type: "HTMLAttribute",
-                line: 1,
-            }, {
-                message: "Attribute \"job\" should be on a new line.",
-                type: "HTMLAttribute",
-                line: 1,
-            }],
+            options: [
+                { singleline: 1, multiline: { max: 1, allowFirstLine: false } },
+            ],
+            errors: [
+                {
+                    message: 'Attribute "age" should be on a new line.',
+                    type: "HTMLAttribute",
+                    line: 1,
+                },
+                {
+                    message: 'Attribute "job" should be on a new line.',
+                    type: "HTMLAttribute",
+                    line: 1,
+                },
+            ],
         },
         {
             code: `<body><div name="John Doe"
                       age="30">
                       </div>
                     </body>`,
-            options: [{ singleline: 3, multiline: { max: 1, allowFirstLine: false } }],
             output: `<body><div 
 name="John Doe"
                       age="30">
                       </div>
                     </body>`,
-            errors: [{
-                message: "Attribute \"name\" should be on a new line.",
-                type: "HTMLAttribute",
-                line: 1,
-            }],
+            options: [
+                { singleline: 3, multiline: { max: 1, allowFirstLine: false } },
+            ],
+            errors: [
+                {
+                    message: 'Attribute "name" should be on a new line.',
+                    type: "HTMLAttribute",
+                    line: 1,
+                },
+            ],
         },
         {
             code: `<body><div
@@ -152,37 +169,43 @@ name="John Doe"
                       job="Vet">
                       </div>
                     </body>`,
-            options: [{ singleline: 3, multiline: { max: 1, allowFirstLine: false } }],
             output: `<body><div
                       name="John Doe" 
 age="30"
                       job="Vet">
                       </div>
                     </body>`,
-            errors: [{
-                message: "Attribute \"age\" should be on a new line.",
-                type: "HTMLAttribute",
-                line: 2,
-            }],
+            options: [
+                { singleline: 3, multiline: { max: 1, allowFirstLine: false } },
+            ],
+            errors: [
+                {
+                    message: 'Attribute "age" should be on a new line.',
+                    type: "HTMLAttribute",
+                    line: 2,
+                },
+            ],
         },
         {
             code: `<body><div
                       name="John Doe" age="30"
+                      job="Vet">
+                      </div>
+                    </body>`,
+            output: `<body><div
+                      name="John Doe" 
+age="30"
                       job="Vet">
                       </div>
                     </body>`,
             options: [{ singleline: 3, multiline: 1 }],
-            output: `<body><div
-                      name="John Doe" 
-age="30"
-                      job="Vet">
-                      </div>
-                    </body>`,
-            errors: [{
-                message: "Attribute \"age\" should be on a new line.",
-                type: "HTMLAttribute",
-                line: 2,
-            }],
+            errors: [
+                {
+                    message: 'Attribute "age" should be on a new line.',
+                    type: "HTMLAttribute",
+                    line: 2,
+                },
+            ],
         },
         {
             code: `<body><div
@@ -190,18 +213,22 @@ age="30"
                       job="Vet" pet="dog" petname="Snoopy">
                       </div>
                     </body>`,
-            options: [{ singleline: 3, multiline: { max: 2, allowFirstLine: false } }],
             output: `<body><div
                       name="John Doe" age="30"
                       job="Vet" pet="dog" 
 petname="Snoopy">
                       </div>
                     </body>`,
-            errors: [{
-                message: "Attribute \"petname\" should be on a new line.",
-                type: "HTMLAttribute",
-                line: 3,
-            }],
+            options: [
+                { singleline: 3, multiline: { max: 2, allowFirstLine: false } },
+            ],
+            errors: [
+                {
+                    message: 'Attribute "petname" should be on a new line.',
+                    type: "HTMLAttribute",
+                    line: 3,
+                },
+            ],
         },
         {
             code: `<body><div
@@ -209,31 +236,36 @@ petname="Snoopy">
                       job="Vet" pet="dog" petname="Snoopy" extra="foo">
                       </div>
                     </body>`,
-            options: [{ singleline: 3, multiline: { max: 2, allowFirstLine: false } }],
             output: `<body><div
                       name="John Doe" age="30"
                       job="Vet" pet="dog" 
 petname="Snoopy" extra="foo">
                       </div>
                     </body>`,
-            errors: [{
-                message: "Attribute \"petname\" should be on a new line.",
-                type: "HTMLAttribute",
-                line: 3,
-            }, {
-                message: "Attribute \"extra\" should be on a new line.",
-                type: "HTMLAttribute",
-                line: 3,
-            }],
+            options: [
+                { singleline: 3, multiline: { max: 2, allowFirstLine: false } },
+            ],
+            errors: [
+                {
+                    message: 'Attribute "petname" should be on a new line.',
+                    type: "HTMLAttribute",
+                    line: 3,
+                },
+                {
+                    message: 'Attribute "extra" should be on a new line.',
+                    type: "HTMLAttribute",
+                    line: 3,
+                },
+            ],
         },
         {
-            code: "<body><div name=\"John Doe\" age=\"30\" job=\"Vet\"></div></body>",
-            options: [{ singleline: {} }],
+            code: '<body><div name="John Doe" age="30" job="Vet"></div></body>',
             output: `<body><div name="John Doe" 
 age="30" job="Vet"></div></body>`,
+            options: [{ singleline: {} }],
             errors: [
-                "Attribute \"age\" should be on a new line.",
-                "Attribute \"job\" should be on a new line.",
+                'Attribute "age" should be on a new line.',
+                'Attribute "job" should be on a new line.',
             ],
         },
     ],

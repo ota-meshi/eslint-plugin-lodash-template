@@ -1,5 +1,3 @@
-
-
 "use strict"
 
 const RuleTester = require("eslint").RuleTester
@@ -26,15 +24,13 @@ tester.run("no-empty-template-tag", rule, {
         {
             code: "<%    %>",
             output: null,
-            errors: ["Empty micro-template tag.",
-            ],
+            errors: ["Empty micro-template tag."],
             filename: "test.html",
         },
         {
             code: "<%%>",
             output: null,
-            errors: ["Empty micro-template tag.",
-            ],
+            errors: ["Empty micro-template tag."],
             filename: "test.html",
         },
         {
@@ -56,6 +52,12 @@ tester.run("no-empty-template-tag", rule, {
         {
             code: "{{}}",
             output: null,
+            parserOptions: {
+                ecmaVersion: 2015,
+                templateSettings: {
+                    interpolate: ["{{", "}}"],
+                },
+            },
             errors: [
                 {
                     message: "Empty micro-template tag.",
@@ -65,72 +67,66 @@ tester.run("no-empty-template-tag", rule, {
                     endColumn: 5,
                 },
             ],
-            parserOptions: {
-                ecmaVersion: 2015,
-                templateSettings: {
-                    interpolate: ["{{", "}}"],
-                },
-            },
             filename: "test.html",
         },
         {
             code: "{{}}",
             output: null,
-            errors: ["Empty micro-template tag."],
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
                     interpolate: "{{([\\s\\S]+?)}}",
                 },
             },
+            errors: ["Empty micro-template tag."],
             filename: "test.html",
         },
         {
             code: "{{}}",
             output: null,
-            errors: ["Empty micro-template tag."],
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
                     interpolate: "{{([\\s\\S]*?)}}",
                 },
             },
+            errors: ["Empty micro-template tag."],
             filename: "test.html",
         },
         {
             code: "{{}}",
             output: null,
-            errors: ["Empty micro-template tag."],
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
                     interpolate: "{{([\\S\\s]+?)}}",
                 },
             },
+            errors: ["Empty micro-template tag."],
             filename: "test.html",
         },
         {
             code: "{{}}",
             output: null,
-            errors: ["Empty micro-template tag."],
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
                     interpolate: "{{([\\S\\s]*?)}}",
                 },
             },
+            errors: ["Empty micro-template tag."],
             filename: "test.html",
         },
         {
             code: "<%  %>",
             output: null,
-            errors: ["Empty micro-template tag."],
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
                     interpolate: "{{(unknown)}}",
                 },
             },
+            errors: ["Empty micro-template tag."],
             filename: "test.html",
         },
     ],

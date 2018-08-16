@@ -62,7 +62,7 @@ tester.run("no-multi-spaces-in-html-tag", rule, {
                   type="text" >
             `,
             errors: [
-                "Multiple spaces found before `class=\"foo\"`.",
+                'Multiple spaces found before `class="foo"`.',
                 "Multiple spaces found before `>`.",
             ],
         },
@@ -73,9 +73,7 @@ tester.run("no-multi-spaces-in-html-tag", rule, {
             output: `
             <input type="text" />
             `,
-            errors: [
-                "Multiple spaces found before `/>`.",
-            ],
+            errors: ["Multiple spaces found before `/>`."],
         },
         {
             code: `
@@ -88,7 +86,7 @@ tester.run("no-multi-spaces-in-html-tag", rule, {
             `,
             errors: [
                 "Multiple spaces found before `<%=  'date-attr1'  %>`.",
-                "Multiple spaces found before `class=\" <%=  class1  %> \"`.",
+                'Multiple spaces found before `class=" <%=  class1  %> "`.',
                 "Multiple spaces found before `<%=  'date-attr2'  %>`.",
                 "Multiple spaces found before `>`.",
             ],
@@ -123,7 +121,7 @@ tester.run("no-multi-spaces-in-html-tag", rule, {
                 <% } %> >
             `,
             errors: [
-                "Multiple spaces found before `type=\"text\"`.",
+                'Multiple spaces found before `type="text"`.',
                 "Multiple spaces found before `>`.",
             ],
         },
@@ -134,9 +132,7 @@ tester.run("no-multi-spaces-in-html-tag", rule, {
             output: `
             <div></div >
             `,
-            errors: [
-                "Multiple spaces found before `>`.",
-            ],
+            errors: ["Multiple spaces found before `>`."],
         },
         // duplication attr
         {
@@ -160,7 +156,7 @@ tester.run("no-multi-spaces-in-html-tag", rule, {
             `,
             errors: [
                 // "Multiple spaces found before `value=\"text value\"`.",
-                "Multiple spaces found before `type=\"text2\"`.",
+                'Multiple spaces found before `type="text2"`.',
             ],
         },
     ],
