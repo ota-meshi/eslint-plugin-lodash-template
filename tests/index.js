@@ -22,7 +22,11 @@ function assertMessages(actual, expected) {
     const length = Math.max(actual.length, expected.length)
     const expected2 = []
     for (let i = 0; i < length; i++) {
-        expected2.push(expected[i] ? Object.assign({}, actual[i], expected[i]) : expected[i])
+        expected2.push(
+            expected[i]
+                ? Object.assign({}, actual[i], expected[i])
+                : expected[i]
+        )
     }
 
     assert.deepEqual(actual, expected2)
@@ -50,7 +54,6 @@ describe("index test", () => {
 
         plugin.setTargetExtensions(".html")
     })
-
 
     it("After set the target extension, it should be included in the processor extension", () => {
         plugin.setTargetExtensions(".ejs")
@@ -81,7 +84,6 @@ describe("Basic tests", () => {
         fs.removeSync(FIXTURE_DIR)
     })
 
-
     describe("About fixtures/hello.html", () => {
         it("should notify errors", () => {
             const cli = new CLIEngine({
@@ -95,7 +97,8 @@ describe("Basic tests", () => {
             assertMessages(messages, [
                 {
                     ruleId: "local/template-tag-spacing",
-                    message: "Expected 1 space after `<%`, but no spaces found.",
+                    message:
+                        "Expected 1 space after `<%`, but no spaces found.",
                     column: 5,
                     endColumn: 7,
                     endLine: 4,
@@ -127,7 +130,8 @@ describe("Basic tests", () => {
                 },
                 {
                     ruleId: "local/template-tag-spacing",
-                    message: "Expected 1 space before `%>`, but no spaces found.",
+                    message:
+                        "Expected 1 space before `%>`, but no spaces found.",
                     line: 5,
                     endLine: 5,
                     column: 21,
@@ -138,7 +142,8 @@ describe("Basic tests", () => {
                     endColumn: 13,
                     endLine: 6,
                     line: 6,
-                    message: "Expected 1 space before `%>`, but no spaces found.",
+                    message:
+                        "Expected 1 space before `%>`, but no spaces found.",
                     ruleId: "local/template-tag-spacing",
                 },
                 {
@@ -146,7 +151,8 @@ describe("Basic tests", () => {
                     endColumn: 23,
                     endLine: 10,
                     line: 10,
-                    message: "Expected 1 space after `<%-`, but no spaces found.",
+                    message:
+                        "Expected 1 space after `<%-`, but no spaces found.",
                     ruleId: "local/template-tag-spacing",
                 },
                 {
@@ -154,7 +160,8 @@ describe("Basic tests", () => {
                     endColumn: 29,
                     endLine: 10,
                     line: 10,
-                    message: "Expected 1 space before `%>`, but no spaces found.",
+                    message:
+                        "Expected 1 space before `%>`, but no spaces found.",
                     ruleId: "local/template-tag-spacing",
                 },
                 {
@@ -162,7 +169,8 @@ describe("Basic tests", () => {
                     endColumn: 18,
                     endLine: 11,
                     line: 11,
-                    message: "Expected 1 space after `<%-`, but no spaces found.",
+                    message:
+                        "Expected 1 space after `<%-`, but no spaces found.",
                     ruleId: "local/template-tag-spacing",
                 },
                 {
@@ -170,7 +178,8 @@ describe("Basic tests", () => {
                     endColumn: 27,
                     endLine: 11,
                     line: 11,
-                    message: "Expected 1 space before `%>`, but no spaces found.",
+                    message:
+                        "Expected 1 space before `%>`, but no spaces found.",
                     ruleId: "local/template-tag-spacing",
                 },
                 {
@@ -178,7 +187,8 @@ describe("Basic tests", () => {
                     endColumn: 48,
                     endLine: 11,
                     line: 11,
-                    message: "Expected 1 space after `<%-`, but no spaces found.",
+                    message:
+                        "Expected 1 space after `<%-`, but no spaces found.",
                     ruleId: "local/template-tag-spacing",
                 },
                 {
@@ -186,7 +196,8 @@ describe("Basic tests", () => {
                     endColumn: 60,
                     endLine: 11,
                     line: 11,
-                    message: "Expected 1 space before `%>`, but no spaces found.",
+                    message:
+                        "Expected 1 space before `%>`, but no spaces found.",
                     ruleId: "local/template-tag-spacing",
                 },
                 {
@@ -215,8 +226,14 @@ describe("Basic tests", () => {
             })
             CLIEngine.outputFixes(cli.executeOnFiles(["hello.html"]))
 
-            const actual = fs.readFileSync(path.join(FIXTURE_DIR, "hello.html"), "utf8")
-            const expected = fs.readFileSync(path.join(FIXTURE_DIR, "hello.html.fixed.html"), "utf8")
+            const actual = fs.readFileSync(
+                path.join(FIXTURE_DIR, "hello.html"),
+                "utf8"
+            )
+            const expected = fs.readFileSync(
+                path.join(FIXTURE_DIR, "hello.html.fixed.html"),
+                "utf8"
+            )
 
             assert.deepEqual(actual.trim(), expected.trim())
         })

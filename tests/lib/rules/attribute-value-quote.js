@@ -1,10 +1,7 @@
-
 "use strict"
-
 
 const RuleTester = require("eslint").RuleTester
 const rule = require("../../../lib/rules/attribute-value-quote")
-
 
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
@@ -13,31 +10,31 @@ const tester = new RuleTester({
     },
 })
 
-
 tester.run("attribute-value-quote", rule, {
     valid: [
         {
-            filename: "test.html",
             code: "",
+            filename: "test.html",
         },
         {
+            code: '<body><div class="foo"></div></body>',
             filename: "test.html",
-            code: "<body><div class=\"foo\"></div></body>",
         },
         {
-            filename: "test.html",
-            code: "<body><div class=\"foo\"></div></body>",
+            code: '<body><div class="foo"></div></body>',
             options: ["double"],
+            filename: "test.html",
         },
         {
-            filename: "test.html",
             code: "<body><div class='foo'></div></body>",
             options: ["single"],
+            filename: "test.html",
         },
         {
-            filename: "test.html",
-            code: "<body><div class='foo'></div><div class=\"foo\"></div></body>",
+            code:
+                "<body><div class='foo'></div><div class=\"foo\"></div></body>",
             options: ["either"],
+            filename: "test.html",
         },
         "<body><a download>download</a></body>",
         "<body><div class=></div></body>",
@@ -48,125 +45,125 @@ tester.run("attribute-value-quote", rule, {
     ],
     invalid: [
         {
-            filename: "test.html",
             code: "<body><div class=foo></div></body>",
-            output: "<body><div class=\"foo\"></div></body>",
+            output: '<body><div class="foo"></div></body>',
             errors: ["Expected to be enclosed by double quotes."],
+            filename: "test.html",
         },
         {
-            filename: "test.html",
             code: "<body><div class='foo'></div></body>",
-            output: "<body><div class=\"foo\"></div></body>",
+            output: '<body><div class="foo"></div></body>',
             errors: ["Expected to be enclosed by double quotes."],
+            filename: "test.html",
         },
         {
-            filename: "test.html",
-            code: "<body><div class=foo+\"bar\"></div></body>",
+            code: '<body><div class=foo+"bar"></div></body>',
             output: "<body><div class='foo+\"bar\"'></div></body>",
             errors: ["Expected to be enclosed by single quotes."],
+            filename: "test.html",
         },
         {
-            filename: "test.html",
             code: "<body><div class='<%=foo+\"bar\"%>'></div></body>",
             output: null,
             errors: ["Expected to be enclosed by double quotes."],
+            filename: "test.html",
         },
 
         {
-            filename: "test.html",
             code: "<body><div class=foo></div></body>",
-            output: "<body><div class=\"foo\"></div></body>",
+            output: '<body><div class="foo"></div></body>',
             options: ["double"],
             errors: ["Expected to be enclosed by double quotes."],
+            filename: "test.html",
         },
         {
-            filename: "test.html",
             code: "<body><div class='foo'></div></body>",
-            output: "<body><div class=\"foo\"></div></body>",
+            output: '<body><div class="foo"></div></body>',
             options: ["double"],
             errors: ["Expected to be enclosed by double quotes."],
+            filename: "test.html",
         },
         {
-            filename: "test.html",
-            code: "<body><div class=foo+\"bar\"></div></body>",
-            output: "<body><div class=\"foo+&quot;bar&quot;\"></div></body>",
+            code: '<body><div class=foo+"bar"></div></body>',
+            output: '<body><div class="foo+&quot;bar&quot;"></div></body>',
             options: ["double"],
             errors: ["Expected to be enclosed by double quotes."],
+            filename: "test.html",
         },
         {
-            filename: "test.html",
-            code: "<body><div class=<%=foo+\"bar\"%>a ></div></body>",
+            code: '<body><div class=<%=foo+"bar"%>a ></div></body>',
             output: null,
             options: ["double"],
             errors: ["Expected to be enclosed by double quotes."],
+            filename: "test.html",
         },
         {
-            filename: "test.html",
-            code: "<body><div class=<%=foo+\"bar\"%>></div></body>",
+            code: '<body><div class=<%=foo+"bar"%>></div></body>',
             output: null,
             options: ["double"],
             errors: ["Expected to be enclosed by double quotes."],
+            filename: "test.html",
         },
         {
-            filename: "test.html",
             code: "<body><div class=foo></div></body>",
             output: "<body><div class='foo'></div></body>",
             options: ["single"],
             errors: ["Expected to be enclosed by single quotes."],
+            filename: "test.html",
         },
         {
-            filename: "test.html",
-            code: "<body><div class=\"foo\"></div></body>",
+            code: '<body><div class="foo"></div></body>',
             output: "<body><div class='foo'></div></body>",
             options: ["single"],
             errors: ["Expected to be enclosed by single quotes."],
+            filename: "test.html",
         },
         {
-            filename: "test.html",
             code: "<body><div class=foo+'bar'></div></body>",
             output: "<body><div class='foo+&apos;bar&apos;'></div></body>",
             options: ["single"],
             errors: ["Expected to be enclosed by single quotes."],
+            filename: "test.html",
         },
         {
-            filename: "test.html",
             code: "<body><div class=\"<%=foo+'bar'%>\" ></div></body>",
             output: null,
             options: ["single"],
             errors: ["Expected to be enclosed by single quotes."],
+            filename: "test.html",
         },
 
         {
-            filename: "test.html",
             code: "<body><div class=foo></div></body>",
-            output: "<body><div class=\"foo\"></div></body>",
+            output: '<body><div class="foo"></div></body>',
             options: ["either"],
             errors: ["Expected to be enclosed by quotes."],
+            filename: "test.html",
         },
         {
-            filename: "test.html",
-            code: "<body><div class=foo+\"bar\"></div></body>",
-            output: "<body><div class=\"foo+&quot;bar&quot;\"></div></body>",
+            code: '<body><div class=foo+"bar"></div></body>',
+            output: '<body><div class="foo+&quot;bar&quot;"></div></body>',
             options: ["either"],
             errors: ["Expected to be enclosed by quotes."],
+            filename: "test.html",
         },
         {
-            filename: "test.html",
             code: "<body><div class =    v ></div></body>",
-            output: "<body><div class =    \"v\" ></div></body>",
+            output: '<body><div class =    "v" ></div></body>',
             errors: ["Expected to be enclosed by double quotes."],
+            filename: "test.html",
         },
         {
-            filename: "test.html",
             code: "<body><div a b = = = = ></div></body>",
-            output: "<body><div a b = \"=\" = = ></div></body>",
+            output: '<body><div a b = "=" = = ></div></body>',
             errors: ["Expected to be enclosed by double quotes."],
+            filename: "test.html",
         },
         {
-            filename: "test.html",
             code: "<body><div = = = ></div></body>",
-            output: "<body><div = = \"=\" ></div></body>",
+            output: '<body><div = = "=" ></div></body>',
             errors: ["Expected to be enclosed by double quotes."],
+            filename: "test.html",
         },
     ],
 })

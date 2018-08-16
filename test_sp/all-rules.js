@@ -1,3 +1,4 @@
+/* globals describe */
 "use strict"
 
 const Linter = require("eslint").Linter
@@ -14,7 +15,7 @@ for (const rule of rules) {
 }
 linter.defineParser("micro-template-eslint-parser", parser)
 const config = {
-    parser: ("micro-template-eslint-parser"),
+    parser: "micro-template-eslint-parser",
     parserOptions: {
         ecmaVersion: 2015,
     },

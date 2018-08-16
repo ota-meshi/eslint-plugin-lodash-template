@@ -26,7 +26,8 @@ tester.run("prefer-escape-template-interpolations", rule, {
             output: null,
             errors: [
                 {
-                    message: "The escape micro-template interpolation is preferable.",
+                    message:
+                        "The escape micro-template interpolation is preferable.",
                     line: 1,
                     column: 1,
                     endLine: 1,

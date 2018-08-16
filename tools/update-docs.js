@@ -27,7 +27,9 @@ function getPresets(category) {
         conf.extends.find(ext => ext.name === category)
     )
     for (const sub of subTargets) {
-        for (const name of getPresets(sub.name)) presets.push(name)
+        for (const name of getPresets(sub.name)) {
+            presets.push(name)
+        }
     }
     return presets
 }

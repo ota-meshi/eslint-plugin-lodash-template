@@ -29,9 +29,11 @@ tester.run("no-warning-html-comments", rule, {
         </div>`,
         {
             code: "<!-- before TODO -->",
-            options: [{
-                location: "start",
-            }],
+            options: [
+                {
+                    location: "start",
+                },
+            ],
             filename: "test.html",
         },
         "<!-- eslint-disable-line lodash-template/no-warning-html-comments TODO -->",
@@ -56,30 +58,22 @@ tester.run("no-warning-html-comments", rule, {
         {
             code: "<!-- before TODO -->",
             output: null,
-            errors: [
-                "Unexpected 'todo' comment.",
-            ],
+            errors: ["Unexpected 'todo' comment."],
             filename: "test.html",
         },
         {
             code: "<!-- %T -->",
-            options: [{ terms: ["%t"] }],
             output: null,
-            errors: [
-                "Unexpected '%t' comment.",
-            ],
+            options: [{ terms: ["%t"] }],
+            errors: ["Unexpected '%t' comment."],
             filename: "test.html",
         },
         {
             code: "<!-- %% -->",
-            options: [{ terms: ["%%"] }],
             output: null,
-            errors: [
-                "Unexpected '%%' comment.",
-            ],
+            options: [{ terms: ["%%"] }],
+            errors: ["Unexpected '%%' comment."],
             filename: "test.html",
         },
-
-
     ],
 })

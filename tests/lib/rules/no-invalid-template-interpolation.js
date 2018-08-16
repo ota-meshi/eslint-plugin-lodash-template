@@ -66,8 +66,7 @@ tester.run("no-invalid-template-interpolation", rule, {
     ],
     invalid: [
         {
-            code:
-            `
+            code: `
             <%= if (a) { %>
               <div>
             <% } %>
@@ -84,8 +83,7 @@ tester.run("no-invalid-template-interpolation", rule, {
             ],
         },
         {
-            code:
-            `
+            code: `
             <div><%= /**/ %></div>
             `,
             output: null,
@@ -100,8 +98,7 @@ tester.run("no-invalid-template-interpolation", rule, {
             ],
         },
         {
-            code:
-            `
+            code: `
             <%= if (a) { %>
               <div>
             <%- } %>
@@ -113,8 +110,7 @@ tester.run("no-invalid-template-interpolation", rule, {
             ],
         },
         {
-            code:
-            `
+            code: `
             <%= (a// %>
             <%- ) %>
             `,
@@ -125,24 +121,18 @@ tester.run("no-invalid-template-interpolation", rule, {
             ],
         },
         {
-            code:
-            `
+            code: `
             <div><%= a;; %></div>
             `,
             output: null,
-            errors: [
-                "Expected an expression, but a not expressions.",
-            ],
+            errors: ["Expected an expression, but a not expressions."],
         },
         {
-            code:
-            `
+            code: `
             <div><%= ;/**/ %></div>
             `,
             output: null,
-            errors: [
-                "Expected an expression, but a not expressions.",
-            ],
+            errors: ["Expected an expression, but a not expressions."],
         },
     ],
 })

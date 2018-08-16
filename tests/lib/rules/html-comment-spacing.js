@@ -22,12 +22,12 @@ tester.run("html-comment-spacing", rule, {
         },
         {
             code:
-                "<body>             <div id=\"               \"></div>         </body>",
+                '<body>             <div id="               "></div>         </body>',
             filename: "test.html",
         },
         {
             code:
-                "<body> <div style=\"  \" class=\"       foo      \" attr=foo   ></div>      </body>",
+                '<body> <div style="  " class="       foo      " attr=foo   ></div>      </body>',
             filename: "test.html",
         },
         {
