@@ -4,7 +4,7 @@
   "description": "ESLint plugin for John Resig-style micro templating(Lodash/Underscore.js template)",
   "main": "lib/index.js",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "if-node-version \">=8\" eslint .",
     "pretest": "npm run lint",
     "test:base": "mocha \"tests/**/*.js\" --reporter dot",
     "test": "if-node-version \">=8\" npm run test:nyc && npm run test:v:node4 && if-node-version \">=8\" npm run test:v:node8",
