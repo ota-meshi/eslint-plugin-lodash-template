@@ -15,7 +15,7 @@
     "lint:fix": "eslint . --fix",
     "test:sp": "mocha \"test_sp/**/*.js\" --reporter dot",
     "test:v:node6": "npm run test:v:high && npm run test:v:latest && npm i",
-    "test:v:node4": "npm i babel-eslint@8 --no-save && npm run test:v:low && npm i",
+    "test:v:node4": "npm i babel-eslint@8 fs-extra@5 --no-save && npm run test:v:low && npm i",
     "test:v:high": "npm i eslint@5.0.0 parse5@5.0.0 --no-save && npm run test:base",
     "test:v:low": "npm i eslint@4.15.0 parse5@4.0.0 --no-save && npm run test:base",
     "test:v:latest": "npm i eslint@latest parse5@latest --no-save && npm run test:base",
@@ -62,7 +62,7 @@
     "babel-eslint": "^9.0.0",
     "eslint": "^5.3.0",
     "eslint-plugin-local": "^1.0.0",
-    "fs-extra": "^5.0.0",
+    "fs-extra": "^7.0.0",
     "if-node-version": "^1.1.1",
     "mocha": "^5.2.0",
     "nyc": "^12.0.2",
@@ -73,8 +73,6 @@
     "parse5": "^4.0.0 || ^5.0.0"
   },
   "greenkeeper": {
-    "ignore": [
-      "fs-extra"
-    ]
+    "ignore": []
   }
 }
