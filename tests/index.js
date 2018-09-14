@@ -3,7 +3,7 @@
 const assert = require("assert")
 const path = require("path")
 const eslint = require("eslint")
-const fs = require("fs-extra")
+const fs = require("fs")
 const plugin = require("..")
 
 const CLIEngine = eslint.CLIEngine
@@ -11,6 +11,25 @@ const CLIEngine = eslint.CLIEngine
 const ORIGINAL_FIXTURE_DIR = path.join(__dirname, "fixtures")
 const FIXTURE_DIR = path.join(__dirname, "temp")
 const CONFIG_PATH = path.join(ORIGINAL_FIXTURE_DIR, "test.eslintrc.js")
+
+/**
+ * Remove dir
+ * @param {string} dirPath dir path
+ * @returns {void}
+ */
+function removeDirSync(dirPath) {
+    if (fs.existsSync(dirPath)) {
+        for (const file of fs.readdirSync(dirPath)) {
+            const curPath = `${dirPath}/${file}`
+            if (fs.lstatSync(curPath).isDirectory()) {
+                removeDirSync(curPath)
+            } else {
+                fs.unlinkSync(curPath)
+            }
+        }
+        fs.rmdirSync(dirPath)
+    }
+}
 
 /**
  * Assert the messages
@@ -70,18 +89,19 @@ describe("index test", () => {
 
 describe("Basic tests", () => {
     beforeEach(() => {
-        fs.emptyDirSync(FIXTURE_DIR)
+        removeDirSync(FIXTURE_DIR)
+        fs.mkdirSync(FIXTURE_DIR)
         for (const fileName of fs.readdirSync(ORIGINAL_FIXTURE_DIR)) {
             const src = path.join(ORIGINAL_FIXTURE_DIR, fileName)
             const dst = path.join(FIXTURE_DIR, fileName)
 
             if (fs.statSync(src).isFile()) {
-                fs.copySync(src, dst)
+                fs.writeFileSync(dst, fs.readFileSync(src))
             }
         }
     })
     afterEach(() => {
-        fs.removeSync(FIXTURE_DIR)
+        removeDirSync(FIXTURE_DIR)
     })
 
     describe("About fixtures/hello.html", () => {
