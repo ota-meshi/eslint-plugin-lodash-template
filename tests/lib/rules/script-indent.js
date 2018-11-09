@@ -45,18 +45,17 @@ function loadPatterns(additionalValid, additionalInvalid) {
                 .map(line => line.text.replace(/^[ \t]+/, ""))
                 .join("\n")
             const errors = lines
-                .map(
-                    line =>
-                        line.indentSize === 0
-                            ? null
-                            : {
-                                  message: `Expected indentation of ${
-                                      line.indentSize
-                                  } ${kind}${
-                                      line.indentSize === 1 ? "" : "s"
-                                  } but found 0 ${kind}s.`,
-                                  line: line.number + 1,
-                              }
+                .map(line =>
+                    line.indentSize === 0
+                        ? null
+                        : {
+                              message: `Expected indentation of ${
+                                  line.indentSize
+                              } ${kind}${
+                                  line.indentSize === 1 ? "" : "s"
+                              } but found 0 ${kind}s.`,
+                              line: line.number + 1,
+                          }
                 )
                 .filter(Boolean)
 
