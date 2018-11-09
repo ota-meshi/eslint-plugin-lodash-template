@@ -88,7 +88,7 @@ for (const rule of rules) {
         fs
             .readFileSync(filePath, "utf8")
             .replace(
-                /^#[^\n]*(\r?\n)+(?:- .+\r?\n)*(\r?\n)*/,
+                /^#[^\n]*(\r?\n)+(?:- .+\r?\n)*(\r?\n)*/u,
                 `${title}${isWin ? "\r\n\r\n" : "\n\n"}${notes.join(
                     isWin ? "\r\n" : "\n"
                 )}`

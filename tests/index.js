@@ -48,7 +48,7 @@ function assertMessages(actual, expected) {
         )
     }
 
-    assert.deepEqual(actual, expected2)
+    assert.deepStrictEqual(actual, expected2)
     assert.strictEqual(actual.length, expected.length)
 }
 
@@ -255,7 +255,7 @@ describe("Basic tests", () => {
                 "utf8"
             )
 
-            assert.deepEqual(actual.trim(), expected.trim())
+            assert.deepStrictEqual(actual.trim(), expected.trim())
         })
     })
     describe("About fixtures/comment-directive.html", () => {
