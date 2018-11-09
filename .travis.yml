@@ -14,7 +14,7 @@ matrix:
 
 before_install:
   - if [ "$NODE_V" = "4" ]; then npm i -D eslint@4.19.1 espree@3.5.4; fi
-  - if [ "$NODE_V" = "4" ]; then npm uninstall -D @mysticatea/eslint-plugin; fi
+  - if [ "$NODE_V" = "4" ]; then npm uninstall -D @mysticatea/eslint-plugin eslint-plugin-es; fi
 deploy:
   skip_cleanup: true
   provider: npm
