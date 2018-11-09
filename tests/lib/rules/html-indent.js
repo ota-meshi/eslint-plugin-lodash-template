@@ -25,8 +25,8 @@ const FIXTURE_ROOT = path.resolve(__dirname, "../../fixtures/html-indent/")
 function loadPatterns(additionalValid, additionalInvalid) {
     const valid = fs.readdirSync(FIXTURE_ROOT).map(filename => {
         const code0 = fs.readFileSync(path.join(FIXTURE_ROOT, filename), "utf8")
-        const code = code0.replace(/^<!--(.+?)-->/u, `<!--${filename}-->`)
-        const baseObj = JSON.parse(/^<!--(.+?)-->/u.exec(code0)[1])
+        const code = code0.replace(/^<!--(.+?)-->/, `<!--${filename}-->`)
+        const baseObj = JSON.parse(/^<!--(.+?)-->/.exec(code0)[1])
         return Object.assign(baseObj, { code, filename })
     })
     const invalid = valid
@@ -39,10 +39,10 @@ function loadPatterns(additionalValid, additionalInvalid) {
             const lines = output.split("\n").map((text, number) => ({
                 number,
                 text,
-                indentSize: (/^[ \t]+/u.exec(text) || [""])[0].length,
+                indentSize: (/^[ \t]+/.exec(text) || [""])[0].length,
             }))
             const code = lines
-                .map(line => line.text.replace(/^[ \t]+/u, ""))
+                .map(line => line.text.replace(/^[ \t]+/, ""))
                 .join("\n")
             const errors = lines
                 .map(
@@ -78,12 +78,12 @@ function loadPatterns(additionalValid, additionalInvalid) {
 function unIndent(strings) {
     const templateValue = strings[0]
     const lines = templateValue
-        .replace(/^\n/u, "")
-        .replace(/\n\s*$/u, "")
+        .replace(/^\n/, "")
+        .replace(/\n\s*$/, "")
         .split("\n")
     const lineIndents = lines
         .filter(line => line.trim())
-        .map(line => line.match(/ */u)[0].length)
+        .map(line => line.match(/ */)[0].length)
     const minLineIndent = Math.min.apply(null, lineIndents)
 
     return lines.map(line => line.slice(minLineIndent)).join("\n")

@@ -85,9 +85,9 @@ ${deprecatedRules.map(toDeprecatedRuleRow).join("\n")}
 let insertText = `\n${rulesTableContent}\n`
 if (isWin) {
     insertText = insertText
-        .replace(/\r?\n/gu, "\n")
-        .replace(/\r/gu, "\n")
-        .replace(/\n/gu, "\r\n")
+        .replace(/\r?\n/g, "\n")
+        .replace(/\r/g, "\n")
+        .replace(/\n/g, "\r\n")
 }
 
 const readmeFilePath = path.resolve(__dirname, "../README.md")
@@ -96,7 +96,7 @@ fs.writeFileSync(
     fs
         .readFileSync(readmeFilePath, "utf8")
         .replace(
-            /<!--RULES_TABLE_START-->[\s\S]*<!--RULES_TABLE_END-->/u,
+            /<!--RULES_TABLE_START-->[\s\S]*<!--RULES_TABLE_END-->/,
             `<!--RULES_TABLE_START-->${insertText}<!--RULES_TABLE_END-->`
         )
 )

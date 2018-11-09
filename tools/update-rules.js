@@ -52,9 +52,9 @@ const filePath = path.resolve(__dirname, "../lib/utils/rules.js")
 
 if (isWin) {
     content = content
-        .replace(/\r?\n/gu, "\n")
-        .replace(/\r/gu, "\n")
-        .replace(/\n/gu, "\r\n")
+        .replace(/\r?\n/g, "\n")
+        .replace(/\r/g, "\n")
+        .replace(/\n/g, "\r\n")
 }
 
 // Update file.

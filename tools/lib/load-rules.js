@@ -12,7 +12,7 @@ function readRules() {
     const result = fs.readdirSync(rulesRoot)
     const rules = []
     for (const name of result) {
-        const ruleName = name.replace(/\.js$/u, "")
+        const ruleName = name.replace(/\.js$/, "")
         const ruleId = `lodash-template/${ruleName}`
 
         const rule = require(path.join(rulesRoot, name))
