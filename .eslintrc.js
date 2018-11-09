@@ -8,7 +8,7 @@ module.exports = {
         "plugin:@mysticatea/+node",
         "plugin:@mysticatea/+eslint-plugin",
     ],
-    plugins: [],
+    plugins: ["es"],
     rules: {
         "@mysticatea/eslint-plugin/report-message-format": ["error", "[^a-z].*\\.$"],
         "@mysticatea/eslint-plugin/require-meta-docs-url": [
@@ -22,6 +22,10 @@ module.exports = {
         "linebreak-style": "off",
         "prefer-rest-params": "off",
         "prefer-spread": "off",
+
+        // for Node.js V4
+        "require-unicode-regexp": "off",
+        "es/no-regexp-u-flag": "error"
     },
 
     overrides: [
