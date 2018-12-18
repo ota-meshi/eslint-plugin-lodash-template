@@ -4,7 +4,7 @@ const fs = require("fs")
 const path = require("path")
 const logger = console
 
-    // main
+// main
 ;(ruleId => {
     if (ruleId == null) {
         logger.error("Usage: npm run new <RuleID>")
