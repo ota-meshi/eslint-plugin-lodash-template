@@ -10,6 +10,7 @@ module.exports = {
     ],
     plugins: ["es"],
     rules: {
+        'require-jsdoc': 'error',
         "@mysticatea/eslint-plugin/report-message-format": ["error", "[^a-z].*\\.$"],
         "@mysticatea/eslint-plugin/require-meta-docs-url": [
             "error",
