@@ -38,14 +38,12 @@
                             <img
                                 src="https://img.shields.io/npm/v/eslint-plugin-lodash-template.svg"
                                 alt="npm"
-                            >
+                            />
                         </a>
                     </span>
                 </section>
                 <section>
-                    <label class="menu-title">
-                        LINKS:
-                    </label>
+                    <label class="menu-title"> LINKS: </label>
                     <div class="menu-item">
                         <a
                             class="link"
@@ -74,18 +72,12 @@
             <rules-settings
                 ref="settings"
                 class="rules-settings"
-                @change="onChengeRules"
+                :rules.sync="state.rules"
             />
-            <eslint-editor
-                v-model="code"
-                :linter="linter"
-                :config="config"
+            <pg-editor
+                v-model="state.code"
+                :rules="state.rules"
                 class="eslint-playground"
-                language="html"
-                filename="a.html"
-                fix
-                :postprocess="postprocess"
-                :preprocess="preprocess"
                 @change="onChange"
             />
             <div class="messages">
@@ -99,8 +91,8 @@
                             :href="getURL(msg.ruleId)"
                             target="_blank"
                         >
-                            {{ msg.ruleId }}
-                        </a>)
+                            {{ msg.ruleId }} </a
+                        >)
                     </li>
                 </ol>
             </div>
@@ -109,53 +101,14 @@
 </template>
 
 <script>
-import EslintEditor from "vue-eslint-editor"
-import Linter from "eslint4b"
 import * as coreRules from "eslint4b/dist/core-rules"
 import plugin from "../../lib/index.js"
-import parser from "../../lib/parser/micro-template-eslint-parser.js"
-import processor from "../../lib/processor/micro-template-processor.js"
-import RulesSettings from "./RulesSettings.vue"
+import PgEditor from "./components/PgEditor.vue"
+import RulesSettings from "./components/RulesSettings.vue"
+import { deserializeState, serializeState } from "./state"
+import { DEFAULT_RULES_CONFIG } from "./rules"
 
-const ruleURLs = {}
-for (const k of Object.keys(plugin.rules)) {
-    const rule = plugin.rules[k]
-    ruleURLs[rule.meta.docs.ruleId] = rule.meta.docs.url
-}
-for (const k of Object.keys(coreRules)) {
-    const rule = coreRules[k]
-    ruleURLs[k] = rule.meta.docs.url
-}
-
-const linter = new Linter()
-
-for (const k of Object.keys(plugin.rules)) {
-    const rule = plugin.rules[k]
-    linter.defineRule(rule.meta.docs.ruleId, rule)
-}
-linter.defineParser("micro-template-eslint-parser", parser)
-
-// eslint/lib/cli-engine.js #183
-function preprocess(rawText) {
-    return processor.preprocess(rawText, "a.html")
-}
-
-function postprocess(problemLists) {
-    return processor.postprocess(problemLists, "a.html")
-}
-
-const verifyAndFix = linter.verifyAndFix.bind(linter)
-linter.verifyAndFix = function(...args) {
-    args[2].preprocess = preprocess
-    args[2].postprocess = postprocess
-    return verifyAndFix(...args)
-}
-
-export default {
-    components: { EslintEditor, RulesSettings },
-    data() {
-        return {
-            code: `<% /* global accounts, users */ %>
+const DEFAULT_CODE = `<% /* global accounts, users */ %>
 <% accounts.forEach(({id, profile_image_url, from_user}, i) => { %>
 <div id="<%= id %>" class="<%= (i % 2 == 1 ? ' even': '') %>">
   <div class="grid_1 alpha right">
@@ -169,21 +122,42 @@ export default {
 
 <% for ( var i = 0; i < users.length; i++ ) { %>
   <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
-<% } %>`,
-            config: {
-                parser: "micro-template-eslint-parser",
-                parserOptions: {
-                    ecmaVersion: 2018,
-                },
-                rules: {},
+<% } %>`
+
+const ruleURLs = {}
+for (const k of Object.keys(plugin.rules)) {
+    const rule = plugin.rules[k]
+    ruleURLs[rule.meta.docs.ruleId] = rule.meta.docs.url
+}
+for (const k of Object.keys(coreRules)) {
+    const rule = coreRules[k]
+    ruleURLs[k] = rule.meta.docs.url
+}
+
+export default {
+    components: { PgEditor, RulesSettings },
+    data() {
+        const serializedString = location.hash.slice(1)
+        const state = deserializeState(serializedString)
+        return {
+            serializedString,
+            state: {
+                code: state.code || DEFAULT_CODE,
+                rules: state.rules || Object.assign({}, DEFAULT_RULES_CONFIG),
             },
-            linter,
             messages: [],
-            preprocess,
-            postprocess,
         }
     },
+    watch: {
+        state: {
+            handler() {
+                this.applyUrlHash()
+            },
+            deep: true,
+        },
+    },
     mounted() {
+        window.addEventListener("hashchange", this.onUrlHashChange)
         ;(function(d, s, id) {
             const [fjs] = d.getElementsByTagName(s)
             if (d.getElementById(id)) {
@@ -215,26 +189,34 @@ export default {
                 fjs.parentNode.insertBefore(js, fjs)
             }
         })(document, "script", "twitter-wjs")
-
-        this.reflectConfig()
+    },
+    beforeDestroey() {
+        window.removeEventListener("hashchange", this.onUrlHashChange)
     },
     methods: {
         onChange({ messages }) {
             this.messages = messages
         },
-        onChengeRules() {
-            this.reflectConfig()
-        },
         getURL(ruleId) {
             return ruleURLs[ruleId] || ""
         },
-        reflectConfig() {
-            this.config = {
-                parser: "micro-template-eslint-parser",
-                parserOptions: {
-                    ecmaVersion: 2018,
-                },
-                rules: this.$refs.settings.createRules(),
+        onUrlHashChange() {
+            const serializedString = location.hash.slice(1)
+            if (serializedString !== this.serializedString) {
+                this.serializedString = serializedString
+                const state = deserializeState(serializedString)
+                this.state = {
+                    code: state.code || DEFAULT_CODE,
+                    rules:
+                        state.rules || Object.assign({}, DEFAULT_RULES_CONFIG),
+                }
+            }
+        },
+        applyUrlHash() {
+            const serializedString = serializeState(this.state)
+            if (serializedString !== this.serializedString) {
+                this.serializedString = serializedString
+                location.replace(`#${serializedString}`)
             }
         },
     },

@@ -18,12 +18,20 @@ module.exports = {
     overrides: [
         {
             files: ["**/*.vue"],
+            globals: {window:true},
             rules: {
-                "@mysticatea/prettier": "off",
+                // for prettier
+                "@mysticatea/vue/html-closing-bracket-newline": "off",
+                "@mysticatea/vue/singleline-html-element-content-newline": "off",
+                "@mysticatea/vue/multiline-html-element-content-newline": "off",
+                "@mysticatea/vue/html-self-closing": "off",
+                "@mysticatea/vue/max-attributes-per-line": "off",
+                "@mysticatea/vue/html-indent": "off"
             },
         },
         {
-            files: ["lib/*.js"],
+            files: ["lib/**/*.js"],
+            globals: {window:true},
             rules:{
                 "@mysticatea/node/no-unsupported-features/es-syntax": "off",
             }
