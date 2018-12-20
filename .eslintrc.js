@@ -10,7 +10,6 @@ module.exports = {
     ],
     plugins: ["es"],
     rules: {
-        'require-jsdoc': 'error',
         "@mysticatea/eslint-plugin/report-message-format": ["error", "[^a-z].*\\.$"],
         "@mysticatea/eslint-plugin/require-meta-docs-url": [
             "error",
@@ -18,11 +17,8 @@ module.exports = {
                 pattern: `https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/v${version}/docs/rules/{{name}}.md`,
             },
         ],
-        "mysticatea/arrow-parens": "off",
+        'require-jsdoc': 'error',
         "no-warning-comments": "warn",
-        "linebreak-style": "off",
-        "prefer-rest-params": "off",
-        "prefer-spread": "off",
 
         // for Node.js V4
         "require-unicode-regexp": "off",
