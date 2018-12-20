@@ -3,6 +3,9 @@
 const version = require("./package.json").version
 
 module.exports = {
+    parserOptions: {
+        parser: "babel-eslint"
+    },
     extends: [
         "plugin:@mysticatea/es2015",
         "plugin:@mysticatea/+node",

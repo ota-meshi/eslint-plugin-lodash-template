@@ -7,9 +7,8 @@ matrix:
       env: CI=coverage
     - node_js: "6.5.0"
     - node_js: "6"
-    - node_js: "7"
     - node_js: "8"
-    - node_js: "9"
+    - node_js: "10"
 
 
 before_install:

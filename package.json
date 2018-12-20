@@ -82,6 +82,7 @@
     "if-node-version": "^1.1.1",
     "mocha": "^5.2.0",
     "nyc": "^13.1.0",
+    "pako": "^1.0.7",
     "prettier": "^1.15.3",
     "style-loader": "^0.23.1",
     "vue": "^2.5.21",

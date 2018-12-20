@@ -18,7 +18,7 @@ module.exports = (_env, argv) => {
         output: {
             path: path.resolve(__dirname, "../assets"),
             filename: "[name].js",
-            publicPath: "./",
+            publicPath: "./assets/",
             devtoolModuleFilenameTemplate,
             devtoolFallbackModuleFilenameTemplate: devtoolModuleFilenameTemplate,
         },
@@ -95,10 +95,9 @@ module.exports = (_env, argv) => {
                       }
                     : {}
             ),
-            new webpack.optimize.LimitChunkCountPlugin({
-                maxChunks: 1,
-            }),
+            // new webpack.optimize.LimitChunkCountPlugin({
+            //     maxChunks: 1,
+            // }),
         ],
-        devtool: false,
     }
 }
