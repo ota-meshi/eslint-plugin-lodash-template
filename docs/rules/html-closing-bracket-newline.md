@@ -1,4 +1,11 @@
-# require or disallow a line break before tag's closing brackets (lodash-template/html-closing-bracket-newline)
+---
+pageClass: "rule-details"
+sidebarDepth: 0
+title: "lodash-template/html-closing-bracket-newline"
+description: "require or disallow a line break before tag's closing brackets"
+---
+# lodash-template/html-closing-bracket-newline
+> require or disallow a line break before tag's closing brackets
 
 - :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
 - :wrench: The `--fix` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by this rule.
@@ -10,40 +17,39 @@ This rule enforces a line break (or no line break) before tag's closing brackets
 
 ```html
 <div
-    id="foo"
-    class="bar"> <!-- On the same line with the last attribute. -->
+  id="foo"
+  class="bar"> <!-- On the same line with the last attribute. -->
 </div>
-
 <div
-    id="foo"
-    class="bar"
+  id="foo"
+  class="bar"
 > <!-- On the next line. -->
 </div>
 ```
 
-:-1: Examples of **incorrect** code for this rule:
+<eslint-code-block fix :rules="{'lodash-template/html-closing-bracket-newline': ['error']}">
 
 ```html
+<!-- ✓ GOOD -->
+<div id="foo" class="bar"></div>
+<div
+  id="foo"
+  class="bar"></div>
+
+<!-- ✗ BAD -->
 <div id="foo" class="bar"
->
+></div>
 <div
-    id="foo"
-    class="bar"
->
+  id="foo"
+  class="bar"
+></div>
 <div
-    id="foo"
-    class="bar"
-    >
+  id="foo"
+  class="bar"
+  ></div>
 ```
 
-:+1: Examples of **correct** code for this rule:
-
-```html
-<div id="foo" class="bar">
-<div
-    id="foo"
-    class="bar">
-```
+</eslint-code-block>
 
 ## Options
 
@@ -65,30 +71,33 @@ This rule enforces a line break (or no line break) before tag's closing brackets
 
 Plus, you can use [`lodash-template/html-indent`](./html-indent.md) rule to enforce indent-level of the closing brackets.
 
-:-1: Examples of **incorrect** code for `{ "multiline": "always" }`:
+### Examples for this rule with `{ "multiline": "always" }` option:
+
+<eslint-code-block fix :rules="{'lodash-template/html-closing-bracket-newline': ['error', { multiline: 'always' }]}">
 
 ```html
-<% /*eslint lodash-template/html-closing-bracket-newline: ["error", { multiline: always }]*/ %>
+<!-- ✓ GOOD -->
+<div id="foo" class="bar"></div>
+<div
+  id="foo"
+  class="bar"
+></div>
+<div
+  id="foo"
+  class="bar"
+  ></div>
 
+<!-- ✗ BAD -->
 <div id="foo" class="bar"
->
+></div>
 <div
-    id="foo"
-    class="bar">
+  id="foo"
+  class="bar"></div>
 ```
 
-:+1: Examples of **correct** code for `{ "multiline": "always" }`:
+</eslint-code-block>
 
-```html
-<% /*eslint lodash-template/html-closing-bracket-newline: ["error", { multiline: always }]*/ %>
+## Implementation
 
-<div id="foo" class="bar">
-<div
-    id="foo"
-    class="bar"
->
-<div
-    id="foo"
-    class="bar"
-    >
-```
+- [Rule source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/lib/rules/html-closing-bracket-newline.js)
+- [Test source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/tests/lib/rules/html-closing-bracket-newline.js)

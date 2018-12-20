@@ -1,3 +1,7 @@
+---
+sidebarDepth: 1
+---
+
 # AST for `<%= templateTag %>`
 
 - [Token](#token)
@@ -32,7 +36,7 @@ export function create(context) {
 }
 ```
 
-See details: [../../lib/ast/micro-template-nodes.js](../../lib/ast/micro-template-nodes.js)
+See details: [https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/lib/ast/micro-template-nodes.js](../../lib/ast/micro-template-nodes.js)
 
 
 ## Token

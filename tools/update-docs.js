@@ -34,64 +34,175 @@ function getPresets(category) {
     return presets
 }
 
+//eslint-disable-next-line require-jsdoc
+function yamlValue(val) {
+    if (typeof val === "string") {
+        return `"${val.replace(/"/g, '\\"')}"`
+    }
+    return val
+}
+
 const ROOT = path.resolve(__dirname, "../docs/rules")
-for (const rule of rules) {
-    const filePath = path.join(ROOT, `${rule.meta.docs.ruleName}.md`)
 
-    const presets = Array.from(
-        new Set(
-            getPresets(rule.meta.docs.category).concat([
-                "plugin:lodash-template/all",
-            ])
-        )
-    )
-    const title = `# ${rule.meta.docs.description} (${rule.meta.docs.ruleId})`
-    const notes = []
-
-    if (presets.length) {
-        notes.push(
-            `- :gear: This rule is included in ${formatItems(
-                presets.map(c => `\`"${c}"\``)
-            )}.`
-        )
+class DocFile {
+    constructor(rule) {
+        this.rule = rule
+        this.filePath = path.join(ROOT, `${rule.meta.docs.ruleName}.md`)
+        this.content = fs.readFileSync(this.filePath, "utf8")
     }
-    if (rule.meta.deprecated) {
-        if (rule.meta.docs.replacedBy) {
-            const replacedRules = rule.meta.docs.replacedBy.map(
-                name => `[lodash-template/${name}](${name}.md) rule`
-            )
-            notes.push(
-                `- :warning: This rule was **deprecated** and replaced by ${formatItems(
-                    replacedRules
-                )}.`
-            )
+
+    static read(rule) {
+        return new DocFile(rule)
+    }
+
+    updateHeader() {
+        const {
+            meta: {
+                fixable,
+                deprecated,
+                docs: { ruleId, description, category, replacedBy },
+            },
+        } = this.rule
+        const title = `# ${ruleId}\n> ${description}`
+        const notes = []
+
+        if (deprecated) {
+            if (replacedBy) {
+                const replacedRules = replacedBy.map(
+                    name => `[vue/${name}](${name}.md) rule`
+                )
+                notes.push(
+                    `- :warning: This rule was **deprecated** and replaced by ${formatItems(
+                        replacedRules
+                    )}.`
+                )
+            } else {
+                notes.push(`- :warning: This rule was **deprecated**.`)
+            }
         } else {
-            notes.push(`- :warning: This rule was **deprecated**.`)
-        }
-    }
-    if (rule.meta.fixable) {
-        notes.push(
-            `- :wrench: The \`--fix\` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by this rule.`
-        )
-    }
-
-    // Add an empty line after notes.
-    if (notes.length >= 1) {
-        notes.push("", "")
-    }
-
-    const isWin = require("os")
-        .platform()
-        .startsWith("win")
-    fs.writeFileSync(
-        filePath,
-        fs
-            .readFileSync(filePath, "utf8")
-            .replace(
-                /^#[^\n]*(\r?\n)+(?:- .+\r?\n)*(\r?\n)*/,
-                `${title}${isWin ? "\r\n\r\n" : "\n\n"}${notes.join(
-                    isWin ? "\r\n" : "\n"
-                )}`
+            const presets = Array.from(
+                new Set(
+                    getPresets(category).concat(["plugin:lodash-template/all"])
+                )
             )
-    )
+
+            if (presets.length) {
+                notes.push(
+                    `- :gear: This rule is included in ${formatItems(
+                        presets.map(c => `\`"${c}"\``)
+                    )}.`
+                )
+            }
+            // const presets = categories
+            //     .slice(categoryIndex)
+            //     .map(category => `\`"plugin:vue/${category.categoryId}"\``)
+            // notes.push(
+            //     `- :gear: This rule is included in ${formatItems(presets)}.`
+            // )
+        }
+        if (fixable) {
+            notes.push(
+                `- :wrench: The \`--fix\` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by this rule.`
+            )
+        }
+
+        // Add an empty line after notes.
+        if (notes.length >= 1) {
+            notes.push("", "")
+        }
+
+        const headerPattern = /#.+\n[^\n]*\n+(?:- .+\n)*\n*/
+        const header = `${title}\n\n${notes.join("\n")}`
+        if (headerPattern.test(this.content)) {
+            this.content = this.content.replace(headerPattern, header)
+        } else {
+            this.content = `${header}${this.content.trim()}\n`
+        }
+
+        return this
+    }
+
+    updateFooter() {
+        const { ruleName } = this.rule.meta.docs
+        const footerPattern = /## Implementation[\s\S]+$/
+        const footer = `## Implementation
+
+- [Rule source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/lib/rules/${ruleName}.js)
+- [Test source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/tests/lib/rules/${ruleName}.js)
+`
+        if (footerPattern.test(this.content)) {
+            this.content = this.content.replace(footerPattern, footer)
+        } else {
+            this.content = `${this.content.trim()}\n\n${footer}`
+        }
+
+        return this
+    }
+
+    updateCodeBlocks() {
+        const { meta } = this.rule
+
+        this.content = this.content.replace(
+            /<eslint-code-block\s(:?fix[^\s]*)?\s*/g,
+            `<eslint-code-block ${meta.fixable ? "fix " : ""}`
+        )
+        return this
+    }
+
+    adjustCodeBlocks() {
+        // Adjust the necessary blank lines before and after the code block so that GitHub can recognize `.md`.
+        this.content = this.content.replace(
+            /(<eslint-code-block([\s\S]*?)>)\n+```/gm,
+            "$1\n\n```"
+        )
+        this.content = this.content.replace(
+            /```\n+<\/eslint-code-block>/gm,
+            "```\n\n</eslint-code-block>"
+        )
+        return this
+    }
+
+    updateFileIntro() {
+        const { ruleId, description } = this.rule.meta.docs
+
+        const fileIntro = {
+            pageClass: "rule-details",
+            sidebarDepth: 0,
+            title: ruleId,
+            description,
+        }
+        const computed = `---\n${Object.keys(fileIntro)
+            .map(key => `${key}: ${yamlValue(fileIntro[key])}`)
+            .join("\n")}\n---\n`
+
+        const fileIntroPattern = /^---\n(.*\n)+---\n*/g
+
+        if (fileIntroPattern.test(this.content)) {
+            this.content = this.content.replace(fileIntroPattern, computed)
+        } else {
+            this.content = `${computed}${this.content.trim()}\n`
+        }
+
+        return this
+    }
+
+    write() {
+        const isWin = require("os")
+            .platform()
+            .startsWith("win")
+
+        this.content = this.content.replace(/\r?\n/g, isWin ? "\r\n" : "\n")
+
+        fs.writeFileSync(this.filePath, this.content)
+    }
+}
+
+for (const rule of rules) {
+    DocFile.read(rule)
+        .updateHeader()
+        .updateFooter()
+        .updateCodeBlocks()
+        .updateFileIntro()
+        .adjustCodeBlocks()
+        .write()
 }

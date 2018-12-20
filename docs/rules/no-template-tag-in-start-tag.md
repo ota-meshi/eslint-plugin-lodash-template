@@ -1,4 +1,11 @@
-# disallow template tag in start tag outside attribute values. (ex. :ng: `<input <%= 'disabled' %> >`) (lodash-template/no-template-tag-in-start-tag)
+---
+pageClass: "rule-details"
+sidebarDepth: 0
+title: "lodash-template/no-template-tag-in-start-tag"
+description: "disallow template tag in start tag outside attribute values. (ex. :ng: `<input <%= 'disabled' %> >`)"
+---
+# lodash-template/no-template-tag-in-start-tag
+> disallow template tag in start tag outside attribute values. (ex. :ng: `<input <%= 'disabled' %> >`)
 
 - :gear: This rule is included in `"plugin:lodash-template/all"`.
 
@@ -6,9 +13,15 @@
 
 This rule reports the template tag that is in the start tag, outside attribute values.
 
-:-1: Examples of **incorrect** code for this rule:
+<eslint-code-block :rules="{'lodash-template/no-template-tag-in-start-tag': ['error']}">
 
 ```html
+<!-- ✓ GOOD -->
+<input disabled >
+
+<input class="<%= hidden ? 'hidden' : '' %>" >
+
+<!-- ✗ BAD -->
 <input <%= 'disabled' %> >
 
 <input <%= disabled ? 'disabled' : '' %> >
@@ -20,16 +33,9 @@ This rule reports the template tag that is in the start tag, outside attribute v
 >
 ```
 
-:+1: Examples of **correct** code for this rule:
+</eslint-code-block>
 
-```html
-<input disabled >
-
-<input class="<%= hidden ? 'hidden' : '' %>" >
-```
-
-
-### Options
+## Options
 
 ```json
 {
@@ -39,12 +45,23 @@ This rule reports the template tag that is in the start tag, outside attribute v
 }
 ```
 
-:+1: Examples of **correct** code  for `{arrowEvaluateTag: true}`:
+### Examples for this rule with `{arrowEvaluateTag: true}` option:
+
+<eslint-code-block :rules="{'lodash-template/no-template-tag-in-start-tag': ['error', {arrowEvaluateTag: true}]}">
 
 ```html
+<!-- ✓ GOOD -->
+<input disabled >
 <input
   <% if (disabled) { %>
   disabled
   <% } %>
 >
 ```
+
+</eslint-code-block>
+
+## Implementation
+
+- [Rule source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/lib/rules/no-template-tag-in-start-tag.js)
+- [Test source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/tests/lib/rules/no-template-tag-in-start-tag.js)

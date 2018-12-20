@@ -34,7 +34,7 @@ This plugin supports code checking for templates like the examples below.
 <% } %>
 ```
 
-[***Playground on the Web***](https://ota-meshi.github.io/eslint-plugin-lodash-template/)
+[***Playground on the Web***](https://ota-meshi.github.io/eslint-plugin-lodash-template/playground/)
 
 output sample(on SublimeText):
 
@@ -45,6 +45,10 @@ output sample(on SublimeText):
 ```bash
 npm install --save-dev eslint eslint-plugin-lodash-template
 ```
+
+## Documentation
+
+See [documents](https://ota-meshi.github.io/eslint-plugin-lodash-template/).
 
 ## Usage
 
@@ -323,7 +327,7 @@ Please use GitHub's Issues/PRs.
 
 ### `parserServices`
 
-[Information provided by `parserServices` on this plugin](./docs/service/service.md)  
+[Information provided by `parserServices` on this plugin](./docs/service/README.md)  
 
 ### Development Tools
 

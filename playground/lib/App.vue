@@ -47,6 +47,14 @@
                     <div class="menu-item">
                         <a
                             class="link"
+                            href="https://github.com/ota-meshi/eslint-plugin-lodash-template/rules/"
+                        >
+                            <span> All Rules </span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a
+                            class="link"
                             href="https://github.com/ota-meshi/eslint-plugin-lodash-template"
                         >
                             <span> View on GitHub </span>

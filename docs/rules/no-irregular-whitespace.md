@@ -1,4 +1,11 @@
-# disallow irregular whitespace outside the template tags. (lodash-template/no-irregular-whitespace)
+---
+pageClass: "rule-details"
+sidebarDepth: 0
+title: "lodash-template/no-irregular-whitespace"
+description: "disallow irregular whitespace outside the template tags."
+---
+# lodash-template/no-irregular-whitespace
+> disallow irregular whitespace outside the template tags.
 
 - :gear: This rule is included in all of `"plugin:lodash-template/recommended"`, `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
 - :wrench: The `--fix` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by this rule.
@@ -7,19 +14,19 @@
 
 This rule disallows the irregular whitespaces.
 
-:-1: Examples of **incorrect** code for this rule:
+<eslint-code-block fix :rules="{'lodash-template/no-irregular-whitespace': ['error']}">
 
 ```html
-<div□id="item-id"□class="item-content">
-</div□>
-```
-
-:+1: Examples of **correct** code for this rule:
-
-```html
+<!-- ✓ GOOD -->
 <div id="item-id" class="item-content">
 </div >
+
+<!-- ✗ BAD -->
+<div　id="item-id"　class="item-content">
+</div　>
 ```
+
+</eslint-code-block>
 
 ## Options
 
@@ -42,3 +49,8 @@ This rule has an object option for exceptions:
 ## Further Reading
 
 * [ESLint `no-irregular-whitespace` rule](https://eslint.org/docs/rules/no-irregular-whitespace)
+
+## Implementation
+
+- [Rule source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/lib/rules/no-irregular-whitespace.js)
+- [Test source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/tests/lib/rules/no-irregular-whitespace.js)

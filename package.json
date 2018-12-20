@@ -12,6 +12,7 @@
     "test:d": "mocha --inspect --debug-brk \"tests/**/*.js\" --reporter dot",
     "watch": "npm run test:base -- --watch",
     "update": "node ./tools/update.js && npm run lint:fix && npm run test",
+    "updateonly": "node ./tools/update.js && npm run lint:fix",
     "lint:fix": "eslint . --ext .js,.vue --fix",
     "test:sp": "mocha \"test_sp/**/*.js\" --reporter dot",
     "test:v:node6": "npm run test:v:high && npm run test:v:latest && npm i",
@@ -21,7 +22,9 @@
     "test:v:latest": "npm i eslint@latest parse5@latest --no-save && npm run test:base",
     "new": "node ./tools/new-rule.js",
     "pg:build": "webpack --config playground/webpack.config.js --progress --mode production",
-    "pg:dev": "webpack --config playground/webpack.config.js --progress --mode development"
+    "pg:dev": "webpack --config playground/webpack.config.js --progress --mode development",
+    "docs:watch": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "files": [
     "lib"
@@ -90,6 +93,7 @@
     "vue-loader": "^15.6.2",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.4",
+    "vuepress": "^0.14.8",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.2.3"
   },

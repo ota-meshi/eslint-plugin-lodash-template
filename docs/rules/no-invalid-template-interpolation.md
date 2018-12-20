@@ -1,4 +1,11 @@
-# disallow other than expression in micro-template interpolation. (ex. :ng: `<%= if (test) { %>`) (lodash-template/no-invalid-template-interpolation)
+---
+pageClass: "rule-details"
+sidebarDepth: 0
+title: "lodash-template/no-invalid-template-interpolation"
+description: "disallow other than expression in micro-template interpolation. (ex. :ng: `<%= if (test) { %>`)"
+---
+# lodash-template/no-invalid-template-interpolation
+> disallow other than expression in micro-template interpolation. (ex. :ng: `<%= if (test) { %>`)
 
 - :gear: This rule is included in all of `"plugin:lodash-template/best-practices"`, `"plugin:lodash-template/recommended"`, `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
 
@@ -6,26 +13,27 @@
 
 This rule disallow other than expression in micro-template interpolation.
 
-:-1: Examples of **incorrect** code for this rule:
+<eslint-code-block :rules="{'lodash-template/no-invalid-template-interpolation': ['error']}">
 
 ```html
-<%= if (a) { %>
-  <div></div>
-<% } %>
-```
-
-```html
-<div><%= /**/ %></div>
-```
-
-:+1: Examples of **correct** code for this rule:
-
-```html
+<!-- ✓ GOOD -->
 <% if (a) { %>
   <div></div>
 <% } %>
+
+<div><%= text %></div>
+
+<!-- ✗ BAD -->
+<%= if (a) { %>
+  <div></div>
+<% } %>
+
+<div><%= /**/ %></div>
 ```
 
-```html
-<div><%= text %></div>
-```
+</eslint-code-block>
+
+## Implementation
+
+- [Rule source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/lib/rules/no-invalid-template-interpolation.js)
+- [Test source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/tests/lib/rules/no-invalid-template-interpolation.js)
