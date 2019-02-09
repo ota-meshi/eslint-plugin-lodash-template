@@ -109,7 +109,7 @@ export default {
     name: 'PlaygroundBlock',
     components: { PgEditor, RulesSettings },
     data() {
-        const serializedString = process.browser && window.location.hash.slice(1)
+        const serializedString = process.browser && window.location.hash.slice(1) || ''
         const state = deserializeState(serializedString)
         return {
             serializedString,
@@ -177,7 +177,7 @@ export default {
             return ruleURLs[ruleId] || ""
         },
         onUrlHashChange() {
-            const serializedString = process.browser && window.location.hash.slice(1)
+            const serializedString = process.browser && window.location.hash.slice(1) || ''
             if (serializedString !== this.serializedString) {
                 this.serializedString = serializedString
                 const state = deserializeState(serializedString)
