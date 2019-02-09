@@ -31,10 +31,6 @@ module.exports = (_env, argv) => {
         module: {
             rules: [
                 {
-                    test: /\.css$/u,
-                    use: ["style-loader", "css-loader"],
-                },
-                {
                     test: /\.vue$/u,
                     loader: "vue-loader",
                 },
@@ -81,6 +77,10 @@ module.exports = (_env, argv) => {
                         compact: true,
                         cacheDirectory: true,
                     },
+                },
+                {
+                    test: /\.css$/u,
+                    use: ["vue-style-loader", "css-loader"],
                 },
             ],
         },
