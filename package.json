@@ -24,7 +24,10 @@
     "pg:build": "webpack --config playground/webpack.config.js --progress --mode production",
     "pg:dev": "webpack --config playground/webpack.config.js --progress --mode development",
     "docs:watch": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "docs:deploysetup": "npm run docs:build && npm run docs:clean && npm run docs:copy",
+    "docs:clean": "rimraf assets",
+    "docs:copy": "cpx \"docs/\\.vuepress/dist/**\" . -u"
   },
   "files": [
     "lib"
@@ -65,6 +68,7 @@
   "devDependencies": {
     "@mysticatea/eslint-plugin": "^9.0.1",
     "babel-eslint": "^10.0.1",
+    "cpx": "^1.5.0",
     "eslint": "^5.13.0",
     "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-es": "^1.4.0",
