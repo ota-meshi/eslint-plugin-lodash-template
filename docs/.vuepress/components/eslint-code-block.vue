@@ -20,6 +20,7 @@
 import EslintEditor from '../../../node_modules/vue-eslint-editor'
 import parser from "../../../lib/parser/micro-template-eslint-parser.js"
 import plugin from '../../../'
+import processor from "../../../lib/processor/micro-template-processor.js"
 
 
 function preprocess(rawText) {
