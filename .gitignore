@@ -1,5 +1,12 @@
 /node_modules
 .nyc_output
 coverage
-assets
 docs/.vuepress/dist
+
+assets
+service
+rules
+404.html
+service-worker.js
+playground
+index.html
