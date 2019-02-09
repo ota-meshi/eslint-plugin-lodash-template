@@ -109,7 +109,7 @@ export default {
     name: 'PlaygroundBlock',
     components: { PgEditor, RulesSettings },
     data() {
-        const serializedString = process.browser && window.location.hash.slice(1) || ''
+        const serializedString = typeof window !== 'undefined' && window.location.hash.slice(1) || ''
         const state = deserializeState(serializedString)
         return {
             serializedString,
@@ -129,7 +129,7 @@ export default {
         },
     },
     mounted() {
-        if (process.browser) {
+        if (typeof window !== 'undefined') {
           window.addEventListener("hashchange", this.onUrlHashChange)
         }
         ;(function(d, s, id) {
@@ -165,7 +165,7 @@ export default {
         })(document, "script", "twitter-wjs")
     },
     beforeDestroey() {
-        if (process.browser) {
+        if (typeof window !== 'undefined') {
             window.removeEventListener("hashchange", this.onUrlHashChange)
         }
     },
@@ -177,7 +177,7 @@ export default {
             return ruleURLs[ruleId] || ""
         },
         onUrlHashChange() {
-            const serializedString = process.browser && window.location.hash.slice(1) || ''
+            const serializedString = typeof window !== 'undefined' && window.location.hash.slice(1) || ''
             if (serializedString !== this.serializedString) {
                 this.serializedString = serializedString
                 const state = deserializeState(serializedString)
@@ -192,7 +192,7 @@ export default {
             const serializedString = serializeState(this.state)
             if (serializedString !== this.serializedString) {
                 this.serializedString = serializedString
-                if (process.browser) {
+                if (typeof window !== 'undefined') {
                     window.location.replace(`#${serializedString}`)
                 }
             }
