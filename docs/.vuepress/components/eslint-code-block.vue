@@ -21,6 +21,15 @@ import EslintEditor from '../../../node_modules/vue-eslint-editor'
 import parser from "../../../lib/parser/micro-template-eslint-parser.js"
 import plugin from '../../../'
 
+
+function preprocess(rawText) {
+    return processor.preprocess(rawText, "a.html")
+}
+
+function postprocess(problemLists) {
+    return processor.postprocess(problemLists, "a.html")
+}
+
 export default {
   name: 'ESLintCodeBlock',
   components: { EslintEditor },
@@ -41,8 +50,8 @@ export default {
   data () {
     return {
       linter: null,
-      preprocess: plugin.processors['.html'].preprocess,
-      postprocess: plugin.processors['.html'].postprocess,
+      preprocess,
+      postprocess,
       format: {
         insertSpaces: true,
         tabSize: 2

@@ -1,42 +1,40 @@
 <template>
     <div class="app">
-        <header class="header">
-            <span class="sns">
-                <a
-                    class="github-button"
-                    href="https://github.com/ota-meshi/eslint-plugin-lodash-template"
-                    data-show-count="true"
-                    aria-label="Star ota-meshi/eslint-plugin-lodash-template on GitHub"
-                >
-                    Star
-                </a>
-                <a
-                    href="https://twitter.com/share"
-                    class="twitter-share-button"
-                    data-url="https://ota-meshi.github.io/eslint-plugin-lodash-template/"
-                >
-                    Tweet
-                </a>
+        <div class="sns">
+            <a
+                class="github-button"
+                href="https://github.com/ota-meshi/eslint-plugin-lodash-template"
+                data-show-count="true"
+                aria-label="Star ota-meshi/eslint-plugin-lodash-template on GitHub"
+            >
+                Star
+            </a>
+            <a
+                href="https://twitter.com/share"
+                class="twitter-share-button"
+                data-url="https://ota-meshi.github.io/eslint-plugin-lodash-template/"
+            >
+                Tweet
+            </a>
 
-                <div
-                    class="fb-like"
-                    data-href="https://ota-meshi.github.io/eslint-plugin-lodash-template/"
-                    data-layout="button_count"
-                    data-action="like"
-                    data-size="small"
-                    data-show-faces="false"
-                    data-share="true"
+            <div
+                class="fb-like"
+                data-href="https://ota-meshi.github.io/eslint-plugin-lodash-template/"
+                data-layout="button_count"
+                data-action="like"
+                data-size="small"
+                data-show-faces="false"
+                data-share="true"
+            />
+            <a
+                href="https://www.npmjs.com/package/eslint-plugin-lodash-template"
+            >
+                <img
+                    src="https://img.shields.io/npm/v/eslint-plugin-lodash-template.svg"
+                    alt="npm"
                 />
-                <a
-                    href="https://www.npmjs.com/package/eslint-plugin-lodash-template"
-                >
-                    <img
-                        src="https://img.shields.io/npm/v/eslint-plugin-lodash-template.svg"
-                        alt="npm"
-                    />
-                </a>
-            </span>
-        </header>
+            </a>
+        </div>
         <div class="main-content">
             <rules-settings
                 ref="settings"
@@ -200,60 +198,3 @@ export default {
     },
 }
 </script>
-
-<style>
-.theme-container.playground .content:not(.custom) {
-    max-width: initial;
-    margin: 0 auto;
-    padding: 2rem 2.5rem;
-}
-.theme-container.playground .app {
-    height: calc(100vh - 70px);
-}
-.theme-container.playground .app > .main-content {
-    display: flex;
-    flex-wrap: wrap;
-    height: calc(100% - 100px);
-}
-.theme-container.playground .app > .main-content > .rules-settings {
-    height: 100%;
-    overflow: auto;
-    width: 25%;
-    box-sizing: border-box;
-}
-.theme-container.playground .app > .main-content > .editor-content {
-    height: 100%;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-.theme-container.playground .app > .main-content > .editor-content > .eslint-playground {
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    border: 0.5px solid gray;
-}
-.theme-container.playground .app > .main-content > .editor-content > .messages {
-    height: 30%;
-    width: 100%;
-    overflow: auto;
-    box-sizing: border-box;
-    border: 0.5px solid gray;
-    padding: 8px;
-    font-size: 12px;
-}
-
-.theme-container.playground .header {
-    padding: 10px 10px 0 10px;
-    /* background-color: rgba(52, 146, 255, 0.1); */
-}
-.theme-container.playground .header * {
-    text-decoration: none;
-}
-.theme-container.playground .header .sns {
-    display: flex;
-}
-.theme-container.playground .header .sns * {
-    vertical-align: top !important;
-}
-</style>
