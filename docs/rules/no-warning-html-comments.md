@@ -1,4 +1,11 @@
-# disallow specified warning terms in HTML comments. (ex. :ng: `<!-- TODO:task -->`) (lodash-template/no-warning-html-comments)
+---
+pageClass: "rule-details"
+sidebarDepth: 0
+title: "lodash-template/no-warning-html-comments"
+description: "disallow specified warning terms in HTML comments. (ex. :ng: `<!-- TODO:task -->`)"
+---
+# lodash-template/no-warning-html-comments
+> disallow specified warning terms in HTML comments. (ex. :ng: `<!-- TODO:task -->`)
 
 - :gear: This rule is included in all of `"plugin:lodash-template/best-practices"`, `"plugin:lodash-template/recommended"`, `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
 
@@ -6,8 +13,15 @@
 
 This rule reports HTML comments that include any of the predefined terms specified in its configuration.
 
-:-1: Examples of **incorrect** code for this rule:
+<eslint-code-block :rules="{'lodash-template/no-warning-html-comments': ['error']}">
 
 ```html
 <!-- TODO -->
 ```
+
+</eslint-code-block>
+
+## Implementation
+
+- [Rule source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/lib/rules/no-warning-html-comments.js)
+- [Test source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/tests/lib/rules/no-warning-html-comments.js)

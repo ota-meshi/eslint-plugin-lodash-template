@@ -1,4 +1,11 @@
-# enforce consistent HTML indentation. (lodash-template/html-indent)
+---
+pageClass: "rule-details"
+sidebarDepth: 0
+title: "lodash-template/html-indent"
+description: "enforce consistent HTML indentation."
+---
+# lodash-template/html-indent
+> enforce consistent HTML indentation.
 
 - :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
 - :wrench: The `--fix` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by this rule.
@@ -7,9 +14,17 @@
 
 This rule enforces a consistent HTML indentation style. The default style is 2 spaces.
 
-:-1: Examples of **incorrect** code for this rule:
+<eslint-code-block fix :rules="{'lodash-template/html-indent': ['error']}">
 
 ```html
+<!-- ✓ GOOD -->
+<div>
+  <div class="foo">
+    Hello.
+  </div>
+</div>
+
+<!-- ✗ BAD -->
 <div>
  <div class="foo">
    Hello.
@@ -17,15 +32,7 @@ This rule enforces a consistent HTML indentation style. The default style is 2 s
 </div>
 ```
 
-:+1: Examples of **correct** code for this rule:
-
-```html
-<div>
-  <div class="foo">
-    Hello.
-  </div>
-</div>
-```
+</eslint-code-block>
 
 ## Options
 
@@ -42,9 +49,12 @@ This rule enforces a consistent HTML indentation style. The default style is 2 s
 - `attribute` (`integer`) ... The multiplier of indentation for attributes. Default is `1`.
 - `closeBracket` (`integer`) ... The multiplier of indentation for right brackets. Default is `0`.
 
-:+1: Examples of **correct** code for `{attribute: 1, closeBracket: 1}`:
+### Examples for this rule with `{ attribute: 1, closeBracket: 1 }` option:
+
+<eslint-code-block fix :rules="{'lodash-template/html-indent': ['error', 2, { 'attribute': 1, 'closeBracket': 1 }]}">
 
 ```html
+<!-- ✓ GOOD -->
 <div>
   <div
     id="a"
@@ -57,9 +67,14 @@ This rule enforces a consistent HTML indentation style. The default style is 2 s
 </div>
 ```
 
-:+1: Examples of **correct** code for `{attribute: 2, closeBracket: 1}`:
+</eslint-code-block>
+
+### Examples for this rule with `{ attribute: 2, closeBracket: 1 }` option:
+
+<eslint-code-block fix :rules="{'lodash-template/html-indent': ['error', 2, {'attribute': 2, 'closeBracket': 1}]}">
 
 ```html
+<!-- ✓ GOOD -->
 <div>
   <div
       id="a"
@@ -71,3 +86,10 @@ This rule enforces a consistent HTML indentation style. The default style is 2 s
   </div>
 </div>
 ```
+
+</eslint-code-block>
+
+## Implementation
+
+- [Rule source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/lib/rules/html-indent.js)
+- [Test source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/tests/lib/rules/html-indent.js)

@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import EslintEditor from "vue-eslint-editor"
-import plugin from "../../../lib/index.js"
-import parser from "../../../lib/parser/micro-template-eslint-parser.js"
-import processor from "../../../lib/processor/micro-template-processor.js"
+import EslintEditor from "../../../../node_modules/vue-eslint-editor"
+import plugin from "../../../../lib/index.js"
+import parser from "../../../../lib/parser/micro-template-eslint-parser.js"
+import processor from "../../../../lib/processor/micro-template-processor.js"
 
 // eslint/lib/cli-engine.js #183
 function preprocess(rawText) {

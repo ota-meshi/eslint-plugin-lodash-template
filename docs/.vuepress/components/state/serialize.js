@@ -1,4 +1,4 @@
-import pako from "pako"
+import pako from "../../../../node_modules/pako"
 
 /**
  * Get only enabled rules to make the serialized data smaller.

@@ -1,4 +1,11 @@
-# enforce HTML attribute name casing. (ex. :ok: `<div foo-bar>` :ng: `<div fooBar>` `<div FOO-BAR>`) (lodash-template/attribute-name-casing)
+---
+pageClass: "rule-details"
+sidebarDepth: 0
+title: "lodash-template/attribute-name-casing"
+description: "enforce HTML attribute name casing. (ex. :ok: `<div foo-bar>` :ng: `<div fooBar>` `<div FOO-BAR>`)"
+---
+# lodash-template/attribute-name-casing
+> enforce HTML attribute name casing. (ex. :ok: `<div foo-bar>` :ng: `<div fooBar>` `<div FOO-BAR>`)
 
 - :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
 - :wrench: The `--fix` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by this rule.
@@ -7,19 +14,18 @@
 
 This rule enforces attribute name casing style (kebab-case).
 
-:-1: Examples of **incorrect** code for this rule:
+<eslint-code-block fix :rules="{'lodash-template/attribute-name-casing': ['error']}">
 
 ```html
-<div fooBar="abc">
+<!-- ✓ GOOD -->
+<div foo-bar="abc">
 
+<!-- ✗ BAD -->
+<div fooBar="abc">
 <div FOO-BAR="abc">
 ```
 
-:+1: Examples of **correct** code for this rule:
-
-```html
-<div foo-bar="abc">
-```
+</eslint-code-block>
 
 ## Options
 
@@ -31,14 +37,24 @@ This rule enforces attribute name casing style (kebab-case).
 }
 ```
 
-:+1: Examples of **correct** code for this rule with `"ignore": ["onClick"]` option:
+### Examples for this rule with `"ignore": ["onClick"]` option:
+
+<eslint-code-block fix :rules="{'lodash-template/attribute-name-casing': ['error', {'ignore': ['onClick']}]}">
 
 ```html
+<!-- ✓ GOOD -->
 <div onClick="abc">
 ```
+
+</eslint-code-block>
 
 ## Further Reading
 
 * [Google HTML/CSS Style Guide *Capitalization*](https://google.github.io/styleguide/htmlcssguide.html#Capitalization)
 * [HTML - MDN - Mozilla *`data-*`*](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
 * [HTML5 *Embedding custom non-visible data with the `data-*` attributes*](https://www.w3.org/TR/html5/dom.html#embedding-custom-non-visible-data-with-the-data-attributes)
+
+## Implementation
+
+- [Rule source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/lib/rules/attribute-name-casing.js)
+- [Test source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/tests/lib/rules/attribute-name-casing.js)

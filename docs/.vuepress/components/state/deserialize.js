@@ -1,4 +1,4 @@
-import pako from "pako"
+import pako from "../../../../node_modules/pako"
 
 /**
  * Deserialize a given serialized string then update this object.

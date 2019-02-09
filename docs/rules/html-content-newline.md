@@ -1,4 +1,11 @@
-# require or disallow a line break before and after HTML contents (lodash-template/html-content-newline)
+---
+pageClass: "rule-details"
+sidebarDepth: 0
+title: "lodash-template/html-content-newline"
+description: "require or disallow a line break before and after HTML contents"
+---
+# lodash-template/html-content-newline
+> require or disallow a line break before and after HTML contents
 
 - :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
 - :wrench: The `--fix` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by this rule.
@@ -7,18 +14,10 @@
 
 This rule enforces a line break (or no line break) before and after HTML contents.
 
-
-:-1: Examples of **incorrect** for this rule:
-
-```html
-<div
-  class="panel"
->content</div>
-```
-
-:+1: Examples of **correct** code for this rule:
+<eslint-code-block fix :rules="{'lodash-template/html-content-newline': ['error']}">
 
 ```html
+<!-- ✓ GOOD -->
 <div class="panel">content</div>
 
 <div class="panel">
@@ -30,18 +29,24 @@ This rule enforces a line break (or no line break) before and after HTML content
 >
   content
 </div>
+
+<!-- ✗ BAD -->
+<div
+  class="panel"
+>content</div>
 ```
 
+</eslint-code-block>
 
 ## Options
 
 ```json
 {
-    "lodash-template/html-content-newline": ["error", {
-        "singleline": "ignore",
-        "multiline": "always",
-        "ignoreNames": ["pre", "textarea"]
-    }]
+  "lodash-template/html-content-newline": ["error", {
+    "singleline": "ignore",
+    "multiline": "always",
+    "ignoreNames": ["pre", "textarea"]
+  }]
 }
 ```
 
@@ -56,12 +61,26 @@ This rule enforces a line break (or no line break) before and after HTML content
 - `ignoreNames` ... the configuration for element names to ignore line breaks style.  
     default `["pre", "textarea"]`
 
-
-:-1: Examples of **incorrect** code:
+<eslint-code-block fix :rules="{}">
 
 ```html
-<% /*eslint lodash-template/html-content-newline: ["error", { "singleline": "always", "multiline": "never"}] */ %>
+<% /*eslint
+  lodash-template/html-content-newline: ["error", {
+    "singleline": "always",
+    "multiline": "never"
+  }]
+*/ %>
 
+<!-- ✓ GOOD -->
+<div class="panel">
+  content
+</div>
+
+<div
+  class="panel"
+>content</div>
+
+<!-- ✗ BAD -->
 <div class="panel">content</div>
 
 <div
@@ -71,16 +90,9 @@ This rule enforces a line break (or no line break) before and after HTML content
 </div>
 ```
 
-:+1: Examples of **correct** code:
+</eslint-code-block>
 
-```html
-<% /*eslint lodash-template/html-content-newline: ["error", { "singleline": "always", "multiline": "never"}] */ %>
+## Implementation
 
-<div class="panel">
-  content
-</div>
-
-<div
-  class="panel"
->content</div>
-```
+- [Rule source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/lib/rules/html-content-newline.js)
+- [Test source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/tests/lib/rules/html-content-newline.js)

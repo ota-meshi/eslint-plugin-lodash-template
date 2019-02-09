@@ -1,5 +1,8 @@
-# AST for HTML
+---
+sidebarDepth: 1
+---
 
+# AST for HTML
 
 - [HTMLToken](#htmltoken)
 - [HTMLNode](#htmlnode)
@@ -37,7 +40,7 @@ export function create(context) {
 }
 ```
 
-See details: [../../lib/ast/html-nodes.js](../../lib/ast/html-nodes.js)
+See details: [https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/lib/ast/html-nodes.js](../../lib/ast/html-nodes.js)
 
 ## HTMLToken
 

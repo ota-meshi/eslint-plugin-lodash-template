@@ -1,4 +1,11 @@
-# require or disallow a space before tag's closing brackets. (ex. :ok: `<input>` `<input·/>` :ng: `<input·>` `<input/>`) (lodash-template/html-closing-bracket-spacing)
+---
+pageClass: "rule-details"
+sidebarDepth: 0
+title: "lodash-template/html-closing-bracket-spacing"
+description: "require or disallow a space before tag's closing brackets. (ex. :ok: `<input>` `<input·/>` :ng: `<input·>` `<input/>`)"
+---
+# lodash-template/html-closing-bracket-spacing
+> require or disallow a space before tag's closing brackets. (ex. :ok: `<input>` `<input·/>` :ng: `<input·>` `<input/>`)
 
 - :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
 - :wrench: The `--fix` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by this rule.
@@ -7,16 +14,27 @@
 
 This rule enforces consistent spacing style before closing brackets `>` of tags.
 
+
 ```html
 <div class="foo"> or <div class="foo" >
 <input class="foo"/> or <input class="foo" />
 ```
 
-:-1: Examples of **incorrect** code for this rule:
+<eslint-code-block fix :rules="{'lodash-template/html-closing-bracket-spacing': ['error']}">
 
 ```html
-<div >
-<div foo >
+<!-- ✓ GOOD -->
+<input>
+<input foo>
+<div foo="bar">
+</div>
+<br />
+<input foo />
+<input foo="bar" />
+
+<!-- ✗ BAD -->
+<input >
+<input foo >
 <div foo="bar" >
 </div >
 <br/>
@@ -24,18 +42,7 @@ This rule enforces consistent spacing style before closing brackets `>` of tags.
 <input foo="bar"/>
 ```
 
-:+1: Examples of **correct** code for this rule:
-
-```html
-<div>
-<div foo>
-<div foo="bar">
-</div>
-<br />
-<input foo />
-<input foo="bar" />
-```
-
+</eslint-code-block>
 
 ## Options
 
@@ -60,20 +67,29 @@ This rule enforces consistent spacing style before closing brackets `>` of tags.
     - `"always"` ... requires one or more spaces.
     - `"never"` ... disallows spaces.
 
-:+1: Examples of **correct** code for this rule:
+<eslint-code-block fix :rules="{}">
 
 ```html
-<% /* eslint lodash-template/html-closing-bracket-spacing: ["error", {
+<% /* eslint
+  lodash-template/html-closing-bracket-spacing: ["error", {
     "startTag": "always",
     "endTag": "always",
     "selfClosingTag": "always"
-}] */ %>
-
-<div >
-<div foo >
+  }]
+*/ %>
+<!-- ✓ GOOD -->
+<input >
+<input foo >
 <div foo="bar" >
 </div >
 <br />
 <input foo />
 <input foo="bar" />
 ```
+
+</eslint-code-block>
+
+## Implementation
+
+- [Rule source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/lib/rules/html-closing-bracket-spacing.js)
+- [Test source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/tests/lib/rules/html-closing-bracket-spacing.js)

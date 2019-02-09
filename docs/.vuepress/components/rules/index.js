@@ -1,5 +1,5 @@
-import * as coreRules from "eslint4b/dist/core-rules"
-import plugin from "../../../lib/index.js"
+import * as coreRules from "../../../../node_modules/eslint4b/dist/core-rules"
+import plugin from "../../../../lib/index"
 
 const CATEGORY_TITLES = {
     base: "Base Rules",
