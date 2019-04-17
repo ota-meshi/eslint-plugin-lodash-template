@@ -12,7 +12,7 @@ function readConfigs() {
     const result = fs.readdirSync(configsRoot)
     const configs = []
     for (const name of result) {
-        const configName = name.replace(/\.js$/, "")
+        const configName = name.replace(/\.js$/u, "")
         const configId = `plugin:lodash-template/${configName}`
         const configPath = require.resolve(path.join(configsRoot, name))
 

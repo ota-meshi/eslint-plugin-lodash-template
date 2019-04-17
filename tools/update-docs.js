@@ -37,7 +37,7 @@ function getPresets(category) {
 //eslint-disable-next-line require-jsdoc
 function yamlValue(val) {
     if (typeof val === "string") {
-        return `"${val.replace(/"/g, '\\"')}"`
+        return `"${val.replace(/"/gu, '\\"')}"`
     }
     return val
 }
@@ -111,7 +111,7 @@ class DocFile {
             notes.push("", "")
         }
 
-        const headerPattern = /#.+\n[^\n]*\n+(?:- .+\n)*\n*/
+        const headerPattern = /#.+\n[^\n]*\n+(?:- .+\n)*\n*/u
         const header = `${title}\n\n${notes.join("\n")}`
         if (headerPattern.test(this.content)) {
             this.content = this.content.replace(headerPattern, header)
@@ -124,7 +124,7 @@ class DocFile {
 
     updateFooter() {
         const { ruleName } = this.rule.meta.docs
-        const footerPattern = /## Implementation[\s\S]+$/
+        const footerPattern = /## Implementation[\s\S]+$/u
         const footer = `## Implementation
 
 - [Rule source](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/lib/rules/${ruleName}.js)
@@ -143,7 +143,7 @@ class DocFile {
         const { meta } = this.rule
 
         this.content = this.content.replace(
-            /<eslint-code-block\s(:?fix[^\s]*)?\s*/g,
+            /<eslint-code-block\s(:?fix[^\s]*)?\s*/gu,
             `<eslint-code-block ${meta.fixable ? "fix " : ""}`
         )
         return this
@@ -152,11 +152,11 @@ class DocFile {
     adjustCodeBlocks() {
         // Adjust the necessary blank lines before and after the code block so that GitHub can recognize `.md`.
         this.content = this.content.replace(
-            /(<eslint-code-block([\s\S]*?)>)\n+```/gm,
+            /(<eslint-code-block([\s\S]*?)>)\n+```/gmu,
             "$1\n\n```"
         )
         this.content = this.content.replace(
-            /```\n+<\/eslint-code-block>/gm,
+            /```\n+<\/eslint-code-block>/gmu,
             "```\n\n</eslint-code-block>"
         )
         return this
@@ -175,7 +175,7 @@ class DocFile {
             .map(key => `${key}: ${yamlValue(fileIntro[key])}`)
             .join("\n")}\n---\n`
 
-        const fileIntroPattern = /^---\n(.*\n)+---\n*/g
+        const fileIntroPattern = /^---\n(.*\n)+---\n*/gu
 
         if (fileIntroPattern.test(this.content)) {
             this.content = this.content.replace(fileIntroPattern, computed)
@@ -191,7 +191,7 @@ class DocFile {
             .platform()
             .startsWith("win")
 
-        this.content = this.content.replace(/\r?\n/g, isWin ? "\r\n" : "\n")
+        this.content = this.content.replace(/\r?\n/gu, isWin ? "\r\n" : "\n")
 
         fs.writeFileSync(this.filePath, this.content)
     }
