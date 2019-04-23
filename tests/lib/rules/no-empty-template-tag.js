@@ -75,7 +75,7 @@ tester.run("no-empty-template-tag", rule, {
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
-                    interpolate: "{{([\\s\\S]+?)}}",
+                    interpolate: "\\{\\{([\\s\\S]+?)\\}\\}",
                 },
             },
             errors: ["Empty micro-template tag."],
@@ -87,7 +87,7 @@ tester.run("no-empty-template-tag", rule, {
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
-                    interpolate: "{{([\\s\\S]*?)}}",
+                    interpolate: "\\{\\{([\\s\\S]*?)\\}\\}",
                 },
             },
             errors: ["Empty micro-template tag."],
@@ -99,7 +99,7 @@ tester.run("no-empty-template-tag", rule, {
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
-                    interpolate: "{{([\\S\\s]+?)}}",
+                    interpolate: "\\{\\{([\\S\\s]+?)\\}\\}",
                 },
             },
             errors: ["Empty micro-template tag."],
@@ -111,7 +111,7 @@ tester.run("no-empty-template-tag", rule, {
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
-                    interpolate: "{{([\\S\\s]*?)}}",
+                    interpolate: "\\{\\{([\\S\\s]*?)\\}\\}",
                 },
             },
             errors: ["Empty micro-template tag."],
@@ -123,7 +123,7 @@ tester.run("no-empty-template-tag", rule, {
             parserOptions: {
                 ecmaVersion: 2015,
                 templateSettings: {
-                    interpolate: "{{(unknown)}}",
+                    interpolate: "\\{\\{(unknown)\\}\\}",
                 },
             },
             errors: ["Empty micro-template tag."],

@@ -22,10 +22,6 @@ module.exports = {
         ],
         'require-jsdoc': 'error',
         "no-warning-comments": "warn",
-
-        // for Node.js V4
-        "require-unicode-regexp": "off",
-        "es/no-regexp-u-flag": "error"
     },
 
     overrides: [

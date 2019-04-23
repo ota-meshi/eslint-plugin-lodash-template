@@ -1,13 +1,13 @@
 {
   "name": "eslint-plugin-lodash-template",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "description": "ESLint plugin for John Resig-style micro templating(Lodash/Underscore.js template)",
   "main": "lib/index.js",
   "scripts": {
-    "lint": "if-node-version \">=8\" eslint . --ext .js,.vue",
-    "pretest": "npm run lint",
+    "lint": "eslint . --ext .js,.vue",
+    "pretest": "npm ci && npm run lint",
     "test:base": "mocha \"tests/**/*.js\" --reporter dot",
-    "test": "if-node-version \">=8\" npm run test:nyc && if-node-version \"<=4\" npm run test:v:node4 && if-node-version \">4\" npm run test:v:low && if-node-version \">4\" npm run test:v:node6",
+    "test": "npm run test:nyc && npm run test:v:low && if-node-version \">=8\" npm run test:v:high && npm run test:v:latest && npm ci",
     "test:nyc": "nyc --reporter=lcov npm run test:base -- --timeout 60000",
     "test:d": "mocha --inspect --debug-brk \"tests/**/*.js\" --reporter dot",
     "watch": "npm run test:base -- --watch",
@@ -15,14 +15,10 @@
     "updateonly": "node ./tools/update.js && npm run lint:fix",
     "lint:fix": "eslint . --ext .js,.vue --fix",
     "test:sp": "mocha \"test_sp/**/*.js\" --reporter dot",
-    "test:v:node6": "npm run test:v:high && npm run test:v:latest && npm i",
-    "test:v:node4": "npm i babel-eslint@8 --no-save && npm run test:v:low && npm i",
-    "test:v:high": "npm i eslint@5.0.0 parse5@5.0.0 --no-save && npm run test:base",
-    "test:v:low": "npm i eslint@4.15.0 parse5@4.0.0 --no-save && npm run test:base",
+    "test:v:high": "npm i eslint@6.0.0-alpha.0 parse5@5.1 --no-save && npm run test:base",
+    "test:v:low": "npm i eslint@5.0.0 parse5@5.0.0 --no-save && npm run test:base",
     "test:v:latest": "npm i eslint@latest parse5@latest --no-save && npm run test:base",
     "new": "node ./tools/new-rule.js",
-    "pg:build": "webpack --config playground/webpack.config.js --progress --mode production",
-    "pg:dev": "webpack --config playground/webpack.config.js --progress --mode development",
     "docs:watch": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:deploysetup": "npm run docs:build && npm run docs:clean && npm run docs:copy",
@@ -63,32 +59,35 @@
     "rules"
   ],
   "peerDependencies": {
-    "eslint": "^4.15.0 || >=5.0.0"
+    "eslint": ">=5.0.0"
   },
   "devDependencies": {
     "@mysticatea/eslint-plugin": "^9.0.1",
     "babel-eslint": "^10.0.1",
     "cpx": "^1.5.0",
-    "eslint": "^5.13.0",
-    "eslint-config-prettier": "^4.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-es": "^1.4.0",
     "eslint-plugin-local": "^1.0.0",
-    "eslint4b": "^5.13.0",
+    "eslint4b": "^5.16.0",
     "if-node-version": "^1.1.1",
-    "mocha": "^5.2.0",
-    "nyc": "^13.2.0",
-    "pako": "^1.0.8",
-    "prettier": "^1.16.4",
+    "mocha": "^6.1.3",
+    "nyc": "^14.0.0",
+    "pako": "^1.0.10",
+    "prettier": "^1.17.0",
     "vue-eslint-editor": "^0.1.4",
-    "vuepress": "^0.14.8"
+    "vuepress": "^0.14.11"
   },
   "dependencies": {
     "esquery": "^1.0.1",
-    "parse5": "^4.0.0 || ^5.0.0"
+    "parse5": "^5.0.0"
   },
   "nyc": {
     "exclude": [
       "**/*.spec.js"
     ]
+  },
+  "engines": {
+    "node": "^8.10.0 || ^10.13.0 || >=11.10.1"
   }
 }
