@@ -76,7 +76,7 @@
     "pako": "^1.0.10",
     "prettier": "^1.17.0",
     "vue-eslint-editor": "^0.1.4",
-    "vuepress": "^0.14.11"
+    "vuepress": "^1.0.0"
   },
   "dependencies": {
     "esquery": "^1.0.1",
