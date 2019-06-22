@@ -65,7 +65,7 @@
     "@mysticatea/eslint-plugin": "^9.0.1",
     "babel-eslint": "^10.0.1",
     "cpx": "^1.5.0",
-    "eslint": "^5.16.0",
+    "eslint": "^6.0.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-es": "^1.4.0",
     "eslint-plugin-local": "^1.0.0",
