@@ -1,5 +1,5 @@
 <% /* global hobbies, occupation */ %>
-<% /* eslint local/no-html-comments:0 */ %>
+<% /* eslint lodash-template/no-html-comments:0 */ %>
 <div class="content"></div>
 
 <ul>
@@ -15,16 +15,16 @@
 <div>
 	<tab-test></tab-test>
     <!-- eslint-disable max-len -->
-    <h1>My name is <%-name%></h1><!-- eslint-disable-line local/template-tag-spacing -->
+    <h1>My name is <%-name%></h1><!-- eslint-disable-line lodash-template/template-tag-spacing -->
     <!-- eslint-enable max-len -->
 
 
-    <!-- eslint-disable-next-line local/template-tag-spacing -->
+    <!-- eslint-disable-next-line lodash-template/template-tag-spacing -->
     <p>I like <%-hobbies%> but hate being a <%-occupation%></p>
 </div>
 
 <ul>
     <!-- eslint-disable-next-line no-undef -->
-    <!-- eslint-disable local/template-tag-spacing,brace-style --> <% _.forEach(users, (user) => { %><!-- eslint-enable local/template-tag-spacing,brace-style --><li><%- user %></li><!-- eslint-disable-line max-len -->
+    <!-- eslint-disable lodash-template/template-tag-spacing,brace-style --> <% _.forEach(users, (user) => { %><!-- eslint-enable lodash-template/template-tag-spacing,brace-style --><li><%- user %></li><!-- eslint-disable-line max-len -->
     <% }) %><!-- eslint-disable-line -->
 </ul>

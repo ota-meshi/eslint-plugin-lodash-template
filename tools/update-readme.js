@@ -18,9 +18,7 @@ function toRuleRow(rule) {
     const mark = `${rule.meta.fixable ? ":wrench:" : ""}${
         rule.meta.deprecated ? ":warning:" : ""
     }`
-    const link = `[${rule.meta.docs.ruleId}](./docs/rules/${
-        rule.meta.docs.ruleName
-    }.md)`
+    const link = `[${rule.meta.docs.ruleId}](./docs/rules/${rule.meta.docs.ruleName}.md)`
     const description = rule.meta.docs.description || "(no description)"
 
     return `| ${mark} | ${link} | ${description} |`
@@ -28,9 +26,7 @@ function toRuleRow(rule) {
 
 //eslint-disable-next-line require-jsdoc
 function toDeprecatedRuleRow(rule) {
-    const link = `[${rule.meta.docs.ruleId}](./docs/rules/${
-        rule.meta.docs.ruleName
-    }.md)`
+    const link = `[${rule.meta.docs.ruleId}](./docs/rules/${rule.meta.docs.ruleName}.md)`
     const replacedRules = rule.meta.docs.replacedBy || []
     const replacedBy = replacedRules
         .map(name => `[lodash-template/${name}](./docs/rules/${name}.md)`)

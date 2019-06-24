@@ -116,7 +116,7 @@ describe("Basic tests", () => {
 
             assertMessages(messages, [
                 {
-                    ruleId: "local/template-tag-spacing",
+                    ruleId: "lodash-template/template-tag-spacing",
                     message:
                         "Expected 1 space after `<%`, but no spaces found.",
                     column: 5,
@@ -149,7 +149,7 @@ describe("Basic tests", () => {
                     endColumn: 32,
                 },
                 {
-                    ruleId: "local/template-tag-spacing",
+                    ruleId: "lodash-template/template-tag-spacing",
                     message:
                         "Expected 1 space before `%>`, but no spaces found.",
                     line: 5,
@@ -164,7 +164,7 @@ describe("Basic tests", () => {
                     line: 6,
                     message:
                         "Expected 1 space before `%>`, but no spaces found.",
-                    ruleId: "local/template-tag-spacing",
+                    ruleId: "lodash-template/template-tag-spacing",
                 },
                 {
                     column: 20,
@@ -173,7 +173,7 @@ describe("Basic tests", () => {
                     line: 10,
                     message:
                         "Expected 1 space after `<%-`, but no spaces found.",
-                    ruleId: "local/template-tag-spacing",
+                    ruleId: "lodash-template/template-tag-spacing",
                 },
                 {
                     column: 27,
@@ -182,7 +182,7 @@ describe("Basic tests", () => {
                     line: 10,
                     message:
                         "Expected 1 space before `%>`, but no spaces found.",
-                    ruleId: "local/template-tag-spacing",
+                    ruleId: "lodash-template/template-tag-spacing",
                 },
                 {
                     column: 15,
@@ -191,7 +191,7 @@ describe("Basic tests", () => {
                     line: 11,
                     message:
                         "Expected 1 space after `<%-`, but no spaces found.",
-                    ruleId: "local/template-tag-spacing",
+                    ruleId: "lodash-template/template-tag-spacing",
                 },
                 {
                     column: 25,
@@ -200,7 +200,7 @@ describe("Basic tests", () => {
                     line: 11,
                     message:
                         "Expected 1 space before `%>`, but no spaces found.",
-                    ruleId: "local/template-tag-spacing",
+                    ruleId: "lodash-template/template-tag-spacing",
                 },
                 {
                     column: 45,
@@ -209,7 +209,7 @@ describe("Basic tests", () => {
                     line: 11,
                     message:
                         "Expected 1 space after `<%-`, but no spaces found.",
-                    ruleId: "local/template-tag-spacing",
+                    ruleId: "lodash-template/template-tag-spacing",
                 },
                 {
                     column: 58,
@@ -218,13 +218,13 @@ describe("Basic tests", () => {
                     line: 11,
                     message:
                         "Expected 1 space before `%>`, but no spaces found.",
-                    ruleId: "local/template-tag-spacing",
+                    ruleId: "lodash-template/template-tag-spacing",
                 },
                 {
                     column: 63,
                     line: 11,
                     message: "Irregular whitespace '\\u3000' not allowed.",
-                    ruleId: "local/no-irregular-whitespace",
+                    ruleId: "lodash-template/no-irregular-whitespace",
                 },
                 {
                     column: 10,
