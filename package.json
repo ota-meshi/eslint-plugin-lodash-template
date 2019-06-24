@@ -22,8 +22,9 @@
     "install:v:low": "npm i eslint@5.0.0 --no-save && npm i parse5@5.0.0 --no-save",
     "install:v:latest": "npm install eslint@latest --no-save && npm install parse5@latest --no-save",
     "new": "node ./tools/new-rule.js",
-    "docs:watch": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
+    "copy:images": "cpx \"logo.*\" \"docs/\\.vuepress/public\" -u",
+    "docs:watch": "npm run copy:images && vuepress dev docs",
+    "docs:build": "npm run copy:images && vuepress build docs",
     "docs:deploysetup": "npm run docs:build && npm run docs:clean && npm run docs:copy",
     "docs:clean": "rimraf assets",
     "docs:copy": "cpx \"docs/\\.vuepress/dist/**\" . -u"

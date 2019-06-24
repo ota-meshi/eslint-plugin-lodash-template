@@ -29,7 +29,11 @@ module.exports = {
   serviceWorker: true,
   evergreen: true,
 
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }]
+  ],
   themeConfig: {
+    logo: '/logo.svg',
     repo: 'ota-meshi/eslint-plugin-lodash-template',
     docsRepo: 'ota-meshi/eslint-plugin-lodash-template',
     docsDir: 'docs',
