@@ -77,7 +77,7 @@ class DocFile {
                     )}.`
                 )
             } else {
-                notes.push(`- :warning: This rule was **deprecated**.`)
+                notes.push("- :warning: This rule was **deprecated**.")
             }
         } else {
             const presets = Array.from(
@@ -102,7 +102,7 @@ class DocFile {
         }
         if (fixable) {
             notes.push(
-                `- :wrench: The \`--fix\` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by this rule.`
+                "- :wrench: The `--fix` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by this rule."
             )
         }
 

@@ -6,17 +6,18 @@ module.exports = {
         ecmaVersion: 2018,
     },
     env: {},
-    extends: ["eslint:all", "plugin:local/test"],
+    extends: ["eslint:all", "plugin:lodash-template/all"],
     rules: {
-        "local/plugin-option": [
-            2,
+        "lodash-template/plugin-option": [
+            "error",
             {
                 ignoreRules: ["no-tabs"],
                 globals: ["name"],
             },
         ],
         "linebreak-style": "off",
-        "local/html-indent": "off",
+        "max-len": "off",
+        "lodash-template/html-indent": "off",
     },
     globals: {
         _: true,
