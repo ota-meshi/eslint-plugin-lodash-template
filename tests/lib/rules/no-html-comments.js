@@ -13,14 +13,14 @@ const tester = new RuleTester({
 tester.run("no-html-comments", rule, {
     valid: [
         {
-            code: "",
             filename: "test.html",
+            code: "",
         },
         "(function() {})()",
         "<% inter %>",
         {
-            code: "<div></div>",
             filename: "test.html",
+            code: "<div></div>",
         },
         `<div>
         <% arr.forEach((a)=>{ %>
@@ -29,10 +29,11 @@ tester.run("no-html-comments", rule, {
         <% }) %>
         </div>`,
         {
-            code: "<br>",
             filename: "test.html",
+            code: "<br>",
         },
         {
+            filename: "test.html",
             code: `
             <!DOCTYPE html>
             <html>
@@ -42,11 +43,11 @@ tester.run("no-html-comments", rule, {
             </body>
             </html>
             `,
-            filename: "test.html",
         },
     ],
     invalid: [
         {
+            filename: "test.html",
             code: "<!-- comment -->",
             output: null,
             errors: [
@@ -58,13 +59,12 @@ tester.run("no-html-comments", rule, {
                     endColumn: 17,
                 },
             ],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<div><!-- comment --></div>",
             output: null,
             errors: ["HTML comment are forbidden."],
-            filename: "test.html",
         },
     ],
 })

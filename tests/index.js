@@ -3,6 +3,8 @@
 const assert = require("assert")
 const path = require("path")
 const eslint = require("eslint")
+const semver = require("semver")
+const eslintVersion = require("eslint/package").version
 const fs = require("fs")
 const plugin = require("..")
 
@@ -10,7 +12,7 @@ const CLIEngine = eslint.CLIEngine
 
 const ORIGINAL_FIXTURE_DIR = path.join(__dirname, "fixtures")
 const FIXTURE_DIR = path.join(__dirname, "temp")
-const CONFIG_PATH = path.join(ORIGINAL_FIXTURE_DIR, "test.eslintrc.js")
+const CONFIG_PATH = path.join(ORIGINAL_FIXTURE_DIR, ".eslintrc.js")
 
 /**
  * Remove dir
@@ -104,160 +106,172 @@ describe("Basic tests", () => {
         removeDirSync(FIXTURE_DIR)
     })
 
-    describe("About fixtures/hello.html", () => {
-        it("should notify errors", () => {
-            const cli = new CLIEngine({
-                cwd: FIXTURE_DIR,
-                configFile: CONFIG_PATH,
-                useEslintrc: false,
+    if (semver.satisfies(eslintVersion, ">=6.2.0")) {
+        describe("About fixtures/hello.html", () => {
+            it("should notify errors", () => {
+                const cli = new CLIEngine({
+                    cwd: FIXTURE_DIR,
+                    configFile: CONFIG_PATH,
+                    useEslintrc: false,
+                })
+                const report = cli.executeOnFiles(["hello.html"])
+                const messages = report.results[0].messages
+
+                assertMessages(messages, [
+                    {
+                        ruleId: "lodash-template/template-tag-spacing",
+                        message:
+                            "Expected 1 space after `<%`, but no spaces found.",
+                        column: 5,
+                        endColumn: 7,
+                        endLine: 4,
+                        line: 4,
+                    },
+                    {
+                        ruleId: "comma-spacing",
+                        message: "A space is required after ','.",
+                        column: 22,
+                        endColumn: 23,
+                        endLine: 4,
+                        line: 4,
+                    },
+                    {
+                        ruleId: "function-call-argument-newline",
+                        line: 4,
+                        column: 23,
+                        messageId: "missingLineBreak",
+                        endLine: 4,
+                        endColumn: 23,
+                    },
+                    {
+                        ruleId: "arrow-spacing",
+                        message: "Missing space before =>.",
+                        column: 28,
+                        endColumn: 29,
+                        endLine: 4,
+                        line: 4,
+                    },
+                    {
+                        ruleId: "arrow-spacing",
+                        message: "Missing space after =>.",
+                        line: 4,
+                        endLine: 4,
+                        column: 31,
+                        endColumn: 32,
+                    },
+                    {
+                        ruleId: "lodash-template/template-tag-spacing",
+                        message:
+                            "Expected 1 space before `%>`, but no spaces found.",
+                        line: 5,
+                        endLine: 5,
+                        column: 21,
+                        endColumn: 23,
+                    },
+                    {
+                        column: 11,
+                        endColumn: 13,
+                        endLine: 6,
+                        line: 6,
+                        message:
+                            "Expected 1 space before `%>`, but no spaces found.",
+                        ruleId: "lodash-template/template-tag-spacing",
+                    },
+                    {
+                        column: 20,
+                        endColumn: 23,
+                        endLine: 10,
+                        line: 10,
+                        message:
+                            "Expected 1 space after `<%-`, but no spaces found.",
+                        ruleId: "lodash-template/template-tag-spacing",
+                    },
+                    {
+                        column: 27,
+                        endColumn: 29,
+                        endLine: 10,
+                        line: 10,
+                        message:
+                            "Expected 1 space before `%>`, but no spaces found.",
+                        ruleId: "lodash-template/template-tag-spacing",
+                    },
+                    {
+                        column: 15,
+                        endColumn: 18,
+                        endLine: 11,
+                        line: 11,
+                        message:
+                            "Expected 1 space after `<%-`, but no spaces found.",
+                        ruleId: "lodash-template/template-tag-spacing",
+                    },
+                    {
+                        column: 25,
+                        endColumn: 27,
+                        endLine: 11,
+                        line: 11,
+                        message:
+                            "Expected 1 space before `%>`, but no spaces found.",
+                        ruleId: "lodash-template/template-tag-spacing",
+                    },
+                    {
+                        column: 45,
+                        endColumn: 48,
+                        endLine: 11,
+                        line: 11,
+                        message:
+                            "Expected 1 space after `<%-`, but no spaces found.",
+                        ruleId: "lodash-template/template-tag-spacing",
+                    },
+                    {
+                        column: 58,
+                        endColumn: 60,
+                        endLine: 11,
+                        line: 11,
+                        message:
+                            "Expected 1 space before `%>`, but no spaces found.",
+                        ruleId: "lodash-template/template-tag-spacing",
+                    },
+                    {
+                        column: 63,
+                        line: 11,
+                        message: "Irregular whitespace '\\u3000' not allowed.",
+                        ruleId: "lodash-template/no-irregular-whitespace",
+                    },
+                    {
+                        column: 10,
+                        endColumn: 52,
+                        endLine: 14,
+                        line: 14,
+                        message: "Unexpected string concatenation.",
+                        ruleId: "prefer-template",
+                    },
+                ])
             })
-            const report = cli.executeOnFiles(["hello.html"])
-            const messages = report.results[0].messages
 
-            assertMessages(messages, [
-                {
-                    ruleId: "lodash-template/template-tag-spacing",
-                    message:
-                        "Expected 1 space after `<%`, but no spaces found.",
-                    column: 5,
-                    endColumn: 7,
-                    endLine: 4,
-                    line: 4,
-                },
-                {
-                    ruleId: "comma-spacing",
-                    message: "A space is required after ','.",
-                    column: 22,
-                    endColumn: 23,
-                    endLine: 4,
-                    line: 4,
-                },
-                {
-                    ruleId: "arrow-spacing",
-                    message: "Missing space before =>.",
-                    column: 28,
-                    endColumn: 29,
-                    endLine: 4,
-                    line: 4,
-                },
-                {
-                    ruleId: "arrow-spacing",
-                    message: "Missing space after =>.",
-                    line: 4,
-                    endLine: 4,
-                    column: 31,
-                    endColumn: 32,
-                },
-                {
-                    ruleId: "lodash-template/template-tag-spacing",
-                    message:
-                        "Expected 1 space before `%>`, but no spaces found.",
-                    line: 5,
-                    endLine: 5,
-                    column: 21,
-                    endColumn: 23,
-                },
-                {
-                    column: 11,
-                    endColumn: 13,
-                    endLine: 6,
-                    line: 6,
-                    message:
-                        "Expected 1 space before `%>`, but no spaces found.",
-                    ruleId: "lodash-template/template-tag-spacing",
-                },
-                {
-                    column: 20,
-                    endColumn: 23,
-                    endLine: 10,
-                    line: 10,
-                    message:
-                        "Expected 1 space after `<%-`, but no spaces found.",
-                    ruleId: "lodash-template/template-tag-spacing",
-                },
-                {
-                    column: 27,
-                    endColumn: 29,
-                    endLine: 10,
-                    line: 10,
-                    message:
-                        "Expected 1 space before `%>`, but no spaces found.",
-                    ruleId: "lodash-template/template-tag-spacing",
-                },
-                {
-                    column: 15,
-                    endColumn: 18,
-                    endLine: 11,
-                    line: 11,
-                    message:
-                        "Expected 1 space after `<%-`, but no spaces found.",
-                    ruleId: "lodash-template/template-tag-spacing",
-                },
-                {
-                    column: 25,
-                    endColumn: 27,
-                    endLine: 11,
-                    line: 11,
-                    message:
-                        "Expected 1 space before `%>`, but no spaces found.",
-                    ruleId: "lodash-template/template-tag-spacing",
-                },
-                {
-                    column: 45,
-                    endColumn: 48,
-                    endLine: 11,
-                    line: 11,
-                    message:
-                        "Expected 1 space after `<%-`, but no spaces found.",
-                    ruleId: "lodash-template/template-tag-spacing",
-                },
-                {
-                    column: 58,
-                    endColumn: 60,
-                    endLine: 11,
-                    line: 11,
-                    message:
-                        "Expected 1 space before `%>`, but no spaces found.",
-                    ruleId: "lodash-template/template-tag-spacing",
-                },
-                {
-                    column: 63,
-                    line: 11,
-                    message: "Irregular whitespace '\\u3000' not allowed.",
-                    ruleId: "lodash-template/no-irregular-whitespace",
-                },
-                {
-                    column: 10,
-                    endColumn: 52,
-                    endLine: 14,
-                    line: 14,
-                    message: "Unexpected string concatenation.",
-                    ruleId: "prefer-template",
-                },
-            ])
+            if (semver.satisfies(eslintVersion, ">=6.2.0")) {
+                it("should fix errors with --fix option", () => {
+                    const cli = new CLIEngine({
+                        cwd: FIXTURE_DIR,
+                        fix: true,
+                        configFile: CONFIG_PATH,
+                        useEslintrc: false,
+                    })
+                    CLIEngine.outputFixes(cli.executeOnFiles(["hello.html"]))
+
+                    const actual = fs.readFileSync(
+                        path.join(FIXTURE_DIR, "hello.html"),
+                        "utf8"
+                    )
+                    const expected = fs.readFileSync(
+                        path.join(FIXTURE_DIR, "hello.html.fixed.html"),
+                        "utf8"
+                    )
+
+                    assert.deepStrictEqual(actual.trim(), expected.trim())
+                })
+            }
         })
-
-        it("should fix errors with --fix option", () => {
-            const cli = new CLIEngine({
-                cwd: FIXTURE_DIR,
-                fix: true,
-                configFile: CONFIG_PATH,
-                useEslintrc: false,
-            })
-            CLIEngine.outputFixes(cli.executeOnFiles(["hello.html"]))
-
-            const actual = fs.readFileSync(
-                path.join(FIXTURE_DIR, "hello.html"),
-                "utf8"
-            )
-            const expected = fs.readFileSync(
-                path.join(FIXTURE_DIR, "hello.html.fixed.html"),
-                "utf8"
-            )
-
-            assert.deepStrictEqual(actual.trim(), expected.trim())
-        })
-    })
+    }
     describe("About fixtures/comment-directive.html", () => {
         it("should no errors", () => {
             const cli = new CLIEngine({

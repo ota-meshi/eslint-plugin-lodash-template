@@ -22,18 +22,19 @@ tester.run("no-empty-template-tag", rule, {
     ],
     invalid: [
         {
+            filename: "test.html",
             code: "<%    %>",
             output: null,
             errors: ["Empty micro-template tag."],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<%%>",
             output: null,
             errors: ["Empty micro-template tag."],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: `<%
 %>`,
             output: null,
@@ -46,10 +47,10 @@ tester.run("no-empty-template-tag", rule, {
                     endColumn: 3,
                 },
             ],
-            filename: "test.html",
         },
         // templateSettings
         {
+            filename: "test.html",
             code: "{{}}",
             output: null,
             parserOptions: {
@@ -67,9 +68,9 @@ tester.run("no-empty-template-tag", rule, {
                     endColumn: 5,
                 },
             ],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "{{}}",
             output: null,
             parserOptions: {
@@ -79,9 +80,9 @@ tester.run("no-empty-template-tag", rule, {
                 },
             },
             errors: ["Empty micro-template tag."],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "{{}}",
             output: null,
             parserOptions: {
@@ -91,9 +92,9 @@ tester.run("no-empty-template-tag", rule, {
                 },
             },
             errors: ["Empty micro-template tag."],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "{{}}",
             output: null,
             parserOptions: {
@@ -103,9 +104,9 @@ tester.run("no-empty-template-tag", rule, {
                 },
             },
             errors: ["Empty micro-template tag."],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "{{}}",
             output: null,
             parserOptions: {
@@ -115,9 +116,9 @@ tester.run("no-empty-template-tag", rule, {
                 },
             },
             errors: ["Empty micro-template tag."],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<%  %>",
             output: null,
             parserOptions: {
@@ -127,7 +128,6 @@ tester.run("no-empty-template-tag", rule, {
                 },
             },
             errors: ["Empty micro-template tag."],
-            filename: "test.html",
         },
     ],
 })

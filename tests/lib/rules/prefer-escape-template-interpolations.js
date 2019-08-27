@@ -22,6 +22,7 @@ tester.run("prefer-escape-template-interpolations", rule, {
     ],
     invalid: [
         {
+            filename: "test.html",
             code: "<%= test %>",
             output: null,
             errors: [
@@ -34,7 +35,6 @@ tester.run("prefer-escape-template-interpolations", rule, {
                     endColumn: 12,
                 },
             ],
-            filename: "test.html",
         },
     ],
 })

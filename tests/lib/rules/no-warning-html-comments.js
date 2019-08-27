@@ -13,13 +13,13 @@ const tester = new RuleTester({
 tester.run("no-warning-html-comments", rule, {
     valid: [
         {
-            code: "",
             filename: "test.html",
+            code: "",
         },
         "<!--comment-->",
         {
-            code: "<div></div>",
             filename: "test.html",
+            code: "<div></div>",
         },
         `<div>
         <% arr.forEach((a)=>{ %>
@@ -28,18 +28,19 @@ tester.run("no-warning-html-comments", rule, {
         <% }) %>
         </div>`,
         {
+            filename: "test.html",
             code: "<!-- before TODO -->",
             options: [
                 {
                     location: "start",
                 },
             ],
-            filename: "test.html",
         },
         "<!-- eslint-disable-line lodash-template/no-warning-html-comments TODO -->",
     ],
     invalid: [
         {
+            filename: "test.html",
             code: "<!--TODO-->",
             output: null,
             errors: [
@@ -53,27 +54,26 @@ tester.run("no-warning-html-comments", rule, {
                     endColumn: 12,
                 },
             ],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<!-- before TODO -->",
             output: null,
             errors: ["Unexpected 'todo' comment."],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<!-- %T -->",
             output: null,
             options: [{ terms: ["%t"] }],
             errors: ["Unexpected '%t' comment."],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<!-- %% -->",
             output: null,
             options: [{ terms: ["%%"] }],
             errors: ["Unexpected '%%' comment."],
-            filename: "test.html",
         },
     ],
 })
