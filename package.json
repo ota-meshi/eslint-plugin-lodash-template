@@ -66,25 +66,26 @@
     "eslint": ">=5.0.0"
   },
   "devDependencies": {
-    "@mysticatea/eslint-plugin": "^10.0.3",
-    "babel-eslint": "^10.0.2",
+    "@mysticatea/eslint-plugin": "^11.0.0",
+    "babel-eslint": "^10.0.3",
     "cpx": "^1.5.0",
-    "eslint": "^6.0.0",
-    "eslint-config-prettier": "^5.0.0",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
     "eslint-plugin-es": "^1.4.0",
     "eslint-plugin-lodash-template": "file:.",
-    "eslint4b": "^5.16.0",
+    "eslint4b": "^6.1.0",
     "if-node-version": "^1.1.1",
-    "mocha": "^6.1.4",
+    "mocha": "^6.2.0",
     "nyc": "^14.1.1",
     "pako": "^1.0.10",
     "prettier": "^1.18.2",
+    "semver": "^6.3.0",
     "vue-eslint-editor": "^0.1.4",
-    "vuepress": "^1.0.2"
+    "vuepress": "^1.0.3"
   },
   "dependencies": {
     "esquery": "^1.0.1",
-    "parse5": "^5.0.0"
+    "parse5": "^5.1.0"
   },
   "nyc": {
     "exclude": [

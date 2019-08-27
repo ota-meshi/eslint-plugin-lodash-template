@@ -1,9 +1,12 @@
 <% /* global users, hobbies, occupation */ %><div class="content"></div>
 
 <ul>
-    <% _.forEach(users, (user) => { %>
+    <% _.forEach(
+        users,
+        (user) => { %>
         <li><%- user %></li>
-    <% }); %>
+    <% }
+      ); %>
 </ul>
 
 <div>

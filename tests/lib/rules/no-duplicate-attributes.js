@@ -13,24 +13,24 @@ const tester = new RuleTester({
 tester.run("no-duplicate-attributes", rule, {
     valid: [
         {
+            filename: "test.html",
             code: "",
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><div foo bar baz></div></div></body>",
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: '<body><div><div onclick="foo"></div></div></body>',
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><div class style></div></div></body>",
-            filename: "test.html",
         },
         {
-            code: "<body><div><div style class></div></div></body>",
             filename: "test.html",
+            code: "<body><div><div style class></div></div></body>",
         },
         // eslint-disable-next-line no-irregular-whitespace
         "<label id='item'　class=\"class\">test</label>",
@@ -48,6 +48,7 @@ tester.run("no-duplicate-attributes", rule, {
     ],
     invalid: [
         {
+            filename: "test.html",
             code: `
             <body>
               <div>
@@ -85,9 +86,9 @@ tester.run("no-duplicate-attributes", rule, {
                     endColumn: 22,
                 },
             ],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><div foo : foo : ></div></div></body>",
             errors: [
                 'Duplicate attribute "foo".',
@@ -95,17 +96,17 @@ tester.run("no-duplicate-attributes", rule, {
                 'Duplicate attribute "foo".',
                 'Duplicate attribute ":".',
             ],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><div foo foo></div></div></body>",
             errors: [
                 'Duplicate attribute "foo".',
                 'Duplicate attribute "foo".',
             ],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: `
             <div
                 <% if (a) { %>
@@ -122,9 +123,9 @@ tester.run("no-duplicate-attributes", rule, {
                 'Duplicate attribute "foo".',
                 'Duplicate attribute "foo".',
             ],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: `
             <div
                 <% if (a) { %>
@@ -148,9 +149,9 @@ tester.run("no-duplicate-attributes", rule, {
                     column: 21,
                 },
             ],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: `
             <div
                 foo="a"
@@ -175,7 +176,6 @@ tester.run("no-duplicate-attributes", rule, {
                     // endColumn: 20,
                 },
             ],
-            filename: "test.html",
         },
     ],
 })

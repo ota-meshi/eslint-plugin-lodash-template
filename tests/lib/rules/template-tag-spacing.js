@@ -13,107 +13,108 @@ const tester = new RuleTester({
 tester.run("template-tag-spacing", rule, {
     valid: [
         {
+            filename: "test.html",
             code: "<body></body>",
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div></div></body>",
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code:
                 '<body>             <div id="               "></div>         </body>',
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code:
                 '<body> <div style="  " class="       foo      " attr=foo   ></div>      </body>',
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><%= text %></div></body>",
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><%= %></div></body>",
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><%= %></div></body>",
             options: ["always"],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><%=%></div></body>",
             options: ["never"],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><%=text%></div></body>",
             options: ["never"],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><%= text %></div></body>",
             options: ["always"],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><%=         %></div></body>",
             options: ["always"],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><%=         %></div></body>",
             options: ["never"],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: `<%=
             always
             %>`,
             options: ["always"],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: `<%=
             never
             %>`,
             options: ["never"],
-            filename: "test.html",
         },
     ],
 
     invalid: [
         {
+            filename: "test.html",
             code: "<body><div><%= text%></div></body>",
             output: "<body><div><%= text %></div></body>",
             options: ["always"],
             errors: ["Expected 1 space before `%>`, but no spaces found."],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><%=text %></div></body>",
             output: "<body><div><%= text %></div></body>",
             options: ["always"],
             errors: ["Expected 1 space after `<%=`, but no spaces found."],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><%= text%></div></body>",
             output: "<body><div><%=text%></div></body>",
             options: ["never"],
             errors: ["Expected no spaces after `<%=`, but 1 space found."],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><%=text %></div></body>",
             output: "<body><div><%=text%></div></body>",
             options: ["never"],
             errors: ["Expected no spaces before `%>`, but 1 space found."],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><%=text%></div></body>",
             output: "<body><div><%= text %></div></body>",
             options: ["always"],
@@ -121,9 +122,9 @@ tester.run("template-tag-spacing", rule, {
                 "Expected 1 space after `<%=`, but no spaces found.",
                 "Expected 1 space before `%>`, but no spaces found.",
             ],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><%=  text  %></div></body>",
             output: "<body><div><%= text %></div></body>",
             options: ["always"],
@@ -131,9 +132,9 @@ tester.run("template-tag-spacing", rule, {
                 "Expected 1 space after `<%=`, but 2 spaces found.",
                 "Expected 1 space before `%>`, but 2 spaces found.",
             ],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><%= text %></div></body>",
             output: "<body><div><%=text%></div></body>",
             options: ["never"],
@@ -141,9 +142,9 @@ tester.run("template-tag-spacing", rule, {
                 "Expected no spaces after `<%=`, but 1 space found.",
                 "Expected no spaces before `%>`, but 1 space found.",
             ],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><%=   text   %></div></body>",
             output: "<body><div><%=text%></div></body>",
             options: ["never"],
@@ -151,9 +152,9 @@ tester.run("template-tag-spacing", rule, {
                 "Expected no spaces after `<%=`, but 3 spaces found.",
                 "Expected no spaces before `%>`, but 3 spaces found.",
             ],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<body><div><%=   text   %><%=   text   %></div></body>",
             output: "<body><div><%=text%><%=text%></div></body>",
             options: ["never"],
@@ -163,9 +164,9 @@ tester.run("template-tag-spacing", rule, {
                 "Expected no spaces after `<%=`, but 3 spaces found.",
                 "Expected no spaces before `%>`, but 3 spaces found.",
             ],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<div>{{text}}</div>",
             output: "<div>{{ text }}</div>",
             parserOptions: {
@@ -192,9 +193,9 @@ tester.run("template-tag-spacing", rule, {
                     endColumn: 14,
                 },
             ],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<@-inner@><%=inner%>",
             output: "<@- inner @><%= inner %>",
             parserOptions: {
@@ -209,9 +210,9 @@ tester.run("template-tag-spacing", rule, {
                 "Expected 1 space after `<%=`, but no spaces found.",
                 "Expected 1 space before `%>`, but no spaces found.",
             ],
-            filename: "test.html",
         },
         {
+            filename: "test.html",
             code: "<___>",
             output: "<_ _ _>",
             parserOptions: {
@@ -224,7 +225,6 @@ tester.run("template-tag-spacing", rule, {
                 "Expected 1 space after `<_`, but no spaces found.",
                 "Expected 1 space before `_>`, but no spaces found.",
             ],
-            filename: "test.html",
         },
     ],
 })

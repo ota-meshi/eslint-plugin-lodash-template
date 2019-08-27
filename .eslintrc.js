@@ -10,6 +10,7 @@ module.exports = {
         "plugin:@mysticatea/es2015",
         "plugin:@mysticatea/+node",
         "plugin:@mysticatea/+eslint-plugin",
+        "plugin:lodash-template/all"
     ],
     plugins: ["es"],
     rules: {
