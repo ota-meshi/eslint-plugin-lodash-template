@@ -4,10 +4,10 @@
   "description": "ESLint plugin for John Resig-style micro templating(Lodash/Underscore.js template)",
   "main": "lib/index.js",
   "scripts": {
-    "lint": "eslint . --ext .js,.vue",
-    "pretest": "npm ci && npm run lint",
+    "lint": "node -e \"if(process.env.ESLINT=='low')process.exit(1)\" && eslint . --ext .js,.vue || node -e \"if(process.env.ESLINT!='low')process.exit(1)\"",
+    "pretest": "npm run lint",
     "test:base": "mocha \"tests/**/*.js\" --reporter dot",
-    "test": "npm run test:nyc && npm run test:v:low && if-node-version \">=8\" npm run test:v:high && npm run test:v:latest && npm ci",
+    "test": "npm run test:nyc",
     "test:nyc": "nyc --reporter=lcov npm run test:base -- --timeout 60000",
     "test:d": "mocha --inspect --debug-brk \"tests/**/*.js\" --reporter dot",
     "watch": "npm run test:base -- --watch",
@@ -15,12 +15,6 @@
     "updateonly": "node ./tools/update.js && npm run lint:fix",
     "lint:fix": "eslint . --ext .js,.vue --fix",
     "test:sp": "mocha \"test_sp/**/*.js\" --reporter dot",
-    "test:v:high": "npm run install:v:high && npm run test:base",
-    "test:v:low": "npm run install:v:low && npm run test:base",
-    "test:v:latest": "npm run install:v:latest  && npm run test:base",
-    "install:v:high": "npm install eslint@6.0.0 --no-save && npm install parse5@5.1.0 --no-save",
-    "install:v:low": "npm i eslint@5.0.0 --no-save && npm i parse5@5.0.0 --no-save",
-    "install:v:latest": "npm install eslint@latest --no-save && npm install parse5@latest --no-save",
     "new": "node ./tools/new-rule.js",
     "copy:images": "cpx \"logo.*\" \"docs/\\.vuepress/public\" -u",
     "docs:watch": "npm run copy:images && vuepress dev docs",
@@ -85,7 +79,7 @@
   },
   "dependencies": {
     "esquery": "^1.0.1",
-    "parse5": "^5.1.0"
+    "parse5": "^5.0.0"
   },
   "nyc": {
     "exclude": [
