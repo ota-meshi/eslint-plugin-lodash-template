@@ -2,7 +2,7 @@
 "use strict"
 
 const Linter = require("eslint").Linter
-const processor = require("../lib/processor/micro-template-processor")
+const processor = require("../lib/processors/micro-template-processor")
 const parser = require("../lib/parser/micro-template-eslint-parser")
 const rules = require("../lib/utils/rules").rules
 

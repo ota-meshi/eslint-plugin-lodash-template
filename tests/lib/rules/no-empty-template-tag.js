@@ -12,13 +12,17 @@ const tester = new RuleTester({
 
 tester.run("no-empty-template-tag", rule, {
     valid: [
-        "<% inter %>",
-        `<div>
-        <% arr.forEach((a)=>{ %>
-            <%= a %>
-            <%- a %>
-        <% }) %>
-        </div>`,
+        { filename: "test.html", code: "<% inter %>" },
+        {
+            filename: "test.html",
+            code: `
+            <div>
+                <% arr.forEach((a)=>{ %>
+                    <%= a %>
+                    <%- a %>
+                <% }) %>
+            </div>`,
+        },
     ],
     invalid: [
         {

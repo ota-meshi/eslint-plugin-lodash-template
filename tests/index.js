@@ -7,6 +7,7 @@ const semver = require("semver")
 const eslintVersion = require("eslint/package").version
 const fs = require("fs")
 const plugin = require("..")
+const rule = require("../lib/rules/no-empty-template-tag")
 
 const CLIEngine = eslint.CLIEngine
 
@@ -59,33 +60,63 @@ describe("index test", () => {
         assert(Object.keys(plugin.processors).length, 1)
         assert.ok(Boolean(plugin.processors[".html"]), "don't have html")
     })
-    it("After adding the target extension, it should be included in the processor extension", () => {
-        plugin.addTargetExtensions(".ejs")
+    it("If it passes through the processor, it must be processed by the parser.", () => {
+        const linter = new eslint.Linter()
+        const config = {
+            parser: "micro-template-eslint-parser",
+            parserOptions: { ecmaVersion: 2015 },
+            rules: {
+                "no-empty-template-tag": "error",
+            },
+        }
+        const options = {
+            preprocess: plugin.processors.base.preprocess,
+            postprocess: plugin.processors.base.postprocess,
+        }
+        linter.defineParser(
+            "micro-template-eslint-parser",
+            require("../lib/parser/micro-template-eslint-parser")
+        )
+        linter.defineRule("no-empty-template-tag", rule)
+        const messagesEjs = linter.verify("'use strict'<%%>", config, {
+            filename: "test.ejs",
+            ...options,
+        })
 
-        assert(Object.keys(plugin.processors).length, 2)
-        assert.ok(Boolean(plugin.processors[".html"]), "don't have html")
-        assert.ok(Boolean(plugin.processors[".ejs"]), "don't have ejs")
+        assert.strictEqual(messagesEjs[0].ruleId, "no-empty-template-tag")
 
-        plugin.addTargetExtensions([".ejb"])
+        const messagesEjb = linter.verify("'use strict'<%%>", config, {
+            filename: "test.ejb",
+            ...options,
+        })
 
-        assert(Object.keys(plugin.processors).length, 3)
-        assert.ok(Boolean(plugin.processors[".html"]), "don't have html")
-        assert.ok(Boolean(plugin.processors[".ejs"]), "don't have ejs")
-        assert.ok(Boolean(plugin.processors[".ejb"]), "don't have ejb")
-
-        plugin.setTargetExtensions(".html")
+        assert.strictEqual(messagesEjb[0].ruleId, "no-empty-template-tag")
     })
+    it("If it does not pass through the processor, it will not be processed by the parser.", () => {
+        const linter = new eslint.Linter()
+        const config = {
+            parser: "micro-template-eslint-parser",
+            parserOptions: { ecmaVersion: 2015 },
+            rules: {
+                "no-empty-template-tag": "error",
+            },
+        }
+        linter.defineParser(
+            "micro-template-eslint-parser",
+            require("../lib/parser/micro-template-eslint-parser")
+        )
+        linter.defineRule("no-empty-template-tag", rule)
+        const messagesEjs = linter.verify("'use strict'<%%>", config, {
+            filename: "test.ejs",
+        })
 
-    it("After set the target extension, it should be included in the processor extension", () => {
-        plugin.setTargetExtensions(".ejs")
+        assert.strictEqual(messagesEjs[0].ruleId, null) // parse error
 
-        assert(Object.keys(plugin.processors).length, 1)
-        assert.ok(Boolean(plugin.processors[".ejs"]), "don't have ejs")
+        const messagesEjb = linter.verify("'use strict'<%%>", config, {
+            filename: "test.ejb",
+        })
 
-        plugin.setTargetExtensions([".html"])
-
-        assert(Object.keys(plugin.processors).length, 1)
-        assert.ok(Boolean(plugin.processors[".html"]), "don't have html")
+        assert.strictEqual(messagesEjb[0].ruleId, null) // parse error
     })
 })
 

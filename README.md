@@ -1,5 +1,7 @@
 # eslint-plugin-lodash-template
 
+ESLint plugin for John Resig-style micro templating.
+
 [![NPM license](https://img.shields.io/npm/l/eslint-plugin-lodash-template.svg)](https://www.npmjs.com/package/eslint-plugin-lodash-template)
 [![NPM version](https://img.shields.io/npm/v/eslint-plugin-lodash-template.svg)](https://www.npmjs.com/package/eslint-plugin-lodash-template)
 [![NPM downloads](https://img.shields.io/badge/dynamic/json.svg?label=downloads&colorB=green&suffix=/day&query=$.downloads&uri=https://api.npmjs.org//downloads/point/last-day/eslint-plugin-lodash-template&maxAge=3600)](http://www.npmtrends.com/eslint-plugin-lodash-template)
@@ -10,8 +12,6 @@
 [![Build Status](https://travis-ci.org/ota-meshi/eslint-plugin-lodash-template.svg?branch=master)](https://travis-ci.org/ota-meshi/eslint-plugin-lodash-template)
 [![Coverage Status](https://coveralls.io/repos/github/ota-meshi/eslint-plugin-lodash-template/badge.svg?branch=master)](https://coveralls.io/github/ota-meshi/eslint-plugin-lodash-template?branch=master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/ota-meshi/eslint-plugin-lodash-template.svg)](https://greenkeeper.io/) 
-
-ESLint plugin for John Resig-style micro templating.
 
 It can be used in projects using [Underscore.js](http://underscorejs.org/#template) and [Lodash](https://lodash.com/docs/#template) 's template.
 
@@ -280,12 +280,12 @@ Please set **.eslintrc.js** as follows.
 (For example, for [EJS](http://ejs.co/).)
 
 ```diff
-  "use strict"
-
-+ const pluginLodashTemplate = require("eslint-plugin-lodash-template")
-+ pluginLodashTemplate.addTargetExtensions(".ejs")
-
-  module.exports = {
++    "overrides": [
++        {
++            "files": ["*.ejs"],
++            "processor": "lodash-template/base"
++        }
++    ]
 ```
 
 ## FAQ
@@ -318,6 +318,10 @@ About how to mark warnings on editor.
         }
     }
     ```
+
+## Migrations
+
+- [0.13.x to 0.14.x](https://ota-meshi.github.io/eslint-plugin-lodash-template/migration/0.13to0.14.html)
 
 ## Contributing
 

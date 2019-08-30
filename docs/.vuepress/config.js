@@ -64,8 +64,11 @@ module.exports = {
         // Rules in no category.
         ...extraCategories
       ],
-
-      '/': [ '/', '/rules/', '/playground/', '/service/']
+      '/migration/': [ 
+        '/migration/',
+        '/migration/0.13to0.14',
+      ],
+      '/': [ '/', '/rules/', '/playground/', '/service/', '/migration/'],
     }
   }
 }

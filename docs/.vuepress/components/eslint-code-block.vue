@@ -18,9 +18,9 @@
 <script>
 // https://github.com/vuejs/vuepress/issues/451
 import EslintEditor from '../../../node_modules/vue-eslint-editor'
-import parser from "../../../lib/parser/micro-template-eslint-parser.js"
+import parser from "../../../lib/parser/micro-template-eslint-parser"
 import plugin from '../../../'
-import processor from "../../../lib/processor/micro-template-processor.js"
+import processor from "../../../lib/processors/base"
 
 
 function preprocess(rawText) {

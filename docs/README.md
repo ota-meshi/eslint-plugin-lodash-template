@@ -170,12 +170,12 @@ Please set **.eslintrc.js** as follows.
 (For example, for [EJS](http://ejs.co/).)
 
 ```diff
-  "use strict"
-
-+ const pluginLodashTemplate = require("eslint-plugin-lodash-template")
-+ pluginLodashTemplate.addTargetExtensions(".ejs")
-
-  module.exports = {
++    "overrides": [
++        {
++            "files": ["*.ejs"],
++            "processor": "lodash-template/base"
++        }
++    ]
 ```
 
 ## FAQ
@@ -208,6 +208,10 @@ About how to mark warnings on editor.
         }
     }
     ```
+
+## Migrations
+
+- [0.13.x to 0.14.x](./migration/0.13to0.14.md)
 
 ## Contributing
 
