@@ -5,7 +5,10 @@ const path = require("path")
 const RuleTester = require("eslint").RuleTester
 const rule = require("../../../lib/rules/script-indent")
 
-const FIXTURE_ROOT = path.resolve(__dirname, "../../fixtures/script-indent/")
+const FIXTURE_ROOT = path.resolve(
+    __dirname,
+    "../../../tests_fixtures/script-indent/"
+)
 
 /**
  * Load test patterns from fixtures.

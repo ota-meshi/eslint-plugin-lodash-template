@@ -2,7 +2,7 @@
 
 ## MicroTemplateService
 
-This plugin's parser provides [MicroTemplateService](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/lib/service/MicroTemplateService.js) from `parserServices`.
+This plugin's parser provides [MicroTemplateService](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/lib/services/MicroTemplateService.js) from `parserServices`.
 `MicroTemplateServic` can be get with `context.parserServices.getMicroTemplateService()`.
 
 

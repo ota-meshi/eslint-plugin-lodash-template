@@ -1,0 +1,58 @@
+[
+  {
+    "ruleId": "no-undef",
+    "message": "'_' is not defined.",
+    "line": 4,
+    "column": 8,
+    "endLine": 4,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "comma-spacing",
+    "message": "A space is required after ','.",
+    "line": 4,
+    "column": 23,
+    "endLine": 4,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 4,
+    "column": 24,
+    "endLine": 4,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "arrow-spacing",
+    "message": "Missing space before =>.",
+    "line": 4,
+    "column": 29,
+    "endLine": 4,
+    "endColumn": 30
+  },
+  {
+    "ruleId": "arrow-spacing",
+    "message": "Missing space after =>.",
+    "line": 4,
+    "column": 32,
+    "endLine": 4,
+    "endColumn": 33
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'name' is not defined.",
+    "line": 10,
+    "column": 23,
+    "endLine": 10,
+    "endColumn": 27
+  },
+  {
+    "ruleId": "prefer-template",
+    "message": "Unexpected string concatenation.",
+    "line": 14,
+    "column": 10,
+    "endLine": 14,
+    "endColumn": 52
+  }
+]

@@ -6,11 +6,15 @@ module.exports = {
     ecmaVersion: 2018
   },
   env: {},
-  extends: ["eslint:all", "plugin:lodash-template/all"],
+  extends: ["eslint:all", "plugin:lodash-template/base"],
   overrides: [
     {
       files: ["*.ejs"],
       processor: "lodash-template/html",
+      globals: {
+        include: true,
+        include: true
+      },
       parserOptions: {
         templateSettings: {
           evaluate: "(?:(?:<%_)|(?:<%(?!%)))([\\s\\S]*?)[_\\-]?%>",

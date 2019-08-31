@@ -1,0 +1,16 @@
+--------(index:0,line:1,col:0)--------
+<a>
+              
+    <span>A</span>
+              
+                  
+       
+</a>
+--------(index:48,line:4,col:10)--------
+<a>
+              
+                  
+              
+    <span>B</span>
+       
+</a>

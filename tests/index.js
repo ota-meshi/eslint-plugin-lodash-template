@@ -11,28 +11,8 @@ const rule = require("../lib/rules/no-empty-template-tag")
 
 const CLIEngine = eslint.CLIEngine
 
-const ORIGINAL_FIXTURE_DIR = path.join(__dirname, "fixtures")
-const FIXTURE_DIR = path.join(__dirname, "temp")
-const CONFIG_PATH = path.join(ORIGINAL_FIXTURE_DIR, ".eslintrc.js")
-
-/**
- * Remove dir
- * @param {string} dirPath dir path
- * @returns {void}
- */
-function removeDirSync(dirPath) {
-    if (fs.existsSync(dirPath)) {
-        for (const file of fs.readdirSync(dirPath)) {
-            const curPath = `${dirPath}/${file}`
-            if (fs.lstatSync(curPath).isDirectory()) {
-                removeDirSync(curPath)
-            } else {
-                fs.unlinkSync(curPath)
-            }
-        }
-        fs.rmdirSync(dirPath)
-    }
-}
+const FIXTURE_DIR = path.join(__dirname, "../tests_fixtures/index")
+const CONFIG_PATH = path.join(FIXTURE_DIR, ".eslintrc.js")
 
 /**
  * Assert the messages
@@ -121,22 +101,6 @@ describe("index test", () => {
 })
 
 describe("Basic tests", () => {
-    beforeEach(() => {
-        removeDirSync(FIXTURE_DIR)
-        fs.mkdirSync(FIXTURE_DIR)
-        for (const fileName of fs.readdirSync(ORIGINAL_FIXTURE_DIR)) {
-            const src = path.join(ORIGINAL_FIXTURE_DIR, fileName)
-            const dst = path.join(FIXTURE_DIR, fileName)
-
-            if (fs.statSync(src).isFile()) {
-                fs.writeFileSync(dst, fs.readFileSync(src))
-            }
-        }
-    })
-    afterEach(() => {
-        removeDirSync(FIXTURE_DIR)
-    })
-
     if (semver.satisfies(eslintVersion, ">=6.2.0")) {
         describe("About fixtures/hello.html", () => {
             it("should notify errors", () => {
@@ -281,18 +245,26 @@ describe("Basic tests", () => {
 
             if (semver.satisfies(eslintVersion, ">=6.2.0")) {
                 it("should fix errors with --fix option", () => {
+                    const baseFilepath = path.join(FIXTURE_DIR, "hello.html")
+                    const testFilepath = path.join(
+                        FIXTURE_DIR,
+                        "hello.html.fixtarget.html"
+                    )
+                    // copy
+                    fs.copyFileSync(baseFilepath, testFilepath)
+
                     const cli = new CLIEngine({
                         cwd: FIXTURE_DIR,
                         fix: true,
                         configFile: CONFIG_PATH,
                         useEslintrc: false,
                     })
-                    CLIEngine.outputFixes(cli.executeOnFiles(["hello.html"]))
-
-                    const actual = fs.readFileSync(
-                        path.join(FIXTURE_DIR, "hello.html"),
-                        "utf8"
+                    CLIEngine.outputFixes(
+                        cli.executeOnFiles(["hello.html.fixtarget.html"])
                     )
+
+                    const actual = fs.readFileSync(testFilepath, "utf8")
+                    fs.unlinkSync(testFilepath)
                     const expected = fs.readFileSync(
                         path.join(FIXTURE_DIR, "hello.html.fixed.html"),
                         "utf8"
@@ -317,8 +289,9 @@ describe("Basic tests", () => {
         })
     })
     describe("About fixtures/no-error", () => {
-        const result = fs.readdirSync(ORIGINAL_FIXTURE_DIR)
-        for (const name of result.filter(s => s.indexOf("no-error-") === 0)) {
+        for (const name of fs
+            .readdirSync(FIXTURE_DIR)
+            .filter(s => s.indexOf("no-error-") === 0)) {
             it(`should no errors /${name}`, () => {
                 const cli = new CLIEngine({
                     cwd: FIXTURE_DIR,

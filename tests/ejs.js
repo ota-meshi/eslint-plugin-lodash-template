@@ -6,31 +6,12 @@ const eslint = require("eslint")
 const semver = require("semver")
 const eslintVersion = require("eslint/package").version
 const fs = require("fs")
+const testUtils = require("./test-utils")
 
 const CLIEngine = eslint.CLIEngine
 
-const ORIGINAL_FIXTURE_DIR = path.join(__dirname, "fixtures/ejs")
-const FIXTURE_DIR = path.join(__dirname, "temp")
-const CONFIG_PATH = path.join(ORIGINAL_FIXTURE_DIR, ".eslintrc.js")
-
-/**
- * Remove dir
- * @param {string} dirPath dir path
- * @returns {void}
- */
-function removeDirSync(dirPath) {
-    if (fs.existsSync(dirPath)) {
-        for (const file of fs.readdirSync(dirPath)) {
-            const curPath = `${dirPath}/${file}`
-            if (fs.lstatSync(curPath).isDirectory()) {
-                removeDirSync(curPath)
-            } else {
-                fs.unlinkSync(curPath)
-            }
-        }
-        fs.rmdirSync(dirPath)
-    }
-}
+const FIXTURE_DIR = path.join(__dirname, "../tests_fixtures/ejs")
+const CONFIG_PATH = path.join(FIXTURE_DIR, ".eslintrc.js")
 
 /**
  * Assert the messages
@@ -53,97 +34,56 @@ function assertMessages(actual, expected) {
     assert.strictEqual(actual.length, expected.length)
 }
 
-describe("ejs test", () => {
-    beforeEach(() => {
-        removeDirSync(FIXTURE_DIR)
-        fs.mkdirSync(FIXTURE_DIR)
-        for (const fileName of fs.readdirSync(ORIGINAL_FIXTURE_DIR)) {
-            const src = path.join(ORIGINAL_FIXTURE_DIR, fileName)
-            const dst = path.join(FIXTURE_DIR, fileName)
-
-            if (fs.statSync(src).isFile()) {
-                fs.writeFileSync(dst, fs.readFileSync(src))
+/**
+ * stringify
+ * @param {*} node
+ */
+function stringifyMessages(messages) {
+    return JSON.stringify(
+        messages,
+        (key, value) => {
+            if (["severity", "nodeType", "messageId", "fix"].includes(key)) {
+                return undefined
             }
-        }
-    })
-    afterEach(() => {
-        removeDirSync(FIXTURE_DIR)
-    })
-    if (semver.satisfies(eslintVersion, ">=6.2.0")) {
-        it("should notify errors", () => {
-            const cli = new CLIEngine({
-                cwd: FIXTURE_DIR,
-                configFile: CONFIG_PATH,
-                useEslintrc: false,
-            })
-            const report = cli.executeOnFiles(["hello.ejs"])
-            const messages = report.results[0].messages
+            return value
+        },
+        2
+    )
+}
 
-            assertMessages(messages, [
-                {
-                    ruleId: "no-undef",
-                    message: "'_' is not defined.",
-                    line: 4,
-                    column: 7,
-                    messageId: "undef",
-                    endLine: 4,
-                    endColumn: 8,
-                },
-                {
-                    ruleId: "comma-spacing",
-                    message: "A space is required after ','.",
-                    line: 4,
-                    column: 22,
-                    messageId: "missing",
-                    endLine: 4,
-                    endColumn: 23,
-                },
-                {
-                    ruleId: "function-call-argument-newline",
-                    message:
-                        "There should be a line break after this argument.",
-                    line: 4,
-                    column: 23,
-                    messageId: "missingLineBreak",
-                    endLine: 4,
-                    endColumn: 23,
-                },
-                {
-                    ruleId: "arrow-spacing",
-                    message: "Missing space before =>.",
-                    line: 4,
-                    column: 28,
-                    messageId: "expectedBefore",
-                    endLine: 4,
-                    endColumn: 29,
-                },
-                {
-                    ruleId: "arrow-spacing",
-                    message: "Missing space after =>.",
-                    line: 4,
-                    column: 31,
-                    messageId: "expectedAfter",
-                    endLine: 4,
-                    endColumn: 32,
-                },
-                {
-                    ruleId: "no-undef",
-                    message: "'name' is not defined.",
-                    line: 10,
-                    column: 23,
-                    messageId: "undef",
-                    endLine: 10,
-                    endColumn: 27,
-                },
-                {
-                    ruleId: "prefer-template",
-                    message: "Unexpected string concatenation.",
-                    line: 14,
-                    column: 10,
-                    endLine: 14,
-                    endColumn: 52,
-                },
-            ])
+describe("ejs test", () => {
+    if (semver.satisfies(eslintVersion, ">=6.2.0")) {
+        describe("should notify errors", () => {
+            for (const name of fs
+                .readdirSync(FIXTURE_DIR)
+                .filter(s => s.endsWith(".ejs"))) {
+                it(name, () => {
+                    const cli = new CLIEngine({
+                        cwd: FIXTURE_DIR,
+                        configFile: CONFIG_PATH,
+                        useEslintrc: false,
+                    })
+                    const report = cli.executeOnFiles(name)
+                    const messages = report.results[0].messages
+
+                    const expectFilepath = path.join(
+                        FIXTURE_DIR,
+                        `${name}.json`
+                    )
+                    try {
+                        assertMessages(
+                            messages,
+                            JSON.parse(fs.readFileSync(expectFilepath, "utf8"))
+                        )
+                    } catch (e) {
+                        testUtils.writeFile(
+                            expectFilepath,
+                            stringifyMessages(messages)
+                        )
+                        throw e
+                    }
+                })
+            }
         })
     }
 })

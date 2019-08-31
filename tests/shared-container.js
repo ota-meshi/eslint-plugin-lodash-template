@@ -6,27 +6,29 @@ const container = require("../lib/shared-container")
 describe("shared-container", () => {
     it("empty", () => {
         assert.strictEqual(
-            container.popService("shared-container_test.html"),
+            container.getService("shared-container_test.html"),
             null
         )
         assert.strictEqual(
-            container.popService("shared-container_test.html"),
+            container.getService("shared-container_test.html"),
             null
         )
     })
     it("2 push", () => {
-        container.pushService("shared-container_test.html", "1")
-        container.pushService("shared-container_test.html", "2")
+        container.addService("shared-container_test.html", "1")
+        container.addService("shared-container_test.html", "2")
         assert.strictEqual(
-            container.popService("shared-container_test.html"),
+            container.getService("shared-container_test.html"),
             "2"
         )
+        container.unregisters("shared-container_test.html")
         assert.strictEqual(
-            container.popService("shared-container_test.html"),
+            container.getService("shared-container_test.html"),
             "1"
         )
+        container.unregisters("shared-container_test.html")
         assert.strictEqual(
-            container.popService("shared-container_test.html"),
+            container.getService("shared-container_test.html"),
             null
         )
     })

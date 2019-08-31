@@ -173,7 +173,7 @@ Please set **.eslintrc.js** as follows.
 +    "overrides": [
 +        {
 +            "files": ["*.ejs"],
-+            "processor": "lodash-template/base"
++            "processor": "lodash-template/html"
 +        }
 +    ]
 ```
@@ -221,7 +221,7 @@ Please use GitHub's Issues/PRs.
 
 ### `parserServices`
 
-[Information provided by `parserServices` on this plugin](./service/README.md)  
+[Information provided by `parserServices` on this plugin](./services/README.md)  
 
 ### Development Tools
 

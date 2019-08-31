@@ -1,0 +1,80 @@
+[
+  {
+    "ruleId": "no-undef",
+    "message": "'user' is not defined.",
+    "line": 1,
+    "column": 8,
+    "endLine": 1,
+    "endColumn": 12
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'user' is not defined.",
+    "line": 2,
+    "column": 11,
+    "endLine": 2,
+    "endColumn": 15
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'users' is not defined.",
+    "line": 6,
+    "column": 6,
+    "endLine": 6,
+    "endColumn": 11
+  },
+  {
+    "ruleId": "prefer-arrow-callback",
+    "message": "Unexpected function expression.",
+    "line": 6,
+    "column": 20,
+    "endLine": 8,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "func-names",
+    "message": "Unexpected unnamed function.",
+    "line": 6,
+    "column": 20,
+    "endLine": 6,
+    "endColumn": 28
+  },
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 6,
+    "column": 28
+  },
+  {
+    "ruleId": "space-before-blocks",
+    "message": "Missing space before opening brace.",
+    "line": 6,
+    "column": 34,
+    "endLine": 8,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 7,
+    "column": 29,
+    "endLine": 7,
+    "endColumn": 30
+  },
+  {
+    "ruleId": "quote-props",
+    "message": "Unquoted property 'user' found.",
+    "line": 7,
+    "column": 31,
+    "endLine": 7,
+    "endColumn": 41
+  },
+  {
+    "ruleId": "object-shorthand",
+    "message": "Expected property shorthand.",
+    "line": 7,
+    "column": 31,
+    "endLine": 7,
+    "endColumn": 41
+  }
+]

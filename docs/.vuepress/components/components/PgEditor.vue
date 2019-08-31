@@ -17,7 +17,7 @@
 import EslintEditor from "../../../../node_modules/vue-eslint-editor"
 import plugin from "../../../.."
 import parser from "../../../../lib/parser/micro-template-eslint-parser"
-import processor from "../../../../lib/processors/base"
+import processor from "../../../../lib/processors/html"
 
 // eslint/lib/cli-engine.js #183
 function preprocess(rawText) {
