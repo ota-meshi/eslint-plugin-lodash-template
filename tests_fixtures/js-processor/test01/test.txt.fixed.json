@@ -1,0 +1,10 @@
+[
+  {
+    "ruleId": "no-undef",
+    "message": "'a' is not defined.",
+    "line": 1,
+    "column": 8,
+    "endLine": 1,
+    "endColumn": 9
+  }
+]
