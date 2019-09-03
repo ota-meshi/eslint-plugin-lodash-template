@@ -28,6 +28,15 @@ module.exports = {
   description: 'ESLint plugin for John Resig-style micro template / Lo-Dash template / Underscore template.',
   serviceWorker: true,
   evergreen: true,
+  configureWebpack: (config, isServer) => {
+    return {
+      resolve: {
+        alias: {
+          eslint: 'eslint4b'
+        }
+      }
+    }
+  },
 
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }]
@@ -47,7 +56,7 @@ module.exports = {
     nav: [
       { text: 'Rules', link: '/rules/' },
       { text: 'Playground', link: '/playground/' },
-      { text: 'Contributing', link: '/service/' },
+      { text: 'Contributing', link: '/services/' },
     ],
 
     sidebar: {
@@ -68,7 +77,7 @@ module.exports = {
         '/migration/',
         '/migration/0.13to0.14',
       ],
-      '/': [ '/', '/rules/', '/playground/', '/service/', '/migration/'],
+      '/': [ '/', '/rules/', '/playground/', '/services/', '/migration/'],
     }
   }
 }

@@ -8,13 +8,6 @@ module.exports = {
     env: {},
     extends: ["eslint:all", "plugin:lodash-template/all"],
     rules: {
-        "lodash-template/plugin-option": [
-            "error",
-            {
-                ignoreRules: ["no-tabs"],
-                globals: ["name"],
-            },
-        ],
         "linebreak-style": "off",
         "max-len": "off",
         "lodash-template/html-indent": "off",
@@ -22,4 +15,8 @@ module.exports = {
     globals: {
         _: true,
     },
+    "settings": {
+        "lodash-template/ignoreRules": ["no-tabs"],
+        "lodash-template/globals": ["name"],
+    }
 }

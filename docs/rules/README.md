@@ -18,7 +18,7 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 
 | Rule ID | Description |    |
 |:--------|:------------|:---|
-| [lodash-template/plugin-option](./plugin-option.md) | support option |  |
+
 
 ## Best Practices (Improve Development Experience)
 
@@ -100,3 +100,12 @@ For example:
 |:--------|:------------|:---|
 | [lodash-template/no-template-tag-in-start-tag](./no-template-tag-in-start-tag.md) | disallow template tag in start tag outside attribute values. (ex. :ng: `<input <%= 'disabled' %> >`) |  |
 | [lodash-template/prefer-escape-template-interpolations](./prefer-escape-template-interpolations.md) | prefer escape micro-template interpolations. (ex. :ok: `<%- ... %>`, :ng: `<%= ... %>`) |  |
+
+## Deprecated
+
+- :warning: We're going to remove deprecated rules in the next major release. Please migrate to successor/new rules.
+- :innocent: We don't fix bugs which are in deprecated rules since we don't have enough resources.
+
+| Rule ID | Replaced by |
+|:--------|:------------|
+| [lodash-template/plugin-option](./plugin-option.md) | (no replacement) |

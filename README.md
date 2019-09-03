@@ -104,7 +104,7 @@ The `--fix` option on the [command line](https://eslint.org/docs/user-guide/comm
 
 ### Base Rules (Enabling Correct ESLint Parsing)
 
-Enforce all the rules in this category with:
+Enable this plugin using with:
 
 ```json
 {
@@ -114,11 +114,11 @@ Enforce all the rules in this category with:
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
-|  | [lodash-template/plugin-option](./docs/rules/plugin-option.md) | support option |
+
 
 ### Best Practices (Improve Development Experience)
 
-Enforce all the rules in this category and all the rules in `Base` category with:
+Enforce all the rules in this category with:
 
 ```json
 {
@@ -136,7 +136,7 @@ Enforce all the rules in this category and all the rules in `Base` category with
 
 ### Recommended (Improve Readability)
 
-Enforce all the rules in this category and all the rules in `Base`/`Best Practices` categories with:
+Enforce all the rules in this category and all the rules in `Best Practices` categories with:
 
 ```json
 {
@@ -153,7 +153,7 @@ Enforce all the rules in this category and all the rules in `Base`/`Best Practic
 
 ### Recommended with HTML template (Improve Readability with HTML template)
 
-Enforce all the rules in this category and all the rules in `Base`/`Best Practices`/`Recommended` categories with:
+Enforce all the rules in this category and all the rules in `Best Practices`/`Recommended` categories with:
 
 ```json
 {
@@ -184,6 +184,15 @@ Enforce all the rules in this category and all the rules in `Base`/`Best Practic
 |  | [lodash-template/no-template-tag-in-start-tag](./docs/rules/no-template-tag-in-start-tag.md) | disallow template tag in start tag outside attribute values. (ex. :ng: `<input <%= 'disabled' %> >`) |
 |  | [lodash-template/prefer-escape-template-interpolations](./docs/rules/prefer-escape-template-interpolations.md) | prefer escape micro-template interpolations. (ex. :ok: `<%- ... %>`, :ng: `<%= ... %>`) |
 
+### Deprecated
+
+> - :warning: We're going to remove deprecated rules in the next major release. Please migrate to successor/new rules.
+> - :innocent: We don't fix bugs which are in deprecated rules since we don't have enough resources.
+
+| Rule ID | Replaced by |
+|:--------|:------------|
+| [lodash-template/plugin-option](./docs/rules/plugin-option.md) | (no replacement) |
+
 <!--RULES_TABLE_END-->
 
 ## Plugin Option
@@ -196,13 +205,13 @@ Please set the global variable used in all templates as follows.
 
 ```diff
   {
-      "rules": {
-+         "lodash-template/plugin-option": [2, {
-+             "globals": ["variableName"],
-+         }]
+      "settings": {
++         "lodash-template/globals": ["variableName"]
       }
   }
 ```
+
+"html/html-extensions": [".html", ".we"], 
 
 Please write the global comment in the file as follows for the variable to be used with a specific template.
 
@@ -221,10 +230,8 @@ Please set as follows.
 
 ```diff
   {
-      "rules": {
-+         "lodash-template/plugin-option": [2, {
-+             "ignoreRules": ["no-undef", "no-tabs"],
-+         }]
+      "settings": {
++         "lodash-template/ignoreRules": ["no-undef", "no-tabs"]
       }
   }
 ```

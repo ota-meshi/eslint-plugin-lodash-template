@@ -86,10 +86,8 @@ Please set the global variable used in all templates as follows.
 
 ```diff
   {
-      "rules": {
-+         "lodash-template/plugin-option": [2, {
-+             "globals": ["variableName"],
-+         }]
+      "settings": {
++         "lodash-template/globals": ["variableName"]
       }
   }
 ```
@@ -111,10 +109,8 @@ Please set as follows.
 
 ```diff
   {
-      "rules": {
-+         "lodash-template/plugin-option": [2, {
-+             "ignoreRules": ["no-undef", "no-tabs"],
-+         }]
+      "settings": {
++         "lodash-template/ignoreRules": ["no-undef", "no-tabs"]
       }
   }
 ```
