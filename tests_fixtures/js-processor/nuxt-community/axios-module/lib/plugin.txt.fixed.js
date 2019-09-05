@@ -1,4 +1,4 @@
-import Axios from "axios";
+import Axios from "axios"
 <% if (options.retry) { %>import axiosRetry from 'axios-retry'<% } %>
 
 // Axios.prototype cannot be modified
@@ -97,59 +97,59 @@ const extendAxiosInstance = (axios) => {
 
 <% if (options.debug) { %>
 const log = (level, ...messages) => console[level](
-        "[Axios]",
-        ...messages
-    ),
+    "[Axios]",
+    ...messages
+);
 
-    setupDebugInterceptor = (axios) => {
+const setupDebugInterceptor = (axios) => {
 
-        // Request
-        axios.onRequestError((error) => {
+    // Request
+    axios.onRequestError((error) => {
 
-            log(
-                "error",
-                "Request error:",
-                error
-            );
+        log(
+            "error",
+            "Request error:",
+            error
+        );
 
-        });
+    });
 
-        // Response
-        axios.onResponseError((error) => {
+    // Response
+    axios.onResponseError((error) => {
 
-            log(
-                "error",
-                "Response error:",
-                error
-            );
+        log(
+            "error",
+            "Response error:",
+            error
+        );
 
-        });
-        axios.onResponse((res) => {
+    });
+    axios.onResponse((res) => {
 
-            log(
-                "info",
-                `[${res.status} ${res.statusText}]`,
-                `[${res.config.method.toUpperCase()}]`,
-                res.config.url
-            );
+        log(
+            "info",
+            `[${res.status} ${res.statusText}]`,
+            `[${res.config.method.toUpperCase()}]`,
+            res.config.url
+        );
 
-            if (process.browser) {
+        if (process.browser) {
 
-                console.log(res);
+            console.log(res);
 
-            } else {
+        } else {
 
-                console.log(JSON.stringify(
-                    res.data,
-                    undefined,
-                    2
-                ));
+            console.log(JSON.stringify(
+                res.data,
+                undefined,
+                2
+            ));
 
-            }
+        }
 
-            return res;
+        return res;
 
-        });
+    });
 }<% } %>
 
 <% if (options.credentials) { %>
@@ -182,13 +182,13 @@ const setupProgress = (axios, ctx) => {
 
     // A noop loading inteterface for when $nuxt is not yet ready
     const noopLoading = {
-            "finish": () => { },
-            "start": () => { },
-            "fail": () => { },
-            "set": () => { }
-        },
+        "finish": () => { },
+        "start": () => { },
+        "fail": () => { },
+        "set": () => { }
+    };
 
-        $loading = () => (window.$nuxt && window.$nuxt.$loading && window.$nuxt.$loading.set ? window.$nuxt.$loading : noopLoading);
+    const $loading = () => (window.$nuxt && window.$nuxt.$loading && window.$nuxt.$loading.set ? window.$nuxt.$loading : noopLoading);
 
     let currentRequests = 0;
 
@@ -259,30 +259,30 @@ export default (ctx, inject) => {
 
     // BaseURL
     const baseURL = process.browser
-            ? '<%= options.browserBaseURL %>'
-            : (process.env._AXIOS_BASE_URL_ || '<%= options.baseURL %>'),
+        ? '<%= options.browserBaseURL %>'
+        : (process.env._AXIOS_BASE_URL_ || '<%= options.baseURL %>');
 
-        /*
-         * Create fresh objects for all default header scopes
-         * Axios creates only one which is shared across SSR requests!
-         * https://github.com/mzabriskie/axios/blob/master/lib/defaults.js
-         */
-        headers = {
-            "common": {
-                "Accept": "application/json, text/plain, */*"
-            },
-            "delete": {},
-            "get": {},
-            "head": {},
-            "post": {},
-            "put": {},
-            "patch": {}
+    /*
+     * Create fresh objects for all default header scopes
+     * Axios creates only one which is shared across SSR requests!
+     * https://github.com/mzabriskie/axios/blob/master/lib/defaults.js
+     */
+    const headers = {
+        "common": {
+            "Accept": "application/json, text/plain, */*"
         },
+        "delete": {},
+        "get": {},
+        "head": {},
+        "post": {},
+        "put": {},
+        "patch": {}
+    };
 
-        axiosOptions = {
-            baseURL,
-            headers
-        };
+    const axiosOptions = {
+        baseURL,
+        headers
+    };
 
   <% if (options.proxyHeaders) { %>
     // Proxy SSR request headers headers
@@ -306,11 +306,12 @@ export default (ctx, inject) => {
     extendAxiosInstance(axios);
 
     // Setup interceptors
-  <% if (options.debug) { %>setupDebugInterceptor(axios); <% } %>
+  <% if (options.debug) { %>setupDebugInterceptor(axios) <% } %>
   <% if (options.credentials) { %>setupCredentialsInterceptor(axios)<% } %>
   <% if (options.progress) { %>setupProgress(
         axios,
-        ctx) <% } %>
+        ctx
+    ) <% } %>
   <% if (options.retry) {
  %>axiosRetry(axios, <%= serialize(options.retry) %>)<%
 } %>

@@ -18,6 +18,12 @@ module.exports = {
       parserOptions: {
         ecmaVersion: 2019
       },
+      globals: {
+        options: true,
+      },
+      rules: {
+        'one-var': 'off'
+      }
     }
   ]
 };

@@ -1,0 +1,320 @@
+[
+  {
+    "ruleId": "prefer-const",
+    "message": "'h' is never reassigned. Use 'const' instead.",
+    "line": 179,
+    "column": 15,
+    "endLine": 179,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "brace-style",
+    "message": "Statement inside of curly braces should be on next line.",
+    "line": 179,
+    "column": 48,
+    "endLine": 179,
+    "endColumn": 49
+  },
+  {
+    "ruleId": "brace-style",
+    "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
+    "line": 180,
+    "column": 13,
+    "endLine": 180,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "eol-last",
+    "message": "Newline required at end of file but not found.",
+    "line": 202,
+    "column": 2
+  },
+  {
+    "ruleId": "prefer-const",
+    "message": "'scope' is never reassigned. Use 'const' instead.",
+    "line": 7,
+    "column": 14,
+    "endLine": 7,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "semi",
+    "message": "Extra semicolon.",
+    "line": 9,
+    "column": 50
+  },
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 19,
+    "column": 12
+  },
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 22,
+    "column": 13
+  },
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 25,
+    "column": 17
+  },
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 28,
+    "column": 18
+  },
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 31,
+    "column": 10
+  },
+  {
+    "ruleId": "prefer-const",
+    "message": "'method' is never reassigned. Use 'const' instead.",
+    "line": 38,
+    "column": 10,
+    "endLine": 38,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument having a body with curly braces.",
+    "line": 42,
+    "column": 29,
+    "endLine": 42,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "prefer-const",
+    "message": "'key' is never reassigned. Use 'const' instead.",
+    "line": 43,
+    "column": 12,
+    "endLine": 43,
+    "endColumn": 15
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 49,
+    "column": 37,
+    "endLine": 49,
+    "endColumn": 51
+  },
+  {
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument having a body with curly braces.",
+    "line": 51,
+    "column": 31,
+    "endLine": 51,
+    "endColumn": 36
+  },
+  {
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument having a body with curly braces.",
+    "line": 53,
+    "column": 24,
+    "endLine": 53,
+    "endColumn": 29
+  },
+  {
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument having a body with curly braces.",
+    "line": 58,
+    "column": 25,
+    "endLine": 58,
+    "endColumn": 30
+  },
+  {
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument having a body with curly braces.",
+    "line": 61,
+    "column": 20,
+    "endLine": 61,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 6.",
+    "line": 62,
+    "column": 1,
+    "endLine": 62,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 6 spaces but found 8.",
+    "line": 63,
+    "column": 1,
+    "endLine": 63,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 6 spaces but found 8.",
+    "line": 64,
+    "column": 1,
+    "endLine": 64,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 6 spaces but found 8.",
+    "line": 65,
+    "column": 1,
+    "endLine": 65,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 6 spaces but found 8.",
+    "line": 66,
+    "column": 1,
+    "endLine": 66,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 6.",
+    "line": 68,
+    "column": 1,
+    "endLine": 68,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 6 spaces but found 8.",
+    "line": 69,
+    "column": 1,
+    "endLine": 69,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 69,
+    "column": 9,
+    "endLine": 69,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 6.",
+    "line": 70,
+    "column": 1,
+    "endLine": 70,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 6 spaces but found 8.",
+    "line": 71,
+    "column": 1,
+    "endLine": 71,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 71,
+    "column": 9,
+    "endLine": 71,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 6.",
+    "line": 72,
+    "column": 1,
+    "endLine": 72,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 6.",
+    "line": 74,
+    "column": 1,
+    "endLine": 74,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument having a body with curly braces.",
+    "line": 79,
+    "column": 37,
+    "endLine": 79,
+    "endColumn": 42
+  },
+  {
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument having a body with curly braces.",
+    "line": 81,
+    "column": 19,
+    "endLine": 81,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument having a body with curly braces.",
+    "line": 108,
+    "column": 19,
+    "endLine": 108,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument having a body with curly braces.",
+    "line": 116,
+    "column": 20,
+    "endLine": 116,
+    "endColumn": 28
+  },
+  {
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument having a body with curly braces.",
+    "line": 128,
+    "column": 17,
+    "endLine": 128,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument having a body with curly braces.",
+    "line": 138,
+    "column": 22,
+    "endLine": 138,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 6.",
+    "line": 153,
+    "column": 1,
+    "endLine": 153,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 6.",
+    "line": 154,
+    "column": 1,
+    "endLine": 154,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "key-spacing",
+    "message": "Extra space after key 'common'.",
+    "line": 160,
+    "column": 5
+  },
+  {
+    "ruleId": "eol-last",
+    "message": "Newline required at end of file but not found.",
+    "line": 202,
+    "column": 2
+  }
+]

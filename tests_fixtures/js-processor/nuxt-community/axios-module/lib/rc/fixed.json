@@ -1,0 +1,26 @@
+[
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 49,
+    "column": 37,
+    "endLine": 49,
+    "endColumn": 51
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 69,
+    "column": 7,
+    "endLine": 69,
+    "endColumn": 18
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 71,
+    "column": 7,
+    "endLine": 71,
+    "endColumn": 18
+  }
+]

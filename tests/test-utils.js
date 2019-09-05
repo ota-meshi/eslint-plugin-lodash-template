@@ -28,4 +28,15 @@ module.exports = {
         }
     },
     listupFiles,
+    existsPath(p) {
+        try {
+            fs.statSync(p)
+            return true
+        } catch (error) {
+            if (error.code === "ENOENT") {
+                return false
+            }
+            throw error
+        }
+    },
 }

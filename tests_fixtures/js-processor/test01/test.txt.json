@@ -38,12 +38,6 @@
     "endColumn": 14
   },
   {
-    "ruleId": "semi",
-    "message": "Missing semicolon.",
-    "line": 2,
-    "column": 14
-  },
-  {
     "ruleId": "no-trailing-spaces",
     "message": "Trailing spaces not allowed.",
     "line": 4,
@@ -84,11 +78,5 @@
     "column": 11,
     "endLine": 4,
     "endColumn": 14
-  },
-  {
-    "ruleId": "semi",
-    "message": "Missing semicolon.",
-    "line": 4,
-    "column": 14
   }
 ]

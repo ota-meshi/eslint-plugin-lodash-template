@@ -49,7 +49,7 @@ describe("BranchedTemplateStore test", () => {
 
                 const texts = []
                 for (let index = 0; index < code.length; index++) {
-                    const { template } = templates.getBranchProcessedTemplate(
+                    const { template } = templates.getCoversBranchTemplate(
                         index
                     )
                     if (!texts.includes(template)) {
