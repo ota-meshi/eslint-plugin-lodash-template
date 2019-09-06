@@ -46,20 +46,20 @@
     "column": 1
   },
   {
-    "ruleId": "no-ternary",
-    "message": "Ternary operator used.",
-    "line": 8,
-    "column": 29,
-    "endLine": 8,
-    "endColumn": 70
-  },
-  {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
     "line": 8,
     "column": 29,
     "endLine": 8,
     "endColumn": 50
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 8,
+    "column": 29,
+    "endLine": 8,
+    "endColumn": 70
   },
   {
     "ruleId": "multiline-ternary",
@@ -70,12 +70,12 @@
     "endColumn": 59
   },
   {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
     "line": 23,
     "column": 23,
     "endLine": 23,
-    "endColumn": 29
+    "endColumn": 71
   },
   {
     "ruleId": "no-negated-condition",
@@ -86,12 +86,12 @@
     "endColumn": 71
   },
   {
-    "ruleId": "no-ternary",
-    "message": "Ternary operator used.",
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
     "line": 23,
     "column": 23,
     "endLine": 23,
-    "endColumn": 71
+    "endColumn": 29
   },
   {
     "ruleId": "multiline-ternary",
@@ -438,12 +438,12 @@
     "column": 11
   },
   {
-    "ruleId": "no-underscore-dangle",
-    "message": "Unexpected dangling '_' in '_AXIOS_BASE_URL_'.",
+    "ruleId": "no-process-env",
+    "message": "Unexpected use of process.env.",
     "line": 263,
     "column": 12,
     "endLine": 263,
-    "endColumn": 40
+    "endColumn": 23
   },
   {
     "ruleId": "no-undef",
@@ -454,12 +454,12 @@
     "endColumn": 19
   },
   {
-    "ruleId": "no-process-env",
-    "message": "Unexpected use of process.env.",
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_AXIOS_BASE_URL_'.",
     "line": 263,
     "column": 12,
     "endLine": 263,
-    "endColumn": 23
+    "endColumn": 40
   },
   {
     "ruleId": "sort-keys",
