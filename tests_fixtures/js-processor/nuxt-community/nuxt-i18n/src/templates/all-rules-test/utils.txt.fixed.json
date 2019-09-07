@@ -1,53 +1,5 @@
 [
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 88. Maximum allowed is 80.",
-    "line": 8,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 88. Maximum allowed is 80.",
-    "line": 27,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 124. Maximum allowed is 80.",
-    "line": 35,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 120. Maximum allowed is 80.",
-    "line": 37,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 107. Maximum allowed is 80.",
-    "line": 52,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 86. Maximum allowed is 80.",
-    "line": 70,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 127. Maximum allowed is 80.",
-    "line": 81,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 126. Maximum allowed is 80.",
-    "line": 85,
-    "column": 1
-  },
-  {
     "ruleId": "no-unused-vars",
     "message": "'LOCALE_DOMAIN_KEY' is assigned a value but never used.",
     "line": 2,
@@ -59,6 +11,18 @@
     "ruleId": "max-len",
     "message": "This line has a length of 88. Maximum allowed is 80.",
     "line": 8,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 88. Maximum allowed is 80.",
+    "line": 8,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 88. Maximum allowed is 80.",
+    "line": 27,
     "column": 1
   },
   {
@@ -78,133 +42,169 @@
   {
     "ruleId": "max-len",
     "message": "This line has a length of 124. Maximum allowed is 80.",
-    "line": 35,
+    "line": 36,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 124. Maximum allowed is 80.",
+    "line": 36,
     "column": 1
   },
   {
     "ruleId": "no-inline-comments",
     "message": "Unexpected comment inline with code.",
-    "line": 35,
-    "column": 49,
-    "endLine": 35,
-    "endColumn": 89
-  },
-  {
-    "ruleId": "no-ternary",
-    "message": "Ternary operator used.",
     "line": 36,
-    "column": 38,
+    "column": 49,
     "endLine": 36,
-    "endColumn": 78
+    "endColumn": 89
   },
   {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 36,
+    "line": 37,
     "column": 38,
-    "endLine": 36,
+    "endLine": 37,
     "endColumn": 52
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 37,
+    "column": 38,
+    "endLine": 37,
+    "endColumn": 78
   },
   {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 36,
+    "line": 37,
     "column": 55,
-    "endLine": 36,
+    "endLine": 37,
     "endColumn": 69
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 120. Maximum allowed is 80.",
-    "line": 37,
+    "line": 38,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 120. Maximum allowed is 80.",
+    "line": 38,
     "column": 1
   },
   {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 37,
+    "line": 38,
     "column": 36,
-    "endLine": 37,
+    "endLine": 38,
     "endColumn": 66
   },
   {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
-    "line": 37,
+    "line": 38,
     "column": 36,
-    "endLine": 37,
+    "endLine": 38,
     "endColumn": 120
   },
   {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 37,
+    "line": 38,
     "column": 69,
-    "endLine": 37,
+    "endLine": 38,
     "endColumn": 109
   },
   {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
-    "line": 46,
+    "line": 47,
     "column": 21,
-    "endLine": 46,
+    "endLine": 47,
     "endColumn": 34
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 107. Maximum allowed is 80.",
-    "line": 52,
+    "line": 54,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 107. Maximum allowed is 80.",
+    "line": 54,
     "column": 1
   },
   {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
-    "line": 52,
+    "line": 54,
     "column": 17,
-    "endLine": 52,
+    "endLine": 54,
     "endColumn": 29
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 86. Maximum allowed is 80.",
-    "line": 70,
+    "line": 72,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 86. Maximum allowed is 80.",
+    "line": 72,
     "column": 1
   },
   {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
-    "line": 70,
+    "line": 72,
     "column": 9,
-    "endLine": 70,
+    "endLine": 72,
     "endColumn": 21
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 127. Maximum allowed is 80.",
-    "line": 81,
+    "line": 83,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 127. Maximum allowed is 80.",
+    "line": 83,
     "column": 1
   },
   {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
-    "line": 81,
+    "line": 83,
     "column": 13,
-    "endLine": 81,
+    "endLine": 83,
     "endColumn": 25
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 126. Maximum allowed is 80.",
-    "line": 85,
+    "line": 87,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 126. Maximum allowed is 80.",
+    "line": 87,
     "column": 1
   },
   {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
-    "line": 85,
+    "line": 87,
     "column": 13,
-    "endLine": 85,
+    "endLine": 87,
     "endColumn": 25
   }
 ]

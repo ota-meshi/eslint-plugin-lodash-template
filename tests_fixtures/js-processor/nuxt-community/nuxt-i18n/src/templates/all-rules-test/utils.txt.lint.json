@@ -1,53 +1,5 @@
 [
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 85. Maximum allowed is 80.",
-    "line": 8,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 81. Maximum allowed is 80.",
-    "line": 23,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 113. Maximum allowed is 80.",
-    "line": 29,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 109. Maximum allowed is 80.",
-    "line": 31,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 98. Maximum allowed is 80.",
-    "line": 39,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 81. Maximum allowed is 80.",
-    "line": 51,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 120. Maximum allowed is 80.",
-    "line": 56,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 119. Maximum allowed is 80.",
-    "line": 58,
-    "column": 1
-  },
-  {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 1,
@@ -78,6 +30,12 @@
     "message": "Missing semicolon.",
     "line": 6,
     "column": 44
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 85. Maximum allowed is 80.",
+    "line": 8,
+    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -204,6 +162,12 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 81. Maximum allowed is 80.",
+    "line": 23,
+    "column": 1
+  },
+  {
     "ruleId": "arrow-parens",
     "message": "Expected parentheses around arrow function argument.",
     "line": 23,
@@ -262,6 +226,12 @@
     "endColumn": 7
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 26,
+    "column": 17
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 16 spaces but found 8.",
     "line": 28,
@@ -276,18 +246,24 @@
     "column": 13
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 113. Maximum allowed is 80.",
-    "line": 29,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 20 spaces but found 10.",
     "line": 29,
     "column": 1,
     "endLine": 29,
     "endColumn": 11
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 113. Maximum allowed is 80.",
+    "line": 29,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 113. Maximum allowed is 80.",
+    "line": 29,
+    "column": 1
   },
   {
     "ruleId": "capitalized-comments",
@@ -320,20 +296,20 @@
     "endColumn": 11
   },
   {
-    "ruleId": "no-ternary",
-    "message": "Ternary operator used.",
-    "line": 30,
-    "column": 28,
-    "endLine": 30,
-    "endColumn": 68
-  },
-  {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
     "line": 30,
     "column": 28,
     "endLine": 30,
     "endColumn": 42
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 30,
+    "column": 28,
+    "endLine": 30,
+    "endColumn": 68
   },
   {
     "ruleId": "multiline-ternary",
@@ -364,12 +340,10 @@
     "column": 1
   },
   {
-    "ruleId": "no-ternary",
-    "message": "Ternary operator used.",
+    "ruleId": "max-len",
+    "message": "This line has a length of 109. Maximum allowed is 80.",
     "line": 31,
-    "column": 26,
-    "endLine": 31,
-    "endColumn": 110
+    "column": 1
   },
   {
     "ruleId": "multiline-ternary",
@@ -378,6 +352,14 @@
     "column": 26,
     "endLine": 31,
     "endColumn": 56
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 31,
+    "column": 26,
+    "endLine": 31,
+    "endColumn": 110
   },
   {
     "ruleId": "quotes",
@@ -505,13 +487,13 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 38,
-    "column": 14
+    "column": 7
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 98. Maximum allowed is 80.",
-    "line": 39,
-    "column": 1
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 38,
+    "column": 14
   },
   {
     "ruleId": "indent",
@@ -520,6 +502,18 @@
     "column": 1,
     "endLine": 39,
     "endColumn": 9
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 98. Maximum allowed is 80.",
+    "line": 39,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 98. Maximum allowed is 80.",
+    "line": 39,
+    "column": 1
   },
   {
     "ruleId": "no-console",
@@ -612,18 +606,24 @@
     "column": 31
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 81. Maximum allowed is 80.",
-    "line": 51,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 8 spaces but found 4.",
     "line": 51,
     "column": 1,
     "endLine": 51,
     "endColumn": 5
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 81. Maximum allowed is 80.",
+    "line": 51,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 81. Maximum allowed is 80.",
+    "line": 51,
+    "column": 1
   },
   {
     "ruleId": "no-console",
@@ -718,6 +718,12 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 120. Maximum allowed is 80.",
+    "line": 56,
+    "column": 1
+  },
+  {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
     "line": 56,
@@ -758,6 +764,12 @@
     "column": 1,
     "endLine": 58,
     "endColumn": 7
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 119. Maximum allowed is 80.",
+    "line": 58,
+    "column": 1
   },
   {
     "ruleId": "max-len",

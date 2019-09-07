@@ -10,3 +10,4 @@ rules
 service-worker.js
 playground
 index.html
+.test-result-list.txt

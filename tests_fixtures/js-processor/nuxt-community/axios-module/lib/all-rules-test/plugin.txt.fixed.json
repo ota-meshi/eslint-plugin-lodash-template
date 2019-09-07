@@ -6,40 +6,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 98. Maximum allowed is 80.",
-    "line": 163,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 134. Maximum allowed is 80.",
-    "line": 191,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 89. Maximum allowed is 80.",
-    "line": 289,
-    "column": 1
-  },
-  {
-    "ruleId": "id-length",
-    "message": "Identifier name 'h' is too short (< 2).",
-    "line": 290,
-    "column": 17,
-    "endLine": 290,
-    "endColumn": 18
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'serialize' is not defined.",
-    "line": 316,
-    "column": 26,
-    "endLine": 316,
-    "endColumn": 35
-  },
-  {
     "ruleId": "max-lines",
     "message": "File has too many lines (327). Maximum allowed is 300.",
     "line": 1,
@@ -70,12 +36,12 @@
     "endColumn": 59
   },
   {
-    "ruleId": "no-ternary",
-    "message": "Ternary operator used.",
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
     "line": 23,
     "column": 23,
     "endLine": 23,
-    "endColumn": 71
+    "endColumn": 29
   },
   {
     "ruleId": "no-negated-condition",
@@ -86,12 +52,12 @@
     "endColumn": 71
   },
   {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
     "line": 23,
     "column": 23,
     "endLine": 23,
-    "endColumn": 29
+    "endColumn": 71
   },
   {
     "ruleId": "multiline-ternary",
@@ -260,6 +226,12 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 98. Maximum allowed is 80.",
+    "line": 163,
+    "column": 1
+  },
+  {
     "ruleId": "require-unicode-regexp",
     "message": "Use the 'u' flag.",
     "line": 163,
@@ -330,18 +302,16 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 134. Maximum allowed is 80.",
+    "line": 191,
+    "column": 1
+  },
+  {
     "ruleId": "no-extra-parens",
     "message": "Unnecessary parentheses around expression.",
     "line": 191,
     "column": 28
-  },
-  {
-    "ruleId": "no-ternary",
-    "message": "Ternary operator used.",
-    "line": 191,
-    "column": 29,
-    "endLine": 191,
-    "endColumn": 133
   },
   {
     "ruleId": "multiline-ternary",
@@ -350,6 +320,14 @@
     "column": 29,
     "endLine": 191,
     "endColumn": 95
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 191,
+    "column": 29,
+    "endLine": 191,
+    "endColumn": 133
   },
   {
     "ruleId": "multiline-ternary",
@@ -438,20 +416,20 @@
     "column": 11
   },
   {
-    "ruleId": "no-process-env",
-    "message": "Unexpected use of process.env.",
-    "line": 263,
-    "column": 12,
-    "endLine": 263,
-    "endColumn": 23
-  },
-  {
     "ruleId": "no-undef",
     "message": "'process' is not defined.",
     "line": 263,
     "column": 12,
     "endLine": 263,
     "endColumn": 19
+  },
+  {
+    "ruleId": "no-process-env",
+    "message": "Unexpected use of process.env.",
+    "line": 263,
+    "column": 12,
+    "endLine": 263,
+    "endColumn": 23
   },
   {
     "ruleId": "no-underscore-dangle",
@@ -476,12 +454,10 @@
     "column": 1
   },
   {
-    "ruleId": "no-ternary",
-    "message": "Ternary operator used.",
+    "ruleId": "max-len",
+    "message": "This line has a length of 89. Maximum allowed is 80.",
     "line": 289,
-    "column": 35,
-    "endLine": 289,
-    "endColumn": 89
+    "column": 1
   },
   {
     "ruleId": "multiline-ternary",
@@ -492,6 +468,14 @@
     "endColumn": 61
   },
   {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 289,
+    "column": 35,
+    "endLine": 289,
+    "endColumn": 89
+  },
+  {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between consequent and alternate of ternary expression.",
     "line": 289,
@@ -500,11 +484,27 @@
     "endColumn": 84
   },
   {
+    "ruleId": "id-length",
+    "message": "Identifier name 'h' is too short (< 2).",
+    "line": 290,
+    "column": 17,
+    "endLine": 290,
+    "endColumn": 18
+  },
+  {
     "ruleId": "no-undef",
     "message": "'process' is not defined.",
     "line": 295,
     "column": 9,
     "endLine": 295,
     "endColumn": 16
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'serialize' is not defined.",
+    "line": 316,
+    "column": 26,
+    "endLine": 316,
+    "endColumn": 35
   }
 ]

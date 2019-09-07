@@ -29,6 +29,7 @@ export async function loadLanguageAsync (context, locale) {
 
             const file = langOptions[LOCALE_FILE_KEY];
             if (file) {
+
         <% if (options.langDir) { %>
                 try {
 
@@ -47,6 +48,7 @@ export async function loadLanguageAsync (context, locale) {
 
                 }
         <% } %>
+
             } else {
 
                 console.warn('[<%= options.MODULE_NAME %>] Could not find lang file for locale ' + locale);

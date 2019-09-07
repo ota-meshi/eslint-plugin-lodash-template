@@ -1,19 +1,19 @@
 [
   {
-    "ruleId": "no-multiple-empty-lines",
-    "message": "More than 1 blank line not allowed.",
-    "line": 51,
-    "column": 1,
-    "endLine": 53,
-    "endColumn": 1
-  },
-  {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
     "line": 18,
     "column": 7,
     "endLine": 18,
     "endColumn": 19
+  },
+  {
+    "ruleId": "no-multiple-empty-lines",
+    "message": "More than 1 blank line not allowed.",
+    "line": 51,
+    "column": 1,
+    "endLine": 53,
+    "endColumn": 1
   },
   {
     "ruleId": "no-multiple-empty-lines",

@@ -6,102 +6,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 97. Maximum allowed is 80.",
-    "line": 103,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 86. Maximum allowed is 80.",
-    "line": 112,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 106. Maximum allowed is 80.",
-    "line": 125,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 83. Maximum allowed is 80.",
-    "line": 220,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 90. Maximum allowed is 80.",
-    "line": 255,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 91. Maximum allowed is 80.",
-    "line": 310,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 115. Maximum allowed is 80.",
-    "line": 339,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 98. Maximum allowed is 80.",
-    "line": 343,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 98. Maximum allowed is 80.",
-    "line": 345,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 108. Maximum allowed is 80.",
-    "line": 347,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 81. Maximum allowed is 80.",
-    "line": 348,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 86. Maximum allowed is 80.",
-    "line": 353,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 107. Maximum allowed is 80.",
-    "line": 355,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 87. Maximum allowed is 80.",
-    "line": 369,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 85. Maximum allowed is 80.",
-    "line": 376,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 84. Maximum allowed is 80.",
-    "line": 380,
-    "column": 1
-  },
-  {
     "ruleId": "max-lines",
     "message": "File has too many lines (406). Maximum allowed is 300.",
     "line": 1,
@@ -154,20 +58,20 @@
     "endColumn": 24
   },
   {
-    "ruleId": "no-process-env",
-    "message": "Unexpected use of process.env.",
-    "line": 67,
-    "column": 29,
-    "endLine": 67,
-    "endColumn": 40
-  },
-  {
     "ruleId": "no-undef",
     "message": "'process' is not defined.",
     "line": 67,
     "column": 29,
     "endLine": 67,
     "endColumn": 36
+  },
+  {
+    "ruleId": "no-process-env",
+    "message": "Unexpected use of process.env.",
+    "line": 67,
+    "column": 29,
+    "endLine": 67,
+    "endColumn": 40
   },
   {
     "ruleId": "sort-keys",
@@ -181,6 +85,18 @@
     "ruleId": "max-len",
     "message": "This line has a length of 97. Maximum allowed is 80.",
     "line": 103,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 97. Maximum allowed is 80.",
+    "line": 103,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 86. Maximum allowed is 80.",
+    "line": 112,
     "column": 1
   },
   {
@@ -202,6 +118,12 @@
     "column": 17,
     "endLine": 119,
     "endColumn": 24
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 106. Maximum allowed is 80.",
+    "line": 125,
+    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -266,6 +188,14 @@
     "endColumn": 74
   },
   {
+    "ruleId": "max-statements",
+    "message": "Async arrow function has too many statements (24). Maximum allowed is 10.",
+    "line": 181,
+    "column": 30,
+    "endLine": 270,
+    "endColumn": 6
+  },
+  {
     "ruleId": "max-lines-per-function",
     "message": "Async arrow function has too many lines (90). Maximum allowed is 50.",
     "line": 181,
@@ -274,12 +204,12 @@
     "endColumn": 6
   },
   {
-    "ruleId": "max-statements",
-    "message": "Async arrow function has too many statements (24). Maximum allowed is 10.",
-    "line": 181,
-    "column": 30,
-    "endLine": 270,
-    "endColumn": 6
+    "ruleId": "no-undef",
+    "message": "'require' is not defined.",
+    "line": 217,
+    "column": 41,
+    "endLine": 217,
+    "endColumn": 48
   },
   {
     "ruleId": "global-require",
@@ -290,12 +220,10 @@
     "endColumn": 59
   },
   {
-    "ruleId": "no-undef",
-    "message": "'require' is not defined.",
-    "line": 217,
-    "column": 41,
-    "endLine": 217,
-    "endColumn": 48
+    "ruleId": "max-len",
+    "message": "This line has a length of 83. Maximum allowed is 80.",
+    "line": 220,
+    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -326,6 +254,12 @@
     "column": 27,
     "endLine": 254,
     "endColumn": 43
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 90. Maximum allowed is 80.",
+    "line": 255,
+    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -402,12 +336,10 @@
     "column": 1
   },
   {
-    "ruleId": "no-ternary",
-    "message": "Ternary operator used.",
-    "line": 318,
-    "column": 18,
-    "endLine": 318,
-    "endColumn": 52
+    "ruleId": "max-len",
+    "message": "This line has a length of 91. Maximum allowed is 80.",
+    "line": 310,
+    "column": 1
   },
   {
     "ruleId": "multiline-ternary",
@@ -416,6 +348,14 @@
     "column": 18,
     "endLine": 318,
     "endColumn": 29
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 318,
+    "column": 18,
+    "endLine": 318,
+    "endColumn": 52
   },
   {
     "ruleId": "multiline-ternary",
@@ -458,16 +398,16 @@
     "endColumn": 6
   },
   {
-    "ruleId": "no-shadow",
-    "message": "'route' is already declared in the upper scope.",
+    "ruleId": "no-unused-vars",
+    "message": "'route' is defined but never used.",
     "line": 331,
     "column": 47,
     "endLine": 331,
     "endColumn": 52
   },
   {
-    "ruleId": "no-unused-vars",
-    "message": "'route' is defined but never used.",
+    "ruleId": "no-shadow",
+    "message": "'route' is already declared in the upper scope.",
     "line": 331,
     "column": 47,
     "endLine": 331,
@@ -480,6 +420,12 @@
     "column": 17,
     "endLine": 337,
     "endColumn": 30
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 115. Maximum allowed is 80.",
+    "line": 339,
+    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -504,6 +450,18 @@
   {
     "ruleId": "max-len",
     "message": "This line has a length of 98. Maximum allowed is 80.",
+    "line": 343,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 98. Maximum allowed is 80.",
+    "line": 345,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 98. Maximum allowed is 80.",
     "line": 345,
     "column": 1
   },
@@ -519,6 +477,18 @@
     "ruleId": "max-len",
     "message": "This line has a length of 108. Maximum allowed is 80.",
     "line": 347,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 108. Maximum allowed is 80.",
+    "line": 347,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 81. Maximum allowed is 80.",
+    "line": 348,
     "column": 1
   },
   {
@@ -547,6 +517,18 @@
     "ruleId": "max-len",
     "message": "This line has a length of 86. Maximum allowed is 80.",
     "line": 353,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 86. Maximum allowed is 80.",
+    "line": 353,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 107. Maximum allowed is 80.",
+    "line": 355,
     "column": 1
   },
   {
@@ -587,8 +569,26 @@
   },
   {
     "ruleId": "max-len",
+    "message": "This line has a length of 87. Maximum allowed is 80.",
+    "line": 369,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
     "message": "This line has a length of 85. Maximum allowed is 80.",
     "line": 376,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 85. Maximum allowed is 80.",
+    "line": 376,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 84. Maximum allowed is 80.",
+    "line": 380,
     "column": 1
   },
   {

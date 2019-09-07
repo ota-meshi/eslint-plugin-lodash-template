@@ -39,4 +39,39 @@ module.exports = {
             throw error
         }
     },
+    sortMessages(messages) {
+        return messages.slice().sort((a, b) => {
+            if (a.line > b.line) {
+                return 1
+            }
+            if (a.line < b.line) {
+                return -1
+            }
+            if (a.column > b.column) {
+                return 1
+            }
+            if (a.column < b.column) {
+                return -1
+            }
+            if (a.endLine == null) {
+                return b.endLine == null ? 0 : 1
+            }
+            if (b.endLine == null) {
+                return -1
+            }
+            if (a.endLine > b.endLine) {
+                return 1
+            }
+            if (a.endLine < b.endLine) {
+                return -1
+            }
+            if (a.endColumn > b.endColumn) {
+                return 1
+            }
+            if (a.endColumn < b.endColumn) {
+                return -1
+            }
+            return 1
+        })
+    },
 }

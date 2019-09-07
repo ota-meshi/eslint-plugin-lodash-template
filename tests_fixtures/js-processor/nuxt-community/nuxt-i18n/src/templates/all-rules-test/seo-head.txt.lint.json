@@ -1,35 +1,5 @@
 [
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 96. Maximum allowed is 80.",
-    "line": 17,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 98. Maximum allowed is 80.",
-    "line": 22,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 109. Maximum allowed is 80.",
-    "line": 41,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 83. Maximum allowed is 80.",
-    "line": 50,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 96. Maximum allowed is 80.",
-    "line": 75,
-    "column": 1
-  },
-  {
     "ruleId": "quotes",
     "message": "Strings must use doublequote.",
     "line": 1,
@@ -104,20 +74,20 @@
     "endColumn": 5
   },
   {
-    "ruleId": "no-ternary",
-    "message": "Ternary operator used.",
-    "line": 12,
-    "column": 7,
-    "endLine": 12,
-    "endColumn": 74
-  },
-  {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
     "line": 12,
     "column": 7,
     "endLine": 12,
     "endColumn": 26
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 12,
+    "column": 7,
+    "endLine": 12,
+    "endColumn": 74
   },
   {
     "ruleId": "multiline-ternary",
@@ -136,20 +106,20 @@
     "endColumn": 53
   },
   {
-    "ruleId": "no-underscore-dangle",
-    "message": "Unexpected dangling '_' in '_hasMetaInfo'.",
-    "line": 12,
-    "column": 57,
-    "endLine": 12,
-    "endColumn": 74
-  },
-  {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
     "line": 12,
     "column": 57,
     "endLine": 12,
     "endColumn": 61
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_hasMetaInfo'.",
+    "line": 12,
+    "column": 57,
+    "endLine": 12,
+    "endColumn": 74
   },
   {
     "ruleId": "no-invalid-this",
@@ -182,6 +152,12 @@
     "column": 5,
     "endLine": 16,
     "endColumn": 9
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 96. Maximum allowed is 80.",
+    "line": 17,
+    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -270,6 +246,12 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 98. Maximum allowed is 80.",
+    "line": 22,
+    "column": 1
+  },
+  {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
     "line": 22,
@@ -278,16 +260,16 @@
     "endColumn": 33
   },
   {
-    "ruleId": "arrow-parens",
-    "message": "Expected parentheses around arrow function argument.",
+    "ruleId": "id-length",
+    "message": "Identifier name 'l' is too short (< 2).",
     "line": 22,
     "column": 53,
     "endLine": 22,
     "endColumn": 54
   },
   {
-    "ruleId": "id-length",
-    "message": "Identifier name 'l' is too short (< 2).",
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument.",
     "line": 22,
     "column": 53,
     "endLine": 22,
@@ -538,20 +520,20 @@
     "endColumn": 13
   },
   {
-    "ruleId": "quote-props",
-    "message": "Unquoted property 'href' found.",
-    "line": 37,
-    "column": 13,
-    "endLine": 37,
-    "endColumn": 64
-  },
-  {
     "ruleId": "sort-keys",
     "message": "Expected object keys to be in ascending order. 'href' should be before 'rel'.",
     "line": 37,
     "column": 13,
     "endLine": 37,
     "endColumn": 17
+  },
+  {
+    "ruleId": "quote-props",
+    "message": "Unquoted property 'href' found.",
+    "line": 37,
+    "column": 13,
+    "endLine": 37,
+    "endColumn": 64
   },
   {
     "ruleId": "no-invalid-this",
@@ -612,18 +594,24 @@
     "column": 16
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 109. Maximum allowed is 80.",
-    "line": 41,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 20 spaces but found 10.",
     "line": 41,
     "column": 1,
     "endLine": 41,
     "endColumn": 11
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 109. Maximum allowed is 80.",
+    "line": 41,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 109. Maximum allowed is 80.",
+    "line": 41,
+    "column": 1
   },
   {
     "ruleId": "no-console",
@@ -762,18 +750,24 @@
     "column": 51
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 83. Maximum allowed is 80.",
-    "line": 50,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 8 spaces but found 4.",
     "line": 50,
     "column": 1,
     "endLine": 50,
     "endColumn": 5
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 83. Maximum allowed is 80.",
+    "line": 50,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 83. Maximum allowed is 80.",
+    "line": 50,
+    "column": 1
   },
   {
     "ruleId": "no-invalid-this",
@@ -844,20 +838,20 @@
     "endColumn": 68
   },
   {
-    "ruleId": "prefer-template",
-    "message": "Unexpected string concatenation.",
-    "line": 54,
-    "column": 14,
-    "endLine": 54,
-    "endColumn": 68
-  },
-  {
     "ruleId": "quotes",
     "message": "Strings must use doublequote.",
     "line": 54,
     "column": 14,
     "endLine": 54,
     "endColumn": 31
+  },
+  {
+    "ruleId": "prefer-template",
+    "message": "Unexpected string concatenation.",
+    "line": 54,
+    "column": 14,
+    "endLine": 54,
+    "endColumn": 68
   },
   {
     "ruleId": "indent",
@@ -1212,6 +1206,12 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 96. Maximum allowed is 80.",
+    "line": 75,
+    "column": 1
+  },
+  {
     "ruleId": "dot-location",
     "message": "Expected dot to be on same line as object.",
     "line": 75,
@@ -1272,20 +1272,20 @@
     "endColumn": 61
   },
   {
-    "ruleId": "prefer-template",
-    "message": "Unexpected string concatenation.",
-    "line": 77,
-    "column": 14,
-    "endLine": 77,
-    "endColumn": 61
-  },
-  {
     "ruleId": "quotes",
     "message": "Strings must use doublequote.",
     "line": 77,
     "column": 14,
     "endLine": 77,
     "endColumn": 36
+  },
+  {
+    "ruleId": "prefer-template",
+    "message": "Unexpected string concatenation.",
+    "line": 77,
+    "column": 14,
+    "endLine": 77,
+    "endColumn": 61
   },
   {
     "ruleId": "indent",

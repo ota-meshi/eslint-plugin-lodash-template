@@ -1,18 +1,25 @@
 module.exports = {
     root: true,
     parserOptions: {
-      parser: 'vue-eslint-parser',
-      parserOptions: {
-        parser: 'babel-eslint',
-      },
+      parser: 'babel-eslint',
       sourceType: 'module'
     },
     extends: [
-      '@nuxtjs', "plugin:lodash-template/base"
+      '@nuxtjs'
     ],
     overrides: [
       {
         files: ["*.txt", "*.js"],
+        extends: [
+          "plugin:lodash-template/base"
+        ],
+        parserOptions: {
+          parser: 'vue-eslint-parser',
+          parserOptions: {
+            parser: 'babel-eslint',
+          },
+          sourceType: 'module'
+        },
         processor: "lodash-template/js",
         globals: {
           options: true,

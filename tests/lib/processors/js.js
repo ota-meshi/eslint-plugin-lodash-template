@@ -68,7 +68,9 @@ describe("js test", () => {
                     cwd: FIXTURE_DIR,
                 })
                 const report = cli.executeOnFiles(name)
-                const messages = report.results[0].messages
+                const messages = testUtils.sortMessages(
+                    report.results[0].messages
+                )
 
                 const expectFilepath = path.join(FIXTURE_DIR, `${name}.json`)
                 try {
@@ -96,7 +98,9 @@ describe("js test", () => {
                 })
                 CLIEngine.outputFixes(cli.executeOnFiles(`${name}.fixed.js`))
                 const report = cli.executeOnFiles(`${name}.fixed.js`)
-                const messages = report.results[0].messages
+                const messages = testUtils.sortMessages(
+                    report.results[0].messages
+                )
 
                 const expectFilepath = path.join(
                     FIXTURE_DIR,
@@ -153,7 +157,9 @@ describe("js test", () => {
                         cwd: allConfigTestDirPath,
                     })
                     const report = cli.executeOnFiles(`${basename}.lint.js`)
-                    const messages = report.results[0].messages
+                    const messages = testUtils.sortMessages(
+                        report.results[0].messages
+                    )
 
                     const expectFilepath = path.join(
                         allConfigTestDirPath,
@@ -185,7 +191,9 @@ describe("js test", () => {
                         cli.executeOnFiles(`${basename}.fixed.js`)
                     )
                     const report = cli.executeOnFiles(`${basename}.fixed.js`)
-                    const messages = report.results[0].messages
+                    const messages = testUtils.sortMessages(
+                        report.results[0].messages
+                    )
 
                     const expectFilepath = path.join(
                         allConfigTestDirPath,

@@ -1,121 +1,5 @@
 [
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 89. Maximum allowed is 80.",
-    "line": 26,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 90. Maximum allowed is 80.",
-    "line": 29,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 93. Maximum allowed is 80.",
-    "line": 38,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 116. Maximum allowed is 80.",
-    "line": 39,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 90. Maximum allowed is 80.",
-    "line": 83,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 131. Maximum allowed is 80.",
-    "line": 104,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 102. Maximum allowed is 80.",
-    "line": 178,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 97. Maximum allowed is 80.",
-    "line": 179,
-    "column": 1
-  },
-  {
-    "ruleId": "prefer-const",
-    "message": "'h' is never reassigned. Use 'const' instead.",
-    "line": 179,
-    "column": 15,
-    "endLine": 179,
-    "endColumn": 16
-  },
-  {
-    "ruleId": "id-length",
-    "message": "Identifier name 'h' is too short (< 2).",
-    "line": 179,
-    "column": 15,
-    "endLine": 179,
-    "endColumn": 16
-  },
-  {
-    "ruleId": "brace-style",
-    "message": "Statement inside of curly braces should be on next line.",
-    "line": 179,
-    "column": 48,
-    "endLine": 179,
-    "endColumn": 49
-  },
-  {
-    "ruleId": "brace-style",
-    "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
-    "line": 180,
-    "column": 13,
-    "endLine": 180,
-    "endColumn": 14
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 85. Maximum allowed is 80.",
-    "line": 197,
-    "column": 1
-  },
-  {
-    "ruleId": "brace-style",
-    "message": "Statement inside of curly braces should be on next line.",
-    "line": 197,
-    "column": 25,
-    "endLine": 197,
-    "endColumn": 26
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'serialize' is not defined.",
-    "line": 197,
-    "column": 51,
-    "endLine": 197,
-    "endColumn": 60
-  },
-  {
-    "ruleId": "brace-style",
-    "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
-    "line": 197,
-    "column": 82,
-    "endLine": 197,
-    "endColumn": 83
-  },
-  {
-    "ruleId": "eol-last",
-    "message": "Newline required at end of file but not found.",
-    "line": 202,
-    "column": 2
-  },
-  {
     "ruleId": "quotes",
     "message": "Strings must use doublequote.",
     "line": 1,
@@ -162,20 +46,20 @@
     "endColumn": 19
   },
   {
-    "ruleId": "no-ternary",
-    "message": "Ternary operator used.",
-    "line": 7,
-    "column": 23,
-    "endLine": 7,
-    "endColumn": 66
-  },
-  {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
     "line": 7,
     "column": 23,
     "endLine": 7,
     "endColumn": 44
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 7,
+    "column": 23,
+    "endLine": 7,
+    "endColumn": 66
   },
   {
     "ruleId": "multiline-ternary",
@@ -334,16 +218,16 @@
     "endColumn": 25
   },
   {
-    "ruleId": "no-ternary",
-    "message": "Ternary operator used.",
+    "ruleId": "no-negated-condition",
+    "message": "Unexpected negated condition.",
     "line": 16,
     "column": 19,
     "endLine": 16,
     "endColumn": 67
   },
   {
-    "ruleId": "no-negated-condition",
-    "message": "Unexpected negated condition.",
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
     "line": 16,
     "column": 19,
     "endLine": 16,
@@ -626,6 +510,12 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 89. Maximum allowed is 80.",
+    "line": 26,
+    "column": 1
+  },
+  {
     "ruleId": "no-undefined",
     "message": "Unexpected use of undefined.",
     "line": 26,
@@ -690,18 +580,24 @@
     "column": 23
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 90. Maximum allowed is 80.",
-    "line": 29,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 8 spaces but found 4.",
     "line": 29,
     "column": 1,
     "endLine": 29,
     "endColumn": 5
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 90. Maximum allowed is 80.",
+    "line": 29,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 90. Maximum allowed is 80.",
+    "line": 29,
+    "column": 1
   },
   {
     "ruleId": "no-undefined",
@@ -822,6 +718,12 @@
     "message": "Missing semicolon.",
     "line": 35,
     "column": 2
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 93. Maximum allowed is 80.",
+    "line": 38,
+    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -964,18 +866,24 @@
     "column": 93
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 116. Maximum allowed is 80.",
-    "line": 39,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 39,
     "column": 1,
     "endLine": 39,
     "endColumn": 3
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 116. Maximum allowed is 80.",
+    "line": 39,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 116. Maximum allowed is 80.",
+    "line": 39,
+    "column": 1
   },
   {
     "ruleId": "quotes",
@@ -1518,20 +1426,20 @@
     "endColumn": 9
   },
   {
-    "ruleId": "prefer-template",
-    "message": "Unexpected string concatenation.",
-    "line": 65,
-    "column": 9,
-    "endLine": 65,
-    "endColumn": 52
-  },
-  {
     "ruleId": "quotes",
     "message": "Strings must use doublequote.",
     "line": 65,
     "column": 9,
     "endLine": 65,
     "endColumn": 12
+  },
+  {
+    "ruleId": "prefer-template",
+    "message": "Unexpected string concatenation.",
+    "line": 65,
+    "column": 9,
+    "endLine": 65,
+    "endColumn": 52
   },
   {
     "ruleId": "quotes",
@@ -1796,18 +1704,24 @@
     "column": 47
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 90. Maximum allowed is 80.",
-    "line": 83,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 12 spaces but found 6.",
     "line": 83,
     "column": 1,
     "endLine": 83,
     "endColumn": 7
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 90. Maximum allowed is 80.",
+    "line": 83,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 90. Maximum allowed is 80.",
+    "line": 83,
+    "column": 1
   },
   {
     "ruleId": "wrap-regex",
@@ -2092,18 +2006,24 @@
     "column": 4
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 131. Maximum allowed is 80.",
-    "line": 104,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 104,
     "column": 1,
     "endLine": 104,
     "endColumn": 3
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 131. Maximum allowed is 80.",
+    "line": 104,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 131. Maximum allowed is 80.",
+    "line": 104,
+    "column": 1
   },
   {
     "ruleId": "no-confusing-arrow",
@@ -2114,18 +2034,18 @@
     "endColumn": 132
   },
   {
-    "ruleId": "no-extra-parens",
-    "message": "Unnecessary parentheses around expression.",
-    "line": 104,
-    "column": 26
-  },
-  {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
     "line": 104,
     "column": 26,
     "endLine": 104,
     "endColumn": 132
+  },
+  {
+    "ruleId": "no-extra-parens",
+    "message": "Unnecessary parentheses around expression.",
+    "line": 104,
+    "column": 26
   },
   {
     "ruleId": "multiline-ternary",
@@ -2590,16 +2510,16 @@
     "endColumn": 3
   },
   {
-    "ruleId": "id-length",
-    "message": "Identifier name 'e' is too short (< 2).",
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument.",
     "line": 138,
     "column": 22,
     "endLine": 138,
     "endColumn": 23
   },
   {
-    "ruleId": "arrow-parens",
-    "message": "Expected parentheses around arrow function argument.",
+    "ruleId": "id-length",
+    "message": "Identifier name 'e' is too short (< 2).",
     "line": 138,
     "column": 22,
     "endLine": 138,
@@ -2826,14 +2746,6 @@
     "column": 9
   },
   {
-    "ruleId": "no-underscore-dangle",
-    "message": "Unexpected dangling '_' in '_AXIOS_BASE_URL_'.",
-    "line": 154,
-    "column": 10,
-    "endLine": 154,
-    "endColumn": 38
-  },
-  {
     "ruleId": "no-undef",
     "message": "'process' is not defined.",
     "line": 154,
@@ -2848,6 +2760,14 @@
     "column": 10,
     "endLine": 154,
     "endColumn": 21
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_AXIOS_BASE_URL_'.",
+    "line": 154,
+    "column": 10,
+    "endLine": 154,
+    "endColumn": 38
   },
   {
     "ruleId": "semi",
@@ -3038,20 +2958,20 @@
     "endColumn": 5
   },
   {
-    "ruleId": "quote-props",
-    "message": "Unquoted property 'patch' found.",
-    "line": 168,
-    "column": 5,
-    "endLine": 168,
-    "endColumn": 14
-  },
-  {
     "ruleId": "sort-keys",
     "message": "Expected object keys to be in ascending order. 'patch' should be before 'put'.",
     "line": 168,
     "column": 5,
     "endLine": 168,
     "endColumn": 10
+  },
+  {
+    "ruleId": "quote-props",
+    "message": "Unquoted property 'patch' found.",
+    "line": 168,
+    "column": 5,
+    "endLine": 168,
+    "endColumn": 14
   },
   {
     "ruleId": "indent",
@@ -3128,10 +3048,10 @@
     "column": 1
   },
   {
-    "ruleId": "no-extra-parens",
-    "message": "Unnecessary parentheses around expression.",
+    "ruleId": "max-len",
+    "message": "This line has a length of 102. Maximum allowed is 80.",
     "line": 178,
-    "column": 33
+    "column": 1
   },
   {
     "ruleId": "no-ternary",
@@ -3142,6 +3062,12 @@
     "endColumn": 103
   },
   {
+    "ruleId": "no-extra-parens",
+    "message": "Unnecessary parentheses around expression.",
+    "line": 178,
+    "column": 33
+  },
+  {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
     "line": 178,
@@ -3150,16 +3076,16 @@
     "endColumn": 60
   },
   {
-    "ruleId": "prefer-object-spread",
-    "message": "Use an object spread instead of `Object.assign` eg: `{ ...foo }`.",
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
     "line": 178,
     "column": 64,
     "endLine": 178,
     "endColumn": 98
   },
   {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "ruleId": "prefer-object-spread",
+    "message": "Use an object spread instead of `Object.assign` eg: `{ ...foo }`.",
     "line": 178,
     "column": 64,
     "endLine": 178,
@@ -3186,10 +3112,48 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 97. Maximum allowed is 80.",
+    "line": 179,
+    "column": 1
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'h' is too short (< 2).",
+    "line": 179,
+    "column": 15,
+    "endLine": 179,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "prefer-const",
+    "message": "'h' is never reassigned. Use 'const' instead.",
+    "line": 179,
+    "column": 15,
+    "endLine": 179,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "brace-style",
+    "message": "Statement inside of curly braces should be on next line.",
+    "line": 179,
+    "column": 48,
+    "endLine": 179,
+    "endColumn": 49
+  },
+  {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 179,
     "column": 98
+  },
+  {
+    "ruleId": "brace-style",
+    "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
+    "line": 180,
+    "column": 13,
+    "endLine": 180,
+    "endColumn": 14
   },
   {
     "ruleId": "indent",
@@ -3324,6 +3288,36 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 85. Maximum allowed is 80.",
+    "line": 197,
+    "column": 1
+  },
+  {
+    "ruleId": "brace-style",
+    "message": "Statement inside of curly braces should be on next line.",
+    "line": 197,
+    "column": 25,
+    "endLine": 197,
+    "endColumn": 26
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'serialize' is not defined.",
+    "line": 197,
+    "column": 51,
+    "endLine": 197,
+    "endColumn": 60
+  },
+  {
+    "ruleId": "brace-style",
+    "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
+    "line": 197,
+    "column": 82,
+    "endLine": 197,
+    "endColumn": 83
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 199,
@@ -3380,6 +3374,12 @@
     "message": "Block must be padded by blank lines.",
     "line": 202,
     "column": 1
+  },
+  {
+    "ruleId": "eol-last",
+    "message": "Newline required at end of file but not found.",
+    "line": 202,
+    "column": 2
   },
   {
     "ruleId": "semi",

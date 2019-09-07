@@ -1,65 +1,5 @@
 [
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 84. Maximum allowed is 80.",
-    "line": 11,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 90. Maximum allowed is 80.",
-    "line": 17,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 136. Maximum allowed is 80.",
-    "line": 18,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 99. Maximum allowed is 80.",
-    "line": 31,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 81. Maximum allowed is 80.",
-    "line": 34,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 90. Maximum allowed is 80.",
-    "line": 58,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 142. Maximum allowed is 80.",
-    "line": 59,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 92. Maximum allowed is 80.",
-    "line": 71,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 82. Maximum allowed is 80.",
-    "line": 86,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 100. Maximum allowed is 80.",
-    "line": 98,
-    "column": 1
-  },
-  {
     "ruleId": "quotes",
     "message": "Strings must use doublequote.",
     "line": 1,
@@ -126,6 +66,12 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 84. Maximum allowed is 80.",
+    "line": 11,
+    "column": 1
+  },
+  {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 11,
@@ -180,6 +126,12 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 90. Maximum allowed is 80.",
+    "line": 17,
+    "column": 1
+  },
+  {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
     "line": 17,
@@ -194,18 +146,24 @@
     "column": 90
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 136. Maximum allowed is 80.",
-    "line": 18,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 12 spaces but found 6.",
     "line": 18,
     "column": 1,
     "endLine": 18,
     "endColumn": 7
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 136. Maximum allowed is 80.",
+    "line": 18,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 136. Maximum allowed is 80.",
+    "line": 18,
+    "column": 1
   },
   {
     "ruleId": "no-console",
@@ -394,12 +352,10 @@
     "column": 1
   },
   {
-    "ruleId": "no-ternary",
-    "message": "Ternary operator used.",
+    "ruleId": "max-len",
+    "message": "This line has a length of 99. Maximum allowed is 80.",
     "line": 31,
-    "column": 30,
-    "endLine": 31,
-    "endColumn": 99
+    "column": 1
   },
   {
     "ruleId": "multiline-ternary",
@@ -408,6 +364,14 @@
     "column": 30,
     "endLine": 31,
     "endColumn": 63
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 31,
+    "column": 30,
+    "endLine": 31,
+    "endColumn": 99
   },
   {
     "ruleId": "multiline-ternary",
@@ -440,18 +404,24 @@
     "endColumn": 5
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 81. Maximum allowed is 80.",
-    "line": 34,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 8 spaces but found 4.",
     "line": 34,
     "column": 1,
     "endLine": 34,
     "endColumn": 5
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 81. Maximum allowed is 80.",
+    "line": 34,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 81. Maximum allowed is 80.",
+    "line": 34,
+    "column": 1
   },
   {
     "ruleId": "padded-blocks",
@@ -802,18 +772,24 @@
     "column": 45
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 90. Maximum allowed is 80.",
-    "line": 58,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 8 spaces but found 4.",
     "line": 58,
     "column": 1,
     "endLine": 58,
     "endColumn": 5
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 90. Maximum allowed is 80.",
+    "line": 58,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 90. Maximum allowed is 80.",
+    "line": 58,
+    "column": 1
   },
   {
     "ruleId": "no-invalid-this",
@@ -830,18 +806,24 @@
     "column": 90
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 142. Maximum allowed is 80.",
-    "line": 59,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 12 spaces but found 6.",
     "line": 59,
     "column": 1,
     "endLine": 59,
     "endColumn": 7
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 142. Maximum allowed is 80.",
+    "line": 59,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 142. Maximum allowed is 80.",
+    "line": 59,
+    "column": 1
   },
   {
     "ruleId": "no-console",
@@ -1014,18 +996,24 @@
     "column": 22
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 92. Maximum allowed is 80.",
-    "line": 71,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 12 spaces but found 6.",
     "line": 71,
     "column": 1,
     "endLine": 71,
     "endColumn": 7
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 92. Maximum allowed is 80.",
+    "line": 71,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 92. Maximum allowed is 80.",
+    "line": 71,
+    "column": 1
   },
   {
     "ruleId": "no-invalid-this",
@@ -1240,6 +1228,12 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 82. Maximum allowed is 80.",
+    "line": 86,
+    "column": 1
+  },
+  {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
     "line": 86,
@@ -1336,20 +1330,20 @@
     "endColumn": 11
   },
   {
-    "ruleId": "global-require",
-    "message": "Unexpected require().",
-    "line": 90,
-    "column": 27,
-    "endLine": 90,
-    "endColumn": 46
-  },
-  {
     "ruleId": "no-undef",
     "message": "'require' is not defined.",
     "line": 90,
     "column": 27,
     "endLine": 90,
     "endColumn": 34
+  },
+  {
+    "ruleId": "global-require",
+    "message": "Unexpected require().",
+    "line": 90,
+    "column": 27,
+    "endLine": 90,
+    "endColumn": 46
   },
   {
     "ruleId": "quotes",
@@ -1410,6 +1404,14 @@
     "endColumn": 11
   },
   {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 92,
+    "column": 22,
+    "endLine": 92,
+    "endColumn": 34
+  },
+  {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
     "line": 92,
@@ -1419,23 +1421,15 @@
   },
   {
     "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 92,
-    "column": 22,
-    "endLine": 92,
-    "endColumn": 34
-  },
-  {
-    "ruleId": "quotes",
-    "message": "Strings must use doublequote.",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
     "line": 92,
     "column": 37,
     "endLine": 92,
     "endColumn": 44
   },
   {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
     "line": 92,
     "column": 37,
     "endLine": 92,
@@ -1584,6 +1578,12 @@
     "column": 1,
     "endLine": 98,
     "endColumn": 9
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 100. Maximum allowed is 80.",
+    "line": 98,
+    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -2056,20 +2056,20 @@
     "endColumn": 9
   },
   {
-    "ruleId": "quote-props",
-    "message": "Unquoted property 'getRouteBaseName' found.",
-    "line": 127,
-    "column": 9,
-    "endLine": 127,
-    "endColumn": 52
-  },
-  {
     "ruleId": "sort-keys",
     "message": "Expected object keys to be in ascending order. 'getRouteBaseName' should be before 'switchLocalePath'.",
     "line": 127,
     "column": 9,
     "endLine": 127,
     "endColumn": 25
+  },
+  {
+    "ruleId": "quote-props",
+    "message": "Unquoted property 'getRouteBaseName' found.",
+    "line": 127,
+    "column": 9,
+    "endLine": 127,
+    "endColumn": 52
   },
   {
     "ruleId": "indent",

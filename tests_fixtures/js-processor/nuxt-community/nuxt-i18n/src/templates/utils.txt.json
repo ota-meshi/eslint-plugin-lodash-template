@@ -14,24 +14,12 @@
     "column": 26
   },
   {
-    "ruleId": "padded-blocks",
-    "message": "Block must not be padded by blank lines.",
-    "line": 26,
-    "column": 17
-  },
-  {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
     "line": 35,
     "column": 11,
     "endLine": 35,
     "endColumn": 24
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must not be padded by blank lines.",
-    "line": 38,
-    "column": 7
   },
   {
     "ruleId": "no-console",

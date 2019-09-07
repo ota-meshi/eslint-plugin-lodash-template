@@ -1,77 +1,5 @@
 [
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 83. Maximum allowed is 80.",
-    "line": 76,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 84. Maximum allowed is 80.",
-    "line": 83,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 97. Maximum allowed is 80.",
-    "line": 91,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 83. Maximum allowed is 80.",
-    "line": 166,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 99. Maximum allowed is 80.",
-    "line": 167,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 86. Maximum allowed is 80.",
-    "line": 206,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 118. Maximum allowed is 80.",
-    "line": 208,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 109. Maximum allowed is 80.",
-    "line": 222,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 90. Maximum allowed is 80.",
-    "line": 224,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 92. Maximum allowed is 80.",
-    "line": 225,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 100. Maximum allowed is 80.",
-    "line": 226,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 104. Maximum allowed is 80.",
-    "line": 229,
-    "column": 1
-  },
-  {
     "ruleId": "quotes",
     "message": "Strings must use doublequote.",
     "line": 1,
@@ -880,18 +808,24 @@
     "endColumn": 14
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 83. Maximum allowed is 80.",
-    "line": 76,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 16 spaces but found 8.",
     "line": 76,
     "column": 1,
     "endLine": 76,
     "endColumn": 9
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 83. Maximum allowed is 80.",
+    "line": 76,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 83. Maximum allowed is 80.",
+    "line": 76,
+    "column": 1
   },
   {
     "ruleId": "quote-props",
@@ -992,6 +926,12 @@
     "column": 1,
     "endLine": 83,
     "endColumn": 3
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 84. Maximum allowed is 80.",
+    "line": 83,
+    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -1124,18 +1064,24 @@
     "column": 68
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 97. Maximum allowed is 80.",
-    "line": 91,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 16 spaces but found 8.",
     "line": 91,
     "column": 1,
     "endLine": 91,
     "endColumn": 9
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 97. Maximum allowed is 80.",
+    "line": 91,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 97. Maximum allowed is 80.",
+    "line": 91,
+    "column": 1
   },
   {
     "ruleId": "multiline-ternary",
@@ -1694,16 +1640,16 @@
     "endColumn": 3
   },
   {
-    "ruleId": "max-statements",
-    "message": "Async arrow function has too many statements (24). Maximum allowed is 10.",
+    "ruleId": "max-lines-per-function",
+    "message": "Async arrow function has too many lines (51). Maximum allowed is 50.",
     "line": 123,
     "column": 28,
     "endLine": 173,
     "endColumn": 4
   },
   {
-    "ruleId": "max-lines-per-function",
-    "message": "Async arrow function has too many lines (51). Maximum allowed is 50.",
+    "ruleId": "max-statements",
+    "message": "Async arrow function has too many statements (24). Maximum allowed is 10.",
     "line": 123,
     "column": 28,
     "endLine": 173,
@@ -1968,20 +1914,20 @@
     "column": 33
   },
   {
-    "ruleId": "global-require",
-    "message": "Unexpected require().",
-    "line": 146,
-    "column": 37,
-    "endLine": 146,
-    "endColumn": 55
-  },
-  {
     "ruleId": "no-undef",
     "message": "'require' is not defined.",
     "line": 146,
     "column": 37,
     "endLine": 146,
     "endColumn": 44
+  },
+  {
+    "ruleId": "global-require",
+    "message": "Unexpected require().",
+    "line": 146,
+    "column": 37,
+    "endLine": 146,
+    "endColumn": 55
   },
   {
     "ruleId": "quotes",
@@ -2244,6 +2190,12 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 83. Maximum allowed is 80.",
+    "line": 166,
+    "column": 1
+  },
+  {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
     "line": 166,
@@ -2282,18 +2234,24 @@
     "column": 84
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 99. Maximum allowed is 80.",
-    "line": 167,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 12 spaces but found 6.",
     "line": 167,
     "column": 1,
     "endLine": 167,
     "endColumn": 7
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 99. Maximum allowed is 80.",
+    "line": 167,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 99. Maximum allowed is 80.",
+    "line": 167,
+    "column": 1
   },
   {
     "ruleId": "prefer-object-spread",
@@ -2804,18 +2762,24 @@
     "column": 69
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 86. Maximum allowed is 80.",
-    "line": 206,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 8 spaces but found 4.",
     "line": 206,
     "column": 1,
     "endLine": 206,
     "endColumn": 5
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 86. Maximum allowed is 80.",
+    "line": 206,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 86. Maximum allowed is 80.",
+    "line": 206,
+    "column": 1
   },
   {
     "ruleId": "semi",
@@ -2830,6 +2794,12 @@
     "column": 1,
     "endLine": 208,
     "endColumn": 5
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 118. Maximum allowed is 80.",
+    "line": 208,
+    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -3028,6 +2998,14 @@
     "endColumn": 4
   },
   {
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument.",
+    "line": 216,
+    "column": 44,
+    "endLine": 216,
+    "endColumn": 49
+  },
+  {
     "ruleId": "no-shadow",
     "message": "'route' is already declared in the upper scope.",
     "line": 216,
@@ -3038,14 +3016,6 @@
   {
     "ruleId": "no-unused-vars",
     "message": "'route' is defined but never used.",
-    "line": 216,
-    "column": 44,
-    "endLine": 216,
-    "endColumn": 49
-  },
-  {
-    "ruleId": "arrow-parens",
-    "message": "Expected parentheses around arrow function argument.",
     "line": 216,
     "column": 44,
     "endLine": 216,
@@ -3134,6 +3104,12 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 109. Maximum allowed is 80.",
+    "line": 222,
+    "column": 1
+  },
+  {
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 1.",
     "line": 222,
@@ -3180,12 +3156,24 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 90. Maximum allowed is 80.",
+    "line": 224,
+    "column": 1
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 12 spaces but found 6.",
     "line": 225,
     "column": 1,
     "endLine": 225,
     "endColumn": 7
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 92. Maximum allowed is 80.",
+    "line": 225,
+    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -3216,18 +3204,24 @@
     "column": 92
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 100. Maximum allowed is 80.",
-    "line": 226,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 16 spaces but found 8.",
     "line": 226,
     "column": 1,
     "endLine": 226,
     "endColumn": 9
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 100. Maximum allowed is 80.",
+    "line": 226,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 100. Maximum allowed is 80.",
+    "line": 226,
+    "column": 1
   },
   {
     "ruleId": "indent",
@@ -3310,6 +3304,12 @@
     "column": 1,
     "endLine": 229,
     "endColumn": 9
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 104. Maximum allowed is 80.",
+    "line": 229,
+    "column": 1
   },
   {
     "ruleId": "max-len",

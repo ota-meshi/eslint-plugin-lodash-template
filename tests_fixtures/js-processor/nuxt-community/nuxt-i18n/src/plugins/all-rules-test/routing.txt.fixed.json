@@ -7,62 +7,14 @@
   },
   {
     "ruleId": "max-len",
-    "message": "This line has a length of 94. Maximum allowed is 80.",
-    "line": 23,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 143. Maximum allowed is 80.",
-    "line": 25,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 104. Maximum allowed is 80.",
-    "line": 45,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 85. Maximum allowed is 80.",
-    "line": 48,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 94. Maximum allowed is 80.",
-    "line": 81,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 149. Maximum allowed is 80.",
-    "line": 83,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 99. Maximum allowed is 80.",
-    "line": 99,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 91. Maximum allowed is 80.",
-    "line": 118,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 109. Maximum allowed is 80.",
-    "line": 137,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
     "message": "This line has a length of 87. Maximum allowed is 80.",
     "line": 12,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 94. Maximum allowed is 80.",
+    "line": 23,
     "column": 1
   },
   {
@@ -78,6 +30,12 @@
     "column": 71,
     "endLine": 23,
     "endColumn": 75
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 143. Maximum allowed is 80.",
+    "line": 25,
+    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -124,6 +82,12 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 104. Maximum allowed is 80.",
+    "line": 45,
+    "column": 1
+  },
+  {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
     "line": 45,
@@ -146,6 +110,12 @@
     "column": 70,
     "endLine": 45,
     "endColumn": 72
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 85. Maximum allowed is 80.",
+    "line": 48,
+    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -184,12 +154,24 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 94. Maximum allowed is 80.",
+    "line": 81,
+    "column": 1
+  },
+  {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
     "line": 81,
     "column": 71,
     "endLine": 81,
     "endColumn": 75
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 149. Maximum allowed is 80.",
+    "line": 83,
+    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -236,6 +218,12 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 99. Maximum allowed is 80.",
+    "line": 99,
+    "column": 1
+  },
+  {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
     "line": 99,
@@ -258,6 +246,12 @@
     "column": 13,
     "endLine": 116,
     "endColumn": 17
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 91. Maximum allowed is 80.",
+    "line": 118,
+    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -298,20 +292,20 @@
     "endColumn": 28
   },
   {
-    "ruleId": "global-require",
-    "message": "Unexpected require().",
-    "line": 124,
-    "column": 37,
-    "endLine": 124,
-    "endColumn": 56
-  },
-  {
     "ruleId": "no-undef",
     "message": "'require' is not defined.",
     "line": 124,
     "column": 37,
     "endLine": 124,
     "endColumn": 44
+  },
+  {
+    "ruleId": "global-require",
+    "message": "Unexpected require().",
+    "line": 124,
+    "column": 37,
+    "endLine": 124,
+    "endColumn": 56
   },
   {
     "ruleId": "no-invalid-this",
@@ -330,20 +324,20 @@
     "endColumn": 61
   },
   {
-    "ruleId": "no-ternary",
-    "message": "Ternary operator used.",
-    "line": 126,
-    "column": 32,
-    "endLine": 126,
-    "endColumn": 63
-  },
-  {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
     "line": 126,
     "column": 32,
     "endLine": 126,
     "endColumn": 44
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 126,
+    "column": 32,
+    "endLine": 126,
+    "endColumn": 63
   },
   {
     "ruleId": "multiline-ternary",
@@ -376,6 +370,12 @@
     "column": 1
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 109. Maximum allowed is 80.",
+    "line": 137,
+    "column": 1
+  },
+  {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
     "line": 137,
@@ -392,20 +392,20 @@
     "endColumn": 2
   },
   {
-    "ruleId": "no-ternary",
-    "message": "Ternary operator used.",
-    "line": 150,
-    "column": 25,
-    "endLine": 155,
-    "endColumn": 10
-  },
-  {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
     "line": 150,
     "column": 25,
     "endLine": 150,
     "endColumn": 37
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 150,
+    "column": 25,
+    "endLine": 155,
+    "endColumn": 10
   },
   {
     "ruleId": "func-names",

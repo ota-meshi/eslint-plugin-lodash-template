@@ -1,23 +1,5 @@
 [
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 84. Maximum allowed is 80.",
-    "line": 24,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 84. Maximum allowed is 80.",
-    "line": 33,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 107. Maximum allowed is 80.",
-    "line": 36,
-    "column": 1
-  },
-  {
     "ruleId": "quotes",
     "message": "Strings must use doublequote.",
     "line": 1,
@@ -220,20 +202,20 @@
     "endColumn": 5
   },
   {
-    "ruleId": "prefer-template",
-    "message": "Unexpected string concatenation.",
-    "line": 17,
-    "column": 14,
-    "endLine": 17,
-    "endColumn": 32
-  },
-  {
     "ruleId": "quotes",
     "message": "Strings must use doublequote.",
     "line": 17,
     "column": 14,
     "endLine": 17,
     "endColumn": 17
+  },
+  {
+    "ruleId": "prefer-template",
+    "message": "Unexpected string concatenation.",
+    "line": 17,
+    "column": 14,
+    "endLine": 17,
+    "endColumn": 32
   },
   {
     "ruleId": "function-call-argument-newline",
@@ -308,18 +290,24 @@
     "column": 27
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 84. Maximum allowed is 80.",
-    "line": 24,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 24,
     "column": 1,
     "endLine": 24,
     "endColumn": 3
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 84. Maximum allowed is 80.",
+    "line": 24,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 84. Maximum allowed is 80.",
+    "line": 24,
+    "column": 1
   },
   {
     "ruleId": "indent",
@@ -408,18 +396,24 @@
     "column": 67
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 84. Maximum allowed is 80.",
-    "line": 33,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 33,
     "column": 1,
     "endLine": 33,
     "endColumn": 3
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 84. Maximum allowed is 80.",
+    "line": 33,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 84. Maximum allowed is 80.",
+    "line": 33,
+    "column": 1
   },
   {
     "ruleId": "semi",
@@ -448,18 +442,24 @@
     "column": 73
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 107. Maximum allowed is 80.",
-    "line": 36,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 36,
     "column": 1,
     "endLine": 36,
     "endColumn": 3
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 107. Maximum allowed is 80.",
+    "line": 36,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 107. Maximum allowed is 80.",
+    "line": 36,
+    "column": 1
   },
   {
     "ruleId": "function-call-argument-newline",
@@ -500,20 +500,20 @@
     "endColumn": 3
   },
   {
-    "ruleId": "no-ternary",
-    "message": "Ternary operator used.",
-    "line": 38,
-    "column": 28,
-    "endLine": 38,
-    "endColumn": 62
-  },
-  {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
     "line": 38,
     "column": 28,
     "endLine": 38,
     "endColumn": 39
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 38,
+    "column": 28,
+    "endLine": 38,
+    "endColumn": 62
   },
   {
     "ruleId": "multiline-ternary",
