@@ -1,0 +1,78 @@
+[
+  {
+    "ruleId": "sort-imports",
+    "message": "Expected 'none' syntax before 'single' syntax.",
+    "line": 3,
+    "column": 1,
+    "endLine": 3,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 95. Maximum allowed is 80.",
+    "line": 6,
+    "column": 1
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'hash' is not defined.",
+    "line": 6,
+    "column": 61,
+    "endLine": 6,
+    "endColumn": 65
+  },
+  {
+    "ruleId": "require-unicode-regexp",
+    "message": "Use the 'u' flag.",
+    "line": 7,
+    "column": 1,
+    "endLine": 7,
+    "endColumn": 6
+  },
+  {
+    "ruleId": "semi-style",
+    "message": "Expected this semicolon to be at the end of the previous line.",
+    "line": 9,
+    "column": 20,
+    "endLine": 9,
+    "endColumn": 21
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'hash' is not defined.",
+    "line": 25,
+    "column": 30,
+    "endLine": 25,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_name'.",
+    "line": 27,
+    "column": 18,
+    "endLine": 27,
+    "endColumn": 32
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 101. Maximum allowed is 80.",
+    "line": 28,
+    "column": 1
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'process' is not defined.",
+    "line": 42,
+    "column": 13,
+    "endLine": 42,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 44,
+    "column": 13,
+    "endLine": 44,
+    "endColumn": 26
+  }
+]
