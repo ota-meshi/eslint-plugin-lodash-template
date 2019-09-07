@@ -1,0 +1,96 @@
+[
+  {
+    "ruleId": "no-multiple-empty-lines",
+    "message": "More than 1 blank line not allowed.",
+    "line": 51,
+    "column": 1,
+    "endLine": 53,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 18,
+    "column": 7,
+    "endLine": 18,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "no-multiple-empty-lines",
+    "message": "More than 1 blank line not allowed.",
+    "line": 51,
+    "column": 1,
+    "endLine": 53,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 59,
+    "column": 7,
+    "endLine": 59,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "semi",
+    "message": "Extra semicolon.",
+    "line": 90,
+    "column": 46
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 98,
+    "column": 9,
+    "endLine": 98,
+    "endColumn": 21
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must not be padded by blank lines.",
+    "line": 105,
+    "column": 49
+  },
+  {
+    "ruleId": "no-multi-spaces",
+    "message": "Multiple spaces found before '='.",
+    "line": 107,
+    "column": 22
+  },
+  {
+    "ruleId": "operator-linebreak",
+    "message": "':' should be placed at the beginning of the line.",
+    "line": 107,
+    "column": 71
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 108,
+    "column": 1,
+    "endLine": 108,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 6 spaces but found 4.",
+    "line": 109,
+    "column": 1,
+    "endLine": 109,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 110,
+    "column": 1,
+    "endLine": 110,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 122,
+    "column": 10
+  }
+]

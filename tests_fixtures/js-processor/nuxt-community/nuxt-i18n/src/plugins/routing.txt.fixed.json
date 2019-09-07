@@ -2,25 +2,25 @@
   {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
-    "line": 49,
-    "column": 37,
-    "endLine": 49,
-    "endColumn": 51
+    "line": 18,
+    "column": 7,
+    "endLine": 18,
+    "endColumn": 19
   },
   {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
-    "line": 69,
+    "line": 58,
     "column": 7,
-    "endLine": 69,
-    "endColumn": 18
+    "endLine": 58,
+    "endColumn": 19
   },
   {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
-    "line": 71,
-    "column": 7,
-    "endLine": 71,
-    "endColumn": 18
+    "line": 97,
+    "column": 9,
+    "endLine": 97,
+    "endColumn": 21
   }
 ]

@@ -1,0 +1,68 @@
+[
+  {
+    "ruleId": "no-unused-vars",
+    "message": "'LOCALE_DOMAIN_KEY' is assigned a value but never used.",
+    "line": 2,
+    "column": 7,
+    "endLine": 2,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "semi",
+    "message": "Extra semicolon.",
+    "line": 16,
+    "column": 26
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must not be padded by blank lines.",
+    "line": 26,
+    "column": 17
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 35,
+    "column": 11,
+    "endLine": 35,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must not be padded by blank lines.",
+    "line": 38,
+    "column": 7
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 39,
+    "column": 9,
+    "endLine": 39,
+    "endColumn": 21
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 51,
+    "column": 5,
+    "endLine": 51,
+    "endColumn": 17
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 56,
+    "column": 7,
+    "endLine": 56,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 58,
+    "column": 7,
+    "endLine": 58,
+    "endColumn": 19
+  }
+]

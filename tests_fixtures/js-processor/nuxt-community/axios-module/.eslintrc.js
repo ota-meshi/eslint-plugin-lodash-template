@@ -12,7 +12,7 @@ module.exports = {
     ],
     overrides: [
       {
-        files: ["*.js"],
+        files: ["*.txt", "*.js"],
         processor: "lodash-template/js",
         globals: {
           options: true,

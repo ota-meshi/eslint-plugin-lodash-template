@@ -1,0 +1,134 @@
+[
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 1,
+    "column": 17,
+    "endLine": 1,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 1,
+    "column": 22
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space after '{'.",
+    "line": 2,
+    "column": 8
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space before '}'.",
+    "line": 2,
+    "column": 22
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 2,
+    "column": 29,
+    "endLine": 2,
+    "endColumn": 41
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 2,
+    "column": 41
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 5,
+    "column": 1,
+    "endLine": 5,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 5,
+    "column": 10
+  },
+  {
+    "ruleId": "no-shadow",
+    "message": "'Vue' is already declared in the upper scope.",
+    "line": 5,
+    "column": 11,
+    "endLine": 5,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 5,
+    "column": 16
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 6,
+    "column": 1,
+    "endLine": 6,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 7,
+    "column": 1,
+    "endLine": 7,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "quote-props",
+    "message": "Unquoted property 'head' found.",
+    "line": 7,
+    "column": 7,
+    "endLine": 7,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 8,
+    "column": 1,
+    "endLine": 8,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 8,
+    "column": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 9,
+    "column": 1,
+    "endLine": 9,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 9,
+    "column": 3
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 10,
+    "column": 2
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 12,
+    "column": 16
+  }
+]

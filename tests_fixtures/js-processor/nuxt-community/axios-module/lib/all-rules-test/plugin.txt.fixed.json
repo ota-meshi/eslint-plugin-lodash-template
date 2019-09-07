@@ -1,0 +1,510 @@
+[
+  {
+    "ruleId": "max-lines",
+    "message": "File has too many lines (327). Maximum allowed is 300.",
+    "line": 1,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 98. Maximum allowed is 80.",
+    "line": 163,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 134. Maximum allowed is 80.",
+    "line": 191,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 89. Maximum allowed is 80.",
+    "line": 289,
+    "column": 1
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'h' is too short (< 2).",
+    "line": 290,
+    "column": 17,
+    "endLine": 290,
+    "endColumn": 18
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'serialize' is not defined.",
+    "line": 316,
+    "column": 26,
+    "endLine": 316,
+    "endColumn": 35
+  },
+  {
+    "ruleId": "max-lines",
+    "message": "File has too many lines (327). Maximum allowed is 300.",
+    "line": 1,
+    "column": 1
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 8,
+    "column": 29,
+    "endLine": 8,
+    "endColumn": 50
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 8,
+    "column": 29,
+    "endLine": 8,
+    "endColumn": 70
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 8,
+    "column": 53,
+    "endLine": 8,
+    "endColumn": 59
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 23,
+    "column": 23,
+    "endLine": 23,
+    "endColumn": 71
+  },
+  {
+    "ruleId": "no-negated-condition",
+    "message": "Unexpected negated condition.",
+    "line": 23,
+    "column": 23,
+    "endLine": 23,
+    "endColumn": 71
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 23,
+    "column": 23,
+    "endLine": 23,
+    "endColumn": 29
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 23,
+    "column": 32,
+    "endLine": 23,
+    "endColumn": 36
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 23,
+    "column": 40,
+    "endLine": 23,
+    "endColumn": 44
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 23,
+    "column": 40,
+    "endLine": 23,
+    "endColumn": 62
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 23,
+    "column": 47,
+    "endLine": 23,
+    "endColumn": 57
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'onRequest' should be before 'setToken'.",
+    "line": 31,
+    "column": 5,
+    "endLine": 31,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'onRequestError' should be before 'onResponse'.",
+    "line": 41,
+    "column": 5,
+    "endLine": 41,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "no-undefined",
+    "message": "Unexpected use of undefined.",
+    "line": 44,
+    "column": 13,
+    "endLine": 44,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "no-undefined",
+    "message": "Unexpected use of undefined.",
+    "line": 52,
+    "column": 13,
+    "endLine": 52,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'onError' should be before 'onResponseError'.",
+    "line": 57,
+    "column": 5,
+    "endLine": 57,
+    "endColumn": 12
+  },
+  {
+    "ruleId": "func-names",
+    "message": "Unexpected unnamed function.",
+    "line": 77,
+    "column": 32,
+    "endLine": 77,
+    "endColumn": 41
+  },
+  {
+    "ruleId": "prefer-spread",
+    "message": "Use the spread operator instead of '.apply()'.",
+    "line": 79,
+    "column": 16,
+    "endLine": 82,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "prefer-rest-params",
+    "message": "Use the rest parameters instead of 'arguments'.",
+    "line": 81,
+    "column": 13,
+    "endLine": 81,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "guard-for-in",
+    "message": "The body of a for-in should be wrapped in an if statement to filter unwanted properties from the prototype.",
+    "line": 90,
+    "column": 5,
+    "endLine": 94,
+    "endColumn": 6
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 99,
+    "column": 37,
+    "endLine": 99,
+    "endColumn": 51
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'process' is not defined.",
+    "line": 136,
+    "column": 13,
+    "endLine": 136,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 138,
+    "column": 13,
+    "endLine": 138,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 142,
+    "column": 13,
+    "endLine": 142,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "no-undefined",
+    "message": "Unexpected use of undefined.",
+    "line": 144,
+    "column": 17,
+    "endLine": 144,
+    "endColumn": 26
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 2.",
+    "line": 145,
+    "column": 17,
+    "endLine": 145,
+    "endColumn": 18
+  },
+  {
+    "ruleId": "no-undefined",
+    "message": "Unexpected use of undefined.",
+    "line": 161,
+    "column": 40,
+    "endLine": 161,
+    "endColumn": 49
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 98. Maximum allowed is 80.",
+    "line": 163,
+    "column": 1
+  },
+  {
+    "ruleId": "require-unicode-regexp",
+    "message": "Use the 'u' flag.",
+    "line": 163,
+    "column": 19,
+    "endLine": 163,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 0.",
+    "line": 163,
+    "column": 95,
+    "endLine": 163,
+    "endColumn": 96
+  },
+  {
+    "ruleId": "no-unused-vars",
+    "message": "'ctx' is defined but never used.",
+    "line": 175,
+    "column": 31,
+    "endLine": 175,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'process' is not defined.",
+    "line": 177,
+    "column": 9,
+    "endLine": 177,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "no-empty-function",
+    "message": "Unexpected empty arrow function 'finish'.",
+    "line": 185,
+    "column": 25
+  },
+  {
+    "ruleId": "no-empty-function",
+    "message": "Unexpected empty arrow function 'start'.",
+    "line": 186,
+    "column": 24
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'fail' should be before 'start'.",
+    "line": 187,
+    "column": 9,
+    "endLine": 187,
+    "endColumn": 15
+  },
+  {
+    "ruleId": "no-empty-function",
+    "message": "Unexpected empty arrow function 'fail'.",
+    "line": 187,
+    "column": 23
+  },
+  {
+    "ruleId": "no-empty-function",
+    "message": "Unexpected empty arrow function 'set'.",
+    "line": 188,
+    "column": 22
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 134. Maximum allowed is 80.",
+    "line": 191,
+    "column": 1
+  },
+  {
+    "ruleId": "no-extra-parens",
+    "message": "Unnecessary parentheses around expression.",
+    "line": 191,
+    "column": 28
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 191,
+    "column": 29,
+    "endLine": 191,
+    "endColumn": 133
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 191,
+    "column": 29,
+    "endLine": 191,
+    "endColumn": 95
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 191,
+    "column": 98,
+    "endLine": 191,
+    "endColumn": 119
+  },
+  {
+    "ruleId": "no-plusplus",
+    "message": "Unary operator '++' used.",
+    "line": 203,
+    "column": 9,
+    "endLine": 203,
+    "endColumn": 26
+  },
+  {
+    "ruleId": "no-plusplus",
+    "message": "Unary operator '--' used.",
+    "line": 215,
+    "column": 9,
+    "endLine": 215,
+    "endColumn": 26
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 0.",
+    "line": 216,
+    "column": 32,
+    "endLine": 216,
+    "endColumn": 33
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 0.",
+    "line": 218,
+    "column": 31,
+    "endLine": 218,
+    "endColumn": 32
+  },
+  {
+    "ruleId": "no-plusplus",
+    "message": "Unary operator '--' used.",
+    "line": 233,
+    "column": 9,
+    "endLine": 233,
+    "endColumn": 26
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'e' is too short (< 2).",
+    "line": 239,
+    "column": 25,
+    "endLine": 239,
+    "endColumn": 26
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 100.",
+    "line": 246,
+    "column": 37,
+    "endLine": 246,
+    "endColumn": 40
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 100.",
+    "line": 248,
+    "column": 13,
+    "endLine": 248,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'process' is not defined.",
+    "line": 261,
+    "column": 21,
+    "endLine": 261,
+    "endColumn": 28
+  },
+  {
+    "ruleId": "no-extra-parens",
+    "message": "Unnecessary parentheses around expression.",
+    "line": 263,
+    "column": 11
+  },
+  {
+    "ruleId": "no-process-env",
+    "message": "Unexpected use of process.env.",
+    "line": 263,
+    "column": 12,
+    "endLine": 263,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'process' is not defined.",
+    "line": 263,
+    "column": 12,
+    "endLine": 263,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_AXIOS_BASE_URL_'.",
+    "line": 263,
+    "column": 12,
+    "endLine": 263,
+    "endColumn": 40
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'patch' should be before 'put'.",
+    "line": 279,
+    "column": 9,
+    "endLine": 279,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 89. Maximum allowed is 80.",
+    "line": 289,
+    "column": 1
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 289,
+    "column": 35,
+    "endLine": 289,
+    "endColumn": 89
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 289,
+    "column": 35,
+    "endLine": 289,
+    "endColumn": 61
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 289,
+    "column": 64,
+    "endLine": 289,
+    "endColumn": 84
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'process' is not defined.",
+    "line": 295,
+    "column": 9,
+    "endLine": 295,
+    "endColumn": 16
+  }
+]
