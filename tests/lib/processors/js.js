@@ -159,7 +159,7 @@ describe("js test", () => {
                     "utf8"
                 )
 
-                it(`${allConfigTestDirPath} lint`, () => {
+                it(`${path.join(allConfigTestDirPath, basename)} lint`, () => {
                     const cli = new CLIEngine({
                         cwd: allConfigTestDirPath,
                     })
@@ -189,7 +189,10 @@ describe("js test", () => {
                         "No Parsing error"
                     )
                 })
-                it(`${allConfigTestDirPath} autofix`, () => {
+                it(`${path.join(
+                    allConfigTestDirPath,
+                    basename
+                )} autofix`, () => {
                     const cli = new CLIEngine({
                         cwd: allConfigTestDirPath,
                         fix: true,

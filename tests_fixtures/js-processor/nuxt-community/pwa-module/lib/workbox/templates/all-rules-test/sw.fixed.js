@@ -86,7 +86,7 @@ null,
  %>workbox.routing.registerRoute(
     new RegExp('<%= r.urlPattern %>'),
     new workbox.strategies.<%= r.handler %> (<%= JSON.stringify(r.strategyOptions || {}) %>),
-    '<%= r.method %>'
+'<%= r.method %>'
 )
 <% }) %>
 

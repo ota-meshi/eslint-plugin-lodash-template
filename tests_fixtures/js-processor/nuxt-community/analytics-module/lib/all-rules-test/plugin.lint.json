@@ -1,0 +1,220 @@
+[
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 1,
+    "column": 17,
+    "endLine": 1,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 1,
+    "column": 22
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 2,
+    "column": 26,
+    "endLine": 2,
+    "endColumn": 41
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 2,
+    "column": 41
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 4,
+    "column": 39
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 5,
+    "column": 1,
+    "endLine": 5,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'serialize' is not defined.",
+    "line": 5,
+    "column": 23,
+    "endLine": 5,
+    "endColumn": 32
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 5,
+    "column": 44
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 7,
+    "column": 1,
+    "endLine": 7,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 7,
+    "column": 34,
+    "endLine": 7,
+    "endColumn": 44
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 7,
+    "column": 46
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 8,
+    "column": 1,
+    "endLine": 8,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 8,
+    "column": 44
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 9,
+    "column": 1,
+    "endLine": 9,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 9,
+    "column": 3
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 11,
+    "column": 1,
+    "endLine": 11,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 11,
+    "column": 24,
+    "endLine": 11,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space after '{'.",
+    "line": 11,
+    "column": 29
+  },
+  {
+    "ruleId": "quote-props",
+    "message": "Unquoted property 'router' found.",
+    "line": 11,
+    "column": 31,
+    "endLine": 11,
+    "endColumn": 53
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space before '}'.",
+    "line": 11,
+    "column": 54
+  },
+  {
+    "ruleId": "object-property-newline",
+    "message": "Object properties must go on a new line.",
+    "line": 11,
+    "column": 57
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 11,
+    "column": 69
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 13,
+    "column": 1,
+    "endLine": 13,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "require-atomic-updates",
+    "message": "Possible race condition: `ctx.$ga` might be reassigned based on an outdated value of `ctx.$ga`.",
+    "line": 13,
+    "column": 3,
+    "endLine": 13,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 13,
+    "column": 20
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 14,
+    "column": 1,
+    "endLine": 14,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 14,
+    "column": 10,
+    "endLine": 14,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 14,
+    "column": 15,
+    "endLine": 14,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 14,
+    "column": 24
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 15,
+    "column": 1
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 15,
+    "column": 2
+  }
+]

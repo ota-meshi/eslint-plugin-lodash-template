@@ -1,0 +1,14 @@
+[
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 2,
+    "column": 24
+  },
+  {
+    "ruleId": "semi",
+    "message": "Extra semicolon.",
+    "line": 6,
+    "column": 25
+  }
+]

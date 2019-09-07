@@ -1,0 +1,24 @@
+[
+  {
+    "ruleId": "func-style",
+    "message": "Expected a function expression.",
+    "line": 2,
+    "column": 1,
+    "endLine": 10,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 114. Maximum allowed is 80.",
+    "line": 5,
+    "column": 1
+  },
+  {
+    "ruleId": "no-undefined",
+    "message": "Unexpected use of undefined.",
+    "line": 5,
+    "column": 24,
+    "endLine": 5,
+    "endColumn": 33
+  }
+]

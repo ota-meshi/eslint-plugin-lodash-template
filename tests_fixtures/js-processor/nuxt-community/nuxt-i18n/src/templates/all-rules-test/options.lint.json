@@ -1,0 +1,58 @@
+[
+  {
+    "ruleId": "func-style",
+    "message": "Expected a function expression.",
+    "line": 2,
+    "column": 1,
+    "endLine": 10,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 2,
+    "column": 24
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 4,
+    "column": 24
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 114. Maximum allowed is 80.",
+    "line": 5,
+    "column": 1
+  },
+  {
+    "ruleId": "no-undefined",
+    "message": "Unexpected use of undefined.",
+    "line": 5,
+    "column": 24,
+    "endLine": 5,
+    "endColumn": 33
+  },
+  {
+    "ruleId": "no-else-return",
+    "message": "Unnecessary 'else' after 'return'.",
+    "line": 7,
+    "column": 10,
+    "endLine": 9,
+    "endColumn": 4
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 8,
+    "column": 33
+  },
+  {
+    "ruleId": "array-element-newline",
+    "message": "There should be a linebreak after this element.",
+    "line": 12,
+    "column": 17,
+    "endLine": 12,
+    "endColumn": 18
+  }
+]
