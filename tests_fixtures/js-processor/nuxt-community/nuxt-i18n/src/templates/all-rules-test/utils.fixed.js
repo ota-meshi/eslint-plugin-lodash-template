@@ -1,8 +1,8 @@
 const LOCALE_CODE_KEY = '<%= options.LOCALE_CODE_KEY %>';
 const LOCALE_DOMAIN_KEY = '<%= options.LOCALE_DOMAIN_KEY %>';
 const LOCALE_FILE_KEY = '<%= options.LOCALE_FILE_KEY %>';
-const getLocaleCodes = <%= options.getLocaleCodes %>
-const locales = <%= JSON.stringify(options.locales) %>
+const getLocaleCodes = <%= options.getLocaleCodes %>;
+const locales = <%= JSON.stringify(options.locales) %>;
 const localeCodes = getLocaleCodes(locales);
 
 const isObject = (value) => value && !Array.isArray(value) && typeof value === "object";

@@ -10,12 +10,12 @@ Vue.use(VueI18n);
 // Options
 const LOCALE_CODE_KEY = '<%= options.LOCALE_CODE_KEY %>';
 const LOCALE_DOMAIN_KEY = '<%= options.LOCALE_DOMAIN_KEY %>';
-const STRATEGIES = <%= JSON.stringify(options.STRATEGIES) %>
+const STRATEGIES = <%= JSON.stringify(options.STRATEGIES) %>;
 const STRATEGY = '<%= options.strategy %>';
-const lazy = <%= options.lazy %>
-const vuex = <%= JSON.stringify(options.vuex) %>
+const lazy = <%= options.lazy %>;
+const vuex = <%= JSON.stringify(options.vuex) %>;
 // Helpers
-const getLocaleCodes = <%= options.getLocaleCodes %>
+const getLocaleCodes = <%= options.getLocaleCodes %>;
 const localeCodes = getLocaleCodes(<%= JSON.stringify(options.locales) %>);
 
 export default async (context) => {
@@ -23,11 +23,11 @@ export default async (context) => {
     const {app, route, store, req, res, redirect} = context;
 
     // Helpers
-    const getLocaleFromRoute = <%= options.getLocaleFromRoute %>
-    const getHostname = <%= options.getHostname %>
-    const getForwarded = <%= options.getForwarded %>
-    const getLocaleDomain = <%= options.getLocaleDomain %>
-    const syncVuex = <%= options.syncVuex %>
+    const getLocaleFromRoute = <%= options.getLocaleFromRoute %>;
+    const getHostname = <%= options.getHostname %>;
+    const getForwarded = <%= options.getForwarded %>;
+    const getLocaleDomain = <%= options.getLocaleDomain %>;
+    const syncVuex = <%= options.syncVuex %>;
 
   <% if (options.vuex) { %>
     // Register Vuex module
@@ -109,7 +109,7 @@ export default async (context) => {
     }
   <% } %>
 
-    const detectBrowserLanguage = <%= JSON.stringify(options.detectBrowserLanguage) %>
+    const detectBrowserLanguage = <%= JSON.stringify(options.detectBrowserLanguage) %>;
     const {useCookie, cookieKey} = detectBrowserLanguage;
 
     const getLocaleCookie = () => {
@@ -271,12 +271,12 @@ export default async (context) => {
 
     // Set instance options
     app.i18n = new VueI18n(<%= JSON.stringify(options.vueI18n) %>);
-    app.i18n.locales = <%= JSON.stringify(options.locales) %>
+    app.i18n.locales = <%= JSON.stringify(options.locales) %>;
     app.i18n.defaultLocale = '<%= options.defaultLocale %>';
-    app.i18n.differentDomains = <%= options.differentDomains %>
-    app.i18n.forwardedHost = <%= options.forwardedHost %>
-    app.i18n.beforeLanguageSwitch = <%= options.beforeLanguageSwitch %>
-    app.i18n.onLanguageSwitched = <%= options.onLanguageSwitched %>
+    app.i18n.differentDomains = <%= options.differentDomains %>;
+    app.i18n.forwardedHost = <%= options.forwardedHost %>;
+    app.i18n.beforeLanguageSwitch = <%= options.beforeLanguageSwitch %>;
+    app.i18n.onLanguageSwitched = <%= options.onLanguageSwitched %>;
     app.i18n.setLocaleCookie = setLocaleCookie;
     app.i18n.getLocaleCookie = getLocaleCookie;
     app.i18n.setLocale = (locale) => loadAndSetLocale(locale);

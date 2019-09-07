@@ -21,9 +21,7 @@ module.exports = {
       // Allow debugger during development
       'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
       // Do not allow console.logs etc...
-      'no-console': 1,
-      // Disalow semicolons
-      'semi': ['error', 'never']
+      'no-console': 0
     },
     globals: {
       'jest/globals': true,
@@ -36,9 +34,6 @@ module.exports = {
           "plugin:lodash-template/base"
         ],
         processor: "lodash-template/js",
-        parserOptions: {
-          parser: 'babel-eslint'
-        },
         globals: {
           options: true,
           serialize: true,

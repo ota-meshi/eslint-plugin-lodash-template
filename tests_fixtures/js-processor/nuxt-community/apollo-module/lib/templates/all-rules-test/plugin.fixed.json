@@ -1,0 +1,154 @@
+[
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 92. Maximum allowed is 80.",
+    "line": 4,
+    "column": 1
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'serialize' is not defined.",
+    "line": 14,
+    "column": 33,
+    "endLine": 14,
+    "endColumn": 42
+  },
+  {
+    "ruleId": "max-lines-per-function",
+    "message": "Arrow function has too many lines (59). Maximum allowed is 50.",
+    "line": 19,
+    "column": 49,
+    "endLine": 77,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "max-statements",
+    "message": "Arrow function has too many statements (46). Maximum allowed is 10.",
+    "line": 19,
+    "column": 49,
+    "endLine": 77,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 99. Maximum allowed is 80.",
+    "line": 20,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 115. Maximum allowed is 80.",
+    "line": 21,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 92. Maximum allowed is 80.",
+    "line": 25,
+    "column": 1
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 2.",
+    "line": 33,
+    "column": 1,
+    "endLine": 33,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 129. Maximum allowed is 80.",
+    "line": 53,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 129. Maximum allowed is 80.",
+    "line": 56,
+    "column": 1
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 56,
+    "column": 78,
+    "endLine": 56,
+    "endColumn": 95
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 56,
+    "column": 78,
+    "endLine": 56,
+    "endColumn": 119
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 56,
+    "column": 98,
+    "endLine": 56,
+    "endColumn": 113
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 88. Maximum allowed is 80.",
+    "line": 70,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 82. Maximum allowed is 80.",
+    "line": 73,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 84. Maximum allowed is 80.",
+    "line": 75,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 138. Maximum allowed is 80.",
+    "line": 87,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 138. Maximum allowed is 80.",
+    "line": 104,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 96. Maximum allowed is 80.",
+    "line": 106,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 92. Maximum allowed is 80.",
+    "line": 109,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 87. Maximum allowed is 80.",
+    "line": 123,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 94. Maximum allowed is 80.",
+    "line": 127,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 85. Maximum allowed is 80.",
+    "line": 135,
+    "column": 1
+  }
+]

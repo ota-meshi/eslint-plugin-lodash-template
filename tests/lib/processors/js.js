@@ -53,11 +53,17 @@ function stringifyMessages(messages) {
 
 describe("js test", () => {
     describe("should notify errors", () => {
-        for (const name of testUtils
+        for (const relPath of testUtils
             .listupFiles(FIXTURE_DIR)
-            .filter(s => s.endsWith(".txt"))) {
+            .filter(s => s.endsWith(".test"))) {
+            const name = relPath.replace(/\.(test)$/u, "")
+
             const filepath = path.join(FIXTURE_DIR, name)
-            const contents = fs.readFileSync(filepath, "utf8")
+            const contents = fs.readFileSync(
+                path.join(FIXTURE_DIR, relPath),
+                "utf8"
+            )
+
             // write for sample
             fs.writeFileSync(`${filepath}.js`, contents, "utf8")
             // write for autofix
@@ -67,7 +73,7 @@ describe("js test", () => {
                 const cli = new CLIEngine({
                     cwd: FIXTURE_DIR,
                 })
-                const report = cli.executeOnFiles(name)
+                const report = cli.executeOnFiles(`${name}.js`)
                 const messages = testUtils.sortMessages(
                     report.results[0].messages
                 )
@@ -133,6 +139,7 @@ describe("js test", () => {
                 testUtils.existsPath(allConfigTestDirPath)
             ) {
                 const basename = path.basename(name)
+
                 // write for lint for all-rules
                 fs.writeFileSync(
                     path.join(allConfigTestDirPath, `${basename}.lint.js`),

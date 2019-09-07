@@ -9,7 +9,7 @@ module.exports = {
     ],
     overrides: [
       {
-        files: ["*.txt", "*.js"],
+        files: ["*.js"],
         extends: [
           "plugin:lodash-template/base"
         ],

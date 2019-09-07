@@ -89,13 +89,13 @@
   },
   {
     "ruleId": "max-len",
-    "message": "This line has a length of 86. Maximum allowed is 80.",
+    "message": "This line has a length of 87. Maximum allowed is 80.",
     "line": 112,
     "column": 1
   },
   {
     "ruleId": "max-len",
-    "message": "This line has a length of 86. Maximum allowed is 80.",
+    "message": "This line has a length of 87. Maximum allowed is 80.",
     "line": 112,
     "column": 1
   },

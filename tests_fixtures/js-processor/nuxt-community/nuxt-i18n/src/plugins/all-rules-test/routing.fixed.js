@@ -1,9 +1,9 @@
 import "./middleware";
 import Vue from "vue";
 
-const STRATEGIES = <%= JSON.stringify(options.STRATEGIES) %>
+const STRATEGIES = <%= JSON.stringify(options.STRATEGIES) %>;
 const STRATEGY = '<%= options.strategy %>';
-const vuex = <%= JSON.stringify(options.vuex) %>
+const vuex = <%= JSON.stringify(options.vuex) %>;
 const routesNameSeparator = '<%= options.routesNameSeparator %>';
 const defaultLocale = '<%= options.defaultLocale %>';
 

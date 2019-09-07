@@ -1,0 +1,27 @@
+
+{
+  "root": true,
+  "extends": "standard",
+  "plugins": [
+      "jest"
+  ],
+  "env": {
+      "jest/globals": true
+  },
+  "overrides": [
+    {
+      "files": ["*.txt", "*.js"],
+      "extends": [
+        "plugin:lodash-template/base"
+      ],
+      "processor": "lodash-template/js",
+      "parserOptions": {
+        "parser": "babel-eslint"
+      },
+      "globals": {
+        "options": true,
+        "serialize": true
+      }
+    }
+  ]
+}

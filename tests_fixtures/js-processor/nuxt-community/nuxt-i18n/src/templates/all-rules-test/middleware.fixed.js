@@ -12,7 +12,7 @@ middleware.i18n = async (context) => {
 
     // Helpers
     const LOCALE_CODE_KEY = '<%= options.LOCALE_CODE_KEY %>';
-    const getLocaleCodes = <%= options.getLocaleCodes %>
+    const getLocaleCodes = <%= options.getLocaleCodes %>;
 
     // Handle root path redirect
     const rootRedirect = '<%= options.rootRedirect %>';
@@ -29,7 +29,7 @@ middleware.i18n = async (context) => {
     // Update for setLocale to have up to date route
     app.i18n.__route = route;
 
-    const detectBrowserLanguage = <%= JSON.stringify(options.detectBrowserLanguage) %>
+    const detectBrowserLanguage = <%= JSON.stringify(options.detectBrowserLanguage) %>;
 
     if (detectBrowserLanguage && await app.i18n.__detectBrowserLanguage(route)) {
 
@@ -38,7 +38,7 @@ middleware.i18n = async (context) => {
     }
 
     const locale = app.i18n.locale || app.i18n.defaultLocale || null;
-    const getLocaleFromRoute = <%= options.getLocaleFromRoute %>
+    const getLocaleFromRoute = <%= options.getLocaleFromRoute %>;
     const routesNameSeparator = '<%= options.routesNameSeparator %>';
     const defaultLocaleRouteNameSuffix = '<%= options.defaultLocaleRouteNameSuffix %>';
     const locales = getLocaleCodes(<%= JSON.stringify(options.locales) %>);

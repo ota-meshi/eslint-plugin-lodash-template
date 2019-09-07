@@ -4,7 +4,7 @@ const COMPONENT_OPTIONS_KEY = '<%= options.COMPONENT_OPTIONS_KEY %>';
 const LOCALE_CODE_KEY = '<%= options.LOCALE_CODE_KEY %>';
 const LOCALE_ISO_KEY = '<%= options.LOCALE_ISO_KEY %>';
 const BASE_URL = '<%= options.baseUrl %>';
-const STRATEGIES = <%= JSON.stringify(options.STRATEGIES) %>
+const STRATEGIES = <%= JSON.stringify(options.STRATEGIES) %>;
 const STRATEGY = '<%= options.strategy %>';
 
 export const nuxtI18nSeo = function () {

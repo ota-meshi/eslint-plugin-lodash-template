@@ -1,0 +1,298 @@
+[
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 1,
+    "column": 24
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 1,
+    "column": 27
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 2,
+    "column": 1,
+    "endLine": 2,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "no-unsafe-negation",
+    "message": "Unexpected negating the left operand of 'in' operator.",
+    "line": 2,
+    "column": 7,
+    "endLine": 2,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 2,
+    "column": 8,
+    "endLine": 2,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 2,
+    "column": 38
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 3,
+    "column": 1,
+    "endLine": 3,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 3,
+    "column": 21,
+    "endLine": 3,
+    "endColumn": 73
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 3,
+    "column": 74
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 4,
+    "column": 1,
+    "endLine": 4,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 4,
+    "column": 3
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 6,
+    "column": 1,
+    "endLine": 6,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 116. Maximum allowed is 80.",
+    "line": 6,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 116. Maximum allowed is 80.",
+    "line": 6,
+    "column": 1
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space after '{'.",
+    "line": 6,
+    "column": 9
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space before '}'.",
+    "line": 6,
+    "column": 19
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 6,
+    "column": 76,
+    "endLine": 6,
+    "endColumn": 87
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 6,
+    "column": 76,
+    "endLine": 6,
+    "endColumn": 104
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 6,
+    "column": 90,
+    "endLine": 6,
+    "endColumn": 95
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 6,
+    "column": 117
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 8,
+    "column": 1,
+    "endLine": 8,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 8,
+    "column": 54,
+    "endLine": 8,
+    "endColumn": 55
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 9,
+    "column": 1,
+    "endLine": 9,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 10,
+    "column": 1,
+    "endLine": 10,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 10,
+    "column": 5
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 12,
+    "column": 1,
+    "endLine": 12,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 12,
+    "column": 27
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 14,
+    "column": 1,
+    "endLine": 14,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 14,
+    "column": 17
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 15,
+    "column": 1
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 18,
+    "column": 1,
+    "endLine": 18,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 104. Maximum allowed is 80.",
+    "line": 18,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 104. Maximum allowed is 80.",
+    "line": 18,
+    "column": 1
+  },
+  {
+    "ruleId": "dot-location",
+    "message": "Expected dot to be on same line as object.",
+    "line": 18,
+    "column": 3
+  },
+  {
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument.",
+    "line": 18,
+    "column": 10,
+    "endLine": 18,
+    "endColumn": 15
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 18,
+    "column": 45,
+    "endLine": 18,
+    "endColumn": 58
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 18,
+    "column": 59,
+    "endLine": 18,
+    "endColumn": 87
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 18,
+    "column": 88,
+    "endLine": 18,
+    "endColumn": 89
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 18,
+    "column": 102
+  },
+  {
+    "ruleId": "brace-style",
+    "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
+    "line": 18,
+    "column": 103,
+    "endLine": 18,
+    "endColumn": 104
+  },
+  {
+    "ruleId": "block-spacing",
+    "message": "Requires a space before '}'.",
+    "line": 18,
+    "column": 103
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 18,
+    "column": 105
+  }
+]

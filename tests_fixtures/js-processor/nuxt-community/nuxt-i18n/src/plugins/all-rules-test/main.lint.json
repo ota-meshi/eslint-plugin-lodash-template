@@ -144,8 +144,32 @@
   {
     "ruleId": "semi",
     "message": "Missing semicolon.",
+    "line": 13,
+    "column": 61
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
     "line": 14,
     "column": 43
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 15,
+    "column": 33
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 16,
+    "column": 49
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 18,
+    "column": 53
   },
   {
     "ruleId": "semi",
@@ -202,6 +226,12 @@
     "endColumn": 3
   },
   {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 25,
+    "column": 63
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 26,
@@ -216,6 +246,12 @@
     "column": 9,
     "endLine": 26,
     "endColumn": 20
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 26,
+    "column": 49
   },
   {
     "ruleId": "indent",
@@ -234,6 +270,12 @@
     "endColumn": 21
   },
   {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 27,
+    "column": 51
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 28,
@@ -242,12 +284,24 @@
     "endColumn": 3
   },
   {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 28,
+    "column": 57
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 29,
     "column": 1,
     "endLine": 29,
     "endColumn": 3
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 29,
+    "column": 43
   },
   {
     "ruleId": "indent",
@@ -932,6 +986,12 @@
     "message": "This line has a length of 84. Maximum allowed is 80.",
     "line": 83,
     "column": 1
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 83,
+    "column": 85
   },
   {
     "ruleId": "indent",
@@ -2412,6 +2472,12 @@
     "endColumn": 3
   },
   {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 177,
+    "column": 60
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 178,
@@ -2434,12 +2500,24 @@
     "endColumn": 3
   },
   {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 179,
+    "column": 62
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 180,
     "column": 1,
     "endLine": 180,
     "endColumn": 3
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 180,
+    "column": 56
   },
   {
     "ruleId": "indent",
@@ -2450,12 +2528,24 @@
     "endColumn": 3
   },
   {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 181,
+    "column": 70
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 182,
     "column": 1,
     "endLine": 182,
     "endColumn": 3
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 182,
+    "column": 66
   },
   {
     "ruleId": "indent",

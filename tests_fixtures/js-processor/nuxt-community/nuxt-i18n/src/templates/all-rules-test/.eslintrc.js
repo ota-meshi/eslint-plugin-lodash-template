@@ -13,7 +13,7 @@ module.exports = {
     extends: ["eslint:all", "plugin:lodash-template/base"],
     overrides: [
         {
-            files: ["*.txt", "*.js"],
+            files: ["*.js"],
             processor: "lodash-template/js",
             parserOptions: {
                 ecmaVersion: 2019,

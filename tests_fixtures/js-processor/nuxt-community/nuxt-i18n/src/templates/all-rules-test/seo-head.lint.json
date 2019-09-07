@@ -40,6 +40,12 @@
   {
     "ruleId": "semi",
     "message": "Missing semicolon.",
+    "line": 7,
+    "column": 61
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
     "line": 8,
     "column": 43
   },

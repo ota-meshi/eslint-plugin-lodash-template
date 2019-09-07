@@ -30,8 +30,20 @@
   {
     "ruleId": "semi",
     "message": "Missing semicolon.",
+    "line": 4,
+    "column": 61
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
     "line": 5,
     "column": 43
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 6,
+    "column": 49
   },
   {
     "ruleId": "semi",
