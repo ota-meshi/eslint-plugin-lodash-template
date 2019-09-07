@@ -16,12 +16,6 @@
     "endColumn": 24
   },
   {
-    "ruleId": "space-in-parens",
-    "message": "There should be no spaces inside this paren.",
-    "line": 19,
-    "column": 74
-  },
-  {
     "ruleId": "no-unused-vars",
     "message": "'getHostname' is assigned a value but never used.",
     "line": 26,
@@ -36,11 +30,5 @@
     "column": 9,
     "endLine": 27,
     "endColumn": 21
-  },
-  {
-    "ruleId": "space-in-parens",
-    "message": "There should be no spaces inside this paren.",
-    "line": 176,
-    "column": 64
   }
 ]

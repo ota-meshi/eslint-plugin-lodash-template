@@ -1242,16 +1242,16 @@
     "endColumn": 24
   },
   {
-    "ruleId": "id-length",
-    "message": "Identifier name 'l' is too short (< 2).",
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument.",
     "line": 86,
     "column": 48,
     "endLine": 86,
     "endColumn": 49
   },
   {
-    "ruleId": "arrow-parens",
-    "message": "Expected parentheses around arrow function argument.",
+    "ruleId": "id-length",
+    "message": "Identifier name 'l' is too short (< 2).",
     "line": 86,
     "column": 48,
     "endLine": 86,

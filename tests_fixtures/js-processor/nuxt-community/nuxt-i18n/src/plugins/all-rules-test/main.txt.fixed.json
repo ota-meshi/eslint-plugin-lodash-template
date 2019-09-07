@@ -28,12 +28,6 @@
     "endColumn": 24
   },
   {
-    "ruleId": "space-in-parens",
-    "message": "There should be no spaces inside this paren.",
-    "line": 19,
-    "column": 74
-  },
-  {
     "ruleId": "no-unused-vars",
     "message": "'getHostname' is assigned a value but never used.",
     "line": 27,
@@ -188,16 +182,16 @@
     "endColumn": 74
   },
   {
-    "ruleId": "max-statements",
-    "message": "Async arrow function has too many statements (24). Maximum allowed is 10.",
+    "ruleId": "max-lines-per-function",
+    "message": "Async arrow function has too many lines (90). Maximum allowed is 50.",
     "line": 181,
     "column": 30,
     "endLine": 270,
     "endColumn": 6
   },
   {
-    "ruleId": "max-lines-per-function",
-    "message": "Async arrow function has too many lines (90). Maximum allowed is 50.",
+    "ruleId": "max-statements",
+    "message": "Async arrow function has too many statements (24). Maximum allowed is 10.",
     "line": 181,
     "column": 30,
     "endLine": 270,
@@ -292,12 +286,6 @@
     "endColumn": 80
   },
   {
-    "ruleId": "space-in-parens",
-    "message": "There should be no spaces inside this paren.",
-    "line": 273,
-    "column": 66
-  },
-  {
     "ruleId": "no-underscore-dangle",
     "message": "Unexpected dangling '_' in '__route'.",
     "line": 285,
@@ -382,14 +370,6 @@
     "endColumn": 6
   },
   {
-    "ruleId": "max-statements",
-    "message": "Async arrow function has too many statements (17). Maximum allowed is 10.",
-    "line": 331,
-    "column": 40,
-    "endLine": 401,
-    "endColumn": 6
-  },
-  {
     "ruleId": "max-lines-per-function",
     "message": "Async arrow function has too many lines (71). Maximum allowed is 50.",
     "line": 331,
@@ -398,16 +378,24 @@
     "endColumn": 6
   },
   {
-    "ruleId": "no-unused-vars",
-    "message": "'route' is defined but never used.",
+    "ruleId": "max-statements",
+    "message": "Async arrow function has too many statements (17). Maximum allowed is 10.",
+    "line": 331,
+    "column": 40,
+    "endLine": 401,
+    "endColumn": 6
+  },
+  {
+    "ruleId": "no-shadow",
+    "message": "'route' is already declared in the upper scope.",
     "line": 331,
     "column": 47,
     "endLine": 331,
     "endColumn": 52
   },
   {
-    "ruleId": "no-shadow",
-    "message": "'route' is already declared in the upper scope.",
+    "ruleId": "no-unused-vars",
+    "message": "'route' is defined but never used.",
     "line": 331,
     "column": 47,
     "endLine": 331,

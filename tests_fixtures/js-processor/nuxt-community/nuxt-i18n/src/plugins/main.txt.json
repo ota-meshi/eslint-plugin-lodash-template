@@ -16,12 +16,6 @@
     "endColumn": 24
   },
   {
-    "ruleId": "space-in-parens",
-    "message": "There should be no spaces inside this paren.",
-    "line": 19,
-    "column": 74
-  },
-  {
     "ruleId": "no-unused-vars",
     "message": "'getHostname' is assigned a value but never used.",
     "line": 26,
@@ -50,12 +44,6 @@
     "message": "Expected '===' and instead saw '=='.",
     "line": 109,
     "column": 26
-  },
-  {
-    "ruleId": "space-in-parens",
-    "message": "There should be no spaces inside this paren.",
-    "line": 176,
-    "column": 64
   },
   {
     "ruleId": "no-unneeded-ternary",

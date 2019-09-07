@@ -14,11 +14,5 @@
     "column": 9,
     "endLine": 11,
     "endColumn": 24
-  },
-  {
-    "ruleId": "space-in-parens",
-    "message": "There should be no spaces inside this paren.",
-    "line": 34,
-    "column": 72
   }
 ]

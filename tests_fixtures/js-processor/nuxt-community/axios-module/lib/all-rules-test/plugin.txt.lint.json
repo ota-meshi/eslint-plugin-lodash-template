@@ -1724,16 +1724,16 @@
     "column": 1
   },
   {
-    "ruleId": "wrap-regex",
-    "message": "Wrap the regexp literal in parens to disambiguate the slash.",
+    "ruleId": "require-unicode-regexp",
+    "message": "Use the 'u' flag.",
     "line": 83,
     "column": 12,
     "endLine": 83,
     "endColumn": 27
   },
   {
-    "ruleId": "require-unicode-regexp",
-    "message": "Use the 'u' flag.",
+    "ruleId": "wrap-regex",
+    "message": "Wrap the regexp literal in parens to disambiguate the slash.",
     "line": 83,
     "column": 12,
     "endLine": 83,
@@ -3382,14 +3382,14 @@
     "column": 2
   },
   {
-    "ruleId": "semi",
-    "message": "Missing semicolon.",
+    "ruleId": "eol-last",
+    "message": "Newline required at end of file but not found.",
     "line": 202,
     "column": 2
   },
   {
-    "ruleId": "eol-last",
-    "message": "Newline required at end of file but not found.",
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
     "line": 202,
     "column": 2
   }

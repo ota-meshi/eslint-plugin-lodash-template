@@ -54,7 +54,13 @@ module.exports = {
                 return -1
             }
             if (a.endLine == null) {
-                return b.endLine == null ? 0 : 1
+                return b.endLine != null
+                    ? 1
+                    : a.ruleId > b.ruleId
+                    ? 1
+                    : a.ruleId < b.ruleId
+                    ? -1
+                    : 0
             }
             if (b.endLine == null) {
                 return -1
@@ -71,7 +77,7 @@ module.exports = {
             if (a.endColumn < b.endColumn) {
                 return -1
             }
-            return 1
+            return a.ruleId > b.ruleId ? 1 : a.ruleId < b.ruleId ? -1 : 0
         })
     },
 }
