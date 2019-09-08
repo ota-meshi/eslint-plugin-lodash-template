@@ -1,0 +1,58 @@
+[
+  {
+    "ruleId": "no-undef",
+    "message": "'config' is not defined.",
+    "line": 12,
+    "column": 8,
+    "endLine": 12,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'config' is not defined.",
+    "line": 13,
+    "column": 35,
+    "endLine": 13,
+    "endColumn": 41
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'config' is not defined.",
+    "line": 14,
+    "column": 30,
+    "endLine": 14,
+    "endColumn": 36
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'config' is not defined.",
+    "line": 14,
+    "column": 47,
+    "endLine": 14,
+    "endColumn": 53
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'config' is not defined.",
+    "line": 15,
+    "column": 28,
+    "endLine": 15,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'opt' is not defined.",
+    "line": 17,
+    "column": 42,
+    "endLine": 17,
+    "endColumn": 45
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'opt' is not defined.",
+    "line": 17,
+    "column": 75,
+    "endLine": 17,
+    "endColumn": 78
+  }
+]

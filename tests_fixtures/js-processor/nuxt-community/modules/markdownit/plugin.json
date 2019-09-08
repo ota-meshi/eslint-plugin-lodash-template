@@ -1,0 +1,108 @@
+[
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected indentation of 2 spaces but found 0 spaces.",
+    "line": 5,
+    "column": 1,
+    "endLine": 5,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected indentation of 2 spaces but found 0 spaces.",
+    "line": 6,
+    "column": 1,
+    "endLine": 6,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected indentation of 2 spaces but found 0 spaces.",
+    "line": 7,
+    "column": 1,
+    "endLine": 7,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected indentation of 2 spaces but found 0 spaces.",
+    "line": 8,
+    "column": 1,
+    "endLine": 8,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'config' is not defined.",
+    "line": 12,
+    "column": 8,
+    "endLine": 12,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'config' is not defined.",
+    "line": 13,
+    "column": 35,
+    "endLine": 13,
+    "endColumn": 41
+  },
+  {
+    "ruleId": "semi",
+    "message": "Extra semicolon.",
+    "line": 13,
+    "column": 42
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'config' is not defined.",
+    "line": 14,
+    "column": 30,
+    "endLine": 14,
+    "endColumn": 36
+  },
+  {
+    "ruleId": "space-infix-ops",
+    "message": "Operator ':' must be spaced.",
+    "line": 14,
+    "column": 44
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'config' is not defined.",
+    "line": 14,
+    "column": 46,
+    "endLine": 14,
+    "endColumn": 52
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'config' is not defined.",
+    "line": 15,
+    "column": 28,
+    "endLine": 15,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "keyword-spacing",
+    "message": "Expected space(s) after \"for\".",
+    "line": 17,
+    "column": 37
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'opt' is not defined.",
+    "line": 17,
+    "column": 41,
+    "endLine": 17,
+    "endColumn": 44
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'opt' is not defined.",
+    "line": 17,
+    "column": 74,
+    "endLine": 17,
+    "endColumn": 77
+  }
+]

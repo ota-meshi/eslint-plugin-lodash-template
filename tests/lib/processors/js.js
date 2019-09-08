@@ -83,7 +83,7 @@ describe("js test", () => {
                     const cli = new CLIEngine({
                         cwd: FIXTURE_DIR,
                     })
-                    const report = cli.executeOnFiles(`${name}.js`)
+                    const report = cli.executeOnFiles([`${name}.js`])
                     const messages = testUtils.sortMessages(
                         report.results[0].messages
                     )
@@ -130,9 +130,9 @@ describe("js test", () => {
                             fix: true,
                         })
                         CLIEngine.outputFixes(
-                            cli.executeOnFiles(`${name}.fixed.js`)
+                            cli.executeOnFiles([`${name}.fixed.js`])
                         )
-                        const report = cli.executeOnFiles(`${name}.fixed.js`)
+                        const report = cli.executeOnFiles([`${name}.fixed.js`])
                         const messages = testUtils.sortMessages(
                             report.results[0].messages
                         )
@@ -202,9 +202,9 @@ describe("js test", () => {
                             const cli = new CLIEngine({
                                 cwd: allConfigTestDirPath,
                             })
-                            const report = cli.executeOnFiles(
-                                `${basename}.lint.js`
-                            )
+                            const report = cli.executeOnFiles([
+                                `${basename}.lint.js`,
+                            ])
                             const messages = testUtils.sortMessages(
                                 report.results[0].messages
                             )
@@ -240,11 +240,11 @@ describe("js test", () => {
                                 fix: true,
                             })
                             CLIEngine.outputFixes(
-                                cli.executeOnFiles(`${basename}.fixed.js`)
+                                cli.executeOnFiles([`${basename}.fixed.js`])
                             )
-                            const report = cli.executeOnFiles(
-                                `${basename}.fixed.js`
-                            )
+                            const report = cli.executeOnFiles([
+                                `${basename}.fixed.js`,
+                            ])
                             const messages = testUtils.sortMessages(
                                 report.results[0].messages
                             )

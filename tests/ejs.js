@@ -63,7 +63,7 @@ describe("ejs test", () => {
                         configFile: CONFIG_PATH,
                         useEslintrc: false,
                     })
-                    const report = cli.executeOnFiles(name)
+                    const report = cli.executeOnFiles([name])
                     const messages = testUtils.sortMessages(
                         report.results[0].messages
                     )
