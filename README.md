@@ -303,6 +303,49 @@ Please set **.eslintrc.js** as follows.
 +    ]
 ```
 
+### Also Applies ESLint to JavaScript Outside the Template Tag
+
+(*This is an experimental feature*)
+
+For example if you have a file like below.
+
+```js
+/* eslint no-multi-spaces: error */
+
+// if this plugin is not used, a parsing error will occur.
+const obj    = <%= JSON.stringify(param     ) %>
+//       ^^^^                          ^^^^^ 
+//         |                            |
+//         |          If you don't use `"plugin:lodash-template/recommended-with-js"`,
+//         |          only the space after `param` is reported.
+//         |
+//         + When using `"plugin:lodash-template/recommended-with-js"`, the space after `obj` is also reported.
+```
+
+Please set **.eslintrc.js** as follows.
+
+```diff
++    "overrides": [
++        {
++            "files": ["**/your/templates/*.js"],
++            "extends": ["plugin:lodash-template/recommended-with-js"]
++        }
++    ]
+```
+
+If you do not want to use the included rules, set the details as follows.
+
+```diff
+    "overrides": [
+        {
+            "files": ["**/your/templates/*.js"],
+-            "extends": ["plugin:lodash-template/recommended-with-js"],
++            "extends": ["plugin:lodash-template/base"],
++            "processor": "lodash-template/js"
+        }
+    ]
+```
+
 ## FAQ
 
 ### Editor Settings
