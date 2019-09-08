@@ -8,6 +8,22 @@
     "endColumn": 17
   },
   {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected relative indentation of 4 spaces but found 0 spaces.",
+    "line": 10,
+    "column": 3,
+    "endLine": 10,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected relative indentation of 4 spaces but found 0 spaces.",
+    "line": 12,
+    "column": 3,
+    "endLine": 12,
+    "endColumn": 3
+  },
+  {
     "ruleId": "brace-style",
     "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
     "line": 12,

@@ -40,6 +40,13 @@ output sample(on SublimeText):
 
 ![sample-sublime-text](./images/sample-sublime-text.png)
 
+## Features
+
+- Apply to [ESLint](http://eslint.org) for [Underscore.js](http://underscorejs.org/#template) and [Lodash](https://lodash.com/docs/#template) 's templates.
+- You can find issues specific to template tags.
+- Improves readability of HTML templates.
+- JavaScript templates apply to [ESLint](http://eslint.org), both inside and outside the template tag. (*This is an experimental feature*)
+
 ## Installation
 
 ```bash
@@ -94,6 +101,7 @@ This plugin provides four predefined configs:
 - `plugin:lodash-template/best-practices` - Above, plus rules to improve dev experience
 - `plugin:lodash-template/recommended` - Above, plus rules to improve code readability
 - `plugin:lodash-template/recommended-with-html` - Above, plus rules to improve code readability with HTML tamplate
+- `plugin:lodash-template/recommended-with-js` - `plugin:lodash-template/recommended` config, plus to enable ESLint parsing of js templates (*This is an experimental feature*)
 - `plugin:lodash-template/all` - All rules of this plugin are included
 
 ## Rules

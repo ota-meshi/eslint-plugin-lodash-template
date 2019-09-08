@@ -37,9 +37,8 @@ module.exports = {
     {
       files: ["*.js"],
       extends: [
-        "plugin:lodash-template/base"
+        "plugin:lodash-template/recommended-with-js"
       ],
-      processor: "lodash-template/js",
       globals: {
         options: true,
         serialize: true,

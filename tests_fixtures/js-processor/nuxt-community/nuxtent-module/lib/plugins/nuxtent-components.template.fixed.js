@@ -7,10 +7,10 @@ import {
 
 const mdComps = {
   <% options.components.forEach(([relativePath, filePath]) => {
-  print(`
+      print(`
     '${relativePath}': () => interopDefault(import('${filePath}')),`
-  )
-})
+      )
+    })
 %>
 }
 

@@ -16,6 +16,62 @@
     "endColumn": 99
   },
   {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected relative indentation of 2 spaces but found 0 spaces.",
+    "line": 17,
+    "column": 3,
+    "endLine": 17,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+    "line": 18,
+    "column": 3,
+    "endLine": 18,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+    "line": 19,
+    "column": 3,
+    "endLine": 19,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+    "line": 20,
+    "column": 3,
+    "endLine": 20,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+    "line": 21,
+    "column": 3,
+    "endLine": 21,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected relative indentation of 2 spaces but found 0 spaces.",
+    "line": 22,
+    "column": 3,
+    "endLine": 22,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected relative indentation of 2 spaces but found 0 spaces.",
+    "line": 23,
+    "column": 3,
+    "endLine": 23,
+    "endColumn": 3
+  },
+  {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
     "line": 32,

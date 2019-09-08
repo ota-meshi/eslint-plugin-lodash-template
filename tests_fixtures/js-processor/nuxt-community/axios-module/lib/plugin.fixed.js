@@ -179,7 +179,7 @@ export default (ctx, inject) => {
   <% for (const h of options.proxyHeadersIgnore) {
  %>delete axiosOptions.headers.common['<%= h %>']
   <% } %><%
-} %>
+    } %>
 
   if (process.server) {
     // Don't accept brotli encoding because Node can't parse it

@@ -4,8 +4,7 @@
   "overrides": [
     {
       "files": ["*.js"],
-      "extends": ["plugin:lodash-template/base"],
-      "processor": "lodash-template/js",
+      "extends": ["plugin:lodash-template/recommended-with-js"],
       "parserOptions": {
         "parser": "babel-eslint"
       },

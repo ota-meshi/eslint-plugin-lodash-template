@@ -4,12 +4,12 @@ importScripts(<%= [options.workboxURL, ...options.importScripts].map((i) => `'${
 // Configure
 // --------------------------------------------------
 
-<% if (options.config) {%>
+<% if (options.config) { %>
 // Set workbox config
 workbox.setConfig(<%= JSON.stringify(options.config, null, 2) %>)
 <% } %>
 
-<% if (options.cacheNames) {%>
+<% if (options.cacheNames) { %>
 // Set workbox cache names
 workbox.core.setCacheNameDetails(<%= JSON.stringify(options.cacheNames, null, 2) %>)
 <% } %>

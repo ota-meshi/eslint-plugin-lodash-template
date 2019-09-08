@@ -29,6 +29,13 @@ This plugin supports code checking for templates like the examples below.
 
 [***Playground on the Web***](./playground/README.md)
 
+## Features
+
+- Apply to [ESLint](http://eslint.org) for [Underscore.js](http://underscorejs.org/#template) and [Lodash](https://lodash.com/docs/#template) 's templates.
+- You can find issues specific to template tags.
+- Improves readability of HTML templates.
+- JavaScript templates apply to [ESLint](http://eslint.org), both inside and outside the template tag. (*This is an experimental feature*)
+
 ## Installation
 
 ```bash
@@ -71,6 +78,16 @@ This plugin does special handling for the following rule warnings in the templat
 | [`no-unused-expressions`](https://eslint.org/docs/rules/no-unused-expressions)| Disable warnings within interpolate(<%=...%>) | -- |
 | [`quotes`](https://eslint.org/docs/rules/quotes) | Disable warnings if doublequote is set | -- |
 | [`no-irregular-whitespace`](https://eslint.org/docs/rules/no-irregular-whitespace) | Disable warnings outside template tags | [`lodash-template/no-irregular-whitespace`](./docs/rules/no-irregular-whitespace.md) rule |
+
+## Configs
+
+This plugin provides four predefined configs:
+- `plugin:lodash-template/base` - Settings and rules to enable correct ESLint parsing
+- `plugin:lodash-template/best-practices` - Above, plus rules to improve dev experience
+- `plugin:lodash-template/recommended` - Above, plus rules to improve code readability
+- `plugin:lodash-template/recommended-with-html` - Above, plus rules to improve code readability with HTML tamplate
+- `plugin:lodash-template/recommended-with-js` - `plugin:lodash-template/recommended` config, plus to enable ESLint parsing of js templates (*This is an experimental feature*)
+- `plugin:lodash-template/all` - All rules of this plugin are included
 
 ## All Rules
 

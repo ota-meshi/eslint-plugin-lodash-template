@@ -11,7 +11,7 @@ module.exports = {
       {
         files: ["*.js"],
         extends: [
-          "plugin:lodash-template/base"
+          "plugin:lodash-template/recommended-with-js"
         ],
         parserOptions: {
           parser: 'vue-eslint-parser',
@@ -20,7 +20,6 @@ module.exports = {
           },
           sourceType: 'module'
         },
-        processor: "lodash-template/js",
         globals: {
           options: true,
           serialize: true,
