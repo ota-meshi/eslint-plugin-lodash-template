@@ -15,7 +15,7 @@ workbox.setConfig(<%= JSON.stringify(
 options.config,
 null,
 2
-) %>)
+) %>);
 <% } %>
 
 <% if (options.cacheNames) {%>
@@ -24,26 +24,26 @@ workbox.core.setCacheNameDetails(<%= JSON.stringify(
 options.cacheNames,
 null,
 2
-) %>)
+) %>);
 <% } %>
 
 <% if (options.clientsClaim) { %>
 // Start controlling any existing clients as soon as it activates
-workbox.core.clientsClaim()
+workbox.core.clientsClaim();
 <% } %>
 
 <% if (options.skipWaiting) { %>
 // Skip over the SW waiting lifecycle stage
-workbox.core.skipWaiting()
+workbox.core.skipWaiting();
 <% } %>
 
 <% if (options.cleanupOutdatedCaches) { %>
-workbox.precaching.cleanupOutdatedCaches()
+workbox.precaching.cleanupOutdatedCaches();
 <% } %>
 
 <% if (options.offlineAnalytics) { %>
 // Enable offline Google Analytics tracking
-workbox.googleAnalytics.initialize()
+workbox.googleAnalytics.initialize();
 <% } %>
 
 <% if (options.workboxExtensions) { %>
@@ -67,7 +67,7 @@ null,
 options.cacheOptions,
 null,
 2
-) %>)
+) %>);
 <% } %>
 
 <% if (options.cachingExtensions) { %>
@@ -87,7 +87,7 @@ null,
     new RegExp('<%= r.urlPattern %>'),
     new workbox.strategies.<%= r.handler %> (<%= JSON.stringify(r.strategyOptions || {}) %>),
 '<%= r.method %>'
-)
+);
 <% }) %>
 
 <% if (options.offlinePage) { %>

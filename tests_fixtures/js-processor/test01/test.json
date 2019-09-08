@@ -32,6 +32,12 @@
     "endColumn": 14
   },
   {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 2,
+    "column": 14
+  },
+  {
     "ruleId": "id-length",
     "message": "Identifier name 'v' is too short (< 2).",
     "line": 4,
@@ -54,5 +60,11 @@
     "column": 11,
     "endLine": 4,
     "endColumn": 14
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 4,
+    "column": 14
   }
 ]

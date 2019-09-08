@@ -14,5 +14,5 @@ key,
 value
 ] of Object.entries(options)) {
 %>
-export const <%= key %> = <%= stringifyValue(value) %>
+export const <%= key %> = <%= stringifyValue(value) %>;
 <% } %>

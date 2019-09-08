@@ -1,4 +1,4 @@
-import Axios from "axios"
+import Axios from "axios";
 <% if (options.retry) { %>import axiosRetry from 'axios-retry'<% } %>
 
 // Axios.prototype cannot be modified

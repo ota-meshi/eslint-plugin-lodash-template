@@ -54,5 +54,11 @@
     "column": 17,
     "endLine": 12,
     "endColumn": 18
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 14,
+    "column": 55
   }
 ]

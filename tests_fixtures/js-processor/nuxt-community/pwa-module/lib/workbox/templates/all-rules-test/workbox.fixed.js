@@ -9,7 +9,7 @@ async function register () {
     const {Workbox} = await import('workbox-cdn/workbox/workbox-window.<%= options.dev ? 'dev' : 'prod' %>.es5.mjs');
 
     const workbox = new Workbox(
-        '<%= options.swURL %>',
+'<%= options.swURL %>',
         {
             scope: '<%= options.swScope %>'
         }
@@ -26,6 +26,6 @@ window.$workbox = register().
         "Error registering workbox:",
         error
     );
-        <% } %>
+<% } %>
 
     });

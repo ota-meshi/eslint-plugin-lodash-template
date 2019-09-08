@@ -82,6 +82,12 @@
     "endColumn": 61
   },
   {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 9,
+    "column": 66
+  },
+  {
     "ruleId": "no-undef",
     "message": "'workbox' is not defined.",
     "line": 14,
@@ -126,12 +132,24 @@
     "endColumn": 80
   },
   {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 14,
+    "column": 85
+  },
+  {
     "ruleId": "no-undef",
     "message": "'workbox' is not defined.",
     "line": 19,
     "column": 1,
     "endLine": 19,
     "endColumn": 8
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 19,
+    "column": 28
   },
   {
     "ruleId": "no-undef",
@@ -142,6 +160,12 @@
     "endColumn": 8
   },
   {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 24,
+    "column": 27
+  },
+  {
     "ruleId": "no-undef",
     "message": "'workbox' is not defined.",
     "line": 28,
@@ -150,12 +174,24 @@
     "endColumn": 8
   },
   {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 28,
+    "column": 43
+  },
+  {
     "ruleId": "no-undef",
     "message": "'workbox' is not defined.",
     "line": 33,
     "column": 1,
     "endLine": 33,
     "endColumn": 8
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 33,
+    "column": 37
   },
   {
     "ruleId": "line-comment-position",
@@ -256,6 +292,12 @@
     "endColumn": 137
   },
   {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 47,
+    "column": 142
+  },
+  {
     "ruleId": "line-comment-position",
     "message": "Expected comment to be above code.",
     "line": 52,
@@ -346,6 +388,12 @@
     "column": 198,
     "endLine": 60,
     "endColumn": 199
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 60,
+    "column": 217
   },
   {
     "ruleId": "no-undef",
