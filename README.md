@@ -42,10 +42,10 @@ output sample(on SublimeText):
 
 ## Features
 
-- Apply to [ESLint](http://eslint.org) for [Underscore.js](http://underscorejs.org/#template) and [Lodash](https://lodash.com/docs/#template) 's templates.
+- Enable [ESLint](http://eslint.org) in [Underscore.js](http://underscorejs.org/#template) and [Lodash](https://lodash.com/docs/#template) 's templates.
 - You can find issues specific to template tags.
 - Improves readability of HTML templates.
-- JavaScript templates apply to [ESLint](http://eslint.org), both inside and outside the template tag. (*This is an experimental feature*)
+- For JavaScript templates, enable [ESLint](http://eslint.org) both inside and outside the template tag. (*This is an experimental feature*)
 
 ## Installation
 
@@ -303,7 +303,7 @@ Please set **.eslintrc.js** as follows.
 +    ]
 ```
 
-### Also Applies ESLint to JavaScript Outside the Template Tag
+### For JavaScript Templates
 
 (*This is an experimental feature*)
 
