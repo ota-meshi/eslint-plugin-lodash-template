@@ -1,0 +1,170 @@
+[
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "A space is required after '{'.",
+    "line": 5,
+    "column": 27
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "A space is required before '}'.",
+    "line": 5,
+    "column": 43
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 8,
+    "column": 16,
+    "endLine": 8,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 8,
+    "column": 23,
+    "endLine": 8,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 8,
+    "column": 34,
+    "endLine": 8,
+    "endColumn": 37
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 8,
+    "column": 45,
+    "endLine": 8,
+    "endColumn": 47
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 11,
+    "column": 12,
+    "endLine": 11,
+    "endColumn": 15
+  },
+  {
+    "ruleId": "no-useless-escape",
+    "message": "Unnecessary escape character: \\/.",
+    "line": 11,
+    "column": 34,
+    "endLine": 11,
+    "endColumn": 35
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use singlequote.",
+    "line": 11,
+    "column": 58,
+    "endLine": 11,
+    "endColumn": 60
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 11,
+    "column": 61,
+    "endLine": 11,
+    "endColumn": 63
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 11,
+    "column": 70,
+    "endLine": 11,
+    "endColumn": 73
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 11,
+    "column": 81,
+    "endLine": 11,
+    "endColumn": 83
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "A space is required after '{'.",
+    "line": 17,
+    "column": 27
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "A space is required before '}'.",
+    "line": 17,
+    "column": 43
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 19,
+    "column": 17,
+    "endLine": 19,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 19,
+    "column": 35,
+    "endLine": 19,
+    "endColumn": 37
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 21,
+    "column": 17,
+    "endLine": 21,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "no-useless-escape",
+    "message": "Unnecessary escape character: \\/.",
+    "line": 21,
+    "column": 39,
+    "endLine": 21,
+    "endColumn": 40
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use singlequote.",
+    "line": 21,
+    "column": 63,
+    "endLine": 21,
+    "endColumn": 65
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 21,
+    "column": 66,
+    "endLine": 21,
+    "endColumn": 68
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 25,
+    "column": 16,
+    "endLine": 25,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 25,
+    "column": 40,
+    "endLine": 25,
+    "endColumn": 42
+  }
+]

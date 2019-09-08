@@ -73,6 +73,16 @@ describe("js test", () => {
                 // write for autofix
                 fs.writeFileSync(`${filepath}.fixed.js`, contents, "utf8")
 
+                let parsingErrorJson = null
+                if (testUtils.existsPath(`${filepath}.parsing_error.json`)) {
+                    parsingErrorJson = JSON.parse(
+                        fs.readFileSync(
+                            `${filepath}.parsing_error.json`,
+                            "utf8"
+                        )
+                    )
+                }
+
                 it("lint", () => {
                     const cli = new CLIEngine({
                         cwd: FIXTURE_DIR,
@@ -98,10 +108,16 @@ describe("js test", () => {
                         )
                         throw e
                     }
-                    assert.ok(
-                        !stringifyMessages(messages).includes("Parsing error"),
-                        "No Parsing error"
-                    )
+                    if (!parsingErrorJson) {
+                        assert.ok(
+                            !stringifyMessages(messages).includes(
+                                "Parsing error"
+                            ),
+                            "No Parsing error"
+                        )
+                    } else {
+                        assertMessages(messages, parsingErrorJson)
+                    }
                 })
 
                 it("autofix", () => {
@@ -133,10 +149,14 @@ describe("js test", () => {
                         )
                         throw e
                     }
-                    assert.ok(
-                        !stringifyMessages(messages).includes("Parsing error"),
-                        "No Parsing error"
-                    )
+                    if (!parsingErrorJson) {
+                        assert.ok(
+                            !stringifyMessages(messages).includes(
+                                "Parsing error"
+                            ),
+                            "No Parsing error"
+                        )
+                    }
                 })
 
                 const allConfigTestDirPath = path.join(
@@ -195,12 +215,14 @@ describe("js test", () => {
                             )
                             throw e
                         }
-                        assert.ok(
-                            !stringifyMessages(messages).includes(
-                                "Parsing error"
-                            ),
-                            "No Parsing error"
-                        )
+                        if (!parsingErrorJson) {
+                            assert.ok(
+                                !stringifyMessages(messages).includes(
+                                    "Parsing error"
+                                ),
+                                "No Parsing error"
+                            )
+                        }
                     })
                     it("all-rules-test autofix", () => {
                         const cli = new CLIEngine({
@@ -235,12 +257,14 @@ describe("js test", () => {
                             )
                             throw e
                         }
-                        assert.ok(
-                            !stringifyMessages(messages).includes(
-                                "Parsing error"
-                            ),
-                            "No Parsing error"
-                        )
+                        if (!parsingErrorJson) {
+                            assert.ok(
+                                !stringifyMessages(messages).includes(
+                                    "Parsing error"
+                                ),
+                                "No Parsing error"
+                            )
+                        }
                     })
                 }
             })

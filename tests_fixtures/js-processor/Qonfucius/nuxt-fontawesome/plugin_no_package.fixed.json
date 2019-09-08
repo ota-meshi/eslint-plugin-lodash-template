@@ -1,0 +1,18 @@
+[
+  {
+    "ruleId": "no-useless-escape",
+    "message": "Unnecessary escape character: \\/.",
+    "line": 11,
+    "column": 35,
+    "endLine": 11,
+    "endColumn": 36
+  },
+  {
+    "ruleId": "no-useless-escape",
+    "message": "Unnecessary escape character: \\/.",
+    "line": 21,
+    "column": 40,
+    "endLine": 21,
+    "endColumn": 41
+  }
+]

@@ -50,8 +50,12 @@ describe("index test", () => {
             },
         }
         const options = {
-            preprocess: plugin.processors.html.preprocess,
-            postprocess: plugin.processors.html.postprocess,
+            preprocess(code) {
+                return plugin.processors.base.preprocess(code, "test.ejs")
+            },
+            postprocess(messages) {
+                return plugin.processors.base.postprocess(messages, "test.ejs")
+            },
         }
         linter.defineParser(
             "micro-template-eslint-parser",
