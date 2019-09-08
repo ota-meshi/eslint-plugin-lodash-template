@@ -129,10 +129,8 @@ Enforce all the rules in this category with:
 |    | Rule ID | Description |
 |:---|:--------|:------------|
 |  | [lodash-template/no-empty-template-tag](./docs/rules/no-empty-template-tag.md) | disallow empty micro-template tag. (ex. :ng: `<% %>`) |
-|  | [lodash-template/no-html-comments](./docs/rules/no-html-comments.md) | disallow HTML comments. (ex. :ng: `<!-- comment -->`) |
 |  | [lodash-template/no-invalid-template-interpolation](./docs/rules/no-invalid-template-interpolation.md) | disallow other than expression in micro-template interpolation. (ex. :ng: `<%= if (test) { %>`) |
 | :wrench: | [lodash-template/no-semi-in-template-interpolation](./docs/rules/no-semi-in-template-interpolation.md) | disallow the semicolon at the end of expression in micro template interpolation.(ex. :ok: `<%= text %>` :ng: `<%= text; %>`) |
-|  | [lodash-template/no-warning-html-comments](./docs/rules/no-warning-html-comments.md) | disallow specified warning terms in HTML comments. (ex. :ng: `<!-- TODO:task -->`) |
 
 ### Recommended (Improve Readability)
 
@@ -174,8 +172,10 @@ Enforce all the rules in this category and all the rules in `Best Practices`/`Re
 | :wrench: | [lodash-template/html-indent](./docs/rules/html-indent.md) | enforce consistent HTML indentation. |
 | :wrench: | [lodash-template/max-attributes-per-line](./docs/rules/max-attributes-per-line.md) | enforce the maximum number of HTML attributes per line |
 |  | [lodash-template/no-duplicate-attributes](./docs/rules/no-duplicate-attributes.md) | disallow duplication of HTML attributes. (ex. :ng: `<div foo foo>`) |
+|  | [lodash-template/no-html-comments](./docs/rules/no-html-comments.md) | disallow HTML comments. (ex. :ng: `<!-- comment -->`) |
 | :wrench: | [lodash-template/no-multi-spaces-in-html-tag](./docs/rules/no-multi-spaces-in-html-tag.md) | disallow multiple spaces in HTML tags. (ex. :ng: `<input···type="text">`) |
 | :wrench: | [lodash-template/no-space-attribute-equal-sign](./docs/rules/no-space-attribute-equal-sign.md) | disallow spacing around equal signs in attribute. (ex. :ok: `<div class="item">` :ng: `<div class = "item">`) |
+|  | [lodash-template/no-warning-html-comments](./docs/rules/no-warning-html-comments.md) | disallow specified warning terms in HTML comments. (ex. :ng: `<!-- TODO:task -->`) |
 
 ### Uncategorized
 

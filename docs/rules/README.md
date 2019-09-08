@@ -33,10 +33,8 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 | Rule ID | Description |    |
 |:--------|:------------|:---|
 | [lodash-template/no-empty-template-tag](./no-empty-template-tag.md) | disallow empty micro-template tag. (ex. :ng: `<% %>`) |  |
-| [lodash-template/no-html-comments](./no-html-comments.md) | disallow HTML comments. (ex. :ng: `<!-- comment -->`) |  |
 | [lodash-template/no-invalid-template-interpolation](./no-invalid-template-interpolation.md) | disallow other than expression in micro-template interpolation. (ex. :ng: `<%= if (test) { %>`) |  |
 | [lodash-template/no-semi-in-template-interpolation](./no-semi-in-template-interpolation.md) | disallow the semicolon at the end of expression in micro template interpolation.(ex. :ok: `<%= text %>` :ng: `<%= text; %>`) | :wrench: |
-| [lodash-template/no-warning-html-comments](./no-warning-html-comments.md) | disallow specified warning terms in HTML comments. (ex. :ng: `<!-- TODO:task -->`) |  |
 
 ## Recommended (Improve Readability)
 
@@ -78,8 +76,10 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 | [lodash-template/html-indent](./html-indent.md) | enforce consistent HTML indentation. | :wrench: |
 | [lodash-template/max-attributes-per-line](./max-attributes-per-line.md) | enforce the maximum number of HTML attributes per line | :wrench: |
 | [lodash-template/no-duplicate-attributes](./no-duplicate-attributes.md) | disallow duplication of HTML attributes. (ex. :ng: `<div foo foo>`) |  |
+| [lodash-template/no-html-comments](./no-html-comments.md) | disallow HTML comments. (ex. :ng: `<!-- comment -->`) |  |
 | [lodash-template/no-multi-spaces-in-html-tag](./no-multi-spaces-in-html-tag.md) | disallow multiple spaces in HTML tags. (ex. :ng: `<input···type="text">`) | :wrench: |
 | [lodash-template/no-space-attribute-equal-sign](./no-space-attribute-equal-sign.md) | disallow spacing around equal signs in attribute. (ex. :ok: `<div class="item">` :ng: `<div class = "item">`) | :wrench: |
+| [lodash-template/no-warning-html-comments](./no-warning-html-comments.md) | disallow specified warning terms in HTML comments. (ex. :ng: `<!-- TODO:task -->`) |  |
 
 ## Uncategorized
 
