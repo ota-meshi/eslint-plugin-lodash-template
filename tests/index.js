@@ -50,8 +50,8 @@ describe("index test", () => {
             },
         }
         const options = {
-            preprocess: plugin.processors.base.preprocess,
-            postprocess: plugin.processors.base.postprocess,
+            preprocess: plugin.processors.html.preprocess,
+            postprocess: plugin.processors.html.postprocess,
         }
         linter.defineParser(
             "micro-template-eslint-parser",
@@ -64,13 +64,6 @@ describe("index test", () => {
         })
 
         assert.strictEqual(messagesEjs[0].ruleId, "no-empty-template-tag")
-
-        const messagesEjb = linter.verify("'use strict'<%%>", config, {
-            filename: "test.ejb",
-            ...options,
-        })
-
-        assert.strictEqual(messagesEjb[0].ruleId, "no-empty-template-tag")
     })
     it("If it does not pass through the processor, it will not be processed by the parser.", () => {
         const linter = new eslint.Linter()

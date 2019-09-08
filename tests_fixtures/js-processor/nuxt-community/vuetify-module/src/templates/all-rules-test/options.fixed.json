@@ -1,0 +1,10 @@
+[
+  {
+    "ruleId": "no-undef",
+    "message": "'serializeFunction' is not defined.",
+    "line": 1,
+    "column": 20,
+    "endLine": 1,
+    "endColumn": 37
+  }
+]
