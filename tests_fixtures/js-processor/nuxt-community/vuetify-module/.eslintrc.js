@@ -3,7 +3,7 @@ module.exports = {
   extends: ["@nuxtjs/eslint-config-typescript"],
   overrides: [
     {
-      files: ["*.js"],
+      files: "*.js",
       extends: ["plugin:lodash-template/recommended-with-js"],
       parserOptions: {
         parser: 'vue-eslint-parser'

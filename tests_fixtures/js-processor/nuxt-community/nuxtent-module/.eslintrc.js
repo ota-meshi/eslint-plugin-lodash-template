@@ -35,7 +35,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["*.js"],
+      files: "*.js",
       extends: [
         "plugin:lodash-template/recommended-with-js"
       ],

@@ -10,10 +10,6 @@ const testUtils = require("../../test-utils")
 
 const CLIEngine = eslint.CLIEngine
 
-if (semver.satisfies(eslintVersion, "<6.0.0")) {
-    return
-}
-
 const FIXTURE_DIR = path.join(__dirname, "../../../tests_fixtures/js-processor")
 const ALL_RULES_CONFIG_PATH = path.join(FIXTURE_DIR, "all-rules.eslintrc.js")
 
@@ -116,7 +112,12 @@ describe("js test", () => {
                             "No Parsing error"
                         )
                     } else {
-                        assertMessages(messages, parsingErrorJson)
+                        assert.ok(
+                            stringifyMessages(messages).includes(
+                                "Parsing error"
+                            ),
+                            "Has Parsing error"
+                        )
                     }
                 })
 

@@ -10,7 +10,7 @@ module.exports = {
   extends: ["eslint:all"],
   overrides: [
     {
-      files: ["*.js"],
+      files: "*.js",
       extends: ["plugin:lodash-template/all"],
       processor: "lodash-template/js"
     }
