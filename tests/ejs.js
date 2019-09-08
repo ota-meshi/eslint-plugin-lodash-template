@@ -64,7 +64,9 @@ describe("ejs test", () => {
                         useEslintrc: false,
                     })
                     const report = cli.executeOnFiles(name)
-                    const messages = report.results[0].messages
+                    const messages = testUtils.sortMessages(
+                        report.results[0].messages
+                    )
 
                     const expectFilepath = path.join(
                         FIXTURE_DIR,

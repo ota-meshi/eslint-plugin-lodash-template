@@ -6,10 +6,10 @@
   "scripts": {
     "lint": "node -e \"if(process.env.ESLINT=='low'||process.env.ESLINT=='high')process.exit(1)\" && eslint tests lib --ext .js,.vue --ignore-pattern \"samples\" --ignore-pattern \"tests_fixtures\" || node -e \"if(process.env.ESLINT!='low'&&process.env.ESLINT!='high')process.exit(1)\"",
     "pretest": "npm run lint",
-    "test:base": "mocha \"tests/**/*.js\" --reporter dot",
+    "test:base": "mocha \"tests/**/*.js\" --reporter dot --timeout 60000",
     "test:list": "mocha \"tests/**/*.js\" --reporter list | tee .test-result-list.txt",
     "test": "npm run test:nyc",
-    "test:nyc": "nyc --reporter=lcov npm run test:base -- --timeout 60000",
+    "test:nyc": "nyc --reporter=lcov npm run test:base",
     "test:d": "mocha --inspect --debug-brk \"tests/**/*.js\" --reporter dot",
     "watch": "npm run test:base -- --watch",
     "update": "node ./tools/update.js && npm run lint:fix && npm run test",
@@ -23,7 +23,7 @@
     "docs:deploysetup": "npm run docs:build && npm run docs:clean && npm run docs:copy",
     "docs:clean": "rimraf assets",
     "docs:copy": "cpx \"docs/\\.vuepress/dist/**\" . -u",
-    "updatefixture": "cross-env UPDATE_FIXTURE=\"true\" npm run test:base -- --timeout 60000"
+    "updatefixture": "cross-env UPDATE_FIXTURE=\"true\" npm run test:base"
   },
   "files": [
     "lib"

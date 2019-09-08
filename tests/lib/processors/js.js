@@ -10,6 +10,10 @@ const testUtils = require("../../test-utils")
 
 const CLIEngine = eslint.CLIEngine
 
+if (semver.satisfies(eslintVersion, "<6.0.0")) {
+    return
+}
+
 const FIXTURE_DIR = path.join(__dirname, "../../../tests_fixtures/js-processor")
 const ALL_RULES_CONFIG_PATH = path.join(FIXTURE_DIR, "all-rules.eslintrc.js")
 
@@ -140,7 +144,7 @@ describe("js test", () => {
                     "../all-rules-test"
                 )
                 if (
-                    semver.satisfies(eslintVersion, ">=6.2.0") &&
+                    semver.satisfies(eslintVersion, ">=6.3.0") &&
                     testUtils.existsPath(allConfigTestDirPath)
                 ) {
                     const basename = path.basename(name)
