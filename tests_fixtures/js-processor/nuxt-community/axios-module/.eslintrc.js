@@ -10,9 +10,7 @@ module.exports = {
     overrides: [
       {
         files: "*.js",
-        extends: [
-          "plugin:lodash-template/recommended-with-js"
-        ],
+        extends: ["plugin:lodash-template/recommended-with-js"],
         parserOptions: {
           parser: 'vue-eslint-parser',
           parserOptions: {

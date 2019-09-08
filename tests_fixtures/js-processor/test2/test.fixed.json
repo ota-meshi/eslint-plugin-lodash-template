@@ -2,9 +2,9 @@
   {
     "ruleId": "lodash-template/prefer-escape-template-interpolations",
     "message": "The escape micro-template interpolation is preferable.",
-    "line": 4,
+    "line": 5,
     "column": 13,
-    "endLine": 4,
+    "endLine": 5,
     "endColumn": 42
   }
 ]

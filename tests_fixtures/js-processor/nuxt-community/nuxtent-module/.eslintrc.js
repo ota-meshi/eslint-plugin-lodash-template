@@ -17,7 +17,7 @@ module.exports = {
     'standard',
     'plugin:unicorn/recommended',
     'prettier/unicorn',
-    'prettier/standard',
+    'prettier/standard'
   ],
   'rules': {
     'curly': [
@@ -36,9 +36,7 @@ module.exports = {
   overrides: [
     {
       files: "*.js",
-      extends: [
-        "plugin:lodash-template/recommended-with-js"
-      ],
+      extends: ["plugin:lodash-template/recommended-with-js"],
       globals: {
         options: true,
         serialize: true,

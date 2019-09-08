@@ -5,7 +5,7 @@ module.exports = {
       browser: true,
       node: true,
     },
-    extends: 'airbnb-base',
+    extends: ['airbnb-base'],
     // required to lint *.vue files
     plugins: [],
     // add your custom rules here
@@ -18,9 +18,7 @@ module.exports = {
     overrides: [
       {
         files: "*.js",
-        extends: [
-          "plugin:lodash-template/recommended-with-js"
-        ],
+        extends: ["plugin:lodash-template/recommended-with-js"],
         parserOptions: {
           parser: 'babel-eslint',
         },

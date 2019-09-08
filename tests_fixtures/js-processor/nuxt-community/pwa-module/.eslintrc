@@ -1,7 +1,7 @@
 
 {
   "root": true,
-  "extends": "standard",
+  "extends": ["standard", "plugin:lodash-template/base"],
   "plugins": [
       "jest"
   ],
@@ -11,9 +11,16 @@
   "overrides": [
     {
       "files": "*.js",
-      "extends": [
-        "plugin:lodash-template/recommended-with-js"
-      ],
+      "processor": "lodash-template/js",
+      "rules": {
+        "lodash-template/no-empty-template-tag": "error",
+        "lodash-template/no-invalid-template-interpolation": "error",
+        "lodash-template/no-semi-in-template-interpolation": "error",
+        "lodash-template/no-irregular-whitespace": "error",
+        "lodash-template/no-multi-spaces-in-script": "error",
+        "lodash-template/script-indent": "error",
+        "lodash-template/template-tag-spacing": "error"
+      },
       "parserOptions": {
         "parser": "babel-eslint"
       },

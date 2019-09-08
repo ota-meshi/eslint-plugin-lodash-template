@@ -97,6 +97,7 @@ This plugin does special handling for the following rule warnings in the templat
 ## Configs
 
 This plugin provides four predefined configs:
+
 - `plugin:lodash-template/base` - Settings and rules to enable correct ESLint parsing
 - `plugin:lodash-template/best-practices` - Above, plus rules to improve dev experience
 - `plugin:lodash-template/recommended` - Above, plus rules to improve code readability
@@ -209,7 +210,7 @@ Enforce all the rules in this category and all the rules in `Best Practices`/`Re
 
 Please set the global variable used in all templates as follows.
 
-**.eslintrc.json**:
+**.eslintrc.\***:
 
 ```diff
   {
@@ -234,7 +235,7 @@ Please write the global comment in the file as follows for the variable to be us
 
 Please set as follows.
 
-**.eslintrc.json**:
+**.eslintrc.\***:
 
 ```diff
   {
@@ -262,7 +263,7 @@ _.templateSettings = {
 };
 ```
 
-please set `parserOptions`(ex. **.eslintrc.js**) as follows.
+please set `parserOptions`(ex. **.eslintrc.\***) as follows.
 
 ```diff
       parserOptions: {
@@ -290,7 +291,7 @@ For example, to parse like [EJS](http://ejs.co/), set as follows,
 
 ### Customize target extentions
 
-Please set **.eslintrc.js** as follows.
+Please set **.eslintrc.\*** as follows.
 
 (For example, for [EJS](http://ejs.co/).)
 
@@ -311,6 +312,7 @@ For example if you have a file like below.
 
 ```js
 /* eslint no-multi-spaces: error */
+<% /* eslint no-multi-spaces: error */ %>
 
 // if this plugin is not used, a parsing error will occur.
 const obj    = <%= JSON.stringify(param     ) %>
@@ -322,7 +324,9 @@ const obj    = <%= JSON.stringify(param     ) %>
 //         + When using `"plugin:lodash-template/recommended-with-js"`, the space after `obj` is also reported.
 ```
 
-Please set **.eslintrc.js** as follows.
+#### Configuring
+
+Please set **.eslintrc.\*** as follows.
 
 ```diff
 +    "overrides": [
@@ -341,7 +345,11 @@ If you do not want to use the included rules, set the details as follows.
             "files": ["**/your/templates/*.js"],
 -            "extends": ["plugin:lodash-template/recommended-with-js"],
 +            "extends": ["plugin:lodash-template/base"],
-+            "processor": "lodash-template/js"
++            "processor": "lodash-template/js",
++            "rules": {
++                "lodash-template/no-invalid-template-interpolation": "error"
++                ...
++            }
         }
     ]
 ```

@@ -9,7 +9,7 @@ module.exports = {
       node: true,
       jest: true
     },
-    extends: 'standard',
+    extends: ['standard'],
     plugins: ['jest', 'vue'],
     rules: {
       // Allow paren-less arrow functions
@@ -28,9 +28,7 @@ module.exports = {
     overrides: [
       {
         files: "*.js",
-        extends: [
-          "plugin:lodash-template/recommended-with-js"
-        ],
+        extends: ["plugin:lodash-template/recommended-with-js"],
         globals: {
           options: true,
           serialize: true,
