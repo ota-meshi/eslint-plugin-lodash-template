@@ -92,19 +92,21 @@ describe("js test", () => {
                         FIXTURE_DIR,
                         `${name}.json`
                     )
-                    try {
-                        assertMessages(
-                            messages,
-                            JSON.parse(fs.readFileSync(expectFilepath, "utf8"))
-                        )
-                    } catch (e) {
-                        testUtils.writeFile(
-                            expectFilepath,
-                            stringifyMessages(messages)
-                        )
-                        throw e
-                    }
                     if (!parsingErrorJson) {
+                        try {
+                            assertMessages(
+                                messages,
+                                JSON.parse(
+                                    fs.readFileSync(expectFilepath, "utf8")
+                                )
+                            )
+                        } catch (e) {
+                            testUtils.writeFile(
+                                expectFilepath,
+                                stringifyMessages(messages)
+                            )
+                            throw e
+                        }
                         assert.ok(
                             !stringifyMessages(messages).includes(
                                 "Parsing error"
@@ -121,152 +123,158 @@ describe("js test", () => {
                     }
                 })
 
-                it("autofix", () => {
-                    const cli = new CLIEngine({
-                        cwd: FIXTURE_DIR,
-                        fix: true,
-                    })
-                    CLIEngine.outputFixes(
-                        cli.executeOnFiles(`${name}.fixed.js`)
-                    )
-                    const report = cli.executeOnFiles(`${name}.fixed.js`)
-                    const messages = testUtils.sortMessages(
-                        report.results[0].messages
-                    )
+                if (!parsingErrorJson) {
+                    it("autofix", () => {
+                        const cli = new CLIEngine({
+                            cwd: FIXTURE_DIR,
+                            fix: true,
+                        })
+                        CLIEngine.outputFixes(
+                            cli.executeOnFiles(`${name}.fixed.js`)
+                        )
+                        const report = cli.executeOnFiles(`${name}.fixed.js`)
+                        const messages = testUtils.sortMessages(
+                            report.results[0].messages
+                        )
 
-                    const expectFilepath = path.join(
-                        FIXTURE_DIR,
-                        `${name}.fixed.json`
-                    )
-                    try {
-                        assertMessages(
-                            messages,
-                            JSON.parse(fs.readFileSync(expectFilepath, "utf8"))
+                        const expectFilepath = path.join(
+                            FIXTURE_DIR,
+                            `${name}.fixed.json`
                         )
-                    } catch (e) {
-                        testUtils.writeFile(
-                            expectFilepath,
-                            stringifyMessages(messages)
-                        )
-                        throw e
-                    }
-                    if (!parsingErrorJson) {
+                        try {
+                            assertMessages(
+                                messages,
+                                JSON.parse(
+                                    fs.readFileSync(expectFilepath, "utf8")
+                                )
+                            )
+                        } catch (e) {
+                            testUtils.writeFile(
+                                expectFilepath,
+                                stringifyMessages(messages)
+                            )
+                            throw e
+                        }
                         assert.ok(
                             !stringifyMessages(messages).includes(
                                 "Parsing error"
                             ),
                             "No Parsing error"
                         )
+                    })
+
+                    const allConfigTestDirPath = path.join(
+                        filepath,
+                        "../all-rules-test"
+                    )
+                    if (
+                        semver.satisfies(eslintVersion, ">=6.3.0") &&
+                        testUtils.existsPath(allConfigTestDirPath)
+                    ) {
+                        const basename = path.basename(name)
+
+                        // write for lint for all-rules
+                        fs.writeFileSync(
+                            path.join(
+                                allConfigTestDirPath,
+                                `${basename}.lint.js`
+                            ),
+                            contents,
+                            "utf8"
+                        )
+                        // write for autofix for all-rules
+                        fs.writeFileSync(
+                            path.join(
+                                allConfigTestDirPath,
+                                `${basename}.fixed.js`
+                            ),
+                            contents,
+                            "utf8"
+                        )
+                        // write for autofix for all-rules
+                        fs.writeFileSync(
+                            path.join(allConfigTestDirPath, ".eslintrc.js"),
+                            fs.readFileSync(ALL_RULES_CONFIG_PATH, "utf8"),
+                            "utf8"
+                        )
+
+                        it("all-rules-test lint", () => {
+                            const cli = new CLIEngine({
+                                cwd: allConfigTestDirPath,
+                            })
+                            const report = cli.executeOnFiles(
+                                `${basename}.lint.js`
+                            )
+                            const messages = testUtils.sortMessages(
+                                report.results[0].messages
+                            )
+
+                            const expectFilepath = path.join(
+                                allConfigTestDirPath,
+                                `${basename}.lint.json`
+                            )
+                            try {
+                                assertMessages(
+                                    messages,
+                                    JSON.parse(
+                                        fs.readFileSync(expectFilepath, "utf8")
+                                    )
+                                )
+                            } catch (e) {
+                                testUtils.writeFile(
+                                    expectFilepath,
+                                    stringifyMessages(messages)
+                                )
+                                throw e
+                            }
+                            assert.ok(
+                                !stringifyMessages(messages).includes(
+                                    "Parsing error"
+                                ),
+                                "No Parsing error"
+                            )
+                        })
+                        it("all-rules-test autofix", () => {
+                            const cli = new CLIEngine({
+                                cwd: allConfigTestDirPath,
+                                fix: true,
+                            })
+                            CLIEngine.outputFixes(
+                                cli.executeOnFiles(`${basename}.fixed.js`)
+                            )
+                            const report = cli.executeOnFiles(
+                                `${basename}.fixed.js`
+                            )
+                            const messages = testUtils.sortMessages(
+                                report.results[0].messages
+                            )
+
+                            const expectFilepath = path.join(
+                                allConfigTestDirPath,
+                                `${basename}.fixed.json`
+                            )
+                            try {
+                                assertMessages(
+                                    messages,
+                                    JSON.parse(
+                                        fs.readFileSync(expectFilepath, "utf8")
+                                    )
+                                )
+                            } catch (e) {
+                                testUtils.writeFile(
+                                    expectFilepath,
+                                    stringifyMessages(messages)
+                                )
+                                throw e
+                            }
+                            assert.ok(
+                                !stringifyMessages(messages).includes(
+                                    "Parsing error"
+                                ),
+                                "No Parsing error"
+                            )
+                        })
                     }
-                })
-
-                const allConfigTestDirPath = path.join(
-                    filepath,
-                    "../all-rules-test"
-                )
-                if (
-                    semver.satisfies(eslintVersion, ">=6.3.0") &&
-                    testUtils.existsPath(allConfigTestDirPath)
-                ) {
-                    const basename = path.basename(name)
-
-                    // write for lint for all-rules
-                    fs.writeFileSync(
-                        path.join(allConfigTestDirPath, `${basename}.lint.js`),
-                        contents,
-                        "utf8"
-                    )
-                    // write for autofix for all-rules
-                    fs.writeFileSync(
-                        path.join(allConfigTestDirPath, `${basename}.fixed.js`),
-                        contents,
-                        "utf8"
-                    )
-                    // write for autofix for all-rules
-                    fs.writeFileSync(
-                        path.join(allConfigTestDirPath, ".eslintrc.js"),
-                        fs.readFileSync(ALL_RULES_CONFIG_PATH, "utf8"),
-                        "utf8"
-                    )
-
-                    it("all-rules-test lint", () => {
-                        const cli = new CLIEngine({
-                            cwd: allConfigTestDirPath,
-                        })
-                        const report = cli.executeOnFiles(`${basename}.lint.js`)
-                        const messages = testUtils.sortMessages(
-                            report.results[0].messages
-                        )
-
-                        const expectFilepath = path.join(
-                            allConfigTestDirPath,
-                            `${basename}.lint.json`
-                        )
-                        try {
-                            assertMessages(
-                                messages,
-                                JSON.parse(
-                                    fs.readFileSync(expectFilepath, "utf8")
-                                )
-                            )
-                        } catch (e) {
-                            testUtils.writeFile(
-                                expectFilepath,
-                                stringifyMessages(messages)
-                            )
-                            throw e
-                        }
-                        if (!parsingErrorJson) {
-                            assert.ok(
-                                !stringifyMessages(messages).includes(
-                                    "Parsing error"
-                                ),
-                                "No Parsing error"
-                            )
-                        }
-                    })
-                    it("all-rules-test autofix", () => {
-                        const cli = new CLIEngine({
-                            cwd: allConfigTestDirPath,
-                            fix: true,
-                        })
-                        CLIEngine.outputFixes(
-                            cli.executeOnFiles(`${basename}.fixed.js`)
-                        )
-                        const report = cli.executeOnFiles(
-                            `${basename}.fixed.js`
-                        )
-                        const messages = testUtils.sortMessages(
-                            report.results[0].messages
-                        )
-
-                        const expectFilepath = path.join(
-                            allConfigTestDirPath,
-                            `${basename}.fixed.json`
-                        )
-                        try {
-                            assertMessages(
-                                messages,
-                                JSON.parse(
-                                    fs.readFileSync(expectFilepath, "utf8")
-                                )
-                            )
-                        } catch (e) {
-                            testUtils.writeFile(
-                                expectFilepath,
-                                stringifyMessages(messages)
-                            )
-                            throw e
-                        }
-                        if (!parsingErrorJson) {
-                            assert.ok(
-                                !stringifyMessages(messages).includes(
-                                    "Parsing error"
-                                ),
-                                "No Parsing error"
-                            )
-                        }
-                    })
                 }
             })
         }
