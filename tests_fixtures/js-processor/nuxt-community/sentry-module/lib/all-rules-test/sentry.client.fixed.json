@@ -1,0 +1,122 @@
+[
+  {
+    "ruleId": "no-unused-vars",
+    "message": "'VueLib' is defined but never used.",
+    "line": 1,
+    "column": 8,
+    "endLine": 1,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "sort-imports",
+    "message": "Expected 'all' syntax before 'single' syntax.",
+    "line": 2,
+    "column": 1,
+    "endLine": 2,
+    "endColumn": 43
+  },
+  {
+    "ruleId": "object-curly-newline",
+    "message": "Unexpected line break before this closing brace.",
+    "line": 4,
+    "column": 18
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'serialize' is not defined.",
+    "line": 9,
+    "column": 17,
+    "endLine": 9,
+    "endColumn": 26
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'serialize' is not defined.",
+    "line": 15,
+    "column": 52,
+    "endLine": 15,
+    "endColumn": 61
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 117. Maximum allowed is 80.",
+    "line": 17,
+    "column": 1
+  },
+  {
+    "ruleId": "no-confusing-arrow",
+    "message": "Arrow function used ambiguously with a conditional expression.",
+    "line": 17,
+    "column": 63,
+    "endLine": 18,
+    "endColumn": 112
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 17,
+    "column": 75,
+    "endLine": 18,
+    "endColumn": 112
+  },
+  {
+    "ruleId": "operator-linebreak",
+    "message": "'?' should be placed at the beginning of the line.",
+    "line": 17,
+    "column": 118
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 113. Maximum allowed is 80.",
+    "line": 18,
+    "column": 1
+  },
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected relative indentation of 6 spaces but found 4 spaces.",
+    "line": 18,
+    "column": 7,
+    "endLine": 18,
+    "endColumn": 11
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 18,
+    "column": 11,
+    "endLine": 18,
+    "endColumn": 64
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'serializeFunction' is not defined.",
+    "line": 18,
+    "column": 24,
+    "endLine": 18,
+    "endColumn": 41
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'serialize' is not defined.",
+    "line": 18,
+    "column": 80,
+    "endLine": 18,
+    "endColumn": 89
+  },
+  {
+    "ruleId": "line-comment-position",
+    "message": "Expected comment to be above code.",
+    "line": 26,
+    "column": 34,
+    "endLine": 26,
+    "endColumn": 54
+  },
+  {
+    "ruleId": "no-inline-comments",
+    "message": "Unexpected comment inline with code.",
+    "line": 26,
+    "column": 34,
+    "endLine": 26,
+    "endColumn": 54
+  }
+]

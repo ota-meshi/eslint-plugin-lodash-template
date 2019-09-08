@@ -1,7 +1,7 @@
 importScripts(<%= [
-options.workboxURL,
-...options.importScripts
-].map((i) => `'${i}'`).join(', ') %>);
+    options.workboxURL,
+    ...options.importScripts
+  ].map((i) => `'${i}'`).join(', ') %>);
 
 /*
  * --------------------------------------------------
@@ -9,22 +9,22 @@ options.workboxURL,
  * --------------------------------------------------
  */
 
-<% if (options.config) {%>
+<% if (options.config) { %>
 // Set workbox config
 workbox.setConfig(<%= JSON.stringify(
-options.config,
-null,
-2
-) %>);
+    options.config,
+    null,
+    2
+  ) %>);
 <% } %>
 
-<% if (options.cacheNames) {%>
+<% if (options.cacheNames) { %>
 // Set workbox cache names
 workbox.core.setCacheNameDetails(<%= JSON.stringify(
-options.cacheNames,
-null,
-2
-) %>);
+    options.cacheNames,
+    null,
+    2
+  ) %>);
 <% } %>
 
 <% if (options.clientsClaim) { %>
@@ -60,14 +60,14 @@ workbox.googleAnalytics.initialize();
 // Precache assets
 <% if (options.preCaching.length) { %>
 workbox.precaching.precacheAndRoute(<%= JSON.stringify(
-options.preCaching,
-null,
-2
-) %>, <%= JSON.stringify(
-options.cacheOptions,
-null,
-2
-) %>);
+    options.preCaching,
+    null,
+    2
+  ) %>, <%= JSON.stringify(
+      options.cacheOptions,
+      null,
+      2
+    ) %>);
 <% } %>
 
 <% if (options.cachingExtensions) { %>

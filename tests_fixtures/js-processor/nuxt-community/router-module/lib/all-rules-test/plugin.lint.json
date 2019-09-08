@@ -1,0 +1,146 @@
+[
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 82. Maximum allowed is 80.",
+    "line": 1,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 82. Maximum allowed is 80.",
+    "line": 1,
+    "column": 1
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space after '{'.",
+    "line": 1,
+    "column": 8
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space before '}'.",
+    "line": 1,
+    "column": 45
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 1,
+    "column": 83
+  },
+  {
+    "ruleId": "sort-imports",
+    "message": "Expected 'multiple' syntax before 'single' syntax.",
+    "line": 4,
+    "column": 1,
+    "endLine": 4,
+    "endColumn": 85
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 84. Maximum allowed is 80.",
+    "line": 4,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 84. Maximum allowed is 80.",
+    "line": 4,
+    "column": 1
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space after '{'.",
+    "line": 4,
+    "column": 8
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space before '}'.",
+    "line": 4,
+    "column": 61
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 4,
+    "column": 68,
+    "endLine": 4,
+    "endColumn": 85
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 4,
+    "column": 85
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 6,
+    "column": 33
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 7,
+    "column": 27
+  },
+  {
+    "ruleId": "func-style",
+    "message": "Expected a function expression.",
+    "line": 10,
+    "column": 8,
+    "endLine": 12,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 10,
+    "column": 29
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 10,
+    "column": 42
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 11,
+    "column": 1,
+    "endLine": 11,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 11,
+    "column": 40,
+    "endLine": 11,
+    "endColumn": 41
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 11,
+    "column": 61,
+    "endLine": 11,
+    "endColumn": 62
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 11,
+    "column": 76
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 12,
+    "column": 1
+  }
+]

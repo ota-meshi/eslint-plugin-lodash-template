@@ -11,17 +11,17 @@
     "ruleId": "id-length",
     "message": "Identifier name 'i' is too short (< 2).",
     "line": 4,
-    "column": 8,
+    "column": 10,
     "endLine": 4,
-    "endColumn": 9
+    "endColumn": 11
   },
   {
     "ruleId": "function-paren-newline",
     "message": "Unexpected newline before ')'.",
     "line": 4,
-    "column": 37,
+    "column": 39,
     "endLine": 4,
-    "endColumn": 38
+    "endColumn": 40
   },
   {
     "ruleId": "no-undef",
@@ -35,17 +35,17 @@
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 2.",
     "line": 17,
-    "column": 1,
+    "column": 5,
     "endLine": 17,
-    "endColumn": 2
+    "endColumn": 6
   },
   {
     "ruleId": "function-paren-newline",
     "message": "Unexpected newline before ')'.",
     "line": 18,
-    "column": 5,
+    "column": 7,
     "endLine": 18,
-    "endColumn": 6
+    "endColumn": 8
   },
   {
     "ruleId": "no-undef",
@@ -59,17 +59,17 @@
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 2.",
     "line": 26,
-    "column": 1,
+    "column": 5,
     "endLine": 26,
-    "endColumn": 2
+    "endColumn": 6
   },
   {
     "ruleId": "function-paren-newline",
     "message": "Unexpected newline before ')'.",
     "line": 27,
-    "column": 5,
+    "column": 7,
     "endLine": 27,
-    "endColumn": 6
+    "endColumn": 8
   },
   {
     "ruleId": "no-undef",
@@ -131,17 +131,17 @@
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 2.",
     "line": 65,
-    "column": 1,
+    "column": 5,
     "endLine": 65,
-    "endColumn": 2
+    "endColumn": 6
   },
   {
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 2.",
     "line": 69,
-    "column": 1,
+    "column": 7,
     "endLine": 69,
-    "endColumn": 2
+    "endColumn": 8
   },
   {
     "ruleId": "line-comment-position",

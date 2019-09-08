@@ -1,26 +1,18 @@
-
 {
   "root": true,
-  "extends": "standard",
-  "plugins": [
-      "jest"
-  ],
-  "env": {
-      "jest/globals": true
-  },
+  "extends": ["@nuxtjs"],
   "overrides": [
     {
       "files": ["*.js"],
-      "extends": [
-        "plugin:lodash-template/base"
-      ],
+      "extends": ["plugin:lodash-template/base"],
       "processor": "lodash-template/js",
       "parserOptions": {
         "parser": "babel-eslint"
       },
       "globals": {
         "options": true,
-        "serialize": true
+        "serialize": true,
+        "serializeFunction": true
       }
     }
   ]

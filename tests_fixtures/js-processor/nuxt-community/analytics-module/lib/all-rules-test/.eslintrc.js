@@ -10,7 +10,7 @@ module.exports = {
         browser: true,
         es6: true,
     },
-    extends: ["eslint:all", "plugin:lodash-template/base"],
+    extends: ["eslint:all", "plugin:lodash-template/all"],
     overrides: [
         {
             files: ["*.js"],
@@ -24,6 +24,7 @@ module.exports = {
             },
             rules: {
                 "one-var": "off",
+                "lodash-template/prefer-escape-template-interpolations": "off",
             },
         },
     ],

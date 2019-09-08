@@ -50,6 +50,14 @@
     "endColumn": 54
   },
   {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 7,
+    "column": 25,
+    "endLine": 7,
+    "endColumn": 27
+  },
+  {
     "ruleId": "no-undef",
     "message": "'workbox' is not defined.",
     "line": 9,
@@ -86,6 +94,14 @@
     "message": "Missing semicolon.",
     "line": 9,
     "column": 66
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 12,
+    "column": 29,
+    "endLine": 12,
+    "endColumn": 31
   },
   {
     "ruleId": "no-undef",

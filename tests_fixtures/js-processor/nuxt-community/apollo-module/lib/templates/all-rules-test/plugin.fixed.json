@@ -51,9 +51,9 @@
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 2.",
     "line": 33,
-    "column": 1,
+    "column": 13,
     "endLine": 33,
-    "endColumn": 2
+    "endColumn": 14
   },
   {
     "ruleId": "max-len",

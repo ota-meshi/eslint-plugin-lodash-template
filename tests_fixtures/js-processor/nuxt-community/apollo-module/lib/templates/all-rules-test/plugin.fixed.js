@@ -28,10 +28,10 @@ export default (ctx, inject) => {
       let <%= key %>ClientConfig
       <% if (typeof options.clientConfigs[key] === 'object') { %>
         <%= key %>ClientConfig = <%= JSON.stringify(
-options.clientConfigs[key],
-null,
-2
-) %>
+            options.clientConfigs[key],
+            null,
+            2
+          ) %>
       <% } else if (typeof options.clientConfigs[key] === 'string') { %>
         <%= key %>ClientConfig = require('<%= options.clientConfigs[key] %>')
 

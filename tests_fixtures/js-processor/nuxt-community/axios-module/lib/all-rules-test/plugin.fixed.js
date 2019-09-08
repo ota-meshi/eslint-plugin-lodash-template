@@ -290,7 +290,7 @@ export default (ctx, inject) => {
   <% for (const h of options.proxyHeadersIgnore) {
  %>delete axiosOptions.headers.common['<%= h %>'];
   <% } %><%
-} %>
+    } %>
 
     if (process.server) {
 
@@ -314,7 +314,7 @@ export default (ctx, inject) => {
     ) <% } %>
   <% if (options.retry) {
  %>axiosRetry(axios, <%= serialize(options.retry) %>)<%
-} %>
+    } %>
 
     // Inject axios to the context as $axios
     ctx.$axios = axios;
