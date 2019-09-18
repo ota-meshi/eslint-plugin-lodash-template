@@ -93,7 +93,9 @@
   },
   "nyc": {
     "exclude": [
-      "**/*.spec.js"
+      "**/*.spec.js",
+      "tests_fixtures/**/*.js",
+      "tests/**/*.js"
     ]
   },
   "engines": {

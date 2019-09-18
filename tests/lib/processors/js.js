@@ -124,44 +124,48 @@ describe("js test", () => {
                 })
 
                 if (!parsingErrorJson) {
-                    it("autofix", () => {
-                        const cli = new CLIEngine({
-                            cwd: FIXTURE_DIR,
-                            fix: true,
-                        })
-                        CLIEngine.outputFixes(
-                            cli.executeOnFiles([`${name}.fixed.js`])
-                        )
-                        const report = cli.executeOnFiles([`${name}.fixed.js`])
-                        const messages = testUtils.sortMessages(
-                            report.results[0].messages
-                        )
+                    if (semver.satisfies(eslintVersion, ">=6.4.0")) {
+                        it("autofix", () => {
+                            const cli = new CLIEngine({
+                                cwd: FIXTURE_DIR,
+                                fix: true,
+                            })
+                            CLIEngine.outputFixes(
+                                cli.executeOnFiles([`${name}.fixed.js`])
+                            )
+                            const report = cli.executeOnFiles([
+                                `${name}.fixed.js`,
+                            ])
+                            const messages = testUtils.sortMessages(
+                                report.results[0].messages
+                            )
 
-                        const expectFilepath = path.join(
-                            FIXTURE_DIR,
-                            `${name}.fixed.json`
-                        )
-                        try {
-                            assertMessages(
-                                messages,
-                                JSON.parse(
-                                    fs.readFileSync(expectFilepath, "utf8")
+                            const expectFilepath = path.join(
+                                FIXTURE_DIR,
+                                `${name}.fixed.json`
+                            )
+                            try {
+                                assertMessages(
+                                    messages,
+                                    JSON.parse(
+                                        fs.readFileSync(expectFilepath, "utf8")
+                                    )
                                 )
+                            } catch (e) {
+                                testUtils.writeFile(
+                                    expectFilepath,
+                                    stringifyMessages(messages)
+                                )
+                                throw e
+                            }
+                            assert.ok(
+                                !stringifyMessages(messages).includes(
+                                    "Parsing error"
+                                ),
+                                "No Parsing error"
                             )
-                        } catch (e) {
-                            testUtils.writeFile(
-                                expectFilepath,
-                                stringifyMessages(messages)
-                            )
-                            throw e
-                        }
-                        assert.ok(
-                            !stringifyMessages(messages).includes(
-                                "Parsing error"
-                            ),
-                            "No Parsing error"
-                        )
-                    })
+                        })
+                    }
 
                     const allConfigTestDirPath = path.join(
                         filepath,
