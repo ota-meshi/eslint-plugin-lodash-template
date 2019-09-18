@@ -1,0 +1,404 @@
+[
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 1,
+    "column": 17,
+    "endLine": 1,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "sort-imports",
+    "message": "Imports should be sorted alphabetically.",
+    "line": 4,
+    "column": 1,
+    "endLine": 4,
+    "endColumn": 42
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 4,
+    "column": 26,
+    "endLine": 4,
+    "endColumn": 41
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 81. Maximum allowed is 80.",
+    "line": 6,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 81. Maximum allowed is 80.",
+    "line": 6,
+    "column": 1
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 6,
+    "column": 63,
+    "endLine": 6,
+    "endColumn": 64
+  },
+  {
+    "ruleId": "no-undefined",
+    "message": "Unexpected use of undefined.",
+    "line": 6,
+    "column": 64,
+    "endLine": 6,
+    "endColumn": 73
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 6,
+    "column": 74,
+    "endLine": 6,
+    "endColumn": 75
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 2.",
+    "line": 6,
+    "column": 75,
+    "endLine": 6,
+    "endColumn": 76
+  },
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+    "line": 12,
+    "column": 3,
+    "endLine": 12,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 12,
+    "column": 5,
+    "endLine": 12,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 12,
+    "column": 5,
+    "endLine": 12,
+    "endColumn": 45
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 12,
+    "column": 22,
+    "endLine": 12,
+    "endColumn": 38
+  },
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+    "line": 13,
+    "column": 3,
+    "endLine": 13,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+    "line": 14,
+    "column": 3,
+    "endLine": 14,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+    "line": 15,
+    "column": 3,
+    "endLine": 15,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+    "line": 16,
+    "column": 3,
+    "endLine": 16,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected relative indentation of 2 spaces but found 0 spaces.",
+    "line": 17,
+    "column": 3,
+    "endLine": 17,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "newline-per-chained-call",
+    "message": "Expected line break before `.join`.",
+    "line": 17,
+    "column": 21
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 18,
+    "column": 8,
+    "endLine": 18,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%`, but 3 spaces found.",
+    "line": 20,
+    "column": 1,
+    "endLine": 20,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'BVConfigPlugin' is not defined.",
+    "line": 21,
+    "column": 9,
+    "endLine": 21,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 21,
+    "column": 59,
+    "endLine": 21,
+    "endColumn": 60
+  },
+  {
+    "ruleId": "no-undefined",
+    "message": "Unexpected use of undefined.",
+    "line": 21,
+    "column": 60,
+    "endLine": 21,
+    "endColumn": 69
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 21,
+    "column": 70,
+    "endLine": 21,
+    "endColumn": 71
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 2.",
+    "line": 21,
+    "column": 71,
+    "endLine": 21,
+    "endColumn": 72
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%`, but 3 spaces found.",
+    "line": 22,
+    "column": 1,
+    "endLine": 22,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 94. Maximum allowed is 80.",
+    "line": 24,
+    "column": 1
+  },
+  {
+    "ruleId": "no-extra-parens",
+    "message": "Unnecessary parentheses around expression.",
+    "line": 24,
+    "column": 54
+  },
+  {
+    "ruleId": "no-param-reassign",
+    "message": "Assignment to function parameter 'acc'.",
+    "line": 24,
+    "column": 55,
+    "endLine": 24,
+    "endColumn": 58
+  },
+  {
+    "ruleId": "space-in-parens",
+    "message": "There should be no spaces inside this paren.",
+    "line": 24,
+    "column": 86
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 24,
+    "column": 88,
+    "endLine": 24,
+    "endColumn": 89
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 24,
+    "column": 95
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 94. Maximum allowed is 80.",
+    "line": 25,
+    "column": 1
+  },
+  {
+    "ruleId": "no-extra-parens",
+    "message": "Unnecessary parentheses around expression.",
+    "line": 25,
+    "column": 54
+  },
+  {
+    "ruleId": "no-param-reassign",
+    "message": "Assignment to function parameter 'acc'.",
+    "line": 25,
+    "column": 55,
+    "endLine": 25,
+    "endColumn": 58
+  },
+  {
+    "ruleId": "space-in-parens",
+    "message": "There should be no spaces inside this paren.",
+    "line": 25,
+    "column": 86
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 25,
+    "column": 88,
+    "endLine": 25,
+    "endColumn": 89
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 25,
+    "column": 95
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 92. Maximum allowed is 80.",
+    "line": 26,
+    "column": 1
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'c' is too short (< 2).",
+    "line": 26,
+    "column": 37,
+    "endLine": 26,
+    "endColumn": 38
+  },
+  {
+    "ruleId": "no-extra-parens",
+    "message": "Unnecessary parentheses around expression.",
+    "line": 26,
+    "column": 43
+  },
+  {
+    "ruleId": "no-param-reassign",
+    "message": "Assignment to function parameter 'acc'.",
+    "line": 26,
+    "column": 44,
+    "endLine": 26,
+    "endColumn": 47
+  },
+  {
+    "ruleId": "space-in-parens",
+    "message": "There should be no spaces inside this paren.",
+    "line": 26,
+    "column": 84
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 26,
+    "column": 86,
+    "endLine": 26,
+    "endColumn": 87
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 26,
+    "column": 93
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 112. Maximum allowed is 80.",
+    "line": 27,
+    "column": 1
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'd' is too short (< 2).",
+    "line": 27,
+    "column": 37,
+    "endLine": 27,
+    "endColumn": 38
+  },
+  {
+    "ruleId": "no-extra-parens",
+    "message": "Unnecessary parentheses around expression.",
+    "line": 27,
+    "column": 43
+  },
+  {
+    "ruleId": "no-param-reassign",
+    "message": "Assignment to function parameter 'acc'.",
+    "line": 27,
+    "column": 44,
+    "endLine": 27,
+    "endColumn": 47
+  },
+  {
+    "ruleId": "require-unicode-regexp",
+    "message": "Use the 'u' flag.",
+    "line": 27,
+    "column": 79,
+    "endLine": 27,
+    "endColumn": 84
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 27,
+    "column": 85,
+    "endLine": 27,
+    "endColumn": 86
+  },
+  {
+    "ruleId": "space-in-parens",
+    "message": "There should be no spaces inside this paren.",
+    "line": 27,
+    "column": 104
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 27,
+    "column": 106,
+    "endLine": 27,
+    "endColumn": 107
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 27,
+    "column": 113
+  }
+]

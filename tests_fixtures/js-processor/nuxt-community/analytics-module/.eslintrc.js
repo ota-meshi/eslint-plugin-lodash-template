@@ -9,6 +9,13 @@ module.exports = {
     {
       files: "*.js",
       extends: ["plugin:lodash-template/recommended-with-js"],
+      parserOptions: {
+        parser: 'vue-eslint-parser',
+        sourceType: 'module',
+        parserOptions: {
+          parser: "babel-eslint",
+        },
+      },
       globals: {
         options: true,
         serialize: true,

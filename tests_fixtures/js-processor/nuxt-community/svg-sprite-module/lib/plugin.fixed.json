@@ -1,0 +1,10 @@
+[
+  {
+    "ruleId": "no-undef",
+    "message": "'relativeToBuild' is not defined.",
+    "line": 13,
+    "column": 23,
+    "endLine": 13,
+    "endColumn": 38
+  }
+]

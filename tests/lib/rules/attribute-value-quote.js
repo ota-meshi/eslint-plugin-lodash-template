@@ -36,12 +36,21 @@ tester.run("attribute-value-quote", rule, {
                 "<body><div class='foo'></div><div class=\"foo\"></div></body>",
             options: ["either"],
         },
-        "<body><a download>download</a></body>",
-        "<body><div class=></div></body>",
-        "<body><div class=  ></div></body>",
-        "<body><div class <%= '' %>  ></div></body>",
-        // duplicate
-        "<body><div a = v a = ></div></body>",
+        {
+            filename: "test.html",
+            code: "<body><a download>download</a></body>",
+        },
+        { filename: "test.html", code: "<body><div class=></div></body>" },
+        { filename: "test.html", code: "<body><div class=  ></div></body>" },
+        {
+            filename: "test.html",
+            code: "<body><div class <%= '' %>  ></div></body>",
+        },
+        {
+            // duplicate
+            filename: "test.html",
+            code: "<body><div a = v a = ></div></body>",
+        },
     ],
     invalid: [
         {

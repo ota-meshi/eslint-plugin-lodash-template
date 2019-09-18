@@ -1,0 +1,2182 @@
+[
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space after '{'.",
+    "line": 1,
+    "column": 8
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space before '}'.",
+    "line": 1,
+    "column": 23
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 1,
+    "column": 30,
+    "endLine": 1,
+    "endColumn": 38
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 1,
+    "column": 38
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 2,
+    "column": 17,
+    "endLine": 2,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 2,
+    "column": 22
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 4,
+    "column": 17,
+    "endLine": 4,
+    "endColumn": 58
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 4,
+    "column": 58
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 6,
+    "column": 17
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 7,
+    "column": 1,
+    "endLine": 7,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "max-statements",
+    "message": "Constructor has too many statements (11). Maximum allowed is 10.",
+    "line": 7,
+    "column": 15,
+    "endLine": 26,
+    "endColumn": 4
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space after '{'.",
+    "line": 7,
+    "column": 16
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space before '}'.",
+    "line": 7,
+    "column": 56
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 7,
+    "column": 59
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 8,
+    "column": 1,
+    "endLine": 8,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 8,
+    "column": 19
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 9,
+    "column": 1,
+    "endLine": 9,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 9,
+    "column": 23,
+    "endLine": 9,
+    "endColumn": 57
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 9,
+    "column": 58
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 10,
+    "column": 1,
+    "endLine": 10,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 10,
+    "column": 5
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 12,
+    "column": 1,
+    "endLine": 12,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 12,
+    "column": 19
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 13,
+    "column": 1,
+    "endLine": 13,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 13,
+    "column": 23,
+    "endLine": 13,
+    "endColumn": 61
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 13,
+    "column": 62
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 14,
+    "column": 1,
+    "endLine": 14,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 14,
+    "column": 5
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 16,
+    "column": 1,
+    "endLine": 16,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_elements'.",
+    "line": 16,
+    "column": 5,
+    "endLine": 16,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 16,
+    "column": 24
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 18,
+    "column": 1,
+    "endLine": 18,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_eventBus'.",
+    "line": 18,
+    "column": 5,
+    "endLine": 18,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 18,
+    "column": 26
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 19,
+    "column": 1,
+    "endLine": 19,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_ready'.",
+    "line": 19,
+    "column": 5,
+    "endLine": 19,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 19,
+    "column": 24
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 21,
+    "column": 1,
+    "endLine": 21,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 21,
+    "column": 31
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 22,
+    "column": 1,
+    "endLine": 22,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 22,
+    "column": 33,
+    "endLine": 22,
+    "endColumn": 37
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 22,
+    "column": 37
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 24,
+    "column": 1,
+    "endLine": 24,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 24,
+    "column": 27
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 25,
+    "column": 1,
+    "endLine": 25,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 25,
+    "column": 27
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 26,
+    "column": 1,
+    "endLine": 26,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 26,
+    "column": 3
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 28,
+    "column": 1,
+    "endLine": 28,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 28,
+    "column": 14
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 29,
+    "column": 1,
+    "endLine": 29,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_ready'.",
+    "line": 29,
+    "column": 9,
+    "endLine": 29,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 29,
+    "column": 22
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 30,
+    "column": 1,
+    "endLine": 30,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_ready'.",
+    "line": 30,
+    "column": 7,
+    "endLine": 30,
+    "endColumn": 18
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 30,
+    "column": 26
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 32,
+    "column": 1,
+    "endLine": 32,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space after '{'.",
+    "line": 32,
+    "column": 13
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space before '}'.",
+    "line": 32,
+    "column": 20
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 32,
+    "column": 32
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 33,
+    "column": 1,
+    "endLine": 33,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space after '{'.",
+    "line": 33,
+    "column": 13
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space before '}'.",
+    "line": 33,
+    "column": 21
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_elements'.",
+    "line": 33,
+    "column": 25,
+    "endLine": 33,
+    "endColumn": 39
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 33,
+    "column": 39
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 35,
+    "column": 1,
+    "endLine": 35,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 35,
+    "column": 58,
+    "endLine": 35,
+    "endColumn": 66
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 16 spaces but found 8.",
+    "line": 36,
+    "column": 1,
+    "endLine": 36,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "dot-location",
+    "message": "Expected dot to be on same line as object.",
+    "line": 36,
+    "column": 9
+  },
+  {
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument.",
+    "line": 36,
+    "column": 17,
+    "endLine": 36,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 36,
+    "column": 47,
+    "endLine": 36,
+    "endColumn": 58
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 36,
+    "column": 60
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 38,
+    "column": 1,
+    "endLine": 38,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 38,
+    "column": 27
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 16 spaces but found 8.",
+    "line": 39,
+    "column": 1,
+    "endLine": 39,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument.",
+    "line": 39,
+    "column": 25,
+    "endLine": 39,
+    "endColumn": 31
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 39,
+    "column": 60
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 40,
+    "column": 1,
+    "endLine": 40,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 40,
+    "column": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 42,
+    "column": 1,
+    "endLine": 42,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 42,
+    "column": 33
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 16 spaces but found 8.",
+    "line": 43,
+    "column": 1,
+    "endLine": 43,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 43,
+    "column": 32
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 44,
+    "column": 1,
+    "endLine": 44,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 44,
+    "column": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 45,
+    "column": 1,
+    "endLine": 45,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 45,
+    "column": 5
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 46,
+    "column": 1,
+    "endLine": 46,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 46,
+    "column": 3
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 48,
+    "column": 1,
+    "endLine": 48,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "consistent-return",
+    "message": "Expected to return a value at the end of async method 'execute'.",
+    "line": 48,
+    "column": 9
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 48,
+    "column": 26
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 49,
+    "column": 1,
+    "endLine": 49,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 49,
+    "column": 9
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 50,
+    "column": 1,
+    "endLine": 50,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 50,
+    "column": 24
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 52,
+    "column": 1,
+    "endLine": 52,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 52,
+    "column": 11,
+    "endLine": 52,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 52,
+    "column": 35
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 16 spaces but found 8.",
+    "line": 53,
+    "column": 1,
+    "endLine": 53,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 20 spaces but found 10.",
+    "line": 54,
+    "column": 1,
+    "endLine": 54,
+    "endColumn": 11
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 20 spaces but found 10.",
+    "line": 55,
+    "column": 1,
+    "endLine": 55,
+    "endColumn": 11
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space after '{'.",
+    "line": 55,
+    "column": 11
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space before '}'.",
+    "line": 55,
+    "column": 20
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 16 spaces but found 8.",
+    "line": 56,
+    "column": 1,
+    "endLine": 56,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 56,
+    "column": 10
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 57,
+    "column": 1,
+    "endLine": 57,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 57,
+    "column": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 58,
+    "column": 1,
+    "endLine": 58,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 58,
+    "column": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 58,
+    "column": 21
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 59,
+    "column": 1,
+    "endLine": 59,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 59,
+    "column": 23,
+    "endLine": 59,
+    "endColumn": 59
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 59,
+    "column": 60
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 60,
+    "column": 1,
+    "endLine": 60,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 60,
+    "column": 5
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 61,
+    "column": 1,
+    "endLine": 61,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 61,
+    "column": 3
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 63,
+    "column": 1,
+    "endLine": 63,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 63,
+    "column": 18
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 64,
+    "column": 1,
+    "endLine": 64,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 64,
+    "column": 45
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 65,
+    "column": 1,
+    "endLine": 65,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 65,
+    "column": 11,
+    "endLine": 65,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 65,
+    "column": 35
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 16 spaces but found 8.",
+    "line": 66,
+    "column": 1,
+    "endLine": 66,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 66,
+    "column": 57
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 16 spaces but found 8.",
+    "line": 68,
+    "column": 1,
+    "endLine": 68,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 68,
+    "column": 23
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 20 spaces but found 10.",
+    "line": 69,
+    "column": 1,
+    "endLine": 69,
+    "endColumn": 11
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_eventBus'.",
+    "line": 69,
+    "column": 11,
+    "endLine": 69,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 69,
+    "column": 31,
+    "endLine": 69,
+    "endColumn": 50
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 69,
+    "column": 51,
+    "endLine": 69,
+    "endColumn": 52
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 69,
+    "column": 61
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 20 spaces but found 10.",
+    "line": 70,
+    "column": 1,
+    "endLine": 70,
+    "endColumn": 11
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 70,
+    "column": 28
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 16 spaces but found 8.",
+    "line": 71,
+    "column": 1,
+    "endLine": 71,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 71,
+    "column": 9
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 71,
+    "column": 16
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 20 spaces but found 10.",
+    "line": 72,
+    "column": 1,
+    "endLine": 72,
+    "endColumn": 11
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 72,
+    "column": 32,
+    "endLine": 72,
+    "endColumn": 51
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 72,
+    "column": 51
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 20 spaces but found 10.",
+    "line": 74,
+    "column": 1,
+    "endLine": 74,
+    "endColumn": 11
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_eventBus'.",
+    "line": 74,
+    "column": 11,
+    "endLine": 74,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 74,
+    "column": 31,
+    "endLine": 74,
+    "endColumn": 48
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 74,
+    "column": 49,
+    "endLine": 74,
+    "endColumn": 50
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 74,
+    "column": 63
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 20 spaces but found 10.",
+    "line": 75,
+    "column": 1,
+    "endLine": 75,
+    "endColumn": 11
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 75,
+    "column": 31
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 16 spaces but found 8.",
+    "line": 76,
+    "column": 1,
+    "endLine": 76,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 76,
+    "column": 9
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 77,
+    "column": 1,
+    "endLine": 77,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 77,
+    "column": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 78,
+    "column": 1,
+    "endLine": 78,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 78,
+    "column": 5
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 78,
+    "column": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 79,
+    "column": 1,
+    "endLine": 79,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 79,
+    "column": 3
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 81,
+    "column": 1,
+    "endLine": 81,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "max-statements",
+    "message": "Method 'init' has too many statements (17). Maximum allowed is 10.",
+    "line": 81,
+    "column": 8,
+    "endLine": 126,
+    "endColumn": 4
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 81,
+    "column": 11
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 82,
+    "column": 1,
+    "endLine": 82,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_ready'.",
+    "line": 82,
+    "column": 9,
+    "endLine": 82,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 82,
+    "column": 22
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 83,
+    "column": 1,
+    "endLine": 83,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 83,
+    "column": 31
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 84,
+    "column": 1,
+    "endLine": 84,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 84,
+    "column": 5
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 86,
+    "column": 1,
+    "endLine": 86,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_eventBus'.",
+    "line": 86,
+    "column": 5,
+    "endLine": 86,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 86,
+    "column": 40
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 87,
+    "column": 1,
+    "endLine": 87,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_elements'.",
+    "line": 87,
+    "column": 5,
+    "endLine": 87,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 88,
+    "column": 1,
+    "endLine": 88,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "quote-props",
+    "message": "Unquoted property 'script' found.",
+    "line": 88,
+    "column": 7,
+    "endLine": 88,
+    "endColumn": 47
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 88,
+    "column": 38,
+    "endLine": 88,
+    "endColumn": 46
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 89,
+    "column": 1,
+    "endLine": 89,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "quote-props",
+    "message": "Unquoted property 'style' found.",
+    "line": 89,
+    "column": 7,
+    "endLine": 89,
+    "endColumn": 45
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 89,
+    "column": 37,
+    "endLine": 89,
+    "endColumn": 44
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 90,
+    "column": 1,
+    "endLine": 90,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 90,
+    "column": 6
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 92,
+    "column": 1,
+    "endLine": 92,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space after '{'.",
+    "line": 92,
+    "column": 11
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space before '}'.",
+    "line": 92,
+    "column": 27
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_elements'.",
+    "line": 92,
+    "column": 31,
+    "endLine": 92,
+    "endColumn": 45
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 92,
+    "column": 45
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 94,
+    "column": 1,
+    "endLine": 94,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 94,
+    "column": 29,
+    "endLine": 94,
+    "endColumn": 36
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 94,
+    "column": 37,
+    "endLine": 94,
+    "endColumn": 38
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 94,
+    "column": 44
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 95,
+    "column": 1,
+    "endLine": 95,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 95,
+    "column": 40
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 96,
+    "column": 1,
+    "endLine": 96,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 96,
+    "column": 23,
+    "endLine": 96,
+    "endColumn": 63
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 96,
+    "column": 64
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 97,
+    "column": 1,
+    "endLine": 97,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 97,
+    "column": 5
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 97,
+    "column": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 99,
+    "column": 1,
+    "endLine": 99,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 99,
+    "column": 25,
+    "endLine": 99,
+    "endColumn": 32
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 99,
+    "column": 33,
+    "endLine": 99,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 99,
+    "column": 34,
+    "endLine": 99,
+    "endColumn": 36
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 99,
+    "column": 37
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 100,
+    "column": 1,
+    "endLine": 100,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 100,
+    "column": 25,
+    "endLine": 100,
+    "endColumn": 32
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 100,
+    "column": 33,
+    "endLine": 100,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 100,
+    "column": 34,
+    "endLine": 100,
+    "endColumn": 36
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 100,
+    "column": 37
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 102,
+    "column": 1,
+    "endLine": 102,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 2.",
+    "line": 102,
+    "column": 26,
+    "endLine": 102,
+    "endColumn": 27
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 102,
+    "column": 29
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 103,
+    "column": 1,
+    "endLine": 103,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 103,
+    "column": 27,
+    "endLine": 103,
+    "endColumn": 32
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 103,
+    "column": 33,
+    "endLine": 103,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "prefer-template",
+    "message": "Unexpected string concatenation.",
+    "line": 103,
+    "column": 34,
+    "endLine": 103,
+    "endColumn": 66
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 103,
+    "column": 44,
+    "endLine": 103,
+    "endColumn": 50
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 103,
+    "column": 67
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 104,
+    "column": 1,
+    "endLine": 104,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 104,
+    "column": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 104,
+    "column": 12
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 105,
+    "column": 1,
+    "endLine": 105,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 105,
+    "column": 27,
+    "endLine": 105,
+    "endColumn": 32
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 105,
+    "column": 33,
+    "endLine": 105,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "prefer-template",
+    "message": "Unexpected string concatenation.",
+    "line": 105,
+    "column": 34,
+    "endLine": 105,
+    "endColumn": 69
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 105,
+    "column": 44,
+    "endLine": 105,
+    "endColumn": 54
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 105,
+    "column": 70
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 106,
+    "column": 1,
+    "endLine": 106,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 106,
+    "column": 5
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 108,
+    "column": 1,
+    "endLine": 108,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 108,
+    "column": 38
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 110,
+    "column": 1,
+    "endLine": 110,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 96. Maximum allowed is 80.",
+    "line": 110,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 96. Maximum allowed is 80.",
+    "line": 110,
+    "column": 1
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_eventBus'.",
+    "line": 110,
+    "column": 50,
+    "endLine": 110,
+    "endColumn": 64
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 110,
+    "column": 70,
+    "endLine": 110,
+    "endColumn": 89
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 110,
+    "column": 90,
+    "endLine": 110,
+    "endColumn": 91
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 110,
+    "column": 97
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 111,
+    "column": 1,
+    "endLine": 111,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 84. Maximum allowed is 80.",
+    "line": 111,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 84. Maximum allowed is 80.",
+    "line": 111,
+    "column": 1
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_eventBus'.",
+    "line": 111,
+    "column": 45,
+    "endLine": 111,
+    "endColumn": 59
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 111,
+    "column": 65,
+    "endLine": 111,
+    "endColumn": 84
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 111,
+    "column": 85
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 112,
+    "column": 1,
+    "endLine": 112,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 101. Maximum allowed is 80.",
+    "line": 112,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 101. Maximum allowed is 80.",
+    "line": 112,
+    "column": 1
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_eventBus'.",
+    "line": 112,
+    "column": 43,
+    "endLine": 112,
+    "endColumn": 57
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 112,
+    "column": 63,
+    "endLine": 112,
+    "endColumn": 80
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 112,
+    "column": 81,
+    "endLine": 112,
+    "endColumn": 82
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 112,
+    "column": 82,
+    "endLine": 112,
+    "endColumn": 101
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 112,
+    "column": 102
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 114,
+    "column": 1,
+    "endLine": 114,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_ready'.",
+    "line": 114,
+    "column": 5,
+    "endLine": 114,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument.",
+    "line": 114,
+    "column": 31,
+    "endLine": 114,
+    "endColumn": 38
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 114,
+    "column": 42
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 115,
+    "column": 1,
+    "endLine": 115,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 115,
+    "column": 31,
+    "endLine": 115,
+    "endColumn": 37
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 115,
+    "column": 38,
+    "endLine": 115,
+    "endColumn": 39
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 115,
+    "column": 45
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 16 spaces but found 8.",
+    "line": 116,
+    "column": 1,
+    "endLine": 116,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 3.",
+    "line": 116,
+    "column": 30,
+    "endLine": 116,
+    "endColumn": 31
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 116,
+    "column": 51
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 20 spaces but found 10.",
+    "line": 117,
+    "column": 1,
+    "endLine": 117,
+    "endColumn": 11
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 117,
+    "column": 29,
+    "endLine": 117,
+    "endColumn": 66
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 117,
+    "column": 66
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 20 spaces but found 10.",
+    "line": 118,
+    "column": 1,
+    "endLine": 118,
+    "endColumn": 11
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 118,
+    "column": 43
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 16 spaces but found 8.",
+    "line": 119,
+    "column": 1,
+    "endLine": 119,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 119,
+    "column": 9
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 16 spaces but found 8.",
+    "line": 121,
+    "column": 1,
+    "endLine": 121,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 121,
+    "column": 41
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 122,
+    "column": 1,
+    "endLine": 122,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 122,
+    "column": 7
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 122,
+    "column": 9
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 123,
+    "column": 1,
+    "endLine": 123,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 123,
+    "column": 5
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 123,
+    "column": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 125,
+    "column": 1,
+    "endLine": 125,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_ready'.",
+    "line": 125,
+    "column": 12,
+    "endLine": 125,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 125,
+    "column": 23
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 126,
+    "column": 1,
+    "endLine": 126,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 126,
+    "column": 3
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 128,
+    "column": 1,
+    "endLine": 128,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 128,
+    "column": 24
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 129,
+    "column": 1,
+    "endLine": 129,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_eventBus'.",
+    "line": 129,
+    "column": 12,
+    "endLine": 129,
+    "endColumn": 26
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 129,
+    "column": 36,
+    "endLine": 129,
+    "endColumn": 37
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 129,
+    "column": 46
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 130,
+    "column": 1,
+    "endLine": 130,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 130,
+    "column": 3
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 131,
+    "column": 1
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name '_' is too short (< 2).",
+    "line": 133,
+    "column": 26,
+    "endLine": 133,
+    "endColumn": 27
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 133,
+    "column": 37
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 134,
+    "column": 1,
+    "endLine": 134,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 134,
+    "column": 17,
+    "endLine": 134,
+    "endColumn": 28
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 134,
+    "column": 29,
+    "endLine": 134,
+    "endColumn": 30
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 134,
+    "column": 43,
+    "endLine": 134,
+    "endColumn": 60
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 134,
+    "column": 62
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 135,
+    "column": 1,
+    "endLine": 135,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 135,
+    "column": 10,
+    "endLine": 135,
+    "endColumn": 21
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 135,
+    "column": 22,
+    "endLine": 135,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'serialize' is not defined.",
+    "line": 135,
+    "column": 41,
+    "endLine": 135,
+    "endColumn": 50
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 135,
+    "column": 64
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 136,
+    "column": 1
+  }
+]

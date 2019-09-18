@@ -12,7 +12,9 @@ const tester = new RuleTester({
 
 tester.run("no-multi-spaces-in-html-tag", rule, {
     valid: [
-        `
+        {
+            filename: "test.html",
+            code: `
         <input
           class="foo"
           type="text"
@@ -20,7 +22,10 @@ tester.run("no-multi-spaces-in-html-tag", rule, {
 
         <input class="foo" type="text">
         `,
-        `
+        },
+        {
+            filename: "test.html",
+            code: `
         <%
         var a = 1;
 
@@ -33,26 +38,43 @@ tester.run("no-multi-spaces-in-html-tag", rule, {
         a ? b: c
         %>
         `,
-        `
+        },
+        {
+            filename: "test.html",
+            code: `
         <div></div>
         `,
+        },
         // template tag
-        `
+        {
+            filename: "test.html",
+            code: `
         <input <%=  'date-attr1'  %> class=" <%=  class1  %> "
               type=" <%=  type1  %> " <%=  'date-attr2'  %> >
         `,
-        `
+        },
+        {
+            filename: "test.html",
+            code: `
         <li><%- user %></li>
         `,
-        `
+        },
+        {
+            filename: "test.html",
+            code: `
         <% if (a) { %>  <div></div>  <% } %> >
         `,
-        `
+        },
+        {
+            filename: "test.html",
+            code: `
         <%- user %>
         `,
+        },
     ],
     invalid: [
         {
+            filename: "test.html",
             code: `
             <input     class="foo"
                   type="text"         >
@@ -67,6 +89,7 @@ tester.run("no-multi-spaces-in-html-tag", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
             <input type="text"         />
             `,
@@ -76,6 +99,7 @@ tester.run("no-multi-spaces-in-html-tag", rule, {
             errors: ["Multiple spaces found before `/>`."],
         },
         {
+            filename: "test.html",
             code: `
             <input   <%=  'date-attr1'  %>    class=" <%=  class1  %> "
                   type=" <%=  type1  %> "      <%=  'date-attr2'  %>   >
@@ -92,6 +116,7 @@ tester.run("no-multi-spaces-in-html-tag", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
             <input   <%=  'date-attr1'  %>   <%=  'class="'+  class1  +'"'  %> 
                   <%=  'type="'+type1+'"'  %>       <%=  'date-attr2'  %>   >
@@ -108,6 +133,7 @@ tester.run("no-multi-spaces-in-html-tag", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
             <input
                 <% if (a) { %>
@@ -126,6 +152,7 @@ tester.run("no-multi-spaces-in-html-tag", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
             <div></div      >
             `,
@@ -136,6 +163,7 @@ tester.run("no-multi-spaces-in-html-tag", rule, {
         },
         // duplication attr
         {
+            filename: "test.html",
             code: `
             <input
                 <% if (a) { %>

@@ -1,0 +1,26 @@
+[
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 18,
+    "column": 26
+  },
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 90,
+    "column": 19
+  },
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 102,
+    "column": 19
+  },
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 124,
+    "column": 24
+  }
+]

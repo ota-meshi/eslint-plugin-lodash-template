@@ -1,0 +1,226 @@
+[
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 336. Maximum allowed is 80.",
+    "line": 7,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 1631. Maximum allowed is 80.",
+    "line": 10,
+    "column": 1
+  },
+  {
+    "ruleId": "func-style",
+    "message": "Expected a function expression.",
+    "line": 12,
+    "column": 1,
+    "endLine": 19,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'a' is too short (< 2).",
+    "line": 12,
+    "column": 20,
+    "endLine": 12,
+    "endColumn": 21
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 0.",
+    "line": 15,
+    "column": 9,
+    "endLine": 15,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 4.",
+    "line": 16,
+    "column": 9,
+    "endLine": 16,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 373. Maximum allowed is 80.",
+    "line": 22,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 1641. Maximum allowed is 80.",
+    "line": 24,
+    "column": 1
+  },
+  {
+    "ruleId": "func-style",
+    "message": "Expected a function expression.",
+    "line": 26,
+    "column": 1,
+    "endLine": 33,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'a' is too short (< 2).",
+    "line": 26,
+    "column": 28,
+    "endLine": 26,
+    "endColumn": 29
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 84. Maximum allowed is 80.",
+    "line": 28,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 84. Maximum allowed is 80.",
+    "line": 28,
+    "column": 1
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 0.",
+    "line": 29,
+    "column": 9,
+    "endLine": 29,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 4.",
+    "line": 30,
+    "column": 9,
+    "endLine": 30,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "func-style",
+    "message": "Expected a function expression.",
+    "line": 35,
+    "column": 1,
+    "endLine": 39,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'a' is too short (< 2).",
+    "line": 35,
+    "column": 17,
+    "endLine": 35,
+    "endColumn": 18
+  },
+  {
+    "ruleId": "require-unicode-regexp",
+    "message": "Use the 'u' flag.",
+    "line": 37,
+    "column": 13,
+    "endLine": 37,
+    "endColumn": 31
+  },
+  {
+    "ruleId": "func-style",
+    "message": "Expected a function expression.",
+    "line": 41,
+    "column": 1,
+    "endLine": 45,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'a' is too short (< 2).",
+    "line": 41,
+    "column": 21,
+    "endLine": 41,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "require-unicode-regexp",
+    "message": "Use the 'u' flag.",
+    "line": 43,
+    "column": 13,
+    "endLine": 43,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "func-style",
+    "message": "Expected a function expression.",
+    "line": 47,
+    "column": 1,
+    "endLine": 51,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'a' is too short (< 2).",
+    "line": 47,
+    "column": 19,
+    "endLine": 47,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "require-unicode-regexp",
+    "message": "Use the 'u' flag.",
+    "line": 49,
+    "column": 13,
+    "endLine": 49,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 150. Maximum allowed is 80.",
+    "line": 53,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 150. Maximum allowed is 80.",
+    "line": 53,
+    "column": 1
+  },
+  {
+    "ruleId": "require-await",
+    "message": "Async function has no 'await' expression.",
+    "line": 55,
+    "column": 16,
+    "endLine": 55,
+    "endColumn": 31
+  },
+  {
+    "ruleId": "prefer-destructuring",
+    "message": "Use object destructuring.",
+    "line": 64,
+    "column": 9,
+    "endLine": 64,
+    "endColumn": 40
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'isDesktop' should be before 'isTablet'.",
+    "line": 126,
+    "column": 13,
+    "endLine": 126,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'isMacOS' should be before 'isWindows'.",
+    "line": 129,
+    "column": 13,
+    "endLine": 129,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'isDesktopOrTablet' should be before 'isMacOS'.",
+    "line": 130,
+    "column": 13,
+    "endLine": 130,
+    "endColumn": 32
+  }
+]

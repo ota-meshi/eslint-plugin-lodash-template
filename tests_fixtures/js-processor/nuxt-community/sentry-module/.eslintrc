@@ -15,7 +15,11 @@
         "lodash-template/template-tag-spacing": "error"
       },
       "parserOptions": {
-        "parser": "babel-eslint"
+        "parser": "vue-eslint-parser",
+        "sourceType": "module",
+        "parserOptions": {
+          "parser": "babel-eslint"
+        },
       },
       "globals": {
         "options": true,

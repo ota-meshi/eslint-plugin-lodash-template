@@ -1,0 +1,198 @@
+[
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 1,
+    "column": 17,
+    "endLine": 1,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 1,
+    "column": 22
+  },
+  {
+    "ruleId": "sort-imports",
+    "message": "Imports should be sorted alphabetically.",
+    "line": 2,
+    "column": 1,
+    "endLine": 2,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 2,
+    "column": 21,
+    "endLine": 2,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 2,
+    "column": 34
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'serialize' is not defined.",
+    "line": 4,
+    "column": 22,
+    "endLine": 4,
+    "endColumn": 31
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 4,
+    "column": 57
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'serialize' is not defined.",
+    "line": 6,
+    "column": 21,
+    "endLine": 6,
+    "endColumn": 30
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 6,
+    "column": 51
+  },
+  {
+    "ruleId": "keyword-spacing",
+    "message": "Expected space(s) after \"if\".",
+    "line": 7,
+    "column": 1
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 7,
+    "column": 13
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 8,
+    "column": 1,
+    "endLine": 8,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument.",
+    "line": 8,
+    "column": 19,
+    "endLine": 8,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 8,
+    "column": 29
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 4.",
+    "line": 9,
+    "column": 1,
+    "endLine": 9,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 9,
+    "column": 38,
+    "endLine": 9,
+    "endColumn": 39
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 9,
+    "column": 54,
+    "endLine": 9,
+    "endColumn": 55
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 9,
+    "column": 70
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 10,
+    "column": 1,
+    "endLine": 10,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 10,
+    "column": 3
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 10,
+    "column": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 11,
+    "column": 1
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 13,
+    "column": 39
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 14,
+    "column": 1,
+    "endLine": 14,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 14,
+    "column": 10,
+    "endLine": 14,
+    "endColumn": 17
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 14,
+    "column": 18,
+    "endLine": 14,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 14,
+    "column": 31
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 15,
+    "column": 1
+  }
+]

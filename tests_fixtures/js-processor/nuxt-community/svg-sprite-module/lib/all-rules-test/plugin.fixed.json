@@ -1,0 +1,234 @@
+[
+  {
+    "ruleId": "func-style",
+    "message": "Expected a function expression.",
+    "line": 4,
+    "column": 1,
+    "endLine": 17,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "require-unicode-regexp",
+    "message": "Use the 'u' flag.",
+    "line": 9,
+    "column": 13,
+    "endLine": 9,
+    "endColumn": 21
+  },
+  {
+    "ruleId": "require-unicode-regexp",
+    "message": "Use the 'u' flag.",
+    "line": 13,
+    "column": 13,
+    "endLine": 13,
+    "endColumn": 26
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 82. Maximum allowed is 80.",
+    "line": 22,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 82. Maximum allowed is 80.",
+    "line": 22,
+    "column": 1
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'require' is not defined.",
+    "line": 22,
+    "column": 12,
+    "endLine": 22,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'relativeToBuild' is not defined.",
+    "line": 22,
+    "column": 25,
+    "endLine": 22,
+    "endColumn": 40
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_output'.",
+    "line": 22,
+    "column": 41,
+    "endLine": 22,
+    "endColumn": 56
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'functional' should be before 'name'.",
+    "line": 51,
+    "column": 5,
+    "endLine": 51,
+    "endColumn": 17
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'required' should be before 'type'.",
+    "line": 55,
+    "column": 13,
+    "endLine": 55,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+    "line": 59,
+    "column": 13,
+    "endLine": 59,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'desc' should be before 'title'.",
+    "line": 61,
+    "column": 9,
+    "endLine": 61,
+    "endColumn": 15
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+    "line": 63,
+    "column": 13,
+    "endLine": 63,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+    "line": 67,
+    "column": 13,
+    "endLine": 67,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'v' is too short (< 2).",
+    "line": 70,
+    "column": 48,
+    "endLine": 70,
+    "endColumn": 49
+  },
+  {
+    "ruleId": "radix",
+    "message": "Missing radix parameter.",
+    "line": 70,
+    "column": 61,
+    "endLine": 70,
+    "endColumn": 72
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'h' is too short (< 2).",
+    "line": 75,
+    "column": 13,
+    "endLine": 75,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 95. Maximum allowed is 80.",
+    "line": 84,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 95. Maximum allowed is 80.",
+    "line": 84,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 100. Maximum allowed is 80.",
+    "line": 86,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 100. Maximum allowed is 80.",
+    "line": 86,
+    "column": 1
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 92,
+    "column": 23,
+    "endLine": 92,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 92,
+    "column": 23,
+    "endLine": 95,
+    "endColumn": 17
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 92,
+    "column": 37,
+    "endLine": 95,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 96,
+    "column": 22,
+    "endLine": 96,
+    "endColumn": 32
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 96,
+    "column": 22,
+    "endLine": 99,
+    "endColumn": 17
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 96,
+    "column": 35,
+    "endLine": 99,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 91. Maximum allowed is 80.",
+    "line": 104,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 91. Maximum allowed is 80.",
+    "line": 104,
+    "column": 1
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'attrs' should be before 'class'.",
+    "line": 105,
+    "column": 13,
+    "endLine": 105,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'viewBox' should be before 'xmlns'.",
+    "line": 107,
+    "column": 17,
+    "endLine": 107,
+    "endColumn": 26
+  }
+]

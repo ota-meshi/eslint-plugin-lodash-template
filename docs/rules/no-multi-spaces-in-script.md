@@ -7,7 +7,7 @@ description: "disallow multiple spaces in script. (ex. :ng: `<% if···(test)·
 # lodash-template/no-multi-spaces-in-script
 > disallow multiple spaces in script. (ex. :ng: `<% if···(test)···{ %>`)
 
-- :gear: This rule is included in all of `"plugin:lodash-template/recommended"`, `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
+- :gear: This rule is included in all of `"plugin:lodash-template/recommended"`, `"plugin:lodash-template/recommended-with-html"`, `"plugin:lodash-template/recommended-with-js"` and `"plugin:lodash-template/all"`.
 - :wrench: The `--fix` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by this rule.
 
 ## Rule Details

@@ -1,0 +1,18 @@
+[
+  {
+    "ruleId": "arrow-parens",
+    "message": "Unexpected parentheses around single function argument having a body with no curly braces.",
+    "line": 110,
+    "column": 40,
+    "endLine": 110,
+    "endColumn": 45
+  },
+  {
+    "ruleId": "arrow-parens",
+    "message": "Expected parentheses around arrow function argument having a body with curly braces.",
+    "line": 114,
+    "column": 31,
+    "endLine": 114,
+    "endColumn": 38
+  }
+]
