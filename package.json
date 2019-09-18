@@ -59,7 +59,7 @@
     "rules"
   ],
   "peerDependencies": {
-    "eslint": ">=5.0.0"
+    "eslint": ">=6.0.0"
   },
   "devDependencies": {
     "@mysticatea/eslint-plugin": "^11.0.0",
@@ -69,7 +69,7 @@
     "babel-eslint": "^10.0.3",
     "cpx": "^1.5.0",
     "cross-env": "^5.2.1",
-    "eslint": "^6.3.0",
+    "eslint": "^6.4.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.1.0",
     "eslint-plugin-es": "^1.4.0",

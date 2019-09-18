@@ -1,5 +1,5 @@
 async function register () {
-  if (!('serviceWorker' in navigator)) {
+  if (!'serviceWorker' in navigator) {
     throw new Error('serviceWorker is not supported in current browser!')
   }
 

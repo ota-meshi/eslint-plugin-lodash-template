@@ -1,5 +1,13 @@
 [
   {
+    "ruleId": "no-unsafe-negation",
+    "message": "Unexpected negating the left operand of 'in' operator.",
+    "line": 3,
+    "column": 9,
+    "endLine": 3,
+    "endColumn": 25
+  },
+  {
     "ruleId": "max-len",
     "message": "This line has a length of 117. Maximum allowed is 80.",
     "line": 9,

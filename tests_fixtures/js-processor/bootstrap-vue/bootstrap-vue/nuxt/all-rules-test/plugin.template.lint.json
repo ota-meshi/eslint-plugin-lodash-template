@@ -231,7 +231,7 @@
   },
   {
     "ruleId": "space-in-parens",
-    "message": "There should be no spaces inside this paren.",
+    "message": "There should be no space before this paren.",
     "line": 24,
     "column": 86
   },
@@ -271,7 +271,7 @@
   },
   {
     "ruleId": "space-in-parens",
-    "message": "There should be no spaces inside this paren.",
+    "message": "There should be no space before this paren.",
     "line": 25,
     "column": 86
   },
@@ -319,7 +319,7 @@
   },
   {
     "ruleId": "space-in-parens",
-    "message": "There should be no spaces inside this paren.",
+    "message": "There should be no space before this paren.",
     "line": 26,
     "column": 84
   },
@@ -383,7 +383,7 @@
   },
   {
     "ruleId": "space-in-parens",
-    "message": "There should be no spaces inside this paren.",
+    "message": "There should be no space before this paren.",
     "line": 27,
     "column": 104
   },
