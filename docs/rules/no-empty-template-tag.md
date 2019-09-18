@@ -7,7 +7,7 @@ description: "disallow empty micro-template tag. (ex. :ng: `<% %>`)"
 # lodash-template/no-empty-template-tag
 > disallow empty micro-template tag. (ex. :ng: `<% %>`)
 
-- :gear: This rule is included in all of `"plugin:lodash-template/best-practices"`, `"plugin:lodash-template/recommended"`, `"plugin:lodash-template/recommended-with-html"`, `"plugin:lodash-template/recommended-with-js"` and `"plugin:lodash-template/all"`.
+- :gear: This rule is included in all of `"plugin:lodash-template/best-practices"`, `"plugin:lodash-template/recommended"`, `"plugin:lodash-template/recommended-with-html"`, `"plugin:lodash-template/recommended-with-script"` and `"plugin:lodash-template/all"`.
 
 ## Rule Details
 

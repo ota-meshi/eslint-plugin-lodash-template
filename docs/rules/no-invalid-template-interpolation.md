@@ -7,7 +7,7 @@ description: "disallow other than expression in micro-template interpolation. (e
 # lodash-template/no-invalid-template-interpolation
 > disallow other than expression in micro-template interpolation. (ex. :ng: `<%= if (test) { %>`)
 
-- :gear: This rule is included in all of `"plugin:lodash-template/best-practices"`, `"plugin:lodash-template/recommended"`, `"plugin:lodash-template/recommended-with-html"`, `"plugin:lodash-template/recommended-with-js"` and `"plugin:lodash-template/all"`.
+- :gear: This rule is included in all of `"plugin:lodash-template/best-practices"`, `"plugin:lodash-template/recommended"`, `"plugin:lodash-template/recommended-with-html"`, `"plugin:lodash-template/recommended-with-script"` and `"plugin:lodash-template/all"`.
 
 ## Rule Details
 

@@ -12,7 +12,7 @@ module.exports = {
     {
       files: "*.js",
       extends: ["plugin:lodash-template/all"],
-      processor: "lodash-template/js"
+      processor: "lodash-template/script"
     }
   ]
 };

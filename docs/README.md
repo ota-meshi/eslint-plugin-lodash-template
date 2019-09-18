@@ -87,7 +87,7 @@ This plugin provides four predefined configs:
 - `plugin:lodash-template/best-practices` - Above, plus rules to improve dev experience
 - `plugin:lodash-template/recommended` - Above, plus rules to improve code readability
 - `plugin:lodash-template/recommended-with-html` - Above, plus rules to improve code readability with HTML tamplate
-- `plugin:lodash-template/recommended-with-js` - `plugin:lodash-template/recommended` config, plus to enable ESLint parsing of js templates (*This is an experimental feature*)
+- `plugin:lodash-template/recommended-with-script` - `plugin:lodash-template/recommended` config, plus to enable ESLint parsing of JavaScript templates (*This is an experimental feature*)
 - `plugin:lodash-template/all` - All rules of this plugin are included
 
 ## All Rules
@@ -206,10 +206,10 @@ For example if you have a file like below.
 const obj    = <%= JSON.stringify(param     ) %>
 //       ^^^^                          ^^^^^ 
 //         |                            |
-//         |          If you don't use `"plugin:lodash-template/recommended-with-js"`,
+//         |          If you don't use `"plugin:lodash-template/recommended-with-script"`,
 //         |          only the space after `param` is reported.
 //         |
-//         + When using `"plugin:lodash-template/recommended-with-js"`, the space after `obj` is also reported.
+//         + When using `"plugin:lodash-template/recommended-with-script"`, the space after `obj` is also reported.
 ```
 
 #### Configuring
@@ -220,7 +220,7 @@ Please set **.eslintrc.\*** as follows.
 +    "overrides": [
 +        {
 +            "files": ["**/your/templates/*.js"],
-+            "extends": ["plugin:lodash-template/recommended-with-js"]
++            "extends": ["plugin:lodash-template/recommended-with-script"]
 +        }
 +    ]
 ```
@@ -231,9 +231,9 @@ If you do not want to use the included rules, set the details as follows.
     "overrides": [
         {
             "files": ["**/your/templates/*.js"],
--            "extends": ["plugin:lodash-template/recommended-with-js"],
+-            "extends": ["plugin:lodash-template/recommended-with-script"],
 +            "extends": ["plugin:lodash-template/base"],
-+            "processor": "lodash-template/js"
++            "processor": "lodash-template/script"
         }
     ]
 ```
