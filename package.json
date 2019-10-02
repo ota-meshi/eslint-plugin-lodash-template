@@ -4,7 +4,7 @@
   "description": "ESLint plugin for John Resig-style micro templating(Lodash/Underscore.js template)",
   "main": "lib/index.js",
   "scripts": {
-    "lint": "node -e \"if(process.env.ESLINT=='low')process.exit(1)\" && eslint . --ext .js,.vue || node -e \"if(process.env.ESLINT!='low')process.exit(1)\"",
+    "lint": "node -e \"if(process.env.ESLINT=='low'||process.env.ESLINT=='high')process.exit(1)\" && eslint . --ext .js,.vue || node -e \"if(process.env.ESLINT!='low'&&process.env.ESLINT!='high')process.exit(1)\"",
     "pretest": "npm run lint",
     "test:base": "mocha \"tests/**/*.js\" --reporter dot",
     "test": "npm run test:nyc",
