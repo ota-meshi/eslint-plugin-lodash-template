@@ -2040,18 +2040,20 @@
     "endColumn": 132
   },
   {
+    "ruleId": "no-extra-parens",
+    "message": "Unnecessary parentheses around expression.",
+    "line": 104,
+    "column": 26,
+    "endLine": 104,
+    "endColumn": 27
+  },
+  {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
     "line": 104,
     "column": 26,
     "endLine": 104,
     "endColumn": 132
-  },
-  {
-    "ruleId": "no-extra-parens",
-    "message": "Unnecessary parentheses around expression.",
-    "line": 104,
-    "column": 26
   },
   {
     "ruleId": "multiline-ternary",
@@ -2591,13 +2593,17 @@
     "ruleId": "no-extra-parens",
     "message": "Unnecessary parentheses around expression.",
     "line": 142,
-    "column": 22
+    "column": 22,
+    "endLine": 142,
+    "endColumn": 23
   },
   {
     "ruleId": "no-extra-parens",
     "message": "Unnecessary parentheses around expression.",
     "line": 142,
-    "column": 23
+    "column": 23,
+    "endLine": 142,
+    "endColumn": 24
   },
   {
     "ruleId": "no-magic-numbers",
@@ -2749,7 +2755,9 @@
     "ruleId": "no-extra-parens",
     "message": "Unnecessary parentheses around expression.",
     "line": 154,
-    "column": 9
+    "column": 9,
+    "endLine": 154,
+    "endColumn": 10
   },
   {
     "ruleId": "no-undef",
@@ -3060,18 +3068,20 @@
     "column": 1
   },
   {
+    "ruleId": "no-extra-parens",
+    "message": "Unnecessary parentheses around expression.",
+    "line": 178,
+    "column": 33,
+    "endLine": 178,
+    "endColumn": 34
+  },
+  {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
     "line": 178,
     "column": 33,
     "endLine": 178,
     "endColumn": 103
-  },
-  {
-    "ruleId": "no-extra-parens",
-    "message": "Unnecessary parentheses around expression.",
-    "line": 178,
-    "column": 33
   },
   {
     "ruleId": "multiline-ternary",

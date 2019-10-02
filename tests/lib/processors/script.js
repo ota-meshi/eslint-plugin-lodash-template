@@ -54,7 +54,7 @@ function stringifyMessages(messages) {
     )
 }
 
-describe("js test", () => {
+describe("script test", () => {
     describe("should notify errors", () => {
         for (const relPath of testUtils
             .listupFiles(FIXTURE_DIR)
