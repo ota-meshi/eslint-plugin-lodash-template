@@ -182,12 +182,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 93. Maximum allowed is 80.",
-    "line": 88,
-    "column": 1
-  },
-  {
     "ruleId": "no-undef",
     "message": "'workbox' is not defined.",
     "line": 88,
@@ -208,12 +202,6 @@
     "message": "Unexpected block statement surrounding arrow body; move the returned value immediately after the `=>`.",
     "line": 97,
     "column": 18
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 87. Maximum allowed is 80.",
-    "line": 99,
-    "column": 1
   },
   {
     "ruleId": "max-len",

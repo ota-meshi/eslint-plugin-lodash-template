@@ -78,12 +78,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 89. Maximum allowed is 80.",
-    "line": 43,
-    "column": 1
-  },
-  {
     "ruleId": "id-length",
     "message": "Identifier name 'v' is too short (< 2).",
     "line": 47,
@@ -98,12 +92,6 @@
     "column": 59,
     "endLine": 47,
     "endColumn": 70
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 98. Maximum allowed is 80.",
-    "line": 52,
-    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -215,18 +203,6 @@
   },
   {
     "ruleId": "max-len",
-    "message": "This line has a length of 86. Maximum allowed is 80.",
-    "line": 77,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 119. Maximum allowed is 80.",
-    "line": 80,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
     "message": "This line has a length of 119. Maximum allowed is 80.",
     "line": 80,
     "column": 1
@@ -294,12 +270,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 83. Maximum allowed is 80.",
-    "line": 90,
-    "column": 1
-  },
-  {
     "ruleId": "no-use-before-define",
     "message": "'setCookie' was used before it was defined.",
     "line": 93,
@@ -311,18 +281,6 @@
     "ruleId": "max-len",
     "message": "This line has a length of 83. Maximum allowed is 80.",
     "line": 103,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 83. Maximum allowed is 80.",
-    "line": 103,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 85. Maximum allowed is 80.",
-    "line": 117,
     "column": 1
   },
   {
@@ -474,24 +432,12 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 82. Maximum allowed is 80.",
-    "line": 182,
-    "column": 1
-  },
-  {
     "ruleId": "no-undef",
     "message": "'process' is not defined.",
     "line": 182,
     "column": 9,
     "endLine": 182,
     "endColumn": 16
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 85. Maximum allowed is 80.",
-    "line": 188,
-    "column": 1
   },
   {
     "ruleId": "max-len",

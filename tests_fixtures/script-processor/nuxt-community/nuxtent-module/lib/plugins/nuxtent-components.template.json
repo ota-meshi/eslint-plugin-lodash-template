@@ -46,14 +46,6 @@
     "endColumn": 1
   },
   {
-    "ruleId": "no-multiple-empty-lines",
-    "message": "More than 1 blank line not allowed.",
-    "line": 15,
-    "column": 1,
-    "endLine": 17,
-    "endColumn": 1
-  },
-  {
     "ruleId": "unicorn/prevent-abbreviations",
     "message": "The property `props` should be named `properties`. A more descriptive name will do too.",
     "line": 24,

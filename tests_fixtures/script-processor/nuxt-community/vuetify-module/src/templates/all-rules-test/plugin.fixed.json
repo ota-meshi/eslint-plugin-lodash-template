@@ -39,12 +39,6 @@
   },
   {
     "ruleId": "max-len",
-    "message": "This line has a length of 81. Maximum allowed is 80.",
-    "line": 16,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
     "message": "This line has a length of 100. Maximum allowed is 80.",
     "line": 29,
     "column": 1
@@ -56,12 +50,6 @@
     "column": 98,
     "endLine": 29,
     "endColumn": 99
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 82. Maximum allowed is 80.",
-    "line": 38,
-    "column": 1
   },
   {
     "ruleId": "max-len",

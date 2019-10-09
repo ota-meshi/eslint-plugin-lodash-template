@@ -166,16 +166,12 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 96. Maximum allowed is 80.",
-    "line": 17,
-    "column": 1
-  },
-  {
     "ruleId": "no-extra-parens",
     "message": "Unnecessary parentheses around expression.",
     "line": 17,
-    "column": 5
+    "column": 5,
+    "endLine": 17,
+    "endColumn": 6
   },
   {
     "ruleId": "no-invalid-this",
@@ -244,12 +240,6 @@
     "column": 1,
     "endLine": 22,
     "endColumn": 3
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 98. Maximum allowed is 80.",
-    "line": 22,
-    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -614,12 +604,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 109. Maximum allowed is 80.",
-    "line": 41,
-    "column": 1
-  },
-  {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
     "line": 41,
@@ -762,12 +746,6 @@
     "column": 1,
     "endLine": 50,
     "endColumn": 5
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 83. Maximum allowed is 80.",
-    "line": 50,
-    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -1204,12 +1182,6 @@
     "column": 1,
     "endLine": 75,
     "endColumn": 7
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 96. Maximum allowed is 80.",
-    "line": 75,
-    "column": 1
   },
   {
     "ruleId": "max-len",

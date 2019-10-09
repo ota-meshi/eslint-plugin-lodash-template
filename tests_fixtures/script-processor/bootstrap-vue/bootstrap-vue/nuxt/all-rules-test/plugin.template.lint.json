@@ -30,12 +30,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 81. Maximum allowed is 80.",
-    "line": 6,
-    "column": 1
-  },
-  {
     "ruleId": "function-call-argument-newline",
     "message": "There should be a line break after this argument.",
     "line": 6,
@@ -219,7 +213,9 @@
     "ruleId": "no-extra-parens",
     "message": "Unnecessary parentheses around expression.",
     "line": 24,
-    "column": 54
+    "column": 54,
+    "endLine": 24,
+    "endColumn": 55
   },
   {
     "ruleId": "no-param-reassign",
@@ -259,7 +255,9 @@
     "ruleId": "no-extra-parens",
     "message": "Unnecessary parentheses around expression.",
     "line": 25,
-    "column": 54
+    "column": 54,
+    "endLine": 25,
+    "endColumn": 55
   },
   {
     "ruleId": "no-param-reassign",
@@ -307,7 +305,9 @@
     "ruleId": "no-extra-parens",
     "message": "Unnecessary parentheses around expression.",
     "line": 26,
-    "column": 43
+    "column": 43,
+    "endLine": 26,
+    "endColumn": 44
   },
   {
     "ruleId": "no-param-reassign",
@@ -355,7 +355,9 @@
     "ruleId": "no-extra-parens",
     "message": "Unnecessary parentheses around expression.",
     "line": 27,
-    "column": 43
+    "column": 43,
+    "endLine": 27,
+    "endColumn": 44
   },
   {
     "ruleId": "no-param-reassign",

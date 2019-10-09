@@ -142,12 +142,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 88. Maximum allowed is 80.",
-    "line": 20,
-    "column": 1
-  },
-  {
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 0.",
     "line": 20,
@@ -355,12 +349,6 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 33,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 149. Maximum allowed is 80.",
-    "line": 35,
     "column": 1
   },
   {

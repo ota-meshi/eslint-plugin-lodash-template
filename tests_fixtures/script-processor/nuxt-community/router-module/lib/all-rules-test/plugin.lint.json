@@ -6,12 +6,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 82. Maximum allowed is 80.",
-    "line": 1,
-    "column": 1
-  },
-  {
     "ruleId": "object-curly-spacing",
     "message": "There should be no space after '{'.",
     "line": 1,
@@ -36,12 +30,6 @@
     "column": 1,
     "endLine": 4,
     "endColumn": 85
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 84. Maximum allowed is 80.",
-    "line": 4,
-    "column": 1
   },
   {
     "ruleId": "max-len",

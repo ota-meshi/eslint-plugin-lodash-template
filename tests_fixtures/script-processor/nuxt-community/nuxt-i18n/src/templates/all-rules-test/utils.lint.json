@@ -50,12 +50,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 85. Maximum allowed is 80.",
-    "line": 8,
-    "column": 1
-  },
-  {
     "ruleId": "arrow-parens",
     "message": "Expected parentheses around arrow function argument.",
     "line": 8,
@@ -174,12 +168,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 81. Maximum allowed is 80.",
-    "line": 23,
-    "column": 1
-  },
-  {
     "ruleId": "arrow-parens",
     "message": "Expected parentheses around arrow function argument.",
     "line": 23,
@@ -272,12 +260,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 113. Maximum allowed is 80.",
-    "line": 29,
-    "column": 1
-  },
-  {
     "ruleId": "capitalized-comments",
     "message": "Comments should not begin with a lowercase character.",
     "line": 29,
@@ -344,12 +326,6 @@
     "column": 1,
     "endLine": 31,
     "endColumn": 11
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 109. Maximum allowed is 80.",
-    "line": 31,
-    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -522,12 +498,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 98. Maximum allowed is 80.",
-    "line": 39,
-    "column": 1
-  },
-  {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
     "line": 39,
@@ -632,12 +602,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 81. Maximum allowed is 80.",
-    "line": 51,
-    "column": 1
-  },
-  {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
     "line": 51,
@@ -730,12 +694,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 120. Maximum allowed is 80.",
-    "line": 56,
-    "column": 1
-  },
-  {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
     "line": 56,
@@ -776,12 +734,6 @@
     "column": 1,
     "endLine": 58,
     "endColumn": 7
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 119. Maximum allowed is 80.",
-    "line": 58,
-    "column": 1
   },
   {
     "ruleId": "max-len",

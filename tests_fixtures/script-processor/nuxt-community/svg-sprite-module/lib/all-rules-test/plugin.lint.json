@@ -942,12 +942,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 87. Maximum allowed is 80.",
-    "line": 64,
-    "column": 1
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 16 spaces but found 8.",
     "line": 65,
@@ -970,12 +964,6 @@
     "column": 1,
     "endLine": 66,
     "endColumn": 9
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 88. Maximum allowed is 80.",
-    "line": 66,
-    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -1178,12 +1166,6 @@
     "column": 1,
     "endLine": 77,
     "endColumn": 7
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 85. Maximum allowed is 80.",
-    "line": 77,
-    "column": 1
   },
   {
     "ruleId": "max-len",

@@ -16,18 +16,6 @@
   {
     "ruleId": "max-len",
     "message": "This line has a length of 88. Maximum allowed is 80.",
-    "line": 8,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 88. Maximum allowed is 80.",
-    "line": 27,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 88. Maximum allowed is 80.",
     "line": 27,
     "column": 1
   },
@@ -38,12 +26,6 @@
     "column": 52,
     "endLine": 27,
     "endColumn": 53
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 124. Maximum allowed is 80.",
-    "line": 36,
-    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -90,12 +72,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 120. Maximum allowed is 80.",
-    "line": 38,
-    "column": 1
-  },
-  {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
     "line": 38,
@@ -134,24 +110,12 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 107. Maximum allowed is 80.",
-    "line": 54,
-    "column": 1
-  },
-  {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
     "line": 54,
     "column": 17,
     "endLine": 54,
     "endColumn": 29
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 86. Maximum allowed is 80.",
-    "line": 72,
-    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -174,24 +138,12 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 127. Maximum allowed is 80.",
-    "line": 83,
-    "column": 1
-  },
-  {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
     "line": 83,
     "column": 13,
     "endLine": 83,
     "endColumn": 25
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 126. Maximum allowed is 80.",
-    "line": 87,
-    "column": 1
   },
   {
     "ruleId": "max-len",

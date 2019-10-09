@@ -86,12 +86,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 93. Maximum allowed is 80.",
-    "line": 20,
-    "column": 1
-  },
-  {
     "ruleId": "sort-keys",
     "message": "Expected object keys to be in ascending order. 'data-analytics-uacct' should be before 'data-page-url'.",
     "line": 20,
@@ -122,12 +116,6 @@
     "column": 67,
     "endLine": 20,
     "endColumn": 86
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 109. Maximum allowed is 80.",
-    "line": 21,
-    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -359,18 +347,6 @@
   },
   {
     "ruleId": "max-len",
-    "message": "This line has a length of 87. Maximum allowed is 80.",
-    "line": 107,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 134. Maximum allowed is 80.",
-    "line": 108,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
     "message": "This line has a length of 134. Maximum allowed is 80.",
     "line": 108,
     "column": 1
@@ -398,12 +374,6 @@
     "column": 9,
     "endLine": 139,
     "endColumn": 15
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 93. Maximum allowed is 80.",
-    "line": 146,
-    "column": 1
   },
   {
     "ruleId": "max-len",

@@ -78,12 +78,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 84. Maximum allowed is 80.",
-    "line": 11,
-    "column": 1
-  },
-  {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 11,
@@ -138,12 +132,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 90. Maximum allowed is 80.",
-    "line": 17,
-    "column": 1
-  },
-  {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
     "line": 17,
@@ -164,12 +152,6 @@
     "column": 1,
     "endLine": 18,
     "endColumn": 7
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 136. Maximum allowed is 80.",
-    "line": 18,
-    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -364,12 +346,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 99. Maximum allowed is 80.",
-    "line": 31,
-    "column": 1
-  },
-  {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
     "line": 31,
@@ -422,12 +398,6 @@
     "column": 1,
     "endLine": 34,
     "endColumn": 5
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 81. Maximum allowed is 80.",
-    "line": 34,
-    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -798,12 +768,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 90. Maximum allowed is 80.",
-    "line": 58,
-    "column": 1
-  },
-  {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
     "line": 58,
@@ -824,12 +788,6 @@
     "column": 1,
     "endLine": 59,
     "endColumn": 7
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 142. Maximum allowed is 80.",
-    "line": 59,
-    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -1014,12 +972,6 @@
     "column": 1,
     "endLine": 71,
     "endColumn": 7
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 92. Maximum allowed is 80.",
-    "line": 71,
-    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -1232,12 +1184,6 @@
     "column": 1,
     "endLine": 86,
     "endColumn": 7
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 82. Maximum allowed is 80.",
-    "line": 86,
-    "column": 1
   },
   {
     "ruleId": "max-len",
@@ -1590,12 +1536,6 @@
     "column": 1,
     "endLine": 98,
     "endColumn": 9
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 100. Maximum allowed is 80.",
-    "line": 98,
-    "column": 1
   },
   {
     "ruleId": "max-len",

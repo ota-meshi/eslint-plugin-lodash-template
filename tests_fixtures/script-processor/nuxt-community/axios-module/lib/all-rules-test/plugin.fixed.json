@@ -6,12 +6,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-lines",
-    "message": "File has too many lines (327). Maximum allowed is 300.",
-    "line": 1,
-    "column": 1
-  },
-  {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
     "line": 8,
@@ -226,12 +220,6 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 98. Maximum allowed is 80.",
-    "line": 163,
-    "column": 1
-  },
-  {
     "ruleId": "require-unicode-regexp",
     "message": "Use the 'u' flag.",
     "line": 163,
@@ -302,16 +290,12 @@
     "column": 1
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 134. Maximum allowed is 80.",
-    "line": 191,
-    "column": 1
-  },
-  {
     "ruleId": "no-extra-parens",
     "message": "Unnecessary parentheses around expression.",
     "line": 191,
-    "column": 28
+    "column": 28,
+    "endLine": 191,
+    "endColumn": 29
   },
   {
     "ruleId": "multiline-ternary",
@@ -413,7 +397,9 @@
     "ruleId": "no-extra-parens",
     "message": "Unnecessary parentheses around expression.",
     "line": 263,
-    "column": 11
+    "column": 11,
+    "endLine": 263,
+    "endColumn": 12
   },
   {
     "ruleId": "no-undef",
@@ -446,12 +432,6 @@
     "column": 9,
     "endLine": 279,
     "endColumn": 16
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 89. Maximum allowed is 80.",
-    "line": 289,
-    "column": 1
   },
   {
     "ruleId": "max-len",
