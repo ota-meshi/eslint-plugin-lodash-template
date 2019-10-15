@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must not be padded by blank lines.",
+    "line": 79,
+    "column": 26
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must not be padded by blank lines.",
+    "line": 85,
+    "column": 5
+  }
+]

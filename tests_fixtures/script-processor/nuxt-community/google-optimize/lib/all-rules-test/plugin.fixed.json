@@ -306,22 +306,6 @@
     "endColumn": 2
   },
   {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 126,
-    "column": 9,
-    "endLine": 126,
-    "endColumn": 16
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 133,
-    "column": 23,
-    "endLine": 133,
-    "endColumn": 30
-  },
-  {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
     "line": 133,
@@ -378,22 +362,6 @@
     "endColumn": 19
   },
   {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 151,
-    "column": 9,
-    "endLine": 151,
-    "endColumn": 16
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 156,
-    "column": 16,
-    "endLine": 156,
-    "endColumn": 23
-  },
-  {
     "ruleId": "no-shadow",
     "message": "'value' is already declared in the upper scope.",
     "line": 160,
@@ -430,14 +398,6 @@
     "message": "This line has a length of 82. Maximum allowed is 80.",
     "line": 182,
     "column": 1
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 182,
-    "column": 9,
-    "endLine": 182,
-    "endColumn": 16
   },
   {
     "ruleId": "max-len",

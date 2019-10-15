@@ -62,14 +62,6 @@
     "endColumn": 46
   },
   {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 9,
-    "column": 26,
-    "endLine": 9,
-    "endColumn": 33
-  },
-  {
     "ruleId": "no-process-env",
     "message": "Unexpected use of process.env.",
     "line": 9,
@@ -122,14 +114,6 @@
     "column": 26,
     "endLine": 12,
     "endColumn": 27
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 12,
-    "column": 27,
-    "endLine": 12,
-    "endColumn": 34
   },
   {
     "ruleId": "padded-blocks",

@@ -46,14 +46,6 @@
     "endColumn": 24
   },
   {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 67,
-    "column": 29,
-    "endLine": 67,
-    "endColumn": 36
-  },
-  {
     "ruleId": "no-process-env",
     "message": "Unexpected use of process.env.",
     "line": 67,
@@ -86,14 +78,6 @@
     "message": "Expected to return a value at the end of arrow function.",
     "line": 115,
     "column": 32
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 119,
-    "column": 17,
-    "endLine": 119,
-    "endColumn": 24
   },
   {
     "ruleId": "max-len",
@@ -134,14 +118,6 @@
     "endColumn": 6
   },
   {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 142,
-    "column": 13,
-    "endLine": 142,
-    "endColumn": 20
-  },
-  {
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 365.",
     "line": 148,
@@ -172,14 +148,6 @@
     "column": 30,
     "endLine": 270,
     "endColumn": 6
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'require' is not defined.",
-    "line": 217,
-    "column": 41,
-    "endLine": 217,
-    "endColumn": 48
   },
   {
     "ruleId": "global-require",
@@ -392,14 +360,6 @@
     "message": "This line has a length of 98. Maximum allowed is 80.",
     "line": 345,
     "column": 1
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 345,
-    "column": 24,
-    "endLine": 345,
-    "endColumn": 31
   },
   {
     "ruleId": "max-len",

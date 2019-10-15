@@ -36,26 +36,10 @@
     "column": 34
   },
   {
-    "ruleId": "no-undef",
-    "message": "'serialize' is not defined.",
-    "line": 4,
-    "column": 22,
-    "endLine": 4,
-    "endColumn": 31
-  },
-  {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 4,
     "column": 57
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'serialize' is not defined.",
-    "line": 6,
-    "column": 21,
-    "endLine": 6,
-    "endColumn": 30
   },
   {
     "ruleId": "semi",

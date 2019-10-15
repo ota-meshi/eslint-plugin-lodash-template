@@ -378,14 +378,6 @@
     "endColumn": 5
   },
   {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 31,
-    "column": 9,
-    "endLine": 31,
-    "endColumn": 16
-  },
-  {
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 31,

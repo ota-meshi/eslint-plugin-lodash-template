@@ -202,13 +202,5 @@
     "column": 26,
     "endLine": 218,
     "endColumn": 27
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'serialize' is not defined.",
-    "line": 226,
-    "column": 27,
-    "endLine": 226,
-    "endColumn": 36
   }
 ]

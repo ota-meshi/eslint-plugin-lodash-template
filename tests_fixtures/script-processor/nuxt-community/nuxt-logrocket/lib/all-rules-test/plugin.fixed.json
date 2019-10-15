@@ -8,28 +8,12 @@
     "endColumn": 30
   },
   {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 10,
-    "column": 26,
-    "endLine": 10,
-    "endColumn": 33
-  },
-  {
     "ruleId": "no-process-env",
     "message": "Unexpected use of process.env.",
     "line": 10,
     "column": 26,
     "endLine": 10,
     "endColumn": 37
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 16,
-    "column": 26,
-    "endLine": 16,
-    "endColumn": 33
   },
   {
     "ruleId": "no-mixed-operators",

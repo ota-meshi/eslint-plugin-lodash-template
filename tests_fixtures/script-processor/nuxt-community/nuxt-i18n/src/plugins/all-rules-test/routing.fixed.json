@@ -230,22 +230,6 @@
     "endColumn": 29
   },
   {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 122,
-    "column": 21,
-    "endLine": 122,
-    "endColumn": 28
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'require' is not defined.",
-    "line": 124,
-    "column": 37,
-    "endLine": 124,
-    "endColumn": 44
-  },
-  {
     "ruleId": "global-require",
     "message": "Unexpected require().",
     "line": 124,

@@ -2,23 +2,23 @@ import Vue from 'vue'; // eslint-disable-line
 import { library, config } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-<% options.packs.forEach(({ package_, icons }) => { %>
+<% options.packs.forEach(({ package: pkg, icons }) => { %>
   <% if (icons) { %>
     <% icons.forEach((icon) => { %>
-      import { <%= icon %> } from '<%= package_ %>';
+import { <%= icon %> } from '<%= pkg %>';
     <% }) %>
   <% } else { %>
-    import <%= package_.split(/[\s\/]+/)[1].replace(/-/g, '') %> from '<%= package_ %>';
+import <%= pkg.split(/[\s\/]+/)[1].replace(/-/g, '') %> from '<%= pkg %>';
   <% } %>
 <% }) %>
 
 config.autoAddCss = false;
 
-<% options.packs.forEach(({ package_, icons }) => { %>
+<% options.packs.forEach(({ package: pkg, icons }) => { %>
 <% if (icons) { %>
-    library.add(<%= icons.join(',') %>);
+library.add(<%= icons.join(',') %>);
   <% } else { %>
-    library.add(<%= package_.split(/[\s\/]+/)[1].replace(/-/g, '') %>);
+library.add(<%= pkg.split(/[\s\/]+/)[1].replace(/-/g, '') %>);
   <% } %>
 <% }) %>
 

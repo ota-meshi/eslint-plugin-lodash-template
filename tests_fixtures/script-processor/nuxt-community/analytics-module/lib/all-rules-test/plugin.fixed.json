@@ -1,13 +1,5 @@
 [
   {
-    "ruleId": "no-undef",
-    "message": "'serialize' is not defined.",
-    "line": 6,
-    "column": 25,
-    "endLine": 6,
-    "endColumn": 34
-  },
-  {
     "ruleId": "require-atomic-updates",
     "message": "Possible race condition: `ctx.$ga` might be reassigned based on an outdated value of `ctx.$ga`.",
     "line": 20,

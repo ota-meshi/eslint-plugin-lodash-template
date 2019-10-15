@@ -1,15 +1,45 @@
 [
   {
+    "ruleId": "import/no-unresolved",
+    "message": "Unable to resolve path to module '@fortawesome/fontawesome-svg-core'.",
+    "line": 2,
+    "column": 33,
+    "endLine": 2,
+    "endColumn": 68
+  },
+  {
+    "ruleId": "import/no-unresolved",
+    "message": "Unable to resolve path to module '@fortawesome/vue-fontawesome'.",
+    "line": 3,
+    "column": 33,
+    "endLine": 3,
+    "endColumn": 63
+  },
+  {
     "ruleId": "object-curly-spacing",
     "message": "A space is required after '{'.",
     "line": 5,
     "column": 27
   },
   {
+    "ruleId": "key-spacing",
+    "message": "Missing space before value for key 'package'.",
+    "line": 5,
+    "column": 36
+  },
+  {
     "ruleId": "object-curly-spacing",
     "message": "A space is required before '}'.",
     "line": 5,
-    "column": 43
+    "column": 46
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 0 spaces but found 6.",
+    "line": 8,
+    "column": 1,
+    "endLine": 8,
+    "endColumn": 7
   },
   {
     "ruleId": "lodash-template/template-tag-spacing",
@@ -39,9 +69,17 @@
     "ruleId": "lodash-template/template-tag-spacing",
     "message": "Expected 1 space before `%>`, but no spaces found.",
     "line": 8,
-    "column": 45,
+    "column": 40,
     "endLine": 8,
-    "endColumn": 47
+    "endColumn": 42
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 0 spaces but found 4.",
+    "line": 11,
+    "column": 1,
+    "endLine": 11,
+    "endColumn": 5
   },
   {
     "ruleId": "lodash-template/template-tag-spacing",
@@ -55,41 +93,41 @@
     "ruleId": "no-useless-escape",
     "message": "Unnecessary escape character: \\/.",
     "line": 11,
-    "column": 34,
+    "column": 29,
     "endLine": 11,
-    "endColumn": 35
+    "endColumn": 30
   },
   {
     "ruleId": "quotes",
     "message": "Strings must use singlequote.",
     "line": 11,
-    "column": 58,
+    "column": 53,
     "endLine": 11,
-    "endColumn": 60
+    "endColumn": 55
   },
   {
     "ruleId": "lodash-template/template-tag-spacing",
     "message": "Expected 1 space before `%>`, but no spaces found.",
     "line": 11,
-    "column": 61,
+    "column": 56,
     "endLine": 11,
-    "endColumn": 63
+    "endColumn": 58
   },
   {
     "ruleId": "lodash-template/template-tag-spacing",
     "message": "Expected 1 space after `<%=`, but no spaces found.",
     "line": 11,
-    "column": 70,
+    "column": 65,
     "endLine": 11,
-    "endColumn": 73
+    "endColumn": 68
   },
   {
     "ruleId": "lodash-template/template-tag-spacing",
     "message": "Expected 1 space before `%>`, but no spaces found.",
     "line": 11,
-    "column": 81,
+    "column": 71,
     "endLine": 11,
-    "endColumn": 83
+    "endColumn": 73
   },
   {
     "ruleId": "object-curly-spacing",
@@ -98,10 +136,24 @@
     "column": 27
   },
   {
+    "ruleId": "key-spacing",
+    "message": "Missing space before value for key 'package'.",
+    "line": 17,
+    "column": 36
+  },
+  {
     "ruleId": "object-curly-spacing",
     "message": "A space is required before '}'.",
     "line": 17,
-    "column": 43
+    "column": 46
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 0 spaces but found 4.",
+    "line": 19,
+    "column": 1,
+    "endLine": 19,
+    "endColumn": 5
   },
   {
     "ruleId": "lodash-template/template-tag-spacing",
@@ -120,6 +172,14 @@
     "endColumn": 37
   },
   {
+    "ruleId": "indent",
+    "message": "Expected indentation of 0 spaces but found 4.",
+    "line": 21,
+    "column": 1,
+    "endLine": 21,
+    "endColumn": 5
+  },
+  {
     "ruleId": "lodash-template/template-tag-spacing",
     "message": "Expected 1 space after `<%=`, but no spaces found.",
     "line": 21,
@@ -131,25 +191,25 @@
     "ruleId": "no-useless-escape",
     "message": "Unnecessary escape character: \\/.",
     "line": 21,
-    "column": 39,
+    "column": 34,
     "endLine": 21,
-    "endColumn": 40
+    "endColumn": 35
   },
   {
     "ruleId": "quotes",
     "message": "Strings must use singlequote.",
     "line": 21,
-    "column": 63,
+    "column": 58,
     "endLine": 21,
-    "endColumn": 65
+    "endColumn": 60
   },
   {
     "ruleId": "lodash-template/template-tag-spacing",
     "message": "Expected 1 space before `%>`, but no spaces found.",
     "line": 21,
-    "column": 66,
+    "column": 61,
     "endLine": 21,
-    "endColumn": 68
+    "endColumn": 63
   },
   {
     "ruleId": "lodash-template/template-tag-spacing",

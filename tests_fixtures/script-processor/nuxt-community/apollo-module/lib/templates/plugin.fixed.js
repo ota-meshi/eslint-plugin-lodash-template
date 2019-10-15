@@ -17,72 +17,72 @@ export default (ctx, inject) => {
 
   // Config
   <% Object.keys(options.clientConfigs).forEach((key) => { %>
-      const <%= key %>TokenName = '<%= options.clientConfigs[key].tokenName %>'  || AUTH_TOKEN_NAME
-      const <%= key %>CookieAttributes = '<%= options.clientConfigs[key].cookieAttributes %>'  || COOKIE_ATTRIBUTES
+  const <%= key %>TokenName = '<%= options.clientConfigs[key].tokenName %>' || AUTH_TOKEN_NAME
+  const <%= key %>CookieAttributes = '<%= options.clientConfigs[key].cookieAttributes %>' || COOKIE_ATTRIBUTES
 
-      function <%= key %>GetAuth () {
-        const token = cookies.get(<%= key %>TokenName)
-        return token && <%= key %>ClientConfig.validateToken(token) ? AUTH_TYPE + token : ''
-      }
+  function <%= key %>GetAuth () {
+    const token = cookies.get(<%= key %>TokenName)
+    return token && <%= key %>ClientConfig.validateToken(token) ? AUTH_TYPE + token : ''
+  }
 
-      let <%= key %>ClientConfig
+  let <%= key %>ClientConfig
       <% if (typeof options.clientConfigs[key] === 'object') { %>
         <%= key %>ClientConfig = <%= JSON.stringify(options.clientConfigs[key], null, 2) %>
       <% } else if (typeof options.clientConfigs[key] === 'string') { %>
         <%= key %>ClientConfig = require('<%= options.clientConfigs[key] %>')
 
-        if ('default' in <%= key %>ClientConfig) {
+  if ('default' in <%= key %>ClientConfig) {
           <%= key %>ClientConfig = <%= key %>ClientConfig.default
-        }
+  }
 
         <%= key %>ClientConfig = <%= key %>ClientConfig(ctx)
       <% } %>
 
-      const <%= key %>ValidateToken = () => true
+  const <%= key %>ValidateToken = () => true
 
-      if (!<%= key %>ClientConfig.validateToken) {
+  if (!<%= key %>ClientConfig.validateToken) {
         <%= key %>ClientConfig.validateToken = <%= key %>ValidateToken
-      }
+  }
 
-      const <%= key %>Cache = <%= key %>ClientConfig.cache
-        ? <%= key %>ClientConfig.cache
-        : new InMemoryCache(<%= key %>ClientConfig.inMemoryCacheOptions ? <%= key %>ClientConfig.inMemoryCacheOptions: undefined)
+  const <%= key %>Cache = <%= key %>ClientConfig.cache
+    ? <%= key %>ClientConfig.cache
+    : new InMemoryCache(<%= key %>ClientConfig.inMemoryCacheOptions ? <%= key %>ClientConfig.inMemoryCacheOptions : undefined)
 
-      if (!process.server) {
+  if (!process.server) {
         <%= key %>Cache.restore(window.__NUXT__ ? window.__NUXT__.apollo.<%= key === 'default' ? 'defaultClient' : key %> : null)
-      }
+  }
 
-      if (!<%= key %>ClientConfig.getAuth) {
+  if (!<%= key %>ClientConfig.getAuth) {
         <%= key %>ClientConfig.getAuth = <%= key %>GetAuth
-      }
+  }
       <%= key %>ClientConfig.ssr = !!process.server
       <%= key %>ClientConfig.cache = <%= key %>Cache
       <%= key %>ClientConfig.tokenName = <%= key %>TokenName
 
-      // Create apollo client
-      let <%= key %>ApolloCreation = createApolloClient({
-        ...<%= key %>ClientConfig
-      })
+  // Create apollo client
+  let <%= key %>ApolloCreation = createApolloClient({
+    ...<%= key %>ClientConfig
+  })
       <%= key %>ApolloCreation.apolloClient.wsClient = <%= key %>ApolloCreation.wsClient
 
       <% if (key === 'default') { %>
-          providerOptions.<%= key %>Client = <%= key %>ApolloCreation.apolloClient
+  providerOptions.<%= key %>Client = <%= key %>ApolloCreation.apolloClient
       <% } else { %>
-          providerOptions.clients.<%= key %> = <%= key %>ApolloCreation.apolloClient
+  providerOptions.clients.<%= key %> = <%= key %>ApolloCreation.apolloClient
       <% } %>
   <% }) %>
 
   const vueApolloOptions = Object.assign(providerOptions, {
       <% if (options.defaultOptions) { %>
-        defaultOptions: <%= JSON.stringify(options.defaultOptions) %>,
+    defaultOptions: <%= JSON.stringify(options.defaultOptions) %>,
       <% } %>
-      errorHandler (error) {
+    errorHandler (error) {
         <% if (options.errorHandler) { %>
-          require('<%= options.errorHandler %>').default(error, ctx)
+      require('<%= options.errorHandler %>').default(error, ctx)
         <% } else { %>
-          console.log('%cError', 'background: red; color: white; padding: 2px 4px; border-radius: 3px; font-weight: bold;', error.message)
+      console.log('%cError', 'background: red; color: white; padding: 2px 4px; border-radius: 3px; font-weight: bold;', error.message)
         <% } %>
-      }
+    }
   })
 
   const apolloProvider = new VueApollo(vueApolloOptions)
@@ -102,7 +102,7 @@ export default (ctx, inject) => {
       if (typeof cookieAttributes === 'number') cookieAttributes = { expires: cookieAttributes }
 
       if (typeof cookieAttributes.expires === 'number') {
-        cookieAttributes.expires = new Date(Date.now()+ 86400*1000*cookieAttributes.expires)
+        cookieAttributes.expires = new Date(Date.now() + 86400 * 1000 * cookieAttributes.expires)
       }
 
       if (token) {

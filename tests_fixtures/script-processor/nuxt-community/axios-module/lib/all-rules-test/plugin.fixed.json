@@ -166,14 +166,6 @@
     "endColumn": 51
   },
   {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 136,
-    "column": 13,
-    "endLine": 136,
-    "endColumn": 20
-  },
-  {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
     "line": 138,
@@ -242,14 +234,6 @@
     "column": 31,
     "endLine": 175,
     "endColumn": 34
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 177,
-    "column": 9,
-    "endLine": 177,
-    "endColumn": 16
   },
   {
     "ruleId": "no-empty-function",
@@ -386,28 +370,12 @@
     "endColumn": 16
   },
   {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 261,
-    "column": 21,
-    "endLine": 261,
-    "endColumn": 28
-  },
-  {
     "ruleId": "no-extra-parens",
     "message": "Unnecessary parentheses around expression.",
     "line": 263,
     "column": 11,
     "endLine": 263,
     "endColumn": 12
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 263,
-    "column": 12,
-    "endLine": 263,
-    "endColumn": 19
   },
   {
     "ruleId": "no-process-env",
@@ -470,21 +438,5 @@
     "column": 17,
     "endLine": 290,
     "endColumn": 18
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 295,
-    "column": 9,
-    "endLine": 295,
-    "endColumn": 16
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'serialize' is not defined.",
-    "line": 316,
-    "column": 26,
-    "endLine": 316,
-    "endColumn": 35
   }
 ]

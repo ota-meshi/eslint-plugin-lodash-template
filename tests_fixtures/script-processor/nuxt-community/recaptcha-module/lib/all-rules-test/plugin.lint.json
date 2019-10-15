@@ -2142,14 +2142,6 @@
     "endColumn": 23
   },
   {
-    "ruleId": "no-undef",
-    "message": "'serialize' is not defined.",
-    "line": 135,
-    "column": 41,
-    "endLine": 135,
-    "endColumn": 50
-  },
-  {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 135,

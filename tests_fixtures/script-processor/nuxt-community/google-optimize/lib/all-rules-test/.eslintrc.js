@@ -21,6 +21,9 @@ module.exports = {
             },
             globals: {
                 options: true,
+                serialize: true,
+                process: true,
+                require: true,
             },
             rules: {
                 "one-var": "off",

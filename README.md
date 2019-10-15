@@ -356,7 +356,7 @@ If you do not want to use the included rules, set the details as follows.
 
 ## FAQ
 
-### Editor Settings
+### Editor Settings with HTML templates
 
 About how to mark warnings on editor.
 

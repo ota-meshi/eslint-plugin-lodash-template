@@ -31,14 +31,6 @@
   },
   {
     "ruleId": "no-undef",
-    "message": "'require' is not defined.",
-    "line": 22,
-    "column": 12,
-    "endLine": 22,
-    "endColumn": 19
-  },
-  {
-    "ruleId": "no-undef",
     "message": "'relativeToBuild' is not defined.",
     "line": 22,
     "column": 25,

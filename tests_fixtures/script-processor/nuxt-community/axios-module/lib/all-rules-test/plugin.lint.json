@@ -1462,14 +1462,6 @@
     "endColumn": 7
   },
   {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 68,
-    "column": 11,
-    "endLine": 68,
-    "endColumn": 18
-  },
-  {
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 68,
@@ -1812,14 +1804,6 @@
     "column": 1,
     "endLine": 92,
     "endColumn": 3
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 92,
-    "column": 7,
-    "endLine": 92,
-    "endColumn": 14
   },
   {
     "ruleId": "padded-blocks",
@@ -2692,14 +2676,6 @@
     "endColumn": 3
   },
   {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 152,
-    "column": 19,
-    "endLine": 152,
-    "endColumn": 26
-  },
-  {
     "ruleId": "indent",
     "message": "Expected indentation of 8 spaces but found 6.",
     "line": 153,
@@ -2722,14 +2698,6 @@
     "column": 9,
     "endLine": 154,
     "endColumn": 10
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 154,
-    "column": 10,
-    "endLine": 154,
-    "endColumn": 17
   },
   {
     "ruleId": "no-process-env",
@@ -3132,14 +3100,6 @@
     "endColumn": 3
   },
   {
-    "ruleId": "no-undef",
-    "message": "'process' is not defined.",
-    "line": 182,
-    "column": 7,
-    "endLine": 182,
-    "endColumn": 14
-  },
-  {
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 182,
@@ -3262,14 +3222,6 @@
     "column": 25,
     "endLine": 197,
     "endColumn": 26
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'serialize' is not defined.",
-    "line": 197,
-    "column": 51,
-    "endLine": 197,
-    "endColumn": 60
   },
   {
     "ruleId": "brace-style",

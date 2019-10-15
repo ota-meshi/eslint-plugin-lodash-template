@@ -22,22 +22,6 @@
     "column": 18
   },
   {
-    "ruleId": "no-undef",
-    "message": "'serialize' is not defined.",
-    "line": 9,
-    "column": 17,
-    "endLine": 9,
-    "endColumn": 26
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'serialize' is not defined.",
-    "line": 15,
-    "column": 52,
-    "endLine": 15,
-    "endColumn": 61
-  },
-  {
     "ruleId": "max-len",
     "message": "This line has a length of 117. Maximum allowed is 80.",
     "line": 17,
@@ -94,14 +78,6 @@
     "column": 24,
     "endLine": 18,
     "endColumn": 41
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'serialize' is not defined.",
-    "line": 18,
-    "column": 80,
-    "endLine": 18,
-    "endColumn": 89
   },
   {
     "ruleId": "line-comment-position",
