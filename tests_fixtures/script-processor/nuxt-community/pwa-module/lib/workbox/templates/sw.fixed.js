@@ -58,7 +58,7 @@ workbox.precaching.precacheAndRoute(<%= JSON.stringify(options.preCaching, null,
 
 // Register route handlers for runtimeCaching
 <% options.runtimeCaching.forEach(r => {
- %>workbox.routing.registerRoute(new RegExp('<%= r.urlPattern %>'), new workbox.strategies.<%= r.handler %> (<%= JSON.stringify(r.strategyOptions || {}) %>), '<%= r.method %>')
+ %>workbox.routing.registerRoute(new RegExp('<%= r.urlPattern %>'), new workbox.strategies.<%= r.handler %>(<%= JSON.stringify(r.strategyOptions || {}) %>), '<%= r.method %>')
 <% }) %>
 
 <% if (options.offlinePage) { %>

@@ -142,6 +142,14 @@
     "column": 44
   },
   {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 0.",
+    "line": 11,
+    "column": 1,
+    "endLine": 11,
+    "endColumn": 1
+  },
+  {
     "ruleId": "no-undef",
     "message": "'config' is not defined.",
     "line": 12,
@@ -284,6 +292,14 @@
     "endColumn": 55
   },
   {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 17,
+    "column": 59,
+    "endLine": 17,
+    "endColumn": 60
+  },
+  {
     "ruleId": "no-undef",
     "message": "'opt' is not defined.",
     "line": 17,
@@ -304,6 +320,14 @@
     "message": "Missing semicolon.",
     "line": 17,
     "column": 90
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 0.",
+    "line": 18,
+    "column": 1,
+    "endLine": 18,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",

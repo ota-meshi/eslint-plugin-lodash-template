@@ -30,32 +30,24 @@
     "endColumn": 10
   },
   {
-    "ruleId": "semi-style",
-    "message": "Expected this semicolon to be at the end of the previous line.",
-    "line": 9,
-    "column": 22,
-    "endLine": 9,
-    "endColumn": 23
-  },
-  {
     "ruleId": "no-undef",
     "message": "'hash' is not defined.",
     "line": 25,
-    "column": 32,
+    "column": 34,
     "endLine": 25,
-    "endColumn": 36
+    "endColumn": 38
   },
   {
     "ruleId": "no-underscore-dangle",
     "message": "Unexpected dangling '_' in '_name'.",
     "line": 27,
-    "column": 20,
+    "column": 22,
     "endLine": 27,
-    "endColumn": 34
+    "endColumn": 36
   },
   {
     "ruleId": "max-len",
-    "message": "This line has a length of 103. Maximum allowed is 80.",
+    "message": "This line has a length of 105. Maximum allowed is 80.",
     "line": 28,
     "column": 1
   },

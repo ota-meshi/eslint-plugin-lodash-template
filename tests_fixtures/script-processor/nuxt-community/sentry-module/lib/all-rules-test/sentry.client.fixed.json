@@ -16,83 +16,83 @@
     "endColumn": 43
   },
   {
-    "ruleId": "object-curly-newline",
-    "message": "Unexpected line break before this closing brace.",
-    "line": 4,
-    "column": 18
+    "ruleId": "max-len",
+    "message": "This line has a length of 88. Maximum allowed is 80.",
+    "line": 16,
+    "column": 1
   },
   {
     "ruleId": "max-len",
-    "message": "This line has a length of 117. Maximum allowed is 80.",
-    "line": 17,
+    "message": "This line has a length of 127. Maximum allowed is 80.",
+    "line": 18,
     "column": 1
   },
   {
     "ruleId": "no-confusing-arrow",
     "message": "Arrow function used ambiguously with a conditional expression.",
-    "line": 17,
-    "column": 63,
-    "endLine": 18,
+    "line": 18,
+    "column": 73,
+    "endLine": 19,
     "endColumn": 112
   },
   {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
-    "line": 17,
-    "column": 75,
-    "endLine": 18,
+    "line": 18,
+    "column": 85,
+    "endLine": 19,
     "endColumn": 112
   },
   {
     "ruleId": "operator-linebreak",
     "message": "'?' should be placed at the beginning of the line.",
-    "line": 17,
-    "column": 118
+    "line": 18,
+    "column": 128
+  },
+  {
+    "ruleId": "lodash-template/script-indent",
+    "message": "Expected base point indentation of \"                \", but found \"          \".",
+    "line": 19,
+    "column": 1,
+    "endLine": 19,
+    "endColumn": 11
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 113. Maximum allowed is 80.",
-    "line": 18,
+    "line": 19,
     "column": 1
-  },
-  {
-    "ruleId": "lodash-template/script-indent",
-    "message": "Expected relative indentation of 6 spaces but found 4 spaces.",
-    "line": 18,
-    "column": 7,
-    "endLine": 18,
-    "endColumn": 11
   },
   {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 18,
+    "line": 19,
     "column": 11,
-    "endLine": 18,
+    "endLine": 19,
     "endColumn": 64
   },
   {
     "ruleId": "no-undef",
     "message": "'serializeFunction' is not defined.",
-    "line": 18,
+    "line": 19,
     "column": 24,
-    "endLine": 18,
+    "endLine": 19,
     "endColumn": 41
   },
   {
     "ruleId": "line-comment-position",
     "message": "Expected comment to be above code.",
-    "line": 26,
-    "column": 34,
-    "endLine": 26,
-    "endColumn": 54
+    "line": 27,
+    "column": 36,
+    "endLine": 27,
+    "endColumn": 56
   },
   {
     "ruleId": "no-inline-comments",
     "message": "Unexpected comment inline with code.",
-    "line": 26,
-    "column": 34,
-    "endLine": 26,
-    "endColumn": 54
+    "line": 27,
+    "column": 36,
+    "endLine": 27,
+    "endColumn": 56
   }
 ]

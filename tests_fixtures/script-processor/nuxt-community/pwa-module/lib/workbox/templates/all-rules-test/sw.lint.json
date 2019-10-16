@@ -269,6 +269,14 @@
     "ruleId": "function-call-argument-newline",
     "message": "There should be a line break after this argument.",
     "line": 47,
+    "column": 88,
+    "endLine": 47,
+    "endColumn": 89
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 47,
     "column": 129,
     "endLine": 47,
     "endColumn": 130
@@ -380,6 +388,12 @@
     "endColumn": 120
   },
   {
+    "ruleId": "func-call-spacing",
+    "message": "Unexpected newline between function name and paren.",
+    "line": 60,
+    "column": 132
+  },
+  {
     "ruleId": "function-call-argument-newline",
     "message": "There should be a line break after this argument.",
     "line": 60,
@@ -468,6 +482,12 @@
     "message": "Block must be padded by blank lines.",
     "line": 68,
     "column": 1
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 68,
+    "column": 3
   },
   {
     "ruleId": "line-comment-position",

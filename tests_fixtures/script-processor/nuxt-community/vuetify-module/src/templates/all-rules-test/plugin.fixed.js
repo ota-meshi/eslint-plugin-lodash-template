@@ -14,7 +14,7 @@ import Vuetify from '<%= options.treeShake ? 'vuetify/lib' : 'vuetify' %>';
       if (options.treeShake[lib.key] && options.treeShake[lib.key].length > 0) {
 %>
 import {<%= options.treeShake[lib.key].join(', ') %>} from '<%= lib.location %>';
-  <%
+<%
       }
     }
   }
@@ -25,11 +25,11 @@ import options from "./options";
 Vue.use(
     Vuetify,
     {
-<% if (options.treeShake) { %>
-<%= libImports.filter((lib) => options.treeShake[lib.key] && options.treeShake[lib.key].length > 0).
-    map((lib) => `  ${lib.key}: { ${options.treeShake[lib.key].join(', ')} }`).
-    join(',\n') %>
-<% } %>
+        <% if (options.treeShake) { %>
+        <%= libImports.filter((lib) => options.treeShake[lib.key] && options.treeShake[lib.key].length > 0).
+            map((lib) => `  ${lib.key}: { ${options.treeShake[lib.key].join(', ')} }`).
+            join(',\n') %>
+        <% } %>
     }
 );
 
@@ -37,10 +37,10 @@ export default (ctx) => {
 
     const vuetifyOptions = typeof options === "function" ? options(ctx) : options;
 
-<% if (options.defaultIconPreset) { %>
+    <% if (options.defaultIconPreset) { %>
     vuetifyOptions.icons = vuetifyOptions.icons || {};
     vuetifyOptions.icons.iconfont = '<%= options.defaultIconPreset %>';
-<% } %>
+    <% } %>
 
     const vuetify = new Vuetify(vuetifyOptions);
 

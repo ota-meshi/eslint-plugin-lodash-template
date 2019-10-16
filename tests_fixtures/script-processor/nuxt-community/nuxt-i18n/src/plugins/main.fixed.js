@@ -34,8 +34,8 @@ export default async (context) => {
     store.registerModule(vuex.moduleName, {
       namespaced: true,
       state: () => ({
-        <% if (options.vuex.syncLocale) { %>locale: '',<% } %>
-        <% if (options.vuex.syncMessages) { %>messages: {},<% } %>
+        <% if (options.vuex.syncLocale) { %>locale: '', <% } %>
+        <% if (options.vuex.syncMessages) { %>messages: {}, <% } %>
         <% if (options.vuex.syncRouteParams) { %>routeParams: {}<% } %>
       }),
       actions: {

@@ -36,6 +36,14 @@
     "column": 34
   },
   {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 4,
+    "column": 17,
+    "endLine": 4,
+    "endColumn": 18
+  },
+  {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 4,

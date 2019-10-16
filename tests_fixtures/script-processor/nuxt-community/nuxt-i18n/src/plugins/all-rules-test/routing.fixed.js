@@ -93,13 +93,13 @@ function switchLocalePathFactory (i18nPath) {
 
         const {params, ...routeCopy} = this.$route;
         let langSwitchParams = {};
-    <% if (options.vuex) { %>
+        <% if (options.vuex) { %>
         if (this.$store) {
 
             langSwitchParams = this.$store.getters[`${vuex.moduleName}/localeRouteParams`](locale);
 
         }
-    <% } %>
+        <% } %>
         const baseRoute = {...routeCopy,
             name,
             "params": {

@@ -29,7 +29,7 @@ export default async (context) => {
     const getLocaleDomain = <%= options.getLocaleDomain %>;
     const syncVuex = <%= options.syncVuex %>;
 
-  <% if (options.vuex) { %>
+    <% if (options.vuex) { %>
     // Register Vuex module
     if (store) {
 
@@ -38,12 +38,12 @@ export default async (context) => {
             {
                 "namespaced": true,
                 state: () => ({
-        <% if (options.vuex.syncLocale) { %>"locale": "",<% } %>
-        <% if (options.vuex.syncMessages) { %>"messages": {},<% } %>
-        <% if (options.vuex.syncRouteParams) { %>routeParams: {}<% } %>
+                <% if (options.vuex.syncLocale) { %>"locale": "", <% } %>
+                    <% if (options.vuex.syncMessages) { %>"messages": {}, <% } %>
+                    <% if (options.vuex.syncRouteParams) { %>"routeParams": {}<% } %>
                 }),
                 actions: {
-        <% if (options.vuex.syncLocale) { %>
+                <% if (options.vuex.syncLocale) { %>
                     setLocale ({commit}, locale) {
 
                         commit(
@@ -52,7 +52,7 @@ export default async (context) => {
                         );
 
                     },
-        <% } if (options.vuex.syncMessages) { %>
+                    <% } if (options.vuex.syncMessages) { %>
                     setMessages ({commit}, messages) {
 
                         commit(
@@ -61,7 +61,7 @@ export default async (context) => {
                         );
 
                     },
-        <% } if (options.vuex.syncRouteParams) { %>
+                    <% } if (options.vuex.syncRouteParams) { %>
                     setRouteParams ({commit}, params) {
 
                         if (process.env.NODE_ENV === "development") {
@@ -75,39 +75,39 @@ export default async (context) => {
                         );
 
                     }
-        <% } %>
+                <% } %>
                 },
                 mutations: {
-        <% if (options.vuex.syncLocale) { %>
+                <% if (options.vuex.syncLocale) { %>
                     setLocale (state, locale) {
 
                         state.locale = locale;
 
                     },
-        <% } if (options.vuex.syncMessages) { %>
+                    <% } if (options.vuex.syncMessages) { %>
                     setMessages (state, messages) {
 
                         state.messages = messages;
 
                     },
-        <% } if (options.vuex.syncRouteParams) { %>
+                    <% } if (options.vuex.syncRouteParams) { %>
                     setRouteParams (state, params) {
 
                         state.routeParams = params;
 
                     }
-        <% } %>
+                <% } %>
                 },
                 getters: {
-        <% if (options.vuex.syncRouteParams) { %>
+                <% if (options.vuex.syncRouteParams) { %>
                     "localeRouteParams": ({routeParams}) => (locale) => routeParams[locale] || {}
-        <% } %>
+                <% } %>
                 }
             }, {"preserveState": Boolean(store.state[vuex.moduleName])}
         );
 
     }
-  <% } %>
+    <% } %>
 
     const detectBrowserLanguage = <%= JSON.stringify(options.detectBrowserLanguage) %>;
     const {useCookie, cookieKey} = detectBrowserLanguage;

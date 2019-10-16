@@ -65,11 +65,11 @@ export default async function (ctx, inject) {
 
     } else {
 
-    <% if (options.defaultUserAgent) { %>
+        <% if (options.defaultUserAgent) { %>
         userAgent = '<%= options.defaultUserAgent %>';
-    <% } else { %>
+        <% } else { %>
         userAgent = DEFAULT_USER_AGENT;
-    <% } %>
+        <% } %>
 
     }
     // Use default user-agent if user-agent header is not sent

@@ -3,41 +3,41 @@
     "ruleId": "no-undef",
     "message": "'config' is not defined.",
     "line": 12,
-    "column": 8,
+    "column": 10,
     "endLine": 12,
-    "endColumn": 14
+    "endColumn": 16
   },
   {
     "ruleId": "no-undef",
     "message": "'config' is not defined.",
     "line": 13,
-    "column": 35,
+    "column": 37,
     "endLine": 13,
-    "endColumn": 41
+    "endColumn": 43
   },
   {
     "ruleId": "no-undef",
     "message": "'config' is not defined.",
     "line": 14,
-    "column": 30,
+    "column": 32,
     "endLine": 14,
-    "endColumn": 36
+    "endColumn": 38
   },
   {
     "ruleId": "no-undef",
     "message": "'config' is not defined.",
     "line": 14,
-    "column": 47,
+    "column": 49,
     "endLine": 14,
-    "endColumn": 53
+    "endColumn": 55
   },
   {
     "ruleId": "no-undef",
     "message": "'config' is not defined.",
     "line": 15,
-    "column": 28,
+    "column": 30,
     "endLine": 15,
-    "endColumn": 34
+    "endColumn": 36
   },
   {
     "ruleId": "no-undef",

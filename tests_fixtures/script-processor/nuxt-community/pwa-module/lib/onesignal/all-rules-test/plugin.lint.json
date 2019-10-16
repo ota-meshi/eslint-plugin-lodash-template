@@ -24,6 +24,14 @@
     "endColumn": 23
   },
   {
+    "ruleId": "array-element-newline",
+    "message": "There should be a linebreak after this element.",
+    "line": 3,
+    "column": 24,
+    "endLine": 3,
+    "endColumn": 25
+  },
+  {
     "ruleId": "function-call-argument-newline",
     "message": "There should be a line break after this argument.",
     "line": 3,

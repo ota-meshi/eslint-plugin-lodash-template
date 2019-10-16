@@ -20,14 +20,14 @@ export default function (ctx, inject) {
     );
 
     // Register strategies
-  <%=
-    options.strategies.map((strategy) => {
-      const scheme = `scheme_${hash(options.strategyScheme.get(strategy))}`;
-      const schemeOptions = JSON.stringify(strategy);
-      const name = strategy._name;
-      return `// ${name}\n  $auth.registerStrategy('${name}', new ${scheme}($auth, ${schemeOptions}))`;
-    }).join('\n\n  ')
-    %>
+    <%=
+      options.strategies.map((strategy) => {
+        const scheme = `scheme_${hash(options.strategyScheme.get(strategy))}`;
+        const schemeOptions = JSON.stringify(strategy);
+        const name = strategy._name;
+        return `// ${name}\n  $auth.registerStrategy('${name}', new ${scheme}($auth, ${schemeOptions}))`;
+      }).join('\n\n  ')
+      %>;
 
     // Inject it to nuxt context as $auth
     inject(

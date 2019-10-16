@@ -1,7 +1,7 @@
 [
   {
     "ruleId": "max-lines",
-    "message": "File has too many lines (327). Maximum allowed is 300.",
+    "message": "File has too many lines (333). Maximum allowed is 300.",
     "line": 1,
     "column": 1
   },
@@ -166,6 +166,14 @@
     "endColumn": 51
   },
   {
+    "ruleId": "max-lines-per-function",
+    "message": "Arrow function has too many lines (51). Maximum allowed is 50.",
+    "line": 104,
+    "column": 31,
+    "endLine": 154,
+    "endColumn": 2
+  },
+  {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
     "line": 138,
@@ -200,243 +208,259 @@
   {
     "ruleId": "no-undefined",
     "message": "Unexpected use of undefined.",
-    "line": 161,
+    "line": 162,
     "column": 40,
-    "endLine": 161,
+    "endLine": 162,
     "endColumn": 49
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 98. Maximum allowed is 80.",
-    "line": 163,
+    "line": 164,
     "column": 1
   },
   {
     "ruleId": "require-unicode-regexp",
     "message": "Use the 'u' flag.",
-    "line": 163,
+    "line": 164,
     "column": 19,
-    "endLine": 163,
+    "endLine": 164,
     "endColumn": 34
   },
   {
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 0.",
-    "line": 163,
+    "line": 164,
     "column": 95,
-    "endLine": 163,
+    "endLine": 164,
     "endColumn": 96
+  },
+  {
+    "ruleId": "max-lines-per-function",
+    "message": "Arrow function has too many lines (83). Maximum allowed is 50.",
+    "line": 177,
+    "column": 23,
+    "endLine": 259,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "max-statements",
+    "message": "Arrow function has too many statements (11). Maximum allowed is 10.",
+    "line": 177,
+    "column": 23,
+    "endLine": 259,
+    "endColumn": 2
   },
   {
     "ruleId": "no-unused-vars",
     "message": "'ctx' is defined but never used.",
-    "line": 175,
+    "line": 177,
     "column": 31,
-    "endLine": 175,
+    "endLine": 177,
     "endColumn": 34
   },
   {
     "ruleId": "no-empty-function",
     "message": "Unexpected empty arrow function 'finish'.",
-    "line": 185,
+    "line": 187,
     "column": 25
   },
   {
     "ruleId": "no-empty-function",
     "message": "Unexpected empty arrow function 'start'.",
-    "line": 186,
+    "line": 188,
     "column": 24
   },
   {
     "ruleId": "sort-keys",
     "message": "Expected object keys to be in ascending order. 'fail' should be before 'start'.",
-    "line": 187,
+    "line": 189,
     "column": 9,
-    "endLine": 187,
+    "endLine": 189,
     "endColumn": 15
   },
   {
     "ruleId": "no-empty-function",
     "message": "Unexpected empty arrow function 'fail'.",
-    "line": 187,
+    "line": 189,
     "column": 23
   },
   {
     "ruleId": "no-empty-function",
     "message": "Unexpected empty arrow function 'set'.",
-    "line": 188,
+    "line": 190,
     "column": 22
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 134. Maximum allowed is 80.",
-    "line": 191,
+    "line": 193,
     "column": 1
   },
   {
     "ruleId": "no-extra-parens",
     "message": "Unnecessary parentheses around expression.",
-    "line": 191,
+    "line": 193,
     "column": 28,
-    "endLine": 191,
+    "endLine": 193,
     "endColumn": 29
   },
   {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 191,
+    "line": 193,
     "column": 29,
-    "endLine": 191,
+    "endLine": 193,
     "endColumn": 95
   },
   {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
-    "line": 191,
+    "line": 193,
     "column": 29,
-    "endLine": 191,
+    "endLine": 193,
     "endColumn": 133
   },
   {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 191,
+    "line": 193,
     "column": 98,
-    "endLine": 191,
+    "endLine": 193,
     "endColumn": 119
   },
   {
     "ruleId": "no-plusplus",
     "message": "Unary operator '++' used.",
-    "line": 203,
+    "line": 205,
     "column": 9,
-    "endLine": 203,
+    "endLine": 205,
     "endColumn": 26
   },
   {
     "ruleId": "no-plusplus",
     "message": "Unary operator '--' used.",
-    "line": 215,
+    "line": 217,
     "column": 9,
-    "endLine": 215,
+    "endLine": 217,
     "endColumn": 26
-  },
-  {
-    "ruleId": "no-magic-numbers",
-    "message": "No magic number: 0.",
-    "line": 216,
-    "column": 32,
-    "endLine": 216,
-    "endColumn": 33
   },
   {
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 0.",
     "line": 218,
-    "column": 31,
+    "column": 32,
     "endLine": 218,
+    "endColumn": 33
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 0.",
+    "line": 220,
+    "column": 31,
+    "endLine": 220,
     "endColumn": 32
   },
   {
     "ruleId": "no-plusplus",
     "message": "Unary operator '--' used.",
-    "line": 233,
+    "line": 235,
     "column": 9,
-    "endLine": 233,
+    "endLine": 235,
     "endColumn": 26
   },
   {
     "ruleId": "id-length",
     "message": "Identifier name 'e' is too short (< 2).",
-    "line": 239,
+    "line": 241,
     "column": 25,
-    "endLine": 239,
+    "endLine": 241,
     "endColumn": 26
   },
   {
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 100.",
-    "line": 246,
+    "line": 248,
     "column": 37,
-    "endLine": 246,
+    "endLine": 248,
     "endColumn": 40
   },
   {
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 100.",
-    "line": 248,
+    "line": 250,
     "column": 13,
-    "endLine": 248,
+    "endLine": 250,
     "endColumn": 16
   },
   {
     "ruleId": "no-extra-parens",
     "message": "Unnecessary parentheses around expression.",
-    "line": 263,
+    "line": 266,
     "column": 11,
-    "endLine": 263,
+    "endLine": 266,
     "endColumn": 12
   },
   {
     "ruleId": "no-process-env",
     "message": "Unexpected use of process.env.",
-    "line": 263,
+    "line": 266,
     "column": 12,
-    "endLine": 263,
+    "endLine": 266,
     "endColumn": 23
   },
   {
     "ruleId": "no-underscore-dangle",
     "message": "Unexpected dangling '_' in '_AXIOS_BASE_URL_'.",
-    "line": 263,
+    "line": 266,
     "column": 12,
-    "endLine": 263,
+    "endLine": 266,
     "endColumn": 40
   },
   {
     "ruleId": "sort-keys",
     "message": "Expected object keys to be in ascending order. 'patch' should be before 'put'.",
-    "line": 279,
+    "line": 282,
     "column": 9,
-    "endLine": 279,
+    "endLine": 282,
     "endColumn": 16
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 89. Maximum allowed is 80.",
-    "line": 289,
+    "line": 292,
     "column": 1
   },
   {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 289,
+    "line": 292,
     "column": 35,
-    "endLine": 289,
+    "endLine": 292,
     "endColumn": 61
   },
   {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
-    "line": 289,
+    "line": 292,
     "column": 35,
-    "endLine": 289,
+    "endLine": 292,
     "endColumn": 89
   },
   {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 289,
+    "line": 292,
     "column": 64,
-    "endLine": 289,
+    "endLine": 292,
     "endColumn": 84
   },
   {
     "ruleId": "id-length",
     "message": "Identifier name 'h' is too short (< 2).",
-    "line": 290,
-    "column": 17,
-    "endLine": 290,
-    "endColumn": 18
+    "line": 293,
+    "column": 19,
+    "endLine": 293,
+    "endColumn": 20
   }
 ]

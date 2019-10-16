@@ -14,6 +14,20 @@
     "column": 26
   },
   {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 2,
+    "column": 50,
+    "endLine": 2,
+    "endColumn": 63
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 2,
+    "column": 63
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 6,
@@ -1612,6 +1626,18 @@
     "column": 5
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 76,
+    "column": 1
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 76,
+    "column": 2
+  },
+  {
     "ruleId": "arrow-parens",
     "message": "Expected parentheses around arrow function argument.",
     "line": 79,
@@ -1782,6 +1808,34 @@
     "message": "Missing semicolon.",
     "line": 87,
     "column": 5
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 88,
+    "column": 1
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 88,
+    "column": 2
+  },
+  {
+    "ruleId": "max-lines-per-function",
+    "message": "Arrow function has too many lines (58). Maximum allowed is 50.",
+    "line": 91,
+    "column": 23,
+    "endLine": 148,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "max-statements",
+    "message": "Arrow function has too many statements (11). Maximum allowed is 10.",
+    "line": 91,
+    "column": 23,
+    "endLine": 148,
+    "endColumn": 2
   },
   {
     "ruleId": "no-unused-vars",
@@ -2648,6 +2702,18 @@
   {
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
+    "line": 148,
+    "column": 1
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 148,
+    "column": 2
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
     "line": 150,
     "column": 33
   },
@@ -2974,6 +3040,14 @@
   {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 176,
+    "column": 1,
+    "endLine": 176,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
     "line": 177,
     "column": 1,
     "endLine": 177,
@@ -3048,6 +3122,14 @@
     "column": 103
   },
   {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 179,
+    "column": 1,
+    "endLine": 179,
+    "endColumn": 3
+  },
+  {
     "ruleId": "max-len",
     "message": "This line has a length of 97. Maximum allowed is 80.",
     "line": 179,
@@ -3082,6 +3164,14 @@
     "message": "Missing semicolon.",
     "line": 179,
     "column": 98
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 180,
+    "column": 1,
+    "endLine": 180,
+    "endColumn": 3
   },
   {
     "ruleId": "brace-style",
@@ -3202,12 +3292,62 @@
     "endColumn": 3
   },
   {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 194,
+    "column": 1,
+    "endLine": 194,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 194,
+    "column": 57
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 195,
+    "column": 1,
+    "endLine": 195,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 195,
+    "column": 69
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 196,
+    "column": 1,
+    "endLine": 196,
+    "endColumn": 3
+  },
+  {
     "ruleId": "function-call-argument-newline",
     "message": "There should be a line break after this argument.",
     "line": 196,
     "column": 52,
     "endLine": 196,
     "endColumn": 53
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 196,
+    "column": 57
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 197,
+    "column": 1,
+    "endLine": 197,
+    "endColumn": 3
   },
   {
     "ruleId": "max-len",
@@ -3222,6 +3362,20 @@
     "column": 25,
     "endLine": 197,
     "endColumn": 26
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 197,
+    "column": 46,
+    "endLine": 197,
+    "endColumn": 47
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 197,
+    "column": 79
   },
   {
     "ruleId": "brace-style",

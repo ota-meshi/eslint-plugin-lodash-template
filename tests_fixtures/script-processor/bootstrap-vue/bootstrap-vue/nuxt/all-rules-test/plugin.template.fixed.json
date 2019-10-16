@@ -10,201 +10,153 @@
   {
     "ruleId": "no-undefined",
     "message": "Unexpected use of undefined.",
-    "line": 8,
-    "column": 5,
-    "endLine": 8,
-    "endColumn": 14
+    "line": 10,
+    "column": 9,
+    "endLine": 10,
+    "endColumn": 18
   },
   {
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 2.",
-    "line": 9,
-    "column": 5,
-    "endLine": 9,
-    "endColumn": 6
-  },
-  {
-    "ruleId": "function-paren-newline",
-    "message": "Unexpected newline before ')'.",
-    "line": 10,
-    "column": 7,
-    "endLine": 10,
-    "endColumn": 8
+    "line": 11,
+    "column": 9,
+    "endLine": 11,
+    "endColumn": 10
   },
   {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 16,
-    "column": 7,
-    "endLine": 16,
-    "endColumn": 21
+    "line": 19,
+    "column": 9,
+    "endLine": 19,
+    "endColumn": 23
   },
   {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
-    "line": 16,
-    "column": 7,
-    "endLine": 16,
-    "endColumn": 47
+    "line": 19,
+    "column": 9,
+    "endLine": 19,
+    "endColumn": 49
   },
   {
     "ruleId": "multiline-ternary",
     "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 16,
-    "column": 24,
-    "endLine": 16,
-    "endColumn": 40
+    "line": 19,
+    "column": 26,
+    "endLine": 19,
+    "endColumn": 42
   },
   {
     "ruleId": "no-undef",
     "message": "'BVConfigPlugin' is not defined.",
-    "line": 26,
-    "column": 9,
-    "endLine": 26,
-    "endColumn": 23
+    "line": 30,
+    "column": 5,
+    "endLine": 30,
+    "endColumn": 19
   },
   {
     "ruleId": "no-undefined",
     "message": "Unexpected use of undefined.",
-    "line": 28,
-    "column": 5,
-    "endLine": 28,
-    "endColumn": 14
+    "line": 33,
+    "column": 9,
+    "endLine": 33,
+    "endColumn": 18
   },
   {
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 2.",
-    "line": 29,
-    "column": 5,
-    "endLine": 29,
-    "endColumn": 6
-  },
-  {
-    "ruleId": "function-paren-newline",
-    "message": "Unexpected newline before ')'.",
-    "line": 30,
-    "column": 7,
-    "endLine": 30,
-    "endColumn": 8
+    "line": 34,
+    "column": 9,
+    "endLine": 34,
+    "endColumn": 10
   },
   {
     "ruleId": "no-return-assign",
     "message": "Arrow function should not return assignment.",
-    "line": 34,
-    "column": 5,
-    "endLine": 34,
-    "endColumn": 52
-  },
-  {
-    "ruleId": "no-param-reassign",
-    "message": "Assignment to function parameter 'acc'.",
-    "line": 34,
-    "column": 22,
-    "endLine": 34,
-    "endColumn": 25
-  },
-  {
-    "ruleId": "semi-style",
-    "message": "Expected this semicolon to be at the end of the previous line.",
-    "line": 36,
-    "column": 7,
-    "endLine": 36,
-    "endColumn": 8
-  },
-  {
-    "ruleId": "no-return-assign",
-    "message": "Arrow function should not return assignment.",
-    "line": 38,
-    "column": 5,
-    "endLine": 38,
-    "endColumn": 52
-  },
-  {
-    "ruleId": "no-param-reassign",
-    "message": "Assignment to function parameter 'acc'.",
-    "line": 38,
-    "column": 22,
-    "endLine": 38,
-    "endColumn": 25
-  },
-  {
-    "ruleId": "semi-style",
-    "message": "Expected this semicolon to be at the end of the previous line.",
     "line": 40,
-    "column": 7,
+    "column": 5,
     "endLine": 40,
-    "endColumn": 8
+    "endColumn": 52
+  },
+  {
+    "ruleId": "no-param-reassign",
+    "message": "Assignment to function parameter 'acc'.",
+    "line": 40,
+    "column": 22,
+    "endLine": 40,
+    "endColumn": 25
   },
   {
     "ruleId": "no-return-assign",
     "message": "Arrow function should not return assignment.",
-    "line": 42,
+    "line": 44,
     "column": 5,
-    "endLine": 42,
+    "endLine": 44,
+    "endColumn": 52
+  },
+  {
+    "ruleId": "no-param-reassign",
+    "message": "Assignment to function parameter 'acc'.",
+    "line": 44,
+    "column": 22,
+    "endLine": 44,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "no-return-assign",
+    "message": "Arrow function should not return assignment.",
+    "line": 48,
+    "column": 5,
+    "endLine": 48,
     "endColumn": 56
   },
   {
     "ruleId": "id-length",
     "message": "Identifier name 'c' is too short (< 2).",
-    "line": 42,
+    "line": 48,
     "column": 11,
-    "endLine": 42,
+    "endLine": 48,
     "endColumn": 12
   },
   {
     "ruleId": "no-param-reassign",
     "message": "Assignment to function parameter 'acc'.",
-    "line": 42,
+    "line": 48,
     "column": 17,
-    "endLine": 42,
+    "endLine": 48,
     "endColumn": 20
-  },
-  {
-    "ruleId": "semi-style",
-    "message": "Expected this semicolon to be at the end of the previous line.",
-    "line": 44,
-    "column": 7,
-    "endLine": 44,
-    "endColumn": 8
   },
   {
     "ruleId": "no-return-assign",
     "message": "Arrow function should not return assignment.",
-    "line": 46,
+    "line": 52,
     "column": 5,
-    "endLine": 49,
+    "endLine": 55,
     "endColumn": 19
   },
   {
     "ruleId": "id-length",
     "message": "Identifier name 'd' is too short (< 2).",
-    "line": 46,
+    "line": 52,
     "column": 11,
-    "endLine": 46,
+    "endLine": 52,
     "endColumn": 12
   },
   {
     "ruleId": "no-param-reassign",
     "message": "Assignment to function parameter 'acc'.",
-    "line": 46,
+    "line": 52,
     "column": 17,
-    "endLine": 46,
+    "endLine": 52,
     "endColumn": 20
   },
   {
     "ruleId": "require-unicode-regexp",
     "message": "Use the 'u' flag.",
-    "line": 47,
+    "line": 53,
     "column": 7,
-    "endLine": 47,
+    "endLine": 53,
     "endColumn": 12
-  },
-  {
-    "ruleId": "semi-style",
-    "message": "Expected this semicolon to be at the end of the previous line.",
-    "line": 51,
-    "column": 7,
-    "endLine": 51,
-    "endColumn": 8
   }
 ]

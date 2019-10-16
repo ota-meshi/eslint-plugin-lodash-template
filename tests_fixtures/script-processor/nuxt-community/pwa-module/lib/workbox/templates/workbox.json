@@ -23,6 +23,12 @@
   },
   {
     "ruleId": "block-spacing",
+    "message": "Requires a space after '{'.",
+    "line": 18,
+    "column": 19
+  },
+  {
+    "ruleId": "block-spacing",
     "message": "Requires a space before '}'.",
     "line": 18,
     "column": 103

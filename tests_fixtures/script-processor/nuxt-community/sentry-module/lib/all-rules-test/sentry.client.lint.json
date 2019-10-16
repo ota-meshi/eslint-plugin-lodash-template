@@ -107,6 +107,14 @@
     "ruleId": "function-call-argument-newline",
     "message": "There should be a line break after this argument.",
     "line": 6,
+    "column": 33,
+    "endLine": 6,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 6,
     "column": 67,
     "endLine": 6,
     "endColumn": 68
@@ -118,6 +126,14 @@
     "column": 1,
     "endLine": 7,
     "endColumn": 5
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 12 spaces but found 6.",
+    "line": 8,
+    "column": 1,
+    "endLine": 8,
+    "endColumn": 7
   },
   {
     "ruleId": "arrow-parens",
@@ -294,6 +310,14 @@
     "column": 5
   },
   {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 19,
+    "column": 1,
+    "endLine": 19,
+    "endColumn": 3
+  },
+  {
     "ruleId": "line-comment-position",
     "message": "Expected comment to be above code.",
     "line": 19,
@@ -316,6 +340,12 @@
     "column": 1,
     "endLine": 20,
     "endColumn": 3
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 20,
+    "column": 20
   },
   {
     "ruleId": "indent",

@@ -6,13 +6,13 @@ import {
 } from "./utils";
 
 const mdComps = {
-  <% options.components.forEach(([
-      relativePath,
-      filePath
-    ]) => {
-      print(`
+    <% options.components.forEach(([
+        relativePath,
+        filePath
+      ]) => {
+        print(`
     '${relativePath}': () => interopDefault(import('${filePath}')),`);
-    });
+      });
 %>
 };
 

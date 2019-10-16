@@ -25,7 +25,7 @@ function getBranchedTemplateStore(fileName) {
 
     const templates = new BranchedTemplateStore(
         result.ast,
-        visitorKeys,
+        result.visitorKeys || visitorKeys,
         microTemplate.template
     )
     return {

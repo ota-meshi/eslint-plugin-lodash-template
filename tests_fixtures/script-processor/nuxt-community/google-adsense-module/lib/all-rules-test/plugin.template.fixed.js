@@ -160,6 +160,6 @@ const adsbygoogle = {
 
 // Register our ad component under the desired tag name
 Vue.component(
-'<%= options.tag %>',
+    '<%= options.tag %>',
     adsbygoogle
 );

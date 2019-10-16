@@ -106,6 +106,14 @@
     "endColumn": 5
   },
   {
+    "ruleId": "indent",
+    "message": "Expected indentation of 0 spaces but found 2.",
+    "line": 14,
+    "column": 1,
+    "endLine": 14,
+    "endColumn": 3
+  },
+  {
     "ruleId": "lodash-template/script-indent",
     "message": "Expected indentation of 6 spaces but found 4 spaces.",
     "line": 15,
@@ -130,6 +138,14 @@
     "endColumn": 1
   },
   {
+    "ruleId": "indent",
+    "message": "Expected indentation of 2 spaces but found 0.",
+    "line": 24,
+    "column": 1,
+    "endLine": 24,
+    "endColumn": 1
+  },
+  {
     "ruleId": "lodash-template/script-indent",
     "message": "Expected indentation of 4 spaces but found 6 spaces.",
     "line": 25,
@@ -144,5 +160,21 @@
     "column": 1,
     "endLine": 26,
     "endColumn": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 2 spaces but found 0.",
+    "line": 33,
+    "column": 1,
+    "endLine": 33,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 2 spaces but found 0.",
+    "line": 36,
+    "column": 1,
+    "endLine": 36,
+    "endColumn": 1
   }
 ]

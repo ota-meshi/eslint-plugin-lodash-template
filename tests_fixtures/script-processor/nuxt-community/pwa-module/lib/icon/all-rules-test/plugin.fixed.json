@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "ruleId": "require-await",
+    "message": "Async function has no 'await' expression.",
+    "line": 1,
+    "column": 16,
+    "endLine": 1,
+    "endColumn": 31
+  }
+]

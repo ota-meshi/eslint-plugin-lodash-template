@@ -17,17 +17,17 @@
     "ruleId": "max-lines-per-function",
     "message": "Arrow function has too many lines (69). Maximum allowed is 50.",
     "line": 20,
-    "column": 49,
+    "column": 51,
     "endLine": 88,
-    "endColumn": 7
+    "endColumn": 9
   },
   {
     "ruleId": "max-statements",
     "message": "Arrow function has too many statements (46). Maximum allowed is 10.",
     "line": 20,
-    "column": 49,
+    "column": 51,
     "endLine": 88,
-    "endColumn": 7
+    "endColumn": 9
   },
   {
     "ruleId": "max-len",
@@ -59,17 +59,9 @@
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 2.",
     "line": 36,
-    "column": 13,
+    "column": 9,
     "endLine": 36,
-    "endColumn": 14
-  },
-  {
-    "ruleId": "semi-style",
-    "message": "Expected this semicolon to be at the end of the previous line.",
-    "line": 37,
-    "column": 15,
-    "endLine": 37,
-    "endColumn": 16
+    "endColumn": 10
   },
   {
     "ruleId": "max-len",
@@ -141,7 +133,7 @@
   },
   {
     "ruleId": "max-len",
-    "message": "This line has a length of 89. Maximum allowed is 80.",
+    "message": "This line has a length of 87. Maximum allowed is 80.",
     "line": 81,
     "column": 1
   },

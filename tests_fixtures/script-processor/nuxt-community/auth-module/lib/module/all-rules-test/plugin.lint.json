@@ -170,6 +170,14 @@
     "endColumn": 3
   },
   {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 16,
+    "column": 1,
+    "endLine": 16,
+    "endColumn": 3
+  },
+  {
     "ruleId": "lodash-template/script-indent",
     "message": "Expected relative indentation of 2 spaces but found 0 spaces.",
     "line": 17,
@@ -286,6 +294,12 @@
     "column": 3,
     "endLine": 23,
     "endColumn": 3
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 23,
+    "column": 5
   },
   {
     "ruleId": "indent",

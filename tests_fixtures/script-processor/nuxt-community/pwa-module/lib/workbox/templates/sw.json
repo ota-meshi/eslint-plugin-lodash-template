@@ -104,6 +104,12 @@
     "endColumn": 120
   },
   {
+    "ruleId": "func-call-spacing",
+    "message": "Unexpected newline between function name and paren.",
+    "line": 60,
+    "column": 132
+  },
+  {
     "ruleId": "no-undef",
     "message": "'workbox' is not defined.",
     "line": 65,

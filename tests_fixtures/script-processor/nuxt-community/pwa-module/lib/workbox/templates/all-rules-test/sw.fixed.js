@@ -59,15 +59,18 @@ workbox.googleAnalytics.initialize();
 
 // Precache assets
 <% if (options.preCaching.length) { %>
-workbox.precaching.precacheAndRoute(<%= JSON.stringify(
-    options.preCaching,
-    null,
-    2
-  ) %>, <%= JSON.stringify(
-      options.cacheOptions,
-      null,
-      2
-    ) %>);
+workbox.precaching.precacheAndRoute(
+    <%= JSON.stringify(
+        options.preCaching,
+        null,
+        2
+      ) %>,
+    <%= JSON.stringify(
+        options.cacheOptions,
+        null,
+        2
+      ) %>
+);
 <% } %>
 
 <% if (options.cachingExtensions) { %>
@@ -85,8 +88,8 @@ workbox.precaching.precacheAndRoute(<%= JSON.stringify(
 <% options.runtimeCaching.forEach((r) => {
  %>workbox.routing.registerRoute(
     new RegExp('<%= r.urlPattern %>'),
-    new workbox.strategies.<%= r.handler %> (<%= JSON.stringify(r.strategyOptions || {}) %>),
-'<%= r.method %>'
+    new workbox.strategies.<%= r.handler %>(<%= JSON.stringify(r.strategyOptions || {}) %>),
+    '<%= r.method %>'
 );
 <% }) %>
 
@@ -99,7 +102,8 @@ workbox.routing.registerRoute(
         return new workbox.strategies.<%= options.offlineStrategy %>().handle({event}).
             catch(() => caches.match('<%= options.offlinePage %>'));
 
-    })<% } %>
+    }
+);<% } %>
 
 <% if (options.routingExtensions) { %>
 // -- Start of routingExtensions --

@@ -1,7 +1,10 @@
 import Vue from "vue";
 import Toasted from "vue-toasted";
 
-Vue.use(Toasted, <%= serialize(options.toastOptions) %>);
+Vue.use(
+    Toasted,
+    <%= serialize(options.toastOptions) %>
+);
 
 const globals = <%= serialize(options.register) %>;
 if (globals) {

@@ -234,6 +234,26 @@
     "endColumn": 15
   },
   {
+    "ruleId": "brace-style",
+    "message": "Statement inside of curly braces should be on next line.",
+    "line": 18,
+    "column": 19,
+    "endLine": 18,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "block-spacing",
+    "message": "Requires a space after '{'.",
+    "line": 18,
+    "column": 19
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 18,
+    "column": 20
+  },
+  {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
     "line": 18,
@@ -258,10 +278,10 @@
     "endColumn": 89
   },
   {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
     "line": 18,
-    "column": 102
+    "column": 95
   },
   {
     "ruleId": "brace-style",

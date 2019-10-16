@@ -69,6 +69,38 @@
   },
   {
     "ruleId": "indent",
+    "message": "Expected indentation of 2 spaces but found 6.",
+    "line": 29,
+    "column": 1,
+    "endLine": 29,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 2 spaces but found 8.",
+    "line": 30,
+    "column": 1,
+    "endLine": 30,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 2 spaces but found 6.",
+    "line": 31,
+    "column": 1,
+    "endLine": 31,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 2 spaces but found 8.",
+    "line": 32,
+    "column": 1,
+    "endLine": 32,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "indent",
     "message": "Expected indentation of 2 spaces but found 8.",
     "line": 34,
     "column": 1,
@@ -77,11 +109,35 @@
   },
   {
     "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 10.",
+    "line": 35,
+    "column": 1,
+    "endLine": 35,
+    "endColumn": 11
+  },
+  {
+    "ruleId": "indent",
     "message": "Expected indentation of 2 spaces but found 8.",
     "line": 36,
     "column": 1,
     "endLine": 36,
     "endColumn": 9
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 2 spaces but found 8.",
+    "line": 38,
+    "column": 1,
+    "endLine": 38,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 2 spaces but found 6.",
+    "line": 39,
+    "column": 1,
+    "endLine": 39,
+    "endColumn": 7
   },
   {
     "ruleId": "indent",
@@ -98,6 +154,14 @@
     "column": 1,
     "endLine": 43,
     "endColumn": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 8.",
+    "line": 44,
+    "column": 1,
+    "endLine": 44,
+    "endColumn": 9
   },
   {
     "ruleId": "indent",
@@ -147,6 +211,14 @@
   },
   {
     "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 8.",
+    "line": 52,
+    "column": 1,
+    "endLine": 52,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "indent",
     "message": "Expected indentation of 2 spaces but found 6.",
     "line": 53,
     "column": 1,
@@ -163,10 +235,42 @@
   },
   {
     "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 8.",
+    "line": 56,
+    "column": 1,
+    "endLine": 56,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "indent",
     "message": "Expected indentation of 2 spaces but found 6.",
     "line": 57,
     "column": 1,
     "endLine": 57,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 2 spaces but found 6.",
+    "line": 58,
+    "column": 1,
+    "endLine": 58,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 2 spaces but found 6.",
+    "line": 59,
+    "column": 1,
+    "endLine": 59,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 2 spaces but found 6.",
+    "line": 60,
+    "column": 1,
+    "endLine": 60,
     "endColumn": 7
   },
   {
@@ -203,6 +307,22 @@
   },
   {
     "ruleId": "indent",
+    "message": "Expected indentation of 2 spaces but found 6.",
+    "line": 66,
+    "column": 1,
+    "endLine": 66,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 2 spaces but found 6.",
+    "line": 68,
+    "column": 1,
+    "endLine": 68,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "indent",
     "message": "Expected indentation of 2 spaces but found 10.",
     "line": 69,
     "column": 1,
@@ -211,11 +331,35 @@
   },
   {
     "ruleId": "indent",
+    "message": "Expected indentation of 2 spaces but found 6.",
+    "line": 70,
+    "column": 1,
+    "endLine": 70,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "indent",
     "message": "Expected indentation of 2 spaces but found 10.",
     "line": 71,
     "column": 1,
     "endLine": 71,
     "endColumn": 11
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 2 spaces but found 6.",
+    "line": 72,
+    "column": 1,
+    "endLine": 72,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 6.",
+    "line": 76,
+    "column": 1,
+    "endLine": 76,
+    "endColumn": 7
   },
   {
     "ruleId": "indent",
@@ -228,16 +372,26 @@
   {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 6.",
+    "line": 78,
+    "column": 1,
+    "endLine": 78,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 6.",
     "line": 79,
     "column": 1,
     "endLine": 79,
     "endColumn": 7
   },
   {
-    "ruleId": "padded-blocks",
-    "message": "Block must not be padded by blank lines.",
-    "line": 79,
-    "column": 28
+    "ruleId": "indent",
+    "message": "Expected indentation of 6 spaces but found 8.",
+    "line": 80,
+    "column": 1,
+    "endLine": 80,
+    "endColumn": 9
   },
   {
     "ruleId": "indent",
@@ -249,6 +403,14 @@
   },
   {
     "ruleId": "indent",
+    "message": "Expected indentation of 6 spaces but found 8.",
+    "line": 82,
+    "column": 1,
+    "endLine": 82,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "indent",
     "message": "Expected indentation of 6 spaces but found 10.",
     "line": 83,
     "column": 1,
@@ -257,17 +419,19 @@
   },
   {
     "ruleId": "indent",
+    "message": "Expected indentation of 6 spaces but found 8.",
+    "line": 84,
+    "column": 1,
+    "endLine": 84,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 6.",
     "line": 85,
     "column": 1,
     "endLine": 85,
     "endColumn": 7
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must not be padded by blank lines.",
-    "line": 85,
-    "column": 7
   },
   {
     "ruleId": "space-infix-ops",

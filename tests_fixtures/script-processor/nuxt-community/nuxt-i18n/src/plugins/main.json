@@ -32,6 +32,22 @@
     "endColumn": 21
   },
   {
+    "ruleId": "comma-spacing",
+    "message": "A space is required after ','.",
+    "line": 37,
+    "column": 55,
+    "endLine": 37,
+    "endColumn": 56
+  },
+  {
+    "ruleId": "comma-spacing",
+    "message": "A space is required after ','.",
+    "line": 38,
+    "column": 59,
+    "endLine": 38,
+    "endColumn": 60
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 8 spaces but found 10.",
     "line": 61,
@@ -43,7 +59,9 @@
     "ruleId": "eqeqeq",
     "message": "Expected '===' and instead saw '=='.",
     "line": 109,
-    "column": 26
+    "column": 26,
+    "endLine": 109,
+    "endColumn": 28
   },
   {
     "ruleId": "no-unneeded-ternary",

@@ -18,17 +18,17 @@
   {
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 2.",
-    "line": 7,
+    "line": 8,
     "column": 9,
-    "endLine": 7,
+    "endLine": 8,
     "endColumn": 10
   },
   {
     "ruleId": "no-undef",
     "message": "'OneSignal' is not defined.",
-    "line": 14,
+    "line": 16,
     "column": 9,
-    "endLine": 14,
+    "endLine": 16,
     "endColumn": 18
   }
 ]

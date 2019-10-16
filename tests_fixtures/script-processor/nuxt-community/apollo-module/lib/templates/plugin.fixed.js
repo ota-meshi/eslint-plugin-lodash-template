@@ -26,22 +26,22 @@ export default (ctx, inject) => {
   }
 
   let <%= key %>ClientConfig
-      <% if (typeof options.clientConfigs[key] === 'object') { %>
-        <%= key %>ClientConfig = <%= JSON.stringify(options.clientConfigs[key], null, 2) %>
-      <% } else if (typeof options.clientConfigs[key] === 'string') { %>
-        <%= key %>ClientConfig = require('<%= options.clientConfigs[key] %>')
+  <% if (typeof options.clientConfigs[key] === 'object') { %>
+  <%= key %>ClientConfig = <%= JSON.stringify(options.clientConfigs[key], null, 2) %>
+  <% } else if (typeof options.clientConfigs[key] === 'string') { %>
+  <%= key %>ClientConfig = require('<%= options.clientConfigs[key] %>')
 
   if ('default' in <%= key %>ClientConfig) {
-          <%= key %>ClientConfig = <%= key %>ClientConfig.default
+    <%= key %>ClientConfig = <%= key %>ClientConfig.default
   }
 
-        <%= key %>ClientConfig = <%= key %>ClientConfig(ctx)
-      <% } %>
+  <%= key %>ClientConfig = <%= key %>ClientConfig(ctx)
+  <% } %>
 
   const <%= key %>ValidateToken = () => true
 
   if (!<%= key %>ClientConfig.validateToken) {
-        <%= key %>ClientConfig.validateToken = <%= key %>ValidateToken
+    <%= key %>ClientConfig.validateToken = <%= key %>ValidateToken
   }
 
   const <%= key %>Cache = <%= key %>ClientConfig.cache
@@ -49,39 +49,39 @@ export default (ctx, inject) => {
     : new InMemoryCache(<%= key %>ClientConfig.inMemoryCacheOptions ? <%= key %>ClientConfig.inMemoryCacheOptions : undefined)
 
   if (!process.server) {
-        <%= key %>Cache.restore(window.__NUXT__ ? window.__NUXT__.apollo.<%= key === 'default' ? 'defaultClient' : key %> : null)
+    <%= key %>Cache.restore(window.__NUXT__ ? window.__NUXT__.apollo.<%= key === 'default' ? 'defaultClient' : key %> : null)
   }
 
   if (!<%= key %>ClientConfig.getAuth) {
-        <%= key %>ClientConfig.getAuth = <%= key %>GetAuth
+    <%= key %>ClientConfig.getAuth = <%= key %>GetAuth
   }
-      <%= key %>ClientConfig.ssr = !!process.server
-      <%= key %>ClientConfig.cache = <%= key %>Cache
-      <%= key %>ClientConfig.tokenName = <%= key %>TokenName
+  <%= key %>ClientConfig.ssr = !!process.server
+  <%= key %>ClientConfig.cache = <%= key %>Cache
+  <%= key %>ClientConfig.tokenName = <%= key %>TokenName
 
   // Create apollo client
   let <%= key %>ApolloCreation = createApolloClient({
     ...<%= key %>ClientConfig
   })
-      <%= key %>ApolloCreation.apolloClient.wsClient = <%= key %>ApolloCreation.wsClient
+  <%= key %>ApolloCreation.apolloClient.wsClient = <%= key %>ApolloCreation.wsClient
 
-      <% if (key === 'default') { %>
+  <% if (key === 'default') { %>
   providerOptions.<%= key %>Client = <%= key %>ApolloCreation.apolloClient
-      <% } else { %>
+  <% } else { %>
   providerOptions.clients.<%= key %> = <%= key %>ApolloCreation.apolloClient
-      <% } %>
+  <% } %>
   <% }) %>
 
   const vueApolloOptions = Object.assign(providerOptions, {
-      <% if (options.defaultOptions) { %>
+    <% if (options.defaultOptions) { %>
     defaultOptions: <%= JSON.stringify(options.defaultOptions) %>,
-      <% } %>
+    <% } %>
     errorHandler (error) {
-        <% if (options.errorHandler) { %>
+      <% if (options.errorHandler) { %>
       require('<%= options.errorHandler %>').default(error, ctx)
-        <% } else { %>
+      <% } else { %>
       console.log('%cError', 'background: red; color: white; padding: 2px 4px; border-radius: 3px; font-weight: bold;', error.message)
-        <% } %>
+      <% } %>
     }
   })
 

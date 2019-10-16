@@ -70,13 +70,5 @@
     "column": 5,
     "endLine": 25,
     "endColumn": 9
-  },
-  {
-    "ruleId": "function-paren-newline",
-    "message": "Unexpected newline before ')'.",
-    "line": 27,
-    "column": 7,
-    "endLine": 27,
-    "endColumn": 8
   }
 ]

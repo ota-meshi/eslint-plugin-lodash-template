@@ -1,5 +1,5 @@
 import Axios from "axios";
-<% if (options.retry) { %>import axiosRetry from 'axios-retry'<% } %>
+<% if (options.retry) { %>import axiosRetry from "axios-retry";<% } %>
 
 // Axios.prototype cannot be modified
 const axiosExtra = {
@@ -150,7 +150,8 @@ const setupDebugInterceptor = (axios) => {
         return res;
 
     });
-}<% } %>
+
+};<% } %>
 
 <% if (options.credentials) { %>
 const setupCredentialsInterceptor = (axios) => {
@@ -169,7 +170,8 @@ const setupCredentialsInterceptor = (axios) => {
         }
 
     });
-}<% } %>
+
+};<% } %>
 
 <% if (options.progress) { %>
 const setupProgress = (axios, ctx) => {
@@ -253,7 +255,8 @@ const setupProgress = (axios, ctx) => {
 
     axios.defaults.onUploadProgress = onProgress;
     axios.defaults.onDownloadProgress = onProgress;
-}<% } %>
+
+};<% } %>
 
 export default (ctx, inject) => {
 
@@ -284,13 +287,13 @@ export default (ctx, inject) => {
         headers
     };
 
-  <% if (options.proxyHeaders) { %>
+    <% if (options.proxyHeaders) { %>
     // Proxy SSR request headers headers
     axiosOptions.headers.common = ctx.req && ctx.req.headers ? {...ctx.req.headers} : {};
-  <% for (const h of options.proxyHeadersIgnore) {
+    <% for (const h of options.proxyHeadersIgnore) {
  %>delete axiosOptions.headers.common['<%= h %>'];
-  <% } %><%
-    } %>
+    <% } %><%
+      } %>
 
     if (process.server) {
 
@@ -306,15 +309,18 @@ export default (ctx, inject) => {
     extendAxiosInstance(axios);
 
     // Setup interceptors
-  <% if (options.debug) { %>setupDebugInterceptor(axios) <% } %>
-  <% if (options.credentials) { %>setupCredentialsInterceptor(axios)<% } %>
-  <% if (options.progress) { %>setupProgress(
+    <% if (options.debug) { %>setupDebugInterceptor(axios); <% } %>
+    <% if (options.credentials) { %>setupCredentialsInterceptor(axios);<% } %>
+    <% if (options.progress) { %>setupProgress(
         axios,
         ctx
-    ) <% } %>
-  <% if (options.retry) {
- %>axiosRetry(axios, <%= serialize(options.retry) %>)<%
-    } %>
+    ); <% } %>
+    <% if (options.retry) {
+ %>axiosRetry(
+        axios,
+        <%= serialize(options.retry) %>
+    );<%
+      } %>
 
     // Inject axios to the context as $axios
     ctx.$axios = axios;

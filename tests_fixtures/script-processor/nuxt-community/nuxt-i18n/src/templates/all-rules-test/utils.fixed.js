@@ -30,7 +30,7 @@ export async function loadLanguageAsync (context, locale) {
             const file = langOptions[LOCALE_FILE_KEY];
             if (file) {
 
-        <% if (options.langDir) { %>
+                <% if (options.langDir) { %>
                 try {
 
                     const module = await import(/* WebpackChunkName: "lang-[request]" */ '~/<%= options.langDir %>' + file);
@@ -47,7 +47,7 @@ export async function loadLanguageAsync (context, locale) {
                     console.error(error);
 
                 }
-        <% } %>
+                <% } %>
 
             } else {
 

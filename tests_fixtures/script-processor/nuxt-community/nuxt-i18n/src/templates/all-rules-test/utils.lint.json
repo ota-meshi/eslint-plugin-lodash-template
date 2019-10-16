@@ -234,6 +234,14 @@
   {
     "ruleId": "indent",
     "message": "Expected indentation of 16 spaces but found 8.",
+    "line": 27,
+    "column": 1,
+    "endLine": 27,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 16 spaces but found 8.",
     "line": 28,
     "column": 1,
     "endLine": 28,
@@ -462,6 +470,14 @@
     "message": "Block must be padded by blank lines.",
     "line": 36,
     "column": 9
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 16 spaces but found 8.",
+    "line": 37,
+    "column": 1,
+    "endLine": 37,
+    "endColumn": 9
   },
   {
     "ruleId": "indent",
