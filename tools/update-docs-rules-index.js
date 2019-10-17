@@ -31,7 +31,7 @@ function toDeprecatedRuleRow(rule) {
     const link = `[${rule.meta.docs.ruleId}](./${rule.meta.docs.ruleName}.md)`
     const replacedRules = rule.meta.docs.replacedBy || []
     const replacedBy = replacedRules
-        .map(name => `[vue/${name}](./${name}.md)`)
+        .map(name => `[lodash-template/${name}](./${name}.md)`)
         .join(", ")
 
     return `| ${link} | ${replacedBy || "(no replacement)"} |`

@@ -1,6 +1,6 @@
 [
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 2 spaces but found 0 spaces.",
     "line": 5,
     "column": 1,
@@ -8,7 +8,7 @@
     "endColumn": 1
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 2 spaces but found 0 spaces.",
     "line": 6,
     "column": 1,
@@ -16,7 +16,7 @@
     "endColumn": 1
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 2 spaces but found 0 spaces.",
     "line": 7,
     "column": 1,
@@ -24,7 +24,7 @@
     "endColumn": 1
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 2 spaces but found 0 spaces.",
     "line": 8,
     "column": 1,

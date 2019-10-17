@@ -49,8 +49,8 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 | Rule ID | Description |    |
 |:--------|:------------|:---|
 | [lodash-template/no-irregular-whitespace](./no-irregular-whitespace.md) | disallow irregular whitespace outside the template tags. | :wrench: |
-| [lodash-template/no-multi-spaces-in-script](./no-multi-spaces-in-script.md) | disallow multiple spaces in script. (ex. :ng: `<% if···(test)···{ %>`) | :wrench: |
-| [lodash-template/script-indent](./script-indent.md) | enforce consistent indentation to script in micro-template tag. | :wrench: |
+| [lodash-template/no-multi-spaces-in-scriptlet](./no-multi-spaces-in-scriptlet.md) | disallow multiple spaces in scriptlet. (ex. :ng: `<% if···(test)···{ %>`) | :wrench: |
+| [lodash-template/scriptlet-indent](./scriptlet-indent.md) | enforce consistent indentation to scriptlet in micro-template tag. | :wrench: |
 | [lodash-template/template-tag-spacing](./template-tag-spacing.md) | enforce unified spacing in micro-template tag. (ex. :ok: `<%= prop %>`, :ng: `<%=prop%>`) | :wrench: |
 
 ## Recommended with HTML template (Improve Readability with HTML template)
@@ -108,4 +108,6 @@ For example:
 
 | Rule ID | Replaced by |
 |:--------|:------------|
+| [lodash-template/no-multi-spaces-in-script](./no-multi-spaces-in-script.md) | [lodash-template/no-multi-spaces-in-scriptlet](./no-multi-spaces-in-scriptlet.md) |
 | [lodash-template/plugin-option](./plugin-option.md) | (no replacement) |
+| [lodash-template/script-indent](./script-indent.md) | [lodash-template/scriptlet-indent](./scriptlet-indent.md) |

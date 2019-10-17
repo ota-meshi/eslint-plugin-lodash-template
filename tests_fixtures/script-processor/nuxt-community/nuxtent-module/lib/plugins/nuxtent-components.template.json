@@ -8,7 +8,7 @@
     "endColumn": 17
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected relative indentation of 4 spaces but found 0 spaces.",
     "line": 10,
     "column": 3,
@@ -16,7 +16,7 @@
     "endColumn": 3
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected relative indentation of 4 spaces but found 0 spaces.",
     "line": 12,
     "column": 3,

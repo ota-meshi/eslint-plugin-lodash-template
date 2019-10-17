@@ -14,7 +14,7 @@
     "endColumn": 49
   },
   {
-    "ruleId": "lodash-template/no-multi-spaces-in-script",
+    "ruleId": "lodash-template/no-multi-spaces-in-scriptlet",
     "message": "Multiple spaces found before `)`.",
     "line": 5,
     "column": 45

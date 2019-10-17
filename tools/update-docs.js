@@ -69,7 +69,7 @@ class DocFile {
         if (deprecated) {
             if (replacedBy) {
                 const replacedRules = replacedBy.map(
-                    name => `[vue/${name}](${name}.md) rule`
+                    name => `[lodash-template/${name}](${name}.md) rule`
                 )
                 notes.push(
                     `- :warning: This rule was **deprecated** and replaced by ${formatItems(

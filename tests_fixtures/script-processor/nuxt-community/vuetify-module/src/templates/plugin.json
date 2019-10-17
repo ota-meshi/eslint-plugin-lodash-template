@@ -1,6 +1,6 @@
 [
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 2 spaces but found 0 spaces.",
     "line": 4,
     "column": 1,
@@ -8,7 +8,7 @@
     "endColumn": 1
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 4 spaces but found 2 spaces.",
     "line": 5,
     "column": 1,
@@ -30,7 +30,7 @@
     "column": 47
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 4 spaces but found 2 spaces.",
     "line": 6,
     "column": 1,
@@ -52,7 +52,7 @@
     "column": 48
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 4 spaces but found 2 spaces.",
     "line": 7,
     "column": 1,
@@ -74,7 +74,7 @@
     "column": 58
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 2 spaces but found 0 spaces.",
     "line": 8,
     "column": 1,
@@ -82,7 +82,7 @@
     "endColumn": 1
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 2 spaces but found 0 spaces.",
     "line": 9,
     "column": 1,
@@ -90,7 +90,7 @@
     "endColumn": 1
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 4 spaces but found 2 spaces.",
     "line": 10,
     "column": 1,
@@ -98,7 +98,7 @@
     "endColumn": 3
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 6 spaces but found 4 spaces.",
     "line": 11,
     "column": 1,
@@ -114,7 +114,7 @@
     "endColumn": 3
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 6 spaces but found 4 spaces.",
     "line": 15,
     "column": 1,
@@ -122,7 +122,7 @@
     "endColumn": 5
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 4 spaces but found 2 spaces.",
     "line": 16,
     "column": 1,
@@ -130,7 +130,7 @@
     "endColumn": 3
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 2 spaces but found 0 spaces.",
     "line": 17,
     "column": 1,
@@ -146,7 +146,7 @@
     "endColumn": 1
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 4 spaces but found 6 spaces.",
     "line": 25,
     "column": 1,
@@ -154,7 +154,7 @@
     "endColumn": 7
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 4 spaces but found 6 spaces.",
     "line": 26,
     "column": 1,

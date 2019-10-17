@@ -50,7 +50,7 @@
     "column": 128
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected base point indentation of \"                \", but found \"          \".",
     "line": 19,
     "column": 1,

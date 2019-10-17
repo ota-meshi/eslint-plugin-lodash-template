@@ -78,7 +78,7 @@
     "endColumn": 3
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
     "line": 12,
     "column": 3,
@@ -110,7 +110,7 @@
     "endColumn": 38
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
     "line": 13,
     "column": 3,
@@ -118,7 +118,7 @@
     "endColumn": 5
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
     "line": 14,
     "column": 3,
@@ -126,7 +126,7 @@
     "endColumn": 5
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
     "line": 15,
     "column": 3,
@@ -134,7 +134,7 @@
     "endColumn": 5
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
     "line": 16,
     "column": 3,
@@ -142,7 +142,7 @@
     "endColumn": 5
   },
   {
-    "ruleId": "lodash-template/script-indent",
+    "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected relative indentation of 2 spaces but found 0 spaces.",
     "line": 17,
     "column": 3,

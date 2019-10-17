@@ -154,8 +154,8 @@ Enforce all the rules in this category and all the rules in `Best Practices` cat
 |    | Rule ID | Description |
 |:---|:--------|:------------|
 | :wrench: | [lodash-template/no-irregular-whitespace](./docs/rules/no-irregular-whitespace.md) | disallow irregular whitespace outside the template tags. |
-| :wrench: | [lodash-template/no-multi-spaces-in-script](./docs/rules/no-multi-spaces-in-script.md) | disallow multiple spaces in script. (ex. :ng: `<% if···(test)···{ %>`) |
-| :wrench: | [lodash-template/script-indent](./docs/rules/script-indent.md) | enforce consistent indentation to script in micro-template tag. |
+| :wrench: | [lodash-template/no-multi-spaces-in-scriptlet](./docs/rules/no-multi-spaces-in-scriptlet.md) | disallow multiple spaces in scriptlet. (ex. :ng: `<% if···(test)···{ %>`) |
+| :wrench: | [lodash-template/scriptlet-indent](./docs/rules/scriptlet-indent.md) | enforce consistent indentation to scriptlet in micro-template tag. |
 | :wrench: | [lodash-template/template-tag-spacing](./docs/rules/template-tag-spacing.md) | enforce unified spacing in micro-template tag. (ex. :ok: `<%= prop %>`, :ng: `<%=prop%>`) |
 
 ### Recommended with HTML template (Improve Readability with HTML template)
@@ -200,7 +200,9 @@ Enforce all the rules in this category and all the rules in `Best Practices`/`Re
 
 | Rule ID | Replaced by |
 |:--------|:------------|
+| [lodash-template/no-multi-spaces-in-script](./docs/rules/no-multi-spaces-in-script.md) | [lodash-template/no-multi-spaces-in-scriptlet](./docs/rules/no-multi-spaces-in-scriptlet.md) |
 | [lodash-template/plugin-option](./docs/rules/plugin-option.md) | (no replacement) |
+| [lodash-template/script-indent](./docs/rules/script-indent.md) | [lodash-template/scriptlet-indent](./docs/rules/scriptlet-indent.md) |
 
 <!--RULES_TABLE_END-->
 
