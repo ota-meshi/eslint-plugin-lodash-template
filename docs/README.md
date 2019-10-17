@@ -68,13 +68,13 @@ This plugin does special handling for the following rule warnings in the templat
 
 | Rule ID | Process Description | Another way this plugin supports |
 |:--------|:--------------------|:---------------------------------|
-| [`indent`](https://eslint.org/docs/rules/indent) | Disable warnings | [`lodash-template/script-indent`](./docs/rules/script-indent.md) rule,<br>[`lodash-template/html-indent`](./docs/rules/html-indent.md) rule |
+| [`indent`](https://eslint.org/docs/rules/indent) | Disable warnings | [`lodash-template/scriptlet-indent`](./docs/rules/scriptlet-indent.md) rule,<br>[`lodash-template/html-indent`](./docs/rules/html-indent.md) rule |
 | [`strict`](https://eslint.org/docs/rules/strict) | Disable warnings | -- |
 | [`no-empty`](https://eslint.org/docs/rules/no-empty) | Disable warnings | -- |
 | [`max-statements-per-line`](https://eslint.org/docs/rules/max-statements-per-line) | Disable warnings | -- |
 | [`padded-blocks`](https://eslint.org/docs/rules/padded-blocks) | Disable warnings | -- |
 | [`no-implicit-globals`](https://eslint.org/docs/rules/no-implicit-globals) | Disable warnings | -- |
-| [`no-multi-spaces`](https://eslint.org/docs/rules/no-multi-spaces) | Disable warnings | [`lodash-template/no-multi-spaces-in-script`](./docs/rules/no-multi-spaces-in-script.md) rule,<br>[`lodash-template/no-multi-spaces-in-html-tag`](./docs/rules/no-multi-spaces-in-html-tag.md) rule |
+| [`no-multi-spaces`](https://eslint.org/docs/rules/no-multi-spaces) | Disable warnings | [`lodash-template/no-multi-spaces-in-scriptlet`](./docs/rules/no-multi-spaces-in-scriptlet.md) rule,<br>[`lodash-template/no-multi-spaces-in-html-tag`](./docs/rules/no-multi-spaces-in-html-tag.md) rule |
 | [`no-unused-expressions`](https://eslint.org/docs/rules/no-unused-expressions)| Disable warnings within interpolate(<%=...%>) | -- |
 | [`quotes`](https://eslint.org/docs/rules/quotes) | Disable warnings if doublequote is set | -- |
 | [`no-irregular-whitespace`](https://eslint.org/docs/rules/no-irregular-whitespace) | Disable warnings outside template tags | [`lodash-template/no-irregular-whitespace`](./docs/rules/no-irregular-whitespace.md) rule |
