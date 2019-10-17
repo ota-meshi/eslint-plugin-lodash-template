@@ -1,5 +1,5 @@
 <% if (a) { %>
-const v = #'A'
+const v = #'<%= a %>'
 <% } else { %>
 const v = 'B'
 <% } %>

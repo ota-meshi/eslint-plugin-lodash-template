@@ -40,9 +40,9 @@
   {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
-    "line": 28,
+    "line": 27,
     "column": 9,
-    "endLine": 28,
+    "endLine": 27,
     "endColumn": 22
   }
 ]
