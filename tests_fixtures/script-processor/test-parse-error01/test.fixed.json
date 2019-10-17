@@ -1,0 +1,26 @@
+[
+  {
+    "ruleId": "no-undef",
+    "message": "'a' is not defined.",
+    "line": 2,
+    "column": 8,
+    "endLine": 2,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'v' is too short (< 2).",
+    "line": 5,
+    "column": 7,
+    "endLine": 5,
+    "endColumn": 8
+  },
+  {
+    "ruleId": "no-unused-vars",
+    "message": "'v' is assigned a value but never used.",
+    "line": 5,
+    "column": 7,
+    "endLine": 5,
+    "endColumn": 8
+  }
+]
