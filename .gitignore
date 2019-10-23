@@ -5,7 +5,6 @@ docs/.vuepress/dist
 
 assets
 service
-rules
 404.html
 service-worker.js
 playground
