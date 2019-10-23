@@ -46,7 +46,7 @@ export default {
     },
     data() {
         return {
-            linter: null,
+            eslint4b: null,
             preprocess,
             postprocess,
         }
@@ -61,26 +61,39 @@ export default {
                 rules: this.rules,
             }
         },
+        linter() {
+            if (!this.eslint4b) {
+                return null
+            }
+            const Linter = this.eslint4b
+
+            const linter = new Linter()
+
+            for (const k of Object.keys(plugin.rules)) {
+                const rule = plugin.rules[k]
+                linter.defineRule(rule.meta.docs.ruleId, rule)
+            }
+            linter.defineParser("micro-template-eslint-parser", parser)
+
+            const verifyAndFix = linter.verifyAndFix.bind(linter)
+            linter.verifyAndFix = function(...args) {
+                args[2].preprocess = preprocess
+                args[2].postprocess = postprocess
+                return verifyAndFix(...args)
+            }
+            const verify = linter.verify.bind(linter)
+            linter.verify = function(...args) {
+                args[2].preprocess = preprocess
+                args[2].postprocess = postprocess
+                return verify(...args)
+            }
+            return linter
+        }
     },
     async mounted() {
         // Load linter asynchronously.
-        const { default: Linter } = await import("eslint4b")
-
-        const linter = new Linter()
-
-        for (const k of Object.keys(plugin.rules)) {
-            const rule = plugin.rules[k]
-            linter.defineRule(rule.meta.docs.ruleId, rule)
-        }
-        linter.defineParser("micro-template-eslint-parser", parser)
-
-        const verifyAndFix = linter.verifyAndFix.bind(linter)
-        linter.verifyAndFix = function(...args) {
-            args[2].preprocess = preprocess
-            args[2].postprocess = postprocess
-            return verifyAndFix(...args)
-        }
-        this.linter = linter
+        const { default: eslint4b } = await import("eslint4b")
+        this.eslint4b = eslint4b
     },
 }
 </script>

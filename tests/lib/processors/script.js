@@ -26,11 +26,15 @@ function assertMessages(actual, expected) {
     const length = Math.max(actual.length, expected.length)
     const expected2 = []
     for (let i = 0; i < length; i++) {
-        expected2.push(
-            expected[i]
-                ? Object.assign({}, actual[i], expected[i])
-                : expected[i]
-        )
+        const e = expected[i]
+        if (e && e.message.includes("Parsing error")) {
+            e.message = e.message.split(/\r\n|[\r\n]/u)[0]
+        }
+        const a = actual[i]
+        if (a && a.message.includes("Parsing error")) {
+            a.message = e.message.split(/\r\n|[\r\n]/u)[0]
+        }
+        expected2.push(e ? Object.assign({}, a, e) : e)
     }
 
     assert.deepStrictEqual(actual, expected2)
@@ -81,6 +85,8 @@ describe("script test", () => {
                         )
                     )
                 }
+                const parsingErrorOnly =
+                    parsingErrorJson && parsingErrorJson.length === 1
 
                 it("lint", () => {
                     const cli = new CLIEngine({
@@ -95,13 +101,14 @@ describe("script test", () => {
                         FIXTURE_DIR,
                         `${name}.json`
                     )
-                    if (!parsingErrorJson) {
+                    if (!parsingErrorOnly) {
                         try {
                             assertMessages(
                                 messages,
-                                JSON.parse(
-                                    fs.readFileSync(expectFilepath, "utf8")
-                                )
+                                parsingErrorJson ||
+                                    JSON.parse(
+                                        fs.readFileSync(expectFilepath, "utf8")
+                                    )
                             )
                         } catch (e) {
                             testUtils.writeFile(
@@ -110,12 +117,14 @@ describe("script test", () => {
                             )
                             throw e
                         }
-                        assert.ok(
-                            !stringifyMessages(messages).includes(
-                                "Parsing error"
-                            ),
-                            "No Parsing error"
-                        )
+                        if (!parsingErrorJson) {
+                            assert.ok(
+                                !stringifyMessages(messages).includes(
+                                    "Parsing error"
+                                ),
+                                "No Parsing error"
+                            )
+                        }
                     } else {
                         assert.ok(
                             stringifyMessages(messages).includes(
@@ -123,10 +132,11 @@ describe("script test", () => {
                             ),
                             "Has Parsing error"
                         )
+                        assertMessages(messages, parsingErrorJson)
                     }
                 })
 
-                if (!parsingErrorJson) {
+                if (!parsingErrorOnly) {
                     if (semver.satisfies(eslintVersion, ">=6.4.0")) {
                         it("autofix", () => {
                             const cli = new CLIEngine({
@@ -161,12 +171,14 @@ describe("script test", () => {
                                 )
                                 throw e
                             }
-                            assert.ok(
-                                !stringifyMessages(messages).includes(
-                                    "Parsing error"
-                                ),
-                                "No Parsing error"
-                            )
+                            if (!parsingErrorJson) {
+                                assert.ok(
+                                    !stringifyMessages(messages).includes(
+                                        "Parsing error"
+                                    ),
+                                    "No Parsing error"
+                                )
+                            }
                         })
                     }
 
