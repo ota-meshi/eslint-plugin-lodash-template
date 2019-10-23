@@ -1,50 +1,27 @@
 <template>
     <div class="app">
-        <div class="sns">
-            <a
-                class="github-button"
-                href="https://github.com/ota-meshi/eslint-plugin-lodash-template"
-                data-show-count="true"
-                aria-label="Star ota-meshi/eslint-plugin-lodash-template on GitHub"
-            >
-                Star
-            </a>
-            <a
-                href="https://twitter.com/share"
-                class="twitter-share-button"
-                data-url="https://ota-meshi.github.io/eslint-plugin-lodash-template/"
-            >
-                Tweet
-            </a>
-
-            <div
-                class="fb-like"
-                data-href="https://ota-meshi.github.io/eslint-plugin-lodash-template/"
-                data-layout="button_count"
-                data-action="like"
-                data-size="small"
-                data-show-faces="false"
-                data-share="true"
-            />
-            <a
-                href="https://www.npmjs.com/package/eslint-plugin-lodash-template"
-            >
-                <img
-                    src="https://img.shields.io/npm/v/eslint-plugin-lodash-template.svg"
-                    alt="npm"
+        <sns-bar />
+        <div>
+            <label>
+                <input
+                    :checked="script"
+                    type="checkbox"
+                    @input="onScriptCheck"
                 />
-            </a>
+                SCRIPT MODE (Beta)
+            </label>
         </div>
         <div class="main-content">
             <rules-settings
                 ref="settings"
                 class="rules-settings"
-                :rules.sync="state.rules"
+                :rules.sync="rules"
             />
             <div class="editor-content">
                 <pg-editor
-                    v-model="state.code"
-                    :rules="state.rules"
+                    v-model="code"
+                    :rules="rules"
+                    :script="script"
                     class="eslint-playground"
                     @change="onChange"
                 />
@@ -52,10 +29,13 @@
                     <ol>
                         <li
                             v-for="msg in messages"
-                            :key="msg.line + ':' + msg.column + ':' + msg.ruleId"
+                            :key="
+                                msg.line + ':' + msg.column + ':' + msg.ruleId
+                            "
                             class="message"
                         >
-                            [{{ msg.line }}:{{ msg.column }}]: {{ msg.message }} (<a
+                            [{{ msg.line }}:{{ msg.column }}]:
+                            {{ msg.message }} (<a
                                 :href="getURL(msg.ruleId)"
                                 target="_blank"
                             >
@@ -71,13 +51,14 @@
 
 <script>
 import * as coreRules from "../../../node_modules/eslint4b/dist/core-rules"
-import plugin from "../../../lib/index.js"
+import plugin from "../../../lib/index"
 import PgEditor from "./components/PgEditor.vue"
 import RulesSettings from "./components/RulesSettings.vue"
+import SnsBar from "./components/SnsBar.vue"
 import { deserializeState, serializeState } from "./state"
 import { DEFAULT_RULES_CONFIG } from "./rules"
 
-const DEFAULT_CODE = `<% /* global accounts, users */ %>
+const DEFAULT_HTML_CODE = `<% /* global accounts, users */ %>
 <% accounts.forEach(({id, profile_image_url, from_user}, i) => { %>
 <div id="<%= id %>" class="<%= (i % 2 == 1 ? ' even': '') %>">
   <div class="grid_1 alpha right">
@@ -93,6 +74,18 @@ const DEFAULT_CODE = `<% /* global accounts, users */ %>
   <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
 <% } %>`
 
+const DEFAULT_SCRIPT_CODE = `/* eslint no-multi-spaces: error */
+<% /* eslint lodash-template/no-multi-spaces-in-scriptlet: error */ %>
+
+// if this plugin is not used, a parsing error will occur.
+const obj    = <%= JSON.stringify(param     ) %>
+//       ^^^^                          ^^^^^ 
+//         |                            |
+//         |          If you don't use \`"plugin:lodash-template/recommended-with-script"\`,
+//         |          only the space after \`param\` is reported.
+//         |
+//         + When using \`"plugin:lodash-template/recommended-with-script"\`, the space after \`obj\` is also reported.`
+
 const ruleURLs = {}
 for (const k of Object.keys(plugin.rules)) {
     const rule = plugin.rules[k]
@@ -104,66 +97,46 @@ for (const k of Object.keys(coreRules)) {
 }
 
 export default {
-    name: 'PlaygroundBlock',
-    components: { PgEditor, RulesSettings },
+    name: "PlaygroundBlock",
+    components: { PgEditor, RulesSettings, SnsBar },
     data() {
-        const serializedString = typeof window !== 'undefined' && window.location.hash.slice(1) || ''
+        const serializedString =
+            (typeof window !== "undefined" && window.location.hash.slice(1)) ||
+            ""
         const state = deserializeState(serializedString)
         return {
-            serializedString,
-            state: {
-                code: state.code || DEFAULT_CODE,
-                rules: state.rules || Object.assign({}, DEFAULT_RULES_CONFIG),
-            },
+            code:
+                state.code ||
+                (state.script ? DEFAULT_SCRIPT_CODE : DEFAULT_HTML_CODE),
+            rules: state.rules || Object.assign({}, DEFAULT_RULES_CONFIG),
+            script: state.script,
             messages: [],
         }
     },
+    computed: {
+        serializedString() {
+            const serializedString = serializeState({
+                code: this.code,
+                rules: this.rules,
+                script: this.script,
+            })
+            return serializedString
+        },
+    },
     watch: {
-        state: {
-            handler() {
-                this.applyUrlHash()
-            },
-            deep: true,
+        serializedString(serializedString) {
+            if (typeof window !== "undefined") {
+                window.location.replace(`#${serializedString}`)
+            }
         },
     },
     mounted() {
-        if (typeof window !== 'undefined') {
-          window.addEventListener("hashchange", this.onUrlHashChange)
+        if (typeof window !== "undefined") {
+            window.addEventListener("hashchange", this.onUrlHashChange)
         }
-        ;(function(d, s, id) {
-            const [fjs] = d.getElementsByTagName(s)
-            if (d.getElementById(id)) {
-                return
-            }
-            const js = d.createElement(s)
-            js.id = id
-            js.src = "https://buttons.github.io/buttons.js"
-            fjs.parentNode.insertBefore(js, fjs)
-        })(document, "script", "gh-buttons")
-        ;(function(d, s, id) {
-            const [fjs] = d.getElementsByTagName(s)
-            if (d.getElementById(id)) {
-                return
-            }
-            const js = d.createElement(s)
-            js.id = id
-            js.src =
-                "https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10"
-            fjs.parentNode.insertBefore(js, fjs)
-        })(document, "script", "facebook-jssdk")
-        ;(function(d, s, id) {
-            const [fjs] = d.getElementsByTagName(s)
-            const p = /^http:/u.test(d.location) ? "http" : "https"
-            if (!d.getElementById(id)) {
-                const js = d.createElement(s)
-                js.id = id
-                js.src = `${p}://platform.twitter.com/widgets.js`
-                fjs.parentNode.insertBefore(js, fjs)
-            }
-        })(document, "script", "twitter-wjs")
     },
     beforeDestroey() {
-        if (typeof window !== 'undefined') {
+        if (typeof window !== "undefined") {
             window.removeEventListener("hashchange", this.onUrlHashChange)
         }
     },
@@ -175,26 +148,62 @@ export default {
             return ruleURLs[ruleId] || ""
         },
         onUrlHashChange() {
-            const serializedString = typeof window !== 'undefined' && window.location.hash.slice(1) || ''
+            const serializedString =
+                (typeof window !== "undefined" &&
+                    window.location.hash.slice(1)) ||
+                ""
             if (serializedString !== this.serializedString) {
-                this.serializedString = serializedString
                 const state = deserializeState(serializedString)
-                this.state = {
-                    code: state.code || DEFAULT_CODE,
-                    rules:
-                        state.rules || Object.assign({}, DEFAULT_RULES_CONFIG),
-                }
+                this.code =
+                    state.code ||
+                    (state.script ? DEFAULT_SCRIPT_CODE : DEFAULT_HTML_CODE)
+                this.rules =
+                    state.rules || Object.assign({}, DEFAULT_RULES_CONFIG)
+                this.script = state.script
             }
         },
-        applyUrlHash() {
-            const serializedString = serializeState(this.state)
-            if (serializedString !== this.serializedString) {
-                this.serializedString = serializedString
-                if (typeof window !== 'undefined') {
-                    window.location.replace(`#${serializedString}`)
-                }
-            }
+        onScriptCheck(evt) {
+            this.script = evt.target.checked
+            this.code = this.script ? DEFAULT_SCRIPT_CODE : DEFAULT_HTML_CODE
         },
     },
 }
 </script>
+<style scoped>
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100% - 100px);
+    border: 1px solid #cfd4db;
+}
+.main-content > .rules-settings {
+    height: 100%;
+    overflow: auto;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.main-content > .editor-content {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #cfd4db;
+}
+
+.main-content > .editor-content > .eslint-playground {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3px;
+}
+.main-content > .editor-content > .messages {
+    height: 30%;
+    width: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    border-top: 1px solid #cfd4db;
+    padding: 8px;
+    font-size: 12px;
+}
+</style>

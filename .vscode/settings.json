@@ -1,6 +1,10 @@
 {
-  "eslint.validate": [ "javascript", "javascriptreact", { "language": "html", "autoFix": false } ],
+  "eslint.validate": [ "javascript", "javascriptreact", { "language": "html", "autoFix": false }, { "language": "vue", "autoFix": true } ],
   "typescript.validate.enable": false,
   "javascript.validate.enable": false,
   "eslint.autoFixOnSave": true,
+  "eslint.workingDirectories": [
+    "./",
+    "./docs/.vuepress"
+  ]
 }

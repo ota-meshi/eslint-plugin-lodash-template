@@ -9,6 +9,7 @@ export function deserializeState(serializedString) {
     const state = {
         code: undefined,
         rules: undefined,
+        script: false,
     }
 
     if (serializedString === "") {
@@ -24,15 +25,18 @@ export function deserializeState(serializedString) {
             : decodedText
         const json = JSON.parse(jsonText)
 
-        if (typeof json === "object" && json !== null) {
+        if (typeof json === "object" && json != null) {
             if (typeof json.code === "string") {
                 state.code = json.code
             }
-            if (typeof json.rules === "object" && json.rules !== null) {
+            if (typeof json.rules === "object" && json.rules != null) {
                 state.rules = {}
                 for (const id of Object.keys(json.rules)) {
                     state.rules[id] = json.rules[id] === 2 ? "error" : "off"
                 }
+            }
+            if (typeof json.script === "boolean") {
+                state.script = json.script
             }
         }
     } catch (error) {

@@ -23,6 +23,7 @@ export function serializeState(state) {
     const saveData = {
         code: state.code,
         rules: getEnabledRules(state.rules),
+        script: Boolean(state.script),
     }
     const jsonString = JSON.stringify(saveData)
     const compressedString = pako.deflate(jsonString, { to: "string" })
