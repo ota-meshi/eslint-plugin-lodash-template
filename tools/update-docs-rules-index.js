@@ -40,21 +40,26 @@ function toDeprecatedRuleRow(rule) {
 // -----------------------------------------------------------------------------
 let rulesTableContent = categories
     .map(
-        category => `
+        category =>
+            `
 ## ${category.title}
 
-Enforce all the rules in this category, as well as all higher priority rules, with:
+${category.configDescription}
 
 \`\`\`json
 {
   "extends": "plugin:lodash-template/${category.categoryId}"
 }
 \`\`\`
-
+${
+    category.rules.length
+        ? `
 | Rule ID | Description |    |
 |:--------|:------------|:---|
 ${category.rules.map(toRuleRow).join("\n")}
 `
+        : ""
+}`
     )
     .join("")
 

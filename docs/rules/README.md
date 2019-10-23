@@ -8,7 +8,7 @@ sidebarDepth: 0
 
 ## Base Rules (Enabling Correct ESLint Parsing)
 
-Enforce all the rules in this category, as well as all higher priority rules, with:
+Enable this plugin using with:
 
 ```json
 {
@@ -16,13 +16,9 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 }
 ```
 
-| Rule ID | Description |    |
-|:--------|:------------|:---|
-
-
 ## Best Practices (Improve Development Experience)
 
-Enforce all the rules in this category, as well as all higher priority rules, with:
+Enforce all the rules in this category with:
 
 ```json
 {
@@ -38,7 +34,7 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 
 ## Recommended (Improve Readability)
 
-Enforce all the rules in this category, as well as all higher priority rules, with:
+Enforce all the rules in this category and all the rules in `Best Practices` categories with:
 
 ```json
 {
@@ -55,7 +51,7 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 
 ## Recommended with HTML template (Improve Readability with HTML template)
 
-Enforce all the rules in this category, as well as all higher priority rules, with:
+Enforce all the rules in this category and all the rules in `Best Practices`/`Recommended` categories with:
 
 ```json
 {

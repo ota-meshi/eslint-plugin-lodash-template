@@ -22,7 +22,7 @@ function getEnabledRules(allRules) {
 export function serializeState(state) {
     const saveData = {
         code: state.code,
-        rules: getEnabledRules(state.rules),
+        rules: state.rules ? getEnabledRules(state.rules) : null,
         script: Boolean(state.script),
     }
     const jsonString = JSON.stringify(saveData)

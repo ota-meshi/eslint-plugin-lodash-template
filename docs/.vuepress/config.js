@@ -45,7 +45,7 @@ module.exports = {
         return {
             resolve: {
                 alias: {
-                    eslint: "eslint4b",
+                    eslint: require.resolve("./shim/eslint"),
                     crypto: require.resolve("./shim/crypto"),
                 },
             },
@@ -76,17 +76,19 @@ module.exports = {
                 "/rules/",
 
                 // Rules in each category.
-                ...categories.map(({ title, _rules }) => ({
-                    title: title.replace(/ \(.+?\)/u, ""),
-                    collapsable: false,
-                    children: rules.map(
-                        ({
-                            meta: {
-                                docs: { ruleId, ruleName },
-                            },
-                        }) => [`/rules/${ruleName}`, ruleId]
-                    ),
-                })),
+                ...categories
+                    .map(({ title, rules: catRules }) => ({
+                        title: title.replace(/ \(.+?\)/u, ""),
+                        collapsable: false,
+                        children: catRules.map(
+                            ({
+                                meta: {
+                                    docs: { ruleId, ruleName },
+                                },
+                            }) => [`/rules/${ruleName}`, ruleId]
+                        ),
+                    }))
+                    .filter(menu => Boolean(menu.children.length)),
 
                 // Rules in no category.
                 ...extraCategories,

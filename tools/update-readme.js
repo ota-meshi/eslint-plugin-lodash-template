@@ -47,11 +47,15 @@ ${category.configDescription}
   "extends": "plugin:lodash-template/${category.categoryId}"
 }
 \`\`\`
-
+${
+    category.rules.length
+        ? `
 |    | Rule ID | Description |
 |:---|:--------|:------------|
 ${category.rules.map(toRuleRow).join("\n")}
 `
+        : ""
+}`
     )
     .join("")
 

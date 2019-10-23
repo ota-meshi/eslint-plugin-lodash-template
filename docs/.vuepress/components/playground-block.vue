@@ -115,9 +115,18 @@ export default {
     },
     computed: {
         serializedString() {
+            const defaultCode = this.script
+                ? DEFAULT_SCRIPT_CODE
+                : DEFAULT_HTML_CODE
+            const defaultRules = DEFAULT_RULES_CONFIG
+            const code = defaultCode === this.code ? null : this.code
+            const rules =
+                JSON.stringify(defaultRules) === JSON.stringify(this.rules)
+                    ? null
+                    : this.rules
             const serializedString = serializeState({
-                code: this.code,
-                rules: this.rules,
+                code,
+                rules,
                 script: this.script,
             })
             return serializedString

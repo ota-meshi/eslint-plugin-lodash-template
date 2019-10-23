@@ -121,10 +121,6 @@ Enable this plugin using with:
 }
 ```
 
-|    | Rule ID | Description |
-|:---|:--------|:------------|
-
-
 ### Best Practices (Improve Development Experience)
 
 Enforce all the rules in this category with:
@@ -325,6 +321,8 @@ const obj    = <%= JSON.stringify(param     ) %>
 //         |
 //         + When using `"plugin:lodash-template/recommended-with-script"`, the space after `obj` is also reported.
 ```
+
+[***Playground on the Web***](https://ota-meshi.github.io/eslint-plugin-lodash-template/playground/#eJyrVkrOT0lVssorzcnRUSoqzUkthnGKk4syC0qUrEqKSlNrAR6bDlw=)
 
 #### Configuring
 
