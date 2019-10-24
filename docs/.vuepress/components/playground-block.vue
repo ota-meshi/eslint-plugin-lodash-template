@@ -8,7 +8,7 @@
                     type="checkbox"
                     @input="onScriptCheck"
                 />
-                SCRIPT MODE (Beta)
+                JAVASCRIPT TEMPLATES MODE (Beta)
             </label>
         </div>
         <div class="main-content">
@@ -74,17 +74,16 @@ const DEFAULT_HTML_CODE = `<% /* global accounts, users */ %>
   <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
 <% } %>`
 
-const DEFAULT_SCRIPT_CODE = `/* eslint no-multi-spaces: error */
+const DEFAULT_SCRIPT_CODE = `/* eslint no-multi-spaces: error, space-infix-ops: error, computed-property-spacing: error */
+<% /* global param, additionals */ %>
 <% /* eslint lodash-template/no-multi-spaces-in-scriptlet: error */ %>
 
-// if this plugin is not used, a parsing error will occur.
 const obj    = <%= JSON.stringify(param     ) %>
-//       ^^^^                          ^^^^^ 
-//         |                            |
-//         |          If you don't use \`"plugin:lodash-template/recommended-with-script"\`,
-//         |          only the space after \`param\` is reported.
-//         |
-//         + When using \`"plugin:lodash-template/recommended-with-script"\`, the space after \`obj\` is also reported.`
+
+<% for (const key of Object.keys(additionals)) { %>
+    obj[ <%= key %>] =<%= additionals[key] %>
+<%}%>
+`
 
 const ruleURLs = {}
 for (const k of Object.keys(plugin.rules)) {

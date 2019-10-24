@@ -13,8 +13,6 @@
         dark
         :format="format"
         :fix="fix"
-        @input="clearJsMarkers"
-        @change="clearJsMarkers"
     />
 </template>
 
@@ -25,8 +23,6 @@ import parser from "../../../lib/parser/micro-template-eslint-parser"
 import plugin from "../../../"
 import htmlProcessor from "../../../lib/processors/html"
 import scriptProcessor from "../../../lib/processors/script"
-// eslint-disable-next-line @mysticatea/node/no-extraneous-import
-import debounce from "lodash/debounce"
 
 export default {
     name: "ESLintCodeBlock",
@@ -155,9 +151,6 @@ export default {
         const { default: eslint4b } = await import("eslint4b")
         this.eslint4b = eslint4b
 
-        this.clearJsMarkersCycle = debounce(this.clearJsMarkersCycle, 100)
-        this.$on("clearJsMarkersCycle", this.clearJsMarkersCycle)
-
         this.$refs.editor.$watch("monaco", () => {
             const { monaco } = this.$refs.editor
             // monaco.languages.j()
@@ -166,6 +159,18 @@ export default {
             )
             monaco.languages.typescript.javascriptDefaults.setDiagnosticsOptions(
                 { validate: false }
+            )
+        })
+        this.$refs.editor.$watch("codeEditor", () => {
+            this.$refs.editor.codeEditor.onDidChangeModelDecorations(() =>
+                this.onDidChangeModelDecorations(this.$refs.editor.codeEditor)
+            )
+        })
+        this.$refs.editor.$watch("fixedCodeEditor", () => {
+            this.$refs.editor.fixedCodeEditor.onDidChangeModelDecorations(() =>
+                this.onDidChangeModelDecorations(
+                    this.$refs.editor.fixedCodeEditor
+                )
             )
         })
     },
@@ -181,42 +186,10 @@ export default {
                 )
                 .join("")
         },
-
-        clearJsMarkers() {
-            this._clearJsMarkersCycleCount = 0
-            this.clearJsMarkersCycle()
-        },
-
-        clearJsMarkersCycle() {
-            setTimeout(() => {
-                this._clearJsMarkersCycleCount++
-                if (this._clearJsMarkersCycleCount > 10) {
-                    return
-                }
-                if (this.$refs.editor) {
-                    const editors = [
-                        this.$refs.editor.codeEditor,
-                        this.$refs.editor.fixedCodeEditor,
-                    ]
-                    let cleared = 0
-                    for (const editor of editors.filter(e => e)) {
-                        const { monaco } = this.$refs.editor
-                        const model = editor.getModel()
-                        if (
-                            monaco.editor
-                                .getModelMarkers({ resource: model.uri })
-                                .some(e => e.owner === "javascript")
-                        ) {
-                            cleared++
-                        }
-                        monaco.editor.setModelMarkers(model, "javascript", [])
-                    }
-                    if (cleared) {
-                        return
-                    }
-                }
-                this.$emit("clearJsMarkersCycle")
-            }, 200)
+        onDidChangeModelDecorations(editor) {
+            const { monaco } = this.$refs.editor
+            const model = editor.getModel()
+            monaco.editor.setModelMarkers(model, "javascript", [])
         },
     },
 }

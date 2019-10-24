@@ -11,8 +11,8 @@ description: "disallow parsing errors in template"
 
 ## Rule Details
 
-This rule reports syntax errors in template.
-
+This rule reports syntax errors in JavaScript template.  
+This rule works when verification of ["JavaScript Templates"](../README.md#for-javascript-templates) is enabled.
 
 <eslint-code-block script :rules="{'lodash-template/no-script-parsing-error': ['error']}">
 
