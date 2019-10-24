@@ -8,11 +8,10 @@
     "endColumn": 9
   },
   {
-    "ruleId": null,
-    "fatal": true,
-    "message": "Parsing error: Unexpected character '#'\n\n\u001b[0m \u001b[90m 1 | \u001b[39m\u001b[90m/*SCRIPTLET*/\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 2 | \u001b[39m\u001b[36mconst\u001b[39m v \u001b[33m=\u001b[39m \u001b[33m#\u001b[39m\u001b[32m'_INTERPOLATION_4c8eaaf7b7c0813dd9068c1808046571'\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   | \u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 3 | \u001b[39m\u001b[90m/*SCRIPTLET*/\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 4 | \u001b[39m             \u001b[0m\n\u001b[0m \u001b[90m 5 | \u001b[39m\u001b[90m/*SCRIPTLET*/\u001b[39m\u001b[0m",
+    "ruleId": "lodash-template/no-script-parsing-error",
+    "message": "Parsing error: Unexpected character '#'",
     "line": 2,
-    "column": 11
+    "column": 12
   },
   {
     "ruleId": "lodash-template/prefer-escape-template-interpolations",

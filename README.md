@@ -121,6 +121,10 @@ Enable this plugin using with:
 }
 ```
 
+|    | Rule ID | Description |
+|:---|:--------|:------------|
+|  | [lodash-template/no-script-parsing-error](./docs/rules/no-script-parsing-error.md) | disallow parsing errors in template |
+
 ### Best Practices (Improve Development Experience)
 
 Enforce all the rules in this category with:
