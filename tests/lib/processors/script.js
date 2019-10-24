@@ -32,7 +32,7 @@ function assertMessages(actual, expected) {
         }
         const a = actual[i]
         if (a && a.message.includes("Parsing error")) {
-            a.message = e.message.split(/\r\n|[\r\n]/u)[0]
+            a.message = a.message.split(/\r\n|[\r\n]/u)[0]
         }
         expected2.push(e ? Object.assign({}, a, e) : e)
     }
@@ -119,10 +119,17 @@ describe("script test", () => {
                                     )
                             )
                         } catch (e) {
-                            testUtils.writeFile(
-                                expectFilepath,
-                                stringifyMessages(messages)
-                            )
+                            if (!parsingErrorJson) {
+                                testUtils.writeFile(
+                                    expectFilepath,
+                                    stringifyMessages(messages)
+                                )
+                            } else {
+                                testUtils.writeFile(
+                                    `${filepath}.parsing_error.json`,
+                                    stringifyMessages(messages)
+                                )
+                            }
                             throw e
                         }
                         if (!parsingErrorJson) {

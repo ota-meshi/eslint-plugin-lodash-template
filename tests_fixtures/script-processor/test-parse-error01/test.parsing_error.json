@@ -9,9 +9,9 @@
   },
   {
     "ruleId": "lodash-template/no-script-parsing-error",
-    "message": "Parsing error: Unexpected character '#'",
+    "message": "Parsing error: Line 3: Unexpected character '#'",
     "line": 3,
-    "column": 12
+    "column": 11
   },
   {
     "ruleId": "id-length",
