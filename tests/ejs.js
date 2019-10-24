@@ -11,7 +11,6 @@ const testUtils = require("./test-utils")
 const CLIEngine = eslint.CLIEngine
 
 const FIXTURE_DIR = path.join(__dirname, "../tests_fixtures/ejs")
-const CONFIG_PATH = path.join(FIXTURE_DIR, ".eslintrc.js")
 
 /**
  * Assert the messages
@@ -54,14 +53,12 @@ function stringifyMessages(messages) {
 describe("ejs test", () => {
     if (semver.satisfies(eslintVersion, ">=6.2.0")) {
         describe("should notify errors", () => {
-            for (const name of fs
-                .readdirSync(FIXTURE_DIR)
+            for (const name of testUtils
+                .listupFiles(FIXTURE_DIR)
                 .filter(s => s.endsWith(".ejs"))) {
                 it(name, () => {
                     const cli = new CLIEngine({
                         cwd: FIXTURE_DIR,
-                        configFile: CONFIG_PATH,
-                        useEslintrc: false,
                     })
                     const report = cli.executeOnFiles([name])
                     const messages = testUtils.sortMessages(

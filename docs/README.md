@@ -6,7 +6,7 @@ ESLint plugin for John Resig-style micro templating.
 [![NPM version](https://img.shields.io/npm/v/eslint-plugin-lodash-template.svg)](https://www.npmjs.com/package/eslint-plugin-lodash-template)
 [![NPM downloads](https://img.shields.io/npm/dm/eslint-plugin-lodash-template.svg)](http://www.npmtrends.com/eslint-plugin-lodash-template)
 
-It can be used in projects using [Underscore.js](http://underscorejs.org/#template) and [Lodash](https://lodash.com/docs/#template) 's template.
+It can be used in projects using [Underscore.js](http://underscorejs.org/#template) and [Lodash](https://lodash.com/docs/#template)'s template.
 
 This plugin supports code checking for templates like the examples below.
 
@@ -31,10 +31,11 @@ This plugin supports code checking for templates like the examples below.
 
 ## Features
 
-- Enable [ESLint](http://eslint.org) in [Underscore.js](http://underscorejs.org/#template) and [Lodash](https://lodash.com/docs/#template) 's templates.
+- Enable [ESLint](http://eslint.org) in [Underscore.js](http://underscorejs.org/#template) and [Lodash](https://lodash.com/docs/#template)'s templates.
 - You can find issues specific to template tags.
 - Improves readability of HTML templates.
 - For JavaScript templates, enable [ESLint](http://eslint.org) both inside and outside the template tag. (*This is an experimental feature*)
+- Partial supports for [EJS](http://ejs.co/).
 
 ## Installation
 
@@ -165,17 +166,21 @@ please set `parserOptions`(ex. **.eslintrc.\***) as follows.
 
 For example, to parse like [EJS](http://ejs.co/), set as follows,
 
+(If `plugin:lodash-template/***` is set in `extends`, it is automatically applied to the extension `.ejs`.)
+
 ```diff
       parserOptions: {
 +         templateSettings: {
-+             evaluate:    "(?:(?:<%_)|(?:<%(?!%)))([\\s\\S]*?)[_\\-]?%>",
-+             interpolate: "<%-([\\s\\S]*?)[_\\-]?%>",
-+             escape:      "<%=([\\s\\S]*?)[_\\-]?%>",
++             evaluate:    [ ["<%", "<%_"], ["%>", "-%>", "_%>"] ],
++             interpolate: [  "<%-",        ["%>", "-%>", "_%>"] ],
++             escape:      [  "<%=",        ["%>", "-%>", "_%>"] ],
++             comment:     [  "<%#",         "%>"                ],
++             literal:     [  "<%%" ],
 +         },
       },
 ```
 
-([EJS](http://ejs.co/) can also be used in part, but we do not provide complete support.)
+(This plugin do not provide complete support for [EJS](http://ejs.co/). e.g. the `include` directive.)
 
 ### Customize target extentions
 

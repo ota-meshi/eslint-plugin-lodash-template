@@ -4,7 +4,7 @@ const assert = require("assert")
 const path = require("path")
 const fs = require("fs")
 const parser = require("../../../lib/parser/micro-template-eslint-parser")
-const PathCoveredTemplateStore = require("../../../lib/services/PathCoveredTemplateStore")
+const PathCoveredTemplateStore = require("../../../lib/services/path-covered-template-store")
 const visitorKeys = require("eslint-visitor-keys").KEYS
 const testUtils = require("../../test-utils")
 

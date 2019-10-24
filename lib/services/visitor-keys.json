@@ -35,6 +35,10 @@
         "expressionStart",
         "expressionEnd"
     ],
+    "MicroTemplateComment": [
+        "expressionStart",
+        "expressionEnd"
+    ],
     "MicroTemplateExpressionStart": [
     ],
     "MicroTemplateExpressionEnd": [

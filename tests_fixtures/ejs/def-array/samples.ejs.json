@@ -1,0 +1,128 @@
+[
+  {
+    "ruleId": "no-undef",
+    "message": "'user' is not defined.",
+    "line": 1,
+    "column": 8,
+    "endLine": 1,
+    "endColumn": 12
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'user' is not defined.",
+    "line": 2,
+    "column": 11,
+    "endLine": 2,
+    "endColumn": 15
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'users' is not defined.",
+    "line": 6,
+    "column": 6,
+    "endLine": 6,
+    "endColumn": 11
+  },
+  {
+    "ruleId": "func-names",
+    "message": "Unexpected unnamed function.",
+    "line": 6,
+    "column": 20,
+    "endLine": 6,
+    "endColumn": 28
+  },
+  {
+    "ruleId": "prefer-arrow-callback",
+    "message": "Unexpected function expression.",
+    "line": 6,
+    "column": 20,
+    "endLine": 8,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 6,
+    "column": 28
+  },
+  {
+    "ruleId": "space-before-blocks",
+    "message": "Missing space before opening brace.",
+    "line": 6,
+    "column": 34,
+    "endLine": 8,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "lodash-template/prefer-escape-template-interpolations",
+    "message": "The escape micro-template interpolation is preferable.",
+    "line": 7,
+    "column": 5,
+    "endLine": 7,
+    "endColumn": 47
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 7,
+    "column": 29,
+    "endLine": 7,
+    "endColumn": 30
+  },
+  {
+    "ruleId": "object-shorthand",
+    "message": "Expected property shorthand.",
+    "line": 7,
+    "column": 31,
+    "endLine": 7,
+    "endColumn": 41
+  },
+  {
+    "ruleId": "quote-props",
+    "message": "Unquoted property 'user' found.",
+    "line": 7,
+    "column": 31,
+    "endLine": 7,
+    "endColumn": 41
+  },
+  {
+    "ruleId": "lodash-template/no-semi-in-template-interpolation",
+    "message": "Unnecessary semicolon.",
+    "line": 7,
+    "column": 43,
+    "endLine": 7,
+    "endColumn": 44
+  },
+  {
+    "ruleId": "lodash-template/prefer-escape-template-interpolations",
+    "message": "The escape micro-template interpolation is preferable.",
+    "line": 11,
+    "column": 1,
+    "endLine": 11,
+    "endColumn": 27
+  },
+  {
+    "ruleId": "lodash-template/no-semi-in-template-interpolation",
+    "message": "Unnecessary semicolon.",
+    "line": 11,
+    "column": 22,
+    "endLine": 11,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "lodash-template/prefer-escape-template-interpolations",
+    "message": "The escape micro-template interpolation is preferable.",
+    "line": 18,
+    "column": 1,
+    "endLine": 18,
+    "endColumn": 27
+  },
+  {
+    "ruleId": "lodash-template/no-semi-in-template-interpolation",
+    "message": "Unnecessary semicolon.",
+    "line": 18,
+    "column": 22,
+    "endLine": 18,
+    "endColumn": 23
+  }
+]
