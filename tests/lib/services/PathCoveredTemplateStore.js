@@ -4,26 +4,26 @@ const assert = require("assert")
 const path = require("path")
 const fs = require("fs")
 const parser = require("../../../lib/parser/micro-template-eslint-parser")
-const BranchedTemplateStore = require("../../../lib/services/BranchedTemplateStore")
+const PathCoveredTemplateStore = require("../../../lib/services/PathCoveredTemplateStore")
 const visitorKeys = require("eslint-visitor-keys").KEYS
 const testUtils = require("../../test-utils")
 
 const FIXTURE_DIR = path.join(
     __dirname,
-    "../../../tests_fixtures/branched-template"
+    "../../../tests_fixtures/path-covered-template"
 )
 
 /**
- * getBranchedTemplateStore
+ * getPathCoveredTemplateStore
  * @param {string} fileName file name
  */
-function getBranchedTemplateStore(fileName) {
+function getPathCoveredTemplateStore(fileName) {
     const filePath = path.join(FIXTURE_DIR, fileName)
     const code = fs.readFileSync(filePath, "utf8")
     const result = parser.parseTemplate(code, { filePath })
     const microTemplate = result.services.getMicroTemplateService()
 
-    const templates = new BranchedTemplateStore(
+    const templates = new PathCoveredTemplateStore(
         result.ast,
         result.visitorKeys || visitorKeys,
         microTemplate.template
@@ -35,7 +35,7 @@ function getBranchedTemplateStore(fileName) {
     }
 }
 
-describe("BranchedTemplateStore test", () => {
+describe("PathCoveredTemplateStore test", () => {
     for (const name of fs
         .readdirSync(FIXTURE_DIR)
         .filter(s => s.endsWith(".html"))) {
@@ -45,13 +45,11 @@ describe("BranchedTemplateStore test", () => {
                     templates,
                     code,
                     getLocFromIndex,
-                } = getBranchedTemplateStore(name)
+                } = getPathCoveredTemplateStore(name)
 
                 const texts = []
                 for (let index = 0; index < code.length; index++) {
-                    const { template } = templates.getCoversBranchTemplate(
-                        index
-                    )
+                    const { template } = templates.getPathCoveredTemplate(index)
                     if (!texts.includes(template)) {
                         const loc = getLocFromIndex(index)
                         texts.push(
