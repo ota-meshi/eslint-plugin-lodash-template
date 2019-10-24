@@ -10,6 +10,10 @@
                 />
                 JAVASCRIPT TEMPLATES MODE (Beta)
             </label>
+            <label>
+                <input v-model="ejs" type="checkbox" />
+                EJS MODE
+            </label>
         </div>
         <div class="main-content">
             <rules-settings
@@ -22,6 +26,7 @@
                     v-model="code"
                     :rules="rules"
                     :script="script"
+                    :ejs="ejs"
                     class="eslint-playground"
                     @change="onChange"
                 />
@@ -75,14 +80,16 @@ const DEFAULT_HTML_CODE = `<% /* global accounts, users */ %>
 <% } %>`
 
 const DEFAULT_SCRIPT_CODE = `/* eslint no-multi-spaces: error, space-infix-ops: error, computed-property-spacing: error */
-<% /* global param, additionals */ %>
+<% /* global options, additionals */ %>
 <% /* eslint lodash-template/no-multi-spaces-in-scriptlet: error */ %>
 
-const obj    = <%= JSON.stringify(param     ) %>
+const obj    = <%= JSON.stringify(options     ) %>
 
 <% for (const key of Object.keys(additionals)) { %>
     obj[ <%= key %>] =<%= additionals[key] %>
 <%}%>
+
+export default obj
 `
 
 const ruleURLs = {}
@@ -109,6 +116,7 @@ export default {
                 (state.script ? DEFAULT_SCRIPT_CODE : DEFAULT_HTML_CODE),
             rules: state.rules || Object.assign({}, DEFAULT_RULES_CONFIG),
             script: state.script,
+            ejs: state.ejs,
             messages: [],
         }
     },
@@ -118,15 +126,15 @@ export default {
                 ? DEFAULT_SCRIPT_CODE
                 : DEFAULT_HTML_CODE
             const defaultRules = DEFAULT_RULES_CONFIG
-            const code = defaultCode === this.code ? null : this.code
-            const rules =
-                JSON.stringify(defaultRules) === JSON.stringify(this.rules)
-                    ? null
-                    : this.rules
+            const code = defaultCode === this.code ? undefined : this.code
+            const rules = equalsRules(defaultRules, this.rules)
+                ? undefined
+                : this.rules
             const serializedString = serializeState({
                 code,
                 rules,
                 script: this.script,
+                ejs: this.ejs,
             })
             return serializedString
         },
@@ -175,6 +183,21 @@ export default {
             this.code = this.script ? DEFAULT_SCRIPT_CODE : DEFAULT_HTML_CODE
         },
     },
+}
+
+function equalsRules(a, b) {
+    const akeys = Object.keys(a).filter(k => a[k] !== "off")
+    const bkeys = Object.keys(b).filter(k => b[k] !== "off")
+    if (akeys.length !== bkeys.length) {
+        return false
+    }
+
+    for (const k of akeys) {
+        if (a[k] !== b[k]) {
+            return false
+        }
+    }
+    return true
 }
 </script>
 <style scoped>

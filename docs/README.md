@@ -208,16 +208,16 @@ For example if you have a file like below.
 <% /* eslint lodash-template/no-multi-spaces-in-scriptlet: error */ %>
 
 // if this plugin is not used, a parsing error will occur.
-const obj    = <%= JSON.stringify(param     ) %>
+const obj    = <%= JSON.stringify(options     ) %>
 //       ^^^^                          ^^^^^ 
 //         |                            |
 //         |          If you don't use `"plugin:lodash-template/recommended-with-script"`,
-//         |          only the space after `param` is reported.
+//         |          only the space after `options` is reported.
 //         |
 //         + When using `"plugin:lodash-template/recommended-with-script"`, the space after `obj` is also reported.
 ```
 
-[***Playground on the Web***](https://ota-meshi.github.io/eslint-plugin-lodash-template/playground/#eJyrVkrOT0lVssorzcnRUSoqzUkthnGKk4syC0qUrEqKSlNrAR6bDlw=)
+[***Playground on the Web***](https://ota-meshi.github.io/eslint-plugin-lodash-template/playground/#eJyrVipOLsosKFGyKikqTa0FAC0nBcw=)
 
 #### Configuring
 

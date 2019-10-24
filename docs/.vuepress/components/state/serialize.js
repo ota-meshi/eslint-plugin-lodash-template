@@ -22,8 +22,9 @@ function getEnabledRules(allRules) {
 export function serializeState(state) {
     const saveData = {
         code: state.code,
-        rules: state.rules ? getEnabledRules(state.rules) : null,
-        script: Boolean(state.script),
+        rules: state.rules ? getEnabledRules(state.rules) : undefined,
+        script: state.script ? true : undefined,
+        ejs: state.ejs ? true : undefined,
     }
     const jsonString = JSON.stringify(saveData)
     const compressedString = pako.deflate(jsonString, { to: "string" })

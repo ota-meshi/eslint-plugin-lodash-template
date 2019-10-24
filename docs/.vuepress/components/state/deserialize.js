@@ -10,6 +10,7 @@ export function deserializeState(serializedString) {
         code: undefined,
         rules: undefined,
         script: false,
+        ejs: false,
     }
 
     if (serializedString === "") {
@@ -37,6 +38,9 @@ export function deserializeState(serializedString) {
             }
             if (typeof json.script === "boolean") {
                 state.script = json.script
+            }
+            if (typeof json.ejs === "boolean") {
+                state.ejs = json.ejs
             }
         }
     } catch (error) {
