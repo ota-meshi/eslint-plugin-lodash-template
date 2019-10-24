@@ -48,6 +48,8 @@
     "lodash",
     "underscore-templates",
     "underscore",
+    "ejs",
+    "html",
     "micro-templates",
     "micro",
     "microtemplate",
