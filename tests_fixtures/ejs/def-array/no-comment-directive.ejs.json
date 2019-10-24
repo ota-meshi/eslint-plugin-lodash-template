@@ -1,0 +1,178 @@
+[
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 85. Maximum allowed is 80.",
+    "line": 2,
+    "column": 1
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'_' is not defined.",
+    "line": 7,
+    "column": 8,
+    "endLine": 7,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'users' is not defined.",
+    "line": 7,
+    "column": 18,
+    "endLine": 7,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "comma-spacing",
+    "message": "A space is required after ','.",
+    "line": 7,
+    "column": 23,
+    "endLine": 7,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 7,
+    "column": 24,
+    "endLine": 7,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "arrow-spacing",
+    "message": "Missing space before =>.",
+    "line": 7,
+    "column": 29,
+    "endLine": 7,
+    "endColumn": 30
+  },
+  {
+    "ruleId": "arrow-spacing",
+    "message": "Missing space after =>.",
+    "line": 7,
+    "column": 32,
+    "endLine": 7,
+    "endColumn": 33
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 8,
+    "column": 21,
+    "endLine": 8,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 11,
+    "column": 11,
+    "endLine": 11,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "no-tabs",
+    "message": "Unexpected tab character.",
+    "line": 16,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 97. Maximum allowed is 80.",
+    "line": 18,
+    "column": 1
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 18,
+    "column": 20,
+    "endLine": 18,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'name' is not defined.",
+    "line": 18,
+    "column": 23,
+    "endLine": 18,
+    "endColumn": 27
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 18,
+    "column": 27,
+    "endLine": 18,
+    "endColumn": 29
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 23,
+    "column": 15,
+    "endLine": 23,
+    "endColumn": 18
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 23,
+    "column": 25,
+    "endLine": 23,
+    "endColumn": 27
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 23,
+    "column": 45,
+    "endLine": 23,
+    "endColumn": 48
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 23,
+    "column": 58,
+    "endLine": 23,
+    "endColumn": 60
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 232. Maximum allowed is 80.",
+    "line": 28,
+    "column": 1
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'_' is not defined.",
+    "line": 28,
+    "column": 79,
+    "endLine": 28,
+    "endColumn": 80
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'users' is not defined.",
+    "line": 28,
+    "column": 89,
+    "endLine": 28,
+    "endColumn": 94
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 28,
+    "column": 95,
+    "endLine": 28,
+    "endColumn": 96
+  },
+  {
+    "ruleId": "brace-style",
+    "message": "Statement inside of curly braces should be on next line.",
+    "line": 28,
+    "column": 106,
+    "endLine": 28,
+    "endColumn": 107
+  }
+]

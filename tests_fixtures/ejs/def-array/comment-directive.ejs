@@ -1,0 +1,30 @@
+<% /* global hobbies, occupation */ %>
+<% /* eslint lodash-template/no-html-comments:0, lodash-template/html-indent: 0 */ %>
+<div class="content"></div>
+
+<ul>
+    <%# eslint-disable-next-line -%>
+    <% _.forEach(users,(user)=>{ %>
+        <li><%= user%></li><%# eslint-disable-line _%>
+
+    <%# eslint-disable %>
+    <% });%>
+    <%# eslint-enable %>
+</ul>
+
+<div>
+	<tab-test></tab-test>
+    <%# eslint-disable max-len %>
+    <h1>My name is <%=name%></h1><%# eslint-disable-line lodash-template/template-tag-spacing -%>
+    <%# eslint-enable max-len %>
+
+
+    <%# eslint-disable-next-line lodash-template/template-tag-spacing %>
+    <p>I like <%=hobbies%> but hate being a <%=occupation%></p>
+</div>
+
+<ul>
+    <%# eslint-disable-next-line no-undef,function-call-argument-newline %>
+    <%# eslint-disable lodash-template/template-tag-spacing,brace-style %> <% _.forEach(users, (user) => { %><%# eslint-enable lodash-template/template-tag-spacing,brace-style %><li><%= user %></li><%# eslint-disable-line max-len %>
+    <% }) %><%# eslint-disable-line %>
+</ul>
