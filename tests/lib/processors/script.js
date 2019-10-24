@@ -70,6 +70,14 @@ describe("script test", () => {
                     path.join(FIXTURE_DIR, relPath),
                     "utf8"
                 )
+                if (testUtils.existsPath(`${filepath}.target.json`)) {
+                    const tarrgetVar = JSON.parse(
+                        fs.readFileSync(`${filepath}.target.json`, "utf8")
+                    )
+                    if (!semver.satisfies(eslintVersion, tarrgetVar)) {
+                        return
+                    }
+                }
 
                 // write for sample
                 fs.writeFileSync(`${filepath}.js`, contents, "utf8")

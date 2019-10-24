@@ -4,7 +4,8 @@
   "description": "ESLint plugin for John Resig-style micro templating(Lodash/Underscore.js template)",
   "main": "lib/index.js",
   "scripts": {
-    "lint": "node -e \"if(process.env.ESLINT=='low'||process.env.ESLINT=='high')process.exit(1)\" && eslint tests lib ./docs/.vuepress --ext .js,.vue --ignore-pattern \"samples\" --ignore-pattern \"tests_fixtures\" || node -e \"if(process.env.ESLINT!='low'&&process.env.ESLINT!='high')process.exit(1)\"",
+    "lint": "node -e \"if(process.env.ESLINT=='low'||process.env.ESLINT=='high')process.exit(1)\" && npm run eslint || node -e \"if(process.env.ESLINT!='low'&&process.env.ESLINT!='high')process.exit(1)\"",
+    "eslint": "eslint \"tests\" \"lib\" \"docs/.vuepress\" --ext .js,.vue --ignore-pattern \"samples\" --ignore-pattern \"tests_fixtures\" --ignore-pattern \"docs/.vuepress/dist\"",
     "pretest": "npm run lint",
     "test:base": "mocha \"tests/**/*.js\" --reporter dot --timeout 60000",
     "test:list": "mocha \"tests/**/*.js\" --reporter list | tee .test-result-list.txt",
@@ -14,7 +15,7 @@
     "watch": "npm run test:base -- --watch",
     "update": "node ./tools/update.js && npm run lint:fix && npm run test",
     "updateonly": "node ./tools/update.js && npm run lint:fix",
-    "lint:fix": "eslint tests lib ./docs/.vuepress --ext .js,.vue --fix --ignore-pattern \"samples\" --ignore-pattern \"tests_fixtures\"",
+    "lint:fix": "eslint \"tests\" \"lib\" \"docs/.vuepress\" --ext .js,.vue --ignore-pattern \"samples\" --ignore-pattern \"tests_fixtures\" --ignore-pattern \"docs/.vuepress/dist\" --fix",
     "test:sp": "mocha \"test_sp/**/*.js\" --reporter dot",
     "new": "node ./tools/new-rule.js",
     "copy:images": "cpx \"logo.*\" \"docs/\\.vuepress/public\" -u",
@@ -100,6 +101,6 @@
     ]
   },
   "engines": {
-    "node": "^8.10.0 || ^10.13.0 || >=11.10.1"
+    "node": "^8.10.0 || ^10.13.0 || ^12.13.0 || ^13.0.0"
   }
 }

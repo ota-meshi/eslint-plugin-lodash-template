@@ -13,6 +13,7 @@ matrix:
     - node_js: "8"
       env: ESLINT=low
     - node_js: "10"
+    - node_js: "12"
 
 
 before_install:
