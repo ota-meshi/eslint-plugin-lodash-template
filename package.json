@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-lodash-template",
   "version": "0.13.0",
-  "description": "ESLint plugin for John Resig-style micro templating(Lodash/Underscore.js template)",
+  "description": "ESLint plugin for John Resig-style micro template, Lo-Dash template, Underscore template and EJS.",
   "main": "lib/index.js",
   "scripts": {
     "lint": "node -e \"if(process.env.ESLINT=='low'||process.env.ESLINT=='high')process.exit(1)\" && npm run eslint || node -e \"if(process.env.ESLINT!='low'&&process.env.ESLINT!='high')process.exit(1)\"",
