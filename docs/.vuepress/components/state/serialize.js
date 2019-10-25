@@ -28,7 +28,9 @@ export function serializeState(state) {
     }
     const jsonString = JSON.stringify(saveData)
     const compressedString = pako.deflate(jsonString, { to: "string" })
-    const base64 = window.btoa(compressedString)
+    const base64 =
+        (typeof window !== "undefined" && window.btoa(compressedString)) ||
+        compressedString
 
     //eslint-disable-next-line no-console
     console.log(
