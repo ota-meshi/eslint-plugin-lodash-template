@@ -1,0 +1,34 @@
+[
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 1,
+    "column": 7,
+    "endLine": 1,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 1,
+    "column": 13,
+    "endLine": 1,
+    "endColumn": 15
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 1,
+    "column": 20,
+    "endLine": 1,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 1,
+    "column": 26,
+    "endLine": 1,
+    "endColumn": 28
+  }
+]

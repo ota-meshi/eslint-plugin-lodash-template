@@ -8,7 +8,7 @@ sidebarDepth: 0
 
 ## Base Rules (Enabling Correct ESLint Parsing)
 
-Enforce all the rules in this category, as well as all higher priority rules, with:
+Enable this plugin using with:
 
 ```json
 {
@@ -18,11 +18,11 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 
 | Rule ID | Description |    |
 |:--------|:------------|:---|
-| [lodash-template/plugin-option](./plugin-option.md) | support option |  |
+| [lodash-template/no-script-parsing-error](./no-script-parsing-error.md) | disallow parsing errors in template |  |
 
 ## Best Practices (Improve Development Experience)
 
-Enforce all the rules in this category, as well as all higher priority rules, with:
+Enforce all the rules in this category with:
 
 ```json
 {
@@ -33,14 +33,12 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 | Rule ID | Description |    |
 |:--------|:------------|:---|
 | [lodash-template/no-empty-template-tag](./no-empty-template-tag.md) | disallow empty micro-template tag. (ex. :ng: `<% %>`) |  |
-| [lodash-template/no-html-comments](./no-html-comments.md) | disallow HTML comments. (ex. :ng: `<!-- comment -->`) |  |
 | [lodash-template/no-invalid-template-interpolation](./no-invalid-template-interpolation.md) | disallow other than expression in micro-template interpolation. (ex. :ng: `<%= if (test) { %>`) |  |
 | [lodash-template/no-semi-in-template-interpolation](./no-semi-in-template-interpolation.md) | disallow the semicolon at the end of expression in micro template interpolation.(ex. :ok: `<%= text %>` :ng: `<%= text; %>`) | :wrench: |
-| [lodash-template/no-warning-html-comments](./no-warning-html-comments.md) | disallow specified warning terms in HTML comments. (ex. :ng: `<!-- TODO:task -->`) |  |
 
 ## Recommended (Improve Readability)
 
-Enforce all the rules in this category, as well as all higher priority rules, with:
+Enforce all the rules in this category and all the rules in `Best Practices` categories with:
 
 ```json
 {
@@ -51,13 +49,13 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 | Rule ID | Description |    |
 |:--------|:------------|:---|
 | [lodash-template/no-irregular-whitespace](./no-irregular-whitespace.md) | disallow irregular whitespace outside the template tags. | :wrench: |
-| [lodash-template/no-multi-spaces-in-script](./no-multi-spaces-in-script.md) | disallow multiple spaces in script. (ex. :ng: `<% if···(test)···{ %>`) | :wrench: |
-| [lodash-template/script-indent](./script-indent.md) | enforce consistent indentation to script in micro-template tag. | :wrench: |
+| [lodash-template/no-multi-spaces-in-scriptlet](./no-multi-spaces-in-scriptlet.md) | disallow multiple spaces in scriptlet. (ex. :ng: `<% if···(test)···{ %>`) | :wrench: |
+| [lodash-template/scriptlet-indent](./scriptlet-indent.md) | enforce consistent indentation to scriptlet in micro-template tag. | :wrench: |
 | [lodash-template/template-tag-spacing](./template-tag-spacing.md) | enforce unified spacing in micro-template tag. (ex. :ok: `<%= prop %>`, :ng: `<%=prop%>`) | :wrench: |
 
 ## Recommended with HTML template (Improve Readability with HTML template)
 
-Enforce all the rules in this category, as well as all higher priority rules, with:
+Enforce all the rules in this category and all the rules in `Best Practices`/`Recommended` categories with:
 
 ```json
 {
@@ -78,8 +76,10 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 | [lodash-template/html-indent](./html-indent.md) | enforce consistent HTML indentation. | :wrench: |
 | [lodash-template/max-attributes-per-line](./max-attributes-per-line.md) | enforce the maximum number of HTML attributes per line | :wrench: |
 | [lodash-template/no-duplicate-attributes](./no-duplicate-attributes.md) | disallow duplication of HTML attributes. (ex. :ng: `<div foo foo>`) |  |
+| [lodash-template/no-html-comments](./no-html-comments.md) | disallow HTML comments. (ex. :ng: `<!-- comment -->`) |  |
 | [lodash-template/no-multi-spaces-in-html-tag](./no-multi-spaces-in-html-tag.md) | disallow multiple spaces in HTML tags. (ex. :ng: `<input···type="text">`) | :wrench: |
 | [lodash-template/no-space-attribute-equal-sign](./no-space-attribute-equal-sign.md) | disallow spacing around equal signs in attribute. (ex. :ok: `<div class="item">` :ng: `<div class = "item">`) | :wrench: |
+| [lodash-template/no-warning-html-comments](./no-warning-html-comments.md) | disallow specified warning terms in HTML comments. (ex. :ng: `<!-- TODO:task -->`) |  |
 
 ## Uncategorized
 
@@ -100,3 +100,14 @@ For example:
 |:--------|:------------|:---|
 | [lodash-template/no-template-tag-in-start-tag](./no-template-tag-in-start-tag.md) | disallow template tag in start tag outside attribute values. (ex. :ng: `<input <%= 'disabled' %> >`) |  |
 | [lodash-template/prefer-escape-template-interpolations](./prefer-escape-template-interpolations.md) | prefer escape micro-template interpolations. (ex. :ok: `<%- ... %>`, :ng: `<%= ... %>`) |  |
+
+## Deprecated
+
+- :warning: We're going to remove deprecated rules in the next major release. Please migrate to successor/new rules.
+- :innocent: We don't fix bugs which are in deprecated rules since we don't have enough resources.
+
+| Rule ID | Replaced by |
+|:--------|:------------|
+| [lodash-template/no-multi-spaces-in-script](./no-multi-spaces-in-script.md) | [lodash-template/no-multi-spaces-in-scriptlet](./no-multi-spaces-in-scriptlet.md) |
+| [lodash-template/plugin-option](./plugin-option.md) | (no replacement) |
+| [lodash-template/script-indent](./script-indent.md) | [lodash-template/scriptlet-indent](./scriptlet-indent.md) |

@@ -1,0 +1,22 @@
+[
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 85. Maximum allowed is 80.",
+    "line": 2,
+    "column": 1
+  },
+  {
+    "ruleId": "no-tabs",
+    "message": "Unexpected tab character.",
+    "line": 16,
+    "column": 1
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'name' is not defined.",
+    "line": 18,
+    "column": 23,
+    "endLine": 18,
+    "endColumn": 27
+  }
+]

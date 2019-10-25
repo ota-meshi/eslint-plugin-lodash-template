@@ -1,5 +1,6 @@
 "use strict"
 
+const assert = require("assert")
 const Linter = require("eslint").Linter
 const rules = require("../lib/utils/rules").rules
 
@@ -18,8 +19,13 @@ describe("Don't crash even if without micro-template-eslint-parser.", () => {
                     [ruleId]: "error",
                 },
             }
+            linter.defineParser("babel-eslint", require("babel-eslint"))
             linter.defineRule(ruleId, rule)
-            linter.verifyAndFix(code, config, "test.html")
+            const res = linter.verifyAndFix(code, config, {
+                filename: "test.html",
+            })
+
+            assert.strictEqual(res.messages.length, 0)
         })
     }
 })

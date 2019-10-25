@@ -13,12 +13,10 @@ matrix:
     - node_js: "8"
       env: ESLINT=low
     - node_js: "10"
+    - node_js: "12"
 
 
 before_install:
-  - if [ "$NODE_V" = "4" ]; then npm i -D eslint@4.19.1 espree@3.5.4; fi
-  - if [ "$NODE_V" = "4" ]; then npm uninstall -D @mysticatea/eslint-plugin eslint-plugin-es; fi
-  - if [ "$ESLINT" = "low" ]; then npm i -D eslint@5.0.0; fi
   - if [ "$ESLINT" = "low" ]; then npm i -S parse5@5.0.0; fi
   - if [ "$ESLINT" = "high" ]; then npm i -D eslint@6.0.0; fi
   - if [ "$ESLINT" = "high" ]; then npm i -S parse5@5.1.0; fi

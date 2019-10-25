@@ -1,0 +1,48 @@
+[
+  {
+    "ruleId": "no-unsafe-negation",
+    "message": "Unexpected negating the left operand of 'in' operator.",
+    "line": 3,
+    "column": 9,
+    "endLine": 3,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 117. Maximum allowed is 80.",
+    "line": 9,
+    "column": 1
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 9,
+    "column": 76,
+    "endLine": 9,
+    "endColumn": 87
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 9,
+    "column": 76,
+    "endLine": 9,
+    "endColumn": 104
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 9,
+    "column": 90,
+    "endLine": 9,
+    "endColumn": 95
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 27,
+    "column": 9,
+    "endLine": 27,
+    "endColumn": 22
+  }
+]

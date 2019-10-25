@@ -1,35 +1,22 @@
 <template>
-    <eslint-editor
+    <eslint-plugin-lodash-template-editor
+        ref="editor"
         :code="value"
-        :linter="linter"
-        :config="config"
-        language="html"
-        filename="a.html"
+        :rules="rules"
+        :script="script"
+        :ejs="ejs"
         fix
-        :postprocess="postprocess"
-        :preprocess="preprocess"
         @input="$emit('input', $event)"
         @change="$emit('change', $event)"
     />
 </template>
 
 <script>
-import EslintEditor from "../../../../node_modules/vue-eslint-editor"
-import plugin from "../../../../lib/index.js"
-import parser from "../../../../lib/parser/micro-template-eslint-parser.js"
-import processor from "../../../../lib/processor/micro-template-processor.js"
-
-// eslint/lib/cli-engine.js #183
-function preprocess(rawText) {
-    return processor.preprocess(rawText, "a.html")
-}
-
-function postprocess(problemLists) {
-    return processor.postprocess(problemLists, "a.html")
-}
+import EslintPluginLodashTemplateEditor from "./EslintPluginLodashTemplateEditor"
 
 export default {
-    components: { EslintEditor },
+    name: "PgEditor",
+    components: { EslintPluginLodashTemplateEditor },
     props: {
         value: {
             type: String,
@@ -43,44 +30,12 @@ export default {
             type: Array,
             default: () => [],
         },
-    },
-    data() {
-        return {
-            linter: null,
-            preprocess,
-            postprocess,
-        }
-    },
-    computed: {
-        config() {
-            return {
-                parser: "micro-template-eslint-parser",
-                parserOptions: {
-                    ecmaVersion: 2018,
-                },
-                rules: this.rules,
-            }
+        script: {
+            type: Boolean,
         },
-    },
-    async mounted() {
-        // Load linter asynchronously.
-        const { default: Linter } = await import("eslint4b")
-
-        const linter = new Linter()
-
-        for (const k of Object.keys(plugin.rules)) {
-            const rule = plugin.rules[k]
-            linter.defineRule(rule.meta.docs.ruleId, rule)
-        }
-        linter.defineParser("micro-template-eslint-parser", parser)
-
-        const verifyAndFix = linter.verifyAndFix.bind(linter)
-        linter.verifyAndFix = function(...args) {
-            args[2].preprocess = preprocess
-            args[2].postprocess = postprocess
-            return verifyAndFix(...args)
-        }
-        this.linter = linter
+        ejs: {
+            type: Boolean,
+        },
     },
 }
 </script>

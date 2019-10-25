@@ -1,0 +1,26 @@
+[
+  {
+    "ruleId": "import/no-duplicates",
+    "message": "'bootstrap-vue' imported multiple times.",
+    "line": 4,
+    "column": 26,
+    "endLine": 4,
+    "endColumn": 41
+  },
+  {
+    "ruleId": "import/no-duplicates",
+    "message": "'bootstrap-vue' imported multiple times.",
+    "line": 18,
+    "column": 8,
+    "endLine": 18,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'BVConfigPlugin' is not defined.",
+    "line": 21,
+    "column": 9,
+    "endLine": 21,
+    "endColumn": 23
+  }
+]

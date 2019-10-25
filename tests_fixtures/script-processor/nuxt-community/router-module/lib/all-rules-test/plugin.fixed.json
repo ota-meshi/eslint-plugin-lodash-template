@@ -1,0 +1,30 @@
+[
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 81. Maximum allowed is 80.",
+    "line": 1,
+    "column": 1
+  },
+  {
+    "ruleId": "sort-imports",
+    "message": "Expected 'multiple' syntax before 'single' syntax.",
+    "line": 4,
+    "column": 1,
+    "endLine": 4,
+    "endColumn": 84
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 83. Maximum allowed is 80.",
+    "line": 4,
+    "column": 1
+  },
+  {
+    "ruleId": "func-style",
+    "message": "Expected a function expression.",
+    "line": 10,
+    "column": 8,
+    "endLine": 18,
+    "endColumn": 2
+  }
+]

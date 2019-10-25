@@ -1,0 +1,90 @@
+[
+  {
+    "ruleId": "no-unused-vars",
+    "message": "'interopDefault' is defined but never used.",
+    "line": 5,
+    "column": 3,
+    "endLine": 5,
+    "endColumn": 17
+  },
+  {
+    "ruleId": "lodash-template/scriptlet-indent",
+    "message": "Expected relative indentation of 4 spaces but found 0 spaces.",
+    "line": 10,
+    "column": 3,
+    "endLine": 10,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "lodash-template/scriptlet-indent",
+    "message": "Expected relative indentation of 4 spaces but found 0 spaces.",
+    "line": 12,
+    "column": 3,
+    "endLine": 12,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "brace-style",
+    "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
+    "line": 12,
+    "column": 4,
+    "endLine": 12,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "block-spacing",
+    "message": "Requires a space before '}'.",
+    "line": 12,
+    "column": 4
+  },
+  {
+    "ruleId": "no-multiple-empty-lines",
+    "message": "More than 1 blank line not allowed.",
+    "line": 15,
+    "column": 1,
+    "endLine": 17,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "unicorn/prevent-abbreviations",
+    "message": "The property `props` should be named `properties`. A more descriptive name will do too.",
+    "line": 24,
+    "column": 7,
+    "endLine": 24,
+    "endColumn": 12
+  },
+  {
+    "ruleId": "unicorn/prevent-abbreviations",
+    "message": "The property `domProps` should be named `domProperties`. A more descriptive name will do too.",
+    "line": 28,
+    "column": 7,
+    "endLine": 28,
+    "endColumn": 15
+  },
+  {
+    "ruleId": "comma-dangle",
+    "message": "Unexpected trailing comma.",
+    "line": 28,
+    "column": 19
+  },
+  {
+    "ruleId": "unicorn/prevent-abbreviations",
+    "message": "The property `props` should be named `properties`. A more descriptive name will do too.",
+    "line": 43,
+    "column": 3,
+    "endLine": 43,
+    "endColumn": 8
+  },
+  {
+    "ruleId": "comma-dangle",
+    "message": "Unexpected trailing comma.",
+    "line": 46,
+    "column": 21
+  },
+  {
+    "ruleId": "semi",
+    "message": "Extra semicolon.",
+    "line": 53,
+    "column": 3
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "ruleId": "no-unused-vars",
+    "message": "'LOCALE_DOMAIN_KEY' is assigned a value but never used.",
+    "line": 2,
+    "column": 7,
+    "endLine": 2,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 88. Maximum allowed is 80.",
+    "line": 8,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 88. Maximum allowed is 80.",
+    "line": 27,
+    "column": 1
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'l' is too short (< 2).",
+    "line": 27,
+    "column": 52,
+    "endLine": 27,
+    "endColumn": 53
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 124. Maximum allowed is 80.",
+    "line": 36,
+    "column": 1
+  },
+  {
+    "ruleId": "no-inline-comments",
+    "message": "Unexpected comment inline with code.",
+    "line": 36,
+    "column": 49,
+    "endLine": 36,
+    "endColumn": 89
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 37,
+    "column": 38,
+    "endLine": 37,
+    "endColumn": 52
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 37,
+    "column": 38,
+    "endLine": 37,
+    "endColumn": 78
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 37,
+    "column": 55,
+    "endLine": 37,
+    "endColumn": 69
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 120. Maximum allowed is 80.",
+    "line": 38,
+    "column": 1
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 38,
+    "column": 36,
+    "endLine": 38,
+    "endColumn": 66
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 38,
+    "column": 36,
+    "endLine": 38,
+    "endColumn": 120
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 38,
+    "column": 69,
+    "endLine": 38,
+    "endColumn": 109
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 47,
+    "column": 21,
+    "endLine": 47,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 107. Maximum allowed is 80.",
+    "line": 54,
+    "column": 1
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 54,
+    "column": 17,
+    "endLine": 54,
+    "endColumn": 29
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 86. Maximum allowed is 80.",
+    "line": 72,
+    "column": 1
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 72,
+    "column": 9,
+    "endLine": 72,
+    "endColumn": 21
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 127. Maximum allowed is 80.",
+    "line": 83,
+    "column": 1
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 83,
+    "column": 13,
+    "endLine": 83,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 126. Maximum allowed is 80.",
+    "line": 87,
+    "column": 1
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 87,
+    "column": 13,
+    "endLine": 87,
+    "endColumn": 25
+  }
+]

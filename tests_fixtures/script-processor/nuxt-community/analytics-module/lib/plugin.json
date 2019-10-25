@@ -1,0 +1,14 @@
+[
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "A space is required after '{'.",
+    "line": 11,
+    "column": 25
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "A space is required before '}'.",
+    "line": 11,
+    "column": 67
+  }
+]

@@ -1,27 +1,30 @@
 {
   "name": "eslint-plugin-lodash-template",
-  "version": "0.13.0",
-  "description": "ESLint plugin for John Resig-style micro templating(Lodash/Underscore.js template)",
+  "version": "0.14.0",
+  "description": "ESLint plugin for John Resig-style micro template, Lo-Dash template, Underscore template and EJS.",
   "main": "lib/index.js",
   "scripts": {
-    "lint": "node -e \"if(process.env.ESLINT=='low'||process.env.ESLINT=='high')process.exit(1)\" && eslint . --ext .js,.vue || node -e \"if(process.env.ESLINT!='low'&&process.env.ESLINT!='high')process.exit(1)\"",
+    "lint": "node -e \"if(process.env.ESLINT=='low'||process.env.ESLINT=='high')process.exit(1)\" && npm run eslint || node -e \"if(process.env.ESLINT!='low'&&process.env.ESLINT!='high')process.exit(1)\"",
+    "eslint": "eslint \"tests\" \"lib\" \"docs/.vuepress\" --ext .js,.vue --ignore-pattern \"samples\" --ignore-pattern \"tests_fixtures\" --ignore-pattern \"docs/.vuepress/dist\"",
     "pretest": "npm run lint",
-    "test:base": "mocha \"tests/**/*.js\" --reporter dot",
+    "test:base": "mocha \"tests/**/*.js\" --reporter dot --timeout 60000",
+    "test:list": "mocha \"tests/**/*.js\" --reporter list | tee .test-result-list.txt",
     "test": "npm run test:nyc",
-    "test:nyc": "nyc --reporter=lcov npm run test:base -- --timeout 60000",
+    "test:nyc": "nyc --reporter=lcov npm run test:base",
     "test:d": "mocha --inspect --debug-brk \"tests/**/*.js\" --reporter dot",
     "watch": "npm run test:base -- --watch",
     "update": "node ./tools/update.js && npm run lint:fix && npm run test",
     "updateonly": "node ./tools/update.js && npm run lint:fix",
-    "lint:fix": "eslint . --ext .js,.vue --fix",
+    "lint:fix": "eslint \"tests\" \"lib\" \"docs/.vuepress\" --ext .js,.vue --ignore-pattern \"samples\" --ignore-pattern \"tests_fixtures\" --ignore-pattern \"docs/.vuepress/dist\" --fix",
     "test:sp": "mocha \"test_sp/**/*.js\" --reporter dot",
     "new": "node ./tools/new-rule.js",
     "copy:images": "cpx \"logo.*\" \"docs/\\.vuepress/public\" -u",
-    "docs:watch": "npm run copy:images && vuepress dev docs",
+    "docs:watch": "npm run copy:images && vuepress dev --debug docs",
     "docs:build": "npm run copy:images && vuepress build docs",
     "docs:deploysetup": "npm run docs:build && npm run docs:clean && npm run docs:copy",
     "docs:clean": "rimraf assets",
-    "docs:copy": "cpx \"docs/\\.vuepress/dist/**\" . -u"
+    "docs:copy": "cpx \"docs/\\.vuepress/dist/**\" . -u",
+    "updatefixture": "cross-env UPDATE_FIXTURE=\"true\" npm run test:base"
   },
   "files": [
     "lib"
@@ -45,6 +48,8 @@
     "lodash",
     "underscore-templates",
     "underscore",
+    "ejs",
+    "html",
     "micro-templates",
     "micro",
     "microtemplate",
@@ -57,23 +62,32 @@
     "rules"
   ],
   "peerDependencies": {
-    "eslint": ">=5.0.0"
+    "eslint": ">=6.0.0"
   },
   "devDependencies": {
     "@mysticatea/eslint-plugin": "^12.0.0",
+    "@nuxtjs/eslint-config": "^1.1.2",
+    "@nuxtjs/eslint-config-typescript": "^0.1.3",
+    "@typescript-eslint/eslint-plugin": "^2.3.3",
     "babel-eslint": "^10.0.3",
     "cpx": "^1.5.0",
+    "cross-env": "^6.0.3",
     "eslint": "^6.5.1",
-    "eslint-config-prettier": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-es": "^2.0.0",
     "eslint-plugin-lodash-template": "file:.",
+    "eslint-plugin-markdown": "^1.0.0",
+    "eslint-visitor-keys": "^1.1.0",
     "eslint4b": "^6.5.1",
     "if-node-version": "^1.1.1",
+    "js-md5": "^0.7.3",
     "mocha": "^6.2.1",
     "nyc": "^14.1.1",
     "pako": "^1.0.10",
     "prettier": "^1.18.2",
     "semver": "^6.3.0",
+    "typescript": "^3.6.3",
     "vue-eslint-editor": "^0.1.4",
     "vuepress": "^1.1.0"
   },
@@ -83,10 +97,12 @@
   },
   "nyc": {
     "exclude": [
-      "**/*.spec.js"
+      "**/*.spec.js",
+      "tests_fixtures/**/*.js",
+      "tests/**/*.js"
     ]
   },
   "engines": {
-    "node": "^8.10.0 || ^10.13.0 || >=11.10.1"
+    "node": "^8.10.0 || ^10.13.0 || ^12.13.0 || ^13.0.0"
   }
 }

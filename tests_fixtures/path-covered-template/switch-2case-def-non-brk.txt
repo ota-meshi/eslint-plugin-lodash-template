@@ -1,0 +1,11 @@
+--------(index:0,line:1,col:0)--------
+<a>
+                   
+            
+  <span>1</span>
+             
+  <span>2</span>
+              
+  <span>def</span>
+       
+</a>

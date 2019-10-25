@@ -1,0 +1,108 @@
+[
+  {
+    "ruleId": "no-multi-assign",
+    "message": "Unexpected chained assignment.",
+    "line": 1,
+    "column": 21,
+    "endLine": 1,
+    "endColumn": 62
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'OneSignal' is not defined.",
+    "line": 3,
+    "column": 1,
+    "endLine": 3,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 3,
+    "column": 17,
+    "endLine": 3,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "array-element-newline",
+    "message": "There should be a linebreak after this element.",
+    "line": 3,
+    "column": 24,
+    "endLine": 3,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 3,
+    "column": 57,
+    "endLine": 3,
+    "endColumn": 58
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 3,
+    "column": 63,
+    "endLine": 3,
+    "endColumn": 64
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 2.",
+    "line": 3,
+    "column": 64,
+    "endLine": 3,
+    "endColumn": 65
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 5,
+    "column": 39
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 6,
+    "column": 1,
+    "endLine": 6,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 6,
+    "column": 10,
+    "endLine": 6,
+    "endColumn": 21
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 6,
+    "column": 22,
+    "endLine": 6,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'OneSignal' is not defined.",
+    "line": 6,
+    "column": 23,
+    "endLine": 6,
+    "endColumn": 32
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 6,
+    "column": 33
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 7,
+    "column": 1
+  }
+]

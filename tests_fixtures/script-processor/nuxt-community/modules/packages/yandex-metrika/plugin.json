@@ -1,0 +1,16 @@
+[
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 9,
+    "column": 18
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'Ya' is not defined.",
+    "line": 10,
+    "column": 48,
+    "endLine": 10,
+    "endColumn": 50
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 95. Maximum allowed is 80.",
+    "line": 21,
+    "column": 1
+  },
+  {
+    "ruleId": "no-unused-vars",
+    "message": "'from' is defined but never used.",
+    "line": 31,
+    "column": 44,
+    "endLine": 31,
+    "endColumn": 48
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 0.",
+    "line": 40,
+    "column": 16,
+    "endLine": 40,
+    "endColumn": 17
+  },
+  {
+    "ruleId": "no-prototype-builtins",
+    "message": "Do not access Object.prototype method 'hasOwnProperty' from target object.",
+    "line": 60,
+    "column": 22
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 69,
+    "column": 13,
+    "endLine": 69,
+    "endColumn": 26
+  },
+  {
+    "ruleId": "class-methods-use-this",
+    "message": "Expected 'this' to be used by class method 'hasDNT'.",
+    "line": 78,
+    "column": 12,
+    "endLine": 86,
+    "endColumn": 6
+  },
+  {
+    "ruleId": "no-mixed-operators",
+    "message": "Unexpected mix of '||' and '&&'.",
+    "line": 83,
+    "column": 38
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 118. Maximum allowed is 80.",
+    "line": 84,
+    "column": 1
+  },
+  {
+    "ruleId": "no-mixed-operators",
+    "message": "Unexpected mix of '||' and '&&'.",
+    "line": 84,
+    "column": 70
+  }
+]

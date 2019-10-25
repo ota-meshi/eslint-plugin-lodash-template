@@ -1,0 +1,10 @@
+[
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 42,
+    "column": 7,
+    "endLine": 42,
+    "endColumn": 20
+  }
+]

@@ -11,13 +11,12 @@ const categoryTitles = {
 }
 
 const categoryConfigDescriptions = {
-    base: "Enforce all the rules in this category with:",
-    "best-practices":
-        "Enforce all the rules in this category and all the rules in `Base` category with:",
+    base: "Enable this plugin using with:",
+    "best-practices": "Enforce all the rules in this category with:",
     recommended:
-        "Enforce all the rules in this category and all the rules in `Base`/`Best Practices` categories with:",
+        "Enforce all the rules in this category and all the rules in `Best Practices` categories with:",
     "recommended-with-html":
-        "Enforce all the rules in this category and all the rules in `Base`/`Best Practices`/`Recommended` categories with:",
+        "Enforce all the rules in this category and all the rules in `Best Practices`/`Recommended` categories with:",
 }
 
 const categoryIds = Object.keys(categoryTitles)
@@ -37,13 +36,12 @@ for (const categoryId of Object.keys(categoryRules)) {
     }
 }
 
-module.exports = categoryIds
-    .map(categoryId => ({
-        categoryId,
-        title: categoryTitles[categoryId],
-        configDescription: categoryConfigDescriptions[categoryId],
-        rules: (categoryRules[categoryId] || []).filter(
-            rule => !rule.meta.deprecated
-        ),
-    }))
-    .filter(category => category.rules.length >= 1)
+module.exports = categoryIds.map(categoryId => ({
+    categoryId,
+    title: categoryTitles[categoryId],
+    configDescription: categoryConfigDescriptions[categoryId],
+    rules: (categoryRules[categoryId] || []).filter(
+        rule => !rule.meta.deprecated
+    ),
+}))
+// .filter(category => category.rules.length >= 1)

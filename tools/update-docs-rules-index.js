@@ -31,7 +31,7 @@ function toDeprecatedRuleRow(rule) {
     const link = `[${rule.meta.docs.ruleId}](./${rule.meta.docs.ruleName}.md)`
     const replacedRules = rule.meta.docs.replacedBy || []
     const replacedBy = replacedRules
-        .map(name => `[vue/${name}](./${name}.md)`)
+        .map(name => `[lodash-template/${name}](./${name}.md)`)
         .join(", ")
 
     return `| ${link} | ${replacedBy || "(no replacement)"} |`
@@ -40,21 +40,26 @@ function toDeprecatedRuleRow(rule) {
 // -----------------------------------------------------------------------------
 let rulesTableContent = categories
     .map(
-        category => `
+        category =>
+            `
 ## ${category.title}
 
-Enforce all the rules in this category, as well as all higher priority rules, with:
+${category.configDescription}
 
 \`\`\`json
 {
   "extends": "plugin:lodash-template/${category.categoryId}"
 }
 \`\`\`
-
+${
+    category.rules.length
+        ? `
 | Rule ID | Description |    |
 |:--------|:------------|:---|
 ${category.rules.map(toRuleRow).join("\n")}
 `
+        : ""
+}`
     )
     .join("")
 

@@ -7,7 +7,7 @@ description: "disallow specified warning terms in HTML comments. (ex. :ng: `<!--
 # lodash-template/no-warning-html-comments
 > disallow specified warning terms in HTML comments. (ex. :ng: `<!-- TODO:task -->`)
 
-- :gear: This rule is included in all of `"plugin:lodash-template/best-practices"`, `"plugin:lodash-template/recommended"`, `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
+- :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
 
 ## Rule Details
 

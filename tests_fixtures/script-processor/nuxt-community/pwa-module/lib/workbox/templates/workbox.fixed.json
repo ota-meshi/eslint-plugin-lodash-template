@@ -1,0 +1,18 @@
+[
+  {
+    "ruleId": "no-unsafe-negation",
+    "message": "Unexpected negating the left operand of 'in' operator.",
+    "line": 2,
+    "column": 7,
+    "endLine": 2,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "no-negated-in-lhs",
+    "message": "The 'in' expression's left operand is negated.",
+    "line": 2,
+    "column": 7,
+    "endLine": 2,
+    "endColumn": 36
+  }
+]

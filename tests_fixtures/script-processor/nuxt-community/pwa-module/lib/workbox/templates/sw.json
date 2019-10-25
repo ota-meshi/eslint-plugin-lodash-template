@@ -1,0 +1,160 @@
+[
+  {
+    "ruleId": "no-undef",
+    "message": "'importScripts' is not defined.",
+    "line": 1,
+    "column": 1,
+    "endLine": 1,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 7,
+    "column": 25,
+    "endLine": 7,
+    "endColumn": 27
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'workbox' is not defined.",
+    "line": 9,
+    "column": 1,
+    "endLine": 9,
+    "endColumn": 8
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 12,
+    "column": 29,
+    "endLine": 12,
+    "endColumn": 31
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'workbox' is not defined.",
+    "line": 14,
+    "column": 1,
+    "endLine": 14,
+    "endColumn": 8
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'workbox' is not defined.",
+    "line": 19,
+    "column": 1,
+    "endLine": 19,
+    "endColumn": 8
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'workbox' is not defined.",
+    "line": 24,
+    "column": 1,
+    "endLine": 24,
+    "endColumn": 8
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'workbox' is not defined.",
+    "line": 28,
+    "column": 1,
+    "endLine": 28,
+    "endColumn": 8
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'workbox' is not defined.",
+    "line": 33,
+    "column": 1,
+    "endLine": 33,
+    "endColumn": 8
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'workbox' is not defined.",
+    "line": 47,
+    "column": 1,
+    "endLine": 47,
+    "endColumn": 8
+  },
+  {
+    "ruleId": "brace-style",
+    "message": "Statement inside of curly braces should be on next line.",
+    "line": 60,
+    "column": 40,
+    "endLine": 60,
+    "endColumn": 41
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'workbox' is not defined.",
+    "line": 60,
+    "column": 44,
+    "endLine": 60,
+    "endColumn": 51
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'workbox' is not defined.",
+    "line": 60,
+    "column": 113,
+    "endLine": 60,
+    "endColumn": 120
+  },
+  {
+    "ruleId": "func-call-spacing",
+    "message": "Unexpected newline between function name and paren.",
+    "line": 60,
+    "column": 132
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'workbox' is not defined.",
+    "line": 65,
+    "column": 1,
+    "endLine": 65,
+    "endColumn": 8
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "A space is required after '{'.",
+    "line": 65,
+    "column": 78
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "A space is required before '}'.",
+    "line": 65,
+    "column": 84
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'workbox' is not defined.",
+    "line": 66,
+    "column": 14,
+    "endLine": 66,
+    "endColumn": 21
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "A space is required after '{'.",
+    "line": 66,
+    "column": 73
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "A space is required before '}'.",
+    "line": 66,
+    "column": 79
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'caches' is not defined.",
+    "line": 67,
+    "column": 18,
+    "endLine": 67,
+    "endColumn": 24
+  }
+]

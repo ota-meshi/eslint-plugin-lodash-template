@@ -1,0 +1,36 @@
+[
+  {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 1,
+    "column": 24
+  },
+  {
+    "ruleId": "no-unsafe-negation",
+    "message": "Unexpected negating the left operand of 'in' operator.",
+    "line": 2,
+    "column": 7,
+    "endLine": 2,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "no-negated-in-lhs",
+    "message": "The 'in' expression's left operand is negated.",
+    "line": 2,
+    "column": 7,
+    "endLine": 2,
+    "endColumn": 36
+  },
+  {
+    "ruleId": "block-spacing",
+    "message": "Requires a space after '{'.",
+    "line": 18,
+    "column": 19
+  },
+  {
+    "ruleId": "block-spacing",
+    "message": "Requires a space before '}'.",
+    "line": 18,
+    "column": 103
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "ruleId": "no-multi-spaces",
+    "message": "Multiple spaces found before '='.",
+    "line": 5,
+    "column": 14
+  },
+  {
+    "ruleId": "lodash-template/prefer-escape-template-interpolations",
+    "message": "The escape micro-template interpolation is preferable.",
+    "line": 5,
+    "column": 16,
+    "endLine": 5,
+    "endColumn": 49
+  },
+  {
+    "ruleId": "lodash-template/no-multi-spaces-in-scriptlet",
+    "message": "Multiple spaces found before `)`.",
+    "line": 5,
+    "column": 45
+  }
+]

@@ -7,7 +7,7 @@ description: "disallow HTML comments. (ex. :ng: `<!-- comment -->`)"
 # lodash-template/no-html-comments
 > disallow HTML comments. (ex. :ng: `<!-- comment -->`)
 
-- :gear: This rule is included in all of `"plugin:lodash-template/best-practices"`, `"plugin:lodash-template/recommended"`, `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
+- :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
 
 ## Rule Details
 

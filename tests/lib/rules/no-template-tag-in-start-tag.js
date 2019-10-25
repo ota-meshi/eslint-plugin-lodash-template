@@ -12,10 +12,11 @@ const tester = new RuleTester({
 
 tester.run("no-template-tag-in-start-tag", rule, {
     valid: [
-        "<input disabled >",
-        '<input class="<%= classList %>" >',
-        "<input class=<%= classList %> >",
+        { filename: "test.html", code: "<input disabled >" },
+        { filename: "test.html", code: '<input class="<%= classList %>" >' },
+        { filename: "test.html", code: "<input class=<%= classList %> >" },
         {
+            filename: "test.html",
             code: `
             <input
               <% if (disabled) { %>
@@ -27,6 +28,7 @@ tester.run("no-template-tag-in-start-tag", rule, {
     ],
     invalid: [
         {
+            filename: "test.html",
             code: "<input <%= 'disabled' %> >",
             errors: [
                 {
@@ -39,6 +41,7 @@ tester.run("no-template-tag-in-start-tag", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: "<input <%= disabled ? 'disabled' : '' %> >",
             errors: [
                 {
@@ -51,6 +54,7 @@ tester.run("no-template-tag-in-start-tag", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
             <input
               <% if (disabled) { %>
@@ -79,18 +83,21 @@ tester.run("no-template-tag-in-start-tag", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: "<input <%- 'disabled' %> >",
             errors: [
                 "The template interpolate tag in start tag outside attribute values are forbidden.",
             ],
         },
         {
+            filename: "test.html",
             code: "<input <%- disabled ? 'disabled' : '' %> >",
             errors: [
                 "The template interpolate tag in start tag outside attribute values are forbidden.",
             ],
         },
         {
+            filename: "test.html",
             code: "<input disabled <%= 'class=' + c  %> >",
             errors: [
                 "The template interpolate tag in start tag outside attribute values are forbidden.",

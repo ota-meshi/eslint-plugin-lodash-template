@@ -1,0 +1,374 @@
+[
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 1,
+    "column": 24,
+    "endLine": 1,
+    "endColumn": 37
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 1,
+    "column": 37
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space after '{'.",
+    "line": 3,
+    "column": 17
+  },
+  {
+    "ruleId": "no-unused-vars",
+    "message": "'app' is defined but never used.",
+    "line": 3,
+    "column": 19,
+    "endLine": 3,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space before '}'.",
+    "line": 3,
+    "column": 23
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 3,
+    "column": 37
+  },
+  {
+    "ruleId": "lodash-template/scriptlet-indent",
+    "message": "Expected indentation of 2 spaces but found 0 spaces.",
+    "line": 5,
+    "column": 1,
+    "endLine": 5,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 5,
+    "column": 34
+  },
+  {
+    "ruleId": "lodash-template/scriptlet-indent",
+    "message": "Expected indentation of 2 spaces but found 0 spaces.",
+    "line": 6,
+    "column": 1,
+    "endLine": 6,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 6,
+    "column": 19
+  },
+  {
+    "ruleId": "lodash-template/scriptlet-indent",
+    "message": "Expected indentation of 2 spaces but found 0 spaces.",
+    "line": 7,
+    "column": 1,
+    "endLine": 7,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 7,
+    "column": 29
+  },
+  {
+    "ruleId": "lodash-template/scriptlet-indent",
+    "message": "Expected indentation of 2 spaces but found 0 spaces.",
+    "line": 8,
+    "column": 1,
+    "endLine": 8,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 8,
+    "column": 11,
+    "endLine": 8,
+    "endColumn": 27
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 8,
+    "column": 11,
+    "endLine": 8,
+    "endColumn": 49
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 8,
+    "column": 30,
+    "endLine": 8,
+    "endColumn": 39
+  },
+  {
+    "ruleId": "no-undefined",
+    "message": "Unexpected use of undefined.",
+    "line": 8,
+    "column": 30,
+    "endLine": 8,
+    "endColumn": 39
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 8,
+    "column": 49
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 10,
+    "column": 1,
+    "endLine": 10,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 10,
+    "column": 44
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 0.",
+    "line": 11,
+    "column": 1,
+    "endLine": 11,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'config' is not defined.",
+    "line": 12,
+    "column": 8,
+    "endLine": 12,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'config' is not defined.",
+    "line": 13,
+    "column": 35,
+    "endLine": 13,
+    "endColumn": 41
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 14,
+    "column": 20,
+    "endLine": 14,
+    "endColumn": 27
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 14,
+    "column": 20,
+    "endLine": 14,
+    "endColumn": 52
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'config' is not defined.",
+    "line": 14,
+    "column": 30,
+    "endLine": 14,
+    "endColumn": 36
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 14,
+    "column": 30,
+    "endLine": 14,
+    "endColumn": 44
+  },
+  {
+    "ruleId": "space-infix-ops",
+    "message": "Operator ':' must be spaced.",
+    "line": 14,
+    "column": 44
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'config' is not defined.",
+    "line": 14,
+    "column": 46,
+    "endLine": 14,
+    "endColumn": 52
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 14,
+    "column": 52
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 15,
+    "column": 18,
+    "endLine": 15,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 15,
+    "column": 18,
+    "endLine": 15,
+    "endColumn": 39
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 15,
+    "column": 28,
+    "endLine": 15,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'config' is not defined.",
+    "line": 15,
+    "column": 28,
+    "endLine": 15,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 15,
+    "column": 39
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 17,
+    "column": 1,
+    "endLine": 17,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 89. Maximum allowed is 80.",
+    "line": 17,
+    "column": 1
+  },
+  {
+    "ruleId": "keyword-spacing",
+    "message": "Expected space(s) after \"for\".",
+    "line": 17,
+    "column": 37
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'opt' is not defined.",
+    "line": 17,
+    "column": 41,
+    "endLine": 17,
+    "endColumn": 44
+  },
+  {
+    "ruleId": "brace-style",
+    "message": "Statement inside of curly braces should be on next line.",
+    "line": 17,
+    "column": 54,
+    "endLine": 17,
+    "endColumn": 55
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 17,
+    "column": 59,
+    "endLine": 17,
+    "endColumn": 60
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'opt' is not defined.",
+    "line": 17,
+    "column": 74,
+    "endLine": 17,
+    "endColumn": 77
+  },
+  {
+    "ruleId": "brace-style",
+    "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
+    "line": 17,
+    "column": 85,
+    "endLine": 17,
+    "endColumn": 86
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 17,
+    "column": 90
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 0.",
+    "line": 18,
+    "column": 1,
+    "endLine": 18,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 2.",
+    "line": 19,
+    "column": 1,
+    "endLine": 19,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 19,
+    "column": 10,
+    "endLine": 19,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 19,
+    "column": 15,
+    "endLine": 19,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 19,
+    "column": 19
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 20,
+    "column": 1
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 20,
+    "column": 2
+  }
+]

@@ -12,14 +12,22 @@ const tester = new RuleTester({
 
 tester.run("html-content-newline", rule, {
     valid: [
-        '<body><div class="panel">content</div></body>',
-        `
+        {
+            filename: "test.html",
+            code: '<body><div class="panel">content</div></body>',
+        },
+        {
+            filename: "test.html",
+            code: `
       <body>
         <div class="panel">
           content
         </div>
       </body>`,
-        `
+        },
+        {
+            filename: "test.html",
+            code: `
       <body>
         <div
           class="panel"
@@ -27,7 +35,9 @@ tester.run("html-content-newline", rule, {
           content
         </div>
       </body>`,
+        },
         {
+            filename: "test.html",
             code: `
         <body><div class="panel">
           content
@@ -41,6 +51,7 @@ tester.run("html-content-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
         <body><div
             class="panel"
@@ -54,8 +65,12 @@ tester.run("html-content-newline", rule, {
             ],
         },
         // empty
-        '<body><div class="panel"></div></body>',
         {
+            filename: "test.html",
+            code: '<body><div class="panel"></div></body>',
+        },
+        {
+            filename: "test.html",
             code: `<body><div
       class="panel"></div></body>`,
             options: [
@@ -67,6 +82,7 @@ tester.run("html-content-newline", rule, {
         },
         // self closing
         {
+            filename: "test.html",
             code: `
         <body>
           <self-closing />
@@ -80,6 +96,7 @@ tester.run("html-content-newline", rule, {
         },
         // ignores
         {
+            filename: "test.html",
             code: `
         <body>
           <pre>content</pre>
@@ -100,6 +117,7 @@ tester.run("html-content-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
         <body>
           <ignore-tag>content</ignore-tag>
@@ -117,7 +135,9 @@ tester.run("html-content-newline", rule, {
             ],
         },
         // multiline contents
-        `
+        {
+            filename: "test.html",
+            code: `
       <body>
         <div>
           <div>
@@ -127,20 +147,28 @@ tester.run("html-content-newline", rule, {
         </div>
       </body>
     `,
+        },
         // Ignore if no closing brackets
-        `
+        {
+            filename: "test.html",
+            code: `
       <body>
         <div
           id=
           ""
     `,
+        },
         // nothing end tag
-        `
+        {
+            filename: "test.html",
+            code: `
           <div>content
         `,
+        },
     ],
     invalid: [
         {
+            filename: "test.html",
             code: `
         <body>
           <div
@@ -179,6 +207,7 @@ content
             ],
         },
         {
+            filename: "test.html",
             code: `
         <body>
           <div class="panel">content</div>
@@ -219,6 +248,7 @@ content
             ],
         },
         {
+            filename: "test.html",
             code: `
         <body><div
             class="panel"
@@ -260,6 +290,7 @@ content
         },
         // comments
         {
+            filename: "test.html",
             code: `
         <body>
           <div><!--comment--></div>
@@ -293,6 +324,7 @@ content
             ],
         },
         {
+            filename: "test.html",
             code: `
         <body>
           <div>
@@ -326,6 +358,7 @@ content
             ],
         },
         {
+            filename: "test.html",
             code: `
         <body>
           <div>
@@ -352,6 +385,7 @@ content
         },
         // one error
         {
+            filename: "test.html",
             code: `
         <body>
           <div>content
@@ -380,6 +414,7 @@ content
             ],
         },
         {
+            filename: "test.html",
             code: `
         <body>
           <div>
@@ -408,6 +443,7 @@ content
             ],
         },
         {
+            filename: "test.html",
             code: `
         <body><div>content
           </div></body>
@@ -431,6 +467,7 @@ content
             ],
         },
         {
+            filename: "test.html",
             code: `
         <body><div>
           content</div></body>
@@ -455,6 +492,7 @@ content
         },
         // multiline content
         {
+            filename: "test.html",
             code: `
         <body><div>content<div>content
         content</div>content</div></body>
@@ -515,6 +553,7 @@ content
         },
         // empty
         {
+            filename: "test.html",
             code: `
         <body>
           <div></div>
@@ -547,6 +586,7 @@ content
             ],
         },
         {
+            filename: "test.html",
             code: `
         <body><div>
         </div></body>
@@ -577,6 +617,7 @@ content
         },
         // multi line breaks
         {
+            filename: "test.html",
             code: `
         <body>
           <div>
@@ -615,6 +656,7 @@ content
         },
         // mustache
         {
+            filename: "test.html",
             code: `
         <body>
           <div>{{content}}</div>
@@ -649,6 +691,7 @@ content
         },
         // multiline end tag
         {
+            filename: "test.html",
             code: `
         <body>
           <div>content</div

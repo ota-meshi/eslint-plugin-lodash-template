@@ -1,0 +1,22 @@
+[
+  {
+    "ruleId": "quote-props",
+    "message": "Unquoted property 'api' found.",
+    "line": 1,
+    "column": 36,
+    "endLine": 1,
+    "endColumn": 60
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 1,
+    "column": 65
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 2,
+    "column": 22
+  }
+]

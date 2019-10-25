@@ -1,0 +1,162 @@
+[
+  {
+    "ruleId": "sort-imports",
+    "message": "Imports should be sorted alphabetically.",
+    "line": 4,
+    "column": 1,
+    "endLine": 4,
+    "endColumn": 42
+  },
+  {
+    "ruleId": "no-undefined",
+    "message": "Unexpected use of undefined.",
+    "line": 10,
+    "column": 9,
+    "endLine": 10,
+    "endColumn": 18
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 2.",
+    "line": 11,
+    "column": 9,
+    "endLine": 11,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 19,
+    "column": 9,
+    "endLine": 19,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 19,
+    "column": 9,
+    "endLine": 19,
+    "endColumn": 49
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 19,
+    "column": 26,
+    "endLine": 19,
+    "endColumn": 42
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'BVConfigPlugin' is not defined.",
+    "line": 30,
+    "column": 5,
+    "endLine": 30,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "no-undefined",
+    "message": "Unexpected use of undefined.",
+    "line": 33,
+    "column": 9,
+    "endLine": 33,
+    "endColumn": 18
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 2.",
+    "line": 34,
+    "column": 9,
+    "endLine": 34,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "no-return-assign",
+    "message": "Arrow function should not return assignment.",
+    "line": 40,
+    "column": 5,
+    "endLine": 40,
+    "endColumn": 52
+  },
+  {
+    "ruleId": "no-param-reassign",
+    "message": "Assignment to function parameter 'acc'.",
+    "line": 40,
+    "column": 22,
+    "endLine": 40,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "no-return-assign",
+    "message": "Arrow function should not return assignment.",
+    "line": 44,
+    "column": 5,
+    "endLine": 44,
+    "endColumn": 52
+  },
+  {
+    "ruleId": "no-param-reassign",
+    "message": "Assignment to function parameter 'acc'.",
+    "line": 44,
+    "column": 22,
+    "endLine": 44,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "no-return-assign",
+    "message": "Arrow function should not return assignment.",
+    "line": 48,
+    "column": 5,
+    "endLine": 48,
+    "endColumn": 56
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'c' is too short (< 2).",
+    "line": 48,
+    "column": 11,
+    "endLine": 48,
+    "endColumn": 12
+  },
+  {
+    "ruleId": "no-param-reassign",
+    "message": "Assignment to function parameter 'acc'.",
+    "line": 48,
+    "column": 17,
+    "endLine": 48,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "no-return-assign",
+    "message": "Arrow function should not return assignment.",
+    "line": 52,
+    "column": 5,
+    "endLine": 55,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'd' is too short (< 2).",
+    "line": 52,
+    "column": 11,
+    "endLine": 52,
+    "endColumn": 12
+  },
+  {
+    "ruleId": "no-param-reassign",
+    "message": "Assignment to function parameter 'acc'.",
+    "line": 52,
+    "column": 17,
+    "endLine": 52,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "require-unicode-regexp",
+    "message": "Use the 'u' flag.",
+    "line": 53,
+    "column": 7,
+    "endLine": 53,
+    "endColumn": 12
+  }
+]

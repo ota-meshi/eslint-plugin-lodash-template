@@ -12,42 +12,60 @@ const tester = new RuleTester({
 
 tester.run("html-closing-bracket-spacing", rule, {
     valid: [
-        "",
-        "<body><div></div><div /></body>",
-        "<body><div foo></div><div foo /></body>",
-        "<body><div foo=a></div><div foo=a /></body>",
-        '<body><div foo="a"></div><div foo="a" /></body>',
+        { filename: "test.html", code: "" },
+        { filename: "test.html", code: "<body><div></div><div /></body>" },
         {
+            filename: "test.html",
+            code: "<body><div foo></div><div foo /></body>",
+        },
+        {
+            filename: "test.html",
+            code: "<body><div foo=a></div><div foo=a /></body>",
+        },
+        {
+            filename: "test.html",
+            code: '<body><div foo="a"></div><div foo="a" /></body>',
+        },
+        {
+            filename: "test.html",
             code: "<body ><div ></div><div /></body>",
             options: [{ startTag: "always" }],
         },
         {
+            filename: "test.html",
             code: "<body><div></div ><div /></body >",
             options: [{ endTag: "always" }],
         },
         {
+            filename: "test.html",
             code: "<body><div></div><div/></body>",
             options: [{ selfClosingTag: "never" }],
         },
-        "<body><div",
-        "<body><div></div",
+        { filename: "test.html", code: "<body><div" },
+        { filename: "test.html", code: "<body><div></div" },
         {
+            filename: "test.html",
             code: "<body><div",
             options: [{ startTag: "never", endTag: "never" }],
         },
         {
+            filename: "test.html",
             code: "<body><div></div",
             options: [{ startTag: "never", endTag: "never" }],
         },
-        `
+        {
+            filename: "test.html",
+            code: `
         <div
         >
         </div
         >
         `,
+        },
     ],
     invalid: [
         {
+            filename: "test.html",
             code: "<body>\n  <div >\n  </div >\n  <div/>\n</body>",
             output: "<body>\n  <div>\n  </div>\n  <div />\n</body>",
             errors: [
@@ -72,6 +90,7 @@ tester.run("html-closing-bracket-spacing", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: "<body>\n  <div foo ></div>\n  <div foo/>\n</body>",
             output: "<body>\n  <div foo></div>\n  <div foo />\n</body>",
             errors: [
@@ -90,6 +109,7 @@ tester.run("html-closing-bracket-spacing", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: '<body>\n  <div foo="1" ></div>\n  <div foo="1"/>\n</body>',
             output: '<body>\n  <div foo="1"></div>\n  <div foo="1" />\n</body>',
             errors: [
@@ -108,6 +128,7 @@ tester.run("html-closing-bracket-spacing", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: "<body >\n  <div>\n  </div>\n  <div />\n</body >",
             output: "<body >\n  <div >\n  </div >\n  <div/>\n</body >",
             options: [

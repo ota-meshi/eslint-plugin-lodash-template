@@ -12,14 +12,18 @@ const tester = new RuleTester({
 
 tester.run("html-comment-content-newline", rule, {
     valid: [
-        "<!-- comment -->",
-        `
+        { filename: "test.html", code: "<!-- comment -->" },
+        {
+            filename: "test.html",
+            code: `
           <!--
             comment
             comment
           -->
         `,
+        },
         {
+            filename: "test.html",
             code: `
             <!--
               comment
@@ -33,6 +37,7 @@ tester.run("html-comment-content-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
             <!-- comment
               comment -->
@@ -45,6 +50,7 @@ tester.run("html-comment-content-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
             <!--
               comment
@@ -60,8 +66,9 @@ tester.run("html-comment-content-newline", rule, {
             ],
         },
         // empty
-        "<!---->",
+        { filename: "test.html", code: "<!---->" },
         {
+            filename: "test.html",
             code: "<!---->",
             options: [
                 {
@@ -72,6 +79,7 @@ tester.run("html-comment-content-newline", rule, {
         },
         // other
         {
+            filename: "test.html",
             code: "<!DOCTYPE html>",
             options: [
                 {
@@ -81,6 +89,7 @@ tester.run("html-comment-content-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: "<!illegal>",
             options: [
                 {
@@ -92,6 +101,7 @@ tester.run("html-comment-content-newline", rule, {
     ],
     invalid: [
         {
+            filename: "test.html",
             code: `
             <!--
               comment
@@ -106,6 +116,7 @@ tester.run("html-comment-content-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
             <!--comment
               comment-->
@@ -136,6 +147,7 @@ comment
             ],
         },
         {
+            filename: "test.html",
             code: `
             <!--comment-->
             `,
@@ -170,6 +182,7 @@ comment
             ],
         },
         {
+            filename: "test.html",
             code: `
             <!--
               comment
@@ -207,6 +220,7 @@ comment
         },
         // one error
         {
+            filename: "test.html",
             code: `
             <!--comment
             -->
@@ -231,6 +245,7 @@ comment
             ],
         },
         {
+            filename: "test.html",
             code: `
             <!--
             comment-->
@@ -255,6 +270,7 @@ comment
             ],
         },
         {
+            filename: "test.html",
             code: `
             <!--comment
             -->
@@ -278,6 +294,7 @@ comment
             ],
         },
         {
+            filename: "test.html",
             code: `
             <!--
             comment-->
@@ -301,6 +318,7 @@ comment
             ],
         },
         {
+            filename: "test.html",
             code: `
             <!--
 
@@ -324,6 +342,7 @@ comment
         },
         // empty
         {
+            filename: "test.html",
             code: `
             <!---->
             `,
@@ -352,6 +371,7 @@ comment
             ],
         },
         {
+            filename: "test.html",
             code: `
             <!--
             -->
@@ -382,6 +402,7 @@ comment
         },
         // multi line breaks
         {
+            filename: "test.html",
             code: `
             <!--
 

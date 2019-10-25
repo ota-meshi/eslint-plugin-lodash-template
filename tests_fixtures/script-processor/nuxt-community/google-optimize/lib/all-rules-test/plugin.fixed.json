@@ -1,0 +1,408 @@
+[
+  {
+    "ruleId": "sort-imports",
+    "message": "Expected 'multiple' syntax before 'single' syntax.",
+    "line": 2,
+    "column": 1,
+    "endLine": 2,
+    "endColumn": 75
+  },
+  {
+    "ruleId": "no-use-before-define",
+    "message": "'assignExperiment' was used before it was defined.",
+    "line": 10,
+    "column": 5,
+    "endLine": 10,
+    "endColumn": 21
+  },
+  {
+    "ruleId": "no-use-before-define",
+    "message": "'googleOptimize' was used before it was defined.",
+    "line": 13,
+    "column": 5,
+    "endLine": 13,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "func-style",
+    "message": "Expected a function expression.",
+    "line": 23,
+    "column": 1,
+    "endLine": 122,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "max-lines-per-function",
+    "message": "Function 'assignExperiment' has too many lines (100). Maximum allowed is 50.",
+    "line": 23,
+    "column": 1,
+    "endLine": 122,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "max-statements",
+    "message": "Function 'assignExperiment' has too many statements (34). Maximum allowed is 10.",
+    "line": 23,
+    "column": 1,
+    "endLine": 122,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "no-use-before-define",
+    "message": "'getCookie' was used before it was defined.",
+    "line": 32,
+    "column": 20,
+    "endLine": 32,
+    "endColumn": 29
+  },
+  {
+    "ruleId": "line-comment-position",
+    "message": "Expected comment to be above code.",
+    "line": 35,
+    "column": 14,
+    "endLine": 35,
+    "endColumn": 39
+  },
+  {
+    "ruleId": "no-inline-comments",
+    "message": "Unexpected comment inline with code.",
+    "line": 35,
+    "column": 14,
+    "endLine": 35,
+    "endColumn": 39
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 89. Maximum allowed is 80.",
+    "line": 43,
+    "column": 1
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'v' is too short (< 2).",
+    "line": 47,
+    "column": 53,
+    "endLine": 47,
+    "endColumn": 54
+  },
+  {
+    "ruleId": "radix",
+    "message": "Missing radix parameter.",
+    "line": 47,
+    "column": 59,
+    "endLine": 47,
+    "endColumn": 70
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 98. Maximum allowed is 80.",
+    "line": 52,
+    "column": 1
+  },
+  {
+    "ruleId": "no-confusing-arrow",
+    "message": "Arrow function used ambiguously with a conditional expression.",
+    "line": 52,
+    "column": 47,
+    "endLine": 52,
+    "endColumn": 97
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 52,
+    "column": 56,
+    "endLine": 52,
+    "endColumn": 80
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 52,
+    "column": 56,
+    "endLine": 52,
+    "endColumn": 97
+  },
+  {
+    "ruleId": "no-undefined",
+    "message": "Unexpected use of undefined.",
+    "line": 52,
+    "column": 71,
+    "endLine": 52,
+    "endColumn": 80
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 52,
+    "column": 83,
+    "endLine": 52,
+    "endColumn": 84
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 1.",
+    "line": 52,
+    "column": 83,
+    "endLine": 52,
+    "endColumn": 84
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: -1.",
+    "line": 54,
+    "column": 32,
+    "endLine": 54,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "no-plusplus",
+    "message": "Unary operator '--' used.",
+    "line": 54,
+    "column": 38,
+    "endLine": 54,
+    "endColumn": 47
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 0.",
+    "line": 54,
+    "column": 50,
+    "endLine": 54,
+    "endColumn": 51
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: -1.",
+    "line": 66,
+    "column": 35,
+    "endLine": 66,
+    "endColumn": 37
+  },
+  {
+    "ruleId": "no-negated-condition",
+    "message": "Unexpected negated condition.",
+    "line": 74,
+    "column": 5,
+    "endLine": 112,
+    "endColumn": 6
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: -1.",
+    "line": 74,
+    "column": 29,
+    "endLine": 74,
+    "endColumn": 31
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 86. Maximum allowed is 80.",
+    "line": 77,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 119. Maximum allowed is 80.",
+    "line": 80,
+    "column": 1
+  },
+  {
+    "ruleId": "no-confusing-arrow",
+    "message": "Arrow function used ambiguously with a conditional expression.",
+    "line": 80,
+    "column": 56,
+    "endLine": 80,
+    "endColumn": 118
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 80,
+    "column": 69,
+    "endLine": 80,
+    "endColumn": 97
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 80,
+    "column": 69,
+    "endLine": 80,
+    "endColumn": 118
+  },
+  {
+    "ruleId": "no-undefined",
+    "message": "Unexpected use of undefined.",
+    "line": 80,
+    "column": 88,
+    "endLine": 80,
+    "endColumn": 97
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 80,
+    "column": 100,
+    "endLine": 80,
+    "endColumn": 101
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 1.",
+    "line": 80,
+    "column": 100,
+    "endLine": 80,
+    "endColumn": 101
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 1.",
+    "line": 81,
+    "column": 64,
+    "endLine": 81,
+    "endColumn": 65
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 83. Maximum allowed is 80.",
+    "line": 90,
+    "column": 1
+  },
+  {
+    "ruleId": "no-use-before-define",
+    "message": "'setCookie' was used before it was defined.",
+    "line": 93,
+    "column": 13,
+    "endLine": 93,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 83. Maximum allowed is 80.",
+    "line": 103,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 85. Maximum allowed is 80.",
+    "line": 117,
+    "column": 1
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. '$activeVariants' should be before '$variantIndexes'.",
+    "line": 117,
+    "column": 9,
+    "endLine": 117,
+    "endColumn": 26
+  },
+  {
+    "ruleId": "func-style",
+    "message": "Expected a function expression.",
+    "line": 124,
+    "column": 1,
+    "endLine": 138,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 133,
+    "column": 23,
+    "endLine": 133,
+    "endColumn": 37
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 133,
+    "column": 23,
+    "endLine": 133,
+    "endColumn": 80
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 133,
+    "column": 40,
+    "endLine": 133,
+    "endColumn": 55
+  },
+  {
+    "ruleId": "consistent-return",
+    "message": "Function 'getCookie' expected no return value.",
+    "line": 136,
+    "column": 5,
+    "endLine": 136,
+    "endColumn": 26
+  },
+  {
+    "ruleId": "max-params",
+    "message": "Function 'setCookie' has too many parameters (4). Maximum allowed is 3.",
+    "line": 140,
+    "column": 1,
+    "endLine": 140,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "func-style",
+    "message": "Expected a function expression.",
+    "line": 140,
+    "column": 1,
+    "endLine": 177,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'maxAge' should be before 'path'.",
+    "line": 147,
+    "column": 13,
+    "endLine": 147,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "no-shadow",
+    "message": "'value' is already declared in the upper scope.",
+    "line": 160,
+    "column": 13,
+    "endLine": 160,
+    "endColumn": 18
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 163,
+    "column": 21,
+    "endLine": 163,
+    "endColumn": 40
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 163,
+    "column": 21,
+    "endLine": 167,
+    "endColumn": 18
+  },
+  {
+    "ruleId": "func-style",
+    "message": "Expected a function expression.",
+    "line": 180,
+    "column": 1,
+    "endLine": 196,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 82. Maximum allowed is 80.",
+    "line": 182,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 85. Maximum allowed is 80.",
+    "line": 188,
+    "column": 1
+  }
+]

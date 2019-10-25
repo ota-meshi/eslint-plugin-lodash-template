@@ -12,15 +12,19 @@ const tester = new RuleTester({
 
 tester.run("html-closing-bracket-newline", rule, {
     valid: [
-        "<body><div></div></body>",
-        `
+        { filename: "test.html", code: "<body><div></div></body>" },
+        {
+            filename: "test.html",
+            code: `
           <body>
             <div
               id="">
             </div>
           </body>
         `,
+        },
         {
+            filename: "test.html",
             code: "<body><div></div></body>",
             options: [
                 {
@@ -30,6 +34,7 @@ tester.run("html-closing-bracket-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
               <body>
                 <div
@@ -45,6 +50,7 @@ tester.run("html-closing-bracket-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
               <body>
                 <div
@@ -61,6 +67,7 @@ tester.run("html-closing-bracket-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
               <body>
                 <div id="">
@@ -75,6 +82,7 @@ tester.run("html-closing-bracket-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
               <body
               >
@@ -93,6 +101,7 @@ tester.run("html-closing-bracket-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
               <body
               >
@@ -112,15 +121,19 @@ tester.run("html-closing-bracket-newline", rule, {
         },
 
         // Ignore if no closing brackets
-        `
+        {
+            filename: "test.html",
+            code: `
           <body>
             <div
               id=
               ""
         `,
+        },
     ],
     invalid: [
         {
+            filename: "test.html",
             code: `
               <body>
                 <div
@@ -140,6 +153,7 @@ tester.run("html-closing-bracket-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
               <body>
                 <div
@@ -160,6 +174,7 @@ tester.run("html-closing-bracket-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
               <body>
                 <div
@@ -185,6 +200,7 @@ tester.run("html-closing-bracket-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
               <body>
                 <div
@@ -211,6 +227,7 @@ tester.run("html-closing-bracket-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
               <body>
                 <div
@@ -237,6 +254,7 @@ tester.run("html-closing-bracket-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
               <body>
                 <div id=""
@@ -263,6 +281,7 @@ tester.run("html-closing-bracket-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
               <body
               >
@@ -295,6 +314,7 @@ tester.run("html-closing-bracket-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
               <body
               >
@@ -325,6 +345,7 @@ tester.run("html-closing-bracket-newline", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
               <div id=""
 

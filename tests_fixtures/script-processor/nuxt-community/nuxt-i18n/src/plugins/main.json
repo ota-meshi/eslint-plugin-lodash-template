@@ -1,0 +1,86 @@
+[
+  {
+    "ruleId": "no-unused-vars",
+    "message": "'LOCALE_CODE_KEY' is assigned a value but never used.",
+    "line": 11,
+    "column": 7,
+    "endLine": 11,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "no-unused-vars",
+    "message": "'LOCALE_DOMAIN_KEY' is assigned a value but never used.",
+    "line": 12,
+    "column": 7,
+    "endLine": 12,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "no-unused-vars",
+    "message": "'getHostname' is assigned a value but never used.",
+    "line": 26,
+    "column": 9,
+    "endLine": 26,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "no-unused-vars",
+    "message": "'getForwarded' is assigned a value but never used.",
+    "line": 27,
+    "column": 9,
+    "endLine": 27,
+    "endColumn": 21
+  },
+  {
+    "ruleId": "comma-spacing",
+    "message": "A space is required after ','.",
+    "line": 37,
+    "column": 55,
+    "endLine": 37,
+    "endColumn": 56
+  },
+  {
+    "ruleId": "comma-spacing",
+    "message": "A space is required after ','.",
+    "line": 38,
+    "column": 59,
+    "endLine": 38,
+    "endColumn": 60
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 8 spaces but found 10.",
+    "line": 61,
+    "column": 1,
+    "endLine": 61,
+    "endColumn": 11
+  },
+  {
+    "ruleId": "eqeqeq",
+    "message": "Expected '===' and instead saw '=='.",
+    "line": 109,
+    "column": 26,
+    "endLine": 109,
+    "endColumn": 28
+  },
+  {
+    "ruleId": "no-unneeded-ternary",
+    "message": "Unnecessary use of conditional expression for default assignment.",
+    "line": 203,
+    "column": 29
+  },
+  {
+    "ruleId": "no-unneeded-ternary",
+    "message": "Unnecessary use of conditional expression for default assignment.",
+    "line": 209,
+    "column": 28
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 4 spaces but found 6.",
+    "line": 211,
+    "column": 1,
+    "endLine": 211,
+    "endColumn": 7
+  }
+]

@@ -1,0 +1,33 @@
+
+{
+  "root": true,
+  "extends": ["standard", "plugin:lodash-template/base"],
+  "plugins": [
+      "jest"
+  ],
+  "env": {
+      "jest/globals": true
+  },
+  "overrides": [
+    {
+      "files": "*.js",
+      "processor": "lodash-template/script",
+      "rules": {
+        "lodash-template/no-empty-template-tag": "error",
+        "lodash-template/no-invalid-template-interpolation": "error",
+        "lodash-template/no-semi-in-template-interpolation": "error",
+        "lodash-template/no-irregular-whitespace": "error",
+        "lodash-template/no-multi-spaces-in-script": "error",
+        "lodash-template/script-indent": "error",
+        "lodash-template/template-tag-spacing": "error"
+      },
+      "parserOptions": {
+        "parser": "babel-eslint"
+      },
+      "globals": {
+        "options": true,
+        "serialize": true
+      }
+    }
+  ]
+}

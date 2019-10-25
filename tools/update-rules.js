@@ -38,7 +38,10 @@ const rules = baseRules.map(obj => {
  */
 function collectRules(category) {
     return rules.reduce((obj, rule) => {
-        if (!category || rule.meta.docs.category === category) {
+        if (
+            (!category || rule.meta.docs.category === category) &&
+            !rule.meta.deprecated
+        ) {
             obj[rule.meta.docs.ruleId] = "error"
         }
         return obj

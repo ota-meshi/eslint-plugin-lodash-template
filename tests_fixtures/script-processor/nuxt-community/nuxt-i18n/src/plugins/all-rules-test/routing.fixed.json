@@ -1,0 +1,390 @@
+[
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 87. Maximum allowed is 80.",
+    "line": 12,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 94. Maximum allowed is 80.",
+    "line": 23,
+    "column": 1
+  },
+  {
+    "ruleId": "no-invalid-this",
+    "message": "Unexpected 'this'.",
+    "line": 23,
+    "column": 71,
+    "endLine": 23,
+    "endColumn": 75
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 143. Maximum allowed is 80.",
+    "line": 25,
+    "column": 1
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 25,
+    "column": 13,
+    "endLine": 25,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "no-param-reassign",
+    "message": "Assignment to function parameter 'locale'.",
+    "line": 29,
+    "column": 9,
+    "endLine": 29,
+    "endColumn": 15
+  },
+  {
+    "ruleId": "no-invalid-this",
+    "message": "Unexpected 'this'.",
+    "line": 29,
+    "column": 28,
+    "endLine": 29,
+    "endColumn": 32
+  },
+  {
+    "ruleId": "no-param-reassign",
+    "message": "Assignment to function parameter 'route'.",
+    "line": 40,
+    "column": 13,
+    "endLine": 40,
+    "endColumn": 18
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 104. Maximum allowed is 80.",
+    "line": 45,
+    "column": 1
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 45,
+    "column": 34,
+    "endLine": 45,
+    "endColumn": 67
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 45,
+    "column": 34,
+    "endLine": 45,
+    "endColumn": 103
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 45,
+    "column": 70,
+    "endLine": 45,
+    "endColumn": 72
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 85. Maximum allowed is 80.",
+    "line": 48,
+    "column": 1
+  },
+  {
+    "ruleId": "no-undefined",
+    "message": "Unexpected use of undefined.",
+    "line": 58,
+    "column": 39,
+    "endLine": 58,
+    "endColumn": 48
+  },
+  {
+    "ruleId": "no-invalid-this",
+    "message": "Unexpected 'this'.",
+    "line": 65,
+    "column": 24,
+    "endLine": 65,
+    "endColumn": 28
+  },
+  {
+    "ruleId": "consistent-return",
+    "message": "Function 'localePath' expected no return value.",
+    "line": 67,
+    "column": 9,
+    "endLine": 67,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 94. Maximum allowed is 80.",
+    "line": 81,
+    "column": 1
+  },
+  {
+    "ruleId": "no-invalid-this",
+    "message": "Unexpected 'this'.",
+    "line": 81,
+    "column": 71,
+    "endLine": 81,
+    "endColumn": 75
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 149. Maximum allowed is 80.",
+    "line": 83,
+    "column": 1
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 83,
+    "column": 13,
+    "endLine": 83,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "no-invalid-this",
+    "message": "Unexpected 'this'.",
+    "line": 87,
+    "column": 22,
+    "endLine": 87,
+    "endColumn": 26
+  },
+  {
+    "ruleId": "no-invalid-this",
+    "message": "Unexpected 'this'.",
+    "line": 94,
+    "column": 40,
+    "endLine": 94,
+    "endColumn": 44
+  },
+  {
+    "ruleId": "no-invalid-this",
+    "message": "Unexpected 'this'.",
+    "line": 97,
+    "column": 13,
+    "endLine": 97,
+    "endColumn": 17
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 99. Maximum allowed is 80.",
+    "line": 99,
+    "column": 1
+  },
+  {
+    "ruleId": "no-invalid-this",
+    "message": "Unexpected 'this'.",
+    "line": 99,
+    "column": 32,
+    "endLine": 99,
+    "endColumn": 36
+  },
+  {
+    "ruleId": "no-invalid-this",
+    "message": "Unexpected 'this'.",
+    "line": 110,
+    "column": 20,
+    "endLine": 110,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "no-invalid-this",
+    "message": "Unexpected 'this'.",
+    "line": 116,
+    "column": 13,
+    "endLine": 116,
+    "endColumn": 17
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 91. Maximum allowed is 80.",
+    "line": 118,
+    "column": 1
+  },
+  {
+    "ruleId": "no-invalid-this",
+    "message": "Unexpected 'this'.",
+    "line": 118,
+    "column": 26,
+    "endLine": 118,
+    "endColumn": 30
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'l' is too short (< 2).",
+    "line": 118,
+    "column": 55,
+    "endLine": 118,
+    "endColumn": 56
+  },
+  {
+    "ruleId": "init-declarations",
+    "message": "Variable 'protocol' should be initialized on declaration.",
+    "line": 121,
+    "column": 21,
+    "endLine": 121,
+    "endColumn": 29
+  },
+  {
+    "ruleId": "global-require",
+    "message": "Unexpected require().",
+    "line": 124,
+    "column": 37,
+    "endLine": 124,
+    "endColumn": 56
+  },
+  {
+    "ruleId": "no-invalid-this",
+    "message": "Unexpected 'this'.",
+    "line": 125,
+    "column": 35,
+    "endLine": 125,
+    "endColumn": 39
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_parentVnode'.",
+    "line": 125,
+    "column": 35,
+    "endLine": 125,
+    "endColumn": 61
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 126,
+    "column": 32,
+    "endLine": 126,
+    "endColumn": 44
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 126,
+    "column": 32,
+    "endLine": 126,
+    "endColumn": 63
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 126,
+    "column": 47,
+    "endLine": 126,
+    "endColumn": 54
+  },
+  {
+    "ruleId": "prefer-destructuring",
+    "message": "Use array destructuring.",
+    "line": 130,
+    "column": 21,
+    "endLine": 130,
+    "endColumn": 70
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 0.",
+    "line": 130,
+    "column": 68,
+    "endLine": 130,
+    "endColumn": 69
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 109. Maximum allowed is 80.",
+    "line": 137,
+    "column": 1
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 137,
+    "column": 17,
+    "endLine": 137,
+    "endColumn": 29
+  },
+  {
+    "ruleId": "func-style",
+    "message": "Expected a function expression.",
+    "line": 148,
+    "column": 1,
+    "endLine": 172,
+    "endColumn": 2
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 150,
+    "column": 25,
+    "endLine": 150,
+    "endColumn": 37
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 150,
+    "column": 25,
+    "endLine": 155,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "func-names",
+    "message": "Unexpected unnamed function.",
+    "line": 151,
+    "column": 11,
+    "endLine": 151,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "no-invalid-this",
+    "message": "Unexpected 'this'.",
+    "line": 153,
+    "column": 29,
+    "endLine": 153,
+    "endColumn": 33
+  },
+  {
+    "ruleId": "no-param-reassign",
+    "message": "Assignment to function parameter 'route'.",
+    "line": 159,
+    "column": 9,
+    "endLine": 159,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "no-invalid-this",
+    "message": "Unexpected 'this'.",
+    "line": 160,
+    "column": 13,
+    "endLine": 160,
+    "endColumn": 17
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 0.",
+    "line": 168,
+    "column": 54,
+    "endLine": 168,
+    "endColumn": 55
+  },
+  {
+    "ruleId": "no-shadow",
+    "message": "'Vue' is already declared in the upper scope.",
+    "line": 175,
+    "column": 14,
+    "endLine": 175,
+    "endColumn": 17
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'getRouteBaseName' should be before 'switchLocalePath'.",
+    "line": 184,
+    "column": 17,
+    "endLine": 184,
+    "endColumn": 35
+  }
+]

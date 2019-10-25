@@ -1,0 +1,386 @@
+[
+  {
+    "ruleId": "sort-imports",
+    "message": "Expected 'multiple' syntax before 'single' syntax.",
+    "line": 2,
+    "column": 1,
+    "endLine": 2,
+    "endColumn": 69
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space after '{'.",
+    "line": 2,
+    "column": 8
+  },
+  {
+    "ruleId": "sort-imports",
+    "message": "Member 'config' of the import declaration should be sorted alphabetically.",
+    "line": 2,
+    "column": 19,
+    "endLine": 2,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space before '}'.",
+    "line": 2,
+    "column": 26
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 2,
+    "column": 33,
+    "endLine": 2,
+    "endColumn": 68
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space after '{'.",
+    "line": 3,
+    "column": 8
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space before '}'.",
+    "line": 3,
+    "column": 26
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 3,
+    "column": 33,
+    "endLine": 3,
+    "endColumn": 63
+  },
+  {
+    "ruleId": "quote-props",
+    "message": "Unquoted property 'package' found.",
+    "line": 5,
+    "column": 28,
+    "endLine": 5,
+    "endColumn": 39
+  },
+  {
+    "ruleId": "key-spacing",
+    "message": "Missing space before value for key 'package'.",
+    "line": 5,
+    "column": 36
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 0 spaces but found 2.",
+    "line": 6,
+    "column": 1,
+    "endLine": 6,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 0 spaces but found 4.",
+    "line": 7,
+    "column": 1,
+    "endLine": 7,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 0 spaces but found 6.",
+    "line": 8,
+    "column": 1,
+    "endLine": 8,
+    "endColumn": 7
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space after '{'.",
+    "line": 8,
+    "column": 14
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 8,
+    "column": 16,
+    "endLine": 8,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 8,
+    "column": 23,
+    "endLine": 8,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space before '}'.",
+    "line": 8,
+    "column": 26
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 8,
+    "column": 34,
+    "endLine": 8,
+    "endColumn": 37
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 8,
+    "column": 40,
+    "endLine": 8,
+    "endColumn": 42
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 0 spaces but found 4.",
+    "line": 9,
+    "column": 1,
+    "endLine": 9,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 0 spaces but found 2.",
+    "line": 10,
+    "column": 1,
+    "endLine": 10,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 0 spaces but found 4.",
+    "line": 11,
+    "column": 1,
+    "endLine": 11,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 11,
+    "column": 12,
+    "endLine": 11,
+    "endColumn": 15
+  },
+  {
+    "ruleId": "require-unicode-regexp",
+    "message": "Use the 'u' flag.",
+    "line": 11,
+    "column": 25,
+    "endLine": 11,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "no-useless-escape",
+    "message": "Unnecessary escape character: \\/.",
+    "line": 11,
+    "column": 29,
+    "endLine": 11,
+    "endColumn": 30
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 1.",
+    "line": 11,
+    "column": 36,
+    "endLine": 11,
+    "endColumn": 37
+  },
+  {
+    "ruleId": "require-unicode-regexp",
+    "message": "Use the 'u' flag.",
+    "line": 11,
+    "column": 47,
+    "endLine": 11,
+    "endColumn": 51
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 11,
+    "column": 52,
+    "endLine": 11,
+    "endColumn": 53
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 11,
+    "column": 56,
+    "endLine": 11,
+    "endColumn": 58
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 11,
+    "column": 65,
+    "endLine": 11,
+    "endColumn": 68
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 11,
+    "column": 71,
+    "endLine": 11,
+    "endColumn": 73
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 0 spaces but found 2.",
+    "line": 12,
+    "column": 1,
+    "endLine": 12,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "quote-props",
+    "message": "Unquoted property 'package' found.",
+    "line": 17,
+    "column": 28,
+    "endLine": 17,
+    "endColumn": 39
+  },
+  {
+    "ruleId": "key-spacing",
+    "message": "Missing space before value for key 'package'.",
+    "line": 17,
+    "column": 36
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 0 spaces but found 4.",
+    "line": 19,
+    "column": 1,
+    "endLine": 19,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 19,
+    "column": 17,
+    "endLine": 19,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 19,
+    "column": 35,
+    "endLine": 19,
+    "endColumn": 37
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 0 spaces but found 2.",
+    "line": 20,
+    "column": 1,
+    "endLine": 20,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 0 spaces but found 4.",
+    "line": 21,
+    "column": 1,
+    "endLine": 21,
+    "endColumn": 5
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 21,
+    "column": 17,
+    "endLine": 21,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "require-unicode-regexp",
+    "message": "Use the 'u' flag.",
+    "line": 21,
+    "column": 30,
+    "endLine": 21,
+    "endColumn": 39
+  },
+  {
+    "ruleId": "no-useless-escape",
+    "message": "Unnecessary escape character: \\/.",
+    "line": 21,
+    "column": 34,
+    "endLine": 21,
+    "endColumn": 35
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 1.",
+    "line": 21,
+    "column": 41,
+    "endLine": 21,
+    "endColumn": 42
+  },
+  {
+    "ruleId": "require-unicode-regexp",
+    "message": "Use the 'u' flag.",
+    "line": 21,
+    "column": 52,
+    "endLine": 21,
+    "endColumn": 56
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 21,
+    "column": 57,
+    "endLine": 21,
+    "endColumn": 58
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 21,
+    "column": 61,
+    "endLine": 21,
+    "endColumn": 63
+  },
+  {
+    "ruleId": "indent",
+    "message": "Expected indentation of 0 spaces but found 2.",
+    "line": 22,
+    "column": 1,
+    "endLine": 22,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space after `<%=`, but no spaces found.",
+    "line": 25,
+    "column": 16,
+    "endLine": 25,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "lodash-template/template-tag-spacing",
+    "message": "Expected 1 space before `%>`, but no spaces found.",
+    "line": 25,
+    "column": 40,
+    "endLine": 25,
+    "endColumn": 42
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 25,
+    "column": 44,
+    "endLine": 25,
+    "endColumn": 45
+  }
+]

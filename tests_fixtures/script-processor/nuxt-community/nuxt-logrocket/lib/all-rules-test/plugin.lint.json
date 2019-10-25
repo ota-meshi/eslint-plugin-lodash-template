@@ -1,0 +1,204 @@
+[
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 1,
+    "column": 23,
+    "endLine": 1,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 2,
+    "column": 26,
+    "endLine": 2,
+    "endColumn": 42
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 4,
+    "column": 50
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 5,
+    "column": 55
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space after '{'.",
+    "line": 7,
+    "column": 26
+  },
+  {
+    "ruleId": "no-unused-vars",
+    "message": "'app' is defined but never used.",
+    "line": 7,
+    "column": 28,
+    "endLine": 7,
+    "endColumn": 31
+  },
+  {
+    "ruleId": "object-curly-spacing",
+    "message": "There should be no space before '}'.",
+    "line": 7,
+    "column": 39
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 7,
+    "column": 50
+  },
+  {
+    "ruleId": "capitalized-comments",
+    "message": "Comments should not begin with a lowercase character.",
+    "line": 8,
+    "column": 5,
+    "endLine": 8,
+    "endColumn": 46
+  },
+  {
+    "ruleId": "no-process-env",
+    "message": "Unexpected use of process.env.",
+    "line": 9,
+    "column": 26,
+    "endLine": 9,
+    "endColumn": 37
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 9,
+    "column": 51,
+    "endLine": 9,
+    "endColumn": 63
+  },
+  {
+    "ruleId": "capitalized-comments",
+    "message": "Comments should not begin with a lowercase character.",
+    "line": 10,
+    "column": 5,
+    "endLine": 10,
+    "endColumn": 55
+  },
+  {
+    "ruleId": "multiline-comment-style",
+    "message": "Expected a block comment instead of consecutive line comments.",
+    "line": 10,
+    "column": 5,
+    "endLine": 11,
+    "endColumn": 52
+  },
+  {
+    "ruleId": "capitalized-comments",
+    "message": "Comments should not begin with a lowercase character.",
+    "line": 11,
+    "column": 5,
+    "endLine": 11,
+    "endColumn": 52
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 81. Maximum allowed is 80.",
+    "line": 12,
+    "column": 1
+  },
+  {
+    "ruleId": "no-extra-parens",
+    "message": "Unnecessary parentheses around expression.",
+    "line": 12,
+    "column": 26,
+    "endLine": 12,
+    "endColumn": 27
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 12,
+    "column": 81
+  },
+  {
+    "ruleId": "capitalized-comments",
+    "message": "Comments should not begin with a lowercase character.",
+    "line": 13,
+    "column": 9,
+    "endLine": 13,
+    "endColumn": 53
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 15,
+    "column": 5
+  },
+  {
+    "ruleId": "capitalized-comments",
+    "message": "Comments should not begin with a lowercase character.",
+    "line": 16,
+    "column": 5,
+    "endLine": 16,
+    "endColumn": 75
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 17,
+    "column": 16
+  },
+  {
+    "ruleId": "capitalized-comments",
+    "message": "Comments should not begin with a lowercase character.",
+    "line": 19,
+    "column": 9,
+    "endLine": 19,
+    "endColumn": 36
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 21,
+    "column": 5
+  },
+  {
+    "ruleId": "capitalized-comments",
+    "message": "Comments should not begin with a lowercase character.",
+    "line": 22,
+    "column": 5,
+    "endLine": 22,
+    "endColumn": 42
+  },
+  {
+    "ruleId": "quotes",
+    "message": "Strings must use doublequote.",
+    "line": 23,
+    "column": 12,
+    "endLine": 23,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 23,
+    "column": 24,
+    "endLine": 23,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 24,
+    "column": 1
+  },
+  {
+    "ruleId": "no-extra-semi",
+    "message": "Unnecessary semicolon.",
+    "line": 24,
+    "column": 2,
+    "endLine": 24,
+    "endColumn": 3
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "ruleId": "sort-imports",
+    "message": "Expected 'multiple' syntax before 'single' syntax.",
+    "line": 2,
+    "column": 1,
+    "endLine": 2,
+    "endColumn": 67
+  },
+  {
+    "ruleId": "require-unicode-regexp",
+    "message": "Use the 'u' flag.",
+    "line": 11,
+    "column": 22,
+    "endLine": 11,
+    "endColumn": 31
+  },
+  {
+    "ruleId": "no-useless-escape",
+    "message": "Unnecessary escape character: \\/.",
+    "line": 11,
+    "column": 26,
+    "endLine": 11,
+    "endColumn": 27
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 1.",
+    "line": 11,
+    "column": 33,
+    "endLine": 11,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "require-unicode-regexp",
+    "message": "Use the 'u' flag.",
+    "line": 12,
+    "column": 5,
+    "endLine": 12,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "require-unicode-regexp",
+    "message": "Use the 'u' flag.",
+    "line": 24,
+    "column": 27,
+    "endLine": 24,
+    "endColumn": 36
+  },
+  {
+    "ruleId": "no-useless-escape",
+    "message": "Unnecessary escape character: \\/.",
+    "line": 24,
+    "column": 31,
+    "endLine": 24,
+    "endColumn": 32
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 1.",
+    "line": 24,
+    "column": 38,
+    "endLine": 24,
+    "endColumn": 39
+  },
+  {
+    "ruleId": "require-unicode-regexp",
+    "message": "Use the 'u' flag.",
+    "line": 25,
+    "column": 5,
+    "endLine": 25,
+    "endColumn": 9
+  }
+]

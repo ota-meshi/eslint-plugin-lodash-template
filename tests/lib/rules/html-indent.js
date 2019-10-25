@@ -5,7 +5,10 @@ const path = require("path")
 const RuleTester = require("eslint").RuleTester
 const rule = require("../../../lib/rules/html-indent")
 
-const FIXTURE_ROOT = path.resolve(__dirname, "../../fixtures/html-indent/")
+const FIXTURE_ROOT = path.resolve(
+    __dirname,
+    "../../../tests_fixtures/html-indent/"
+)
 
 /**
  * Load test patterns from fixtures.
@@ -101,20 +104,26 @@ tester.run(
     loadPatterns(
         // Valid
         [
-            unIndent`
+            {
+                code: unIndent`
         <div>
           <% print(
             'value'
           ) %>
         </div>
         `,
-            unIndent`
+                filename: "test.html",
+            },
+            {
+                code: unIndent`
         <div>
           <% print(
         'value'
           ) %>
         </div>
         `,
+                filename: "test.html",
+            },
             {
                 code: unIndent`
             <div>
@@ -127,12 +136,16 @@ tester.run(
             `,
                 filename: "pre-test.html",
             },
-            unIndent`
+            {
+                code: unIndent`
         <% for ( var i = 0; i < users.length; i++ ) { %>
           <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
         <% } %>
         `,
-            unIndent`
+                filename: "test.html",
+            },
+            {
+                code: unIndent`
 <ul>
   <% for ( var i = 0; i < users.length; i++ ) { %>
     <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
@@ -146,6 +159,8 @@ tester.run(
   <% } %>
 </ul>
         `,
+                filename: "test.html",
+            },
             {
                 code: `
 <!DOCTYPE html>
@@ -191,12 +206,24 @@ aaaaaaaaa
 `,
                 filename: "ignore-elements.html",
             },
-            unIndent`
+            {
+                code: unIndent`
         <div
           attr="
                               <%= 'data'%>">
         </div>
         `,
+                filename: "test.html",
+            },
+            {
+                code: unIndent`
+                <% if (a) {%>
+                var a;
+                a = <%= 'data'%>">
+                <% } %>
+                `,
+                filename: "test.js",
+            },
         ],
 
         // Invalid

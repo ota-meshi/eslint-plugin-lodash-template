@@ -12,13 +12,17 @@ const tester = new RuleTester({
 
 tester.run("max-attributes-per-line", rule, {
     valid: [
-        "<body><div></div></body>",
-        `<body><div
+        { filename: "test.html", code: "<body><div></div></body>" },
+        {
+            filename: "test.html",
+            code: `<body><div
                     name="John Doe"
                     age="30"
                     job="Vet"
                   ></div></body>`,
+        },
         {
+            filename: "test.html",
             code: `<body><div
                     name="John Doe"
                     age="30"
@@ -26,12 +30,16 @@ tester.run("max-attributes-per-line", rule, {
                   ></div></body>`,
             options: [{ multiline: { allowFirstLine: true } }],
         },
-        `<body><div
+        {
+            filename: "test.html",
+            code: `<body><div
                     name="John Doe"
                     age="30"
                   >
                   </div></body>`,
+        },
         {
+            filename: "test.html",
             code: `<body><div
                     name="John Doe"
                     age="30">
@@ -40,18 +48,21 @@ tester.run("max-attributes-per-line", rule, {
             options: [{ singleline: 1 }],
         },
         {
+            filename: "test.html",
             code: "<body><div></div></body>",
             options: [
                 { singleline: 1, multiline: { max: 1, allowFirstLine: false } },
             ],
         },
         {
+            filename: "test.html",
             code: '<body><div name="John Doe" age="30" job="Vet"></div></body>',
             options: [
                 { singleline: 3, multiline: { max: 1, allowFirstLine: false } },
             ],
         },
         {
+            filename: "test.html",
             code: `<body><div name="John Doe"
                     age="30">
                     </div>
@@ -61,6 +72,7 @@ tester.run("max-attributes-per-line", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `<body><div
                     name="John Doe"
                     age="30">
@@ -71,6 +83,7 @@ tester.run("max-attributes-per-line", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `<body><div
                     name="John Doe" age="30"
                     job="Vet">
@@ -84,12 +97,14 @@ tester.run("max-attributes-per-line", rule, {
 
     invalid: [
         {
+            filename: "test.html",
             code: '<body><div name="John Doe" age="30"></div></body>',
             output: `<body><div name="John Doe" 
 age="30"></div></body>`,
             errors: ['Attribute "age" should be on a new line.'],
         },
         {
+            filename: "test.html",
             code: `<body><div job="Vet"
                       name="John Doe"
                       age="30">
@@ -110,6 +125,7 @@ job="Vet"
             ],
         },
         {
+            filename: "test.html",
             code: '<body><div name="John Doe" age="30" job="Vet"></div></body>',
             output: `<body><div name="John Doe" age="30" 
 job="Vet"></div></body>`,
@@ -123,6 +139,7 @@ job="Vet"></div></body>`,
             ],
         },
         {
+            filename: "test.html",
             code: '<body><div name="John Doe" age="30" job="Vet"></div></body>',
             output: `<body><div name="John Doe" 
 age="30" job="Vet"></div></body>`,
@@ -143,6 +160,7 @@ age="30" job="Vet"></div></body>`,
             ],
         },
         {
+            filename: "test.html",
             code: `<body><div name="John Doe"
                       age="30">
                       </div>
@@ -164,6 +182,7 @@ name="John Doe"
             ],
         },
         {
+            filename: "test.html",
             code: `<body><div
                       name="John Doe" age="30"
                       job="Vet">
@@ -187,6 +206,7 @@ age="30"
             ],
         },
         {
+            filename: "test.html",
             code: `<body><div
                       name="John Doe" age="30"
                       job="Vet">
@@ -208,6 +228,7 @@ age="30"
             ],
         },
         {
+            filename: "test.html",
             code: `<body><div
                       name="John Doe" age="30"
                       job="Vet" pet="dog" petname="Snoopy">
@@ -231,6 +252,7 @@ petname="Snoopy">
             ],
         },
         {
+            filename: "test.html",
             code: `<body><div
                       name="John Doe" age="30"
                       job="Vet" pet="dog" petname="Snoopy" extra="foo">
@@ -259,6 +281,7 @@ petname="Snoopy" extra="foo">
             ],
         },
         {
+            filename: "test.html",
             code: '<body><div name="John Doe" age="30" job="Vet"></div></body>',
             output: `<body><div name="John Doe" 
 age="30" job="Vet"></div></body>`,

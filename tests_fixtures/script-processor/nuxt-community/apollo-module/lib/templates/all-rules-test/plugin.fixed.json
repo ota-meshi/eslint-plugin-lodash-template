@@ -1,0 +1,264 @@
+[
+  {
+    "ruleId": "sort-imports",
+    "message": "Expected 'none' syntax before 'single' syntax.",
+    "line": 3,
+    "column": 1,
+    "endLine": 3,
+    "endColumn": 31
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 91. Maximum allowed is 80.",
+    "line": 4,
+    "column": 1
+  },
+  {
+    "ruleId": "max-lines-per-function",
+    "message": "Arrow function has too many lines (69). Maximum allowed is 50.",
+    "line": 20,
+    "column": 51,
+    "endLine": 88,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "max-statements",
+    "message": "Arrow function has too many statements (46). Maximum allowed is 10.",
+    "line": 20,
+    "column": 51,
+    "endLine": 88,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 97. Maximum allowed is 80.",
+    "line": 21,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 113. Maximum allowed is 80.",
+    "line": 22,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 93. Maximum allowed is 80.",
+    "line": 27,
+    "column": 1
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 27,
+    "column": 71,
+    "endLine": 27,
+    "endColumn": 88
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 2.",
+    "line": 36,
+    "column": 9,
+    "endLine": 36,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 131. Maximum allowed is 80.",
+    "line": 60,
+    "column": 1
+  },
+  {
+    "ruleId": "no-undefined",
+    "message": "Unexpected use of undefined.",
+    "line": 60,
+    "column": 121,
+    "endLine": 60,
+    "endColumn": 130
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 130. Maximum allowed is 80.",
+    "line": 64,
+    "column": 1
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 64,
+    "column": 33,
+    "endLine": 64,
+    "endColumn": 48
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '__NUXT__'.",
+    "line": 64,
+    "column": 33,
+    "endLine": 64,
+    "endColumn": 48
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '__NUXT__'.",
+    "line": 64,
+    "column": 51,
+    "endLine": 64,
+    "endColumn": 66
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 64,
+    "column": 78,
+    "endLine": 64,
+    "endColumn": 95
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 64,
+    "column": 78,
+    "endLine": 64,
+    "endColumn": 119
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 64,
+    "column": 98,
+    "endLine": 64,
+    "endColumn": 113
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 87. Maximum allowed is 80.",
+    "line": 81,
+    "column": 1
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 104,
+    "column": 17,
+    "endLine": 104,
+    "endColumn": 28
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 110. Maximum allowed is 80.",
+    "line": 106,
+    "column": 1
+  },
+  {
+    "ruleId": "global-require",
+    "message": "Unexpected require().",
+    "line": 121,
+    "column": 27,
+    "endLine": 121,
+    "endColumn": 52
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 148. Maximum allowed is 80.",
+    "line": 133,
+    "column": 1
+  },
+  {
+    "ruleId": "max-lines-per-function",
+    "message": "Async arrow function 'onLogin' has too many lines (56). Maximum allowed is 50.",
+    "line": 133,
+    "column": 24,
+    "endLine": 188,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "max-statements",
+    "message": "Async arrow function 'onLogin' has too many statements (13). Maximum allowed is 10.",
+    "line": 133,
+    "column": 24,
+    "endLine": 188,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "max-params",
+    "message": "Async arrow function 'onLogin' has too many parameters (4). Maximum allowed is 3.",
+    "line": 133,
+    "column": 145,
+    "endLine": 133,
+    "endColumn": 147
+  },
+  {
+    "ruleId": "no-param-reassign",
+    "message": "Assignment to function parameter 'cookieAttributes'.",
+    "line": 138,
+    "column": 21,
+    "endLine": 138,
+    "endColumn": 37
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 110. Maximum allowed is 80.",
+    "line": 144,
+    "column": 1
+  },
+  {
+    "ruleId": "no-mixed-operators",
+    "message": "Unexpected mix of '+' and '*'.",
+    "line": 144,
+    "column": 68
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 86400.",
+    "line": 144,
+    "column": 70,
+    "endLine": 144,
+    "endColumn": 75
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 1000.",
+    "line": 144,
+    "column": 78,
+    "endLine": 144,
+    "endColumn": 82
+  },
+  {
+    "ruleId": "no-mixed-operators",
+    "message": "Unexpected mix of '+' and '*'.",
+    "line": 144,
+    "column": 83
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'e' is too short (< 2).",
+    "line": 175,
+    "column": 30,
+    "endLine": 175,
+    "endColumn": 31
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 104. Maximum allowed is 80.",
+    "line": 189,
+    "column": 1
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'e' is too short (< 2).",
+    "line": 206,
+    "column": 30,
+    "endLine": 206,
+    "endColumn": 31
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'getToken' should be before 'onLogout'.",
+    "line": 220,
+    "column": 13,
+    "endLine": 220,
+    "endColumn": 23
+  }
+]

@@ -12,16 +12,22 @@ const tester = new RuleTester({
 
 tester.run("element-name-casing", rule, {
     valid: [
-        "<body><div/></body>",
-        "<body><img></body>",
-        "<body><svg><path/></svg></body>",
-        "<body><math><mspace/></math></body>",
-        "<body><div><slot></slot></div></body>",
-
-        "<body><xxx-element></xxx-element></body>",
+        { filename: "test.html", code: "<body><div/></body>" },
+        { filename: "test.html", code: "<body><img></body>" },
+        { filename: "test.html", code: "<body><svg><path/></svg></body>" },
+        { filename: "test.html", code: "<body><math><mspace/></math></body>" },
+        {
+            filename: "test.html",
+            code: "<body><div><slot></slot></div></body>",
+        },
+        {
+            filename: "test.html",
+            code: "<body><xxx-element></xxx-element></body>",
+        },
     ],
     invalid: [
         {
+            filename: "test.html",
             code: `
 <body>
   <XXX-ELEMENT id="id">
@@ -42,6 +48,7 @@ tester.run("element-name-casing", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
 <body>
   <XXX-ELEMENT id="id"/>
@@ -55,6 +62,7 @@ tester.run("element-name-casing", rule, {
             errors: ["Element name `<XXX-ELEMENT>` must be 'kebab-case'."],
         },
         {
+            filename: "test.html",
             code: `
 <body>
   <XXX-ELEMENT
@@ -70,6 +78,7 @@ tester.run("element-name-casing", rule, {
             errors: ["Element name `<XXX-ELEMENT>` must be 'kebab-case'."],
         },
         {
+            filename: "test.html",
             code: `
 <body>
   <XXX-ELEMENT/>
@@ -83,6 +92,7 @@ tester.run("element-name-casing", rule, {
             errors: ["Element name `<XXX-ELEMENT>` must be 'kebab-case'."],
         },
         {
+            filename: "test.html",
             code: `
 <body>
   <XXX-ELEMENT></XXX-ELEMENT>
@@ -100,6 +110,7 @@ tester.run("element-name-casing", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
 <body>
   <xxxElement/>
@@ -109,6 +120,7 @@ tester.run("element-name-casing", rule, {
             errors: ["Element name `<xxxElement>` must be 'kebab-case'."],
         },
         {
+            filename: "test.html",
             code: `
 <body>
   <XxxElement/>
@@ -118,6 +130,7 @@ tester.run("element-name-casing", rule, {
             errors: ["Element name `<XxxElement>` must be 'kebab-case'."],
         },
         {
+            filename: "test.html",
             code: `
 <body>
   <XXX-ELEMENT></XXX-ELEMENT  >
@@ -134,6 +147,7 @@ tester.run("element-name-casing", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
 <body>
   <XXX-ELEMENT></XXX-ELEMENT
@@ -152,6 +166,7 @@ tester.run("element-name-casing", rule, {
             ],
         },
         {
+            filename: "test.html",
             code: `
 <body>
   <XXX-ELEMENT></XXX-ELEMENT end-tag-attr="attr"

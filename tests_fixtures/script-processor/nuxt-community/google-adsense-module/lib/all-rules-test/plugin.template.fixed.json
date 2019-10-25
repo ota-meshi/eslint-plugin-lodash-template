@@ -1,0 +1,392 @@
+[
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'h' is too short (< 2).",
+    "line": 5,
+    "column": 13,
+    "endLine": 5,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'attrs' should be before 'style'.",
+    "line": 12,
+    "column": 17,
+    "endLine": 12,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'data-ad-format' should be before 'data-ad-slot'.",
+    "line": 15,
+    "column": 21,
+    "endLine": 15,
+    "endColumn": 37
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 16,
+    "column": 39,
+    "endLine": 16,
+    "endColumn": 48
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 16,
+    "column": 39,
+    "endLine": 16,
+    "endColumn": 73
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 16,
+    "column": 51,
+    "endLine": 16,
+    "endColumn": 66
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'data-ad-layout' should be before 'data-ad-region'.",
+    "line": 17,
+    "column": 21,
+    "endLine": 17,
+    "endColumn": 37
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 19,
+    "column": 38,
+    "endLine": 19,
+    "endColumn": 50
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 19,
+    "column": 38,
+    "endLine": 19,
+    "endColumn": 72
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 19,
+    "column": 53,
+    "endLine": 19,
+    "endColumn": 65
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 93. Maximum allowed is 80.",
+    "line": 20,
+    "column": 1
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'data-analytics-uacct' should be before 'data-page-url'.",
+    "line": 20,
+    "column": 21,
+    "endLine": 20,
+    "endColumn": 43
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 20,
+    "column": 45,
+    "endLine": 20,
+    "endColumn": 64
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 20,
+    "column": 45,
+    "endLine": 20,
+    "endColumn": 93
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 20,
+    "column": 67,
+    "endLine": 20,
+    "endColumn": 86
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 109. Maximum allowed is 80.",
+    "line": 21,
+    "column": 1
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'data-analytics-domain-name' should be before 'data-analytics-uacct'.",
+    "line": 21,
+    "column": 21,
+    "endLine": 21,
+    "endColumn": 49
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 21,
+    "column": 51,
+    "endLine": 21,
+    "endColumn": 75
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 21,
+    "column": 51,
+    "endLine": 21,
+    "endColumn": 109
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 21,
+    "column": 78,
+    "endLine": 21,
+    "endColumn": 102
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'data-adtest' should be before 'data-analytics-domain-name'.",
+    "line": 22,
+    "column": 21,
+    "endLine": 22,
+    "endColumn": 34
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 22,
+    "column": 40,
+    "endLine": 22,
+    "endColumn": 52
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 22,
+    "column": 40,
+    "endLine": 22,
+    "endColumn": 72
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 22,
+    "column": 55,
+    "endLine": 22,
+    "endColumn": 63
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'data-adsbygoogle-status' should be before 'data-adtest'.",
+    "line": 23,
+    "column": 21,
+    "endLine": 23,
+    "endColumn": 46
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 23,
+    "column": 48,
+    "endLine": 23,
+    "endColumn": 57
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 23,
+    "column": 48,
+    "endLine": 23,
+    "endColumn": 69
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 23,
+    "column": 60,
+    "endLine": 23,
+    "endColumn": 64
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 26,
+    "column": 34,
+    "endLine": 26,
+    "endColumn": 43
+  },
+  {
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 26,
+    "column": 34,
+    "endLine": 26,
+    "endColumn": 54
+  },
+  {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between consequent and alternate of ternary expression.",
+    "line": 26,
+    "column": 46,
+    "endLine": 26,
+    "endColumn": 48
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'props' should be before 'render'.",
+    "line": 33,
+    "column": 5,
+    "endLine": 33,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+    "line": 36,
+    "column": 13,
+    "endLine": 36,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'adFormat' should be before 'adSlot'.",
+    "line": 41,
+    "column": 9,
+    "endLine": 41,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+    "line": 43,
+    "column": 13,
+    "endLine": 43,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+    "line": 53,
+    "column": 13,
+    "endLine": 53,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'analyticsUacct' should be before 'pageUrl'.",
+    "line": 64,
+    "column": 9,
+    "endLine": 64,
+    "endColumn": 23
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+    "line": 66,
+    "column": 13,
+    "endLine": 66,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'analyticsDomainName' should be before 'analyticsUacct'.",
+    "line": 68,
+    "column": 9,
+    "endLine": 68,
+    "endColumn": 28
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+    "line": 70,
+    "column": 13,
+    "endLine": 70,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+    "line": 74,
+    "column": 13,
+    "endLine": 74,
+    "endColumn": 20
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'data' should be before 'props'.",
+    "line": 77,
+    "column": 5,
+    "endLine": 77,
+    "endColumn": 9
+  },
+  {
+    "ruleId": "max-statements",
+    "message": "Method '$route' has too many statements (11). Maximum allowed is 10.",
+    "line": 90,
+    "column": 18,
+    "endLine": 118,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 87. Maximum allowed is 80.",
+    "line": 107,
+    "column": 1
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 134. Maximum allowed is 80.",
+    "line": 108,
+    "column": 1
+  },
+  {
+    "ruleId": "id-length",
+    "message": "Identifier name 'k' is too short (< 2).",
+    "line": 108,
+    "column": 100,
+    "endLine": 108,
+    "endColumn": 101
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'methods' should be before 'watch'.",
+    "line": 120,
+    "column": 5,
+    "endLine": 120,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "sort-keys",
+    "message": "Expected object keys to be in ascending order. 'showAd' should be before 'updateAd'.",
+    "line": 139,
+    "column": 9,
+    "endLine": 139,
+    "endColumn": 15
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 93. Maximum allowed is 80.",
+    "line": 146,
+    "column": 1
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 151,
+    "column": 21,
+    "endLine": 151,
+    "endColumn": 34
+  }
+]

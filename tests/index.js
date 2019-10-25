@@ -7,31 +7,12 @@ const semver = require("semver")
 const eslintVersion = require("eslint/package").version
 const fs = require("fs")
 const plugin = require("..")
+const rule = require("../lib/rules/no-empty-template-tag")
 
 const CLIEngine = eslint.CLIEngine
 
-const ORIGINAL_FIXTURE_DIR = path.join(__dirname, "fixtures")
-const FIXTURE_DIR = path.join(__dirname, "temp")
-const CONFIG_PATH = path.join(ORIGINAL_FIXTURE_DIR, ".eslintrc.js")
-
-/**
- * Remove dir
- * @param {string} dirPath dir path
- * @returns {void}
- */
-function removeDirSync(dirPath) {
-    if (fs.existsSync(dirPath)) {
-        for (const file of fs.readdirSync(dirPath)) {
-            const curPath = `${dirPath}/${file}`
-            if (fs.lstatSync(curPath).isDirectory()) {
-                removeDirSync(curPath)
-            } else {
-                fs.unlinkSync(curPath)
-            }
-        }
-        fs.rmdirSync(dirPath)
-    }
-}
+const FIXTURE_DIR = path.join(__dirname, "../tests_fixtures/index")
+const CONFIG_PATH = path.join(FIXTURE_DIR, ".eslintrc.js")
 
 /**
  * Assert the messages
@@ -59,53 +40,64 @@ describe("index test", () => {
         assert(Object.keys(plugin.processors).length, 1)
         assert.ok(Boolean(plugin.processors[".html"]), "don't have html")
     })
-    it("After adding the target extension, it should be included in the processor extension", () => {
-        plugin.addTargetExtensions(".ejs")
+    it("If it passes through the processor, it must be processed by the parser.", () => {
+        const linter = new eslint.Linter()
+        const config = {
+            parser: "micro-template-eslint-parser",
+            parserOptions: { ecmaVersion: 2015 },
+            rules: {
+                "no-empty-template-tag": "error",
+            },
+        }
+        const options = {
+            preprocess(code) {
+                return plugin.processors.base.preprocess(code, "test.ejs")
+            },
+            postprocess(messages) {
+                return plugin.processors.base.postprocess(messages, "test.ejs")
+            },
+        }
+        linter.defineParser(
+            "micro-template-eslint-parser",
+            require("../lib/parser/micro-template-eslint-parser")
+        )
+        linter.defineRule("no-empty-template-tag", rule)
+        const messagesEjs = linter.verify("'use strict'<%%>", config, {
+            filename: "test.ejs",
+            ...options,
+        })
 
-        assert(Object.keys(plugin.processors).length, 2)
-        assert.ok(Boolean(plugin.processors[".html"]), "don't have html")
-        assert.ok(Boolean(plugin.processors[".ejs"]), "don't have ejs")
-
-        plugin.addTargetExtensions([".ejb"])
-
-        assert(Object.keys(plugin.processors).length, 3)
-        assert.ok(Boolean(plugin.processors[".html"]), "don't have html")
-        assert.ok(Boolean(plugin.processors[".ejs"]), "don't have ejs")
-        assert.ok(Boolean(plugin.processors[".ejb"]), "don't have ejb")
-
-        plugin.setTargetExtensions(".html")
+        assert.strictEqual(messagesEjs[0].ruleId, "no-empty-template-tag")
     })
+    it("If it does not pass through the processor, it will not be processed by the parser.", () => {
+        const linter = new eslint.Linter()
+        const config = {
+            parser: "micro-template-eslint-parser",
+            parserOptions: { ecmaVersion: 2015 },
+            rules: {
+                "no-empty-template-tag": "error",
+            },
+        }
+        linter.defineParser(
+            "micro-template-eslint-parser",
+            require("../lib/parser/micro-template-eslint-parser")
+        )
+        linter.defineRule("no-empty-template-tag", rule)
+        const messagesEjs = linter.verify("'use strict'<%%>", config, {
+            filename: "test.ejs",
+        })
 
-    it("After set the target extension, it should be included in the processor extension", () => {
-        plugin.setTargetExtensions(".ejs")
+        assert.strictEqual(messagesEjs[0].ruleId, null) // parse error
 
-        assert(Object.keys(plugin.processors).length, 1)
-        assert.ok(Boolean(plugin.processors[".ejs"]), "don't have ejs")
+        const messagesEjb = linter.verify("'use strict'<%%>", config, {
+            filename: "test.ejb",
+        })
 
-        plugin.setTargetExtensions([".html"])
-
-        assert(Object.keys(plugin.processors).length, 1)
-        assert.ok(Boolean(plugin.processors[".html"]), "don't have html")
+        assert.strictEqual(messagesEjb[0].ruleId, null) // parse error
     })
 })
 
 describe("Basic tests", () => {
-    beforeEach(() => {
-        removeDirSync(FIXTURE_DIR)
-        fs.mkdirSync(FIXTURE_DIR)
-        for (const fileName of fs.readdirSync(ORIGINAL_FIXTURE_DIR)) {
-            const src = path.join(ORIGINAL_FIXTURE_DIR, fileName)
-            const dst = path.join(FIXTURE_DIR, fileName)
-
-            if (fs.statSync(src).isFile()) {
-                fs.writeFileSync(dst, fs.readFileSync(src))
-            }
-        }
-    })
-    afterEach(() => {
-        removeDirSync(FIXTURE_DIR)
-    })
-
     if (semver.satisfies(eslintVersion, ">=6.2.0")) {
         describe("About fixtures/hello.html", () => {
             it("should notify errors", () => {
@@ -250,18 +242,26 @@ describe("Basic tests", () => {
 
             if (semver.satisfies(eslintVersion, ">=6.2.0")) {
                 it("should fix errors with --fix option", () => {
+                    const baseFilepath = path.join(FIXTURE_DIR, "hello.html")
+                    const testFilepath = path.join(
+                        FIXTURE_DIR,
+                        "hello.html.fixtarget.html"
+                    )
+                    // copy
+                    fs.copyFileSync(baseFilepath, testFilepath)
+
                     const cli = new CLIEngine({
                         cwd: FIXTURE_DIR,
                         fix: true,
                         configFile: CONFIG_PATH,
                         useEslintrc: false,
                     })
-                    CLIEngine.outputFixes(cli.executeOnFiles(["hello.html"]))
-
-                    const actual = fs.readFileSync(
-                        path.join(FIXTURE_DIR, "hello.html"),
-                        "utf8"
+                    CLIEngine.outputFixes(
+                        cli.executeOnFiles(["hello.html.fixtarget.html"])
                     )
+
+                    const actual = fs.readFileSync(testFilepath, "utf8")
+                    fs.unlinkSync(testFilepath)
                     const expected = fs.readFileSync(
                         path.join(FIXTURE_DIR, "hello.html.fixed.html"),
                         "utf8"
@@ -286,8 +286,9 @@ describe("Basic tests", () => {
         })
     })
     describe("About fixtures/no-error", () => {
-        const result = fs.readdirSync(ORIGINAL_FIXTURE_DIR)
-        for (const name of result.filter(s => s.indexOf("no-error-") === 0)) {
+        for (const name of fs
+            .readdirSync(FIXTURE_DIR)
+            .filter(s => s.indexOf("no-error-") === 0)) {
             it(`should no errors /${name}`, () => {
                 const cli = new CLIEngine({
                     cwd: FIXTURE_DIR,

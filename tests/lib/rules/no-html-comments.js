@@ -16,18 +16,21 @@ tester.run("no-html-comments", rule, {
             filename: "test.html",
             code: "",
         },
-        "(function() {})()",
-        "<% inter %>",
+        { filename: "test.html", code: "(function() {})()" },
+        { filename: "test.html", code: "<% inter %>" },
         {
             filename: "test.html",
             code: "<div></div>",
         },
-        `<div>
+        {
+            filename: "test.html",
+            code: `<div>
         <% arr.forEach((a)=>{ %>
             <%= a %>
             <%- a %>
         <% }) %>
         </div>`,
+        },
         {
             filename: "test.html",
             code: "<br>",

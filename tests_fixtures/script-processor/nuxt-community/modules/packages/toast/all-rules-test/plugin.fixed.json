@@ -1,0 +1,10 @@
+[
+  {
+    "ruleId": "sort-imports",
+    "message": "Imports should be sorted alphabetically.",
+    "line": 2,
+    "column": 1,
+    "endLine": 2,
+    "endColumn": 35
+  }
+]
