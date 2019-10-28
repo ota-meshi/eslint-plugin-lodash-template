@@ -1042,6 +1042,14 @@
     "endColumn": 5
   },
   {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 79,
+    "column": 7,
+    "endLine": 79,
+    "endColumn": 8
+  },
+  {
     "ruleId": "object-curly-spacing",
     "message": "There should be no space after '{'.",
     "line": 79,

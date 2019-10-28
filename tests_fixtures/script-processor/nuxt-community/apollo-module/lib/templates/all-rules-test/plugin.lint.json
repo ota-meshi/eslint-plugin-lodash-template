@@ -299,7 +299,9 @@
     "ruleId": "no-multi-spaces",
     "message": "Multiple spaces found before '||'.",
     "line": 20,
-    "column": 82
+    "column": 80,
+    "endLine": 20,
+    "endColumn": 82
   },
   {
     "ruleId": "semi",
@@ -325,7 +327,9 @@
     "ruleId": "no-multi-spaces",
     "message": "Multiple spaces found before '||'.",
     "line": 21,
-    "column": 96
+    "column": 94,
+    "endLine": 21,
+    "endColumn": 96
   },
   {
     "ruleId": "semi",
@@ -1427,7 +1431,9 @@
     "ruleId": "no-mixed-operators",
     "message": "Unexpected mix of '+' and '*'.",
     "line": 105,
-    "column": 55
+    "column": 55,
+    "endLine": 105,
+    "endColumn": 56
   },
   {
     "ruleId": "space-infix-ops",
@@ -1461,7 +1467,9 @@
     "ruleId": "no-mixed-operators",
     "message": "Unexpected mix of '+' and '*'.",
     "line": 105,
-    "column": 67
+    "column": 67,
+    "endLine": 105,
+    "endColumn": 68
   },
   {
     "ruleId": "space-infix-ops",

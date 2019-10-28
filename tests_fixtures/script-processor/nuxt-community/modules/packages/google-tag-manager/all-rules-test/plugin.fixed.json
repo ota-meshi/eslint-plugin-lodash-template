@@ -14,51 +14,61 @@
     "endColumn": 48
   },
   {
+    "ruleId": "max-len",
+    "message": "This line has a length of 84. Maximum allowed is 80.",
+    "line": 36,
+    "column": 1
+  },
+  {
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 0.",
-    "line": 40,
-    "column": 16,
-    "endLine": 40,
-    "endColumn": 17
+    "line": 42,
+    "column": 17,
+    "endLine": 42,
+    "endColumn": 18
   },
   {
     "ruleId": "no-prototype-builtins",
     "message": "Do not access Object.prototype method 'hasOwnProperty' from target object.",
-    "line": 60,
+    "line": 63,
     "column": 22
   },
   {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
-    "line": 69,
+    "line": 72,
     "column": 13,
-    "endLine": 69,
+    "endLine": 72,
     "endColumn": 26
   },
   {
     "ruleId": "class-methods-use-this",
     "message": "Expected 'this' to be used by class method 'hasDNT'.",
-    "line": 78,
+    "line": 81,
     "column": 12,
-    "endLine": 86,
+    "endLine": 89,
     "endColumn": 6
   },
   {
     "ruleId": "no-mixed-operators",
     "message": "Unexpected mix of '||' and '&&'.",
-    "line": 83,
-    "column": 38
+    "line": 86,
+    "column": 38,
+    "endLine": 86,
+    "endColumn": 40
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 118. Maximum allowed is 80.",
-    "line": 84,
+    "line": 87,
     "column": 1
   },
   {
     "ruleId": "no-mixed-operators",
     "message": "Unexpected mix of '||' and '&&'.",
-    "line": 84,
-    "column": 70
+    "line": 87,
+    "column": 70,
+    "endLine": 87,
+    "endColumn": 72
   }
 ]
