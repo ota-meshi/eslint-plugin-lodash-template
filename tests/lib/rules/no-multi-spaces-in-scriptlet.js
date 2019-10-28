@@ -205,6 +205,8 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
                 {
                     message: "Multiple spaces found before `/* comment */`.",
                     type: "Block",
+                    column: 11,
+                    endColumn: 13,
                 },
             ],
         },
@@ -216,6 +218,8 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
                 {
                     message: "Multiple spaces found before `5`.",
                     type: "Numeric",
+                    column: 25,
+                    endColumn: 27,
                 },
             ],
         },
@@ -227,6 +231,8 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
                 {
                     message: "Multiple spaces found before `// comment   `.",
                     type: "Line",
+                    column: 14,
+                    endColumn: 16,
                 },
             ],
         },
@@ -238,6 +244,8 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
                 {
                     message: "Multiple spaces found before `// comment`.",
                     type: "Line",
+                    column: 14,
+                    endColumn: 16,
                 },
             ],
         },
@@ -250,6 +258,8 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
                     message:
                         "Multiple spaces found before `/* multiline...*/`.",
                     type: "Block",
+                    column: 14,
+                    endColumn: 16,
                 },
             ],
         },
@@ -263,6 +273,8 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
                     message:
                         "Multiple spaces found before `/* multiline...*/`.",
                     type: "Block",
+                    column: 14,
+                    endColumn: 16,
                 },
             ],
         },
@@ -275,6 +287,8 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
                     message:
                         "Multiple spaces found before `// this is a l...`.",
                     type: "Line",
+                    column: 14,
+                    endColumn: 16,
                 },
             ],
         },
@@ -286,6 +300,8 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
                 {
                     message: "Multiple spaces found before `/* comment */`.",
                     type: "Block",
+                    column: 11,
+                    endColumn: 13,
                 },
             ],
         },
@@ -298,6 +314,8 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
                 {
                     message: "Multiple spaces found before `/* comment */`.",
                     type: "Block",
+                    column: 11,
+                    endColumn: 13,
                 },
             ],
         },
@@ -309,6 +327,8 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
                 {
                     message: "Multiple spaces found before `5`.",
                     type: "Numeric",
+                    column: 25,
+                    endColumn: 27,
                 },
             ],
         },
@@ -322,6 +342,8 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
                 {
                     message: "Multiple spaces found before `5`.",
                     type: "Numeric",
+                    column: 25,
+                    endColumn: 27,
                 },
             ],
         },
@@ -334,6 +356,8 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
                     message:
                         "Multiple spaces found before `/*comment with...*/`.",
                     type: "Block",
+                    column: 11,
+                    endColumn: 13,
                 },
             ],
         },
@@ -346,6 +370,8 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
                     message:
                         "Multiple spaces found before `//comment with...`.",
                     type: "Line",
+                    column: 14,
+                    endColumn: 16,
                 },
             ],
         },
@@ -358,6 +384,8 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
                     message:
                         "Multiple spaces found before `/*comment with...*/`.",
                     type: "Block",
+                    column: 14,
+                    endColumn: 16,
                 },
             ],
         },
@@ -369,6 +397,8 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
                 {
                     message: "Multiple spaces found before `/*comment...*/`.",
                     type: "Block",
+                    column: 14,
+                    endColumn: 16,
                 },
             ],
         },
@@ -381,6 +411,8 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
                 {
                     message: "Multiple spaces found before `b`.",
                     type: "Identifier",
+                    column: 9,
+                    endColumn: 12,
                 },
             ],
         },

@@ -12,6 +12,7 @@
     "test": "npm run test:nyc",
     "test:nyc": "nyc --reporter=lcov npm run test:base",
     "test:d": "mocha --inspect --debug-brk \"tests/**/*.js\" --reporter dot",
+    "test:rules": "mocha \"tests/lib/rules/**/*.js\" --reporter dot --timeout 60000",
     "watch": "npm run test:base -- --watch",
     "update": "node ./tools/update.js && npm run lint:fix && npm run test",
     "updateonly": "node ./tools/update.js && npm run lint:fix",

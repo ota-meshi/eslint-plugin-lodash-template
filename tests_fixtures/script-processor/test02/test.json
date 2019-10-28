@@ -19,6 +19,8 @@
     "ruleId": "lodash-template/no-multi-spaces-in-scriptlet",
     "message": "Multiple spaces found before `)`.",
     "line": 5,
-    "column": 45
+    "column": 40,
+    "endLine": 5,
+    "endColumn": 45
   }
 ]
