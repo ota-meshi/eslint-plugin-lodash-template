@@ -202,7 +202,7 @@ describe("script test", () => {
                         "../all-rules-test"
                     )
                     if (
-                        semver.satisfies(eslintVersion, ">=6.4.0") &&
+                        semver.satisfies(eslintVersion, ">=6.6.0") &&
                         testUtils.existsPath(allConfigTestDirPath)
                     ) {
                         const basename = path.basename(name)

@@ -402,6 +402,14 @@
     "column": 7
   },
   {
+    "ruleId": "function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 25,
+    "column": 9,
+    "endLine": 25,
+    "endColumn": 10
+  },
+  {
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 0.",
     "line": 25,

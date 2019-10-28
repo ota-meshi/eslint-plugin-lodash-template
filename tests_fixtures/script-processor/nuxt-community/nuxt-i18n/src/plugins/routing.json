@@ -47,7 +47,9 @@
     "ruleId": "no-multi-spaces",
     "message": "Multiple spaces found before '='.",
     "line": 107,
-    "column": 22
+    "column": 20,
+    "endLine": 107,
+    "endColumn": 22
   },
   {
     "ruleId": "operator-linebreak",

@@ -103,7 +103,8 @@ export default async (context) => {
                     "localeRouteParams": ({routeParams}) => (locale) => routeParams[locale] || {}
                 <% } %>
                 }
-            }, {"preserveState": Boolean(store.state[vuex.moduleName])}
+            },
+            {"preserveState": Boolean(store.state[vuex.moduleName])}
         );
 
     }

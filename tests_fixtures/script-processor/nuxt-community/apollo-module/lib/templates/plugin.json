@@ -11,7 +11,9 @@
     "ruleId": "no-multi-spaces",
     "message": "Multiple spaces found before '||'.",
     "line": 20,
-    "column": 82
+    "column": 80,
+    "endLine": 20,
+    "endColumn": 82
   },
   {
     "ruleId": "indent",
@@ -25,7 +27,9 @@
     "ruleId": "no-multi-spaces",
     "message": "Multiple spaces found before '||'.",
     "line": 21,
-    "column": 96
+    "column": 94,
+    "endLine": 21,
+    "endColumn": 96
   },
   {
     "ruleId": "indent",

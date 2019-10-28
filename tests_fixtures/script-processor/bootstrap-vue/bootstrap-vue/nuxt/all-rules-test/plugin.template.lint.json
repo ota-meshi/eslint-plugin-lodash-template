@@ -253,7 +253,9 @@
     "ruleId": "space-in-parens",
     "message": "There should be no space before this paren.",
     "line": 24,
-    "column": 86
+    "column": 85,
+    "endLine": 24,
+    "endColumn": 86
   },
   {
     "ruleId": "function-call-argument-newline",
@@ -295,7 +297,9 @@
     "ruleId": "space-in-parens",
     "message": "There should be no space before this paren.",
     "line": 25,
-    "column": 86
+    "column": 85,
+    "endLine": 25,
+    "endColumn": 86
   },
   {
     "ruleId": "function-call-argument-newline",
@@ -345,7 +349,9 @@
     "ruleId": "space-in-parens",
     "message": "There should be no space before this paren.",
     "line": 26,
-    "column": 84
+    "column": 83,
+    "endLine": 26,
+    "endColumn": 84
   },
   {
     "ruleId": "function-call-argument-newline",
@@ -411,7 +417,9 @@
     "ruleId": "space-in-parens",
     "message": "There should be no space before this paren.",
     "line": 27,
-    "column": 104
+    "column": 103,
+    "endLine": 27,
+    "endColumn": 104
   },
   {
     "ruleId": "function-call-argument-newline",
