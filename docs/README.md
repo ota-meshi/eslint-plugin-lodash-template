@@ -82,7 +82,7 @@ This plugin does special handling for the following rule warnings in the templat
 
 ## Configs
 
-This plugin provides four predefined configs:
+This plugin provides 6 predefined configs:
 
 - `plugin:lodash-template/base` - Settings and rules to enable correct ESLint parsing
 - `plugin:lodash-template/best-practices` - Above, plus rules to improve dev experience
