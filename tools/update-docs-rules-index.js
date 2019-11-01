@@ -1,7 +1,3 @@
-/**
- * @author Toru Nagashima
- * See LICENSE file in root directory for full license.
- */
 "use strict"
 
 const fs = require("fs")
@@ -76,7 +72,7 @@ For example:
 \`\`\`json
 {
   "rules": {
-    "${uncategorizedRules[0].ruleId}": "error"
+    "${uncategorizedRules[0].meta.docs.ruleId}": "error"
   }
 }
 \`\`\`
