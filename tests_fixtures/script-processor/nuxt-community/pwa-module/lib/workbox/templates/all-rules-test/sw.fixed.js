@@ -103,7 +103,7 @@ workbox.routing.registerRoute(
             catch(() => caches.match('<%= options.offlinePage %>'));
 
     }
-);<% } %>
+)<% } %>
 
 <% if (options.routingExtensions) { %>
 // -- Start of routingExtensions --

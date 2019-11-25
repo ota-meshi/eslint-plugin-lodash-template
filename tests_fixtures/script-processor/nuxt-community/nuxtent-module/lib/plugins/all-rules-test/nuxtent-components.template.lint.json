@@ -11,7 +11,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 2,
-    "column": 22
+    "column": 22,
+    "endLine": 3,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -41,7 +43,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 6,
-    "column": 17
+    "column": 17,
+    "endLine": 7,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -92,6 +96,14 @@
     "endColumn": 5
   },
   {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 12,
+    "column": 4,
+    "endLine": 12,
+    "endColumn": 5
+  },
+  {
     "ruleId": "block-spacing",
     "message": "Requires a space before '}'.",
     "line": 12,
@@ -101,19 +113,17 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 12,
-    "column": 4
-  },
-  {
-    "ruleId": "semi",
-    "message": "Missing semicolon.",
-    "line": 12,
-    "column": 6
+    "column": 6,
+    "endLine": 13,
+    "endColumn": 1
   },
   {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 14,
-    "column": 2
+    "column": 2,
+    "endLine": 15,
+    "endColumn": 1
   },
   {
     "ruleId": "quotes",
@@ -203,7 +213,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 20,
-    "column": 33
+    "column": 33,
+    "endLine": 21,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -225,7 +237,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 21,
-    "column": 25
+    "column": 25,
+    "endLine": 22,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -319,7 +333,9 @@
     "ruleId": "comma-dangle",
     "message": "Unexpected trailing comma.",
     "line": 28,
-    "column": 19
+    "column": 19,
+    "endLine": 28,
+    "endColumn": 20
   },
   {
     "ruleId": "indent",
@@ -333,7 +349,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 29,
-    "column": 6
+    "column": 6,
+    "endLine": 30,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -383,7 +401,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 32,
-    "column": 61
+    "column": 61,
+    "endLine": 33,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -397,7 +417,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 33,
-    "column": 46
+    "column": 46,
+    "endLine": 34,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -419,7 +441,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 34,
-    "column": 60
+    "column": 60,
+    "endLine": 35,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -447,7 +471,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 36,
-    "column": 59
+    "column": 59,
+    "endLine": 37,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -469,7 +495,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 37,
-    "column": 44
+    "column": 44,
+    "endLine": 38,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -511,7 +539,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 39,
-    "column": 43
+    "column": 43,
+    "endLine": 40,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -533,7 +563,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 40,
-    "column": 44
+    "column": 44,
+    "endLine": 41,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -655,7 +687,9 @@
     "ruleId": "comma-dangle",
     "message": "Unexpected trailing comma.",
     "line": 46,
-    "column": 21
+    "column": 21,
+    "endLine": 46,
+    "endColumn": 22
   },
   {
     "ruleId": "indent",

@@ -49,7 +49,15 @@ function stringifyMessages(messages) {
     return JSON.stringify(
         messages,
         (key, value) => {
-            if (["severity", "nodeType", "messageId", "fix"].includes(key)) {
+            if (
+                [
+                    "severity",
+                    "nodeType",
+                    "messageId",
+                    "fix",
+                    "suggestions",
+                ].includes(key)
+            ) {
                 return undefined
             }
             return value
@@ -70,13 +78,8 @@ describe("script test", () => {
                     path.join(FIXTURE_DIR, relPath),
                     "utf8"
                 )
-                if (testUtils.existsPath(`${filepath}.target.json`)) {
-                    const tarrgetVar = JSON.parse(
-                        fs.readFileSync(`${filepath}.target.json`, "utf8")
-                    )
-                    if (!semver.satisfies(eslintVersion, tarrgetVar)) {
-                        return
-                    }
+                if (!isTargetFromJson(filepath)) {
+                    return
                 }
 
                 // write for sample
@@ -202,7 +205,7 @@ describe("script test", () => {
                         "../all-rules-test"
                     )
                     if (
-                        semver.satisfies(eslintVersion, ">=6.6.0") &&
+                        semver.satisfies(eslintVersion, ">=6.7.0") &&
                         testUtils.existsPath(allConfigTestDirPath)
                     ) {
                         const basename = path.basename(name)
@@ -314,3 +317,16 @@ describe("script test", () => {
         }
     })
 })
+
+// eslint-disable-next-line require-jsdoc
+function isTargetFromJson(dirPath) {
+    if (testUtils.existsPath(`${dirPath}.target.json`)) {
+        const tarrgetVar = JSON.parse(
+            fs.readFileSync(`${dirPath}.target.json`, "utf8")
+        )
+        if (!semver.satisfies(eslintVersion, tarrgetVar)) {
+            return false
+        }
+    }
+    return true
+}

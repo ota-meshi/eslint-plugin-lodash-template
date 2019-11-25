@@ -19,19 +19,25 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 4,
-    "column": 50
+    "column": 50,
+    "endLine": 5,
+    "endColumn": 1
   },
   {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 5,
-    "column": 55
+    "column": 55,
+    "endLine": 6,
+    "endColumn": 1
   },
   {
     "ruleId": "object-curly-spacing",
     "message": "There should be no space after '{'.",
     "line": 7,
-    "column": 26
+    "column": 27,
+    "endLine": 7,
+    "endColumn": 28
   },
   {
     "ruleId": "no-unused-vars",
@@ -45,7 +51,9 @@
     "ruleId": "object-curly-spacing",
     "message": "There should be no space before '}'.",
     "line": 7,
-    "column": 39
+    "column": 38,
+    "endLine": 7,
+    "endColumn": 39
   },
   {
     "ruleId": "padded-blocks",

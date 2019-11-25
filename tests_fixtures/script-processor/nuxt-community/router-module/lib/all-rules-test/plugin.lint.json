@@ -9,19 +9,25 @@
     "ruleId": "object-curly-spacing",
     "message": "There should be no space after '{'.",
     "line": 1,
-    "column": 8
+    "column": 9,
+    "endLine": 1,
+    "endColumn": 10
   },
   {
     "ruleId": "object-curly-spacing",
     "message": "There should be no space before '}'.",
     "line": 1,
-    "column": 45
+    "column": 44,
+    "endLine": 1,
+    "endColumn": 45
   },
   {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 1,
-    "column": 83
+    "column": 83,
+    "endLine": 2,
+    "endColumn": 1
   },
   {
     "ruleId": "sort-imports",
@@ -41,13 +47,17 @@
     "ruleId": "object-curly-spacing",
     "message": "There should be no space after '{'.",
     "line": 4,
-    "column": 8
+    "column": 9,
+    "endLine": 4,
+    "endColumn": 10
   },
   {
     "ruleId": "object-curly-spacing",
     "message": "There should be no space before '}'.",
     "line": 4,
-    "column": 61
+    "column": 60,
+    "endLine": 4,
+    "endColumn": 61
   },
   {
     "ruleId": "quotes",
@@ -61,19 +71,25 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 4,
-    "column": 85
+    "column": 85,
+    "endLine": 5,
+    "endColumn": 1
   },
   {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 6,
-    "column": 33
+    "column": 33,
+    "endLine": 7,
+    "endColumn": 1
   },
   {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 7,
-    "column": 27
+    "column": 27,
+    "endLine": 8,
+    "endColumn": 1
   },
   {
     "ruleId": "func-style",
@@ -123,7 +139,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 11,
-    "column": 76
+    "column": 76,
+    "endLine": 12,
+    "endColumn": 1
   },
   {
     "ruleId": "padded-blocks",

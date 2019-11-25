@@ -11,7 +11,9 @@
     "ruleId": "object-curly-spacing",
     "message": "There should be no space after '{'.",
     "line": 2,
-    "column": 8
+    "column": 9,
+    "endLine": 2,
+    "endColumn": 10
   },
   {
     "ruleId": "sort-imports",
@@ -25,7 +27,9 @@
     "ruleId": "object-curly-spacing",
     "message": "There should be no space before '}'.",
     "line": 2,
-    "column": 26
+    "column": 25,
+    "endLine": 2,
+    "endColumn": 26
   },
   {
     "ruleId": "quotes",
@@ -39,13 +43,17 @@
     "ruleId": "object-curly-spacing",
     "message": "There should be no space after '{'.",
     "line": 3,
-    "column": 8
+    "column": 9,
+    "endLine": 3,
+    "endColumn": 10
   },
   {
     "ruleId": "object-curly-spacing",
     "message": "There should be no space before '}'.",
     "line": 3,
-    "column": 26
+    "column": 25,
+    "endLine": 3,
+    "endColumn": 26
   },
   {
     "ruleId": "quotes",
@@ -97,7 +105,9 @@
     "ruleId": "object-curly-spacing",
     "message": "There should be no space after '{'.",
     "line": 8,
-    "column": 14
+    "column": 15,
+    "endLine": 8,
+    "endColumn": 16
   },
   {
     "ruleId": "lodash-template/template-tag-spacing",
@@ -119,7 +129,9 @@
     "ruleId": "object-curly-spacing",
     "message": "There should be no space before '}'.",
     "line": 8,
-    "column": 26
+    "column": 25,
+    "endLine": 8,
+    "endColumn": 26
   },
   {
     "ruleId": "lodash-template/template-tag-spacing",

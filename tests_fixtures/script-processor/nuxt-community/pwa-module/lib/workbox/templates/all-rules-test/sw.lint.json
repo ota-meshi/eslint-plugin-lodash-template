@@ -33,7 +33,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 1,
-    "column": 101
+    "column": 101,
+    "endLine": 2,
+    "endColumn": 1
   },
   {
     "ruleId": "multiline-comment-style",
@@ -87,7 +89,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 9,
-    "column": 66
+    "column": 66,
+    "endLine": 10,
+    "endColumn": 1
   },
   {
     "ruleId": "lodash-template/template-tag-spacing",
@@ -139,7 +143,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 14,
-    "column": 85
+    "column": 85,
+    "endLine": 15,
+    "endColumn": 1
   },
   {
     "ruleId": "no-undef",
@@ -153,7 +159,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 19,
-    "column": 28
+    "column": 28,
+    "endLine": 20,
+    "endColumn": 1
   },
   {
     "ruleId": "no-undef",
@@ -167,7 +175,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 24,
-    "column": 27
+    "column": 27,
+    "endLine": 25,
+    "endColumn": 1
   },
   {
     "ruleId": "no-undef",
@@ -181,7 +191,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 28,
-    "column": 43
+    "column": 43,
+    "endLine": 29,
+    "endColumn": 1
   },
   {
     "ruleId": "no-undef",
@@ -195,7 +207,17 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 33,
-    "column": 37
+    "column": 37,
+    "endLine": 34,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 38,
+    "column": 33,
+    "endLine": 38,
+    "endColumn": 34
   },
   {
     "ruleId": "line-comment-position",
@@ -212,12 +234,6 @@
     "column": 33,
     "endLine": 38,
     "endColumn": 66
-  },
-  {
-    "ruleId": "semi",
-    "message": "Missing semicolon.",
-    "line": 38,
-    "column": 33
   },
   {
     "ruleId": "multiline-comment-style",
@@ -301,7 +317,17 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 47,
-    "column": 142
+    "column": 142,
+    "endLine": 48,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 52,
+    "column": 33,
+    "endLine": 52,
+    "endColumn": 34
   },
   {
     "ruleId": "line-comment-position",
@@ -318,12 +344,6 @@
     "column": 33,
     "endLine": 52,
     "endColumn": 66
-  },
-  {
-    "ruleId": "semi",
-    "message": "Missing semicolon.",
-    "line": 52,
-    "column": 33
   },
   {
     "ruleId": "multiline-comment-style",
@@ -405,7 +425,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 60,
-    "column": 217
+    "column": 217,
+    "endLine": 61,
+    "endColumn": 1
   },
   {
     "ruleId": "no-undef",
@@ -469,13 +491,17 @@
     "ruleId": "dot-location",
     "message": "Expected dot to be on same line as object.",
     "line": 67,
-    "column": 5
+    "column": 5,
+    "endLine": 67,
+    "endColumn": 6
   },
   {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 67,
-    "column": 61
+    "column": 61,
+    "endLine": 68,
+    "endColumn": 1
   },
   {
     "ruleId": "padded-blocks",
@@ -486,8 +512,10 @@
   {
     "ruleId": "semi",
     "message": "Missing semicolon.",
-    "line": 68,
-    "column": 3
+    "line": 72,
+    "column": 33,
+    "endLine": 72,
+    "endColumn": 34
   },
   {
     "ruleId": "line-comment-position",
@@ -504,11 +532,5 @@
     "column": 33,
     "endLine": 72,
     "endColumn": 66
-  },
-  {
-    "ruleId": "semi",
-    "message": "Missing semicolon.",
-    "line": 72,
-    "column": 33
   }
 ]

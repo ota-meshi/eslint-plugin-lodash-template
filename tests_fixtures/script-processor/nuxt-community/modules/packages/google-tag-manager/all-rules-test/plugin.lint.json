@@ -37,7 +37,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 5,
-    "column": 19
+    "column": 19,
+    "endLine": 6,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -51,7 +53,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 6,
-    "column": 27
+    "column": 27,
+    "endLine": 7,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -107,7 +111,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 9,
-    "column": 66
+    "column": 66,
+    "endLine": 10,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -169,7 +175,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 14,
-    "column": 7
+    "column": 7,
+    "endLine": 15,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -203,7 +211,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 17,
-    "column": 30
+    "column": 30,
+    "endLine": 18,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -307,7 +317,9 @@
     "ruleId": "object-curly-spacing",
     "message": "There should be no space after '{'.",
     "line": 24,
-    "column": 51
+    "column": 52,
+    "endLine": 24,
+    "endColumn": 53
   },
   {
     "ruleId": "quote-props",
@@ -379,13 +391,17 @@
     "ruleId": "object-curly-spacing",
     "message": "There should be no space before '}'.",
     "line": 24,
-    "column": 136
+    "column": 135,
+    "endLine": 24,
+    "endColumn": 136
   },
   {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 24,
-    "column": 138
+    "column": 138,
+    "endLine": 25,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -421,7 +437,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 25,
-    "column": 12
+    "column": 12,
+    "endLine": 26,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -441,7 +459,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 26,
-    "column": 7
+    "column": 7,
+    "endLine": 27,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -525,7 +545,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 32,
-    "column": 49
+    "column": 49,
+    "endLine": 33,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -583,7 +605,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 35,
-    "column": 53
+    "column": 53,
+    "endLine": 36,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -647,7 +671,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 38,
-    "column": 50
+    "column": 50,
+    "endLine": 39,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -675,7 +701,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 40,
-    "column": 43
+    "column": 43,
+    "endLine": 41,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -733,7 +761,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 42,
-    "column": 42
+    "column": 42,
+    "endLine": 43,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -849,7 +879,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 51,
-    "column": 120
+    "column": 120,
+    "endLine": 52,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -895,7 +927,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 56,
-    "column": 49
+    "column": 49,
+    "endLine": 57,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -925,7 +959,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 59,
-    "column": 37
+    "column": 37,
+    "endLine": 60,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -955,7 +991,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 60,
-    "column": 22
+    "column": 22,
+    "endLine": 61,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -969,7 +1007,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 62,
-    "column": 14
+    "column": 14,
+    "endLine": 63,
+    "endColumn": 1
   },
   {
     "ruleId": "padded-blocks",
