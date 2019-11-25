@@ -38,7 +38,7 @@ module.exports = {
     base: "/eslint-plugin-lodash-template/",
     title: "eslint-plugin-lodash-template",
     description:
-        "ESLint plugin for John Resig-style micro template / Lo-Dash template / Underscore template.",
+        "ESLint plugin for John Resig-style micro template / Lodash's template / Underscore's template.",
     serviceWorker: true,
     evergreen: true,
     configureWebpack(_config, _isServer) {
