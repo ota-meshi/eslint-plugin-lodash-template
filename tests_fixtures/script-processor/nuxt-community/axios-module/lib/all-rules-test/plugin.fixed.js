@@ -1,5 +1,5 @@
 import Axios from "axios";
-<% if (options.retry) { %>import axiosRetry from "axios-retry";<% } %>
+<% if (options.retry) { %>import axiosRetry from "axios-retry"<% } %>
 
 // Axios.prototype cannot be modified
 const axiosExtra = {
@@ -151,7 +151,7 @@ const setupDebugInterceptor = (axios) => {
 
     });
 
-};<% } %>
+}<% } %>
 
 <% if (options.credentials) { %>
 const setupCredentialsInterceptor = (axios) => {
@@ -171,7 +171,7 @@ const setupCredentialsInterceptor = (axios) => {
 
     });
 
-};<% } %>
+}<% } %>
 
 <% if (options.progress) { %>
 const setupProgress = (axios, ctx) => {
@@ -256,7 +256,7 @@ const setupProgress = (axios, ctx) => {
     axios.defaults.onUploadProgress = onProgress;
     axios.defaults.onDownloadProgress = onProgress;
 
-};<% } %>
+}<% } %>
 
 export default (ctx, inject) => {
 
@@ -310,7 +310,7 @@ export default (ctx, inject) => {
 
     // Setup interceptors
     <% if (options.debug) { %>setupDebugInterceptor(axios); <% } %>
-    <% if (options.credentials) { %>setupCredentialsInterceptor(axios);<% } %>
+    <% if (options.credentials) { %>setupCredentialsInterceptor(axios)<% } %>
     <% if (options.progress) { %>setupProgress(
         axios,
         ctx
@@ -319,7 +319,7 @@ export default (ctx, inject) => {
  %>axiosRetry(
         axios,
         <%= serialize(options.retry) %>
-    );<%
+    )<%
       } %>
 
     // Inject axios to the context as $axios

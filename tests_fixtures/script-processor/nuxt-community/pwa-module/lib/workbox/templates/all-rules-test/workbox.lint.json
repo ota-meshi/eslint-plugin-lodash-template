@@ -61,7 +61,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 3,
-    "column": 74
+    "column": 74,
+    "endLine": 4,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -95,13 +97,17 @@
     "ruleId": "object-curly-spacing",
     "message": "There should be no space after '{'.",
     "line": 6,
-    "column": 9
+    "column": 10,
+    "endLine": 6,
+    "endColumn": 11
   },
   {
     "ruleId": "object-curly-spacing",
     "message": "There should be no space before '}'.",
     "line": 6,
-    "column": 19
+    "column": 18,
+    "endLine": 6,
+    "endColumn": 19
   },
   {
     "ruleId": "multiline-ternary",
@@ -131,7 +137,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 6,
-    "column": 117
+    "column": 117,
+    "endLine": 7,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -169,7 +177,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 10,
-    "column": 5
+    "column": 5,
+    "endLine": 11,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -183,7 +193,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 12,
-    "column": 27
+    "column": 27,
+    "endLine": 13,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -197,7 +209,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 14,
-    "column": 17
+    "column": 17,
+    "endLine": 15,
+    "endColumn": 1
   },
   {
     "ruleId": "padded-blocks",
@@ -223,7 +237,9 @@
     "ruleId": "dot-location",
     "message": "Expected dot to be on same line as object.",
     "line": 18,
-    "column": 3
+    "column": 3,
+    "endLine": 18,
+    "endColumn": 4
   },
   {
     "ruleId": "arrow-parens",
@@ -281,7 +297,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 18,
-    "column": 95
+    "column": 95,
+    "endLine": 18,
+    "endColumn": 96
   },
   {
     "ruleId": "brace-style",
@@ -301,6 +319,8 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 18,
-    "column": 105
+    "column": 105,
+    "endLine": 19,
+    "endColumn": 1
   }
 ]

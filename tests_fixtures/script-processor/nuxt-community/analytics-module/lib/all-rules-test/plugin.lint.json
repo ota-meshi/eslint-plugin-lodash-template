@@ -11,7 +11,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 1,
-    "column": 22
+    "column": 22,
+    "endLine": 2,
+    "endColumn": 1
   },
   {
     "ruleId": "quotes",
@@ -25,7 +27,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 2,
-    "column": 41
+    "column": 41,
+    "endLine": 3,
+    "endColumn": 1
   },
   {
     "ruleId": "padded-blocks",
@@ -45,7 +49,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 5,
-    "column": 44
+    "column": 44,
+    "endLine": 6,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -81,7 +87,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 8,
-    "column": 44
+    "column": 44,
+    "endLine": 9,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -117,7 +125,9 @@
     "ruleId": "object-curly-spacing",
     "message": "There should be no space after '{'.",
     "line": 11,
-    "column": 29
+    "column": 30,
+    "endLine": 11,
+    "endColumn": 31
   },
   {
     "ruleId": "quote-props",
@@ -131,7 +141,9 @@
     "ruleId": "object-curly-spacing",
     "message": "There should be no space before '}'.",
     "line": 11,
-    "column": 54
+    "column": 53,
+    "endLine": 11,
+    "endColumn": 54
   },
   {
     "ruleId": "object-property-newline",
@@ -143,7 +155,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 11,
-    "column": 69
+    "column": 69,
+    "endLine": 12,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -165,7 +179,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 13,
-    "column": 20
+    "column": 20,
+    "endLine": 14,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -195,7 +211,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 14,
-    "column": 24
+    "column": 24,
+    "endLine": 15,
+    "endColumn": 1
   },
   {
     "ruleId": "padded-blocks",
@@ -207,6 +225,8 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 15,
-    "column": 2
+    "column": 2,
+    "endLine": 16,
+    "endColumn": 1
   }
 ]
