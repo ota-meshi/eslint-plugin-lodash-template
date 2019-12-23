@@ -375,7 +375,7 @@ About how to mark warnings on editor.
 
     ```json
     {
-        "eslint.validate": [ "javascript", "javascriptreact", { "language": "html", "autoFix": true } ]
+        "eslint.validate": [ "javascript", "javascriptreact", "html" ]
     }
     ```
 
