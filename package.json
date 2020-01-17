@@ -6,10 +6,9 @@
   "scripts": {
     "lint": "node -e \"if(process.env.ESLINT=='low'||process.env.ESLINT=='high')process.exit(1)\" && npm run eslint || node -e \"if(process.env.ESLINT!='low'&&process.env.ESLINT!='high')process.exit(1)\"",
     "eslint": "eslint \"tests\" \"lib\" \"docs/.vuepress\" --ext .js,.vue --ignore-pattern \"samples\" --ignore-pattern \"tests_fixtures\" --ignore-pattern \"docs/.vuepress/dist\"",
-    "pretest": "npm run lint",
     "test:base": "mocha \"tests/**/*.js\" --reporter dot --timeout 60000",
     "test:list": "mocha \"tests/**/*.js\" --reporter list | tee .test-result-list.txt",
-    "test": "npm run test:nyc",
+    "test": "npm run test:base",
     "test:nyc": "nyc --reporter=lcov npm run test:base",
     "test:d": "mocha --inspect --debug-brk \"tests/**/*.js\" --reporter dot",
     "test:rules": "mocha \"tests/lib/rules/**/*.js\" --reporter dot --timeout 60000",
