@@ -91,7 +91,7 @@ For example:
 ```json
 {
   "rules": {
-    "undefined": "error"
+    "lodash-template/no-template-tag-in-start-tag": "error"
   }
 }
 ```

@@ -41,9 +41,10 @@ jobs:
       with:
         node-version: 8.10.x
     - name: Install Target Packages
-      run: npm i -S parse5@5.0.0
-    - name: Install Packages
-      run: npm install
+      run: |+
+        npm i -S parse5@5.0.0
+        npx rimraf node_modules
+        npm install
     - name: Test
       run: npm test
   test-with-high:
@@ -55,6 +56,10 @@ jobs:
       run: |+
         npm i -D eslint@6.0.0
         npm i -S parse5@5.1.0
+        npx rimraf node_modules
+        npm install
+    - name: Test
+      run: npm test
   test-with-latest:
     runs-on: ubuntu-latest
     steps:
@@ -64,8 +69,8 @@ jobs:
       run: |+
         npm i -D eslint@latest
         npm i -S parse5@latest
-    - name: Install Packages
-      run: npm install
+        npx rimraf node_modules
+        npm install
     - name: Test
       run: npm test
   test-and-coverage:
