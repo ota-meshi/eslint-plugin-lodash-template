@@ -1,14 +1,14 @@
-<% /* global users, hobbies, occupation */ %><div class="content"></div>
+<%_ /* global users, hobbies, occupation */ _%><div class="content"></div>
 
 <ul>
-    <% _.forEach(users,(user)=>{ %>
-        <li><%- user%></li>
-    <% });%>
+  <%# render list of users. %>
+  <%_ for (var user of users) { _%>
+    <li><%= user _%></li>
+  <%_ } _%>
 </ul>
 
 <div>
-    <h1>My name is <%-name%></h1>
-    <p>I like <%-hobbies%> but hate being a <%-occupation%></p　>
+  <h1>My name is <%= name _%></h1>
+  <p>I like <%= hobbies _%> but hate being a <%= occupation _%></p　>
 </div>
 
-<% print('Create at ' + new Date().toLocaleString()) %>
