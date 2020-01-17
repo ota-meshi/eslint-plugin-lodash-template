@@ -2,16 +2,16 @@
 
 ESLint plugin for John Resig-style micro templating.
 
-[![NPM license](https://img.shields.io/npm/l/eslint-plugin-lodash-template.svg)](https://www.npmjs.com/package/eslint-plugin-lodash-template)
-[![NPM version](https://img.shields.io/npm/v/eslint-plugin-lodash-template.svg)](https://www.npmjs.com/package/eslint-plugin-lodash-template)
-[![NPM downloads](https://img.shields.io/badge/dynamic/json.svg?label=downloads&colorB=green&suffix=/day&query=$.downloads&uri=https://api.npmjs.org//downloads/point/last-day/eslint-plugin-lodash-template&maxAge=3600)](http://www.npmtrends.com/eslint-plugin-lodash-template)
-[![NPM downloads](https://img.shields.io/npm/dw/eslint-plugin-lodash-template.svg)](http://www.npmtrends.com/eslint-plugin-lodash-template)
-[![NPM downloads](https://img.shields.io/npm/dm/eslint-plugin-lodash-template.svg)](http://www.npmtrends.com/eslint-plugin-lodash-template)
-[![NPM downloads](https://img.shields.io/npm/dy/eslint-plugin-lodash-template.svg)](http://www.npmtrends.com/eslint-plugin-lodash-template)
-[![NPM downloads](https://img.shields.io/npm/dt/eslint-plugin-lodash-template.svg)](http://www.npmtrends.com/eslint-plugin-lodash-template)
-[![Build Status](https://travis-ci.com/ota-meshi/eslint-plugin-lodash-template.svg?branch=master)](https://travis-ci.com/ota-meshi/eslint-plugin-lodash-template)
-[![Coverage Status](https://coveralls.io/repos/github/ota-meshi/eslint-plugin-lodash-template/badge.svg?branch=master)](https://coveralls.io/github/ota-meshi/eslint-plugin-lodash-template?branch=master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/ota-meshi/eslint-plugin-lodash-template.svg)](https://greenkeeper.io/) 
+[![npm license]](https://www.npmjs.com/package/eslint-plugin-lodash-template)
+[![npm version](https://img.shields.io/npm/v/eslint-plugin-lodash-template.svg)](https://www.npmjs.com/package/eslint-plugin-lodash-template)
+[![npm downloads](https://img.shields.io/badge/dynamic/json.svg?label=downloads&colorB=green&suffix=/day&query=$.downloads&uri=https://api.npmjs.org//downloads/point/last-day/eslint-plugin-lodash-template&maxAge=3600)](http://www.npmtrends.com/eslint-plugin-lodash-template)
+[![npm downloads]](http://www.npmtrends.com/eslint-plugin-lodash-template)
+[![npm downloads](https://img.shields.io/npm/dm/eslint-plugin-lodash-template.svg)](http://www.npmtrends.com/eslint-plugin-lodash-template)
+[![npm downloads](https://img.shields.io/npm/dy/eslint-plugin-lodash-template.svg)](http://www.npmtrends.com/eslint-plugin-lodash-template)
+[![npm downloads](https://img.shields.io/npm/dt/eslint-plugin-lodash-template.svg)](http://www.npmtrends.com/eslint-plugin-lodash-template)
+[![Build Status]](https://github.com/ota-meshi/eslint-plugin-lodash-template/actions?query=workflow%3ACI)
+[![Coverage Status]](https://coveralls.io/github/ota-meshi/eslint-plugin-lodash-template?branch=master)
+[![Greenkeeper badge]](https://greenkeeper.io/)
 
 It can be used in projects using [Underscore.js](http://underscorejs.org/#template) and [Lodash](https://lodash.com/docs/#template)'s template.
 
@@ -82,18 +82,18 @@ module.exports = {
 
 This plugin does special handling for the following rule warnings in the template.
 
-| Rule ID | Process Description | Another way this plugin supports |
-|:--------|:--------------------|:---------------------------------|
-| [`indent`](https://eslint.org/docs/rules/indent) | Disable warnings | [`lodash-template/scriptlet-indent`](./docs/rules/scriptlet-indent.md) rule,<br>[`lodash-template/html-indent`](./docs/rules/html-indent.md) rule |
-| [`strict`](https://eslint.org/docs/rules/strict) | Disable warnings | -- |
-| [`no-empty`](https://eslint.org/docs/rules/no-empty) | Disable warnings | -- |
-| [`max-statements-per-line`](https://eslint.org/docs/rules/max-statements-per-line) | Disable warnings | -- |
-| [`padded-blocks`](https://eslint.org/docs/rules/padded-blocks) | Disable warnings | -- |
-| [`no-implicit-globals`](https://eslint.org/docs/rules/no-implicit-globals) | Disable warnings | -- |
-| [`no-multi-spaces`](https://eslint.org/docs/rules/no-multi-spaces) | Disable warnings | [`lodash-template/no-multi-spaces-in-scriptlet`](./docs/rules/no-multi-spaces-in-scriptlet.md) rule,<br>[`lodash-template/no-multi-spaces-in-html-tag`](./docs/rules/no-multi-spaces-in-html-tag.md) rule |
-| [`no-unused-expressions`](https://eslint.org/docs/rules/no-unused-expressions)| Disable warnings within interpolate(<%=...%>) | -- |
-| [`quotes`](https://eslint.org/docs/rules/quotes) | Disable warnings if doublequote is set | -- |
-| [`no-irregular-whitespace`](https://eslint.org/docs/rules/no-irregular-whitespace) | Disable warnings outside template tags | [`lodash-template/no-irregular-whitespace`](./docs/rules/no-irregular-whitespace.md) rule |
+| Rule ID                                                                            | Process Description                           | Another way this plugin supports                                                                                                                                                                          |
+| :--------------------------------------------------------------------------------- | :-------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`indent`](https://eslint.org/docs/rules/indent)                                   | Disable warnings                              | [`lodash-template/scriptlet-indent`](./docs/rules/scriptlet-indent.md) rule,<br>[`lodash-template/html-indent`](./docs/rules/html-indent.md) rule                                                         |
+| [`strict`](https://eslint.org/docs/rules/strict)                                   | Disable warnings                              | --                                                                                                                                                                                                        |
+| [`no-empty`](https://eslint.org/docs/rules/no-empty)                               | Disable warnings                              | --                                                                                                                                                                                                        |
+| [`max-statements-per-line`](https://eslint.org/docs/rules/max-statements-per-line) | Disable warnings                              | --                                                                                                                                                                                                        |
+| [`padded-blocks`](https://eslint.org/docs/rules/padded-blocks)                     | Disable warnings                              | --                                                                                                                                                                                                        |
+| [`no-implicit-globals`](https://eslint.org/docs/rules/no-implicit-globals)         | Disable warnings                              | --                                                                                                                                                                                                        |
+| [`no-multi-spaces`](https://eslint.org/docs/rules/no-multi-spaces)                 | Disable warnings                              | [`lodash-template/no-multi-spaces-in-scriptlet`](./docs/rules/no-multi-spaces-in-scriptlet.md) rule,<br>[`lodash-template/no-multi-spaces-in-html-tag`](./docs/rules/no-multi-spaces-in-html-tag.md) rule |
+| [`no-unused-expressions`](https://eslint.org/docs/rules/no-unused-expressions)     | Disable warnings within interpolate(<%=...%>) | --                                                                                                                                                                                                        |
+| [`quotes`](https://eslint.org/docs/rules/quotes)                                   | Disable warnings if doublequote is set        | --                                                                                                                                                                                                        |
+| [`no-irregular-whitespace`](https://eslint.org/docs/rules/no-irregular-whitespace) | Disable warnings outside template tags        | [`lodash-template/no-irregular-whitespace`](./docs/rules/no-irregular-whitespace.md) rule                                                                                                                 |
 
 ## Configs
 
@@ -415,4 +415,12 @@ Please use GitHub's Issues/PRs.
 
 ## License
 
-See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
+See the [LICENSE] file for license rights and limitations (MIT).
+
+[license]: ./LICENSE
+[npm license]: https://img.shields.io/npm/l/eslint-plugin-lodash-template.svg
+[npm version]: https://img.shields.io/npm/v/eslint-plugin-lodash-template.svg
+[npm downloads]: https://img.shields.io/npm/dw/eslint-plugin-lodash-template.svg
+[Build Status]: https://github.com/ota-meshi/eslint-plugin-lodash-template/workflows/CI/badge.svg
+[Coverage Status]: https://coveralls.io/repos/github/ota-meshi/eslint-plugin-lodash-template/badge.svg?branch=master
+[Greenkeeper badge]: https://badges.greenkeeper.io/ota-meshi/eslint-plugin-lodash-template.svg
