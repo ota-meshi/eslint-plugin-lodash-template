@@ -8,10 +8,28 @@
     "endColumn": 19
   },
   {
+    "ruleId": "array-bracket-spacing",
+    "message": "There should be no space after '['.",
+    "line": 7,
+    "column": 57,
+    "endLine": 7,
+    "endColumn": 58
+  },
+  {
+    "ruleId": "array-bracket-spacing",
+    "message": "There should be no space before ']'.",
+    "line": 7,
+    "column": 64,
+    "endLine": 7,
+    "endColumn": 65
+  },
+  {
     "ruleId": "semi",
     "message": "Extra semicolon.",
     "line": 9,
-    "column": 50
+    "column": 50,
+    "endLine": 9,
+    "endColumn": 51
   },
   {
     "ruleId": "space-before-function-paren",
@@ -280,6 +298,14 @@
     "message": "Extra space after key 'common'.",
     "line": 160,
     "column": 5
+  },
+  {
+    "ruleId": "quote-props",
+    "message": "Unnecessarily quoted property 'Accept' found.",
+    "line": 161,
+    "column": 7,
+    "endLine": 161,
+    "endColumn": 52
   },
   {
     "ruleId": "prefer-const",

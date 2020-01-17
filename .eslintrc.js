@@ -6,7 +6,7 @@ module.exports = {
     parserOptions: {
         sourceType: "script",
         parser: "babel-eslint",
-        ecmaVersion: 2018,
+        ecmaVersion: 2020,
     },
     extends: [
         "plugin:@mysticatea/es2015",

@@ -3,13 +3,17 @@
     "ruleId": "semi",
     "message": "Extra semicolon.",
     "line": 1,
-    "column": 34
+    "column": 34,
+    "endLine": 1,
+    "endColumn": 35
   },
   {
     "ruleId": "semi",
     "message": "Extra semicolon.",
     "line": 2,
-    "column": 42
+    "column": 42,
+    "endLine": 2,
+    "endColumn": 43
   },
   {
     "ruleId": "indent",
@@ -31,7 +35,9 @@
     "ruleId": "semi",
     "message": "Extra semicolon.",
     "line": 9,
-    "column": 63
+    "column": 63,
+    "endLine": 9,
+    "endColumn": 64
   },
   {
     "ruleId": "indent",
@@ -77,7 +83,9 @@
     "ruleId": "semi",
     "message": "Extra semicolon.",
     "line": 14,
-    "column": 37
+    "column": 37,
+    "endLine": 14,
+    "endColumn": 38
   },
   {
     "ruleId": "indent",
@@ -115,7 +123,9 @@
     "ruleId": "semi",
     "message": "Extra semicolon.",
     "line": 18,
-    "column": 56
+    "column": 56,
+    "endLine": 18,
+    "endColumn": 57
   },
   {
     "ruleId": "indent",
@@ -137,7 +147,9 @@
     "ruleId": "semi",
     "message": "Extra semicolon.",
     "line": 20,
-    "column": 31
+    "column": 31,
+    "endLine": 20,
+    "endColumn": 32
   },
   {
     "ruleId": "indent",
@@ -167,6 +179,8 @@
     "ruleId": "semi",
     "message": "Extra semicolon.",
     "line": 23,
-    "column": 35
+    "column": 35,
+    "endLine": 23,
+    "endColumn": 36
   }
 ]

@@ -1,5 +1,13 @@
 [
   {
+    "ruleId": "dot-notation",
+    "message": "[\"i18n\"] is better written in dot notation.",
+    "line": 3,
+    "column": 12,
+    "endLine": 3,
+    "endColumn": 18
+  },
+  {
     "ruleId": "no-unused-vars",
     "message": "'req' is assigned a value but never used.",
     "line": 4,

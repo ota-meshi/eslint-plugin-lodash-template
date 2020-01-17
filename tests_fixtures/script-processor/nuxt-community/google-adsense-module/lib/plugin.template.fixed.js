@@ -6,7 +6,7 @@ const adsbygoogle = {
     return h(
       'ins',
       {
-        'class': ['adsbygoogle'],
+        class: ['adsbygoogle'],
         style: this.adStyle,
         attrs: {
           'data-ad-client': this.adClient,

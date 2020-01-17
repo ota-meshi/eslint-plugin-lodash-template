@@ -6,29 +6,5 @@
     "column": 3,
     "endLine": 5,
     "endColumn": 17
-  },
-  {
-    "ruleId": "unicorn/prevent-abbreviations",
-    "message": "The property `props` should be named `properties`. A more descriptive name will do too.",
-    "line": 24,
-    "column": 7,
-    "endLine": 24,
-    "endColumn": 12
-  },
-  {
-    "ruleId": "unicorn/prevent-abbreviations",
-    "message": "The property `domProps` should be named `domProperties`. A more descriptive name will do too.",
-    "line": 28,
-    "column": 7,
-    "endLine": 28,
-    "endColumn": 15
-  },
-  {
-    "ruleId": "unicorn/prevent-abbreviations",
-    "message": "The property `props` should be named `properties`. A more descriptive name will do too.",
-    "line": 43,
-    "column": 3,
-    "endLine": 43,
-    "endColumn": 8
   }
 ]

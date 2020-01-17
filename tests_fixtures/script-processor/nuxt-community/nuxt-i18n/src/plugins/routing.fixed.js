@@ -75,7 +75,7 @@ function switchLocalePathFactory (i18nPath) {
       params: {
         ...params,
         ...langSwitchParams,
-        '0': params.pathMatch
+        0: params.pathMatch
       }
     })
     let path = this.localePath(baseRoute, locale)

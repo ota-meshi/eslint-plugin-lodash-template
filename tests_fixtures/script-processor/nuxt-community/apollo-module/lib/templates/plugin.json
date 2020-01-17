@@ -203,7 +203,9 @@
     "ruleId": "space-infix-ops",
     "message": "Operator ':' must be spaced.",
     "line": 49,
-    "column": 118
+    "column": 118,
+    "endLine": 49,
+    "endColumn": 119
   },
   {
     "ruleId": "indent",
@@ -441,18 +443,24 @@
     "ruleId": "space-infix-ops",
     "message": "Operator '+' must be spaced.",
     "line": 105,
-    "column": 55
+    "column": 55,
+    "endLine": 105,
+    "endColumn": 56
   },
   {
     "ruleId": "space-infix-ops",
     "message": "Operator '*' must be spaced.",
     "line": 105,
-    "column": 62
+    "column": 62,
+    "endLine": 105,
+    "endColumn": 63
   },
   {
     "ruleId": "space-infix-ops",
     "message": "Operator '*' must be spaced.",
     "line": 105,
-    "column": 67
+    "column": 67,
+    "endLine": 105,
+    "endColumn": 68
   }
 ]

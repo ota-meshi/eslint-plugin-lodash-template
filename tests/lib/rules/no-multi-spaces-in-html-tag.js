@@ -6,7 +6,7 @@ const rule = require("../../../lib/rules/no-multi-spaces-in-html-tag")
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
     parserOptions: {
-        ecmaVersion: 2015,
+        ecmaVersion: 2020,
     },
 })
 
