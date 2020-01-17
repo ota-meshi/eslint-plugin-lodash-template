@@ -1,6 +1,6 @@
 import middleware from '../middleware'
 
-middleware['i18n'] = async (context) => {
+middleware.i18n = async (context) => {
   const { app, req, route, redirect, isHMR } = context
 
   if (isHMR) {

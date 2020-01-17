@@ -83,7 +83,7 @@ const SvgIcon = {
 
     return h('svg',
       mergeData(data, componentData),
-      [ title, desc, use ].filter(Boolean)
+      [title, desc, use].filter(Boolean)
     )
   }
 }

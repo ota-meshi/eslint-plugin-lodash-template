@@ -1,10 +1,16 @@
 [
   {
+    "ruleId": "no-prototype-builtins",
+    "message": "Do not access Object.prototype method 'hasOwnProperty' from target object.",
+    "line": 38,
+    "column": 16
+  },
+  {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
-    "line": 42,
+    "line": 43,
     "column": 7,
-    "endLine": 42,
+    "endLine": 43,
     "endColumn": 20
   }
 ]

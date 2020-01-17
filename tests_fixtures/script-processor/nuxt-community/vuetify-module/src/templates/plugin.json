@@ -16,20 +16,14 @@
     "endColumn": 3
   },
   {
-    "ruleId": "standard/object-curly-even-spacing",
-    "message": "Expected consistent spacing",
+    "ruleId": "object-curly-spacing",
+    "message": "A space is required before '}'.",
     "line": 5,
-    "column": 3,
+    "column": 47,
     "endLine": 5,
     "endColumn": 48
   },
   {
-    "ruleId": "object-curly-spacing",
-    "message": "A space is required before '}'.",
-    "line": 5,
-    "column": 47
-  },
-  {
     "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 4 spaces but found 2 spaces.",
     "line": 6,
@@ -38,20 +32,14 @@
     "endColumn": 3
   },
   {
-    "ruleId": "standard/object-curly-even-spacing",
-    "message": "Expected consistent spacing",
+    "ruleId": "object-curly-spacing",
+    "message": "A space is required before '}'.",
     "line": 6,
-    "column": 3,
+    "column": 48,
     "endLine": 6,
     "endColumn": 49
   },
   {
-    "ruleId": "object-curly-spacing",
-    "message": "A space is required before '}'.",
-    "line": 6,
-    "column": 48
-  },
-  {
     "ruleId": "lodash-template/scriptlet-indent",
     "message": "Expected indentation of 4 spaces but found 2 spaces.",
     "line": 7,
@@ -60,18 +48,12 @@
     "endColumn": 3
   },
   {
-    "ruleId": "standard/object-curly-even-spacing",
-    "message": "Expected consistent spacing",
-    "line": 7,
-    "column": 3,
-    "endLine": 7,
-    "endColumn": 59
-  },
-  {
     "ruleId": "object-curly-spacing",
     "message": "A space is required before '}'.",
     "line": 7,
-    "column": 58
+    "column": 58,
+    "endLine": 7,
+    "endColumn": 59
   },
   {
     "ruleId": "lodash-template/scriptlet-indent",

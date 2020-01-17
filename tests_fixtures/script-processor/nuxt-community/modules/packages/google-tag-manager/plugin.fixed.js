@@ -5,6 +5,7 @@ class GTM {
     this.ctx = ctx
     this.options = options
   }
+
   init () {
     window[this.options.layer] = window[this.options.layer] || []
 

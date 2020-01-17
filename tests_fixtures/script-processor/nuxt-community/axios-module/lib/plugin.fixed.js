@@ -4,7 +4,7 @@ import Axios from 'axios'
 // Axios.prototype cannot be modified
 const axiosExtra = {
   setHeader (name, value, scopes = 'common') {
-    for (const scope of Array.isArray(scopes) ? scopes : [ scopes ]) {
+    for (const scope of Array.isArray(scopes) ? scopes : [scopes]) {
       if (!value) {
         delete this.defaults.headers[scope][name]
         return
@@ -158,7 +158,7 @@ export default (ctx, inject) => {
   // https://github.com/mzabriskie/axios/blob/master/lib/defaults.js
   const headers = {
     common: {
-      'Accept': 'application/json, text/plain, */*'
+      Accept: 'application/json, text/plain, */*'
     },
     delete: {},
     get: {},

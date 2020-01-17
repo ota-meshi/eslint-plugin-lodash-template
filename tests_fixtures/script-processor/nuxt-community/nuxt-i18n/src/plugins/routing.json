@@ -10,7 +10,7 @@
   {
     "ruleId": "no-multiple-empty-lines",
     "message": "More than 1 blank line not allowed.",
-    "line": 51,
+    "line": 52,
     "column": 1,
     "endLine": 53,
     "endColumn": 1
@@ -24,10 +24,20 @@
     "endColumn": 19
   },
   {
+    "ruleId": "quote-props",
+    "message": "Unnecessarily quoted property '0' found.",
+    "line": 79,
+    "column": 9,
+    "endLine": 79,
+    "endColumn": 30
+  },
+  {
     "ruleId": "semi",
     "message": "Extra semicolon.",
     "line": 90,
-    "column": 46
+    "column": 46,
+    "endLine": 90,
+    "endColumn": 47
   },
   {
     "ruleId": "no-console",
