@@ -89,7 +89,7 @@
     "prettier": "^1.19.1",
     "semver": "^7.1.1",
     "typescript": "^3.7.5",
-    "vue-eslint-editor": "^0.2.0",
+    "vue-eslint-editor": "^1.0.0",
     "vuepress": "^1.1.0"
   },
   "dependencies": {
