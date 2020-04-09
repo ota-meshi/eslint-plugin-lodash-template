@@ -319,12 +319,35 @@ describe("script test", () => {
 })
 
 // eslint-disable-next-line require-jsdoc
-function isTargetFromJson(dirPath) {
-    if (testUtils.existsPath(`${dirPath}.target.json`)) {
-        const tarrgetVar = JSON.parse(
-            fs.readFileSync(`${dirPath}.target.json`, "utf8")
+function isTargetFromJson(filepath) {
+    let targetVars = null
+    if (testUtils.existsPath(`${filepath}.target.json`)) {
+        targetVars = JSON.parse(
+            fs.readFileSync(`${filepath}.target.json`, "utf8")
         )
-        if (!semver.satisfies(eslintVersion, tarrgetVar)) {
+    } else {
+        const dir = path.dirname(filepath)
+        if (testUtils.existsPath(`${dir}/target.json`)) {
+            targetVars = JSON.parse(
+                fs.readFileSync(`${dir}/target.json`, "utf8")
+            )
+        }
+    }
+
+    if (targetVars) {
+        let eslintVer = null
+        let nodeVer = null
+        if (typeof targetVars === "string") {
+            eslintVer = targetVars
+            nodeVer = null
+        } else {
+            eslintVer = targetVars.eslint
+            nodeVer = targetVars.node
+        }
+        if (eslintVer && !semver.satisfies(eslintVersion, eslintVer)) {
+            return false
+        }
+        if (nodeVer && !semver.satisfies(process.version, nodeVer)) {
             return false
         }
     }
