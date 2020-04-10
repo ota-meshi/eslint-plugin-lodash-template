@@ -43,7 +43,7 @@ function setup() {
         clearTimeout(timeoutId)
     }
     timeoutId = setTimeout(() => {
-        ;(function(d, s, id) {
+        ;(function (d, s, id) {
             const [fjs] = d.getElementsByTagName(s)
             if (d.getElementById(id)) {
                 return
@@ -53,7 +53,7 @@ function setup() {
             js.src = "https://buttons.github.io/buttons.js"
             fjs.parentNode.insertBefore(js, fjs)
         })(document, "script", "gh-buttons")
-        ;(function(d, s, id) {
+        ;(function (d, s, id) {
             const [fjs] = d.getElementsByTagName(s)
             if (d.getElementById(id)) {
                 return
@@ -64,7 +64,7 @@ function setup() {
                 "https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10"
             fjs.parentNode.insertBefore(js, fjs)
         })(document, "script", "facebook-jssdk")
-        ;(function(d, s, id) {
+        ;(function (d, s, id) {
             const [fjs] = d.getElementsByTagName(s)
             const p = /^http:/u.test(d.location) ? "http" : "https"
             if (!d.getElementById(id)) {

@@ -31,14 +31,14 @@ function getPathCoveredTemplateStore(fileName) {
     return {
         templates,
         code,
-        getLocFromIndex: index => microTemplate.getLocFromIndex(index),
+        getLocFromIndex: (index) => microTemplate.getLocFromIndex(index),
     }
 }
 
 describe("PathCoveredTemplateStore test", () => {
     for (const name of fs
         .readdirSync(FIXTURE_DIR)
-        .filter(s => s.endsWith(".html"))) {
+        .filter((s) => s.endsWith(".html"))) {
         describe("Extracted texts should be valid.", () => {
             it(name, () => {
                 const {

@@ -288,7 +288,7 @@ describe("Basic tests", () => {
     describe("About fixtures/no-error", () => {
         for (const name of fs
             .readdirSync(FIXTURE_DIR)
-            .filter(s => s.indexOf("no-error-") === 0)) {
+            .filter((s) => s.indexOf("no-error-") === 0)) {
             it(`should no errors /${name}`, () => {
                 const cli = new CLIEngine({
                     cwd: FIXTURE_DIR,

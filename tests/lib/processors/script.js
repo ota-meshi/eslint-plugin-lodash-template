@@ -70,7 +70,7 @@ describe("script test", () => {
     describe("should notify errors", () => {
         for (const relPath of testUtils
             .listupFiles(FIXTURE_DIR)
-            .filter(s => s.endsWith(".test"))) {
+            .filter((s) => s.endsWith(".test"))) {
             const name = relPath.replace(/\.(test)$/u, "")
             describe(name, () => {
                 const filepath = path.join(FIXTURE_DIR, name)

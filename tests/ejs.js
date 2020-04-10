@@ -55,7 +55,7 @@ describe("ejs test", () => {
         describe("should notify errors", () => {
             for (const name of testUtils
                 .listupFiles(FIXTURE_DIR)
-                .filter(s => s.endsWith(".ejs"))) {
+                .filter((s) => s.endsWith(".ejs"))) {
                 it(name, () => {
                     const cli = new CLIEngine({
                         cwd: FIXTURE_DIR,

@@ -12,7 +12,9 @@ function listupFiles(dirpath) {
     for (const name of fs.readdirSync(dirpath)) {
         const filepath = path.join(dirpath, name)
         if (fs.statSync(filepath).isDirectory()) {
-            results.push(...listupFiles(filepath).map(n => path.join(name, n)))
+            results.push(
+                ...listupFiles(filepath).map((n) => path.join(name, n))
+            )
         } else {
             results.push(name)
         }

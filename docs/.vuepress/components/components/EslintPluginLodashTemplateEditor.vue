@@ -124,18 +124,19 @@ export default {
         preprocess() {
             const script = this.script
             if (!script) {
-                return rawText =>
+                return (rawText) =>
                     htmlProcessor.preprocess(rawText, this.fileName)
             }
-            return rawText => scriptProcessor.preprocess(rawText, this.fileName)
+            return (rawText) =>
+                scriptProcessor.preprocess(rawText, this.fileName)
         },
         postprocess() {
             const script = this.script
             if (!script) {
-                return problemLists =>
+                return (problemLists) =>
                     htmlProcessor.postprocess(problemLists, this.fileName)
             }
-            return problemLists =>
+            return (problemLists) =>
                 scriptProcessor.postprocess(problemLists, this.fileName)
         },
         linter() {
@@ -155,7 +156,7 @@ export default {
             const vm = this
             // verifyAndFixだけpreprocess・postprocessをサポートしていない様子
             const verifyAndFix = linter.verifyAndFix.bind(linter)
-            linter.verifyAndFix = function(...args) {
+            linter.verifyAndFix = function (...args) {
                 args[2].preprocess = vm.preprocess
                 args[2].postprocess = vm.postprocess
                 return verifyAndFix(...args)

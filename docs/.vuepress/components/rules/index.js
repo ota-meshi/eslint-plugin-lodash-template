@@ -63,7 +63,7 @@ export const categories = []
 
 for (const rule of allRules) {
     const title = CATEGORY_TITLES[rule.category] || rule.fallbackTitle
-    let category = categories.find(c => c.title === title)
+    let category = categories.find((c) => c.title === title)
     if (!category) {
         category = {
             category: rule.category,
