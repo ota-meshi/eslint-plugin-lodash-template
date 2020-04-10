@@ -47,12 +47,22 @@ module.exports = {
                 alias: {
                     eslint: require.resolve("./shim/eslint"),
                     crypto: require.resolve("./shim/crypto"),
+                    esquery: require.resolve("./shim/esquery"),
                 },
             },
         }
     },
 
     head: [["link", { rel: "icon", type: "image/png", href: "/logo.png" }]],
+    plugins: [
+        [
+            "@vuepress/pwa",
+            {
+                serviceWorker: true,
+                updatePopup: true,
+            },
+        ],
+    ],
     themeConfig: {
         logo: "/logo.svg",
         repo: "ota-meshi/eslint-plugin-lodash-template",
@@ -61,9 +71,6 @@ module.exports = {
         docsBranch: "master",
         editLinks: true,
         lastUpdated: true,
-        serviceWorker: {
-            updatePopup: true,
-        },
 
         nav: [
             { text: "Rules", link: "/rules/" },
