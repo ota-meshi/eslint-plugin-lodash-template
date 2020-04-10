@@ -10,7 +10,7 @@
     "test:list": "mocha \"tests/**/*.js\" --reporter list | tee .test-result-list.txt",
     "test": "npm run test:base",
     "test:nyc": "nyc --reporter=lcov npm run test:base",
-    "test:d": "mocha --inspect --debug-brk \"tests/**/*.js\" --reporter dot",
+    "test:d": "mocha --inspect-brk \"tests/**/*.js\" --reporter dot",
     "test:rules": "mocha \"tests/lib/rules/**/*.js\" --reporter dot --timeout 60000",
     "watch": "npm run test:base -- --watch",
     "update": "node ./tools/update.js && npm run lint:fix && npm run test",
@@ -66,8 +66,8 @@
   },
   "devDependencies": {
     "@mysticatea/eslint-plugin": "^13.0.0",
-    "@nuxtjs/eslint-config": "^2.0.0",
-    "@nuxtjs/eslint-config-typescript": "^1.0.0",
+    "@nuxtjs/eslint-config": "^2.0.2",
+    "@nuxtjs/eslint-config-typescript": "^1.0.2",
     "@typescript-eslint/eslint-plugin": "^2.16.0",
     "babel-eslint": "^10.0.3",
     "cpx": "^1.5.0",
@@ -89,7 +89,7 @@
     "prettier": "^1.19.1",
     "semver": "^7.1.1",
     "typescript": "^3.7.5",
-    "vue-eslint-editor": "^0.2.0",
+    "vue-eslint-editor": "^1.0.0",
     "vuepress": "^1.1.0"
   },
   "dependencies": {
