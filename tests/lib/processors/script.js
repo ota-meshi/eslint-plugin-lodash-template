@@ -348,6 +348,9 @@ function isTargetFromJson(filepath) {
             return false
         }
         if (nodeVer && !semver.satisfies(process.version, nodeVer)) {
+            // console.log(
+            //     `ignore node ver: node@${process.version} target@${nodeVer} at ${filepath}`
+            // )
             return false
         }
     }
