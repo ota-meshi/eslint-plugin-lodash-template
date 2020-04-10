@@ -47,7 +47,6 @@ module.exports = {
                 alias: {
                     eslint: require.resolve("./shim/eslint"),
                     crypto: require.resolve("./shim/crypto"),
-                    esquery: require.resolve("./shim/esquery"),
                 },
             },
         }
