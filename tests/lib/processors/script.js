@@ -320,39 +320,33 @@ describe("script test", () => {
 
 // eslint-disable-next-line require-jsdoc
 function isTargetFromJson(filepath) {
-    let targetVars = null
+    let eslintVer = null
+    let nodeVer = null
+    const dir = path.dirname(filepath)
+    if (testUtils.existsPath(`${dir}/target.json`)) {
+        const targetVars = JSON.parse(
+            fs.readFileSync(`${dir}/target.json`, "utf8")
+        )
+        eslintVer = targetVars.eslint || eslintVer
+        nodeVer = targetVars.node || nodeVer
+    }
     if (testUtils.existsPath(`${filepath}.target.json`)) {
-        targetVars = JSON.parse(
+        const targetVars = JSON.parse(
             fs.readFileSync(`${filepath}.target.json`, "utf8")
         )
-    } else {
-        const dir = path.dirname(filepath)
-        if (testUtils.existsPath(`${dir}/target.json`)) {
-            targetVars = JSON.parse(
-                fs.readFileSync(`${dir}/target.json`, "utf8")
-            )
+        if (typeof targetVars === "string") {
+            eslintVer = targetVars || eslintVer
+        } else {
+            eslintVer = targetVars.eslint || eslintVer
+            nodeVer = targetVars.node || nodeVer
         }
     }
 
-    if (targetVars) {
-        let eslintVer = null
-        let nodeVer = null
-        if (typeof targetVars === "string") {
-            eslintVer = targetVars
-            nodeVer = null
-        } else {
-            eslintVer = targetVars.eslint
-            nodeVer = targetVars.node
-        }
-        if (eslintVer && !semver.satisfies(eslintVersion, eslintVer)) {
-            return false
-        }
-        if (nodeVer && !semver.satisfies(process.version, nodeVer)) {
-            // console.log(
-            //     `ignore node ver: node@${process.version} target@${nodeVer} at ${filepath}`
-            // )
-            return false
-        }
+    if (eslintVer && !semver.satisfies(eslintVersion, eslintVer)) {
+        return false
+    }
+    if (nodeVer && !semver.satisfies(process.version, nodeVer)) {
+        return false
     }
     return true
 }
