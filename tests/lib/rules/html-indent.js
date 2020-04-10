@@ -26,14 +26,14 @@ const FIXTURE_ROOT = path.resolve(
  * @returns {object} The loaded patterns.
  */
 function loadPatterns(additionalValid, additionalInvalid) {
-    const valid = fs.readdirSync(FIXTURE_ROOT).map(filename => {
+    const valid = fs.readdirSync(FIXTURE_ROOT).map((filename) => {
         const code0 = fs.readFileSync(path.join(FIXTURE_ROOT, filename), "utf8")
         const code = code0.replace(/^<!--(.+?)-->/u, `<!--${filename}-->`)
         const baseObj = JSON.parse(/^<!--(.+?)-->/u.exec(code0)[1])
         return Object.assign(baseObj, { code, filename })
     })
     const invalid = valid
-        .map(pattern => {
+        .map((pattern) => {
             const kind =
                 (pattern.options && pattern.options[0]) === "tab"
                     ? "tab"
@@ -45,10 +45,10 @@ function loadPatterns(additionalValid, additionalInvalid) {
                 indentSize: (/^[ \t]+/u.exec(text) || [""])[0].length,
             }))
             const code = lines
-                .map(line => line.text.replace(/^[ \t]+/u, ""))
+                .map((line) => line.text.replace(/^[ \t]+/u, ""))
                 .join("\n")
             const errors = lines
-                .map(line =>
+                .map((line) =>
                     line.indentSize === 0
                         ? null
                         : {
@@ -84,11 +84,11 @@ function unIndent(strings) {
         .replace(/\n\s*$/u, "")
         .split("\n")
     const lineIndents = lines
-        .filter(line => line.trim())
-        .map(line => line.match(/ */u)[0].length)
+        .filter((line) => line.trim())
+        .map((line) => line.match(/ */u)[0].length)
     const minLineIndent = Math.min.apply(null, lineIndents)
 
-    return lines.map(line => line.slice(minLineIndent)).join("\n")
+    return lines.map((line) => line.slice(minLineIndent)).join("\n")
 }
 
 const tester = new RuleTester({
