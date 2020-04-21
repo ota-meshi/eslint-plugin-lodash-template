@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-lodash-template",
-  "version": "0.15.0",
+  "version": "0.16.0",
   "description": "ESLint plugin for John Resig-style micro template, Lodash's template, Underscore's template and EJS.",
   "main": "lib/index.js",
   "scripts": {
