@@ -32,6 +32,14 @@
     "endColumn": 1
   },
   {
+    "ruleId": "func-names",
+    "message": "Unexpected unnamed function.",
+    "line": 7,
+    "column": 16,
+    "endLine": 7,
+    "endColumn": 25
+  },
+  {
     "ruleId": "object-curly-spacing",
     "message": "There should be no space after '{'.",
     "line": 7,
@@ -68,14 +76,6 @@
     "column": 5,
     "endLine": 8,
     "endColumn": 46
-  },
-  {
-    "ruleId": "no-process-env",
-    "message": "Unexpected use of process.env.",
-    "line": 9,
-    "column": 26,
-    "endLine": 9,
-    "endColumn": 37
   },
   {
     "ruleId": "quotes",

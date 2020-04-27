@@ -59,7 +59,9 @@
     "ruleId": "operator-linebreak",
     "message": "'?' should be placed at the beginning of the line.",
     "line": 13,
-    "column": 114
+    "column": 113,
+    "endLine": 13,
+    "endColumn": 114
   },
   {
     "ruleId": "lodash-template/script-indent",

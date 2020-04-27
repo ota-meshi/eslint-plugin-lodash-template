@@ -30,6 +30,14 @@
     "endColumn": 10
   },
   {
+    "ruleId": "func-names",
+    "message": "Unexpected unnamed function.",
+    "line": 11,
+    "column": 16,
+    "endLine": 11,
+    "endColumn": 25
+  },
+  {
     "ruleId": "no-undef",
     "message": "'hash' is not defined.",
     "line": 25,

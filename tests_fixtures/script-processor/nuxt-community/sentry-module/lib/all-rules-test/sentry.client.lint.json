@@ -73,7 +73,9 @@
     "ruleId": "newline-per-chained-call",
     "message": "Expected line break before `.join`.",
     "line": 3,
-    "column": 80
+    "column": 79,
+    "endLine": 3,
+    "endColumn": 84
   },
   {
     "ruleId": "object-curly-spacing",
@@ -98,6 +100,14 @@
     "column": 123,
     "endLine": 4,
     "endColumn": 1
+  },
+  {
+    "ruleId": "func-names",
+    "message": "Unexpected unnamed function.",
+    "line": 5,
+    "column": 16,
+    "endLine": 5,
+    "endColumn": 25
   },
   {
     "ruleId": "padded-blocks",
@@ -243,7 +253,9 @@
     "ruleId": "operator-linebreak",
     "message": "'?' should be placed at the beginning of the line.",
     "line": 13,
-    "column": 114
+    "column": 113,
+    "endLine": 13,
+    "endColumn": 114
   },
   {
     "ruleId": "max-len",
@@ -279,7 +291,9 @@
     "ruleId": "newline-per-chained-call",
     "message": "Expected line break before `.join`.",
     "line": 14,
-    "column": 114
+    "column": 113,
+    "endLine": 14,
+    "endColumn": 118
   },
   {
     "ruleId": "semi",
@@ -301,7 +315,9 @@
     "ruleId": "newline-per-chained-call",
     "message": "Expected line break before `.join`.",
     "line": 15,
-    "column": 10
+    "column": 9,
+    "endLine": 15,
+    "endColumn": 14
   },
   {
     "ruleId": "indent",

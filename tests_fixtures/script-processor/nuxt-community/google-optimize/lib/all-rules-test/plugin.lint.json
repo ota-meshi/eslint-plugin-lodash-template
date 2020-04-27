@@ -72,6 +72,14 @@
     "endColumn": 1
   },
   {
+    "ruleId": "func-names",
+    "message": "Unexpected unnamed function.",
+    "line": 7,
+    "column": 16,
+    "endLine": 7,
+    "endColumn": 25
+  },
+  {
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 7,
@@ -215,7 +223,9 @@
     "ruleId": "space-before-function-paren",
     "message": "Missing space before function parentheses.",
     "line": 18,
-    "column": 26
+    "column": 26,
+    "endLine": 18,
+    "endColumn": 27
   },
   {
     "ruleId": "padded-blocks",
@@ -1473,7 +1483,9 @@
     "ruleId": "space-before-function-paren",
     "message": "Missing space before function parentheses.",
     "line": 90,
-    "column": 19
+    "column": 19,
+    "endLine": 90,
+    "endColumn": 20
   },
   {
     "ruleId": "padded-blocks",
@@ -1647,7 +1659,9 @@
     "ruleId": "space-before-function-paren",
     "message": "Missing space before function parentheses.",
     "line": 102,
-    "column": 19
+    "column": 19,
+    "endLine": 102,
+    "endColumn": 20
   },
   {
     "ruleId": "padded-blocks",
@@ -1973,7 +1987,9 @@
     "ruleId": "space-before-function-paren",
     "message": "Missing space before function parentheses.",
     "line": 124,
-    "column": 24
+    "column": 24,
+    "endLine": 124,
+    "endColumn": 25
   },
   {
     "ruleId": "object-curly-spacing",

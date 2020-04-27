@@ -1,5 +1,13 @@
 [
   {
+    "ruleId": "func-names",
+    "message": "Unexpected unnamed async function.",
+    "line": 1,
+    "column": 16,
+    "endLine": 1,
+    "endColumn": 31
+  },
+  {
     "ruleId": "require-await",
     "message": "Async function has no 'await' expression.",
     "line": 1,
@@ -25,7 +33,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 2,
-    "column": 53
+    "column": 53,
+    "endLine": 3,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -71,7 +81,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 3,
-    "column": 57
+    "column": 57,
+    "endLine": 4,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -101,7 +113,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 4,
-    "column": 66
+    "column": 66,
+    "endLine": 5,
+    "endColumn": 1
   },
   {
     "ruleId": "padded-blocks",

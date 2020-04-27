@@ -1,19 +1,21 @@
-"use strict";
-
+/* globals module */
 module.exports = {
-  root: true,
-  parserOptions: {
-    ecmaVersion: 2018
-  },
-  env: {},
-  extends: ["eslint:all", "plugin:lodash-template/all"],
-  overrides: [
-    {
-      files: ["*.ejs"],
-      processor: "lodash-template/html",
-      globals: {
-        include: true
-      },
-    }
-  ]
+    "env": {},
+    "extends": [
+        "eslint:all",
+        "plugin:lodash-template/all"
+    ],
+    "overrides": [
+        {
+            "files": ["*.ejs"],
+            "globals": {
+                "include": true
+            },
+            "processor": "lodash-template/html"
+        }
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "root": true
 };

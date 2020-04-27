@@ -153,7 +153,9 @@
     "ruleId": "newline-per-chained-call",
     "message": "Expected line break before `.join`.",
     "line": 17,
-    "column": 21
+    "column": 20,
+    "endLine": 17,
+    "endColumn": 25
   },
   {
     "ruleId": "quotes",
@@ -269,7 +271,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 24,
-    "column": 95
+    "column": 95,
+    "endLine": 25,
+    "endColumn": 1
   },
   {
     "ruleId": "max-len",
@@ -313,7 +317,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 25,
-    "column": 95
+    "column": 95,
+    "endLine": 26,
+    "endColumn": 1
   },
   {
     "ruleId": "max-len",
@@ -365,7 +371,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 26,
-    "column": 93
+    "column": 93,
+    "endLine": 27,
+    "endColumn": 1
   },
   {
     "ruleId": "max-len",
@@ -433,6 +441,8 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 27,
-    "column": 113
+    "column": 113,
+    "endLine": 28,
+    "endColumn": 1
   }
 ]

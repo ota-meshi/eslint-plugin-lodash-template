@@ -2192,6 +2192,14 @@
     "column": 1
   },
   {
+    "ruleId": "func-names",
+    "message": "Unexpected unnamed function.",
+    "line": 133,
+    "column": 16,
+    "endLine": 133,
+    "endColumn": 25
+  },
+  {
     "ruleId": "id-length",
     "message": "Identifier name '_' is too short (< 2).",
     "line": 133,

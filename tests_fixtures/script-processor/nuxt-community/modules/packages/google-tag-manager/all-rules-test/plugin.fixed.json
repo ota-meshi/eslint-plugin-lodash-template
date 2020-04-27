@@ -31,7 +31,9 @@
     "ruleId": "no-prototype-builtins",
     "message": "Do not access Object.prototype method 'hasOwnProperty' from target object.",
     "line": 63,
-    "column": 22
+    "column": 22,
+    "endLine": 63,
+    "endColumn": 36
   },
   {
     "ruleId": "no-console",
@@ -70,5 +72,13 @@
     "column": 70,
     "endLine": 87,
     "endColumn": 72
+  },
+  {
+    "ruleId": "func-names",
+    "message": "Unexpected unnamed function.",
+    "line": 93,
+    "column": 16,
+    "endLine": 93,
+    "endColumn": 25
   }
 ]

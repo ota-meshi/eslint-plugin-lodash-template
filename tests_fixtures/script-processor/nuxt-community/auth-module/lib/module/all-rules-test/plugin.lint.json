@@ -11,7 +11,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 1,
-    "column": 26
+    "column": 26,
+    "endLine": 2,
+    "endColumn": 1
   },
   {
     "ruleId": "sort-imports",
@@ -33,7 +35,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 3,
-    "column": 22
+    "column": 22,
+    "endLine": 4,
+    "endColumn": 1
   },
   {
     "ruleId": "max-len",
@@ -101,7 +105,17 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 6,
-    "column": 121
+    "column": 121,
+    "endLine": 7,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "func-names",
+    "message": "Unexpected unnamed function.",
+    "line": 8,
+    "column": 16,
+    "endLine": 8,
+    "endColumn": 25
   },
   {
     "ruleId": "padded-blocks",
@@ -129,7 +143,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 10,
-    "column": 57
+    "column": 57,
+    "endLine": 11,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -159,7 +175,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 13,
-    "column": 39
+    "column": 39,
+    "endLine": 14,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -221,7 +239,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 18,
-    "column": 74
+    "column": 74,
+    "endLine": 19,
+    "endColumn": 1
   },
   {
     "ruleId": "lodash-template/scriptlet-indent",
@@ -235,7 +255,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 19,
-    "column": 51
+    "column": 51,
+    "endLine": 20,
+    "endColumn": 1
   },
   {
     "ruleId": "lodash-template/scriptlet-indent",
@@ -257,7 +279,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 20,
-    "column": 32
+    "column": 32,
+    "endLine": 21,
+    "endColumn": 1
   },
   {
     "ruleId": "max-len",
@@ -277,7 +301,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 21,
-    "column": 101
+    "column": 101,
+    "endLine": 22,
+    "endColumn": 1
   },
   {
     "ruleId": "lodash-template/scriptlet-indent",
@@ -299,7 +325,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 23,
-    "column": 5
+    "column": 5,
+    "endLine": 24,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -337,7 +365,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 26,
-    "column": 24
+    "column": 24,
+    "endLine": 27,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -351,7 +381,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 27,
-    "column": 20
+    "column": 20,
+    "endLine": 28,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -433,7 +465,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 32,
-    "column": 45
+    "column": 45,
+    "endLine": 33,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -467,7 +501,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 34,
-    "column": 5
+    "column": 5,
+    "endLine": 35,
+    "endColumn": 1
   },
   {
     "ruleId": "padded-blocks",

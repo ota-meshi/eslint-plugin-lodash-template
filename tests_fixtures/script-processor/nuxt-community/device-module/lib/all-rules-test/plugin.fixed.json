@@ -172,6 +172,14 @@
     "column": 1
   },
   {
+    "ruleId": "func-names",
+    "message": "Unexpected unnamed async function.",
+    "line": 55,
+    "column": 16,
+    "endLine": 55,
+    "endColumn": 31
+  },
+  {
     "ruleId": "require-await",
     "message": "Async function has no 'await' expression.",
     "line": 55,

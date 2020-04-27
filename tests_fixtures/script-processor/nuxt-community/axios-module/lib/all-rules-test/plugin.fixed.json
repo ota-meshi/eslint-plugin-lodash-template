@@ -263,13 +263,17 @@
     "ruleId": "no-empty-function",
     "message": "Unexpected empty arrow function 'finish'.",
     "line": 187,
-    "column": 25
+    "column": 25,
+    "endLine": 187,
+    "endColumn": 28
   },
   {
     "ruleId": "no-empty-function",
     "message": "Unexpected empty arrow function 'start'.",
     "line": 188,
-    "column": 24
+    "column": 24,
+    "endLine": 188,
+    "endColumn": 27
   },
   {
     "ruleId": "sort-keys",
@@ -283,13 +287,17 @@
     "ruleId": "no-empty-function",
     "message": "Unexpected empty arrow function 'fail'.",
     "line": 189,
-    "column": 23
+    "column": 23,
+    "endLine": 189,
+    "endColumn": 26
   },
   {
     "ruleId": "no-empty-function",
     "message": "Unexpected empty arrow function 'set'.",
     "line": 190,
-    "column": 22
+    "column": 22,
+    "endLine": 190,
+    "endColumn": 25
   },
   {
     "ruleId": "max-len",
@@ -400,14 +408,6 @@
     "column": 11,
     "endLine": 266,
     "endColumn": 12
-  },
-  {
-    "ruleId": "no-process-env",
-    "message": "Unexpected use of process.env.",
-    "line": 266,
-    "column": 12,
-    "endLine": 266,
-    "endColumn": 23
   },
   {
     "ruleId": "no-underscore-dangle",

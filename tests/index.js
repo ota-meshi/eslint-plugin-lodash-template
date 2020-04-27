@@ -98,7 +98,7 @@ describe("index test", () => {
 })
 
 describe("Basic tests", () => {
-    if (semver.satisfies(eslintVersion, ">=6.2.0")) {
+    if (semver.satisfies(eslintVersion, ">=7.0.0-rc")) {
         describe("About fixtures/hello.html", () => {
             it("should notify errors", () => {
                 const cli = new CLIEngine({
@@ -240,7 +240,7 @@ describe("Basic tests", () => {
                 ])
             })
 
-            if (semver.satisfies(eslintVersion, ">=6.2.0")) {
+            if (semver.satisfies(eslintVersion, ">=7.0.0-rc")) {
                 it("should fix errors with --fix option", () => {
                     const baseFilepath = path.join(FIXTURE_DIR, "hello.html")
                     const testFilepath = path.join(
