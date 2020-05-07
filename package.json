@@ -81,7 +81,7 @@
     "eslint-plugin-markdown": "^1.0.1",
     "eslint-visitor-keys": "^1.1.0",
     "eslint4b": "^6.8.0",
-    "espree": "^6.1.2",
+    "espree": "^7.0.0",
     "if-node-version": "^1.1.1",
     "js-md5": "^0.7.3",
     "mocha": "^7.0.0",
