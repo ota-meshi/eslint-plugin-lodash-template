@@ -174,18 +174,20 @@
     "endColumn": 3
   },
   {
+    "ruleId": "space-before-function-paren",
+    "message": "Missing space before function parentheses.",
+    "line": 19,
+    "column": 9,
+    "endLine": 19,
+    "endColumn": 10
+  },
+  {
     "ruleId": "max-statements",
     "message": "Method 'render' has too many statements (12). Maximum allowed is 10.",
     "line": 19,
     "column": 9,
     "endLine": 42,
     "endColumn": 4
-  },
-  {
-    "ruleId": "space-before-function-paren",
-    "message": "Missing space before function parentheses.",
-    "line": 19,
-    "column": 9
   },
   {
     "ruleId": "padded-blocks",

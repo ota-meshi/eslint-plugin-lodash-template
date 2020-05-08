@@ -56,6 +56,14 @@
     "endColumn": 65
   },
   {
+    "ruleId": "func-names",
+    "message": "Unexpected unnamed function.",
+    "line": 5,
+    "column": 16,
+    "endLine": 5,
+    "endColumn": 25
+  },
+  {
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 5,
@@ -97,7 +105,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 6,
-    "column": 33
+    "column": 33,
+    "endLine": 7,
+    "endColumn": 1
   },
   {
     "ruleId": "padded-blocks",

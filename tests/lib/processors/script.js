@@ -155,7 +155,7 @@ describe("script test", () => {
                 })
 
                 if (!parsingErrorOnly) {
-                    if (semver.satisfies(eslintVersion, ">=6.4.0")) {
+                    if (semver.satisfies(eslintVersion, ">=7.0.0-rc")) {
                         it("autofix", () => {
                             const cli = new CLIEngine({
                                 cwd: FIXTURE_DIR,
@@ -205,7 +205,7 @@ describe("script test", () => {
                         "../all-rules-test"
                     )
                     if (
-                        semver.satisfies(eslintVersion, ">=6.7.0") &&
+                        semver.satisfies(eslintVersion, ">=7.0.0-rc") &&
                         testUtils.existsPath(allConfigTestDirPath)
                     ) {
                         const basename = path.basename(name)

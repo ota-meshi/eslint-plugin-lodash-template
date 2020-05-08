@@ -8,6 +8,14 @@
     "endColumn": 75
   },
   {
+    "ruleId": "func-names",
+    "message": "Unexpected unnamed function.",
+    "line": 7,
+    "column": 16,
+    "endLine": 7,
+    "endColumn": 25
+  },
+  {
     "ruleId": "no-use-before-define",
     "message": "'assignExperiment' was used before it was defined.",
     "line": 10,

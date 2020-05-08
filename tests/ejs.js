@@ -51,7 +51,7 @@ function stringifyMessages(messages) {
 }
 
 describe("ejs test", () => {
-    if (semver.satisfies(eslintVersion, ">=6.2.0")) {
+    if (semver.satisfies(eslintVersion, ">=7.0.0-rc")) {
         describe("should notify errors", () => {
             for (const name of testUtils
                 .listupFiles(FIXTURE_DIR)

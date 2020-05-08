@@ -395,7 +395,9 @@
     "ruleId": "space-before-function-paren",
     "message": "Missing space before function parentheses.",
     "line": 19,
-    "column": 12
+    "column": 12,
+    "endLine": 19,
+    "endColumn": 13
   },
   {
     "ruleId": "padded-blocks",
@@ -453,7 +455,9 @@
     "ruleId": "space-before-function-paren",
     "message": "Missing space before function parentheses.",
     "line": 22,
-    "column": 13
+    "column": 13,
+    "endLine": 22,
+    "endColumn": 14
   },
   {
     "ruleId": "padded-blocks",
@@ -519,7 +523,9 @@
     "ruleId": "space-before-function-paren",
     "message": "Missing space before function parentheses.",
     "line": 25,
-    "column": 17
+    "column": 17,
+    "endLine": 25,
+    "endColumn": 18
   },
   {
     "ruleId": "padded-blocks",
@@ -599,7 +605,9 @@
     "ruleId": "space-before-function-paren",
     "message": "Missing space before function parentheses.",
     "line": 28,
-    "column": 18
+    "column": 18,
+    "endLine": 28,
+    "endColumn": 19
   },
   {
     "ruleId": "padded-blocks",
@@ -687,7 +695,9 @@
     "ruleId": "space-before-function-paren",
     "message": "Missing space before function parentheses.",
     "line": 31,
-    "column": 10
+    "column": 10,
+    "endLine": 31,
+    "endColumn": 11
   },
   {
     "ruleId": "padded-blocks",
@@ -1973,7 +1983,9 @@
     "ruleId": "no-empty-function",
     "message": "Unexpected empty arrow function 'finish'.",
     "line": 98,
-    "column": 19
+    "column": 19,
+    "endLine": 98,
+    "endColumn": 22
   },
   {
     "ruleId": "indent",
@@ -1995,7 +2007,9 @@
     "ruleId": "no-empty-function",
     "message": "Unexpected empty arrow function 'start'.",
     "line": 99,
-    "column": 18
+    "column": 18,
+    "endLine": 99,
+    "endColumn": 21
   },
   {
     "ruleId": "indent",
@@ -2025,7 +2039,9 @@
     "ruleId": "no-empty-function",
     "message": "Unexpected empty arrow function 'fail'.",
     "line": 100,
-    "column": 17
+    "column": 17,
+    "endLine": 100,
+    "endColumn": 20
   },
   {
     "ruleId": "indent",
@@ -2047,7 +2063,9 @@
     "ruleId": "no-empty-function",
     "message": "Unexpected empty arrow function 'set'.",
     "line": 101,
-    "column": 16
+    "column": 16,
+    "endLine": 101,
+    "endColumn": 19
   },
   {
     "ruleId": "indent",
@@ -2846,14 +2864,6 @@
     "column": 9,
     "endLine": 154,
     "endColumn": 10
-  },
-  {
-    "ruleId": "no-process-env",
-    "message": "Unexpected use of process.env.",
-    "line": 154,
-    "column": 10,
-    "endLine": 154,
-    "endColumn": 21
   },
   {
     "ruleId": "no-underscore-dangle",

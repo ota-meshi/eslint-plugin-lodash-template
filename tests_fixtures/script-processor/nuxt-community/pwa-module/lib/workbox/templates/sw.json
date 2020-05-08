@@ -105,7 +105,7 @@
   },
   {
     "ruleId": "func-call-spacing",
-    "message": "Unexpected newline between function name and paren.",
+    "message": "Unexpected whitespace between function name and paren.",
     "line": 60,
     "column": 132
   },
@@ -121,13 +121,17 @@
     "ruleId": "object-curly-spacing",
     "message": "A space is required after '{'.",
     "line": 65,
-    "column": 78
+    "column": 78,
+    "endLine": 65,
+    "endColumn": 79
   },
   {
     "ruleId": "object-curly-spacing",
     "message": "A space is required before '}'.",
     "line": 65,
-    "column": 84
+    "column": 84,
+    "endLine": 65,
+    "endColumn": 85
   },
   {
     "ruleId": "no-undef",
@@ -141,13 +145,17 @@
     "ruleId": "object-curly-spacing",
     "message": "A space is required after '{'.",
     "line": 66,
-    "column": 73
+    "column": 73,
+    "endLine": 66,
+    "endColumn": 74
   },
   {
     "ruleId": "object-curly-spacing",
     "message": "A space is required before '}'.",
     "line": 66,
-    "column": 79
+    "column": 79,
+    "endLine": 66,
+    "endColumn": 80
   },
   {
     "ruleId": "no-undef",

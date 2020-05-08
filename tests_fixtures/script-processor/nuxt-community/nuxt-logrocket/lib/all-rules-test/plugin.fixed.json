@@ -1,5 +1,13 @@
 [
   {
+    "ruleId": "func-names",
+    "message": "Unexpected unnamed function.",
+    "line": 7,
+    "column": 16,
+    "endLine": 7,
+    "endColumn": 25
+  },
+  {
     "ruleId": "no-unused-vars",
     "message": "'app' is defined but never used.",
     "line": 7,
@@ -8,23 +16,19 @@
     "endColumn": 30
   },
   {
-    "ruleId": "no-process-env",
-    "message": "Unexpected use of process.env.",
-    "line": 10,
-    "column": 26,
-    "endLine": 10,
-    "endColumn": 37
+    "ruleId": "no-mixed-operators",
+    "message": "Unexpected mix of '&&' and '||'.",
+    "line": 16,
+    "column": 41,
+    "endLine": 16,
+    "endColumn": 43
   },
   {
     "ruleId": "no-mixed-operators",
     "message": "Unexpected mix of '&&' and '||'.",
     "line": 16,
-    "column": 41
-  },
-  {
-    "ruleId": "no-mixed-operators",
-    "message": "Unexpected mix of '&&' and '||'.",
-    "line": 16,
-    "column": 57
+    "column": 57,
+    "endLine": 16,
+    "endColumn": 59
   }
 ]

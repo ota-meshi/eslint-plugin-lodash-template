@@ -24,6 +24,14 @@
     "endColumn": 10
   },
   {
+    "ruleId": "func-names",
+    "message": "Unexpected unnamed function.",
+    "line": 12,
+    "column": 16,
+    "endLine": 12,
+    "endColumn": 25
+  },
+  {
     "ruleId": "no-undef",
     "message": "'OneSignal' is not defined.",
     "line": 16,
