@@ -152,14 +152,6 @@
     "column": 1
   },
   {
-    "ruleId": "global-require",
-    "message": "Unexpected require().",
-    "line": 121,
-    "column": 27,
-    "endLine": 121,
-    "endColumn": 52
-  },
-  {
     "ruleId": "max-len",
     "message": "This line has a length of 148. Maximum allowed is 80.",
     "line": 133,
@@ -207,7 +199,9 @@
     "ruleId": "no-mixed-operators",
     "message": "Unexpected mix of '+' and '*'.",
     "line": 144,
-    "column": 68
+    "column": 68,
+    "endLine": 144,
+    "endColumn": 69
   },
   {
     "ruleId": "no-magic-numbers",
@@ -229,7 +223,9 @@
     "ruleId": "no-mixed-operators",
     "message": "Unexpected mix of '+' and '*'.",
     "line": 144,
-    "column": 83
+    "column": 83,
+    "endLine": 144,
+    "endColumn": 84
   },
   {
     "ruleId": "id-length",

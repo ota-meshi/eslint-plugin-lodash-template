@@ -1254,14 +1254,6 @@
     "endColumn": 5
   },
   {
-    "ruleId": "global-require",
-    "message": "Unexpected require().",
-    "line": 93,
-    "column": 23,
-    "endLine": 93,
-    "endColumn": 48
-  },
-  {
     "ruleId": "quotes",
     "message": "Strings must use doublequote.",
     "line": 93,

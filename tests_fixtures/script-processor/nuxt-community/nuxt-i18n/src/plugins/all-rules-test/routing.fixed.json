@@ -230,14 +230,6 @@
     "endColumn": 29
   },
   {
-    "ruleId": "global-require",
-    "message": "Unexpected require().",
-    "line": 124,
-    "column": 37,
-    "endLine": 124,
-    "endColumn": 56
-  },
-  {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
     "line": 125,

@@ -58,14 +58,6 @@
     "endColumn": 24
   },
   {
-    "ruleId": "no-process-env",
-    "message": "Unexpected use of process.env.",
-    "line": 67,
-    "column": 29,
-    "endLine": 67,
-    "endColumn": 40
-  },
-  {
     "ruleId": "sort-keys",
     "message": "Expected object keys to be in ascending order. 'getters' should be before 'mutations'.",
     "line": 101,
@@ -160,14 +152,6 @@
     "column": 30,
     "endLine": 271,
     "endColumn": 6
-  },
-  {
-    "ruleId": "global-require",
-    "message": "Unexpected require().",
-    "line": 218,
-    "column": 41,
-    "endLine": 218,
-    "endColumn": 59
   },
   {
     "ruleId": "max-len",

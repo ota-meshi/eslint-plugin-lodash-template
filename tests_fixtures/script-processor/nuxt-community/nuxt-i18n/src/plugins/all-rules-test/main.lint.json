@@ -738,14 +738,6 @@
     "endColumn": 11
   },
   {
-    "ruleId": "no-process-env",
-    "message": "Unexpected use of process.env.",
-    "line": 52,
-    "column": 15,
-    "endLine": 52,
-    "endColumn": 26
-  },
-  {
     "ruleId": "quotes",
     "message": "Strings must use doublequote.",
     "line": 52,
@@ -2220,14 +2212,6 @@
     "column": 32,
     "endLine": 146,
     "endColumn": 33
-  },
-  {
-    "ruleId": "global-require",
-    "message": "Unexpected require().",
-    "line": 146,
-    "column": 37,
-    "endLine": 146,
-    "endColumn": 55
   },
   {
     "ruleId": "quotes",

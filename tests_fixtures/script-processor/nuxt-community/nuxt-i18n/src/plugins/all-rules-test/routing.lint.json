@@ -1388,14 +1388,6 @@
     "endColumn": 11
   },
   {
-    "ruleId": "global-require",
-    "message": "Unexpected require().",
-    "line": 90,
-    "column": 27,
-    "endLine": 90,
-    "endColumn": 46
-  },
-  {
     "ruleId": "quotes",
     "message": "Strings must use doublequote.",
     "line": 90,
@@ -1787,7 +1779,9 @@
     "ruleId": "operator-linebreak",
     "message": "':' should be placed at the beginning of the line.",
     "line": 107,
-    "column": 71
+    "column": 70,
+    "endLine": 107,
+    "endColumn": 71
   },
   {
     "ruleId": "indent",
@@ -2019,7 +2013,9 @@
     "ruleId": "space-before-function-paren",
     "message": "Missing space before function parentheses.",
     "line": 122,
-    "column": 10
+    "column": 10,
+    "endLine": 122,
+    "endColumn": 11
   },
   {
     "ruleId": "no-shadow",
