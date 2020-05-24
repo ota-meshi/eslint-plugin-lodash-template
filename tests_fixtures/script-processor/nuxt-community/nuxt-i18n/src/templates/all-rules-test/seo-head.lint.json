@@ -11,43 +11,57 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 1,
-    "column": 31
+    "column": 31,
+    "endLine": 2,
+    "endColumn": 1
   },
   {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 3,
-    "column": 69
+    "column": 69,
+    "endLine": 4,
+    "endColumn": 1
   },
   {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 4,
-    "column": 57
+    "column": 57,
+    "endLine": 5,
+    "endColumn": 1
   },
   {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 5,
-    "column": 55
+    "column": 55,
+    "endLine": 6,
+    "endColumn": 1
   },
   {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 6,
-    "column": 42
+    "column": 42,
+    "endLine": 7,
+    "endColumn": 1
   },
   {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 7,
-    "column": 61
+    "column": 61,
+    "endLine": 8,
+    "endColumn": 1
   },
   {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 8,
-    "column": 43
+    "column": 43,
+    "endLine": 9,
+    "endColumn": 1
   },
   {
     "ruleId": "func-names",
@@ -61,7 +75,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 10,
-    "column": 40
+    "column": 40,
+    "endLine": 11,
+    "endColumn": 3
   },
   {
     "ruleId": "indent",
@@ -201,7 +217,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 18,
-    "column": 5
+    "column": 5,
+    "endLine": 19,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -212,18 +230,20 @@
     "endColumn": 5
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 19,
+    "column": 15,
+    "endLine": 20,
+    "endColumn": 3
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 20,
     "column": 1,
     "endLine": 20,
     "endColumn": 3
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 20,
-    "column": 3
   },
   {
     "ruleId": "indent",
@@ -283,7 +303,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 22,
-    "column": 99
+    "column": 99,
+    "endLine": 23,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -297,7 +319,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 23,
-    "column": 23
+    "column": 23,
+    "endLine": 24,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -311,7 +335,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 24,
-    "column": 63
+    "column": 63,
+    "endLine": 25,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -325,7 +351,17 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 25,
-    "column": 55
+    "column": 55,
+    "endLine": 26,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 25,
+    "column": 55,
+    "endLine": 26,
+    "endColumn": 3
   },
   {
     "ruleId": "indent",
@@ -334,12 +370,6 @@
     "column": 1,
     "endLine": 26,
     "endColumn": 3
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 26,
-    "column": 3
   },
   {
     "ruleId": "indent",
@@ -353,7 +383,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 28,
-    "column": 18
+    "column": 18,
+    "endLine": 29,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -383,7 +415,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 30,
-    "column": 42
+    "column": 42,
+    "endLine": 31,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -413,7 +447,9 @@
     "ruleId": "dot-location",
     "message": "Expected dot to be on same line as object.",
     "line": 32,
-    "column": 7
+    "column": 7,
+    "endLine": 32,
+    "endColumn": 8
   },
   {
     "ruleId": "arrow-parens",
@@ -427,7 +463,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 32,
-    "column": 22
+    "column": 22,
+    "endLine": 33,
+    "endColumn": 9
   },
   {
     "ruleId": "indent",
@@ -441,7 +479,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 33,
-    "column": 37
+    "column": 37,
+    "endLine": 34,
+    "endColumn": 11
   },
   {
     "ruleId": "indent",
@@ -567,7 +607,17 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 39,
-    "column": 12
+    "column": 12,
+    "endLine": 40,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 39,
+    "column": 12,
+    "endLine": 40,
+    "endColumn": 9
   },
   {
     "ruleId": "indent",
@@ -581,13 +631,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 40,
-    "column": 9
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 40,
-    "column": 16
+    "column": 16,
+    "endLine": 41,
+    "endColumn": 11
   },
   {
     "ruleId": "indent",
@@ -615,7 +661,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 41,
-    "column": 110
+    "column": 110,
+    "endLine": 42,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -629,7 +677,17 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 42,
-    "column": 22
+    "column": 22,
+    "endLine": 43,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 42,
+    "column": 22,
+    "endLine": 43,
+    "endColumn": 9
   },
   {
     "ruleId": "indent",
@@ -643,7 +701,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 43,
-    "column": 9
+    "column": 10,
+    "endLine": 44,
+    "endColumn": 7
   },
   {
     "ruleId": "indent",
@@ -652,12 +712,6 @@
     "column": 1,
     "endLine": 44,
     "endColumn": 7
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 44,
-    "column": 7
   },
   {
     "ruleId": "indent",
@@ -671,7 +725,9 @@
     "ruleId": "dot-location",
     "message": "Expected dot to be on same line as object.",
     "line": 45,
-    "column": 7
+    "column": 7,
+    "endLine": 45,
+    "endColumn": 8
   },
   {
     "ruleId": "arrow-parens",
@@ -693,7 +749,17 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 45,
-    "column": 31
+    "column": 31,
+    "endLine": 46,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 45,
+    "column": 31,
+    "endLine": 46,
+    "endColumn": 3
   },
   {
     "ruleId": "indent",
@@ -702,12 +768,6 @@
     "column": 1,
     "endLine": 46,
     "endColumn": 3
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 46,
-    "column": 3
   },
   {
     "ruleId": "indent",
@@ -737,7 +797,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 49,
-    "column": 51
+    "column": 51,
+    "endLine": 50,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -765,7 +827,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 50,
-    "column": 84
+    "column": 84,
+    "endLine": 51,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -787,7 +851,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 51,
-    "column": 62
+    "column": 62,
+    "endLine": 52,
+    "endColumn": 7
   },
   {
     "ruleId": "indent",
@@ -897,7 +963,17 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 57,
-    "column": 9
+    "column": 9,
+    "endLine": 58,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 57,
+    "column": 9,
+    "endLine": 58,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -911,7 +987,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 58,
-    "column": 5
+    "column": 6,
+    "endLine": 59,
+    "endColumn": 3
   },
   {
     "ruleId": "indent",
@@ -920,12 +998,6 @@
     "column": 1,
     "endLine": 59,
     "endColumn": 3
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 59,
-    "column": 3
   },
   {
     "ruleId": "indent",
@@ -955,7 +1027,9 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 62,
-    "column": 18
+    "column": 18,
+    "endLine": 63,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -985,7 +1059,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 64,
-    "column": 63
+    "column": 63,
+    "endLine": 65,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -1111,7 +1187,17 @@
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 70,
-    "column": 7
+    "column": 7,
+    "endLine": 71,
+    "endColumn": 1
+  },
+  {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 70,
+    "column": 7,
+    "endLine": 71,
+    "endColumn": 3
   },
   {
     "ruleId": "indent",
@@ -1120,12 +1206,6 @@
     "column": 1,
     "endLine": 71,
     "endColumn": 3
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 71,
-    "column": 3
   },
   {
     "ruleId": "indent",
@@ -1193,7 +1273,9 @@
     "ruleId": "dot-location",
     "message": "Expected dot to be on same line as object.",
     "line": 75,
-    "column": 7
+    "column": 7,
+    "endLine": 75,
+    "endColumn": 8
   },
   {
     "ruleId": "arrow-parens",
@@ -1223,7 +1305,9 @@
     "ruleId": "dot-location",
     "message": "Expected dot to be on same line as object.",
     "line": 76,
-    "column": 7
+    "column": 7,
+    "endLine": 76,
+    "endColumn": 8
   },
   {
     "ruleId": "arrow-parens",
@@ -1402,21 +1486,27 @@
     "endColumn": 3
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 87,
+    "column": 4,
+    "endLine": 88,
+    "endColumn": 1
+  },
+  {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 87,
-    "column": 4
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 88,
-    "column": 1
+    "column": 4,
+    "endLine": 88,
+    "endColumn": 1
   },
   {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 88,
-    "column": 2
+    "column": 2,
+    "endLine": 89,
+    "endColumn": 1
   }
 ]

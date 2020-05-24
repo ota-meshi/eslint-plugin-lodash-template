@@ -73,7 +73,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 7,
-    "column": 13
+    "column": 13,
+    "endLine": 8,
+    "endColumn": 3
   },
   {
     "ruleId": "indent",
@@ -95,7 +97,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 8,
-    "column": 29
+    "column": 29,
+    "endLine": 9,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -130,6 +134,14 @@
     "endColumn": 1
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 9,
+    "column": 70,
+    "endLine": 10,
+    "endColumn": 3
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 10,
@@ -141,7 +153,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 10,
-    "column": 3
+    "column": 5,
+    "endLine": 11,
+    "endColumn": 1
   },
   {
     "ruleId": "semi",
@@ -150,12 +164,6 @@
     "column": 5,
     "endLine": 11,
     "endColumn": 1
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 11,
-    "column": 1
   },
   {
     "ruleId": "func-names",
@@ -169,7 +177,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 13,
-    "column": 39
+    "column": 39,
+    "endLine": 14,
+    "endColumn": 3
   },
   {
     "ruleId": "indent",
@@ -196,17 +206,19 @@
     "endColumn": 19
   },
   {
-    "ruleId": "semi",
-    "message": "Missing semicolon.",
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
     "line": 14,
     "column": 31,
     "endLine": 15,
     "endColumn": 1
   },
   {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 15,
-    "column": 1
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 14,
+    "column": 31,
+    "endLine": 15,
+    "endColumn": 1
   }
 ]

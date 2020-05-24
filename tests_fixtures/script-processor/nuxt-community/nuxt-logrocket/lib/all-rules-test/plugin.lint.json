@@ -67,7 +67,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 7,
-    "column": 50
+    "column": 50,
+    "endLine": 8,
+    "endColumn": 5
   },
   {
     "ruleId": "capitalized-comments",
@@ -127,7 +129,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 12,
-    "column": 81
+    "column": 81,
+    "endLine": 13,
+    "endColumn": 9
   },
   {
     "ruleId": "capitalized-comments",
@@ -140,8 +144,10 @@
   {
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
-    "line": 15,
-    "column": 5
+    "line": 14,
+    "column": 38,
+    "endLine": 15,
+    "endColumn": 5
   },
   {
     "ruleId": "capitalized-comments",
@@ -155,7 +161,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 17,
-    "column": 16
+    "column": 16,
+    "endLine": 18,
+    "endColumn": 9
   },
   {
     "ruleId": "capitalized-comments",
@@ -168,8 +176,10 @@
   {
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
-    "line": 21,
-    "column": 5
+    "line": 20,
+    "column": 32,
+    "endLine": 21,
+    "endColumn": 5
   },
   {
     "ruleId": "capitalized-comments",
@@ -198,8 +208,10 @@
   {
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
-    "line": 24,
-    "column": 1
+    "line": 23,
+    "column": 36,
+    "endLine": 24,
+    "endColumn": 1
   },
   {
     "ruleId": "no-extra-semi",

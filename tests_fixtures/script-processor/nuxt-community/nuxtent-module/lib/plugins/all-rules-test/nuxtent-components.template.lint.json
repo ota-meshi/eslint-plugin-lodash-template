@@ -88,6 +88,14 @@
     "endColumn": 4
   },
   {
+    "ruleId": "block-spacing",
+    "message": "Requires a space before '}'.",
+    "line": 12,
+    "column": 4,
+    "endLine": 12,
+    "endColumn": 5
+  },
+  {
     "ruleId": "brace-style",
     "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
     "line": 12,
@@ -102,12 +110,6 @@
     "column": 4,
     "endLine": 12,
     "endColumn": 5
-  },
-  {
-    "ruleId": "block-spacing",
-    "message": "Requires a space before '}'.",
-    "line": 12,
-    "column": 4
   },
   {
     "ruleId": "semi",
@@ -193,7 +195,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 19,
-    "column": 25
+    "column": 25,
+    "endLine": 20,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -375,7 +379,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 30,
-    "column": 35
+    "column": 35,
+    "endLine": 31,
+    "endColumn": 7
   },
   {
     "ruleId": "indent",
@@ -389,7 +395,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 31,
-    "column": 30
+    "column": 30,
+    "endLine": 32,
+    "endColumn": 9
   },
   {
     "ruleId": "indent",
@@ -448,18 +456,20 @@
     "endColumn": 1
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 34,
+    "column": 60,
+    "endLine": 35,
+    "endColumn": 7
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 12 spaces but found 6.",
     "line": 35,
     "column": 1,
     "endLine": 35,
     "endColumn": 7
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 35,
-    "column": 7
   },
   {
     "ruleId": "indent",
@@ -502,6 +512,14 @@
     "endColumn": 1
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 37,
+    "column": 44,
+    "endLine": 38,
+    "endColumn": 5
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 8 spaces but found 4.",
     "line": 38,
@@ -513,7 +531,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 38,
-    "column": 5
+    "column": 12,
+    "endLine": 39,
+    "endColumn": 7
   },
   {
     "ruleId": "no-else-return",
@@ -522,12 +542,6 @@
     "column": 12,
     "endLine": 41,
     "endColumn": 6
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 38,
-    "column": 12
   },
   {
     "ruleId": "indent",
@@ -570,6 +584,14 @@
     "endColumn": 1
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 40,
+    "column": 44,
+    "endLine": 41,
+    "endColumn": 5
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 8 spaces but found 4.",
     "line": 41,
@@ -581,7 +603,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 41,
-    "column": 5
+    "column": 6,
+    "endLine": 42,
+    "endColumn": 3
   },
   {
     "ruleId": "indent",
@@ -590,12 +614,6 @@
     "column": 1,
     "endLine": 42,
     "endColumn": 3
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 42,
-    "column": 3
   },
   {
     "ruleId": "indent",

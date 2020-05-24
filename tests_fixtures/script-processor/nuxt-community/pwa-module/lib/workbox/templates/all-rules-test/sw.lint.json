@@ -452,14 +452,16 @@
     "endColumn": 77
   },
   {
-    "ruleId": "arrow-body-style",
-    "message": "Unexpected block statement surrounding arrow body; move the returned value immediately after the `=>`.",
-    "line": 65,
-    "column": 90
-  },
-  {
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
+    "line": 65,
+    "column": 90,
+    "endLine": 66,
+    "endColumn": 3
+  },
+  {
+    "ruleId": "arrow-body-style",
+    "message": "Unexpected block statement surrounding arrow body; move the returned value immediately after the `=>`.",
     "line": 65,
     "column": 90
   },
@@ -496,18 +498,20 @@
     "endColumn": 6
   },
   {
-    "ruleId": "semi",
-    "message": "Missing semicolon.",
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
     "line": 67,
     "column": 61,
     "endLine": 68,
     "endColumn": 1
   },
   {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 68,
-    "column": 1
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 67,
+    "column": 61,
+    "endLine": 68,
+    "endColumn": 1
   },
   {
     "ruleId": "semi",

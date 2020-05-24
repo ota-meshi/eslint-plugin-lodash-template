@@ -385,7 +385,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 30,
-    "column": 25
+    "column": 25,
+    "endLine": 31,
+    "endColumn": 3
   },
   {
     "ruleId": "indent",
@@ -524,18 +526,20 @@
     "endColumn": 3
   },
   {
-    "ruleId": "semi",
-    "message": "Missing semicolon.",
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
     "line": 41,
     "column": 35,
     "endLine": 42,
     "endColumn": 1
   },
   {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 42,
-    "column": 1
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 41,
+    "column": 35,
+    "endLine": 42,
+    "endColumn": 1
   },
   {
     "ruleId": "semi",

@@ -43,7 +43,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 3,
-    "column": 37
+    "column": 37,
+    "endLine": 4,
+    "endColumn": 1
   },
   {
     "ruleId": "lodash-template/scriptlet-indent",
@@ -378,18 +380,20 @@
     "endColumn": 16
   },
   {
-    "ruleId": "semi",
-    "message": "Missing semicolon.",
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
     "line": 19,
     "column": 19,
     "endLine": 20,
     "endColumn": 1
   },
   {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 20,
-    "column": 1
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 19,
+    "column": 19,
+    "endLine": 20,
+    "endColumn": 1
   },
   {
     "ruleId": "semi",
