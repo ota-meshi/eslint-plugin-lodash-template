@@ -1,7 +1,5 @@
 "use strict"
 
-const version = require("./package.json").version
-
 module.exports = {
     parserOptions: {
         sourceType: "script",
@@ -30,7 +28,8 @@ module.exports = {
                 "@mysticatea/eslint-plugin/require-meta-docs-url": [
                     "error",
                     {
-                        pattern: `https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/v${version}/docs/rules/{{name}}.md`,
+                        pattern:
+                            "https://ota-meshi.github.io/eslint-plugin-lodash-template/rules/{{name}}.html",
                     },
                 ],
             },
