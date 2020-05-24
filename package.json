@@ -67,7 +67,7 @@
   "devDependencies": {
     "@mysticatea/eslint-plugin": "^13.0.0",
     "@nuxtjs/eslint-config": "^3.0.0",
-    "@nuxtjs/eslint-config-typescript": "^1.0.2",
+    "@nuxtjs/eslint-config-typescript": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^3.0.0",
     "@vuepress/plugin-pwa": "^1.4.1",
     "babel-eslint": "^10.1.0",
