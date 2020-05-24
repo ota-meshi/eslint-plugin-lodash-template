@@ -83,7 +83,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 7,
-    "column": 39
+    "column": 39,
+    "endLine": 8,
+    "endColumn": 3
   },
   {
     "ruleId": "indent",
@@ -182,18 +184,20 @@
     "endColumn": 17
   },
   {
-    "ruleId": "semi",
-    "message": "Missing semicolon.",
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
     "line": 15,
     "column": 32,
     "endLine": 16,
     "endColumn": 1
   },
   {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 16,
-    "column": 1
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 15,
+    "column": 32,
+    "endLine": 16,
+    "endColumn": 1
   },
   {
     "ruleId": "func-style",
@@ -231,7 +235,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 18,
-    "column": 32
+    "column": 32,
+    "endLine": 19,
+    "endColumn": 3
   },
   {
     "ruleId": "indent",
@@ -429,7 +435,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 28,
-    "column": 32
+    "column": 32,
+    "endLine": 29,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -534,18 +542,20 @@
     "endColumn": 1
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 34,
+    "column": 65,
+    "endLine": 35,
+    "endColumn": 3
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 35,
     "column": 1,
     "endLine": 35,
     "endColumn": 3
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 35,
-    "column": 3
   },
   {
     "ruleId": "indent",
@@ -685,7 +695,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 40,
-    "column": 51
+    "column": 51,
+    "endLine": 41,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -747,7 +759,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 45,
-    "column": 54
+    "column": 54,
+    "endLine": 46,
+    "endColumn": 7
   },
   {
     "ruleId": "indent",
@@ -761,7 +775,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 46,
-    "column": 40
+    "column": 40,
+    "endLine": 47,
+    "endColumn": 9
   },
   {
     "ruleId": "indent",
@@ -812,6 +828,14 @@
     "endColumn": 1
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 49,
+    "column": 29,
+    "endLine": 50,
+    "endColumn": 7
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 12 spaces but found 6.",
     "line": 50,
@@ -823,7 +847,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 50,
-    "column": 7
+    "column": 8,
+    "endLine": 51,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -837,7 +863,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 51,
-    "column": 5
+    "column": 6,
+    "endLine": 52,
+    "endColumn": 3
   },
   {
     "ruleId": "indent",
@@ -846,12 +874,6 @@
     "column": 1,
     "endLine": 52,
     "endColumn": 3
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 52,
-    "column": 3
   },
   {
     "ruleId": "indent",
@@ -881,7 +903,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 54,
-    "column": 31
+    "column": 31,
+    "endLine": 55,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -1013,7 +1037,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 60,
-    "column": 64
+    "column": 64,
+    "endLine": 61,
+    "endColumn": 7
   },
   {
     "ruleId": "indent",
@@ -1064,18 +1090,20 @@
     "endColumn": 1
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 63,
+    "column": 33,
+    "endLine": 64,
+    "endColumn": 5
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 8 spaces but found 4.",
     "line": 64,
     "column": 1,
     "endLine": 64,
     "endColumn": 5
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 64,
-    "column": 5
   },
   {
     "ruleId": "indent",
@@ -1137,7 +1165,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 68,
-    "column": 31
+    "column": 31,
+    "endLine": 69,
+    "endColumn": 7
   },
   {
     "ruleId": "indent",
@@ -1196,18 +1226,20 @@
     "endColumn": 1
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 69,
+    "column": 58,
+    "endLine": 70,
+    "endColumn": 5
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 8 spaces but found 4.",
     "line": 70,
     "column": 1,
     "endLine": 70,
     "endColumn": 5
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 70,
-    "column": 5
   },
   {
     "ruleId": "indent",
@@ -1272,6 +1304,14 @@
     "endColumn": 1
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 73,
+    "column": 82,
+    "endLine": 74,
+    "endColumn": 3
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 74,
@@ -1283,13 +1323,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 74,
-    "column": 3
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 74,
-    "column": 10
+    "column": 10,
+    "endLine": 75,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -1340,18 +1376,20 @@
     "endColumn": 1
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 78,
+    "column": 17,
+    "endLine": 79,
+    "endColumn": 3
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 79,
     "column": 1,
     "endLine": 79,
     "endColumn": 3
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 79,
-    "column": 3
   },
   {
     "ruleId": "indent",
@@ -1458,18 +1496,20 @@
     "endColumn": 3
   },
   {
-    "ruleId": "semi",
-    "message": "Missing semicolon.",
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
     "line": 87,
     "column": 4,
     "endLine": 88,
     "endColumn": 1
   },
   {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 88,
-    "column": 1
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 87,
+    "column": 4,
+    "endLine": 88,
+    "endColumn": 1
   },
   {
     "ruleId": "func-style",
@@ -1491,7 +1531,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 90,
-    "column": 31
+    "column": 31,
+    "endLine": 91,
+    "endColumn": 3
   },
   {
     "ruleId": "indent",
@@ -1505,7 +1547,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 91,
-    "column": 35
+    "column": 35,
+    "endLine": 92,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -1524,18 +1568,20 @@
     "endColumn": 1
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 92,
+    "column": 11,
+    "endLine": 93,
+    "endColumn": 3
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 93,
     "column": 1,
     "endLine": 93,
     "endColumn": 3
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 93,
-    "column": 3
   },
   {
     "ruleId": "indent",
@@ -1626,18 +1672,20 @@
     "endColumn": 23
   },
   {
-    "ruleId": "semi",
-    "message": "Missing semicolon.",
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
     "line": 99,
     "column": 23,
     "endLine": 100,
     "endColumn": 1
   },
   {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 100,
-    "column": 1
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 99,
+    "column": 23,
+    "endLine": 100,
+    "endColumn": 1
   },
   {
     "ruleId": "max-params",
@@ -1667,7 +1715,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 102,
-    "column": 56
+    "column": 56,
+    "endLine": 103,
+    "endColumn": 3
   },
   {
     "ruleId": "indent",
@@ -1761,7 +1811,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 108,
-    "column": 23
+    "column": 23,
+    "endLine": 109,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -1780,6 +1832,14 @@
     "endColumn": 1
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 110,
+    "column": 39,
+    "endLine": 111,
+    "endColumn": 3
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 111,
@@ -1791,13 +1851,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 111,
-    "column": 3
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 111,
-    "column": 41
+    "column": 41,
+    "endLine": 112,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -1859,7 +1915,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 115,
-    "column": 15
+    "column": 15,
+    "endLine": 116,
+    "endColumn": 7
   },
   {
     "ruleId": "indent",
@@ -1910,18 +1968,20 @@
     "endColumn": 1
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 117,
+    "column": 35,
+    "endLine": 118,
+    "endColumn": 5
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 8 spaces but found 4.",
     "line": 118,
     "column": 1,
     "endLine": 118,
     "endColumn": 5
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 118,
-    "column": 5
   },
   {
     "ruleId": "indent",
@@ -1956,6 +2016,14 @@
     "endColumn": 1
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 119,
+    "column": 43,
+    "endLine": 120,
+    "endColumn": 3
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 120,
@@ -1967,13 +2035,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 120,
-    "column": 3
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 121,
-    "column": 1
+    "column": 4,
+    "endLine": 121,
+    "endColumn": 1
   },
   {
     "ruleId": "func-style",
@@ -2011,7 +2075,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 124,
-    "column": 41
+    "column": 41,
+    "endLine": 125,
+    "endColumn": 3
   },
   {
     "ruleId": "indent",
@@ -2025,7 +2091,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 125,
-    "column": 80
+    "column": 80,
+    "endLine": 126,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -2044,18 +2112,20 @@
     "endColumn": 1
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 126,
+    "column": 11,
+    "endLine": 127,
+    "endColumn": 3
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 127,
     "column": 1,
     "endLine": 127,
     "endColumn": 3
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 127,
-    "column": 3
   },
   {
     "ruleId": "indent",
@@ -2144,17 +2214,19 @@
     "endColumn": 27
   },
   {
-    "ruleId": "semi",
-    "message": "Missing semicolon.",
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
     "line": 131,
     "column": 31,
     "endLine": 132,
     "endColumn": 1
   },
   {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 132,
-    "column": 1
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 131,
+    "column": 31,
+    "endLine": 132,
+    "endColumn": 1
   }
 ]

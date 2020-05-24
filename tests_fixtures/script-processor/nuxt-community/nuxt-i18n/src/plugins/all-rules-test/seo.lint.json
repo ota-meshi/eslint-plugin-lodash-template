@@ -59,7 +59,9 @@
     "ruleId": "space-before-function-paren",
     "message": "Missing space before function parentheses.",
     "line": 5,
-    "column": 10
+    "column": 10,
+    "endLine": 5,
+    "endColumn": 11
   },
   {
     "ruleId": "no-shadow",
@@ -73,7 +75,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 5,
-    "column": 16
+    "column": 16,
+    "endLine": 6,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -116,18 +120,20 @@
     "endColumn": 1
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 8,
+    "column": 7,
+    "endLine": 9,
+    "endColumn": 3
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 9,
     "column": 1,
     "endLine": 9,
     "endColumn": 3
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 9,
-    "column": 3
   },
   {
     "ruleId": "semi",

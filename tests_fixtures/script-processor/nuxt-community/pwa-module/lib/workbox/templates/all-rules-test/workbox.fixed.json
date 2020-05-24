@@ -41,8 +41,8 @@
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
     "line": 27,
-    "column": 9,
+    "column": 34,
     "endLine": 27,
-    "endColumn": 22
+    "endColumn": 47
   }
 ]

@@ -22,11 +22,11 @@ async function register () {
 }
 
 window.$workbox = register().
-    catch((error) => { <% if (options.dev) { %>
+    catch((error) => {
 
-        console.error(
+        <% if (options.dev) { %> console.error(
             "Error registering workbox:",
             error
-        ); <% } %>
+        );
 
-    });
+        <% } %> });

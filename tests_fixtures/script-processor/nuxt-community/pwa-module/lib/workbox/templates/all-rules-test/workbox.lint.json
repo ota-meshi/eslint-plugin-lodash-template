@@ -3,13 +3,17 @@
     "ruleId": "space-before-function-paren",
     "message": "Missing space before function parentheses.",
     "line": 1,
-    "column": 24
+    "column": 24,
+    "endLine": 1,
+    "endColumn": 25
   },
   {
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 1,
-    "column": 27
+    "column": 27,
+    "endLine": 2,
+    "endColumn": 3
   },
   {
     "ruleId": "indent",
@@ -39,7 +43,9 @@
     "ruleId": "padded-blocks",
     "message": "Block must be padded by blank lines.",
     "line": 2,
-    "column": 38
+    "column": 38,
+    "endLine": 3,
+    "endColumn": 5
   },
   {
     "ruleId": "indent",
@@ -66,18 +72,20 @@
     "endColumn": 1
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 3,
+    "column": 74,
+    "endLine": 4,
+    "endColumn": 3
+  },
+  {
     "ruleId": "indent",
     "message": "Expected indentation of 4 spaces but found 2.",
     "line": 4,
     "column": 1,
     "endLine": 4,
     "endColumn": 3
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 4,
-    "column": 3
   },
   {
     "ruleId": "indent",
@@ -206,18 +214,20 @@
     "endColumn": 3
   },
   {
-    "ruleId": "semi",
-    "message": "Missing semicolon.",
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
     "line": 14,
     "column": 17,
     "endLine": 15,
     "endColumn": 1
   },
   {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 15,
-    "column": 1
+    "ruleId": "semi",
+    "message": "Missing semicolon.",
+    "line": 14,
+    "column": 17,
+    "endLine": 15,
+    "endColumn": 1
   },
   {
     "ruleId": "indent",
@@ -250,24 +260,20 @@
     "endColumn": 15
   },
   {
-    "ruleId": "brace-style",
-    "message": "Statement inside of curly braces should be on next line.",
+    "ruleId": "block-spacing",
+    "message": "Requires a space after '{'.",
     "line": 18,
     "column": 19,
     "endLine": 18,
     "endColumn": 20
   },
   {
-    "ruleId": "block-spacing",
-    "message": "Requires a space after '{'.",
+    "ruleId": "brace-style",
+    "message": "Statement inside of curly braces should be on next line.",
     "line": 18,
-    "column": 19
-  },
-  {
-    "ruleId": "padded-blocks",
-    "message": "Block must be padded by blank lines.",
-    "line": 18,
-    "column": 20
+    "column": 19,
+    "endLine": 18,
+    "endColumn": 20
   },
   {
     "ruleId": "no-console",
@@ -294,6 +300,14 @@
     "endColumn": 89
   },
   {
+    "ruleId": "padded-blocks",
+    "message": "Block must be padded by blank lines.",
+    "line": 18,
+    "column": 95,
+    "endLine": 18,
+    "endColumn": 96
+  },
+  {
     "ruleId": "semi",
     "message": "Missing semicolon.",
     "line": 18,
@@ -302,18 +316,20 @@
     "endColumn": 96
   },
   {
-    "ruleId": "brace-style",
-    "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
+    "ruleId": "block-spacing",
+    "message": "Requires a space before '}'.",
     "line": 18,
     "column": 103,
     "endLine": 18,
     "endColumn": 104
   },
   {
-    "ruleId": "block-spacing",
-    "message": "Requires a space before '}'.",
+    "ruleId": "brace-style",
+    "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
     "line": 18,
-    "column": 103
+    "column": 103,
+    "endLine": 18,
+    "endColumn": 104
   },
   {
     "ruleId": "semi",

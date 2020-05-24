@@ -24,18 +24,20 @@
     "endColumn": 3
   },
   {
-    "ruleId": "brace-style",
-    "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
+    "ruleId": "block-spacing",
+    "message": "Requires a space before '}'.",
     "line": 12,
     "column": 4,
     "endLine": 12,
     "endColumn": 5
   },
   {
-    "ruleId": "block-spacing",
-    "message": "Requires a space before '}'.",
+    "ruleId": "brace-style",
+    "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
     "line": 12,
-    "column": 4
+    "column": 4,
+    "endLine": 12,
+    "endColumn": 5
   },
   {
     "ruleId": "no-multiple-empty-lines",
