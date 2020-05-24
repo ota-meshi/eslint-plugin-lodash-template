@@ -12,25 +12,28 @@ module.exports = {
         "plugin:@mysticatea/es2015",
         "plugin:@mysticatea/+node",
         "plugin:@mysticatea/+eslint-plugin",
-        "plugin:lodash-template/all"
+        "plugin:lodash-template/all",
     ],
     plugins: ["es"],
     rules: {
-        'require-jsdoc': 'error',
+        "require-jsdoc": "error",
         "no-warning-comments": "warn",
     },
     overrides: [
         {
             files: ["lib/rules/**"],
             rules: {
-                "@mysticatea/eslint-plugin/report-message-format": ["error", "[^a-z].*\\.$"],
+                "@mysticatea/eslint-plugin/report-message-format": [
+                    "error",
+                    "[^a-z].*\\.$",
+                ],
                 "@mysticatea/eslint-plugin/require-meta-docs-url": [
                     "error",
                     {
                         pattern: `https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/v${version}/docs/rules/{{name}}.md`,
                     },
                 ],
-            }
+            },
         },
         {
             files: ["scripts/*.js"],
@@ -46,10 +49,10 @@ module.exports = {
                 ecmaVersion: 2018,
                 parserOptions: {
                     parser: "babel-eslint",
-                }
+                },
             },
             globals: {
-                window: true
+                window: true,
             },
             rules: {
                 "require-jsdoc": "off",
@@ -60,7 +63,7 @@ module.exports = {
                 "@mysticatea/vue/html-indent": "off",
                 "@mysticatea/vue/html-self-closing": "off",
                 "@mysticatea/node/file-extension-in-import": "off",
-                "@mysticatea/node/no-unsupported-features/es-syntax": "off"
+                "@mysticatea/node/no-unsupported-features/es-syntax": "off",
             },
         },
     ],
