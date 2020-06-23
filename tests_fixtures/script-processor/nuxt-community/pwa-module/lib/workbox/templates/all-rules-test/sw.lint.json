@@ -411,7 +411,9 @@
     "ruleId": "func-call-spacing",
     "message": "Unexpected whitespace between function name and paren.",
     "line": 60,
-    "column": 132
+    "column": 148,
+    "endLine": 60,
+    "endColumn": 148
   },
   {
     "ruleId": "function-call-argument-newline",
