@@ -36,6 +36,10 @@ tester.run("attribute-name-casing", rule, {
             code: '<body><div onClick="onClick"></div></body>',
             options: [{ ignore: ["onClick"] }],
         },
+        {
+            filename: "test.html",
+            code: '<svg xml:space="preserve"></svg>',
+        },
     ],
 
     invalid: [
