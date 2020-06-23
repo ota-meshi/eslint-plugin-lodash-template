@@ -68,7 +68,8 @@ jobs:
     - uses: actions/setup-node@v1
     - name: Install Target Packages
       run: |+
-        npm i -D eslint@latest
+        # https://github.com/eslint/eslint/issues/13427
+        # npm i -D eslint@latest
         npm i -S parse5@latest
         npx rimraf node_modules
         npm install

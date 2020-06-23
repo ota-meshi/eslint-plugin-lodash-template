@@ -2212,20 +2212,20 @@
     "endColumn": 27
   },
   {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 104,
+    "column": 26,
+    "endLine": 104,
+    "endColumn": 94
+  },
+  {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
     "line": 104,
     "column": 26,
     "endLine": 104,
     "endColumn": 132
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 104,
-    "column": 27,
-    "endLine": 104,
-    "endColumn": 93
   },
   {
     "ruleId": "multiline-ternary",
@@ -3312,20 +3312,20 @@
     "endColumn": 34
   },
   {
+    "ruleId": "multiline-ternary",
+    "message": "Expected newline between test and consequent of ternary expression.",
+    "line": 178,
+    "column": 33,
+    "endLine": 178,
+    "endColumn": 61
+  },
+  {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
     "line": 178,
     "column": 33,
     "endLine": 178,
     "endColumn": 103
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 178,
-    "column": 34,
-    "endLine": 178,
-    "endColumn": 60
   },
   {
     "ruleId": "multiline-ternary",
