@@ -125,9 +125,7 @@ tester.run("attribute-name-casing", rule, {
             code: '<svg viewBox="0 0 100 100"></svg>',
             output: null,
             options: [{ ignoreSvgCamelCaseAttributes: false }],
-            errors: [
-                "Attribute `viewBox` must be 'kebab-case'."
-            ],
+            errors: ["Attribute `viewBox` must be 'kebab-case'."],
         },
     ],
 })
