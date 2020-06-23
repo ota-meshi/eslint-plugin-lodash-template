@@ -40,6 +40,10 @@ tester.run("attribute-name-casing", rule, {
             filename: "test.html",
             code: '<svg xml:space="preserve"></svg>',
         },
+        {
+            filename: "test-svgcamel.html",
+            code: '<svg viewBox="0 0 100 100"></svg>',
+        },
     ],
 
     invalid: [
@@ -114,6 +118,15 @@ tester.run("attribute-name-casing", rule, {
                 "Attribute `DATA-ID` must be 'kebab-case'.",
                 "Attribute `ARIA-TEST` must be 'kebab-case'.",
                 "Attribute `MY-PROP` must be 'kebab-case'.",
+            ],
+        },
+        {
+            filename: "test-svgcamel.html",
+            code: '<svg viewBox="0 0 100 100"></svg>',
+            output: null,
+            options: [{ ignoreSvgCamelCaseAttributes: false }],
+            errors: [
+                "Attribute `viewBox` must be 'kebab-case'."
             ],
         },
     ],
