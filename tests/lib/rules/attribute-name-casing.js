@@ -41,7 +41,7 @@ tester.run("attribute-name-casing", rule, {
             code: '<svg xml:space="preserve"></svg>',
         },
         {
-            filename: "test-svgcamel.html",
+            filename: "test-viewbox.html",
             code: '<svg viewBox="0 0 100 100"></svg>',
         },
     ],
