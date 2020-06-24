@@ -1,0 +1,140 @@
+{
+  "range": [
+    0,
+    112
+  ],
+  "type": "HTMLDocumentFragment",
+  "children": [
+    {
+      "range": [
+        0,
+        32
+      ],
+      "type": "HTMLElement",
+      "name": "svg",
+      "startTag": {
+        "range": [
+          0,
+          26
+        ],
+        "type": "HTMLStartTag",
+        "attributes": [
+          {
+            "range": [
+              5,
+              25
+            ],
+            "type": "HTMLAttribute",
+            "key": "xml:space",
+            "value": "preserve",
+            "keyToken": {
+              "range": [
+                5,
+                14
+              ],
+              "type": "HTMLIdentifier",
+              "value": "xml:space"
+            },
+            "eqToken": {
+              "range": [
+                14,
+                15
+              ],
+              "type": "HTMLPunctuator",
+              "value": "="
+            },
+            "valueToken": {
+              "range": [
+                15,
+                25
+              ],
+              "type": "HTMLLiteral",
+              "value": "\"preserve\""
+            }
+          }
+        ],
+        "tagOpen": {
+          "range": [
+            0,
+            4
+          ],
+          "type": "HTMLTagOpen",
+          "value": "<svg"
+        },
+        "selfClosing": false,
+        "tagClose": {
+          "range": [
+            25,
+            26
+          ],
+          "type": "HTMLTagClose",
+          "value": ">"
+        }
+      },
+      "endTag": {
+        "range": [
+          26,
+          32
+        ],
+        "type": "HTMLEndTag",
+        "tagOpen": {
+          "range": [
+            26,
+            31
+          ],
+          "type": "HTMLEndTagOpen",
+          "value": "</svg"
+        },
+        "tagClose": {
+          "range": [
+            31,
+            32
+          ],
+          "type": "HTMLTagClose",
+          "value": ">"
+        }
+      },
+      "children": []
+    },
+    {
+      "range": [
+        32,
+        33
+      ],
+      "type": "HTMLText",
+      "value": "\n"
+    },
+    {
+      "range": [
+        33,
+        111
+      ],
+      "type": "HTMLComment",
+      "value": " https://github.com/ota-meshi/eslint-plugin-lodash-template/issues/136 ",
+      "commentOpen": {
+        "range": [
+          33,
+          37
+        ],
+        "type": "HTMLCommentOpen",
+        "value": "<!--"
+      },
+      "commentClose": {
+        "range": [
+          108,
+          111
+        ],
+        "type": "HTMLCommentClose",
+        "value": "-->"
+      }
+    },
+    {
+      "range": [
+        111,
+        112
+      ],
+      "type": "HTMLText",
+      "value": "\n"
+    }
+  ]
+}

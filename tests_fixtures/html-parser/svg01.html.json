@@ -1,0 +1,713 @@
+{
+  "range": [
+    0,
+    445
+  ],
+  "type": "HTMLDocumentFragment",
+  "children": [
+    {
+      "range": [
+        0,
+        343
+      ],
+      "type": "HTMLElement",
+      "name": "svg",
+      "startTag": {
+        "range": [
+          0,
+          223
+        ],
+        "type": "HTMLStartTag",
+        "attributes": [
+          {
+            "range": [
+              5,
+              18
+            ],
+            "type": "HTMLAttribute",
+            "key": "version",
+            "value": "1.0",
+            "keyToken": {
+              "range": [
+                5,
+                12
+              ],
+              "type": "HTMLIdentifier",
+              "value": "version"
+            },
+            "eqToken": {
+              "range": [
+                12,
+                13
+              ],
+              "type": "HTMLPunctuator",
+              "value": "="
+            },
+            "valueToken": {
+              "range": [
+                13,
+                18
+              ],
+              "type": "HTMLLiteral",
+              "value": "\"1.0\""
+            }
+          },
+          {
+            "range": [
+              19,
+              53
+            ],
+            "type": "HTMLAttribute",
+            "key": "xmlns",
+            "value": "http://www.w3.org/2000/svg",
+            "keyToken": {
+              "range": [
+                19,
+                24
+              ],
+              "type": "HTMLIdentifier",
+              "value": "xmlns"
+            },
+            "eqToken": {
+              "range": [
+                24,
+                25
+              ],
+              "type": "HTMLPunctuator",
+              "value": "="
+            },
+            "valueToken": {
+              "range": [
+                25,
+                53
+              ],
+              "type": "HTMLLiteral",
+              "value": "\"http://www.w3.org/2000/svg\""
+            }
+          },
+          {
+            "range": [
+              54,
+              96
+            ],
+            "type": "HTMLAttribute",
+            "key": "xmlns:xlink",
+            "value": "http://www.w3.org/1999/xlink",
+            "keyToken": {
+              "range": [
+                54,
+                65
+              ],
+              "type": "HTMLIdentifier",
+              "value": "xmlns:xlink"
+            },
+            "eqToken": {
+              "range": [
+                65,
+                66
+              ],
+              "type": "HTMLPunctuator",
+              "value": "="
+            },
+            "valueToken": {
+              "range": [
+                66,
+                96
+              ],
+              "type": "HTMLLiteral",
+              "value": "\"http://www.w3.org/1999/xlink\""
+            }
+          },
+          {
+            "range": [
+              97,
+              104
+            ],
+            "type": "HTMLAttribute",
+            "key": "x",
+            "value": "0px",
+            "keyToken": {
+              "range": [
+                97,
+                98
+              ],
+              "type": "HTMLIdentifier",
+              "value": "x"
+            },
+            "eqToken": {
+              "range": [
+                98,
+                99
+              ],
+              "type": "HTMLPunctuator",
+              "value": "="
+            },
+            "valueToken": {
+              "range": [
+                99,
+                104
+              ],
+              "type": "HTMLLiteral",
+              "value": "\"0px\""
+            }
+          },
+          {
+            "range": [
+              105,
+              112
+            ],
+            "type": "HTMLAttribute",
+            "key": "y",
+            "value": "0px",
+            "keyToken": {
+              "range": [
+                105,
+                106
+              ],
+              "type": "HTMLIdentifier",
+              "value": "y"
+            },
+            "eqToken": {
+              "range": [
+                106,
+                107
+              ],
+              "type": "HTMLPunctuator",
+              "value": "="
+            },
+            "valueToken": {
+              "range": [
+                107,
+                112
+              ],
+              "type": "HTMLLiteral",
+              "value": "\"0px\""
+            }
+          },
+          {
+            "range": [
+              117,
+              129
+            ],
+            "type": "HTMLAttribute",
+            "key": "width",
+            "value": "100%",
+            "keyToken": {
+              "range": [
+                117,
+                122
+              ],
+              "type": "HTMLIdentifier",
+              "value": "width"
+            },
+            "eqToken": {
+              "range": [
+                122,
+                123
+              ],
+              "type": "HTMLPunctuator",
+              "value": "="
+            },
+            "valueToken": {
+              "range": [
+                123,
+                129
+              ],
+              "type": "HTMLLiteral",
+              "value": "\"100%\""
+            }
+          },
+          {
+            "range": [
+              130,
+              143
+            ],
+            "type": "HTMLAttribute",
+            "key": "height",
+            "value": "100%",
+            "keyToken": {
+              "range": [
+                130,
+                136
+              ],
+              "type": "HTMLIdentifier",
+              "value": "height"
+            },
+            "eqToken": {
+              "range": [
+                136,
+                137
+              ],
+              "type": "HTMLPunctuator",
+              "value": "="
+            },
+            "valueToken": {
+              "range": [
+                137,
+                143
+              ],
+              "type": "HTMLLiteral",
+              "value": "\"100%\""
+            }
+          },
+          {
+            "range": [
+              144,
+              165
+            ],
+            "type": "HTMLAttribute",
+            "key": "viewBox",
+            "value": "0 0 100 100",
+            "keyToken": {
+              "range": [
+                144,
+                151
+              ],
+              "type": "HTMLIdentifier",
+              "value": "viewBox"
+            },
+            "eqToken": {
+              "range": [
+                151,
+                152
+              ],
+              "type": "HTMLPunctuator",
+              "value": "="
+            },
+            "valueToken": {
+              "range": [
+                152,
+                165
+              ],
+              "type": "HTMLLiteral",
+              "value": "\"0 0 100 100\""
+            }
+          },
+          {
+            "range": [
+              166,
+              201
+            ],
+            "type": "HTMLAttribute",
+            "key": "enable-background",
+            "value": "new 0 0 100 100",
+            "keyToken": {
+              "range": [
+                166,
+                183
+              ],
+              "type": "HTMLIdentifier",
+              "value": "enable-background"
+            },
+            "eqToken": {
+              "range": [
+                183,
+                184
+              ],
+              "type": "HTMLPunctuator",
+              "value": "="
+            },
+            "valueToken": {
+              "range": [
+                184,
+                201
+              ],
+              "type": "HTMLLiteral",
+              "value": "\"new 0 0 100 100\""
+            }
+          },
+          {
+            "range": [
+              202,
+              222
+            ],
+            "type": "HTMLAttribute",
+            "key": "xml:space",
+            "value": "preserve",
+            "keyToken": {
+              "range": [
+                202,
+                211
+              ],
+              "type": "HTMLIdentifier",
+              "value": "xml:space"
+            },
+            "eqToken": {
+              "range": [
+                211,
+                212
+              ],
+              "type": "HTMLPunctuator",
+              "value": "="
+            },
+            "valueToken": {
+              "range": [
+                212,
+                222
+              ],
+              "type": "HTMLLiteral",
+              "value": "\"preserve\""
+            }
+          }
+        ],
+        "tagOpen": {
+          "range": [
+            0,
+            4
+          ],
+          "type": "HTMLTagOpen",
+          "value": "<svg"
+        },
+        "selfClosing": false,
+        "tagClose": {
+          "range": [
+            222,
+            223
+          ],
+          "type": "HTMLTagClose",
+          "value": ">"
+        }
+      },
+      "endTag": {
+        "range": [
+          337,
+          343
+        ],
+        "type": "HTMLEndTag",
+        "tagOpen": {
+          "range": [
+            337,
+            342
+          ],
+          "type": "HTMLEndTagOpen",
+          "value": "</svg"
+        },
+        "tagClose": {
+          "range": [
+            342,
+            343
+          ],
+          "type": "HTMLTagClose",
+          "value": ">"
+        }
+      },
+      "children": [
+        {
+          "range": [
+            223,
+            228
+          ],
+          "type": "HTMLText",
+          "value": "\n    "
+        },
+        {
+          "range": [
+            228,
+            336
+          ],
+          "type": "HTMLElement",
+          "name": "polygon",
+          "startTag": {
+            "range": [
+              228,
+              336
+            ],
+            "type": "HTMLStartTag",
+            "attributes": [
+              {
+                "range": [
+                  237,
+                  242
+                ],
+                "type": "HTMLAttribute",
+                "key": "x",
+                "value": "0",
+                "keyToken": {
+                  "range": [
+                    237,
+                    238
+                  ],
+                  "type": "HTMLIdentifier",
+                  "value": "x"
+                },
+                "eqToken": {
+                  "range": [
+                    238,
+                    239
+                  ],
+                  "type": "HTMLPunctuator",
+                  "value": "="
+                },
+                "valueToken": {
+                  "range": [
+                    239,
+                    242
+                  ],
+                  "type": "HTMLLiteral",
+                  "value": "\"0\""
+                }
+              },
+              {
+                "range": [
+                  243,
+                  248
+                ],
+                "type": "HTMLAttribute",
+                "key": "y",
+                "value": "0",
+                "keyToken": {
+                  "range": [
+                    243,
+                    244
+                  ],
+                  "type": "HTMLIdentifier",
+                  "value": "y"
+                },
+                "eqToken": {
+                  "range": [
+                    244,
+                    245
+                  ],
+                  "type": "HTMLPunctuator",
+                  "value": "="
+                },
+                "valueToken": {
+                  "range": [
+                    245,
+                    248
+                  ],
+                  "type": "HTMLLiteral",
+                  "value": "\"0\""
+                }
+              },
+              {
+                "range": [
+                  249,
+                  274
+                ],
+                "type": "HTMLAttribute",
+                "key": "points",
+                "value": "50,95 95,25 5,25",
+                "keyToken": {
+                  "range": [
+                    249,
+                    255
+                  ],
+                  "type": "HTMLIdentifier",
+                  "value": "points"
+                },
+                "eqToken": {
+                  "range": [
+                    255,
+                    256
+                  ],
+                  "type": "HTMLPunctuator",
+                  "value": "="
+                },
+                "valueToken": {
+                  "range": [
+                    256,
+                    274
+                  ],
+                  "type": "HTMLLiteral",
+                  "value": "\"50,95 95,25 5,25\""
+                }
+              },
+              {
+                "range": [
+                  275,
+                  289
+                ],
+                "type": "HTMLAttribute",
+                "key": "stroke",
+                "value": "black",
+                "keyToken": {
+                  "range": [
+                    275,
+                    281
+                  ],
+                  "type": "HTMLIdentifier",
+                  "value": "stroke"
+                },
+                "eqToken": {
+                  "range": [
+                    281,
+                    282
+                  ],
+                  "type": "HTMLPunctuator",
+                  "value": "="
+                },
+                "valueToken": {
+                  "range": [
+                    282,
+                    289
+                  ],
+                  "type": "HTMLLiteral",
+                  "value": "\"black\""
+                }
+              },
+              {
+                "range": [
+                  290,
+                  302
+                ],
+                "type": "HTMLAttribute",
+                "key": "fill",
+                "value": "white",
+                "keyToken": {
+                  "range": [
+                    290,
+                    294
+                  ],
+                  "type": "HTMLIdentifier",
+                  "value": "fill"
+                },
+                "eqToken": {
+                  "range": [
+                    294,
+                    295
+                  ],
+                  "type": "HTMLPunctuator",
+                  "value": "="
+                },
+                "valueToken": {
+                  "range": [
+                    295,
+                    302
+                  ],
+                  "type": "HTMLLiteral",
+                  "value": "\"white\""
+                }
+              },
+              {
+                "range": [
+                  303,
+                  319
+                ],
+                "type": "HTMLAttribute",
+                "key": "stroke-width",
+                "value": "2",
+                "keyToken": {
+                  "range": [
+                    303,
+                    315
+                  ],
+                  "type": "HTMLIdentifier",
+                  "value": "stroke-width"
+                },
+                "eqToken": {
+                  "range": [
+                    315,
+                    316
+                  ],
+                  "type": "HTMLPunctuator",
+                  "value": "="
+                },
+                "valueToken": {
+                  "range": [
+                    316,
+                    319
+                  ],
+                  "type": "HTMLLiteral",
+                  "value": "\"2\""
+                }
+              },
+              {
+                "range": [
+                  320,
+                  333
+                ],
+                "type": "HTMLAttribute",
+                "key": "class",
+                "value": "shape",
+                "keyToken": {
+                  "range": [
+                    320,
+                    325
+                  ],
+                  "type": "HTMLIdentifier",
+                  "value": "class"
+                },
+                "eqToken": {
+                  "range": [
+                    325,
+                    326
+                  ],
+                  "type": "HTMLPunctuator",
+                  "value": "="
+                },
+                "valueToken": {
+                  "range": [
+                    326,
+                    333
+                  ],
+                  "type": "HTMLLiteral",
+                  "value": "\"shape\""
+                }
+              }
+            ],
+            "tagOpen": {
+              "range": [
+                228,
+                236
+              ],
+              "type": "HTMLTagOpen",
+              "value": "<polygon"
+            },
+            "selfClosing": true,
+            "tagClose": {
+              "range": [
+                334,
+                336
+              ],
+              "type": "HTMLSelfClosingTagClose",
+              "value": "/>"
+            }
+          },
+          "endTag": null,
+          "children": []
+        },
+        {
+          "range": [
+            336,
+            337
+          ],
+          "type": "HTMLText",
+          "value": "\n"
+        }
+      ]
+    },
+    {
+      "range": [
+        343,
+        344
+      ],
+      "type": "HTMLText",
+      "value": "\n"
+    },
+    {
+      "range": [
+        344,
+        445
+      ],
+      "type": "HTMLComment",
+      "value": " https://github.com/ota-meshi/eslint-plugin-lodash-template/issues/136#issuecomment-648294935 ",
+      "commentOpen": {
+        "range": [
+          344,
+          348
+        ],
+        "type": "HTMLCommentOpen",
+        "value": "<!--"
+      },
+      "commentClose": {
+        "range": [
+          442,
+          445
+        ],
+        "type": "HTMLCommentClose",
+        "value": "-->"
+      }
+    }
+  ]
+}
