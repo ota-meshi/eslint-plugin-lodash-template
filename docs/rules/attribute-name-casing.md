@@ -33,6 +33,7 @@ This rule enforces attribute name casing style (kebab-case).
 {
   "lodash-template/attribute-name-casing": ["error", {
     "ignore": [],
+    "ignoreSvgCamelCaseAttributes": true,
   }]
 }
 ```
@@ -44,6 +45,17 @@ This rule enforces attribute name casing style (kebab-case).
 ```html
 <!-- ✓ GOOD -->
 <div onClick="abc">
+```
+
+</eslint-code-block>
+
+### Examples for this rule with `"ignoreSvgCamelCaseAttributes": true,` (default)
+
+<eslint-code-block fix :rules="{'lodash-template/attribute-name-casing': ['error', {'ignoreSvgCamelCaseAttributes': true}]}">
+
+```html
+<!-- ✓ GOOD -->
+<svg viewBox="0 0 100 100"></svg>
 ```
 
 </eslint-code-block>
