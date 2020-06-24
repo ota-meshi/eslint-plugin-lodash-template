@@ -40,6 +40,11 @@ tester.run("attribute-name-casing", rule, {
             filename: "test.html",
             code: '<svg xml:space="preserve"></svg>',
         },
+        {
+            filename: "test-viewbox.html",
+            code: '<svg viewBox="0 0 100 100"></svg>',
+            options: [{ ignore: ["viewBox"] }],
+        },
     ],
 
     invalid: [

@@ -1,0 +1,7 @@
+# EditorConfig.org
+
+root = true
+
+[*]
+indent_size = 4
+indent_style = space
