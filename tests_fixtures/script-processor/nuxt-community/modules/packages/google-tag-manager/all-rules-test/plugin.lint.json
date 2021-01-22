@@ -203,7 +203,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 91. Maximum allowed is 80.",
     "line": 16,
-    "column": 1
+    "column": 1,
+    "endLine": 16,
+    "endColumn": 92
   },
   {
     "ruleId": "padded-blocks",
@@ -337,7 +339,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 137. Maximum allowed is 80.",
     "line": 24,
-    "column": 1
+    "column": 1,
+    "endLine": 24,
+    "endColumn": 138
   },
   {
     "ruleId": "object-curly-spacing",
@@ -364,6 +368,14 @@
     "endColumn": 71
   },
   {
+    "ruleId": "object-property-newline",
+    "message": "Object properties must go on a new line.",
+    "line": 24,
+    "column": 73,
+    "endLine": 24,
+    "endColumn": 81
+  },
+  {
     "ruleId": "quote-props",
     "message": "Unquoted property 'pageType' found.",
     "line": 24,
@@ -372,18 +384,20 @@
     "endColumn": 93
   },
   {
-    "ruleId": "object-property-newline",
-    "message": "Object properties must go on a new line.",
-    "line": 24,
-    "column": 73
-  },
-  {
     "ruleId": "quotes",
     "message": "Strings must use doublequote.",
     "line": 24,
     "column": 83,
     "endLine": 24,
     "endColumn": 93
+  },
+  {
+    "ruleId": "object-property-newline",
+    "message": "Object properties must go on a new line.",
+    "line": 24,
+    "column": 95,
+    "endLine": 24,
+    "endColumn": 102
   },
   {
     "ruleId": "quote-props",
@@ -397,7 +411,9 @@
     "ruleId": "object-property-newline",
     "message": "Object properties must go on a new line.",
     "line": 24,
-    "column": 95
+    "column": 117,
+    "endLine": 24,
+    "endColumn": 126
   },
   {
     "ruleId": "quote-props",
@@ -406,12 +422,6 @@
     "column": 117,
     "endLine": 24,
     "endColumn": 135
-  },
-  {
-    "ruleId": "object-property-newline",
-    "message": "Object properties must go on a new line.",
-    "line": 24,
-    "column": 117
   },
   {
     "ruleId": "object-curly-spacing",
@@ -929,7 +939,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 119. Maximum allowed is 80.",
     "line": 51,
-    "column": 1
+    "column": 1,
+    "endLine": 51,
+    "endColumn": 120
   },
   {
     "ruleId": "no-extra-parens",

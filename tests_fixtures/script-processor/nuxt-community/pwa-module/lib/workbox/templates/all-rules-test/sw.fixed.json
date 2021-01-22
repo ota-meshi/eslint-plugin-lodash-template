@@ -155,7 +155,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 92. Maximum allowed is 80.",
     "line": 91,
-    "column": 1
+    "column": 1,
+    "endLine": 91,
+    "endColumn": 93
   },
   {
     "ruleId": "no-undef",
@@ -174,16 +176,12 @@
     "endColumn": 8
   },
   {
-    "ruleId": "arrow-body-style",
-    "message": "Unexpected block statement surrounding arrow body; move the returned value immediately after the `=>`.",
-    "line": 100,
-    "column": 18
-  },
-  {
     "ruleId": "max-len",
     "message": "This line has a length of 87. Maximum allowed is 80.",
     "line": 102,
-    "column": 1
+    "column": 1,
+    "endLine": 102,
+    "endColumn": 88
   },
   {
     "ruleId": "no-undef",

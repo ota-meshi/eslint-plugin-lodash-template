@@ -50,6 +50,8 @@ middleware.i18n = async (context) => {
         locales
     );
 
-    await app.i18n.setLocale(routeLocale ? routeLocale : locale);
+    await app.i18n.setLocale(routeLocale
+        ? routeLocale
+        : locale);
 
 };

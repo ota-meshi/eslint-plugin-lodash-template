@@ -123,7 +123,9 @@ export default async (context) => {
 
             } else if (req && typeof req.headers.cookie !== "undefined") {
 
-                const cookies = req.headers && req.headers.cookie ? Cookie.parse(req.headers.cookie) : {};
+                const cookies = req.headers && req.headers.cookie
+                    ? Cookie.parse(req.headers.cookie)
+                    : {};
                 return cookies[cookieKey];
 
             }
@@ -253,7 +255,9 @@ export default async (context) => {
         if (!initialSetup && STRATEGY !== STRATEGIES.NO_PREFIX) {
 
             const route = app.i18n.__route;
-            const routeName = route && route.name ? app.getRouteBaseName(route) : "index";
+            const routeName = route && route.name
+                ? app.getRouteBaseName(route)
+                : "index";
             const redirectPath = app.localePath(
                 {...route,
                     "name": routeName},
@@ -303,7 +307,9 @@ export default async (context) => {
     if (app.i18n.differentDomains) {
 
         const domainLocale = getLocaleDomain();
-        locale = domainLocale ? domainLocale : locale;
+        locale = domainLocale
+            ? domainLocale
+            : locale;
 
     } else if (STRATEGY !== STRATEGIES.NO_PREFIX) {
 
@@ -316,7 +322,9 @@ export default async (context) => {
             defaultLocaleRouteNameSuffix,
             app.i18n.locales
         );
-        locale = routeLocale ? routeLocale : locale;
+        locale = routeLocale
+            ? routeLocale
+            : locale;
 
     } else if (useCookie) {
 

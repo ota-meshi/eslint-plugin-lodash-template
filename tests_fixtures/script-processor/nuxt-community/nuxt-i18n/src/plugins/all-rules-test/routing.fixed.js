@@ -42,7 +42,9 @@ function localePathFactory (i18nPath, routerPath) {
         }
 
         // Build localized route options
-        let name = route.name + (STRATEGY === STRATEGIES.NO_PREFIX ? "" : routesNameSeparator + locale);
+        let name = route.name + (STRATEGY === STRATEGIES.NO_PREFIX
+            ? ""
+            : routesNameSeparator + locale);
 
         // Match route without prefix for default locale
         if (locale === defaultLocale && STRATEGY === STRATEGIES.PREFIX_AND_DEFAULT) {
@@ -123,7 +125,9 @@ function switchLocalePathFactory (i18nPath) {
 
                     const isHTTPS = require("is-https");
                     const {req} = this.$options._parentVnode.ssrContext;
-                    protocol = isHTTPS(req) ? "https" : "http";
+                    protocol = isHTTPS(req)
+                        ? "https"
+                        : "http";
 
                 } else {
 
@@ -147,7 +151,8 @@ function switchLocalePathFactory (i18nPath) {
 
 function getRouteBaseNameFactory (contextRoute) {
 
-    const routeGetter = contextRoute ? (route) => route || contextRoute
+    const routeGetter = contextRoute
+        ? (route) => route || contextRoute
         : function (route) {
 
             return route || this.$route;

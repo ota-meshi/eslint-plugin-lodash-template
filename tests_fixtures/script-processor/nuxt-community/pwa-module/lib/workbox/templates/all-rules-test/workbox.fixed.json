@@ -9,15 +9,9 @@
   },
   {
     "ruleId": "max-len",
-    "message": "This line has a length of 117. Maximum allowed is 80.",
+    "message": "This line has a length of 86. Maximum allowed is 80.",
     "line": 9,
-    "column": 1
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 9,
-    "column": 76,
+    "column": 1,
     "endLine": 9,
     "endColumn": 87
   },
@@ -26,23 +20,15 @@
     "message": "Ternary operator used.",
     "line": 9,
     "column": 76,
-    "endLine": 9,
-    "endColumn": 104
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 9,
-    "column": 90,
-    "endLine": 9,
-    "endColumn": 95
+    "endLine": 11,
+    "endColumn": 17
   },
   {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
-    "line": 27,
+    "line": 29,
     "column": 34,
-    "endLine": 27,
+    "endLine": 29,
     "endColumn": 47
   }
 ]

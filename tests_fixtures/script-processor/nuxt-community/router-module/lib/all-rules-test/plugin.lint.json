@@ -3,7 +3,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 82. Maximum allowed is 80.",
     "line": 1,
-    "column": 1
+    "column": 1,
+    "endLine": 1,
+    "endColumn": 83
   },
   {
     "ruleId": "object-curly-spacing",
@@ -30,18 +32,20 @@
     "endColumn": 1
   },
   {
-    "ruleId": "sort-imports",
-    "message": "Expected 'multiple' syntax before 'single' syntax.",
+    "ruleId": "max-len",
+    "message": "This line has a length of 84. Maximum allowed is 80.",
     "line": 4,
     "column": 1,
     "endLine": 4,
     "endColumn": 85
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 84. Maximum allowed is 80.",
+    "ruleId": "sort-imports",
+    "message": "Expected 'multiple' syntax before 'single' syntax.",
     "line": 4,
-    "column": 1
+    "column": 1,
+    "endLine": 4,
+    "endColumn": 85
   },
   {
     "ruleId": "object-curly-spacing",

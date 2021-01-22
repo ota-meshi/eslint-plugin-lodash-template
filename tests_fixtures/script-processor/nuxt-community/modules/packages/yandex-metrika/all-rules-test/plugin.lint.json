@@ -155,7 +155,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 89. Maximum allowed is 80.",
     "line": 10,
-    "column": 1
+    "column": 1,
+    "endLine": 10,
+    "endColumn": 90
   },
   {
     "ruleId": "no-undef",
@@ -287,7 +289,7 @@
   },
   {
     "ruleId": "no-warning-comments",
-    "message": "Unexpected 'todo' comment.",
+    "message": "Unexpected 'todo' comment: 'TODO: pass title: <new page title>'.",
     "line": 18,
     "column": 9,
     "endLine": 18,
@@ -313,7 +315,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 102. Maximum allowed is 80.",
     "line": 19,
-    "column": 1
+    "column": 1,
+    "endLine": 19,
+    "endColumn": 103
   },
   {
     "ruleId": "indent",

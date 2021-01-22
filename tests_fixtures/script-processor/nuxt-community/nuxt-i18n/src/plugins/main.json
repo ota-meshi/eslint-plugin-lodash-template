@@ -67,13 +67,17 @@
     "ruleId": "no-unneeded-ternary",
     "message": "Unnecessary use of conditional expression for default assignment.",
     "line": 203,
-    "column": 29
+    "column": 14,
+    "endLine": 203,
+    "endColumn": 50
   },
   {
     "ruleId": "no-unneeded-ternary",
     "message": "Unnecessary use of conditional expression for default assignment.",
     "line": 209,
-    "column": 28
+    "column": 14,
+    "endLine": 209,
+    "endColumn": 48
   },
   {
     "ruleId": "indent",

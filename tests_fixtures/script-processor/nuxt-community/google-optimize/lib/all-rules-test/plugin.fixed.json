@@ -83,7 +83,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 89. Maximum allowed is 80.",
     "line": 43,
-    "column": 1
+    "column": 1,
+    "endLine": 43,
+    "endColumn": 90
   },
   {
     "ruleId": "id-length",
@@ -105,7 +107,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 98. Maximum allowed is 80.",
     "line": 52,
-    "column": 1
+    "column": 1,
+    "endLine": 52,
+    "endColumn": 99
   },
   {
     "ruleId": "no-confusing-arrow",
@@ -207,13 +211,17 @@
     "ruleId": "max-len",
     "message": "This line has a length of 86. Maximum allowed is 80.",
     "line": 77,
-    "column": 1
+    "column": 1,
+    "endLine": 77,
+    "endColumn": 87
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 119. Maximum allowed is 80.",
     "line": 80,
-    "column": 1
+    "column": 1,
+    "endLine": 80,
+    "endColumn": 120
   },
   {
     "ruleId": "no-confusing-arrow",
@@ -275,7 +283,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 83. Maximum allowed is 80.",
     "line": 90,
-    "column": 1
+    "column": 1,
+    "endLine": 90,
+    "endColumn": 84
   },
   {
     "ruleId": "no-use-before-define",
@@ -289,13 +299,17 @@
     "ruleId": "max-len",
     "message": "This line has a length of 83. Maximum allowed is 80.",
     "line": 103,
-    "column": 1
+    "column": 1,
+    "endLine": 103,
+    "endColumn": 84
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 85. Maximum allowed is 80.",
     "line": 117,
-    "column": 1
+    "column": 1,
+    "endLine": 117,
+    "endColumn": 86
   },
   {
     "ruleId": "sort-keys",
@@ -310,107 +324,87 @@
     "message": "Expected a function expression.",
     "line": 124,
     "column": 1,
-    "endLine": 138,
+    "endLine": 140,
     "endColumn": 2
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 133,
-    "column": 23,
-    "endLine": 133,
-    "endColumn": 37
   },
   {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
     "line": 133,
     "column": 23,
-    "endLine": 133,
-    "endColumn": 80
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 133,
-    "column": 40,
-    "endLine": 133,
-    "endColumn": 55
+    "endLine": 135,
+    "endColumn": 33
   },
   {
     "ruleId": "consistent-return",
     "message": "Function 'getCookie' expected no return value.",
-    "line": 136,
+    "line": 138,
     "column": 5,
-    "endLine": 136,
+    "endLine": 138,
     "endColumn": 26
   },
   {
     "ruleId": "max-params",
     "message": "Function 'setCookie' has too many parameters (4). Maximum allowed is 3.",
-    "line": 140,
+    "line": 142,
     "column": 1,
-    "endLine": 140,
+    "endLine": 142,
     "endColumn": 20
   },
   {
     "ruleId": "func-style",
     "message": "Expected a function expression.",
-    "line": 140,
+    "line": 142,
     "column": 1,
-    "endLine": 177,
+    "endLine": 180,
     "endColumn": 2
   },
   {
     "ruleId": "sort-keys",
     "message": "Expected object keys to be in ascending order. 'maxAge' should be before 'path'.",
-    "line": 147,
+    "line": 149,
     "column": 13,
-    "endLine": 147,
+    "endLine": 149,
     "endColumn": 19
   },
   {
     "ruleId": "no-shadow",
     "message": "'value' is already declared in the upper scope.",
-    "line": 160,
+    "line": 162,
     "column": 13,
-    "endLine": 160,
+    "endLine": 162,
     "endColumn": 18
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 163,
-    "column": 21,
-    "endLine": 163,
-    "endColumn": 40
   },
   {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
-    "line": 163,
+    "line": 165,
     "column": 21,
-    "endLine": 167,
+    "endLine": 170,
     "endColumn": 18
   },
   {
     "ruleId": "func-style",
     "message": "Expected a function expression.",
-    "line": 180,
+    "line": 183,
     "column": 1,
-    "endLine": 196,
+    "endLine": 199,
     "endColumn": 2
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 82. Maximum allowed is 80.",
-    "line": 182,
-    "column": 1
+    "line": 185,
+    "column": 1,
+    "endLine": 185,
+    "endColumn": 83
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 85. Maximum allowed is 80.",
-    "line": 188,
-    "column": 1
+    "line": 191,
+    "column": 1,
+    "endLine": 191,
+    "endColumn": 86
   }
 ]

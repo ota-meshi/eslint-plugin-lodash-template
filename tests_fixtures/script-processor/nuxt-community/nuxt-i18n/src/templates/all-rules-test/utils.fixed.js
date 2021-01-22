@@ -34,8 +34,12 @@ export async function loadLanguageAsync (context, locale) {
                 try {
 
                     const module = await import(/* WebpackChunkName: "lang-[request]" */ '~/<%= options.langDir %>' + file);
-                    const messages = module.default ? module.default : module;
-                    const result = typeof messages === "function" ? await Promise.resolve(messages(context)) : messages;
+                    const messages = module.default
+                        ? module.default
+                        : module;
+                    const result = typeof messages === "function"
+                        ? await Promise.resolve(messages(context))
+                        : messages;
                     app.i18n.setLocaleMessage(
                         locale,
                         result

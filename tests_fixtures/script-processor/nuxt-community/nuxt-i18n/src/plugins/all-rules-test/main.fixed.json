@@ -1,11 +1,5 @@
 [
   {
-    "ruleId": "max-lines",
-    "message": "File has too many lines (407). Maximum allowed is 300.",
-    "line": 1,
-    "column": 1
-  },
-  {
     "ruleId": "no-unused-vars",
     "message": "'LOCALE_CODE_KEY' is assigned a value but never used.",
     "line": 11,
@@ -41,13 +35,17 @@
     "ruleId": "max-len",
     "message": "This line has a length of 81. Maximum allowed is 80.",
     "line": 42,
-    "column": 1
+    "column": 1,
+    "endLine": 42,
+    "endColumn": 82
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 85. Maximum allowed is 80.",
     "line": 43,
-    "column": 1
+    "column": 1,
+    "endLine": 43,
+    "endColumn": 86
   },
   {
     "ruleId": "sort-keys",
@@ -69,13 +67,17 @@
     "ruleId": "max-len",
     "message": "This line has a length of 97. Maximum allowed is 80.",
     "line": 103,
-    "column": 1
+    "column": 1,
+    "endLine": 103,
+    "endColumn": 98
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 87. Maximum allowed is 80.",
     "line": 113,
-    "column": 1
+    "column": 1,
+    "endLine": 113,
+    "endColumn": 88
   },
   {
     "ruleId": "consistent-return",
@@ -84,367 +86,323 @@
     "column": 32
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 106. Maximum allowed is 80.",
-    "line": 126,
-    "column": 1
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 126,
-    "column": 33,
-    "endLine": 126,
-    "endColumn": 66
-  },
-  {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
     "line": 126,
     "column": 33,
-    "endLine": 126,
-    "endColumn": 106
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 126,
-    "column": 69,
-    "endLine": 126,
-    "endColumn": 101
+    "endLine": 128,
+    "endColumn": 25
   },
   {
     "ruleId": "max-statements",
     "message": "Arrow function has too many statements (11). Maximum allowed is 10.",
-    "line": 135,
+    "line": 137,
     "column": 29,
-    "endLine": 180,
+    "endLine": 182,
     "endColumn": 6
   },
   {
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 365.",
-    "line": 149,
+    "line": 151,
     "column": 71,
-    "endLine": 149,
+    "endLine": 151,
     "endColumn": 74
   },
   {
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 365.",
-    "line": 167,
+    "line": 169,
     "column": 71,
-    "endLine": 167,
+    "endLine": 169,
     "endColumn": 74
   },
   {
     "ruleId": "max-lines-per-function",
-    "message": "Async arrow function has too many lines (90). Maximum allowed is 50.",
-    "line": 182,
+    "message": "Async arrow function has too many lines (92). Maximum allowed is 50.",
+    "line": 184,
     "column": 30,
-    "endLine": 271,
+    "endLine": 275,
     "endColumn": 6
   },
   {
     "ruleId": "max-statements",
     "message": "Async arrow function has too many statements (24). Maximum allowed is 10.",
-    "line": 182,
+    "line": 184,
     "column": 30,
-    "endLine": 271,
+    "endLine": 275,
     "endColumn": 6
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 83. Maximum allowed is 80.",
-    "line": 221,
-    "column": 1
+    "line": 223,
+    "column": 1,
+    "endLine": 223,
+    "endColumn": 84
   },
   {
     "ruleId": "require-atomic-updates",
     "message": "Possible race condition: `app.i18n.locale` might be reassigned based on an outdated value of `app.i18n.locale`.",
-    "line": 237,
+    "line": 239,
     "column": 9,
-    "endLine": 237,
+    "endLine": 239,
     "endColumn": 36
   },
   {
     "ruleId": "no-shadow",
     "message": "'route' is already declared in the upper scope.",
-    "line": 255,
+    "line": 257,
     "column": 19,
-    "endLine": 255,
+    "endLine": 257,
     "endColumn": 24
   },
   {
     "ruleId": "no-underscore-dangle",
     "message": "Unexpected dangling '_' in '__route'.",
-    "line": 255,
+    "line": 257,
     "column": 27,
-    "endLine": 255,
+    "endLine": 257,
     "endColumn": 43
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 90. Maximum allowed is 80.",
-    "line": 256,
-    "column": 1
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 256,
-    "column": 31,
-    "endLine": 256,
-    "endColumn": 50
   },
   {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
-    "line": 256,
+    "line": 258,
     "column": 31,
-    "endLine": 256,
-    "endColumn": 90
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 256,
-    "column": 53,
-    "endLine": 256,
-    "endColumn": 80
+    "endLine": 260,
+    "endColumn": 26
   },
   {
     "ruleId": "no-underscore-dangle",
     "message": "Unexpected dangling '_' in '__route'.",
-    "line": 286,
+    "line": 290,
     "column": 5,
-    "endLine": 286,
+    "endLine": 290,
     "endColumn": 21
   },
   {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 306,
-    "column": 18,
-    "endLine": 306,
-    "endColumn": 30
+    "ruleId": "max-lines",
+    "message": "File has too many lines (414). Maximum allowed is 300.",
+    "line": 301,
+    "column": 1,
+    "endLine": 415,
+    "endColumn": 1
   },
   {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
-    "line": 306,
+    "line": 310,
     "column": 18,
-    "endLine": 306,
-    "endColumn": 54
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 306,
-    "column": 33,
-    "endLine": 306,
-    "endColumn": 45
+    "endLine": 312,
+    "endColumn": 21
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 91. Maximum allowed is 80.",
-    "line": 311,
-    "column": 1
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 319,
-    "column": 18,
-    "endLine": 319,
-    "endColumn": 29
+    "line": 317,
+    "column": 1,
+    "endLine": 317,
+    "endColumn": 92
   },
   {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
-    "line": 319,
+    "line": 325,
     "column": 18,
-    "endLine": 319,
-    "endColumn": 52
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 319,
-    "column": 32,
-    "endLine": 319,
-    "endColumn": 43
+    "endLine": 327,
+    "endColumn": 21
   },
   {
     "ruleId": "no-underscore-dangle",
     "message": "Unexpected dangling '_' in '__detectBrowserLanguage'.",
-    "line": 332,
+    "line": 340,
     "column": 5,
-    "endLine": 332,
+    "endLine": 340,
     "endColumn": 37
   },
   {
     "ruleId": "complexity",
     "message": "Async arrow function has a complexity of 21. Maximum allowed is 20.",
-    "line": 332,
+    "line": 340,
     "column": 40,
-    "endLine": 402,
+    "endLine": 410,
     "endColumn": 6
   },
   {
     "ruleId": "max-lines-per-function",
     "message": "Async arrow function has too many lines (71). Maximum allowed is 50.",
-    "line": 332,
+    "line": 340,
     "column": 40,
-    "endLine": 402,
+    "endLine": 410,
     "endColumn": 6
   },
   {
     "ruleId": "max-statements",
     "message": "Async arrow function has too many statements (17). Maximum allowed is 10.",
-    "line": 332,
+    "line": 340,
     "column": 40,
-    "endLine": 402,
+    "endLine": 410,
     "endColumn": 6
   },
   {
     "ruleId": "no-shadow",
     "message": "'route' is already declared in the upper scope.",
-    "line": 332,
+    "line": 340,
     "column": 47,
-    "endLine": 332,
+    "endLine": 340,
     "endColumn": 52
   },
   {
     "ruleId": "no-unused-vars",
     "message": "'route' is defined but never used.",
-    "line": 332,
+    "line": 340,
     "column": 47,
-    "endLine": 332,
+    "endLine": 340,
     "endColumn": 52
   },
   {
     "ruleId": "init-declarations",
     "message": "Variable 'browserLocale' should be initialized on declaration.",
-    "line": 338,
+    "line": 346,
     "column": 17,
-    "endLine": 338,
+    "endLine": 346,
     "endColumn": 30
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 115. Maximum allowed is 80.",
-    "line": 340,
-    "column": 1
+    "line": 348,
+    "column": 1,
+    "endLine": 348,
+    "endColumn": 116
   },
   {
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 1.",
-    "line": 340,
+    "line": 348,
     "column": 87,
-    "endLine": 340,
+    "endLine": 348,
     "endColumn": 88
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 98. Maximum allowed is 80.",
-    "line": 344,
-    "column": 1
+    "line": 352,
+    "column": 1,
+    "endLine": 352,
+    "endColumn": 99
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 98. Maximum allowed is 80.",
-    "line": 346,
-    "column": 1
+    "line": 354,
+    "column": 1,
+    "endLine": 354,
+    "endColumn": 99
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 108. Maximum allowed is 80.",
-    "line": 348,
-    "column": 1
+    "line": 356,
+    "column": 1,
+    "endLine": 356,
+    "endColumn": 109
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 81. Maximum allowed is 80.",
-    "line": 349,
-    "column": 1
-  },
-  {
-    "ruleId": "no-magic-numbers",
-    "message": "No magic number: 0.",
-    "line": 350,
-    "column": 21,
-    "endLine": 350,
-    "endColumn": 22
-  },
-  {
-    "ruleId": "no-magic-numbers",
-    "message": "No magic number: 2.",
-    "line": 351,
-    "column": 21,
-    "endLine": 351,
-    "endColumn": 22
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 86. Maximum allowed is 80.",
-    "line": 354,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 107. Maximum allowed is 80.",
-    "line": 356,
-    "column": 1
-  },
-  {
-    "ruleId": "no-magic-numbers",
-    "message": "No magic number: 0.",
-    "line": 356,
-    "column": 75,
-    "endLine": 356,
-    "endColumn": 76
-  },
-  {
-    "ruleId": "no-magic-numbers",
-    "message": "No magic number: 0.",
     "line": 357,
-    "column": 21,
+    "column": 1,
     "endLine": 357,
-    "endColumn": 22
+    "endColumn": 82
   },
   {
     "ruleId": "no-magic-numbers",
-    "message": "No magic number: 2.",
+    "message": "No magic number: 0.",
     "line": 358,
     "column": 21,
     "endLine": 358,
     "endColumn": 22
   },
   {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 2.",
+    "line": 359,
+    "column": 21,
+    "endLine": 359,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 86. Maximum allowed is 80.",
+    "line": 362,
+    "column": 1,
+    "endLine": 362,
+    "endColumn": 87
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 107. Maximum allowed is 80.",
+    "line": 364,
+    "column": 1,
+    "endLine": 364,
+    "endColumn": 108
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 0.",
+    "line": 364,
+    "column": 75,
+    "endLine": 364,
+    "endColumn": 76
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 0.",
+    "line": 365,
+    "column": 21,
+    "endLine": 365,
+    "endColumn": 22
+  },
+  {
+    "ruleId": "no-magic-numbers",
+    "message": "No magic number: 2.",
+    "line": 366,
+    "column": 21,
+    "endLine": 366,
+    "endColumn": 22
+  },
+  {
     "ruleId": "max-len",
     "message": "This line has a length of 87. Maximum allowed is 80.",
-    "line": 370,
-    "column": 1
+    "line": 378,
+    "column": 1,
+    "endLine": 378,
+    "endColumn": 88
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 85. Maximum allowed is 80.",
-    "line": 377,
-    "column": 1
+    "line": 385,
+    "column": 1,
+    "endLine": 385,
+    "endColumn": 86
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 84. Maximum allowed is 80.",
-    "line": 381,
-    "column": 1
+    "line": 389,
+    "column": 1,
+    "endLine": 389,
+    "endColumn": 85
   },
   {
     "ruleId": "no-underscore-dangle",
     "message": "Unexpected dangling '_' in '__detectBrowserLanguage'.",
-    "line": 404,
+    "line": 412,
     "column": 11,
-    "endLine": 404,
+    "endLine": 412,
     "endColumn": 43
   }
 ]

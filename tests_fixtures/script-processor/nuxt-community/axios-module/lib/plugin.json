@@ -35,31 +35,41 @@
     "ruleId": "space-before-function-paren",
     "message": "Missing space before function parentheses.",
     "line": 19,
-    "column": 12
+    "column": 12,
+    "endLine": 19,
+    "endColumn": 13
   },
   {
     "ruleId": "space-before-function-paren",
     "message": "Missing space before function parentheses.",
     "line": 22,
-    "column": 13
+    "column": 13,
+    "endLine": 22,
+    "endColumn": 14
   },
   {
     "ruleId": "space-before-function-paren",
     "message": "Missing space before function parentheses.",
     "line": 25,
-    "column": 17
+    "column": 17,
+    "endLine": 25,
+    "endColumn": 18
   },
   {
     "ruleId": "space-before-function-paren",
     "message": "Missing space before function parentheses.",
     "line": 28,
-    "column": 18
+    "column": 18,
+    "endLine": 28,
+    "endColumn": 19
   },
   {
     "ruleId": "space-before-function-paren",
     "message": "Missing space before function parentheses.",
     "line": 31,
-    "column": 10
+    "column": 10,
+    "endLine": 31,
+    "endColumn": 11
   },
   {
     "ruleId": "prefer-const",
@@ -297,7 +307,9 @@
     "ruleId": "key-spacing",
     "message": "Extra space after key 'common'.",
     "line": 160,
-    "column": 5
+    "column": 11,
+    "endLine": 160,
+    "endColumn": 12
   },
   {
     "ruleId": "quote-props",

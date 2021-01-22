@@ -27,6 +27,8 @@
     "ruleId": "no-unneeded-ternary",
     "message": "Unnecessary use of conditional expression for default assignment.",
     "line": 38,
-    "column": 42
+    "column": 28,
+    "endLine": 38,
+    "endColumn": 62
   }
 ]

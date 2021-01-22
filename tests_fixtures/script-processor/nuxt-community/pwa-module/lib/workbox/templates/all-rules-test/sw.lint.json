@@ -11,7 +11,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 100. Maximum allowed is 80.",
     "line": 1,
-    "column": 1
+    "column": 1,
+    "endLine": 1,
+    "endColumn": 101
   },
   {
     "ruleId": "array-element-newline",
@@ -113,7 +115,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 84. Maximum allowed is 80.",
     "line": 14,
-    "column": 1
+    "column": 1,
+    "endLine": 14,
+    "endColumn": 85
   },
   {
     "ruleId": "function-call-argument-newline",
@@ -255,7 +259,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 141. Maximum allowed is 80.",
     "line": 47,
-    "column": 1
+    "column": 1,
+    "endLine": 47,
+    "endColumn": 142
   },
   {
     "ruleId": "function-call-argument-newline",
@@ -357,7 +363,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 216. Maximum allowed is 80.",
     "line": 60,
-    "column": 1
+    "column": 1,
+    "endLine": 60,
+    "endColumn": 217
   },
   {
     "ruleId": "arrow-parens",
@@ -443,7 +451,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 90. Maximum allowed is 80.",
     "line": 65,
-    "column": 1
+    "column": 1,
+    "endLine": 65,
+    "endColumn": 91
   },
   {
     "ruleId": "function-call-argument-newline",
@@ -460,12 +470,6 @@
     "column": 90,
     "endLine": 66,
     "endColumn": 3
-  },
-  {
-    "ruleId": "arrow-body-style",
-    "message": "Unexpected block statement surrounding arrow body; move the returned value immediately after the `=>`.",
-    "line": 65,
-    "column": 90
   },
   {
     "ruleId": "indent",

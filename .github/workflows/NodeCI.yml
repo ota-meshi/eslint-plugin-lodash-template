@@ -48,19 +48,6 @@ jobs:
         npm install
     - name: Test
       run: npm test
-  test-with-high:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - uses: actions/setup-node@v1
-    - name: Install Target Packages
-      run: |+
-        npm i -D eslint@6.0.0
-        npm i -S parse5@5.1.0
-        npx rimraf node_modules
-        npm install
-    - name: Test
-      run: npm test
   test-with-latest:
     runs-on: ubuntu-latest
     steps:

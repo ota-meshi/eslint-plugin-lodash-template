@@ -8,74 +8,36 @@
     "endColumn": 37
   },
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 81. Maximum allowed is 80.",
-    "line": 13,
-    "column": 1
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 13,
-    "column": 11,
-    "endLine": 13,
-    "endColumn": 30
-  },
-  {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
     "line": 13,
     "column": 11,
-    "endLine": 13,
-    "endColumn": 78
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 13,
-    "column": 33,
-    "endLine": 13,
-    "endColumn": 58
-  },
-  {
-    "ruleId": "no-invalid-this",
-    "message": "Unexpected 'this'.",
-    "line": 13,
-    "column": 53,
-    "endLine": 13,
-    "endColumn": 57
-  },
-  {
-    "ruleId": "no-invalid-this",
-    "message": "Unexpected 'this'.",
-    "line": 13,
-    "column": 61,
-    "endLine": 13,
-    "endColumn": 65
-  },
-  {
-    "ruleId": "no-underscore-dangle",
-    "message": "Unexpected dangling '_' in '_hasMetaInfo'.",
-    "line": 13,
-    "column": 61,
-    "endLine": 13,
-    "endColumn": 78
+    "endLine": 15,
+    "endColumn": 32
   },
   {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
     "line": 14,
-    "column": 6,
+    "column": 35,
     "endLine": 14,
-    "endColumn": 10
+    "endColumn": 39
   },
   {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
     "line": 15,
-    "column": 6,
+    "column": 15,
     "endLine": 15,
-    "endColumn": 10
+    "endColumn": 19
+  },
+  {
+    "ruleId": "no-underscore-dangle",
+    "message": "Unexpected dangling '_' in '_hasMetaInfo'.",
+    "line": 15,
+    "column": 15,
+    "endLine": 15,
+    "endColumn": 32
   },
   {
     "ruleId": "no-invalid-this",
@@ -89,200 +51,232 @@
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
     "line": 17,
-    "column": 5,
+    "column": 6,
     "endLine": 17,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "no-invalid-this",
+    "message": "Unexpected 'this'.",
+    "line": 18,
+    "column": 6,
+    "endLine": 18,
+    "endColumn": 10
+  },
+  {
+    "ruleId": "no-invalid-this",
+    "message": "Unexpected 'this'.",
+    "line": 19,
+    "column": 5,
+    "endLine": 19,
     "endColumn": 9
   },
   {
     "ruleId": "no-mixed-operators",
     "message": "Unexpected mix of '||' and '&&'.",
-    "line": 17,
-    "column": 52
+    "line": 19,
+    "column": 52,
+    "endLine": 19,
+    "endColumn": 54
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 94. Maximum allowed is 80.",
-    "line": 18,
-    "column": 1
+    "line": 20,
+    "column": 1,
+    "endLine": 20,
+    "endColumn": 95
   },
   {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
-    "line": 18,
+    "line": 20,
     "column": 5,
-    "endLine": 18,
+    "endLine": 20,
     "endColumn": 9
   },
   {
     "ruleId": "no-mixed-operators",
     "message": "Unexpected mix of '||' and '&&'.",
-    "line": 18,
-    "column": 42
+    "line": 20,
+    "column": 42,
+    "endLine": 20,
+    "endColumn": 44
   },
   {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
-    "line": 18,
+    "line": 20,
     "column": 45,
-    "endLine": 18,
+    "endLine": 20,
     "endColumn": 49
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 103. Maximum allowed is 80.",
-    "line": 25,
-    "column": 1
+    "line": 27,
+    "column": 1,
+    "endLine": 27,
+    "endColumn": 104
   },
   {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
-    "line": 25,
+    "line": 27,
     "column": 31,
-    "endLine": 25,
+    "endLine": 27,
     "endColumn": 35
   },
   {
     "ruleId": "id-length",
     "message": "Identifier name 'l' is too short (< 2).",
-    "line": 25,
+    "line": 27,
     "column": 56,
-    "endLine": 25,
+    "endLine": 27,
     "endColumn": 57
   },
   {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
-    "line": 25,
+    "line": 27,
     "column": 85,
-    "endLine": 25,
+    "endLine": 27,
     "endColumn": 89
   },
   {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
-    "line": 37,
+    "line": 39,
     "column": 22,
-    "endLine": 37,
+    "endLine": 39,
     "endColumn": 26
   },
   {
     "ruleId": "sort-keys",
     "message": "Expected object keys to be in ascending order. 'href' should be before 'rel'.",
-    "line": 45,
+    "line": 47,
     "column": 25,
-    "endLine": 45,
+    "endLine": 47,
     "endColumn": 31
   },
   {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
-    "line": 45,
+    "line": 47,
     "column": 44,
-    "endLine": 45,
+    "endLine": 47,
     "endColumn": 48
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 120. Maximum allowed is 80.",
-    "line": 51,
-    "column": 1
+    "line": 53,
+    "column": 1,
+    "endLine": 53,
+    "endColumn": 121
   },
   {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
-    "line": 51,
+    "line": 53,
     "column": 21,
-    "endLine": 51,
+    "endLine": 53,
     "endColumn": 33
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 88. Maximum allowed is 80.",
-    "line": 64,
-    "column": 1
+    "line": 66,
+    "column": 1,
+    "endLine": 66,
+    "endColumn": 89
   },
   {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
-    "line": 64,
+    "line": 66,
     "column": 31,
-    "endLine": 64,
+    "endLine": 66,
     "endColumn": 35
   },
   {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
-    "line": 65,
+    "line": 67,
     "column": 48,
-    "endLine": 65,
+    "endLine": 67,
     "endColumn": 52
   },
   {
     "ruleId": "sort-keys",
     "message": "Expected object keys to be in ascending order. 'href' should be before 'rel'.",
-    "line": 71,
+    "line": 73,
     "column": 17,
-    "endLine": 71,
+    "endLine": 73,
     "endColumn": 23
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 82. Maximum allowed is 80.",
-    "line": 86,
-    "column": 1
+    "line": 88,
+    "column": 1,
+    "endLine": 88,
+    "endColumn": 83
   },
   {
     "ruleId": "sort-keys",
     "message": "Expected object keys to be in ascending order. 'content' should be before 'property'.",
-    "line": 87,
+    "line": 89,
     "column": 13,
-    "endLine": 87,
+    "endLine": 89,
     "endColumn": 22
   },
   {
     "ruleId": "require-unicode-regexp",
     "message": "Use the 'u' flag.",
-    "line": 88,
+    "line": 90,
     "column": 17,
-    "endLine": 88,
+    "endLine": 90,
     "endColumn": 21
   },
   {
     "ruleId": "no-invalid-this",
     "message": "Unexpected 'this'.",
-    "line": 95,
+    "line": 97,
     "column": 18,
-    "endLine": 95,
+    "endLine": 97,
     "endColumn": 22
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 100. Maximum allowed is 80.",
-    "line": 96,
-    "column": 1
+    "line": 98,
+    "column": 1,
+    "endLine": 98,
+    "endColumn": 101
   },
   {
     "ruleId": "id-length",
     "message": "Identifier name 'l' is too short (< 2).",
-    "line": 96,
+    "line": 98,
     "column": 17,
-    "endLine": 96,
+    "endLine": 98,
     "endColumn": 18
   },
   {
     "ruleId": "sort-keys",
     "message": "Expected object keys to be in ascending order. 'content' should be before 'property'.",
-    "line": 100,
+    "line": 102,
     "column": 13,
-    "endLine": 100,
+    "endLine": 102,
     "endColumn": 22
   },
   {
     "ruleId": "require-unicode-regexp",
     "message": "Use the 'u' flag.",
-    "line": 101,
+    "line": 103,
     "column": 17,
-    "endLine": 101,
+    "endLine": 103,
     "endColumn": 21
   }
 ]

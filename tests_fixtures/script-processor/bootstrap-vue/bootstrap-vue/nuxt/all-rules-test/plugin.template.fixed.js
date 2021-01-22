@@ -16,7 +16,9 @@ Vue.use(
 <% if (options.treeShake) { %>
 import {
     <%= [].concat(
-        options.config ? 'BVConfigPlugin' : null,
+        options.config
+          ? 'BVConfigPlugin'
+          : null,
         options.componentPlugins,
         options.directivePlugins,
         options.components,

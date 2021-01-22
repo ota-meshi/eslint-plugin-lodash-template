@@ -1,5 +1,7 @@
 import Vue from "vue";
-import Vuetify from '<%= options.treeShake ? 'vuetify/lib' : 'vuetify' %>';
+import Vuetify from '<%= options.treeShake
+    ? 'vuetify/lib'
+    : 'vuetify' %>';
 <%
   const libImports = [
     {"key": 'components',
@@ -35,7 +37,9 @@ Vue.use(
 
 export default (ctx) => {
 
-    const vuetifyOptions = typeof options === "function" ? options(ctx) : options;
+    const vuetifyOptions = typeof options === "function"
+        ? options(ctx)
+        : options;
 
     <% if (options.defaultIconPreset) { %>
     vuetifyOptions.icons = vuetifyOptions.icons || {};
