@@ -187,7 +187,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 000B',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u000B' not allowed."
+                "Irregular whitespace '\\u000B' not allowed.",
             ),
         },
         {
@@ -196,7 +196,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 000C',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u000C' not allowed."
+                "Irregular whitespace '\\u000C' not allowed.",
             ),
         },
         {
@@ -205,7 +205,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 0085',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u0085' not allowed."
+                "Irregular whitespace '\\u0085' not allowed.",
             ),
         },
         {
@@ -214,7 +214,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 00A0',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u00A0' not allowed."
+                "Irregular whitespace '\\u00A0' not allowed.",
             ),
         },
         {
@@ -223,7 +223,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 180E',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u180E' not allowed."
+                "Irregular whitespace '\\u180E' not allowed.",
             ),
         },
         {
@@ -232,7 +232,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > FEFF',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\uFEFF' not allowed."
+                "Irregular whitespace '\\uFEFF' not allowed.",
             ),
         },
         {
@@ -241,7 +241,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 2000',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u2000' not allowed."
+                "Irregular whitespace '\\u2000' not allowed.",
             ),
         },
         {
@@ -250,7 +250,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 2001',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u2001' not allowed."
+                "Irregular whitespace '\\u2001' not allowed.",
             ),
         },
         {
@@ -259,7 +259,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 2002',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u2002' not allowed."
+                "Irregular whitespace '\\u2002' not allowed.",
             ),
         },
         {
@@ -268,7 +268,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 2003',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u2003' not allowed."
+                "Irregular whitespace '\\u2003' not allowed.",
             ),
         },
         {
@@ -277,7 +277,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 2004',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u2004' not allowed."
+                "Irregular whitespace '\\u2004' not allowed.",
             ),
         },
         {
@@ -286,7 +286,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 2005',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u2005' not allowed."
+                "Irregular whitespace '\\u2005' not allowed.",
             ),
         },
         {
@@ -295,7 +295,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 2006',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u2006' not allowed."
+                "Irregular whitespace '\\u2006' not allowed.",
             ),
         },
         {
@@ -304,7 +304,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 2007',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u2007' not allowed."
+                "Irregular whitespace '\\u2007' not allowed.",
             ),
         },
         {
@@ -313,7 +313,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 2008',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u2008' not allowed."
+                "Irregular whitespace '\\u2008' not allowed.",
             ),
         },
         {
@@ -322,7 +322,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 2009',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u2009' not allowed."
+                "Irregular whitespace '\\u2009' not allowed.",
             ),
         },
         {
@@ -331,7 +331,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 200A',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u200A' not allowed."
+                "Irregular whitespace '\\u200A' not allowed.",
             ),
         },
         {
@@ -340,7 +340,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 200B',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u200B' not allowed."
+                "Irregular whitespace '\\u200B' not allowed.",
             ),
         },
         {
@@ -349,7 +349,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div\n attr="\n" attr="\n" \nattr="" > \n <!-- \n --></div\n > 2028',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u2028' not allowed."
+                "Irregular whitespace '\\u2028' not allowed.",
             ),
         },
         {
@@ -358,7 +358,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div\n attr="\n" attr="\n" \nattr="" > \n <!-- \n --></div\n > 2029',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u2029' not allowed."
+                "Irregular whitespace '\\u2029' not allowed.",
             ),
         },
         {
@@ -367,7 +367,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 202F',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u202F' not allowed."
+                "Irregular whitespace '\\u202F' not allowed.",
             ),
         },
         {
@@ -376,7 +376,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 205F',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u205F' not allowed."
+                "Irregular whitespace '\\u205F' not allowed.",
             ),
         },
         {
@@ -385,7 +385,7 @@ tester.run("no-irregular-whitespace", rule, {
             output:
                 '<div  attr=" " attr=" "  attr="" >   <!--   --></div  > 3000',
             errors: new Array(7).fill(
-                "Irregular whitespace '\\u3000' not allowed."
+                "Irregular whitespace '\\u3000' not allowed.",
             ),
         },
 
@@ -396,7 +396,7 @@ tester.run("no-irregular-whitespace", rule, {
                 '<div  attr="\u3000" attr="\u3000"  attr="" >   <!--   --></div  >',
             options: [{ skipAttrValues: true }],
             errors: new Array(5).fill(
-                "Irregular whitespace '\\u3000' not allowed."
+                "Irregular whitespace '\\u3000' not allowed.",
             ),
         },
         {
@@ -406,7 +406,7 @@ tester.run("no-irregular-whitespace", rule, {
                 '<div  attr=" " attr=" "  attr="" > \u3000 <!--   --></div  >',
             options: [{ skipText: true }],
             errors: new Array(6).fill(
-                "Irregular whitespace '\\u3000' not allowed."
+                "Irregular whitespace '\\u3000' not allowed.",
             ),
         },
         {
@@ -416,7 +416,7 @@ tester.run("no-irregular-whitespace", rule, {
                 '<div  attr=" " attr=" "  attr="" >   <!-- \u3000 --></div  >',
             options: [{ skipComments: true }],
             errors: new Array(6).fill(
-                "Irregular whitespace '\\u3000' not allowed."
+                "Irregular whitespace '\\u3000' not allowed.",
             ),
         },
         {
@@ -428,7 +428,7 @@ tester.run("no-irregular-whitespace", rule, {
                 { skipComments: true, skipAttrValues: true, skipText: true },
             ],
             errors: new Array(3).fill(
-                "Irregular whitespace '\\u3000' not allowed."
+                "Irregular whitespace '\\u3000' not allowed.",
             ),
         },
     ],

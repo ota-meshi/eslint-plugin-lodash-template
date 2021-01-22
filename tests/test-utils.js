@@ -13,7 +13,7 @@ function listupFiles(dirpath) {
         const filepath = path.join(dirpath, name)
         if (fs.statSync(filepath).isDirectory()) {
             results.push(
-                ...listupFiles(filepath).map((n) => path.join(name, n))
+                ...listupFiles(filepath).map((n) => path.join(name, n)),
             )
         } else {
             results.push(name)
@@ -24,7 +24,7 @@ function listupFiles(dirpath) {
 
 module.exports = {
     writeFile(expectFilepath, content) {
-        // eslint-disable-next-line no-process-env
+        // eslint-disable-next-line no-process-env -- test
         if (process.env.UPDATE_FIXTURE) {
             fs.writeFileSync(expectFilepath, content, "utf8")
         }
