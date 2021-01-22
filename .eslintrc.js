@@ -7,9 +7,13 @@ module.exports = {
         ecmaVersion: 2020,
     },
     extends: [
-        "plugin:@mysticatea/es2015",
-        "plugin:@mysticatea/+node",
-        "plugin:@mysticatea/+eslint-plugin",
+        "plugin:@ota-meshi/recommended",
+        "plugin:@ota-meshi/+node",
+        "plugin:@ota-meshi/+eslint-plugin",
+        "plugin:@ota-meshi/+json",
+        "plugin:@ota-meshi/+yaml",
+        // "plugin:@ota-meshi/+md",
+        "plugin:@ota-meshi/+prettier",
         "plugin:lodash-template/all",
     ],
     plugins: ["es"],
@@ -21,11 +25,15 @@ module.exports = {
         {
             files: ["lib/rules/**"],
             rules: {
-                "@mysticatea/eslint-plugin/report-message-format": [
+                "eslint-plugin/require-meta-docs-description": [
+                    "error",
+                    { pattern: "^(enforce|require|disallow|prefer)" },
+                ],
+                "eslint-plugin/report-message-format": [
                     "error",
                     "[^a-z].*\\.$",
                 ],
-                "@mysticatea/eslint-plugin/require-meta-docs-url": [
+                "eslint-plugin/require-meta-docs-url": [
                     "error",
                     {
                         pattern:
@@ -42,14 +50,15 @@ module.exports = {
         },
         {
             files: ["docs/.vuepress/**"],
+            parser: "vue-eslint-parser",
             parserOptions: {
-                parser: "vue-eslint-parser",
                 sourceType: "module",
                 ecmaVersion: 2018,
                 parserOptions: {
                     parser: "babel-eslint",
                 },
             },
+            extends: ["plugin:@ota-meshi/+vue2", "plugin:@ota-meshi/+prettier"],
             globals: {
                 window: true,
             },

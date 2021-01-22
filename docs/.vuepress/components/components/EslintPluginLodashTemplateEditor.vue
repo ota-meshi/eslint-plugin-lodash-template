@@ -176,23 +176,23 @@ export default {
             const { monaco } = editor
             // monaco.languages.j()
             monaco.languages.typescript.typescriptDefaults.setDiagnosticsOptions(
-                { validate: false }
+                { validate: false },
             )
             monaco.languages.typescript.javascriptDefaults.setDiagnosticsOptions(
-                { validate: false }
+                { validate: false },
             )
         })
         editor.$watch("codeEditor", () => {
             if (editor.codeEditor) {
                 editor.codeEditor.onDidChangeModelDecorations(() =>
-                    this.onDidChangeModelDecorations(editor.codeEditor)
+                    this.onDidChangeModelDecorations(editor.codeEditor),
                 )
             }
         })
         editor.$watch("fixedCodeEditor", () => {
             if (editor.fixedCodeEditor) {
                 editor.fixedCodeEditor.onDidChangeModelDecorations(() =>
-                    this.onDidChangeModelDecorations(editor.fixedCodeEditor)
+                    this.onDidChangeModelDecorations(editor.fixedCodeEditor),
                 )
             }
         })

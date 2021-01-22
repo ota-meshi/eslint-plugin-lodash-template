@@ -7,7 +7,7 @@ const rule = require("../../../lib/rules/html-indent")
 
 const FIXTURE_ROOT = path.resolve(
     __dirname,
-    "../../../tests_fixtures/html-indent/"
+    "../../../tests_fixtures/html-indent/",
 )
 
 /**
@@ -58,7 +58,7 @@ function loadPatterns(additionalValid, additionalInvalid) {
                                   line.indentSize === 1 ? "" : "s"
                               } but found 0 ${kind}s.`,
                               line: line.number + 1,
-                          }
+                          },
                 )
                 .filter(Boolean)
 
@@ -331,6 +331,6 @@ text
                 ],
                 filename: "test.html",
             },
-        ]
-    )
+        ],
+    ),
 )

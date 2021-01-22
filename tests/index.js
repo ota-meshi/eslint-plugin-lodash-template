@@ -27,7 +27,7 @@ function assertMessages(actual, expected) {
         expected2.push(
             expected[i]
                 ? Object.assign({}, actual[i], expected[i])
-                : expected[i]
+                : expected[i],
         )
     }
 
@@ -59,7 +59,7 @@ describe("index test", () => {
         }
         linter.defineParser(
             "micro-template-eslint-parser",
-            require("../lib/parser/micro-template-eslint-parser")
+            require("../lib/parser/micro-template-eslint-parser"),
         )
         linter.defineRule("no-empty-template-tag", rule)
         const messagesEjs = linter.verify("'use strict'<%%>", config, {
@@ -80,7 +80,7 @@ describe("index test", () => {
         }
         linter.defineParser(
             "micro-template-eslint-parser",
-            require("../lib/parser/micro-template-eslint-parser")
+            require("../lib/parser/micro-template-eslint-parser"),
         )
         linter.defineRule("no-empty-template-tag", rule)
         const messagesEjs = linter.verify("'use strict'<%%>", config, {
@@ -245,7 +245,7 @@ describe("Basic tests", () => {
                     const baseFilepath = path.join(FIXTURE_DIR, "hello.html")
                     const testFilepath = path.join(
                         FIXTURE_DIR,
-                        "hello.html.fixtarget.html"
+                        "hello.html.fixtarget.html",
                     )
                     // copy
                     fs.copyFileSync(baseFilepath, testFilepath)
@@ -257,14 +257,14 @@ describe("Basic tests", () => {
                         useEslintrc: false,
                     })
                     CLIEngine.outputFixes(
-                        cli.executeOnFiles(["hello.html.fixtarget.html"])
+                        cli.executeOnFiles(["hello.html.fixtarget.html"]),
                     )
 
                     const actual = fs.readFileSync(testFilepath, "utf8")
                     fs.unlinkSync(testFilepath)
                     const expected = fs.readFileSync(
                         path.join(FIXTURE_DIR, "hello.html.fixed.html"),
-                        "utf8"
+                        "utf8",
                     )
 
                     assert.deepStrictEqual(actual.trim(), expected.trim())

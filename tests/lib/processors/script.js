@@ -12,7 +12,7 @@ const CLIEngine = eslint.CLIEngine
 
 const FIXTURE_DIR = path.join(
     __dirname,
-    "../../../tests_fixtures/script-processor"
+    "../../../tests_fixtures/script-processor",
 )
 const ALL_RULES_CONFIG_PATH = path.join(FIXTURE_DIR, "all-rules.eslintrc.js")
 
@@ -62,7 +62,7 @@ function stringifyMessages(messages) {
             }
             return value
         },
-        2
+        2,
     )
 }
 
@@ -76,7 +76,7 @@ describe("script test", () => {
                 const filepath = path.join(FIXTURE_DIR, name)
                 const contents = fs.readFileSync(
                     path.join(FIXTURE_DIR, relPath),
-                    "utf8"
+                    "utf8",
                 )
                 if (!isTargetFromJson(filepath)) {
                     return
@@ -92,8 +92,8 @@ describe("script test", () => {
                     parsingErrorJson = JSON.parse(
                         fs.readFileSync(
                             `${filepath}.parsing_error.json`,
-                            "utf8"
-                        )
+                            "utf8",
+                        ),
                     )
                 }
                 const parsingErrorOnly =
@@ -105,12 +105,12 @@ describe("script test", () => {
                     })
                     const report = cli.executeOnFiles([`${name}.js`])
                     const messages = testUtils.sortMessages(
-                        report.results[0].messages
+                        report.results[0].messages,
                     )
 
                     const expectFilepath = path.join(
                         FIXTURE_DIR,
-                        `${name}.json`
+                        `${name}.json`,
                     )
                     if (!parsingErrorOnly) {
                         try {
@@ -118,19 +118,19 @@ describe("script test", () => {
                                 messages,
                                 parsingErrorJson ||
                                     JSON.parse(
-                                        fs.readFileSync(expectFilepath, "utf8")
-                                    )
+                                        fs.readFileSync(expectFilepath, "utf8"),
+                                    ),
                             )
                         } catch (e) {
                             if (!parsingErrorJson) {
                                 testUtils.writeFile(
                                     expectFilepath,
-                                    stringifyMessages(messages)
+                                    stringifyMessages(messages),
                                 )
                             } else {
                                 testUtils.writeFile(
                                     `${filepath}.parsing_error.json`,
-                                    stringifyMessages(messages)
+                                    stringifyMessages(messages),
                                 )
                             }
                             throw e
@@ -138,17 +138,17 @@ describe("script test", () => {
                         if (!parsingErrorJson) {
                             assert.ok(
                                 !stringifyMessages(messages).includes(
-                                    "Parsing error"
+                                    "Parsing error",
                                 ),
-                                "No Parsing error"
+                                "No Parsing error",
                             )
                         }
                     } else {
                         assert.ok(
                             stringifyMessages(messages).includes(
-                                "Parsing error"
+                                "Parsing error",
                             ),
-                            "Has Parsing error"
+                            "Has Parsing error",
                         )
                         assertMessages(messages, parsingErrorJson)
                     }
@@ -162,39 +162,39 @@ describe("script test", () => {
                                 fix: true,
                             })
                             CLIEngine.outputFixes(
-                                cli.executeOnFiles([`${name}.fixed.js`])
+                                cli.executeOnFiles([`${name}.fixed.js`]),
                             )
                             const report = cli.executeOnFiles([
                                 `${name}.fixed.js`,
                             ])
                             const messages = testUtils.sortMessages(
-                                report.results[0].messages
+                                report.results[0].messages,
                             )
 
                             const expectFilepath = path.join(
                                 FIXTURE_DIR,
-                                `${name}.fixed.json`
+                                `${name}.fixed.json`,
                             )
                             try {
                                 assertMessages(
                                     messages,
                                     JSON.parse(
-                                        fs.readFileSync(expectFilepath, "utf8")
-                                    )
+                                        fs.readFileSync(expectFilepath, "utf8"),
+                                    ),
                                 )
                             } catch (e) {
                                 testUtils.writeFile(
                                     expectFilepath,
-                                    stringifyMessages(messages)
+                                    stringifyMessages(messages),
                                 )
                                 throw e
                             }
                             if (!parsingErrorJson) {
                                 assert.ok(
                                     !stringifyMessages(messages).includes(
-                                        "Parsing error"
+                                        "Parsing error",
                                     ),
-                                    "No Parsing error"
+                                    "No Parsing error",
                                 )
                             }
                         })
@@ -202,7 +202,7 @@ describe("script test", () => {
 
                     const allConfigTestDirPath = path.join(
                         filepath,
-                        "../all-rules-test"
+                        "../all-rules-test",
                     )
                     if (
                         semver.satisfies(eslintVersion, ">=7.0.0-rc") &&
@@ -214,25 +214,25 @@ describe("script test", () => {
                         fs.writeFileSync(
                             path.join(
                                 allConfigTestDirPath,
-                                `${basename}.lint.js`
+                                `${basename}.lint.js`,
                             ),
                             contents,
-                            "utf8"
+                            "utf8",
                         )
                         // write for autofix for all-rules
                         fs.writeFileSync(
                             path.join(
                                 allConfigTestDirPath,
-                                `${basename}.fixed.js`
+                                `${basename}.fixed.js`,
                             ),
                             contents,
-                            "utf8"
+                            "utf8",
                         )
                         // write for autofix for all-rules
                         fs.writeFileSync(
                             path.join(allConfigTestDirPath, ".eslintrc.js"),
                             fs.readFileSync(ALL_RULES_CONFIG_PATH, "utf8"),
-                            "utf8"
+                            "utf8",
                         )
 
                         it("all-rules-test lint", () => {
@@ -243,32 +243,32 @@ describe("script test", () => {
                                 `${basename}.lint.js`,
                             ])
                             const messages = testUtils.sortMessages(
-                                report.results[0].messages
+                                report.results[0].messages,
                             )
 
                             const expectFilepath = path.join(
                                 allConfigTestDirPath,
-                                `${basename}.lint.json`
+                                `${basename}.lint.json`,
                             )
                             try {
                                 assertMessages(
                                     messages,
                                     JSON.parse(
-                                        fs.readFileSync(expectFilepath, "utf8")
-                                    )
+                                        fs.readFileSync(expectFilepath, "utf8"),
+                                    ),
                                 )
                             } catch (e) {
                                 testUtils.writeFile(
                                     expectFilepath,
-                                    stringifyMessages(messages)
+                                    stringifyMessages(messages),
                                 )
                                 throw e
                             }
                             assert.ok(
                                 !stringifyMessages(messages).includes(
-                                    "Parsing error"
+                                    "Parsing error",
                                 ),
-                                "No Parsing error"
+                                "No Parsing error",
                             )
                         })
                         it("all-rules-test autofix", () => {
@@ -277,38 +277,38 @@ describe("script test", () => {
                                 fix: true,
                             })
                             CLIEngine.outputFixes(
-                                cli.executeOnFiles([`${basename}.fixed.js`])
+                                cli.executeOnFiles([`${basename}.fixed.js`]),
                             )
                             const report = cli.executeOnFiles([
                                 `${basename}.fixed.js`,
                             ])
                             const messages = testUtils.sortMessages(
-                                report.results[0].messages
+                                report.results[0].messages,
                             )
 
                             const expectFilepath = path.join(
                                 allConfigTestDirPath,
-                                `${basename}.fixed.json`
+                                `${basename}.fixed.json`,
                             )
                             try {
                                 assertMessages(
                                     messages,
                                     JSON.parse(
-                                        fs.readFileSync(expectFilepath, "utf8")
-                                    )
+                                        fs.readFileSync(expectFilepath, "utf8"),
+                                    ),
                                 )
                             } catch (e) {
                                 testUtils.writeFile(
                                     expectFilepath,
-                                    stringifyMessages(messages)
+                                    stringifyMessages(messages),
                                 )
                                 throw e
                             }
                             assert.ok(
                                 !stringifyMessages(messages).includes(
-                                    "Parsing error"
+                                    "Parsing error",
                                 ),
-                                "No Parsing error"
+                                "No Parsing error",
                             )
                         })
                     }
@@ -318,21 +318,21 @@ describe("script test", () => {
     })
 })
 
-// eslint-disable-next-line require-jsdoc
+// eslint-disable-next-line require-jsdoc -- test
 function isTargetFromJson(filepath) {
     let eslintVer = null
     let nodeVer = null
     const dir = path.dirname(filepath)
     if (testUtils.existsPath(`${dir}/target.json`)) {
         const targetVars = JSON.parse(
-            fs.readFileSync(`${dir}/target.json`, "utf8")
+            fs.readFileSync(`${dir}/target.json`, "utf8"),
         )
         eslintVer = targetVars.eslint || eslintVer
         nodeVer = targetVars.node || nodeVer
     }
     if (testUtils.existsPath(`${filepath}.target.json`)) {
         const targetVars = JSON.parse(
-            fs.readFileSync(`${filepath}.target.json`, "utf8")
+            fs.readFileSync(`${filepath}.target.json`, "utf8"),
         )
         if (typeof targetVars === "string") {
             eslintVer = targetVars || eslintVer

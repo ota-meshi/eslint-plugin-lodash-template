@@ -19,7 +19,7 @@ function assertMessages(actual, expected) {
         expected2.push(
             expected[i]
                 ? Object.assign({}, actual[i], expected[i])
-                : expected[i]
+                : expected[i],
         )
     }
 
@@ -53,7 +53,7 @@ describe("comment-directive test", () => {
           <% const b = 1; %>
         </div>
         `,
-            "test.html"
+            "test.html",
         )
         const messages = testUtils.sortMessages(report.results[0].messages)
 
