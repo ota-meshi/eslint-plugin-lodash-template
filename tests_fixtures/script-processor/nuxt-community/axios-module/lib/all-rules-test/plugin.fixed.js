@@ -5,7 +5,9 @@ import Axios from "axios";
 const axiosExtra = {
     setHeader (name, value, scopes = "common") {
 
-        for (const scope of Array.isArray(scopes) ? scopes : [scopes]) {
+        for (const scope of Array.isArray(scopes)
+            ? scopes
+            : [scopes]) {
 
             if (!value) {
 
@@ -20,7 +22,11 @@ const axiosExtra = {
     },
     setToken (token, type, scopes = "common") {
 
-        const value = !token ? null : (type ? `${type} ` : "") + token;
+        const value = !token
+            ? null
+            : (type
+                ? `${type} `
+                : "") + token;
         this.setHeader(
             "Authorization",
             value,
@@ -190,7 +196,8 @@ const setupProgress = (axios, ctx) => {
         "set": () => { }
     };
 
-    const $loading = () => (window.$nuxt && window.$nuxt.$loading && window.$nuxt.$loading.set ? window.$nuxt.$loading : noopLoading);
+    const $loading = () => (window.$nuxt && window.$nuxt.$loading && window.$nuxt.$loading.set ? window.$nuxt.$loading
+: noopLoading);
 
     let currentRequests = 0;
 
@@ -289,7 +296,9 @@ export default (ctx, inject) => {
 
     <% if (options.proxyHeaders) { %>
     // Proxy SSR request headers headers
-    axiosOptions.headers.common = ctx.req && ctx.req.headers ? {...ctx.req.headers} : {};
+    axiosOptions.headers.common = ctx.req && ctx.req.headers
+        ? {...ctx.req.headers}
+        : {};
     <% for (const h of options.proxyHeadersIgnore) {
  %>delete axiosOptions.headers.common['<%= h %>'];
     <% } %><%

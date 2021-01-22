@@ -1,10 +1,1 @@
-[
-  {
-    "ruleId": "require-atomic-updates",
-    "message": "Possible race condition: `ctx.$ga` might be reassigned based on an outdated value of `ctx.$ga`.",
-    "line": 20,
-    "column": 5,
-    "endLine": 20,
-    "endColumn": 22
-  }
-]
+[]

@@ -24,7 +24,8 @@ export default (ctx, inject) => {
     function <%= key %>GetAuth () {
 
         const token = cookies.get(<%= key %>TokenName);
-        return token && <%= key %>ClientConfig.validateToken(token) ? AUTH_TYPE + token : "";
+        return token && <%= key %>ClientConfig.validateToken(token) ? AUTH_TYPE + token
+            : "";
 
     }
 
@@ -61,7 +62,10 @@ export default (ctx, inject) => {
 
     if (!process.server) {
 
-        <%= key %>Cache.restore(window.__NUXT__ ? window.__NUXT__.apollo.<%= key === 'default' ? 'defaultClient' : key %> : null);
+        <%= key %>Cache.restore(window.__NUXT__
+            ? window.__NUXT__.apollo.<%= key === 'default'
+                ? 'defaultClient'
+                : key %> : null);
 
     }
 

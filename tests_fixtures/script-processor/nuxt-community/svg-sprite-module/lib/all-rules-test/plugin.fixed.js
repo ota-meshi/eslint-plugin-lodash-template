@@ -89,14 +89,18 @@ const SvgIcon = {
             }
         );
 
-        const title = props.title ? h(
-            "title",
-            props.title
-        ) : null;
-        const desc = props.desc ? h(
-            "desc",
-            props.desc
-        ) : null;
+        const title = props.title
+            ? h(
+                "title",
+                props.title
+            )
+            : null;
+        const desc = props.desc
+            ? h(
+                "desc",
+                props.desc
+            )
+            : null;
 
         const {sprite} = info;
 

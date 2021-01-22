@@ -13,17 +13,31 @@ const adsbygoogle = {
                     "data-ad-client": this.adClient,
                     "data-ad-slot": this.adSlot || null,
                     "data-ad-format": this.adFormat,
-                    "data-ad-region": this.show ? this.adRegion() : null,
+                    "data-ad-region": this.show
+                        ? this.adRegion()
+                        : null,
                     "data-ad-layout": this.adLayout || null,
                     "data-ad-layout-key": this.adLayoutKey || null,
-                    "data-page-url": this.pageUrl ? this.pageUrl : null,
-                    "data-analytics-uacct": this.analyticsUacct ? this.analyticsUacct : null,
-                    "data-analytics-domain-name": this.analyticsDomainName ? this.analyticsDomainName : null,
-                    "data-adtest": <%= options.test ? '\'on\'' : 'null' %>,
-                    "data-adsbygoogle-status": this.show ? null : ""
+                    "data-page-url": this.pageUrl
+                        ? this.pageUrl
+                        : null,
+                    "data-analytics-uacct": this.analyticsUacct
+                        ? this.analyticsUacct
+                        : null,
+                    "data-analytics-domain-name": this.analyticsDomainName
+                        ? this.analyticsDomainName
+                        : null,
+                    "data-adtest": <%= options.test
+                        ? '\'on\''
+                        : 'null' %>,
+                    "data-adsbygoogle-status": this.show
+                        ? null
+                        : ""
                 },
                 "domProps": {
-                    "innerHTML": this.show ? "" : " "
+                    "innerHTML": this.show
+                        ? ""
+                        : " "
                 },
                 "key": Math.random()
             }

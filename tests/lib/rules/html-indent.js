@@ -224,6 +224,23 @@ aaaaaaaaa
                 `,
                 filename: "test.js",
             },
+            {
+                code: unIndent`
+                <% for ( var i = 0; i < users.length; i++ ) { %><% } %>
+                <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
+                `,
+                filename: "script-indent-for3-no-in-punc.html",
+            },
+            {
+                code: unIndent`
+                <div></div>
+                text
+                <!-- comment -->
+                <% print('value') %>
+                text<div></div>
+                <div></div><!-- comment --><div></div>`,
+                filename: "root-indent1.html",
+            },
         ],
 
         // Invalid

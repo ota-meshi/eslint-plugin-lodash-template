@@ -80,18 +80,20 @@
     "endColumn": 22
   },
   {
+    "ruleId": "object-property-newline",
+    "message": "Object properties must go on a new line.",
+    "line": 5,
+    "column": 24,
+    "endLine": 5,
+    "endColumn": 32
+  },
+  {
     "ruleId": "quote-props",
     "message": "Unquoted property 'location' found.",
     "line": 5,
     "column": 24,
     "endLine": 5,
     "endColumn": 47
-  },
-  {
-    "ruleId": "object-property-newline",
-    "message": "Object properties must go on a new line.",
-    "line": 5,
-    "column": 24
   },
   {
     "ruleId": "lodash-template/scriptlet-indent",
@@ -118,18 +120,20 @@
     "endColumn": 23
   },
   {
+    "ruleId": "object-property-newline",
+    "message": "Object properties must go on a new line.",
+    "line": 6,
+    "column": 25,
+    "endLine": 6,
+    "endColumn": 33
+  },
+  {
     "ruleId": "quote-props",
     "message": "Unquoted property 'location' found.",
     "line": 6,
     "column": 25,
     "endLine": 6,
     "endColumn": 48
-  },
-  {
-    "ruleId": "object-property-newline",
-    "message": "Object properties must go on a new line.",
-    "line": 6,
-    "column": 25
   },
   {
     "ruleId": "lodash-template/scriptlet-indent",
@@ -156,18 +160,20 @@
     "endColumn": 22
   },
   {
+    "ruleId": "object-property-newline",
+    "message": "Object properties must go on a new line.",
+    "line": 7,
+    "column": 24,
+    "endLine": 7,
+    "endColumn": 32
+  },
+  {
     "ruleId": "quote-props",
     "message": "Unquoted property 'location' found.",
     "line": 7,
     "column": 24,
     "endLine": 7,
     "endColumn": 58
-  },
-  {
-    "ruleId": "object-property-newline",
-    "message": "Object properties must go on a new line.",
-    "line": 7,
-    "column": 24
   },
   {
     "ruleId": "lodash-template/scriptlet-indent",
@@ -221,7 +227,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 82. Maximum allowed is 80.",
     "line": 13,
-    "column": 1
+    "column": 1,
+    "endLine": 13,
+    "endColumn": 83
   },
   {
     "ruleId": "object-curly-spacing",
@@ -315,7 +323,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 97. Maximum allowed is 80.",
     "line": 24,
-    "column": 1
+    "column": 1,
+    "endLine": 24,
+    "endColumn": 98
   },
   {
     "ruleId": "arrow-parens",

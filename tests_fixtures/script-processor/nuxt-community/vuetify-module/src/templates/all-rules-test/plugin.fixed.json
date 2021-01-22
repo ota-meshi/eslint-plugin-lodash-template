@@ -1,90 +1,58 @@
 [
   {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 2,
-    "column": 26,
-    "endLine": 2,
-    "endColumn": 43
-  },
-  {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
     "line": 2,
     "column": 26,
-    "endLine": 2,
-    "endColumn": 71
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 2,
-    "column": 46,
-    "endLine": 2,
-    "endColumn": 59
+    "endLine": 4,
+    "endColumn": 16
   },
   {
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 0.",
-    "line": 14,
+    "line": 16,
     "column": 77,
-    "endLine": 14,
+    "endLine": 16,
     "endColumn": 78
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 81. Maximum allowed is 80.",
-    "line": 16,
-    "column": 1
+    "line": 18,
+    "column": 1,
+    "endLine": 18,
+    "endColumn": 82
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 108. Maximum allowed is 80.",
-    "line": 29,
-    "column": 1
+    "line": 31,
+    "column": 1,
+    "endLine": 31,
+    "endColumn": 109
   },
   {
     "ruleId": "no-magic-numbers",
     "message": "No magic number: 0.",
-    "line": 29,
+    "line": 31,
     "column": 106,
-    "endLine": 29,
+    "endLine": 31,
     "endColumn": 107
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 87. Maximum allowed is 80.",
-    "line": 30,
-    "column": 1
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 82. Maximum allowed is 80.",
-    "line": 38,
-    "column": 1
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 38,
-    "column": 28,
-    "endLine": 38,
-    "endColumn": 57
+    "line": 32,
+    "column": 1,
+    "endLine": 32,
+    "endColumn": 88
   },
   {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
-    "line": 38,
+    "line": 40,
     "column": 28,
-    "endLine": 38,
-    "endColumn": 82
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 38,
-    "column": 60,
-    "endLine": 38,
-    "endColumn": 72
+    "endLine": 42,
+    "endColumn": 18
   }
 ]

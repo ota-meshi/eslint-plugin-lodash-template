@@ -8,139 +8,91 @@
     "endColumn": 21
   },
   {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 9,
-    "column": 17,
-    "endLine": 9,
-    "endColumn": 33
-  },
-  {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
     "line": 9,
     "column": 17,
-    "endLine": 9,
-    "endColumn": 55
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 9,
-    "column": 36,
-    "endLine": 9,
-    "endColumn": 45
+    "endLine": 11,
+    "endColumn": 18
   },
   {
     "ruleId": "no-undefined",
     "message": "Unexpected use of undefined.",
-    "line": 9,
-    "column": 36,
-    "endLine": 9,
-    "endColumn": 45
+    "line": 10,
+    "column": 11,
+    "endLine": 10,
+    "endColumn": 20
   },
   {
     "ruleId": "no-undef",
     "message": "'config' is not defined.",
-    "line": 13,
+    "line": 15,
     "column": 12,
-    "endLine": 13,
+    "endLine": 15,
     "endColumn": 18
   },
   {
     "ruleId": "no-undef",
     "message": "'config' is not defined.",
-    "line": 14,
+    "line": 16,
     "column": 39,
-    "endLine": 14,
+    "endLine": 16,
     "endColumn": 45
   },
   {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 15,
+    "ruleId": "no-ternary",
+    "message": "Ternary operator used.",
+    "line": 17,
     "column": 24,
-    "endLine": 15,
-    "endColumn": 31
+    "endLine": 19,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'config' is not defined.",
+    "line": 18,
+    "column": 13,
+    "endLine": 18,
+    "endColumn": 19
+  },
+  {
+    "ruleId": "no-undef",
+    "message": "'config' is not defined.",
+    "line": 19,
+    "column": 13,
+    "endLine": 19,
+    "endColumn": 19
   },
   {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
-    "line": 15,
-    "column": 24,
-    "endLine": 15,
-    "endColumn": 57
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'config' is not defined.",
-    "line": 15,
-    "column": 34,
-    "endLine": 15,
-    "endColumn": 40
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 15,
-    "column": 34,
-    "endLine": 15,
-    "endColumn": 48
-  },
-  {
-    "ruleId": "no-undef",
-    "message": "'config' is not defined.",
-    "line": 15,
-    "column": 51,
-    "endLine": 15,
-    "endColumn": 57
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 16,
+    "line": 20,
     "column": 22,
-    "endLine": 16,
-    "endColumn": 29
-  },
-  {
-    "ruleId": "no-ternary",
-    "message": "Ternary operator used.",
-    "line": 16,
-    "column": 22,
-    "endLine": 16,
-    "endColumn": 43
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 16,
-    "column": 32,
-    "endLine": 16,
-    "endColumn": 38
+    "endLine": 22,
+    "endColumn": 15
   },
   {
     "ruleId": "no-undef",
     "message": "'config' is not defined.",
-    "line": 16,
-    "column": 32,
-    "endLine": 16,
-    "endColumn": 38
+    "line": 21,
+    "column": 13,
+    "endLine": 21,
+    "endColumn": 19
   },
   {
     "ruleId": "no-undef",
     "message": "'opt' is not defined.",
-    "line": 19,
+    "line": 25,
     "column": 41,
-    "endLine": 19,
+    "endLine": 25,
     "endColumn": 44
   },
   {
     "ruleId": "no-undef",
     "message": "'opt' is not defined.",
-    "line": 21,
+    "line": 27,
     "column": 23,
-    "endLine": 21,
+    "endLine": 27,
     "endColumn": 26
   }
 ]

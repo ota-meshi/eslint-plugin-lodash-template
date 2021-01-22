@@ -130,7 +130,9 @@ function getCookie (ctx, name) {
     }
 
     // Get and parse cookies
-    const cookieStr = process.client ? document.cookie : ctx.req.headers.cookie;
+    const cookieStr = process.client
+        ? document.cookie
+        : ctx.req.headers.cookie;
     const cookies = parseCookie(cookieStr || "") || {};
 
     return cookies[name];
@@ -160,7 +162,8 @@ function setCookie (ctx, name, value, maxAge = MAX_AGE) {
         let value = serializedCookie;
         if (prev) {
 
-            value = Array.isArray(prev) ? prev.concat(serializedCookie)
+            value = Array.isArray(prev)
+                ? prev.concat(serializedCookie)
                 : [
                     prev,
                     serializedCookie

@@ -11,13 +11,17 @@
     "ruleId": "max-len",
     "message": "This line has a length of 88. Maximum allowed is 80.",
     "line": 8,
-    "column": 1
+    "column": 1,
+    "endLine": 8,
+    "endColumn": 89
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 88. Maximum allowed is 80.",
     "line": 27,
-    "column": 1
+    "column": 1,
+    "endLine": 27,
+    "endColumn": 89
   },
   {
     "ruleId": "id-length",
@@ -31,7 +35,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 124. Maximum allowed is 80.",
     "line": 36,
-    "column": 1
+    "column": 1,
+    "endLine": 36,
+    "endColumn": 125
   },
   {
     "ruleId": "no-inline-comments",
@@ -42,114 +48,68 @@
     "endColumn": 89
   },
   {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 37,
-    "column": 38,
-    "endLine": 37,
-    "endColumn": 52
-  },
-  {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
     "line": 37,
     "column": 38,
-    "endLine": 37,
-    "endColumn": 78
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 37,
-    "column": 55,
-    "endLine": 37,
-    "endColumn": 69
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 120. Maximum allowed is 80.",
-    "line": 38,
-    "column": 1
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 38,
-    "column": 36,
-    "endLine": 38,
-    "endColumn": 66
+    "endLine": 39,
+    "endColumn": 33
   },
   {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
-    "line": 38,
+    "line": 40,
     "column": 36,
-    "endLine": 38,
-    "endColumn": 120
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 38,
-    "column": 69,
-    "endLine": 38,
-    "endColumn": 109
+    "endLine": 42,
+    "endColumn": 35
   },
   {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
-    "line": 47,
+    "line": 51,
     "column": 21,
-    "endLine": 47,
+    "endLine": 51,
     "endColumn": 34
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 107. Maximum allowed is 80.",
-    "line": 54,
-    "column": 1
+    "line": 58,
+    "column": 1,
+    "endLine": 58,
+    "endColumn": 108
   },
   {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
-    "line": 54,
+    "line": 58,
     "column": 17,
-    "endLine": 54,
+    "endLine": 58,
     "endColumn": 29
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 86. Maximum allowed is 80.",
-    "line": 72,
-    "column": 1
+    "line": 76,
+    "column": 1,
+    "endLine": 76,
+    "endColumn": 87
   },
   {
     "ruleId": "no-console",
     "message": "Unexpected console statement.",
-    "line": 72,
+    "line": 76,
     "column": 9,
-    "endLine": 72,
+    "endLine": 76,
     "endColumn": 21
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 127. Maximum allowed is 80.",
-    "line": 83,
-    "column": 1
-  },
-  {
-    "ruleId": "no-console",
-    "message": "Unexpected console statement.",
-    "line": 83,
-    "column": 13,
-    "endLine": 83,
-    "endColumn": 25
-  },
-  {
-    "ruleId": "max-len",
-    "message": "This line has a length of 126. Maximum allowed is 80.",
     "line": 87,
-    "column": 1
+    "column": 1,
+    "endLine": 87,
+    "endColumn": 128
   },
   {
     "ruleId": "no-console",
@@ -157,6 +117,22 @@
     "line": 87,
     "column": 13,
     "endLine": 87,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "max-len",
+    "message": "This line has a length of 126. Maximum allowed is 80.",
+    "line": 91,
+    "column": 1,
+    "endLine": 91,
+    "endColumn": 127
+  },
+  {
+    "ruleId": "no-console",
+    "message": "Unexpected console statement.",
+    "line": 91,
+    "column": 13,
+    "endLine": 91,
     "endColumn": 25
   }
 ]

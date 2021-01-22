@@ -27,13 +27,17 @@
     "ruleId": "max-len",
     "message": "This line has a length of 87. Maximum allowed is 80.",
     "line": 32,
-    "column": 1
+    "column": 1,
+    "endLine": 32,
+    "endColumn": 88
   },
   {
     "ruleId": "max-len",
     "message": "This line has a length of 81. Maximum allowed is 80.",
     "line": 34,
-    "column": 1
+    "column": 1,
+    "endLine": 34,
+    "endColumn": 82
   },
   {
     "ruleId": "no-underscore-dangle",
@@ -47,30 +51,16 @@
     "ruleId": "max-len",
     "message": "This line has a length of 87. Maximum allowed is 80.",
     "line": 43,
-    "column": 1
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between test and consequent of ternary expression.",
-    "line": 53,
-    "column": 30,
-    "endLine": 53,
-    "endColumn": 41
+    "column": 1,
+    "endLine": 43,
+    "endColumn": 88
   },
   {
     "ruleId": "no-ternary",
     "message": "Ternary operator used.",
     "line": 53,
     "column": 30,
-    "endLine": 53,
-    "endColumn": 64
-  },
-  {
-    "ruleId": "multiline-ternary",
-    "message": "Expected newline between consequent and alternate of ternary expression.",
-    "line": 53,
-    "column": 44,
-    "endLine": 53,
-    "endColumn": 55
+    "endLine": 55,
+    "endColumn": 17
   }
 ]

@@ -6,7 +6,9 @@ async function register () {
 
     }
 
-    const {Workbox} = await import('workbox-cdn/workbox/workbox-window.<%= options.dev ? 'dev' : 'prod' %>.es5.mjs');
+    const {Workbox} = await import('workbox-cdn/workbox/workbox-window.<%= options.dev
+        ? 'dev'
+        : 'prod' %>.es5.mjs');
 
     const workbox = new Workbox(
         '<%= options.swURL %>',
