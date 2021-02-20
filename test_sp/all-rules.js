@@ -1,4 +1,4 @@
-/* globals describe */
+/* globals describe -- ignore */
 "use strict"
 
 const Linter = require("eslint").Linter
@@ -45,12 +45,12 @@ describe("speed test.", () => {
   <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
 <% } %>
 `
-    console.log("start") // eslint-disable-line no-console
+    console.log("start") // eslint-disable-line no-console -- ignore
     for (let i = 0; i < 5; i++) {
-        console.time("time") // eslint-disable-line no-console
+        console.time("time") // eslint-disable-line no-console -- ignore
         for (let j = 0; j < 100; j++) {
             linter.verify(code, config, options)
         }
-        console.timeEnd("time") // eslint-disable-line no-console
+        console.timeEnd("time") // eslint-disable-line no-console -- ignore
     }
 })

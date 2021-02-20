@@ -35,7 +35,7 @@ for (const config of configs) {
         : Array.isArray(config.config.extends)
         ? config.config.extends
         : [config.config.extends]
-    config.extends = extendsList.map(p => configs.find(c => c.path === p))
+    config.extends = extendsList.map((p) => configs.find((c) => c.path === p))
 }
 
 module.exports = configs

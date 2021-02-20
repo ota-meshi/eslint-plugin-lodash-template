@@ -2,18 +2,16 @@
 
 const fs = require("fs")
 const path = require("path")
-const isWin = require("os")
-    .platform()
-    .startsWith("win")
+const isWin = require("os").platform().startsWith("win")
 const rules = require("../lib/utils/rules").rules
 const categories = require("./lib/categories")
 
 const uncategorizedRules = rules.filter(
-    rule => !rule.meta.docs.category && !rule.meta.deprecated
+    (rule) => !rule.meta.docs.category && !rule.meta.deprecated,
 )
-const deprecatedRules = rules.filter(rule => rule.meta.deprecated)
+const deprecatedRules = rules.filter((rule) => rule.meta.deprecated)
 
-//eslint-disable-next-line require-jsdoc
+//eslint-disable-next-line require-jsdoc -- ignore
 function toRuleRow(rule) {
     const mark = `${rule.meta.fixable ? ":wrench:" : ""}${
         rule.meta.deprecated ? ":warning:" : ""
@@ -24,12 +22,12 @@ function toRuleRow(rule) {
     return `| ${mark} | ${link} | ${description} |`
 }
 
-//eslint-disable-next-line require-jsdoc
+//eslint-disable-next-line require-jsdoc -- ignore
 function toDeprecatedRuleRow(rule) {
     const link = `[${rule.meta.docs.ruleId}](./docs/rules/${rule.meta.docs.ruleName}.md)`
     const replacedRules = rule.meta.docs.replacedBy || []
     const replacedBy = replacedRules
-        .map(name => `[lodash-template/${name}](./docs/rules/${name}.md)`)
+        .map((name) => `[lodash-template/${name}](./docs/rules/${name}.md)`)
         .join(", ")
 
     return `| ${link} | ${replacedBy || "(no replacement)"} |`
@@ -37,7 +35,7 @@ function toDeprecatedRuleRow(rule) {
 
 let rulesTableContent = categories
     .map(
-        category => `
+        (category) => `
 ### ${category.title}
 
 ${category.configDescription}
@@ -55,7 +53,7 @@ ${
 ${category.rules.map(toRuleRow).join("\n")}
 `
         : ""
-}`
+}`,
     )
     .join("")
 
@@ -97,6 +95,6 @@ fs.writeFileSync(
         .readFileSync(readmeFilePath, "utf8")
         .replace(
             /<!--RULES_TABLE_START-->[\s\S]*<!--RULES_TABLE_END-->/u,
-            `<!--RULES_TABLE_START-->${insertText}<!--RULES_TABLE_END-->`
-        )
+            `<!--RULES_TABLE_START-->${insertText}<!--RULES_TABLE_END-->`,
+        ),
 )

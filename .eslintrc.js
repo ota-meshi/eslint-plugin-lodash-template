@@ -7,6 +7,7 @@ module.exports = {
         ecmaVersion: 2020,
     },
     extends: [
+        "plugin:lodash-template/all",
         "plugin:@ota-meshi/recommended",
         "plugin:@ota-meshi/+node",
         "plugin:@ota-meshi/+eslint-plugin",
@@ -14,7 +15,6 @@ module.exports = {
         "plugin:@ota-meshi/+yaml",
         // "plugin:@ota-meshi/+md",
         "plugin:@ota-meshi/+prettier",
-        "plugin:lodash-template/all",
     ],
     plugins: ["es"],
     rules: {

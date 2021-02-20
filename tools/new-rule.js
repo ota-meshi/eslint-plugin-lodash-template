@@ -5,7 +5,7 @@ const path = require("path")
 const logger = console
 
 // main
-;(ruleId => {
+;((ruleId) => {
     if (ruleId == null) {
         logger.error("Usage: npm run new <RuleID>")
         process.exitCode = 1
@@ -39,7 +39,7 @@ module.exports = {
         return {}
     },
 }
-`
+`,
     )
     fs.writeFileSync(
         testFile,
@@ -59,7 +59,7 @@ tester.run("${ruleId}", rule, {
     valid: [],
     invalid: [],
 })
-`
+`,
     )
     fs.writeFileSync(
         docFile,
@@ -79,6 +79,6 @@ This rule reports ??? as errors.
 \`\`\`js
 \`\`\`
 
-`
+`,
     )
 })(process.argv[2])

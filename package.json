@@ -1,114 +1,115 @@
 {
-  "name": "eslint-plugin-lodash-template",
-  "version": "0.19.0",
-  "description": "ESLint plugin for John Resig-style micro template, Lodash's template, Underscore's template and EJS.",
-  "main": "lib/index.js",
-  "scripts": {
-    "lint": "npm run eslint",
-    "eslint": "eslint \"tests\" \"lib\" \"docs/.vuepress\" --ext .js,.vue --ignore-pattern \"samples\" --ignore-pattern \"tests_fixtures\" --ignore-pattern \"docs/.vuepress/dist\"",
-    "test:base": "mocha \"tests/**/*.js\" --reporter dot --timeout 60000",
-    "test:list": "mocha \"tests/**/*.js\" --reporter list | tee .test-result-list.txt",
-    "test": "npm run test:base",
-    "test:nyc": "nyc --reporter=lcov npm run test:base",
-    "test:debug": "mocha --inspect-brk \"tests/**/*.js\" --reporter dot",
-    "test:rules": "mocha \"tests/lib/rules/**/*.js\" --reporter dot --timeout 60000",
-    "watch": "npm run test:base -- --watch",
-    "update": "node ./tools/update.js && npm run lint:fix && npm run test",
-    "updateonly": "node ./tools/update.js && npm run lint:fix",
-    "lint:fix": "eslint \"tests\" \"lib\" \"docs/.vuepress\" --ext .js,.vue --ignore-pattern \"samples\" --ignore-pattern \"tests_fixtures\" --ignore-pattern \"docs/.vuepress/dist\" --fix",
-    "test:sp": "mocha \"test_sp/**/*.js\" --reporter dot",
-    "new": "node ./tools/new-rule.js",
-    "copy:images": "cpx \"logo.*\" \"docs/\\.vuepress/public\" -u",
-    "docs:watch": "npm run copy:images && vuepress dev --debug docs",
-    "docs:build": "npm run copy:images && vuepress build docs",
-    "updatefixture": "cross-env UPDATE_FIXTURE=\"true\" npm run test:base"
-  },
-  "files": [
-    "lib"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ota-meshi/eslint-plugin-lodash-template.git"
-  },
-  "author": "yosuke ota",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ota-meshi/eslint-plugin-lodash-template/issues"
-  },
-  "homepage": "https://github.com/ota-meshi/eslint-plugin-lodash-template#readme",
-  "keywords": [
-    "eslint",
-    "eslintplugin",
-    "eslint-plugin",
-    "eslint-config",
-    "lodash-templates",
-    "lodash",
-    "underscore-templates",
-    "underscore",
-    "ejs",
-    "html",
-    "micro-templates",
-    "micro",
-    "microtemplate",
-    "resig-templates",
-    "resig",
-    "John Resig micro templates",
-    "template",
-    "templates",
-    "templating",
-    "rules"
-  ],
-  "peerDependencies": {
-    "eslint": ">=6.0.0"
-  },
-  "devDependencies": {
-    "@nuxtjs/eslint-config": "^3.0.0",
-    "@nuxtjs/eslint-config-typescript": "^5.0.0",
-    "@ota-meshi/eslint-plugin": "^0.0.12",
-    "@typescript-eslint/eslint-plugin": "^4.0.0",
-    "@vuepress/plugin-pwa": "^1.4.1",
-    "babel-eslint": "^10.1.0",
-    "cpx": "^1.5.0",
-    "cross-env": "^7.0.2",
-    "eslint": "~7.18.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-config-prettier": "^7.0.0",
-    "eslint-plugin-es": "^4.0.0",
-    "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-eslint-plugin": "^2.3.0",
-    "eslint-plugin-jsonc": "^0.9.0",
-    "eslint-plugin-lodash-template": "file:.",
-    "eslint-plugin-markdown": "^2.0.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-regexp": "^0.1.1",
-    "eslint-plugin-yml": "^0.7.0",
-    "eslint-visitor-keys": "^2.0.0",
-    "eslint4b": "~7.20.0",
-    "espree": "^7.0.0",
-    "if-node-version": "^1.1.1",
-    "js-md5": "^0.7.3",
-    "mocha": "^8.0.0",
-    "nyc": "^15.0.1",
-    "pako": "^2.0.0",
-    "prettier": "^2.0.5",
-    "semver": "^7.3.2",
-    "typescript": "^4.0.0",
-    "vue-eslint-editor": "^1.1.0",
-    "vuepress": "^1.4.1"
-  },
-  "dependencies": {
-    "esquery": "^1.0.1",
-    "parse5": "^6.0.0"
-  },
-  "nyc": {
-    "exclude": [
-      "**/*.spec.js",
-      "tests_fixtures/**/*.js",
-      "tests/**/*.js"
-    ]
-  },
-  "engines": {
-    "node": "^8.10.0 || ^10.13.0 || ^12.13.0 || ^13.0.0 || >=14.0.0"
-  }
+    "name": "eslint-plugin-lodash-template",
+    "version": "0.19.0",
+    "description": "ESLint plugin for John Resig-style micro template, Lodash's template, Underscore's template and EJS.",
+    "main": "lib/index.js",
+    "scripts": {
+        "lint": "npm run eslint",
+        "eslint": "eslint . --ext .js,.vue,.json",
+        "test:base": "mocha \"tests/**/*.js\" --reporter dot --timeout 60000",
+        "test:list": "mocha \"tests/**/*.js\" --reporter list | tee .test-result-list.txt",
+        "test": "npm run test:base",
+        "test:nyc": "nyc --reporter=lcov npm run test:base",
+        "test:debug": "mocha --inspect-brk \"tests/**/*.js\" --reporter dot",
+        "test:rules": "mocha \"tests/lib/rules/**/*.js\" --reporter dot --timeout 60000",
+        "watch": "npm run test:base -- --watch",
+        "update": "node ./tools/update.js && npm run lint:fix && npm run test",
+        "updateonly": "node ./tools/update.js && npm run lint:fix",
+        "lint:fix": "eslint . --ext .js,.vue,.json --fix",
+        "test:sp": "mocha \"test_sp/**/*.js\" --reporter dot",
+        "new": "node ./tools/new-rule.js",
+        "copy:images": "cpx \"logo.*\" \"docs/\\.vuepress/public\" -u",
+        "docs:watch": "npm run copy:images && vuepress dev --debug docs",
+        "docs:build": "npm run copy:images && vuepress build docs",
+        "updatefixture": "cross-env UPDATE_FIXTURE=\"true\" npm run test:base"
+    },
+    "files": [
+        "lib"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ota-meshi/eslint-plugin-lodash-template.git"
+    },
+    "author": "yosuke ota",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ota-meshi/eslint-plugin-lodash-template/issues"
+    },
+    "homepage": "https://github.com/ota-meshi/eslint-plugin-lodash-template#readme",
+    "keywords": [
+        "eslint",
+        "eslintplugin",
+        "eslint-plugin",
+        "eslint-config",
+        "lodash-templates",
+        "lodash",
+        "underscore-templates",
+        "underscore",
+        "ejs",
+        "html",
+        "micro-templates",
+        "micro",
+        "microtemplate",
+        "resig-templates",
+        "resig",
+        "John Resig micro templates",
+        "template",
+        "templates",
+        "templating",
+        "rules"
+    ],
+    "peerDependencies": {
+        "eslint": ">=6.0.0"
+    },
+    "devDependencies": {
+        "@nuxtjs/eslint-config": "^3.0.0",
+        "@nuxtjs/eslint-config-typescript": "^5.0.0",
+        "@ota-meshi/eslint-plugin": "^0.0.13",
+        "@typescript-eslint/eslint-plugin": "^4.0.0",
+        "@vuepress/plugin-pwa": "^1.4.1",
+        "babel-eslint": "^10.1.0",
+        "cpx": "^1.5.0",
+        "cross-env": "^7.0.2",
+        "eslint": "~7.18.0",
+        "eslint-config-airbnb-base": "^14.1.0",
+        "eslint-config-prettier": "^7.0.0",
+        "eslint-plugin-es": "^4.0.0",
+        "eslint-plugin-eslint-comments": "^3.2.0",
+        "eslint-plugin-eslint-plugin": "^2.3.0",
+        "eslint-plugin-json-schema-validator": "^0.2.1",
+        "eslint-plugin-jsonc": "^0.9.0",
+        "eslint-plugin-lodash-template": "file:.",
+        "eslint-plugin-markdown": "^2.0.0",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^3.3.1",
+        "eslint-plugin-regexp": "^0.1.1",
+        "eslint-plugin-yml": "^0.7.0",
+        "eslint-visitor-keys": "^2.0.0",
+        "eslint4b": "~7.20.0",
+        "espree": "^7.0.0",
+        "if-node-version": "^1.1.1",
+        "js-md5": "^0.7.3",
+        "mocha": "^8.0.0",
+        "nyc": "^15.0.1",
+        "pako": "^2.0.0",
+        "prettier": "^2.0.5",
+        "semver": "^7.3.2",
+        "typescript": "^4.0.0",
+        "vue-eslint-editor": "^1.1.0",
+        "vuepress": "^1.4.1"
+    },
+    "dependencies": {
+        "esquery": "^1.0.1",
+        "parse5": "^6.0.0"
+    },
+    "nyc": {
+        "exclude": [
+            "**/*.spec.js",
+            "tests_fixtures/**/*.js",
+            "tests/**/*.js"
+        ]
+    },
+    "engines": {
+        "node": "^8.10.0 || ^10.13.0 || ^12.13.0 || ^13.0.0 || >=14.0.0"
+    }
 }
