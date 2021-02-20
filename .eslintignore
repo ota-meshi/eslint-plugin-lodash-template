@@ -3,3 +3,8 @@
 /node_modules
 /playground/node_modules
 /assets
+/samples
+/tests_fixtures
+/docs/.vuepress/dist
+!/.vscode
+!/docs/.vuepress

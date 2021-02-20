@@ -2,9 +2,7 @@
 
 const path = require("path")
 const fs = require("fs")
-const isWin = require("os")
-    .platform()
-    .startsWith("win")
+const isWin = require("os").platform().startsWith("win")
 const eslint = require("eslint")
 const rules = require("./lib/load-rules")
 
@@ -14,12 +12,12 @@ let content = `
 const baseRules = [
     ${rules
         .map(
-            rule => `{
+            (rule) => `{
     rule: require("../rules/${rule.meta.docs.ruleName}"),
     ruleName: "${rule.meta.docs.ruleName}",
     ruleId: "${rule.meta.docs.ruleId}",
     },
-    `
+    `,
         )
         .join("")}
 ]
