@@ -28,11 +28,11 @@ function assertMessages(actual, expected) {
     for (let i = 0; i < length; i++) {
         const e = expected[i]
         if (e && e.message.includes("Parsing error")) {
-            e.message = e.message.split(/\r\n|[\r\n]/u)[0]
+            e.message = e.message.split(/\r\n|[\n\r]/u)[0]
         }
         const a = actual[i]
         if (a && a.message.includes("Parsing error")) {
-            a.message = a.message.split(/\r\n|[\r\n]/u)[0]
+            a.message = a.message.split(/\r\n|[\n\r]/u)[0]
         }
         expected2.push(e ? Object.assign({}, a, e) : e)
     }
