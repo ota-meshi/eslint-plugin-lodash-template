@@ -64,7 +64,7 @@
     "devDependencies": {
         "@nuxtjs/eslint-config": "^3.0.0",
         "@nuxtjs/eslint-config-typescript": "^6.0.0",
-        "@ota-meshi/eslint-plugin": "^0.4.0",
+        "@ota-meshi/eslint-plugin": "^0.5.0",
         "@typescript-eslint/eslint-plugin": "^4.0.0",
         "@vuepress/plugin-pwa": "^1.4.1",
         "babel-eslint": "^10.1.0",
