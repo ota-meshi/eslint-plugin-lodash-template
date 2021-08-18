@@ -11,6 +11,7 @@ module.exports = {
         "plugin:@ota-meshi/+node",
         "plugin:@ota-meshi/+eslint-plugin",
         "plugin:@ota-meshi/+json",
+        "plugin:@ota-meshi/+package-json",
         "plugin:@ota-meshi/+yaml",
         // "plugin:@ota-meshi/+md",
         "plugin:@ota-meshi/+prettier",
