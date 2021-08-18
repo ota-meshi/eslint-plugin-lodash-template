@@ -2,14 +2,12 @@
 
 const assert = require("assert")
 const path = require("path")
-const eslint = require("eslint")
+const { ESLint, Linter } = require("./eslint-compat")
 const semver = require("semver")
-const eslintVersion = require("eslint/package").version
+const eslintVersion = require("eslint/package.json").version
 const fs = require("fs")
 const plugin = require("..")
 const rule = require("../lib/rules/no-empty-template-tag")
-
-const CLIEngine = eslint.CLIEngine
 
 const FIXTURE_DIR = path.join(__dirname, "../tests_fixtures/index")
 const CONFIG_PATH = path.join(FIXTURE_DIR, ".eslintrc.js")
@@ -41,7 +39,7 @@ describe("index test", () => {
         assert.ok(Boolean(plugin.processors[".html"]), "don't have html")
     })
     it("If it passes through the processor, it must be processed by the parser.", () => {
-        const linter = new eslint.Linter()
+        const linter = new Linter()
         const config = {
             parser: "micro-template-eslint-parser",
             parserOptions: { ecmaVersion: 2015 },
@@ -70,7 +68,7 @@ describe("index test", () => {
         assert.strictEqual(messagesEjs[0].ruleId, "no-empty-template-tag")
     })
     it("If it does not pass through the processor, it will not be processed by the parser.", () => {
-        const linter = new eslint.Linter()
+        const linter = new Linter()
         const config = {
             parser: "micro-template-eslint-parser",
             parserOptions: { ecmaVersion: 2015 },
@@ -100,14 +98,14 @@ describe("index test", () => {
 describe("Basic tests", () => {
     if (semver.satisfies(eslintVersion, ">=7.0.0-rc")) {
         describe("About fixtures/hello.html", () => {
-            it("should notify errors", () => {
-                const cli = new CLIEngine({
+            it("should notify errors", async () => {
+                const cli = new ESLint({
                     cwd: FIXTURE_DIR,
-                    configFile: CONFIG_PATH,
+                    overrideConfigFile: CONFIG_PATH,
                     useEslintrc: false,
                 })
-                const report = cli.executeOnFiles(["hello.html"])
-                const messages = report.results[0].messages
+                const reportResults = await cli.lintFiles(["hello.html"])
+                const messages = reportResults[0].messages
 
                 assertMessages(messages, [
                     {
@@ -241,7 +239,7 @@ describe("Basic tests", () => {
             })
 
             if (semver.satisfies(eslintVersion, ">=7.0.0-rc")) {
-                it("should fix errors with --fix option", () => {
+                it("should fix errors with --fix option", async () => {
                     const baseFilepath = path.join(FIXTURE_DIR, "hello.html")
                     const testFilepath = path.join(
                         FIXTURE_DIR,
@@ -250,14 +248,14 @@ describe("Basic tests", () => {
                     // copy
                     fs.copyFileSync(baseFilepath, testFilepath)
 
-                    const cli = new CLIEngine({
+                    const cli = new ESLint({
                         cwd: FIXTURE_DIR,
                         fix: true,
-                        configFile: CONFIG_PATH,
+                        overrideConfigFile: CONFIG_PATH,
                         useEslintrc: false,
                     })
-                    CLIEngine.outputFixes(
-                        cli.executeOnFiles(["hello.html.fixtarget.html"]),
+                    await ESLint.outputFixes(
+                        await cli.lintFiles(["hello.html.fixtarget.html"]),
                     )
 
                     const actual = fs.readFileSync(testFilepath, "utf8")
@@ -273,14 +271,14 @@ describe("Basic tests", () => {
         })
     }
     describe("About fixtures/comment-directive.html", () => {
-        it("should no errors", () => {
-            const cli = new CLIEngine({
+        it("should no errors", async () => {
+            const cli = new ESLint({
                 cwd: FIXTURE_DIR,
-                configFile: CONFIG_PATH,
+                overrideConfigFile: CONFIG_PATH,
                 useEslintrc: false,
             })
-            const report = cli.executeOnFiles(["comment-directive.html"])
-            const messages = report.results[0].messages
+            const report = await cli.lintFiles(["comment-directive.html"])
+            const messages = report[0].messages
 
             assertMessages(messages, [])
         })
@@ -289,14 +287,14 @@ describe("Basic tests", () => {
         for (const name of fs
             .readdirSync(FIXTURE_DIR)
             .filter((s) => s.indexOf("no-error-") === 0)) {
-            it(`should no errors /${name}`, () => {
-                const cli = new CLIEngine({
+            it(`should no errors /${name}`, async () => {
+                const cli = new ESLint({
                     cwd: FIXTURE_DIR,
-                    configFile: CONFIG_PATH,
+                    overrideConfigFile: CONFIG_PATH,
                     useEslintrc: false,
                 })
-                const report = cli.executeOnFiles([name])
-                const messages = report.results[0].messages
+                const report = await cli.lintFiles([name])
+                const messages = report[0].messages
 
                 assertMessages(messages, [])
             })

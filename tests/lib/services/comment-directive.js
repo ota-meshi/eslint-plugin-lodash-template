@@ -1,10 +1,8 @@
 "use strict"
 
 const assert = require("assert")
-const eslint = require("eslint")
+const { ESLint } = require("../../eslint-compat")
 const testUtils = require("../../test-utils")
-
-const CLIEngine = eslint.CLIEngine
 
 /**
  * Assert the messages
@@ -28,8 +26,8 @@ function assertMessages(actual, expected) {
 }
 
 describe("comment-directive test", () => {
-    it("has description", () => {
-        const cli = new CLIEngine({
+    it("has description", async () => {
+        const cli = new ESLint({
             cwd: __dirname,
             baseConfig: {
                 extends: ["plugin:lodash-template/base"],
@@ -44,7 +42,7 @@ describe("comment-directive test", () => {
             },
             useEslintrc: false,
         })
-        const report = cli.executeOnText(
+        const report = await cli.lintText(
             `
         <div>
           <!-- eslint-disable-next-line semi, no-unused-vars -->
@@ -53,9 +51,9 @@ describe("comment-directive test", () => {
           <% const b = 1; %>
         </div>
         `,
-            "test.html",
+            { filePath: "test.html" },
         )
-        const messages = testUtils.sortMessages(report.results[0].messages)
+        const messages = testUtils.sortMessages(report[0].messages)
 
         assertMessages(messages, [
             {

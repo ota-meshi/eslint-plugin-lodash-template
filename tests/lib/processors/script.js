@@ -2,13 +2,11 @@
 
 const assert = require("assert")
 const path = require("path")
-const eslint = require("eslint")
+const { ESLint } = require("../../eslint-compat")
 const semver = require("semver")
-const eslintVersion = require("eslint/package").version
+const eslintVersion = require("eslint/package.json").version
 const fs = require("fs")
 const testUtils = require("../../test-utils")
-
-const CLIEngine = eslint.CLIEngine
 
 const FIXTURE_DIR = path.join(
     __dirname,
@@ -102,14 +100,12 @@ describe("script test", () => {
                 const parsingErrorOnly =
                     parsingErrorJson && parsingErrorJson.length === 1
 
-                it("lint", () => {
-                    const cli = new CLIEngine({
+                it("lint", async () => {
+                    const cli = new ESLint({
                         cwd: FIXTURE_DIR,
                     })
-                    const report = cli.executeOnFiles([`${name}.js`])
-                    const messages = testUtils.sortMessages(
-                        report.results[0].messages,
-                    )
+                    const report = await cli.lintFiles([`${name}.js`])
+                    const messages = testUtils.sortMessages(report[0].messages)
 
                     const expectFilepath = path.join(
                         FIXTURE_DIR,
@@ -159,19 +155,19 @@ describe("script test", () => {
 
                 if (!parsingErrorOnly) {
                     if (semver.satisfies(eslintVersion, ">=7.0.0-rc")) {
-                        it("autofix", () => {
-                            const cli = new CLIEngine({
+                        it("autofix", async () => {
+                            const cli = new ESLint({
                                 cwd: FIXTURE_DIR,
                                 fix: true,
                             })
-                            CLIEngine.outputFixes(
-                                cli.executeOnFiles([`${name}.fixed.js`]),
+                            await ESLint.outputFixes(
+                                await cli.lintFiles([`${name}.fixed.js`]),
                             )
-                            const report = cli.executeOnFiles([
+                            const report = await cli.lintFiles([
                                 `${name}.fixed.js`,
                             ])
                             const messages = testUtils.sortMessages(
-                                report.results[0].messages,
+                                report[0].messages,
                             )
 
                             const expectFilepath = path.join(
@@ -238,15 +234,15 @@ describe("script test", () => {
                             "utf8",
                         )
 
-                        it("all-rules-test lint", () => {
-                            const cli = new CLIEngine({
+                        it("all-rules-test lint", async () => {
+                            const cli = new ESLint({
                                 cwd: allConfigTestDirPath,
                             })
-                            const report = cli.executeOnFiles([
+                            const report = await cli.lintFiles([
                                 `${basename}.lint.js`,
                             ])
                             const messages = testUtils.sortMessages(
-                                report.results[0].messages,
+                                report[0].messages,
                             )
 
                             const expectFilepath = path.join(
@@ -274,19 +270,19 @@ describe("script test", () => {
                                 "No Parsing error",
                             )
                         })
-                        it("all-rules-test autofix", () => {
-                            const cli = new CLIEngine({
+                        it("all-rules-test autofix", async () => {
+                            const cli = new ESLint({
                                 cwd: allConfigTestDirPath,
                                 fix: true,
                             })
-                            CLIEngine.outputFixes(
-                                cli.executeOnFiles([`${basename}.fixed.js`]),
+                            await ESLint.outputFixes(
+                                await cli.lintFiles([`${basename}.fixed.js`]),
                             )
-                            const report = cli.executeOnFiles([
+                            const report = await cli.lintFiles([
                                 `${basename}.fixed.js`,
                             ])
                             const messages = testUtils.sortMessages(
-                                report.results[0].messages,
+                                report[0].messages,
                             )
 
                             const expectFilepath = path.join(
