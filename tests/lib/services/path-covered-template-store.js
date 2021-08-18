@@ -41,11 +41,8 @@ describe("PathCoveredTemplateStore test", () => {
         .filter((s) => s.endsWith(".html"))) {
         describe("Extracted texts should be valid.", () => {
             it(name, () => {
-                const {
-                    templates,
-                    code,
-                    getLocFromIndex,
-                } = getPathCoveredTemplateStore(name)
+                const { templates, code, getLocFromIndex } =
+                    getPathCoveredTemplateStore(name)
 
                 const texts = []
                 for (let index = 0; index < code.length; index++) {

@@ -59,7 +59,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 92. Maximum allowed is 80.",
     "line": 4,
-    "column": 1
+    "column": 1,
+    "endLine": 4,
+    "endColumn": 93
   },
   {
     "ruleId": "object-curly-spacing",
@@ -337,7 +339,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 99. Maximum allowed is 80.",
     "line": 20,
-    "column": 1
+    "column": 1,
+    "endLine": 20,
+    "endColumn": 100
   },
   {
     "ruleId": "no-multi-spaces",
@@ -367,7 +371,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 115. Maximum allowed is 80.",
     "line": 21,
-    "column": 1
+    "column": 1,
+    "endLine": 21,
+    "endColumn": 116
   },
   {
     "ruleId": "no-multi-spaces",
@@ -413,7 +419,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 92. Maximum allowed is 80.",
     "line": 25,
-    "column": 1
+    "column": 1,
+    "endLine": 25,
+    "endColumn": 93
   },
   {
     "ruleId": "multiline-ternary",
@@ -491,7 +499,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 91. Maximum allowed is 80.",
     "line": 30,
-    "column": 1
+    "column": 1,
+    "endLine": 30,
+    "endColumn": 92
   },
   {
     "ruleId": "function-call-argument-newline",
@@ -697,7 +707,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 129. Maximum allowed is 80.",
     "line": 49,
-    "column": 1
+    "column": 1,
+    "endLine": 49,
+    "endColumn": 130
   },
   {
     "ruleId": "space-infix-ops",
@@ -743,7 +755,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 129. Maximum allowed is 80.",
     "line": 52,
-    "column": 1
+    "column": 1,
+    "endLine": 52,
+    "endColumn": 130
   },
   {
     "ruleId": "multiline-ternary",
@@ -957,7 +971,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 88. Maximum allowed is 80.",
     "line": 66,
-    "column": 1
+    "column": 1,
+    "endLine": 66,
+    "endColumn": 89
   },
   {
     "ruleId": "semi",
@@ -987,7 +1003,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 82. Maximum allowed is 80.",
     "line": 69,
-    "column": 1
+    "column": 1,
+    "endLine": 69,
+    "endColumn": 83
   },
   {
     "ruleId": "semi",
@@ -1017,7 +1035,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 84. Maximum allowed is 80.",
     "line": 71,
-    "column": 1
+    "column": 1,
+    "endLine": 71,
+    "endColumn": 85
   },
   {
     "ruleId": "semi",
@@ -1135,7 +1155,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 138. Maximum allowed is 80.",
     "line": 83,
-    "column": 1
+    "column": 1,
+    "endLine": 83,
+    "endColumn": 139
   },
   {
     "ruleId": "no-console",
@@ -1421,7 +1443,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 138. Maximum allowed is 80.",
     "line": 100,
-    "column": 1
+    "column": 1,
+    "endLine": 100,
+    "endColumn": 139
   },
   {
     "ruleId": "quote-props",
@@ -1475,13 +1499,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 96. Maximum allowed is 80.",
     "line": 102,
-    "column": 1
-  },
-  {
-    "ruleId": "curly",
-    "message": "Expected { after 'if' condition.",
-    "line": 102,
-    "column": 7
+    "column": 1,
+    "endLine": 102,
+    "endColumn": 97
   },
   {
     "ruleId": "quotes",
@@ -1498,6 +1518,14 @@
     "column": 49,
     "endLine": 102,
     "endColumn": 65
+  },
+  {
+    "ruleId": "curly",
+    "message": "Expected { after 'if' condition.",
+    "line": 102,
+    "column": 49,
+    "endLine": 102,
+    "endColumn": 97
   },
   {
     "ruleId": "object-curly-spacing",
@@ -1567,11 +1595,13 @@
     "ruleId": "max-len",
     "message": "This line has a length of 92. Maximum allowed is 80.",
     "line": 105,
-    "column": 1
+    "column": 1,
+    "endLine": 105,
+    "endColumn": 93
   },
   {
     "ruleId": "no-mixed-operators",
-    "message": "Unexpected mix of '+' and '*'.",
+    "message": "Unexpected mix of '+' and '*'. Use parentheses to clarify the intended order of operations.",
     "line": 105,
     "column": 55,
     "endLine": 105,
@@ -1611,7 +1641,7 @@
   },
   {
     "ruleId": "no-mixed-operators",
-    "message": "Unexpected mix of '+' and '*'.",
+    "message": "Unexpected mix of '+' and '*'. Use parentheses to clarify the intended order of operations.",
     "line": 105,
     "column": 67,
     "endLine": 105,
@@ -1773,7 +1803,9 @@
     "ruleId": "curly",
     "message": "Expected { after 'if' condition.",
     "line": 113,
-    "column": 7
+    "column": 34,
+    "endLine": 113,
+    "endColumn": 74
   },
   {
     "ruleId": "semi",
@@ -1883,7 +1915,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 87. Maximum allowed is 80.",
     "line": 119,
-    "column": 1
+    "column": 1,
+    "endLine": 119,
+    "endColumn": 88
   },
   {
     "ruleId": "quotes",
@@ -1985,7 +2019,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 94. Maximum allowed is 80.",
     "line": 123,
-    "column": 1
+    "column": 1,
+    "endLine": 123,
+    "endColumn": 95
   },
   {
     "ruleId": "quote-props",
@@ -2039,7 +2075,9 @@
     "ruleId": "curly",
     "message": "Expected { after 'if' condition.",
     "line": 125,
-    "column": 7
+    "column": 34,
+    "endLine": 125,
+    "endColumn": 74
   },
   {
     "ruleId": "semi",
@@ -2149,7 +2187,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 85. Maximum allowed is 80.",
     "line": 131,
-    "column": 1
+    "column": 1,
+    "endLine": 131,
+    "endColumn": 86
   },
   {
     "ruleId": "quotes",
@@ -2275,7 +2315,9 @@
     "ruleId": "arrow-body-style",
     "message": "Unexpected block statement surrounding arrow body; move the returned value immediately after the `=>`.",
     "line": 135,
-    "column": 48
+    "column": 48,
+    "endLine": 137,
+    "endColumn": 6
   },
   {
     "ruleId": "indent",

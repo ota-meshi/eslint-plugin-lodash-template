@@ -3,7 +3,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 95. Maximum allowed is 80.",
     "line": 21,
-    "column": 1
+    "column": 1,
+    "endLine": 21,
+    "endColumn": 96
   },
   {
     "ruleId": "no-unused-vars",
@@ -17,7 +19,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 84. Maximum allowed is 80.",
     "line": 36,
-    "column": 1
+    "column": 1,
+    "endLine": 36,
+    "endColumn": 85
   },
   {
     "ruleId": "no-magic-numbers",
@@ -53,7 +57,7 @@
   },
   {
     "ruleId": "no-mixed-operators",
-    "message": "Unexpected mix of '||' and '&&'.",
+    "message": "Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations.",
     "line": 86,
     "column": 38,
     "endLine": 86,
@@ -63,11 +67,13 @@
     "ruleId": "max-len",
     "message": "This line has a length of 118. Maximum allowed is 80.",
     "line": 87,
-    "column": 1
+    "column": 1,
+    "endLine": 87,
+    "endColumn": 119
   },
   {
     "ruleId": "no-mixed-operators",
-    "message": "Unexpected mix of '||' and '&&'.",
+    "message": "Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations.",
     "line": 87,
     "column": 70,
     "endLine": 87,

@@ -369,7 +369,7 @@
   },
   {
     "ruleId": "no-shadow",
-    "message": "'value' is already declared in the upper scope.",
+    "message": "'value' is already declared in the upper scope on line 142 column 32.",
     "line": 162,
     "column": 13,
     "endLine": 162,

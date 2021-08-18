@@ -91,7 +91,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 84. Maximum allowed is 80.",
     "line": 11,
-    "column": 1
+    "column": 1,
+    "endLine": 11,
+    "endColumn": 85
   },
   {
     "ruleId": "semi",
@@ -129,7 +131,9 @@
     "ruleId": "curly",
     "message": "Expected { after 'if' condition.",
     "line": 15,
-    "column": 5
+    "column": 17,
+    "endLine": 15,
+    "endColumn": 23
   },
   {
     "ruleId": "semi",
@@ -151,7 +155,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 90. Maximum allowed is 80.",
     "line": 17,
-    "column": 1
+    "column": 1,
+    "endLine": 17,
+    "endColumn": 91
   },
   {
     "ruleId": "no-invalid-this",
@@ -181,7 +187,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 136. Maximum allowed is 80.",
     "line": 18,
-    "column": 1
+    "column": 1,
+    "endLine": 18,
+    "endColumn": 137
   },
   {
     "ruleId": "no-console",
@@ -259,7 +267,9 @@
     "ruleId": "curly",
     "message": "Expected { after 'if' condition.",
     "line": 23,
-    "column": 5
+    "column": 18,
+    "endLine": 23,
+    "endColumn": 24
   },
   {
     "ruleId": "semi",
@@ -385,7 +395,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 99. Maximum allowed is 80.",
     "line": 31,
-    "column": 1
+    "column": 1,
+    "endLine": 31,
+    "endColumn": 100
   },
   {
     "ruleId": "multiline-ternary",
@@ -447,7 +459,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 81. Maximum allowed is 80.",
     "line": 34,
-    "column": 1
+    "column": 1,
+    "endLine": 34,
+    "endColumn": 82
   },
   {
     "ruleId": "padded-blocks",
@@ -861,7 +875,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 90. Maximum allowed is 80.",
     "line": 58,
-    "column": 1
+    "column": 1,
+    "endLine": 58,
+    "endColumn": 91
   },
   {
     "ruleId": "no-invalid-this",
@@ -891,7 +907,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 142. Maximum allowed is 80.",
     "line": 59,
-    "column": 1
+    "column": 1,
+    "endLine": 59,
+    "endColumn": 143
   },
   {
     "ruleId": "no-console",
@@ -1105,7 +1123,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 92. Maximum allowed is 80.",
     "line": 71,
-    "column": 1
+    "column": 1,
+    "endLine": 71,
+    "endColumn": 93
   },
   {
     "ruleId": "no-invalid-this",
@@ -1335,7 +1355,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 82. Maximum allowed is 80.",
     "line": 86,
-    "column": 1
+    "column": 1,
+    "endLine": 86,
+    "endColumn": 83
   },
   {
     "ruleId": "no-invalid-this",
@@ -1693,7 +1715,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 100. Maximum allowed is 80.",
     "line": 98,
-    "column": 1
+    "column": 1,
+    "endLine": 98,
+    "endColumn": 101
   },
   {
     "ruleId": "no-console",
@@ -2097,7 +2121,7 @@
   },
   {
     "ruleId": "no-shadow",
-    "message": "'Vue' is already declared in the upper scope.",
+    "message": "'Vue' is already declared in the upper scope on line 2 column 8.",
     "line": 122,
     "column": 11,
     "endLine": 122,

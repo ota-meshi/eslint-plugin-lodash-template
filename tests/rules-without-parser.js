@@ -13,13 +13,14 @@ describe("Don't crash even if without micro-template-eslint-parser.", () => {
         it(ruleId, () => {
             const linter = new Linter()
             const config = {
-                parser: "babel-eslint",
-                parserOptions: { ecmaVersion: 2015 },
+                parserOptions: {
+                    ecmaVersion: 2020,
+                    ecmaFeatures: { jsx: true },
+                },
                 rules: {
                     [ruleId]: "error",
                 },
             }
-            linter.defineParser("babel-eslint", require("babel-eslint"))
             linter.defineRule(ruleId, rule)
             const res = linter.verifyAndFix(code, config, {
                 filename: "test.html",

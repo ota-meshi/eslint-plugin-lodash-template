@@ -2,13 +2,11 @@
 
 const assert = require("assert")
 const path = require("path")
-const eslint = require("eslint")
+const { ESLint } = require("./eslint-compat")
 const semver = require("semver")
-const eslintVersion = require("eslint/package").version
+const eslintVersion = require("eslint/package.json").version
 const fs = require("fs")
 const testUtils = require("./test-utils")
-
-const CLIEngine = eslint.CLIEngine
 
 const FIXTURE_DIR = path.join(__dirname, "../tests_fixtures/ejs")
 
@@ -56,13 +54,13 @@ describe("ejs test", () => {
             for (const name of testUtils
                 .listupFiles(FIXTURE_DIR)
                 .filter((s) => s.endsWith(".ejs"))) {
-                it(name, () => {
-                    const cli = new CLIEngine({
+                it(name, async () => {
+                    const eslint = new ESLint({
                         cwd: FIXTURE_DIR,
                     })
-                    const report = cli.executeOnFiles([name])
+                    const reportResults = await eslint.lintFiles([name])
                     const messages = testUtils.sortMessages(
-                        report.results[0].messages,
+                        reportResults[0].messages,
                     )
 
                     const expectFilepath = path.join(

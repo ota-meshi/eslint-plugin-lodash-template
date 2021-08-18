@@ -83,7 +83,9 @@
     "ruleId": "consistent-return",
     "message": "Expected to return a value at the end of arrow function.",
     "line": 116,
-    "column": 32
+    "column": 32,
+    "endLine": 116,
+    "endColumn": 34
   },
   {
     "ruleId": "no-ternary",
@@ -151,7 +153,7 @@
   },
   {
     "ruleId": "no-shadow",
-    "message": "'route' is already declared in the upper scope.",
+    "message": "'route' is already declared in the upper scope on line 23 column 17.",
     "line": 257,
     "column": 19,
     "endLine": 257,
@@ -247,7 +249,7 @@
   },
   {
     "ruleId": "no-shadow",
-    "message": "'route' is already declared in the upper scope.",
+    "message": "'route' is already declared in the upper scope on line 23 column 17.",
     "line": 340,
     "column": 47,
     "endLine": 340,

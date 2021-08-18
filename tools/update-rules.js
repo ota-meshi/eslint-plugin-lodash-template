@@ -3,7 +3,7 @@
 const path = require("path")
 const fs = require("fs")
 const isWin = require("os").platform().startsWith("win")
-const eslint = require("eslint")
+const { ESLint } = require("../tests/eslint-compat")
 const rules = require("./lib/load-rules")
 
 let content = `
@@ -62,6 +62,7 @@ if (isWin) {
 fs.writeFileSync(filePath, content)
 
 // Format files.
-const linter = new eslint.CLIEngine({ fix: true })
-const report = linter.executeOnFiles([filePath])
-eslint.CLIEngine.outputFixes(report)
+const linter = new ESLint({ fix: true })
+linter.lintFiles([filePath]).then((report) => {
+    ESLint.outputFixes(report)
+})

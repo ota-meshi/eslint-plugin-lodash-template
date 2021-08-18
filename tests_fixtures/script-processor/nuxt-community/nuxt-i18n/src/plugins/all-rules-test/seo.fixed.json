@@ -1,7 +1,7 @@
 [
   {
     "ruleId": "no-shadow",
-    "message": "'Vue' is already declared in the upper scope.",
+    "message": "'Vue' is already declared in the upper scope on line 1 column 8.",
     "line": 5,
     "column": 14,
     "endLine": 5,

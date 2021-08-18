@@ -14,5 +14,13 @@
     "column": 31,
     "endLine": 114,
     "endColumn": 38
+  },
+  {
+    "ruleId": "vue/component-definition-name-casing",
+    "message": "Property name \"recaptcha\" is not PascalCase.",
+    "line": 134,
+    "column": 17,
+    "endLine": 134,
+    "endColumn": 28
   }
 ]

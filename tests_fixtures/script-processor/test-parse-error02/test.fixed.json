@@ -9,7 +9,7 @@
   },
   {
     "ruleId": "lodash-template/no-script-parsing-error",
-    "message": "Parsing error: Line 2: Unexpected token",
+    "message": "Parsing error: Line 2: Topic reference is used, but the pipelineOperator plugin was not passed a \"proposal\": \"hack\" or \"smart\" option.",
     "line": 2,
     "column": 11
   },

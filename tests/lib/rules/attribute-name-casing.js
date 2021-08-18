@@ -18,18 +18,15 @@ tester.run("attribute-name-casing", rule, {
         },
         {
             filename: "test.html",
-            code:
-                '<body><div><div data-id="foo" aria-test="bar" my-prop="prop"></div></div></body>',
+            code: '<body><div><div data-id="foo" aria-test="bar" my-prop="prop"></div></div></body>',
         },
         {
             filename: "test.html",
-            code:
-                '<body><div data-id="foo" aria-test="bar"><a onclick="" my-prop="prop"></a></div></body>',
+            code: '<body><div data-id="foo" aria-test="bar"><a onclick="" my-prop="prop"></a></div></body>',
         },
         {
             filename: "test.html",
-            code:
-                "<body><div><div data-id aria-test my-prop></div></div></body>",
+            code: "<body><div><div data-id aria-test my-prop></div></div></body>",
         },
         {
             filename: "test.html",
@@ -97,8 +94,7 @@ tester.run("attribute-name-casing", rule, {
         },
         {
             filename: "test.html",
-            code:
-                "<body><div><div MY-PROP<%='-JS'%>=\"prop\"></div></div></body>",
+            code: "<body><div><div MY-PROP<%='-JS'%>=\"prop\"></div></div></body>",
             output: null,
             errors: [
                 {
@@ -110,10 +106,8 @@ tester.run("attribute-name-casing", rule, {
         },
         {
             filename: "test.html",
-            code:
-                "<body><div><div DATA-ID ARIA-TEST MY-PROP></div></div></body>",
-            output:
-                "<body><div><div data-id aria-test my-prop></div></div></body>",
+            code: "<body><div><div DATA-ID ARIA-TEST MY-PROP></div></div></body>",
+            output: "<body><div><div data-id aria-test my-prop></div></div></body>",
             errors: [
                 "Attribute `DATA-ID` must be 'kebab-case'.",
                 "Attribute `ARIA-TEST` must be 'kebab-case'.",

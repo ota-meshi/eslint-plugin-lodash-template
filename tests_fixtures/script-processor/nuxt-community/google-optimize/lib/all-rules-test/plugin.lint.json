@@ -451,7 +451,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 82. Maximum allowed is 80.",
     "line": 30,
-    "column": 1
+    "column": 1,
+    "endLine": 30,
+    "endColumn": 83
   },
   {
     "ruleId": "arrow-parens",
@@ -577,7 +579,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 93. Maximum allowed is 80.",
     "line": 38,
-    "column": 1
+    "column": 1,
+    "endLine": 38,
+    "endColumn": 94
   },
   {
     "ruleId": "arrow-parens",
@@ -951,7 +955,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 112. Maximum allowed is 80.",
     "line": 59,
-    "column": 1
+    "column": 1,
+    "endLine": 59,
+    "endColumn": 113
   },
   {
     "ruleId": "arrow-parens",
@@ -1261,7 +1267,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 81. Maximum allowed is 80.",
     "line": 73,
-    "column": 1
+    "column": 1,
+    "endLine": 73,
+    "endColumn": 82
   },
   {
     "ruleId": "arrow-parens",
@@ -1889,7 +1897,7 @@
   },
   {
     "ruleId": "no-shadow",
-    "message": "'value' is already declared in the upper scope.",
+    "message": "'value' is already declared in the upper scope on line 102 column 31.",
     "line": 114,
     "column": 9,
     "endLine": 114,
@@ -2139,7 +2147,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 82. Maximum allowed is 80.",
     "line": 129,
-    "column": 1
+    "column": 1,
+    "endLine": 129,
+    "endColumn": 83
   },
   {
     "ruleId": "prefer-template",
