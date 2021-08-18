@@ -9,7 +9,7 @@
     ],
     "typescript.validate.enable": false,
     "javascript.validate.enable": false,
-    "eslint.workingDirectories": ["./", "./docs/.vuepress"],
+    // "eslint.workingDirectories": ["./", "./docs/.vuepress"],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },

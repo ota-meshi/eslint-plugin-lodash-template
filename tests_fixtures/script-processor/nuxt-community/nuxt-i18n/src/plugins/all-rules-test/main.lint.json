@@ -1091,7 +1091,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 83. Maximum allowed is 80.",
     "line": 76,
-    "column": 1
+    "column": 1,
+    "endLine": 76,
+    "endColumn": 84
   },
   {
     "ruleId": "quote-props",
@@ -1233,7 +1235,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 84. Maximum allowed is 80.",
     "line": 83,
-    "column": 1
+    "column": 1,
+    "endLine": 83,
+    "endColumn": 85
   },
   {
     "ruleId": "semi",
@@ -1287,7 +1291,9 @@
     "ruleId": "consistent-return",
     "message": "Expected to return a value at the end of arrow function.",
     "line": 86,
-    "column": 30
+    "column": 30,
+    "endLine": 86,
+    "endColumn": 32
   },
   {
     "ruleId": "padded-blocks",
@@ -1389,7 +1395,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 97. Maximum allowed is 80.",
     "line": 91,
-    "column": 1
+    "column": 1,
+    "endLine": 91,
+    "endColumn": 98
   },
   {
     "ruleId": "multiline-ternary",
@@ -2553,7 +2561,7 @@
   },
   {
     "ruleId": "no-shadow",
-    "message": "'route' is already declared in the upper scope.",
+    "message": "'route' is already declared in the upper scope on line 22 column 16.",
     "line": 165,
     "column": 13,
     "endLine": 165,
@@ -2587,7 +2595,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 83. Maximum allowed is 80.",
     "line": 166,
-    "column": 1
+    "column": 1,
+    "endLine": 166,
+    "endColumn": 84
   },
   {
     "ruleId": "multiline-ternary",
@@ -2641,7 +2651,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 99. Maximum allowed is 80.",
     "line": 167,
-    "column": 1
+    "column": 1,
+    "endLine": 167,
+    "endColumn": 100
   },
   {
     "ruleId": "prefer-object-spread",
@@ -3255,7 +3267,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 86. Maximum allowed is 80.",
     "line": 206,
-    "column": 1
+    "column": 1,
+    "endLine": 206,
+    "endColumn": 87
   },
   {
     "ruleId": "semi",
@@ -3277,7 +3291,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 118. Maximum allowed is 80.",
     "line": 208,
-    "column": 1
+    "column": 1,
+    "endLine": 208,
+    "endColumn": 119
   },
   {
     "ruleId": "function-call-argument-newline",
@@ -3497,7 +3513,7 @@
   },
   {
     "ruleId": "no-shadow",
-    "message": "'route' is already declared in the upper scope.",
+    "message": "'route' is already declared in the upper scope on line 22 column 16.",
     "line": 216,
     "column": 44,
     "endLine": 216,
@@ -3603,7 +3619,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 109. Maximum allowed is 80.",
     "line": 222,
-    "column": 1
+    "column": 1,
+    "endLine": 222,
+    "endColumn": 110
   },
   {
     "ruleId": "no-magic-numbers",
@@ -3649,7 +3667,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 90. Maximum allowed is 80.",
     "line": 224,
-    "column": 1
+    "column": 1,
+    "endLine": 224,
+    "endColumn": 91
   },
   {
     "ruleId": "indent",
@@ -3663,7 +3683,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 92. Maximum allowed is 80.",
     "line": 225,
-    "column": 1
+    "column": 1,
+    "endLine": 225,
+    "endColumn": 93
   },
   {
     "ruleId": "quotes",
@@ -3693,7 +3715,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 100. Maximum allowed is 80.",
     "line": 226,
-    "column": 1
+    "column": 1,
+    "endLine": 226,
+    "endColumn": 101
   },
   {
     "ruleId": "indent",
@@ -3787,7 +3811,9 @@
     "ruleId": "max-len",
     "message": "This line has a length of 104. Maximum allowed is 80.",
     "line": 229,
-    "column": 1
+    "column": 1,
+    "endLine": 229,
+    "endColumn": 105
   },
   {
     "ruleId": "quotes",

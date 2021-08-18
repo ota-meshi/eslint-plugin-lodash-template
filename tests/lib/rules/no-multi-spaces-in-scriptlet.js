@@ -265,8 +265,7 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
         },
         {
             code: "<% var x = 5;  /* multiline\n * comment\n */\nvar y = 6; %>",
-            output:
-                "<% var x = 5; /* multiline\n * comment\n */\nvar y = 6; %>",
+            output: "<% var x = 5; /* multiline\n * comment\n */\nvar y = 6; %>",
             options: [{ ignoreEOLComments: false }],
             errors: [
                 {
@@ -307,8 +306,7 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
         },
         {
             code: "<% var x =  /* comment */ 5;  // EOL comment\nvar y = 6; %>",
-            output:
-                "<% var x = /* comment */ 5;  // EOL comment\nvar y = 6; %>",
+            output: "<% var x = /* comment */ 5;  // EOL comment\nvar y = 6; %>",
             options: [{ ignoreEOLComments: true }],
             errors: [
                 {
@@ -333,10 +331,8 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
             ],
         },
         {
-            code:
-                "<% var x = /* comment */  5;  /* EOL comment */\nvar y = 6; %>",
-            output:
-                "<% var x = /* comment */ 5;  /* EOL comment */\nvar y = 6; %>",
+            code: "<% var x = /* comment */  5;  /* EOL comment */\nvar y = 6; %>",
+            output: "<% var x = /* comment */ 5;  /* EOL comment */\nvar y = 6; %>",
             options: [{ ignoreEOLComments: true }],
             errors: [
                 {

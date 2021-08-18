@@ -3,7 +3,6 @@
 module.exports = {
     parserOptions: {
         sourceType: "script",
-        parser: "babel-eslint",
         ecmaVersion: 2020,
     },
     extends: [
@@ -20,6 +19,7 @@ module.exports = {
     rules: {
         "require-jsdoc": "error",
         "no-warning-comments": "warn",
+        "regexp/no-obscure-range": ["error", { allowed: "all" }],
     },
     overrides: [
         {
@@ -53,10 +53,7 @@ module.exports = {
             parser: "vue-eslint-parser",
             parserOptions: {
                 sourceType: "module",
-                ecmaVersion: 2018,
-                parserOptions: {
-                    parser: "babel-eslint",
-                },
+                ecmaVersion: 2020,
             },
             extends: ["plugin:@ota-meshi/+vue2", "plugin:@ota-meshi/+prettier"],
             globals: {

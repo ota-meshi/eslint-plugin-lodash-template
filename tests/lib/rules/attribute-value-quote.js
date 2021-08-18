@@ -32,8 +32,7 @@ tester.run("attribute-value-quote", rule, {
         },
         {
             filename: "test.html",
-            code:
-                "<body><div class='foo'></div><div class=\"foo\"></div></body>",
+            code: "<body><div class='foo'></div><div class=\"foo\"></div></body>",
             options: ["either"],
         },
         {

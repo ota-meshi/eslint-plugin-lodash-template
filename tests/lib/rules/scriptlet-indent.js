@@ -94,9 +94,8 @@ function unIndent(strings) {
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
     parserOptions: {
-        parser: "babel-eslint",
         sourceType: "module",
-        ecmaVersion: 2017,
+        ecmaVersion: 2020,
     },
 })
 

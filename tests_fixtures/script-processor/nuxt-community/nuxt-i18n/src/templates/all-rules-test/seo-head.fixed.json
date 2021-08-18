@@ -73,7 +73,7 @@
   },
   {
     "ruleId": "no-mixed-operators",
-    "message": "Unexpected mix of '||' and '&&'.",
+    "message": "Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations.",
     "line": 19,
     "column": 52,
     "endLine": 19,
@@ -97,7 +97,7 @@
   },
   {
     "ruleId": "no-mixed-operators",
-    "message": "Unexpected mix of '||' and '&&'.",
+    "message": "Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations.",
     "line": 20,
     "column": 42,
     "endLine": 20,

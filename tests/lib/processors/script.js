@@ -29,6 +29,9 @@ function assertMessages(actual, expected) {
         const e = expected[i]
         if (e && e.message.includes("Parsing error")) {
             e.message = e.message.split(/\r\n|[\n\r]/u)[0]
+            if (!e.message.endsWith(".")) {
+                e.message += "."
+            }
         }
         const a = actual[i]
         if (a && a.message.includes("Parsing error")) {

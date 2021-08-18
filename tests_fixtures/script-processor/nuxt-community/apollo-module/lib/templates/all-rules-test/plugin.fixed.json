@@ -177,7 +177,7 @@
   },
   {
     "ruleId": "no-mixed-operators",
-    "message": "Unexpected mix of '+' and '*'.",
+    "message": "Unexpected mix of '+' and '*'. Use parentheses to clarify the intended order of operations.",
     "line": 148,
     "column": 68,
     "endLine": 148,
@@ -201,7 +201,7 @@
   },
   {
     "ruleId": "no-mixed-operators",
-    "message": "Unexpected mix of '+' and '*'.",
+    "message": "Unexpected mix of '+' and '*'. Use parentheses to clarify the intended order of operations.",
     "line": 148,
     "column": 83,
     "endLine": 148,
