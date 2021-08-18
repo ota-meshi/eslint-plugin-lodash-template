@@ -29,6 +29,7 @@ function getESLintClassForV6() {
                     globals: {},
                     rules: {},
                 },
+                overrideConfigFile,
                 fix,
                 reportUnusedDisableDirectives,
                 plugins: pluginsMap,
@@ -40,6 +41,7 @@ function getESLintClassForV6() {
                 reportUnusedDisableDirectives: reportUnusedDisableDirectives
                     ? reportUnusedDisableDirectives !== "off"
                     : undefined,
+                configFile: overrideConfigFile,
                 ...otherOptions,
 
                 globals: globals
