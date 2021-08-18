@@ -319,33 +319,40 @@ describe("script test", () => {
 
 // eslint-disable-next-line require-jsdoc -- test
 function isTargetFromJson(filepath) {
-    let eslintVer = null
-    let nodeVer = null
+    let vers = {}
     const dir = path.dirname(filepath)
     if (testUtils.existsPath(`${dir}/target.json`)) {
         const targetVars = JSON.parse(
             fs.readFileSync(`${dir}/target.json`, "utf8"),
         )
-        eslintVer = targetVars.eslint || eslintVer
-        nodeVer = targetVars.node || nodeVer
+        Object.assign(vers, targetVars)
     }
     if (testUtils.existsPath(`${filepath}.target.json`)) {
         const targetVars = JSON.parse(
             fs.readFileSync(`${filepath}.target.json`, "utf8"),
         )
         if (typeof targetVars === "string") {
-            eslintVer = targetVars || eslintVer
+            vers.eslint = targetVars || vers.eslint
         } else {
-            eslintVer = targetVars.eslint || eslintVer
-            nodeVer = targetVars.node || nodeVer
+            Object.assign(vers, targetVars)
         }
     }
 
-    if (eslintVer && !semver.satisfies(eslintVersion, eslintVer)) {
-        return false
-    }
-    if (nodeVer && !semver.satisfies(process.version, nodeVer)) {
-        return false
+    for (const [key, value] of Object.entries(vers)) {
+        if (key === "eslint") {
+            if (value && !semver.satisfies(eslintVersion, value)) {
+                return false
+            }
+        } else if (key === "node") {
+            if (value && !semver.satisfies(process.version, value)) {
+                return false
+            }
+        } else if (
+            value &&
+            !semver.satisfies(require(`${key}/package.json`).version, value)
+        ) {
+            return false
+        }
     }
     return true
 }

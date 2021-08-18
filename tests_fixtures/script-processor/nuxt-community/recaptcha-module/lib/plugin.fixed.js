@@ -131,6 +131,6 @@ class ReCaptcha {
 }
 
 export default function (_, inject) {
-  Vue.component('recaptcha', () => import('./recaptcha.vue'))
+  Vue.component('Recaptcha', () => import('./recaptcha.vue'))
   inject('recaptcha', new ReCaptcha(<%= serialize(options) %>))
 }
