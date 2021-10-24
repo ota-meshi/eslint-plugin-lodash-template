@@ -62,7 +62,7 @@
         "eslint": ">=6.0.0"
     },
     "devDependencies": {
-        "@nuxtjs/eslint-config": "^3.0.0",
+        "@nuxtjs/eslint-config": "^7.0.0",
         "@nuxtjs/eslint-config-typescript": "^6.0.0",
         "@ota-meshi/eslint-plugin": "^0.8.0",
         "@typescript-eslint/eslint-plugin": "^4.0.0",
