@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "eslint": "~8.10.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.1.2",
+    "eslint-plugin-lodash-template": "file:../../../..",
+    "eslint-plugin-promise": "^6.0.0"
+  },
+  "description": "test for https://github.com/bootstrap-vue/bootstrap-vue",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ota-meshi/eslint-plugin-lodash-template.git"
+  },
+  "private": true,
+  "license": "MIT"
+}

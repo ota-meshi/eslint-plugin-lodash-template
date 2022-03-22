@@ -1,0 +1,5740 @@
+[
+  {
+    "filePath": "/output-with-fix/analytics-module/.eslintrc.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/analytics-module/lib/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/analytics-module/lib/all-rules-test/plugin.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/analytics-module/lib/plugin.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/apollo-module/.eslintrc.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/apollo-module/lib/templates/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/apollo-module/lib/templates/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "sort-imports",
+        "message": "Expected 'none' syntax before 'single' syntax.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 91. Maximum allowed is 80.",
+        "line": 4,
+        "column": 1,
+        "endLine": 4,
+        "endColumn": 92
+      },
+      {
+        "ruleId": "max-lines-per-function",
+        "message": "Arrow function has too many lines (73). Maximum allowed is 50.",
+        "line": 20,
+        "column": 51,
+        "endLine": 92,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "max-statements",
+        "message": "Arrow function has too many statements (46). Maximum allowed is 10.",
+        "line": 20,
+        "column": 51,
+        "endLine": 92,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 97. Maximum allowed is 80.",
+        "line": 21,
+        "column": 1,
+        "endLine": 21,
+        "endColumn": 98
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 113. Maximum allowed is 80.",
+        "line": 22,
+        "column": 1,
+        "endLine": 22,
+        "endColumn": 114
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 87. Maximum allowed is 80.",
+        "line": 27,
+        "column": 1,
+        "endLine": 27,
+        "endColumn": 88
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 2.",
+        "line": 37,
+        "column": 9,
+        "endLine": 37,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 131. Maximum allowed is 80.",
+        "line": 61,
+        "column": 1,
+        "endLine": 61,
+        "endColumn": 132
+      },
+      {
+        "ruleId": "no-undefined",
+        "message": "Unexpected use of undefined.",
+        "line": 61,
+        "column": 121,
+        "endLine": 61,
+        "endColumn": 130
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '__NUXT__'.",
+        "line": 65,
+        "column": 33,
+        "endLine": 65,
+        "endColumn": 48
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '__NUXT__'.",
+        "line": 66,
+        "column": 15,
+        "endLine": 66,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 66,
+        "column": 42,
+        "endLine": 68,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 87. Maximum allowed is 80.",
+        "line": 85,
+        "column": 1,
+        "endLine": 85,
+        "endColumn": 88
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 108,
+        "column": 17,
+        "endLine": 108,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 110. Maximum allowed is 80.",
+        "line": 110,
+        "column": 1,
+        "endLine": 110,
+        "endColumn": 111
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 148. Maximum allowed is 80.",
+        "line": 137,
+        "column": 1,
+        "endLine": 137,
+        "endColumn": 149
+      },
+      {
+        "ruleId": "max-params",
+        "message": "Async method 'onLogin' has too many parameters (4). Maximum allowed is 3.",
+        "line": 137,
+        "column": 13,
+        "endLine": 137,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "max-lines-per-function",
+        "message": "Async method 'onLogin' has too many lines (56). Maximum allowed is 50.",
+        "line": 137,
+        "column": 24,
+        "endLine": 192,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "max-statements",
+        "message": "Async method 'onLogin' has too many statements (13). Maximum allowed is 10.",
+        "line": 137,
+        "column": 24,
+        "endLine": 192,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-param-reassign",
+        "message": "Assignment to function parameter 'cookieAttributes'.",
+        "line": 142,
+        "column": 21,
+        "endLine": 142,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 110. Maximum allowed is 80.",
+        "line": 148,
+        "column": 1,
+        "endLine": 148,
+        "endColumn": 111
+      },
+      {
+        "ruleId": "no-mixed-operators",
+        "message": "Unexpected mix of '+' and '*'. Use parentheses to clarify the intended order of operations.",
+        "line": 148,
+        "column": 68,
+        "endLine": 148,
+        "endColumn": 69
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 86400.",
+        "line": 148,
+        "column": 70,
+        "endLine": 148,
+        "endColumn": 75
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 1000.",
+        "line": 148,
+        "column": 78,
+        "endLine": 148,
+        "endColumn": 82
+      },
+      {
+        "ruleId": "no-mixed-operators",
+        "message": "Unexpected mix of '+' and '*'. Use parentheses to clarify the intended order of operations.",
+        "line": 148,
+        "column": 83,
+        "endLine": 148,
+        "endColumn": 84
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'e' is too short (< 2).",
+        "line": 179,
+        "column": 30,
+        "endLine": 179,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 104. Maximum allowed is 80.",
+        "line": 193,
+        "column": 1,
+        "endLine": 193,
+        "endColumn": 105
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'e' is too short (< 2).",
+        "line": 210,
+        "column": 30,
+        "endLine": 210,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'getToken' should be before 'onLogout'.",
+        "line": 224,
+        "column": 13,
+        "endLine": 224,
+        "endColumn": 23
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/apollo-module/lib/templates/plugin.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/auth-module/.eslintrc.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/auth-module/lib/module/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/auth-module/lib/module/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "sort-imports",
+        "message": "Expected 'none' syntax before 'single' syntax.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 95. Maximum allowed is 80.",
+        "line": 6,
+        "column": 1,
+        "endLine": 6,
+        "endColumn": 96
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'hash' is not defined.",
+        "line": 6,
+        "column": 61,
+        "endLine": 6,
+        "endColumn": 65
+      },
+      {
+        "ruleId": "require-unicode-regexp",
+        "message": "Use the 'u' flag.",
+        "line": 7,
+        "column": 5,
+        "endLine": 7,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "func-names",
+        "message": "Unexpected unnamed function.",
+        "line": 11,
+        "column": 16,
+        "endLine": 11,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'hash' is not defined.",
+        "line": 25,
+        "column": 34,
+        "endLine": 25,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_name'.",
+        "line": 27,
+        "column": 22,
+        "endLine": 27,
+        "endColumn": 36
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 105. Maximum allowed is 80.",
+        "line": 28,
+        "column": 1,
+        "endLine": 28,
+        "endColumn": 106
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 44,
+        "column": 13,
+        "endLine": 44,
+        "endColumn": 26
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/auth-module/lib/module/plugin.js",
+    "messages": [
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 32,
+        "column": 7,
+        "endLine": 32,
+        "endColumn": 20
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/axios-module/.eslintrc.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/axios-module/lib/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/axios-module/lib/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 8,
+        "column": 29,
+        "endLine": 10,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "no-negated-condition",
+        "message": "Unexpected negated condition.",
+        "line": 25,
+        "column": 23,
+        "endLine": 29,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 25,
+        "column": 23,
+        "endLine": 29,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 27,
+        "column": 16,
+        "endLine": 29,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'onRequest' should be before 'setToken'.",
+        "line": 37,
+        "column": 5,
+        "endLine": 37,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'onRequestError' should be before 'onResponse'.",
+        "line": 47,
+        "column": 5,
+        "endLine": 47,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-undefined",
+        "message": "Unexpected use of undefined.",
+        "line": 50,
+        "column": 13,
+        "endLine": 50,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "no-undefined",
+        "message": "Unexpected use of undefined.",
+        "line": 58,
+        "column": 13,
+        "endLine": 58,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'onError' should be before 'onResponseError'.",
+        "line": 63,
+        "column": 5,
+        "endLine": 63,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "func-names",
+        "message": "Unexpected unnamed function.",
+        "line": 83,
+        "column": 32,
+        "endLine": 83,
+        "endColumn": 41
+      },
+      {
+        "ruleId": "prefer-spread",
+        "message": "Use the spread operator instead of '.apply()'.",
+        "line": 85,
+        "column": 16,
+        "endLine": 88,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "prefer-rest-params",
+        "message": "Use the rest parameters instead of 'arguments'.",
+        "line": 87,
+        "column": 13,
+        "endLine": 87,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "guard-for-in",
+        "message": "The body of a for-in should be wrapped in an if statement to filter unwanted properties from the prototype.",
+        "line": 96,
+        "column": 5,
+        "endLine": 100,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 105,
+        "column": 37,
+        "endLine": 105,
+        "endColumn": 51
+      },
+      {
+        "ruleId": "max-lines-per-function",
+        "message": "Arrow function has too many lines (51). Maximum allowed is 50.",
+        "line": 110,
+        "column": 31,
+        "endLine": 160,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 144,
+        "column": 13,
+        "endLine": 144,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 148,
+        "column": 13,
+        "endLine": 148,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "no-undefined",
+        "message": "Unexpected use of undefined.",
+        "line": 150,
+        "column": 17,
+        "endLine": 150,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 2.",
+        "line": 151,
+        "column": 17,
+        "endLine": 151,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "no-undefined",
+        "message": "Unexpected use of undefined.",
+        "line": 168,
+        "column": 40,
+        "endLine": 168,
+        "endColumn": 49
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 98. Maximum allowed is 80.",
+        "line": 170,
+        "column": 1,
+        "endLine": 170,
+        "endColumn": 99
+      },
+      {
+        "ruleId": "require-unicode-regexp",
+        "message": "Use the 'u' flag.",
+        "line": 170,
+        "column": 19,
+        "endLine": 170,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 0.",
+        "line": 170,
+        "column": 95,
+        "endLine": 170,
+        "endColumn": 96
+      },
+      {
+        "ruleId": "max-lines-per-function",
+        "message": "Arrow function has too many lines (84). Maximum allowed is 50.",
+        "line": 183,
+        "column": 23,
+        "endLine": 266,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "max-statements",
+        "message": "Arrow function has too many statements (11). Maximum allowed is 10.",
+        "line": 183,
+        "column": 23,
+        "endLine": 266,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'ctx' is defined but never used.",
+        "line": 183,
+        "column": 31,
+        "endLine": 183,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-empty-function",
+        "message": "Unexpected empty method 'finish'.",
+        "line": 193,
+        "column": 25,
+        "endLine": 193,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-empty-function",
+        "message": "Unexpected empty method 'start'.",
+        "line": 194,
+        "column": 24,
+        "endLine": 194,
+        "endColumn": 27
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'fail' should be before 'start'.",
+        "line": 195,
+        "column": 9,
+        "endLine": 195,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "no-empty-function",
+        "message": "Unexpected empty method 'fail'.",
+        "line": 195,
+        "column": 23,
+        "endLine": 195,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "no-empty-function",
+        "message": "Unexpected empty method 'set'.",
+        "line": 196,
+        "column": 22,
+        "endLine": 196,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 118. Maximum allowed is 80.",
+        "line": 199,
+        "column": 1,
+        "endLine": 199,
+        "endColumn": 119
+      },
+      {
+        "ruleId": "no-extra-parens",
+        "message": "Unnecessary parentheses around expression.",
+        "line": 199,
+        "column": 28,
+        "endLine": 199,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "multiline-ternary",
+        "message": "Expected newline between test and consequent of ternary expression.",
+        "line": 199,
+        "column": 29,
+        "endLine": 199,
+        "endColumn": 95
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 199,
+        "column": 29,
+        "endLine": 200,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 0.",
+        "line": 200,
+        "column": 1,
+        "endLine": 200,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "no-plusplus",
+        "message": "Unary operator '++' used.",
+        "line": 212,
+        "column": 9,
+        "endLine": 212,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "no-plusplus",
+        "message": "Unary operator '--' used.",
+        "line": 224,
+        "column": 9,
+        "endLine": 224,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 0.",
+        "line": 225,
+        "column": 32,
+        "endLine": 225,
+        "endColumn": 33
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 0.",
+        "line": 227,
+        "column": 31,
+        "endLine": 227,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "no-plusplus",
+        "message": "Unary operator '--' used.",
+        "line": 242,
+        "column": 9,
+        "endLine": 242,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'e' is too short (< 2).",
+        "line": 248,
+        "column": 25,
+        "endLine": 248,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 100.",
+        "line": 255,
+        "column": 37,
+        "endLine": 255,
+        "endColumn": 40
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 100.",
+        "line": 257,
+        "column": 13,
+        "endLine": 257,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "no-extra-parens",
+        "message": "Unnecessary parentheses around expression.",
+        "line": 273,
+        "column": 11,
+        "endLine": 273,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_AXIOS_BASE_URL_'.",
+        "line": 273,
+        "column": 12,
+        "endLine": 273,
+        "endColumn": 40
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'patch' should be before 'put'.",
+        "line": 289,
+        "column": 9,
+        "endLine": 289,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 299,
+        "column": 35,
+        "endLine": 301,
+        "endColumn": 13
+      },
+      {
+        "ruleId": "max-lines",
+        "message": "File has too many lines (341). Maximum allowed is 300.",
+        "line": 301,
+        "column": 1,
+        "endLine": 342,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'h' is too short (< 2).",
+        "line": 302,
+        "column": 19,
+        "endLine": 302,
+        "endColumn": 20
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/axios-module/lib/plugin.js",
+    "messages": [
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 49,
+        "column": 37,
+        "endLine": 49,
+        "endColumn": 51
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 69,
+        "column": 7,
+        "endLine": 69,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 71,
+        "column": 7,
+        "endLine": 71,
+        "endColumn": 18
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/device-module/.eslintrc.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/device-module/lib/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/device-module/lib/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 336. Maximum allowed is 80.",
+        "line": 7,
+        "column": 1,
+        "endLine": 7,
+        "endColumn": 337
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 1631. Maximum allowed is 80.",
+        "line": 10,
+        "column": 1,
+        "endLine": 10,
+        "endColumn": 1632
+      },
+      {
+        "ruleId": "func-style",
+        "message": "Expected a function expression.",
+        "line": 12,
+        "column": 1,
+        "endLine": 19,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'a' is too short (< 2).",
+        "line": 12,
+        "column": 20,
+        "endLine": 12,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 0.",
+        "line": 15,
+        "column": 9,
+        "endLine": 15,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 4.",
+        "line": 16,
+        "column": 9,
+        "endLine": 16,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 373. Maximum allowed is 80.",
+        "line": 22,
+        "column": 1,
+        "endLine": 22,
+        "endColumn": 374
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 1641. Maximum allowed is 80.",
+        "line": 24,
+        "column": 1,
+        "endLine": 24,
+        "endColumn": 1642
+      },
+      {
+        "ruleId": "func-style",
+        "message": "Expected a function expression.",
+        "line": 26,
+        "column": 1,
+        "endLine": 33,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'a' is too short (< 2).",
+        "line": 26,
+        "column": 28,
+        "endLine": 26,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 84. Maximum allowed is 80.",
+        "line": 28,
+        "column": 1,
+        "endLine": 28,
+        "endColumn": 85
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 0.",
+        "line": 29,
+        "column": 9,
+        "endLine": 29,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 4.",
+        "line": 30,
+        "column": 9,
+        "endLine": 30,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "func-style",
+        "message": "Expected a function expression.",
+        "line": 35,
+        "column": 1,
+        "endLine": 39,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'a' is too short (< 2).",
+        "line": 35,
+        "column": 17,
+        "endLine": 35,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "require-unicode-regexp",
+        "message": "Use the 'u' flag.",
+        "line": 37,
+        "column": 13,
+        "endLine": 37,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "func-style",
+        "message": "Expected a function expression.",
+        "line": 41,
+        "column": 1,
+        "endLine": 45,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'a' is too short (< 2).",
+        "line": 41,
+        "column": 21,
+        "endLine": 41,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "require-unicode-regexp",
+        "message": "Use the 'u' flag.",
+        "line": 43,
+        "column": 13,
+        "endLine": 43,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "func-style",
+        "message": "Expected a function expression.",
+        "line": 47,
+        "column": 1,
+        "endLine": 51,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'a' is too short (< 2).",
+        "line": 47,
+        "column": 19,
+        "endLine": 47,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "require-unicode-regexp",
+        "message": "Use the 'u' flag.",
+        "line": 49,
+        "column": 13,
+        "endLine": 49,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 150. Maximum allowed is 80.",
+        "line": 53,
+        "column": 1,
+        "endLine": 53,
+        "endColumn": 151
+      },
+      {
+        "ruleId": "func-names",
+        "message": "Unexpected unnamed async function.",
+        "line": 55,
+        "column": 16,
+        "endLine": 55,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "require-await",
+        "message": "Async function has no 'await' expression.",
+        "line": 55,
+        "column": 16,
+        "endLine": 55,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "prefer-destructuring",
+        "message": "Use object destructuring.",
+        "line": 64,
+        "column": 9,
+        "endLine": 64,
+        "endColumn": 40
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'isDesktop' should be before 'isTablet'.",
+        "line": 126,
+        "column": 13,
+        "endLine": 126,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'isMacOS' should be before 'isWindows'.",
+        "line": 129,
+        "column": 13,
+        "endLine": 129,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'isDesktopOrTablet' should be before 'isMacOS'.",
+        "line": 130,
+        "column": 13,
+        "endLine": 130,
+        "endColumn": 32
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/device-module/lib/plugin.js",
+    "messages": [
+      {
+        "ruleId": "require-await",
+        "message": "Async function has no 'await' expression.",
+        "line": 37,
+        "column": 16,
+        "endLine": 37,
+        "endColumn": 31
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/google-adsense-module/.eslintrc.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/google-adsense-module/lib/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/google-adsense-module/lib/all-rules-test/plugin.template.js",
+    "messages": [
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'h' is too short (< 2).",
+        "line": 5,
+        "column": 13,
+        "endLine": 5,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'attrs' should be before 'style'.",
+        "line": 12,
+        "column": 17,
+        "endLine": 12,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'data-ad-format' should be before 'data-ad-slot'.",
+        "line": 15,
+        "column": 21,
+        "endLine": 15,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 16,
+        "column": 39,
+        "endLine": 18,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'data-ad-layout' should be before 'data-ad-region'.",
+        "line": 19,
+        "column": 21,
+        "endLine": 19,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 21,
+        "column": 38,
+        "endLine": 23,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'data-analytics-uacct' should be before 'data-page-url'.",
+        "line": 24,
+        "column": 21,
+        "endLine": 24,
+        "endColumn": 43
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 24,
+        "column": 45,
+        "endLine": 26,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'data-analytics-domain-name' should be before 'data-analytics-uacct'.",
+        "line": 27,
+        "column": 21,
+        "endLine": 27,
+        "endColumn": 49
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 27,
+        "column": 51,
+        "endLine": 29,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'data-adtest' should be before 'data-analytics-domain-name'.",
+        "line": 30,
+        "column": 21,
+        "endLine": 30,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 30,
+        "column": 40,
+        "endLine": 32,
+        "endColumn": 33
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'data-adsbygoogle-status' should be before 'data-adtest'.",
+        "line": 33,
+        "column": 21,
+        "endLine": 33,
+        "endColumn": 46
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 33,
+        "column": 48,
+        "endLine": 35,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 38,
+        "column": 34,
+        "endLine": 40,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'props' should be before 'render'.",
+        "line": 47,
+        "column": 5,
+        "endLine": 47,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+        "line": 50,
+        "column": 13,
+        "endLine": 50,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'adFormat' should be before 'adSlot'.",
+        "line": 55,
+        "column": 9,
+        "endLine": 55,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+        "line": 57,
+        "column": 13,
+        "endLine": 57,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+        "line": 67,
+        "column": 13,
+        "endLine": 67,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'analyticsUacct' should be before 'pageUrl'.",
+        "line": 78,
+        "column": 9,
+        "endLine": 78,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+        "line": 80,
+        "column": 13,
+        "endLine": 80,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'analyticsDomainName' should be before 'analyticsUacct'.",
+        "line": 82,
+        "column": 9,
+        "endLine": 82,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+        "line": 84,
+        "column": 13,
+        "endLine": 84,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+        "line": 88,
+        "column": 13,
+        "endLine": 88,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'data' should be before 'props'.",
+        "line": 91,
+        "column": 5,
+        "endLine": 91,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "max-statements",
+        "message": "Method '$route' has too many statements (11). Maximum allowed is 10.",
+        "line": 104,
+        "column": 18,
+        "endLine": 132,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 87. Maximum allowed is 80.",
+        "line": 121,
+        "column": 1,
+        "endLine": 121,
+        "endColumn": 88
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 134. Maximum allowed is 80.",
+        "line": 122,
+        "column": 1,
+        "endLine": 122,
+        "endColumn": 135
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'k' is too short (< 2).",
+        "line": 122,
+        "column": 100,
+        "endLine": 122,
+        "endColumn": 101
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'methods' should be before 'watch'.",
+        "line": 134,
+        "column": 5,
+        "endLine": 134,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'showAd' should be before 'updateAd'.",
+        "line": 153,
+        "column": 9,
+        "endLine": 153,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 93. Maximum allowed is 80.",
+        "line": 160,
+        "column": 1,
+        "endLine": 160,
+        "endColumn": 94
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 165,
+        "column": 21,
+        "endLine": 165,
+        "endColumn": 34
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/google-adsense-module/lib/plugin.template.js",
+    "messages": [
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 122,
+        "column": 11,
+        "endLine": 122,
+        "endColumn": 24
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/google-optimize/.eslintrc.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/google-optimize/lib/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/google-optimize/lib/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "sort-imports",
+        "message": "Expected 'multiple' syntax before 'single' syntax.",
+        "line": 2,
+        "column": 1,
+        "endLine": 2,
+        "endColumn": 75
+      },
+      {
+        "ruleId": "func-names",
+        "message": "Unexpected unnamed function.",
+        "line": 7,
+        "column": 16,
+        "endLine": 7,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-use-before-define",
+        "message": "'assignExperiment' was used before it was defined.",
+        "line": 10,
+        "column": 5,
+        "endLine": 10,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-use-before-define",
+        "message": "'googleOptimize' was used before it was defined.",
+        "line": 13,
+        "column": 5,
+        "endLine": 13,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "func-style",
+        "message": "Expected a function expression.",
+        "line": 23,
+        "column": 1,
+        "endLine": 122,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "max-lines-per-function",
+        "message": "Function 'assignExperiment' has too many lines (100). Maximum allowed is 50.",
+        "line": 23,
+        "column": 1,
+        "endLine": 122,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "max-statements",
+        "message": "Function 'assignExperiment' has too many statements (34). Maximum allowed is 10.",
+        "line": 23,
+        "column": 1,
+        "endLine": 122,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "no-use-before-define",
+        "message": "'getCookie' was used before it was defined.",
+        "line": 32,
+        "column": 20,
+        "endLine": 32,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "line-comment-position",
+        "message": "Expected comment to be above code.",
+        "line": 35,
+        "column": 14,
+        "endLine": 35,
+        "endColumn": 39
+      },
+      {
+        "ruleId": "no-inline-comments",
+        "message": "Unexpected comment inline with code.",
+        "line": 35,
+        "column": 14,
+        "endLine": 35,
+        "endColumn": 39
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 89. Maximum allowed is 80.",
+        "line": 43,
+        "column": 1,
+        "endLine": 43,
+        "endColumn": 90
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'v' is too short (< 2).",
+        "line": 47,
+        "column": 53,
+        "endLine": 47,
+        "endColumn": 54
+      },
+      {
+        "ruleId": "radix",
+        "message": "Missing radix parameter.",
+        "line": 47,
+        "column": 59,
+        "endLine": 47,
+        "endColumn": 70
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 98. Maximum allowed is 80.",
+        "line": 52,
+        "column": 1,
+        "endLine": 52,
+        "endColumn": 99
+      },
+      {
+        "ruleId": "no-confusing-arrow",
+        "message": "Arrow function used ambiguously with a conditional expression.",
+        "line": 52,
+        "column": 47,
+        "endLine": 52,
+        "endColumn": 97
+      },
+      {
+        "ruleId": "multiline-ternary",
+        "message": "Expected newline between test and consequent of ternary expression.",
+        "line": 52,
+        "column": 56,
+        "endLine": 52,
+        "endColumn": 80
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 52,
+        "column": 56,
+        "endLine": 52,
+        "endColumn": 97
+      },
+      {
+        "ruleId": "no-undefined",
+        "message": "Unexpected use of undefined.",
+        "line": 52,
+        "column": 71,
+        "endLine": 52,
+        "endColumn": 80
+      },
+      {
+        "ruleId": "multiline-ternary",
+        "message": "Expected newline between consequent and alternate of ternary expression.",
+        "line": 52,
+        "column": 83,
+        "endLine": 52,
+        "endColumn": 84
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 1.",
+        "line": 52,
+        "column": 83,
+        "endLine": 52,
+        "endColumn": 84
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: -1.",
+        "line": 54,
+        "column": 32,
+        "endLine": 54,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-plusplus",
+        "message": "Unary operator '--' used.",
+        "line": 54,
+        "column": 38,
+        "endLine": 54,
+        "endColumn": 47
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 0.",
+        "line": 54,
+        "column": 50,
+        "endLine": 54,
+        "endColumn": 51
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: -1.",
+        "line": 66,
+        "column": 35,
+        "endLine": 66,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "no-negated-condition",
+        "message": "Unexpected negated condition.",
+        "line": 74,
+        "column": 5,
+        "endLine": 112,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: -1.",
+        "line": 74,
+        "column": 29,
+        "endLine": 74,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 86. Maximum allowed is 80.",
+        "line": 77,
+        "column": 1,
+        "endLine": 77,
+        "endColumn": 87
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 119. Maximum allowed is 80.",
+        "line": 80,
+        "column": 1,
+        "endLine": 80,
+        "endColumn": 120
+      },
+      {
+        "ruleId": "no-confusing-arrow",
+        "message": "Arrow function used ambiguously with a conditional expression.",
+        "line": 80,
+        "column": 56,
+        "endLine": 80,
+        "endColumn": 118
+      },
+      {
+        "ruleId": "multiline-ternary",
+        "message": "Expected newline between test and consequent of ternary expression.",
+        "line": 80,
+        "column": 69,
+        "endLine": 80,
+        "endColumn": 97
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 80,
+        "column": 69,
+        "endLine": 80,
+        "endColumn": 118
+      },
+      {
+        "ruleId": "no-undefined",
+        "message": "Unexpected use of undefined.",
+        "line": 80,
+        "column": 88,
+        "endLine": 80,
+        "endColumn": 97
+      },
+      {
+        "ruleId": "multiline-ternary",
+        "message": "Expected newline between consequent and alternate of ternary expression.",
+        "line": 80,
+        "column": 100,
+        "endLine": 80,
+        "endColumn": 101
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 1.",
+        "line": 80,
+        "column": 100,
+        "endLine": 80,
+        "endColumn": 101
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 1.",
+        "line": 81,
+        "column": 64,
+        "endLine": 81,
+        "endColumn": 65
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 83. Maximum allowed is 80.",
+        "line": 90,
+        "column": 1,
+        "endLine": 90,
+        "endColumn": 84
+      },
+      {
+        "ruleId": "no-use-before-define",
+        "message": "'setCookie' was used before it was defined.",
+        "line": 93,
+        "column": 13,
+        "endLine": 93,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 83. Maximum allowed is 80.",
+        "line": 103,
+        "column": 1,
+        "endLine": 103,
+        "endColumn": 84
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 85. Maximum allowed is 80.",
+        "line": 117,
+        "column": 1,
+        "endLine": 117,
+        "endColumn": 86
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. '$activeVariants' should be before '$variantIndexes'.",
+        "line": 117,
+        "column": 9,
+        "endLine": 117,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "func-style",
+        "message": "Expected a function expression.",
+        "line": 124,
+        "column": 1,
+        "endLine": 140,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 133,
+        "column": 23,
+        "endLine": 135,
+        "endColumn": 33
+      },
+      {
+        "ruleId": "consistent-return",
+        "message": "Function 'getCookie' expected no return value.",
+        "line": 138,
+        "column": 5,
+        "endLine": 138,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "max-params",
+        "message": "Function 'setCookie' has too many parameters (4). Maximum allowed is 3.",
+        "line": 142,
+        "column": 1,
+        "endLine": 142,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "func-style",
+        "message": "Expected a function expression.",
+        "line": 142,
+        "column": 1,
+        "endLine": 180,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'maxAge' should be before 'path'.",
+        "line": 149,
+        "column": 13,
+        "endLine": 149,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-shadow",
+        "message": "'value' is already declared in the upper scope on line 142 column 32.",
+        "line": 162,
+        "column": 13,
+        "endLine": 162,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 165,
+        "column": 21,
+        "endLine": 170,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "func-style",
+        "message": "Expected a function expression.",
+        "line": 183,
+        "column": 1,
+        "endLine": 199,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 82. Maximum allowed is 80.",
+        "line": 185,
+        "column": 1,
+        "endLine": 185,
+        "endColumn": 83
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 85. Maximum allowed is 80.",
+        "line": 191,
+        "column": 1,
+        "endLine": 191,
+        "endColumn": 86
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/google-optimize/lib/plugin.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-i18n/.eslintrc.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-i18n/src/plugins/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-i18n/src/plugins/all-rules-test/main.js",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'LOCALE_CODE_KEY' is assigned a value but never used.",
+        "line": 11,
+        "column": 7,
+        "endLine": 11,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'LOCALE_DOMAIN_KEY' is assigned a value but never used.",
+        "line": 12,
+        "column": 7,
+        "endLine": 12,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'getHostname' is assigned a value but never used.",
+        "line": 27,
+        "column": 11,
+        "endLine": 27,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'getForwarded' is assigned a value but never used.",
+        "line": 28,
+        "column": 11,
+        "endLine": 28,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 81. Maximum allowed is 80.",
+        "line": 42,
+        "column": 1,
+        "endLine": 42,
+        "endColumn": 82
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 85. Maximum allowed is 80.",
+        "line": 43,
+        "column": 1,
+        "endLine": 43,
+        "endColumn": 86
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'actions' should be before 'state'.",
+        "line": 45,
+        "column": 17,
+        "endLine": 45,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'getters' should be before 'mutations'.",
+        "line": 101,
+        "column": 17,
+        "endLine": 101,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 97. Maximum allowed is 80.",
+        "line": 103,
+        "column": 1,
+        "endLine": 103,
+        "endColumn": 98
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 87. Maximum allowed is 80.",
+        "line": 113,
+        "column": 1,
+        "endLine": 113,
+        "endColumn": 88
+      },
+      {
+        "ruleId": "consistent-return",
+        "message": "Expected to return a value at the end of arrow function.",
+        "line": 116,
+        "column": 32,
+        "endLine": 116,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 126,
+        "column": 33,
+        "endLine": 128,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "max-statements",
+        "message": "Arrow function has too many statements (11). Maximum allowed is 10.",
+        "line": 137,
+        "column": 29,
+        "endLine": 182,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 365.",
+        "line": 151,
+        "column": 71,
+        "endLine": 151,
+        "endColumn": 74
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 365.",
+        "line": 169,
+        "column": 71,
+        "endLine": 169,
+        "endColumn": 74
+      },
+      {
+        "ruleId": "max-lines-per-function",
+        "message": "Async arrow function has too many lines (92). Maximum allowed is 50.",
+        "line": 184,
+        "column": 30,
+        "endLine": 275,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "max-statements",
+        "message": "Async arrow function has too many statements (24). Maximum allowed is 10.",
+        "line": 184,
+        "column": 30,
+        "endLine": 275,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 83. Maximum allowed is 80.",
+        "line": 223,
+        "column": 1,
+        "endLine": 223,
+        "endColumn": 84
+      },
+      {
+        "ruleId": "require-atomic-updates",
+        "message": "Possible race condition: `app.i18n.locale` might be assigned based on an outdated state of `app`.",
+        "line": 239,
+        "column": 9,
+        "endLine": 239,
+        "endColumn": 36
+      },
+      {
+        "ruleId": "no-shadow",
+        "message": "'route' is already declared in the upper scope on line 23 column 17.",
+        "line": 257,
+        "column": 19,
+        "endLine": 257,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '__route'.",
+        "line": 257,
+        "column": 27,
+        "endLine": 257,
+        "endColumn": 43
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 258,
+        "column": 31,
+        "endLine": 260,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '__route'.",
+        "line": 290,
+        "column": 5,
+        "endLine": 290,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "max-lines",
+        "message": "File has too many lines (414). Maximum allowed is 300.",
+        "line": 301,
+        "column": 1,
+        "endLine": 415,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 310,
+        "column": 18,
+        "endLine": 312,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 91. Maximum allowed is 80.",
+        "line": 317,
+        "column": 1,
+        "endLine": 317,
+        "endColumn": 92
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 325,
+        "column": 18,
+        "endLine": 327,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '__detectBrowserLanguage'.",
+        "line": 340,
+        "column": 5,
+        "endLine": 340,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "complexity",
+        "message": "Async arrow function has a complexity of 21. Maximum allowed is 20.",
+        "line": 340,
+        "column": 40,
+        "endLine": 410,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "max-lines-per-function",
+        "message": "Async arrow function has too many lines (71). Maximum allowed is 50.",
+        "line": 340,
+        "column": 40,
+        "endLine": 410,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "max-statements",
+        "message": "Async arrow function has too many statements (17). Maximum allowed is 10.",
+        "line": 340,
+        "column": 40,
+        "endLine": 410,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "no-shadow",
+        "message": "'route' is already declared in the upper scope on line 23 column 17.",
+        "line": 340,
+        "column": 47,
+        "endLine": 340,
+        "endColumn": 52
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'route' is defined but never used.",
+        "line": 340,
+        "column": 47,
+        "endLine": 340,
+        "endColumn": 52
+      },
+      {
+        "ruleId": "init-declarations",
+        "message": "Variable 'browserLocale' should be initialized on declaration.",
+        "line": 346,
+        "column": 17,
+        "endLine": 346,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 115. Maximum allowed is 80.",
+        "line": 348,
+        "column": 1,
+        "endLine": 348,
+        "endColumn": 116
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 1.",
+        "line": 348,
+        "column": 87,
+        "endLine": 348,
+        "endColumn": 88
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 98. Maximum allowed is 80.",
+        "line": 352,
+        "column": 1,
+        "endLine": 352,
+        "endColumn": 99
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 98. Maximum allowed is 80.",
+        "line": 354,
+        "column": 1,
+        "endLine": 354,
+        "endColumn": 99
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 108. Maximum allowed is 80.",
+        "line": 356,
+        "column": 1,
+        "endLine": 356,
+        "endColumn": 109
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 81. Maximum allowed is 80.",
+        "line": 357,
+        "column": 1,
+        "endLine": 357,
+        "endColumn": 82
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 0.",
+        "line": 358,
+        "column": 21,
+        "endLine": 358,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 2.",
+        "line": 359,
+        "column": 21,
+        "endLine": 359,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 86. Maximum allowed is 80.",
+        "line": 362,
+        "column": 1,
+        "endLine": 362,
+        "endColumn": 87
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 107. Maximum allowed is 80.",
+        "line": 364,
+        "column": 1,
+        "endLine": 364,
+        "endColumn": 108
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 0.",
+        "line": 364,
+        "column": 75,
+        "endLine": 364,
+        "endColumn": 76
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 0.",
+        "line": 365,
+        "column": 21,
+        "endLine": 365,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 2.",
+        "line": 366,
+        "column": 21,
+        "endLine": 366,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 87. Maximum allowed is 80.",
+        "line": 378,
+        "column": 1,
+        "endLine": 378,
+        "endColumn": 88
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 85. Maximum allowed is 80.",
+        "line": 385,
+        "column": 1,
+        "endLine": 385,
+        "endColumn": 86
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 84. Maximum allowed is 80.",
+        "line": 389,
+        "column": 1,
+        "endLine": 389,
+        "endColumn": 85
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '__detectBrowserLanguage'.",
+        "line": 412,
+        "column": 11,
+        "endLine": 412,
+        "endColumn": 43
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-i18n/src/plugins/all-rules-test/routing.js",
+    "messages": [
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 87. Maximum allowed is 80.",
+        "line": 12,
+        "column": 1,
+        "endLine": 12,
+        "endColumn": 88
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 94. Maximum allowed is 80.",
+        "line": 23,
+        "column": 1,
+        "endLine": 23,
+        "endColumn": 95
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 23,
+        "column": 71,
+        "endLine": 23,
+        "endColumn": 75
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 143. Maximum allowed is 80.",
+        "line": 25,
+        "column": 1,
+        "endLine": 25,
+        "endColumn": 144
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-param-reassign",
+        "message": "Assignment to function parameter 'locale'.",
+        "line": 29,
+        "column": 9,
+        "endLine": 29,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 29,
+        "column": 28,
+        "endLine": 29,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "no-param-reassign",
+        "message": "Assignment to function parameter 'route'.",
+        "line": 40,
+        "column": 13,
+        "endLine": 40,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 45,
+        "column": 34,
+        "endLine": 47,
+        "endColumn": 43
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 85. Maximum allowed is 80.",
+        "line": 50,
+        "column": 1,
+        "endLine": 50,
+        "endColumn": 86
+      },
+      {
+        "ruleId": "no-undefined",
+        "message": "Unexpected use of undefined.",
+        "line": 60,
+        "column": 39,
+        "endLine": 60,
+        "endColumn": 48
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 67,
+        "column": 24,
+        "endLine": 67,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "consistent-return",
+        "message": "Function 'localePath' expected no return value.",
+        "line": 69,
+        "column": 9,
+        "endLine": 69,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 94. Maximum allowed is 80.",
+        "line": 83,
+        "column": 1,
+        "endLine": 83,
+        "endColumn": 95
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 83,
+        "column": 71,
+        "endLine": 83,
+        "endColumn": 75
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 149. Maximum allowed is 80.",
+        "line": 85,
+        "column": 1,
+        "endLine": 85,
+        "endColumn": 150
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 85,
+        "column": 13,
+        "endLine": 85,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 89,
+        "column": 22,
+        "endLine": 89,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 96,
+        "column": 40,
+        "endLine": 96,
+        "endColumn": 44
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 99,
+        "column": 13,
+        "endLine": 99,
+        "endColumn": 17
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 99. Maximum allowed is 80.",
+        "line": 101,
+        "column": 1,
+        "endLine": 101,
+        "endColumn": 100
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 101,
+        "column": 32,
+        "endLine": 101,
+        "endColumn": 36
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 112,
+        "column": 20,
+        "endLine": 112,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 118,
+        "column": 13,
+        "endLine": 118,
+        "endColumn": 17
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 91. Maximum allowed is 80.",
+        "line": 120,
+        "column": 1,
+        "endLine": 120,
+        "endColumn": 92
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 120,
+        "column": 26,
+        "endLine": 120,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'l' is too short (< 2).",
+        "line": 120,
+        "column": 55,
+        "endLine": 120,
+        "endColumn": 56
+      },
+      {
+        "ruleId": "init-declarations",
+        "message": "Variable 'protocol' should be initialized on declaration.",
+        "line": 123,
+        "column": 21,
+        "endLine": 123,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 127,
+        "column": 35,
+        "endLine": 127,
+        "endColumn": 39
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_parentVnode'.",
+        "line": 127,
+        "column": 35,
+        "endLine": 127,
+        "endColumn": 61
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 128,
+        "column": 32,
+        "endLine": 130,
+        "endColumn": 33
+      },
+      {
+        "ruleId": "prefer-destructuring",
+        "message": "Use array destructuring.",
+        "line": 134,
+        "column": 21,
+        "endLine": 134,
+        "endColumn": 70
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 0.",
+        "line": 134,
+        "column": 68,
+        "endLine": 134,
+        "endColumn": 69
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 109. Maximum allowed is 80.",
+        "line": 141,
+        "column": 1,
+        "endLine": 141,
+        "endColumn": 110
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 141,
+        "column": 17,
+        "endLine": 141,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "func-style",
+        "message": "Expected a function expression.",
+        "line": 152,
+        "column": 1,
+        "endLine": 177,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 154,
+        "column": 25,
+        "endLine": 160,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "func-names",
+        "message": "Unexpected unnamed function.",
+        "line": 156,
+        "column": 11,
+        "endLine": 156,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 158,
+        "column": 29,
+        "endLine": 158,
+        "endColumn": 33
+      },
+      {
+        "ruleId": "no-param-reassign",
+        "message": "Assignment to function parameter 'route'.",
+        "line": 164,
+        "column": 9,
+        "endLine": 164,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 165,
+        "column": 13,
+        "endLine": 165,
+        "endColumn": 17
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 0.",
+        "line": 173,
+        "column": 54,
+        "endLine": 173,
+        "endColumn": 55
+      },
+      {
+        "ruleId": "no-shadow",
+        "message": "'Vue' is already declared in the upper scope on line 2 column 8.",
+        "line": 180,
+        "column": 14,
+        "endLine": 180,
+        "endColumn": 17
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'getRouteBaseName' should be before 'switchLocalePath'.",
+        "line": 189,
+        "column": 17,
+        "endLine": 189,
+        "endColumn": 35
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-i18n/src/plugins/all-rules-test/seo.js",
+    "messages": [
+      {
+        "ruleId": "no-shadow",
+        "message": "'Vue' is already declared in the upper scope on line 1 column 8.",
+        "line": 5,
+        "column": 14,
+        "endLine": 5,
+        "endColumn": 17
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-i18n/src/plugins/main.js",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'LOCALE_CODE_KEY' is assigned a value but never used.",
+        "line": 11,
+        "column": 7,
+        "endLine": 11,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'LOCALE_DOMAIN_KEY' is assigned a value but never used.",
+        "line": 12,
+        "column": 7,
+        "endLine": 12,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'getHostname' is assigned a value but never used.",
+        "line": 26,
+        "column": 9,
+        "endLine": 26,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'getForwarded' is assigned a value but never used.",
+        "line": 27,
+        "column": 9,
+        "endLine": 27,
+        "endColumn": 21
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-i18n/src/plugins/routing.js",
+    "messages": [
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 18,
+        "column": 7,
+        "endLine": 18,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 58,
+        "column": 7,
+        "endLine": 58,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 97,
+        "column": 9,
+        "endLine": 97,
+        "endColumn": 21
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-i18n/src/plugins/seo.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-i18n/src/templates/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-i18n/src/templates/all-rules-test/middleware.js",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'req' is assigned a value but never used.",
+        "line": 5,
+        "column": 17,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'LOCALE_CODE_KEY' is assigned a value but never used.",
+        "line": 14,
+        "column": 11,
+        "endLine": 14,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '__route'.",
+        "line": 30,
+        "column": 5,
+        "endLine": 30,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 87. Maximum allowed is 80.",
+        "line": 32,
+        "column": 1,
+        "endLine": 32,
+        "endColumn": 88
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 81. Maximum allowed is 80.",
+        "line": 34,
+        "column": 1,
+        "endLine": 34,
+        "endColumn": 82
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '__detectBrowserLanguage'.",
+        "line": 34,
+        "column": 40,
+        "endLine": 34,
+        "endColumn": 72
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 87. Maximum allowed is 80.",
+        "line": 43,
+        "column": 1,
+        "endLine": 43,
+        "endColumn": 88
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 53,
+        "column": 30,
+        "endLine": 55,
+        "endColumn": 17
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-i18n/src/templates/all-rules-test/options.js",
+    "messages": [
+      {
+        "ruleId": "func-style",
+        "message": "Expected a function expression.",
+        "line": 2,
+        "column": 3,
+        "endLine": 10,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 116. Maximum allowed is 80.",
+        "line": 5,
+        "column": 1,
+        "endLine": 5,
+        "endColumn": 117
+      },
+      {
+        "ruleId": "no-undefined",
+        "message": "Unexpected use of undefined.",
+        "line": 5,
+        "column": 26,
+        "endLine": 5,
+        "endColumn": 35
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-i18n/src/templates/all-rules-test/seo-head.js",
+    "messages": [
+      {
+        "ruleId": "func-names",
+        "message": "Unexpected unnamed function.",
+        "line": 10,
+        "column": 28,
+        "endLine": 10,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 13,
+        "column": 11,
+        "endLine": 15,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 14,
+        "column": 35,
+        "endLine": 14,
+        "endColumn": 39
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 15,
+        "column": 15,
+        "endLine": 15,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_hasMetaInfo'.",
+        "line": 15,
+        "column": 15,
+        "endLine": 15,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 16,
+        "column": 6,
+        "endLine": 16,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 17,
+        "column": 6,
+        "endLine": 17,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 18,
+        "column": 6,
+        "endLine": 18,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 19,
+        "column": 5,
+        "endLine": 19,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "no-mixed-operators",
+        "message": "Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations.",
+        "line": 19,
+        "column": 52,
+        "endLine": 19,
+        "endColumn": 54
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 94. Maximum allowed is 80.",
+        "line": 20,
+        "column": 1,
+        "endLine": 20,
+        "endColumn": 95
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 20,
+        "column": 5,
+        "endLine": 20,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "no-mixed-operators",
+        "message": "Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations.",
+        "line": 20,
+        "column": 42,
+        "endLine": 20,
+        "endColumn": 44
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 20,
+        "column": 45,
+        "endLine": 20,
+        "endColumn": 49
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 103. Maximum allowed is 80.",
+        "line": 27,
+        "column": 1,
+        "endLine": 27,
+        "endColumn": 104
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 27,
+        "column": 31,
+        "endLine": 27,
+        "endColumn": 35
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'l' is too short (< 2).",
+        "line": 27,
+        "column": 56,
+        "endLine": 27,
+        "endColumn": 57
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 27,
+        "column": 85,
+        "endLine": 27,
+        "endColumn": 89
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 39,
+        "column": 22,
+        "endLine": 39,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'href' should be before 'rel'.",
+        "line": 47,
+        "column": 25,
+        "endLine": 47,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 47,
+        "column": 44,
+        "endLine": 47,
+        "endColumn": 48
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 120. Maximum allowed is 80.",
+        "line": 53,
+        "column": 1,
+        "endLine": 53,
+        "endColumn": 121
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 53,
+        "column": 21,
+        "endLine": 53,
+        "endColumn": 33
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 88. Maximum allowed is 80.",
+        "line": 66,
+        "column": 1,
+        "endLine": 66,
+        "endColumn": 89
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 66,
+        "column": 31,
+        "endLine": 66,
+        "endColumn": 35
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 67,
+        "column": 48,
+        "endLine": 67,
+        "endColumn": 52
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'href' should be before 'rel'.",
+        "line": 73,
+        "column": 17,
+        "endLine": 73,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 82. Maximum allowed is 80.",
+        "line": 88,
+        "column": 1,
+        "endLine": 88,
+        "endColumn": 83
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'content' should be before 'property'.",
+        "line": 89,
+        "column": 13,
+        "endLine": 89,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "require-unicode-regexp",
+        "message": "Use the 'u' flag.",
+        "line": 90,
+        "column": 17,
+        "endLine": 90,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-invalid-this",
+        "message": "Unexpected 'this'.",
+        "line": 97,
+        "column": 18,
+        "endLine": 97,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 100. Maximum allowed is 80.",
+        "line": 98,
+        "column": 1,
+        "endLine": 98,
+        "endColumn": 101
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'l' is too short (< 2).",
+        "line": 98,
+        "column": 17,
+        "endLine": 98,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'content' should be before 'property'.",
+        "line": 102,
+        "column": 13,
+        "endLine": 102,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "require-unicode-regexp",
+        "message": "Use the 'u' flag.",
+        "line": 103,
+        "column": 17,
+        "endLine": 103,
+        "endColumn": 21
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-i18n/src/templates/all-rules-test/utils.js",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'LOCALE_DOMAIN_KEY' is assigned a value but never used.",
+        "line": 2,
+        "column": 7,
+        "endLine": 2,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 88. Maximum allowed is 80.",
+        "line": 8,
+        "column": 1,
+        "endLine": 8,
+        "endColumn": 89
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 88. Maximum allowed is 80.",
+        "line": 27,
+        "column": 1,
+        "endLine": 27,
+        "endColumn": 89
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'l' is too short (< 2).",
+        "line": 27,
+        "column": 52,
+        "endLine": 27,
+        "endColumn": 53
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 124. Maximum allowed is 80.",
+        "line": 36,
+        "column": 1,
+        "endLine": 36,
+        "endColumn": 125
+      },
+      {
+        "ruleId": "no-inline-comments",
+        "message": "Unexpected comment inline with code.",
+        "line": 36,
+        "column": 49,
+        "endLine": 36,
+        "endColumn": 89
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 37,
+        "column": 38,
+        "endLine": 39,
+        "endColumn": 33
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 40,
+        "column": 36,
+        "endLine": 42,
+        "endColumn": 35
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 51,
+        "column": 21,
+        "endLine": 51,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 107. Maximum allowed is 80.",
+        "line": 58,
+        "column": 1,
+        "endLine": 58,
+        "endColumn": 108
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 58,
+        "column": 17,
+        "endLine": 58,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 86. Maximum allowed is 80.",
+        "line": 76,
+        "column": 1,
+        "endLine": 76,
+        "endColumn": 87
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 76,
+        "column": 9,
+        "endLine": 76,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 127. Maximum allowed is 80.",
+        "line": 87,
+        "column": 1,
+        "endLine": 87,
+        "endColumn": 128
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 87,
+        "column": 13,
+        "endLine": 87,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 126. Maximum allowed is 80.",
+        "line": 91,
+        "column": 1,
+        "endLine": 91,
+        "endColumn": 127
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 91,
+        "column": 13,
+        "endLine": 91,
+        "endColumn": 25
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-i18n/src/templates/middleware.js",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'req' is assigned a value but never used.",
+        "line": 4,
+        "column": 16,
+        "endLine": 4,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'LOCALE_CODE_KEY' is assigned a value but never used.",
+        "line": 11,
+        "column": 9,
+        "endLine": 11,
+        "endColumn": 24
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-i18n/src/templates/options.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-i18n/src/templates/seo-head.js",
+    "messages": [
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 41,
+        "column": 11,
+        "endLine": 41,
+        "endColumn": 23
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-i18n/src/templates/utils.js",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'LOCALE_DOMAIN_KEY' is assigned a value but never used.",
+        "line": 2,
+        "column": 7,
+        "endLine": 2,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 35,
+        "column": 11,
+        "endLine": 35,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 39,
+        "column": 9,
+        "endLine": 39,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 51,
+        "column": 5,
+        "endLine": 51,
+        "endColumn": 17
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 56,
+        "column": 7,
+        "endLine": 56,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 58,
+        "column": 7,
+        "endLine": 58,
+        "endColumn": 19
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-logrocket/.eslintrc.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-logrocket/lib/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-logrocket/lib/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "func-names",
+        "message": "Unexpected unnamed function.",
+        "line": 7,
+        "column": 16,
+        "endLine": 7,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'app' is defined but never used.",
+        "line": 7,
+        "column": 27,
+        "endLine": 7,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "no-mixed-operators",
+        "message": "Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations.",
+        "line": 16,
+        "column": 41,
+        "endLine": 16,
+        "endColumn": 43
+      },
+      {
+        "ruleId": "no-mixed-operators",
+        "message": "Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations.",
+        "line": 16,
+        "column": 57,
+        "endLine": 16,
+        "endColumn": 59
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxt-logrocket/lib/plugin.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/nuxtent-module/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "unicorn/prefer-module",
+        "message": "Do not use \"module\".",
+        "line": 1,
+        "column": 1,
+        "endLine": 1,
+        "endColumn": 7
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxtent-module/lib/plugins/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxtent-module/lib/plugins/all-rules-test/nuxtent-components.template.js",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'interopDefault' is defined but never used.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "max-statements",
+        "message": "Method 'render' has too many statements (12). Maximum allowed is 10.",
+        "line": 24,
+        "column": 16,
+        "endLine": 62,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'on' should be before 'props'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'domProps' should be before 'on'.",
+        "line": 34,
+        "column": 17,
+        "endLine": 34,
+        "endColumn": 27
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'props' should be before 'render'.",
+        "line": 63,
+        "column": 9,
+        "endLine": 63,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+        "line": 66,
+        "column": 17,
+        "endLine": 66,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'body' should be before 'tag'.",
+        "line": 68,
+        "column": 13,
+        "endLine": 68,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'required' should be before 'type'.",
+        "line": 73,
+        "column": 17,
+        "endLine": 73,
+        "endColumn": 27
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxtent-module/lib/plugins/all-rules-test/nuxtent-config.template.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/nuxtent-module/lib/plugins/nuxtent-components.template.js",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'interopDefault' is defined but never used.",
+        "line": 5,
+        "column": 3,
+        "endLine": 5,
+        "endColumn": 17
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/nuxtent-module/lib/plugins/nuxtent-config.template.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/pwa-module/lib/icon/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/pwa-module/lib/icon/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "func-names",
+        "message": "Unexpected unnamed async function.",
+        "line": 1,
+        "column": 16,
+        "endLine": 1,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "require-await",
+        "message": "Async function has no 'await' expression.",
+        "line": 1,
+        "column": 16,
+        "endLine": 1,
+        "endColumn": 31
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/pwa-module/lib/icon/plugin.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/pwa-module/lib/onesignal/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/pwa-module/lib/onesignal/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "no-multi-assign",
+        "message": "Unexpected chained assignment.",
+        "line": 1,
+        "column": 21,
+        "endLine": 1,
+        "endColumn": 62
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'OneSignal' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 2.",
+        "line": 8,
+        "column": 9,
+        "endLine": 8,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "func-names",
+        "message": "Unexpected unnamed function.",
+        "line": 12,
+        "column": 16,
+        "endLine": 12,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'OneSignal' is not defined.",
+        "line": 16,
+        "column": 9,
+        "endLine": 16,
+        "endColumn": 18
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/pwa-module/lib/onesignal/plugin.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'OneSignal' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'OneSignal' is not defined.",
+        "line": 6,
+        "column": 23,
+        "endLine": 6,
+        "endColumn": 32
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/pwa-module/lib/workbox/templates/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/pwa-module/lib/workbox/templates/all-rules-test/sw.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'importScripts' is not defined.",
+        "line": 1,
+        "column": 1,
+        "endLine": 1,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'i' is too short (< 2).",
+        "line": 4,
+        "column": 10,
+        "endLine": 4,
+        "endColumn": 11
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 14,
+        "column": 1,
+        "endLine": 14,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 2.",
+        "line": 17,
+        "column": 5,
+        "endLine": 17,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 23,
+        "column": 1,
+        "endLine": 23,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 2.",
+        "line": 26,
+        "column": 5,
+        "endLine": 26,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 32,
+        "column": 1,
+        "endLine": 32,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 37,
+        "column": 1,
+        "endLine": 37,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 41,
+        "column": 1,
+        "endLine": 41,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 46,
+        "column": 1,
+        "endLine": 46,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "line-comment-position",
+        "message": "Expected comment to be above code.",
+        "line": 51,
+        "column": 34,
+        "endLine": 51,
+        "endColumn": 67
+      },
+      {
+        "ruleId": "no-inline-comments",
+        "message": "Unexpected comment inline with code.",
+        "line": 51,
+        "column": 34,
+        "endLine": 51,
+        "endColumn": 67
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 62,
+        "column": 1,
+        "endLine": 62,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 2.",
+        "line": 66,
+        "column": 9,
+        "endLine": 66,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 2.",
+        "line": 71,
+        "column": 9,
+        "endLine": 71,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "line-comment-position",
+        "message": "Expected comment to be above code.",
+        "line": 78,
+        "column": 34,
+        "endLine": 78,
+        "endColumn": 67
+      },
+      {
+        "ruleId": "no-inline-comments",
+        "message": "Unexpected comment inline with code.",
+        "line": 78,
+        "column": 34,
+        "endLine": 78,
+        "endColumn": 67
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'r' is too short (< 2).",
+        "line": 88,
+        "column": 36,
+        "endLine": 88,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 89,
+        "column": 4,
+        "endLine": 89,
+        "endColumn": 11
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 92. Maximum allowed is 80.",
+        "line": 91,
+        "column": 1,
+        "endLine": 91,
+        "endColumn": 93
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 91,
+        "column": 9,
+        "endLine": 91,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 98,
+        "column": 1,
+        "endLine": 98,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 87. Maximum allowed is 80.",
+        "line": 102,
+        "column": 1,
+        "endLine": 102,
+        "endColumn": 88
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 102,
+        "column": 20,
+        "endLine": 102,
+        "endColumn": 27
+      },
+      {
+        "ruleId": "line-comment-position",
+        "message": "Expected comment to be above code.",
+        "line": 110,
+        "column": 34,
+        "endLine": 110,
+        "endColumn": 67
+      },
+      {
+        "ruleId": "no-inline-comments",
+        "message": "Unexpected comment inline with code.",
+        "line": 110,
+        "column": 34,
+        "endLine": 110,
+        "endColumn": 67
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/pwa-module/lib/workbox/templates/all-rules-test/workbox.js",
+    "messages": [
+      {
+        "ruleId": "no-unsafe-negation",
+        "message": "Unexpected negating the left operand of 'in' operator.",
+        "line": 3,
+        "column": 9,
+        "endLine": 3,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 86. Maximum allowed is 80.",
+        "line": 9,
+        "column": 1,
+        "endLine": 9,
+        "endColumn": 87
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 9,
+        "column": 76,
+        "endLine": 11,
+        "endColumn": 17
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 29,
+        "column": 34,
+        "endLine": 29,
+        "endColumn": 47
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/pwa-module/lib/workbox/templates/sw.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'importScripts' is not defined.",
+        "line": 1,
+        "column": 1,
+        "endLine": 1,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 9,
+        "column": 1,
+        "endLine": 9,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 14,
+        "column": 1,
+        "endLine": 14,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 19,
+        "column": 1,
+        "endLine": 19,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 24,
+        "column": 1,
+        "endLine": 24,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 28,
+        "column": 1,
+        "endLine": 28,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 33,
+        "column": 1,
+        "endLine": 33,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 47,
+        "column": 1,
+        "endLine": 47,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 61,
+        "column": 4,
+        "endLine": 61,
+        "endColumn": 11
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 61,
+        "column": 73,
+        "endLine": 61,
+        "endColumn": 80
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 66,
+        "column": 1,
+        "endLine": 66,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'workbox' is not defined.",
+        "line": 67,
+        "column": 14,
+        "endLine": 67,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'caches' is not defined.",
+        "line": 68,
+        "column": 18,
+        "endLine": 68,
+        "endColumn": 24
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/pwa-module/lib/workbox/templates/workbox.js",
+    "messages": [
+      {
+        "ruleId": "no-unsafe-negation",
+        "message": "Unexpected negating the left operand of 'in' operator.",
+        "line": 2,
+        "column": 7,
+        "endLine": 2,
+        "endColumn": 23
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/recaptcha-module/.eslintrc.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/recaptcha-module/lib/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/recaptcha-module/lib/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "max-statements",
+        "message": "Constructor has too many statements (11). Maximum allowed is 10.",
+        "line": 8,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_elements'.",
+        "line": 22,
+        "column": 9,
+        "endLine": 22,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_eventBus'.",
+        "line": 24,
+        "column": 9,
+        "endLine": 24,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_ready'.",
+        "line": 25,
+        "column": 9,
+        "endLine": 25,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_ready'.",
+        "line": 37,
+        "column": 13,
+        "endLine": 37,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_ready'.",
+        "line": 39,
+        "column": 13,
+        "endLine": 39,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_elements'.",
+        "line": 42,
+        "column": 29,
+        "endLine": 42,
+        "endColumn": 43
+      },
+      {
+        "ruleId": "consistent-return",
+        "message": "Expected to return a value at the end of async method 'execute'.",
+        "line": 63,
+        "column": 11,
+        "endLine": 63,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_eventBus'.",
+        "line": 96,
+        "column": 21,
+        "endLine": 96,
+        "endColumn": 35
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_eventBus'.",
+        "line": 106,
+        "column": 21,
+        "endLine": 106,
+        "endColumn": 35
+      },
+      {
+        "ruleId": "max-lines-per-function",
+        "message": "Method 'init' has too many lines (86). Maximum allowed is 50.",
+        "line": 120,
+        "column": 5,
+        "endLine": 205,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "max-statements",
+        "message": "Method 'init' has too many statements (17). Maximum allowed is 10.",
+        "line": 120,
+        "column": 10,
+        "endLine": 205,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_ready'.",
+        "line": 122,
+        "column": 13,
+        "endLine": 122,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_eventBus'.",
+        "line": 128,
+        "column": 9,
+        "endLine": 128,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_elements'.",
+        "line": 129,
+        "column": 9,
+        "endLine": 129,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_elements'.",
+        "line": 134,
+        "column": 33,
+        "endLine": 134,
+        "endColumn": 47
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 2.",
+        "line": 155,
+        "column": 30,
+        "endLine": 155,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_eventBus'.",
+        "line": 173,
+        "column": 54,
+        "endLine": 173,
+        "endColumn": 68
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 89. Maximum allowed is 80.",
+        "line": 177,
+        "column": 1,
+        "endLine": 177,
+        "endColumn": 90
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_eventBus'.",
+        "line": 177,
+        "column": 49,
+        "endLine": 177,
+        "endColumn": 63
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_eventBus'.",
+        "line": 178,
+        "column": 47,
+        "endLine": 178,
+        "endColumn": 61
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_ready'.",
+        "line": 183,
+        "column": 9,
+        "endLine": 183,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 3.",
+        "line": 189,
+        "column": 42,
+        "endLine": 189,
+        "endColumn": 43
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_ready'.",
+        "line": 203,
+        "column": 16,
+        "endLine": 203,
+        "endColumn": 27
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_eventBus'.",
+        "line": 209,
+        "column": 16,
+        "endLine": 209,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "func-names",
+        "message": "Unexpected unnamed function.",
+        "line": 218,
+        "column": 16,
+        "endLine": 218,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name '_' is too short (< 2).",
+        "line": 218,
+        "column": 26,
+        "endLine": 218,
+        "endColumn": 27
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/recaptcha-module/lib/plugin.js",
+    "messages": [
+      {
+        "ruleId": "vue/multi-word-component-names",
+        "message": "Component name \"Recaptcha\" should always be multi-word.",
+        "line": 134,
+        "column": 17,
+        "endLine": 134,
+        "endColumn": 28
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/router-module/.eslintrc.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/router-module/lib/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/router-module/lib/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 81. Maximum allowed is 80.",
+        "line": 1,
+        "column": 1,
+        "endLine": 1,
+        "endColumn": 82
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 83. Maximum allowed is 80.",
+        "line": 4,
+        "column": 1,
+        "endLine": 4,
+        "endColumn": 84
+      },
+      {
+        "ruleId": "sort-imports",
+        "message": "Expected 'multiple' syntax before 'single' syntax.",
+        "line": 4,
+        "column": 1,
+        "endLine": 4,
+        "endColumn": 84
+      },
+      {
+        "ruleId": "func-style",
+        "message": "Expected a function expression.",
+        "line": 10,
+        "column": 8,
+        "endLine": 18,
+        "endColumn": 2
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/router-module/lib/plugin.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/sentry-module/lib/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/sentry-module/lib/all-rules-test/sentry.client.js",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'VueLib' is defined but never used.",
+        "line": 1,
+        "column": 8,
+        "endLine": 1,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "sort-imports",
+        "message": "Expected 'all' syntax before 'single' syntax.",
+        "line": 2,
+        "column": 1,
+        "endLine": 2,
+        "endColumn": 43
+      },
+      {
+        "ruleId": "func-names",
+        "message": "Unexpected unnamed function.",
+        "line": 6,
+        "column": 16,
+        "endLine": 6,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 88. Maximum allowed is 80.",
+        "line": 16,
+        "column": 1,
+        "endLine": 16,
+        "endColumn": 89
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 127. Maximum allowed is 80.",
+        "line": 18,
+        "column": 1,
+        "endLine": 18,
+        "endColumn": 128
+      },
+      {
+        "ruleId": "no-confusing-arrow",
+        "message": "Arrow function used ambiguously with a conditional expression.",
+        "line": 18,
+        "column": 73,
+        "endLine": 19,
+        "endColumn": 112
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 18,
+        "column": 85,
+        "endLine": 19,
+        "endColumn": 112
+      },
+      {
+        "ruleId": "operator-linebreak",
+        "message": "'?' should be placed at the beginning of the line.",
+        "line": 18,
+        "column": 127,
+        "endLine": 18,
+        "endColumn": 128
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected base point indentation of \"                \", but found \"          \".",
+        "line": 19,
+        "column": 1,
+        "endLine": 19,
+        "endColumn": 11
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 113. Maximum allowed is 80.",
+        "line": 19,
+        "column": 1,
+        "endLine": 19,
+        "endColumn": 114
+      },
+      {
+        "ruleId": "multiline-ternary",
+        "message": "Expected newline between consequent and alternate of ternary expression.",
+        "line": 19,
+        "column": 11,
+        "endLine": 19,
+        "endColumn": 64
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'serializeFunction' is not defined.",
+        "line": 19,
+        "column": 24,
+        "endLine": 19,
+        "endColumn": 41
+      },
+      {
+        "ruleId": "line-comment-position",
+        "message": "Expected comment to be above code.",
+        "line": 27,
+        "column": 36,
+        "endLine": 27,
+        "endColumn": 56
+      },
+      {
+        "ruleId": "no-inline-comments",
+        "message": "Unexpected comment inline with code.",
+        "line": 27,
+        "column": 36,
+        "endLine": 27,
+        "endColumn": 56
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/sentry-module/lib/sentry.client.js",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'VueLib' is defined but never used.",
+        "line": 1,
+        "column": 8,
+        "endLine": 1,
+        "endColumn": 14
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/svg-sprite-module/.eslintrc.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/svg-sprite-module/lib/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/svg-sprite-module/lib/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "func-style",
+        "message": "Expected a function expression.",
+        "line": 4,
+        "column": 1,
+        "endLine": 17,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "require-unicode-regexp",
+        "message": "Use the 'u' flag.",
+        "line": 9,
+        "column": 13,
+        "endLine": 9,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "require-unicode-regexp",
+        "message": "Use the 'u' flag.",
+        "line": 13,
+        "column": 13,
+        "endLine": 13,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 82. Maximum allowed is 80.",
+        "line": 22,
+        "column": 1,
+        "endLine": 22,
+        "endColumn": 83
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'relativeToBuild' is not defined.",
+        "line": 22,
+        "column": 25,
+        "endLine": 22,
+        "endColumn": 40
+      },
+      {
+        "ruleId": "no-underscore-dangle",
+        "message": "Unexpected dangling '_' in '_output'.",
+        "line": 22,
+        "column": 41,
+        "endLine": 22,
+        "endColumn": 56
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'functional' should be before 'name'.",
+        "line": 51,
+        "column": 5,
+        "endLine": 51,
+        "endColumn": 17
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'required' should be before 'type'.",
+        "line": 55,
+        "column": 13,
+        "endLine": 55,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+        "line": 59,
+        "column": 13,
+        "endLine": 59,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'desc' should be before 'title'.",
+        "line": 61,
+        "column": 9,
+        "endLine": 61,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+        "line": 63,
+        "column": 13,
+        "endLine": 63,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'default' should be before 'type'.",
+        "line": 67,
+        "column": 13,
+        "endLine": 67,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'v' is too short (< 2).",
+        "line": 70,
+        "column": 48,
+        "endLine": 70,
+        "endColumn": 49
+      },
+      {
+        "ruleId": "radix",
+        "message": "Missing radix parameter.",
+        "line": 70,
+        "column": 61,
+        "endLine": 70,
+        "endColumn": 72
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'h' is too short (< 2).",
+        "line": 75,
+        "column": 13,
+        "endLine": 75,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 95. Maximum allowed is 80.",
+        "line": 84,
+        "column": 1,
+        "endLine": 84,
+        "endColumn": 96
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 100. Maximum allowed is 80.",
+        "line": 86,
+        "column": 1,
+        "endLine": 86,
+        "endColumn": 101
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 92,
+        "column": 23,
+        "endLine": 97,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 98,
+        "column": 22,
+        "endLine": 103,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 91. Maximum allowed is 80.",
+        "line": 108,
+        "column": 1,
+        "endLine": 108,
+        "endColumn": 92
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'attrs' should be before 'class'.",
+        "line": 109,
+        "column": 13,
+        "endLine": 109,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'viewBox' should be before 'xmlns'.",
+        "line": 111,
+        "column": 17,
+        "endLine": 111,
+        "endColumn": 26
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/svg-sprite-module/lib/plugin.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'relativeToBuild' is not defined.",
+        "line": 13,
+        "column": 23,
+        "endLine": 13,
+        "endColumn": 38
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/vuetify-module/.eslintrc.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/vuetify-module/src/templates/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/vuetify-module/src/templates/all-rules-test/options.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'serializeFunction' is not defined.",
+        "line": 1,
+        "column": 20,
+        "endLine": 1,
+        "endColumn": 37
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/vuetify-module/src/templates/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 2,
+        "column": 26,
+        "endLine": 4,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 0.",
+        "line": 16,
+        "column": 77,
+        "endLine": 16,
+        "endColumn": 78
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 81. Maximum allowed is 80.",
+        "line": 18,
+        "column": 1,
+        "endLine": 18,
+        "endColumn": 82
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 108. Maximum allowed is 80.",
+        "line": 31,
+        "column": 1,
+        "endLine": 31,
+        "endColumn": 109
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 0.",
+        "line": 31,
+        "column": 106,
+        "endLine": 31,
+        "endColumn": 107
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 87. Maximum allowed is 80.",
+        "line": 32,
+        "column": 1,
+        "endLine": 32,
+        "endColumn": 88
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 40,
+        "column": 28,
+        "endLine": 42,
+        "endColumn": 18
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/vuetify-module/src/templates/options.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/vuetify-module/src/templates/plugin.js",
+    "messages": [
+      {
+        "ruleId": "import/default",
+        "message": "Parse errors in imported module './options': Unexpected token %= (1:17)",
+        "line": 20,
+        "column": 21,
+        "endLine": 20,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "import/namespace",
+        "message": "Parse errors in imported module './options': Unexpected token %= (1:17)",
+        "line": 20,
+        "column": 21,
+        "endLine": 20,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "import/no-named-as-default",
+        "message": "Parse errors in imported module './options': Unexpected token %= (1:17)",
+        "line": 20,
+        "column": 21,
+        "endLine": 20,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "import/no-named-as-default-member",
+        "message": "Parse errors in imported module './options': Unexpected token %= (1:17)",
+        "line": 20,
+        "column": 21,
+        "endLine": 20,
+        "endColumn": 32
+      }
+    ]
+  }
+]

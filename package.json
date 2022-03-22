@@ -6,13 +6,12 @@
     "scripts": {
         "lint": "npm run eslint",
         "eslint": "eslint . --ext .js,.vue,.json",
-        "test:base": "mocha \"tests/**/*.js\" --reporter dot --timeout 60000",
-        "test:list": "mocha \"tests/**/*.js\" --reporter list | tee .test-result-list.txt",
-        "test": "npm run test:base",
-        "test:nyc": "nyc --reporter=lcov npm run test:base",
-        "test:debug": "mocha \"tests/**/*.js\" --reporter dot",
+        "test:lib": "mocha \"tests/lib/**/*.js\" --reporter dot --timeout 60000",
+        "test:integration": "mocha \"tests/integration/**/*.js\" --reporter dot --timeout 60000",
+        "test:all": "npm run test:lib && npm run test:integration",
+        "test": "npm run test:lib",
+        "test:nyc": "nyc --reporter=lcov npm run test:all",
         "test:rules": "mocha \"tests/lib/rules/**/*.js\" --reporter dot --timeout 60000",
-        "watch": "npm run test:base -- --watch",
         "update": "node ./tools/update.js && npm run lint:fix && npm run test",
         "updateonly": "node ./tools/update.js && npm run lint:fix",
         "lint:fix": "eslint . --ext .js,.vue,.json --fix",
@@ -21,7 +20,7 @@
         "copy:images": "cpx \"logo.*\" \"docs/\\.vuepress/public\" -u",
         "docs:watch": "npm run copy:images && vuepress dev --debug docs",
         "docs:build": "npm run copy:images && vuepress build docs",
-        "updatefixture": "cross-env UPDATE_FIXTURE=\"true\" npm run test:base"
+        "updatefixture": "cross-env UPDATE_FIXTURE=\"true\" npm run test:all"
     },
     "files": [
         "lib"
@@ -62,17 +61,12 @@
         "eslint": ">=6.0.0"
     },
     "devDependencies": {
-        "@nuxtjs/eslint-config": "^3.0.0",
-        "@nuxtjs/eslint-config-typescript": "^6.0.0",
-        "@ota-meshi/eslint-plugin": "^0.8.0",
-        "@typescript-eslint/eslint-plugin": "^4.0.0",
+        "@ota-meshi/eslint-plugin": "^0.10.0",
         "@vuepress/plugin-pwa": "^1.4.1",
-        "babel-eslint": "^10.1.0",
         "cpx": "^1.5.0",
         "cross-env": "^7.0.2",
-        "eslint": "~7.32.0",
-        "eslint-config-airbnb-base": "^14.1.0",
-        "eslint-config-prettier": "^7.0.0",
+        "eslint": "~8.10.0",
+        "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-es": "^4.0.0",
         "eslint-plugin-eslint-comments": "^3.2.0",
         "eslint-plugin-eslint-plugin": "^3.0.0",

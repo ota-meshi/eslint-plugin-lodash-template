@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "eslint": "~8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-lodash-template": "file:../../../.."
+  },
+  "description": "test for https://github.com/Qonfucius/nuxt-fontawesome",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ota-meshi/eslint-plugin-lodash-template.git"
+  },
+  "private": true,
+  "license": "MIT"
+}

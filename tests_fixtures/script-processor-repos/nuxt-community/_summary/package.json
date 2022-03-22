@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^9.0.0",
+    "@nuxtjs/eslint-config-typescript": "^9.0.0",
+    "eslint": "~8.10.0",
+    "eslint-plugin-lodash-template": "file:../../../.."
+  },
+  "description": "test for https://github.com/nuxt-community",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ota-meshi/eslint-plugin-lodash-template.git"
+  },
+  "private": true,
+  "license": "MIT"
+}

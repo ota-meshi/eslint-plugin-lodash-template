@@ -1,8 +1,0 @@
-[
-  {
-    "ruleId": "space-before-function-paren",
-    "message": "Missing space before function parentheses.",
-    "line": 5,
-    "column": 10
-  }
-]
