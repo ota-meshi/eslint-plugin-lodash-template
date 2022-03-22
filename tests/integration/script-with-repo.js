@@ -111,7 +111,7 @@ describe("script test", () => {
                 //     "npx rimraf ./node_modules/eslint-plugin-lodash-template",
                 //     { stdio: "inherit" },
                 // )
-                cp.execSync("npm i", { cwd: fixtureDir })
+                cp.execSync("npm i --legacy-peer-deps", { cwd: fixtureDir })
             })
             after(() => {
                 process.chdir(originalCwd)
