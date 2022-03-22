@@ -43,6 +43,9 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         node-version: 8.10.x
+    - name: Uninstall Packages
+      run: |+
+        npm r -D vuepress eslint-plugin-eslint-plugin eslint-plugin-prettier vue-eslint-parser eslint-plugin-vue
     - name: Install Target Packages
       run: |+
         npm i -D eslint@6.0.0 mocha@7
