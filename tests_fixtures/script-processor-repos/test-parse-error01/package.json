@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "eslint": "~8.10.0",
+    "eslint-plugin-lodash-template": "file:../../.."
+  },
+  "description": "test",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ota-meshi/eslint-plugin-lodash-template.git"
+  },
+  "private": true,
+  "license": "MIT"
+}

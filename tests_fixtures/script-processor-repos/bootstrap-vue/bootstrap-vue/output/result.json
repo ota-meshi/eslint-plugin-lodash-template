@@ -1,0 +1,873 @@
+[
+  {
+    "filePath": "/output/nuxt/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "strict",
+        "message": "'use strict' is unnecessary inside of modules.",
+        "line": 1,
+        "column": 1,
+        "endLine": 1,
+        "endColumn": 13
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 1,
+        "column": 13,
+        "endLine": 2,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'root' found.",
+        "line": 4,
+        "column": 5,
+        "endLine": 4,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'parserOptions' found.",
+        "line": 5,
+        "column": 5,
+        "endLine": 8,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'ecmaVersion' found.",
+        "line": 6,
+        "column": 9,
+        "endLine": 6,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'sourceType' found.",
+        "line": 7,
+        "column": 9,
+        "endLine": 7,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 7,
+        "column": 29,
+        "endLine": 7,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'env' found.",
+        "line": 9,
+        "column": 5,
+        "endLine": 12,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'browser' found.",
+        "line": 10,
+        "column": 9,
+        "endLine": 10,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'es6' found.",
+        "line": 11,
+        "column": 9,
+        "endLine": 11,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 11,
+        "column": 18,
+        "endLine": 11,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'extends' found.",
+        "line": 13,
+        "column": 5,
+        "endLine": 13,
+        "endColumn": 58
+      },
+      {
+        "ruleId": "array-element-newline",
+        "message": "There should be a linebreak after this element.",
+        "line": 13,
+        "column": 28,
+        "endLine": 13,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'overrides' found.",
+        "line": 14,
+        "column": 5,
+        "endLine": 33,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'files' found.",
+        "line": 16,
+        "column": 13,
+        "endLine": 16,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'processor' found.",
+        "line": 17,
+        "column": 13,
+        "endLine": 17,
+        "endColumn": 48
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 18,
+        "column": 13,
+        "endLine": 18,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'parserOptions' found.",
+        "line": 18,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'ecmaVersion' found.",
+        "line": 19,
+        "column": 17,
+        "endLine": 19,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'sourceType' found.",
+        "line": 20,
+        "column": 17,
+        "endLine": 20,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 20,
+        "column": 37,
+        "endLine": 20,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 22,
+        "column": 13,
+        "endLine": 22,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'globals' found.",
+        "line": 22,
+        "column": 13,
+        "endLine": 27,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'options' found.",
+        "line": 23,
+        "column": 17,
+        "endLine": 23,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'serialize' found.",
+        "line": 24,
+        "column": 17,
+        "endLine": 24,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 25,
+        "column": 17,
+        "endLine": 25,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'process' found.",
+        "line": 25,
+        "column": 17,
+        "endLine": 25,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'require' found.",
+        "line": 26,
+        "column": 17,
+        "endLine": 26,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 26,
+        "column": 30,
+        "endLine": 26,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'rules' found.",
+        "line": 28,
+        "column": 13,
+        "endLine": 31,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 30,
+        "column": 17,
+        "endLine": 30,
+        "endColumn": 72
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 30,
+        "column": 79,
+        "endLine": 30,
+        "endColumn": 80
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 31,
+        "column": 14,
+        "endLine": 31,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 32,
+        "column": 10,
+        "endLine": 32,
+        "endColumn": 11
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 33,
+        "column": 6,
+        "endLine": 33,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 34,
+        "column": 2,
+        "endLine": 35,
+        "endColumn": 1
+      }
+    ]
+  },
+  {
+    "filePath": "/output/nuxt/all-rules-test/plugin.template.js",
+    "messages": [
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 1,
+        "column": 17,
+        "endLine": 1,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-imports",
+        "message": "Imports should be sorted alphabetically.",
+        "line": 4,
+        "column": 1,
+        "endLine": 4,
+        "endColumn": 42
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 4,
+        "column": 26,
+        "endLine": 4,
+        "endColumn": 41
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 81. Maximum allowed is 80.",
+        "line": 6,
+        "column": 1,
+        "endLine": 6,
+        "endColumn": 82
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 6,
+        "column": 22,
+        "endLine": 6,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 6,
+        "column": 63,
+        "endLine": 6,
+        "endColumn": 64
+      },
+      {
+        "ruleId": "no-undefined",
+        "message": "Unexpected use of undefined.",
+        "line": 6,
+        "column": 64,
+        "endLine": 6,
+        "endColumn": 73
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 6,
+        "column": 74,
+        "endLine": 6,
+        "endColumn": 75
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 2.",
+        "line": 6,
+        "column": 75,
+        "endLine": 6,
+        "endColumn": 76
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 11,
+        "column": 1,
+        "endLine": 11,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+        "line": 12,
+        "column": 3,
+        "endLine": 12,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "multiline-ternary",
+        "message": "Expected newline between test and consequent of ternary expression.",
+        "line": 12,
+        "column": 5,
+        "endLine": 12,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 12,
+        "column": 5,
+        "endLine": 12,
+        "endColumn": 45
+      },
+      {
+        "ruleId": "multiline-ternary",
+        "message": "Expected newline between consequent and alternate of ternary expression.",
+        "line": 12,
+        "column": 22,
+        "endLine": 12,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+        "line": 13,
+        "column": 3,
+        "endLine": 13,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+        "line": 14,
+        "column": 3,
+        "endLine": 14,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+        "line": 15,
+        "column": 3,
+        "endLine": 15,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+        "line": 16,
+        "column": 3,
+        "endLine": 16,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected relative indentation of 2 spaces but found 0 spaces.",
+        "line": 17,
+        "column": 3,
+        "endLine": 17,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "newline-per-chained-call",
+        "message": "Expected line break before `.join`.",
+        "line": 17,
+        "column": 20,
+        "endLine": 17,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 18,
+        "column": 8,
+        "endLine": 18,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "lodash-template/template-tag-spacing",
+        "message": "Expected 1 space after `<%`, but 3 spaces found.",
+        "line": 20,
+        "column": 1,
+        "endLine": 20,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'BVConfigPlugin' is not defined.",
+        "line": 21,
+        "column": 9,
+        "endLine": 21,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 21,
+        "column": 24,
+        "endLine": 21,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 21,
+        "column": 59,
+        "endLine": 21,
+        "endColumn": 60
+      },
+      {
+        "ruleId": "no-undefined",
+        "message": "Unexpected use of undefined.",
+        "line": 21,
+        "column": 60,
+        "endLine": 21,
+        "endColumn": 69
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 21,
+        "column": 70,
+        "endLine": 21,
+        "endColumn": 71
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 2.",
+        "line": 21,
+        "column": 71,
+        "endLine": 21,
+        "endColumn": 72
+      },
+      {
+        "ruleId": "lodash-template/template-tag-spacing",
+        "message": "Expected 1 space after `<%`, but 3 spaces found.",
+        "line": 22,
+        "column": 1,
+        "endLine": 22,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 94. Maximum allowed is 80.",
+        "line": 24,
+        "column": 1,
+        "endLine": 24,
+        "endColumn": 95
+      },
+      {
+        "ruleId": "no-extra-parens",
+        "message": "Unnecessary parentheses around expression.",
+        "line": 24,
+        "column": 54,
+        "endLine": 24,
+        "endColumn": 55
+      },
+      {
+        "ruleId": "no-param-reassign",
+        "message": "Assignment to function parameter 'acc'.",
+        "line": 24,
+        "column": 55,
+        "endLine": 24,
+        "endColumn": 58
+      },
+      {
+        "ruleId": "space-in-parens",
+        "message": "There should be no space before this paren.",
+        "line": 24,
+        "column": 85,
+        "endLine": 24,
+        "endColumn": 86
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 24,
+        "column": 88,
+        "endLine": 24,
+        "endColumn": 89
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 24,
+        "column": 95,
+        "endLine": 25,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 94. Maximum allowed is 80.",
+        "line": 25,
+        "column": 1,
+        "endLine": 25,
+        "endColumn": 95
+      },
+      {
+        "ruleId": "no-extra-parens",
+        "message": "Unnecessary parentheses around expression.",
+        "line": 25,
+        "column": 54,
+        "endLine": 25,
+        "endColumn": 55
+      },
+      {
+        "ruleId": "no-param-reassign",
+        "message": "Assignment to function parameter 'acc'.",
+        "line": 25,
+        "column": 55,
+        "endLine": 25,
+        "endColumn": 58
+      },
+      {
+        "ruleId": "space-in-parens",
+        "message": "There should be no space before this paren.",
+        "line": 25,
+        "column": 85,
+        "endLine": 25,
+        "endColumn": 86
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 25,
+        "column": 88,
+        "endLine": 25,
+        "endColumn": 89
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 25,
+        "column": 95,
+        "endLine": 26,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 92. Maximum allowed is 80.",
+        "line": 26,
+        "column": 1,
+        "endLine": 26,
+        "endColumn": 93
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'c' is too short (< 2).",
+        "line": 26,
+        "column": 37,
+        "endLine": 26,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "no-extra-parens",
+        "message": "Unnecessary parentheses around expression.",
+        "line": 26,
+        "column": 43,
+        "endLine": 26,
+        "endColumn": 44
+      },
+      {
+        "ruleId": "no-param-reassign",
+        "message": "Assignment to function parameter 'acc'.",
+        "line": 26,
+        "column": 44,
+        "endLine": 26,
+        "endColumn": 47
+      },
+      {
+        "ruleId": "space-in-parens",
+        "message": "There should be no space before this paren.",
+        "line": 26,
+        "column": 83,
+        "endLine": 26,
+        "endColumn": 84
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 26,
+        "column": 86,
+        "endLine": 26,
+        "endColumn": 87
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 26,
+        "column": 93,
+        "endLine": 27,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 112. Maximum allowed is 80.",
+        "line": 27,
+        "column": 1,
+        "endLine": 27,
+        "endColumn": 113
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'd' is too short (< 2).",
+        "line": 27,
+        "column": 37,
+        "endLine": 27,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "no-extra-parens",
+        "message": "Unnecessary parentheses around expression.",
+        "line": 27,
+        "column": 43,
+        "endLine": 27,
+        "endColumn": 44
+      },
+      {
+        "ruleId": "no-param-reassign",
+        "message": "Assignment to function parameter 'acc'.",
+        "line": 27,
+        "column": 44,
+        "endLine": 27,
+        "endColumn": 47
+      },
+      {
+        "ruleId": "require-unicode-regexp",
+        "message": "Use the 'u' flag.",
+        "line": 27,
+        "column": 79,
+        "endLine": 27,
+        "endColumn": 84
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 27,
+        "column": 85,
+        "endLine": 27,
+        "endColumn": 86
+      },
+      {
+        "ruleId": "space-in-parens",
+        "message": "There should be no space before this paren.",
+        "line": 27,
+        "column": 103,
+        "endLine": 27,
+        "endColumn": 104
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 27,
+        "column": 106,
+        "endLine": 27,
+        "endColumn": 107
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 27,
+        "column": 113,
+        "endLine": 28,
+        "endColumn": 1
+      }
+    ]
+  },
+  {
+    "filePath": "/output/nuxt/plugin.template.js",
+    "messages": [
+      {
+        "ruleId": "import/no-duplicates",
+        "message": "'bootstrap-vue' imported multiple times.",
+        "line": 4,
+        "column": 26,
+        "endLine": 4,
+        "endColumn": 41
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+        "line": 12,
+        "column": 3,
+        "endLine": 12,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+        "line": 13,
+        "column": 3,
+        "endLine": 13,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+        "line": 14,
+        "column": 3,
+        "endLine": 14,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+        "line": 15,
+        "column": 3,
+        "endLine": 15,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
+        "line": 16,
+        "column": 3,
+        "endLine": 16,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected relative indentation of 2 spaces but found 0 spaces.",
+        "line": 17,
+        "column": 3,
+        "endLine": 17,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "import/no-duplicates",
+        "message": "'bootstrap-vue' imported multiple times.",
+        "line": 18,
+        "column": 8,
+        "endLine": 18,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "lodash-template/template-tag-spacing",
+        "message": "Expected 1 space after `<%`, but 3 spaces found.",
+        "line": 20,
+        "column": 1,
+        "endLine": 20,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'BVConfigPlugin' is not defined.",
+        "line": 21,
+        "column": 9,
+        "endLine": 21,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "lodash-template/template-tag-spacing",
+        "message": "Expected 1 space after `<%`, but 3 spaces found.",
+        "line": 22,
+        "column": 1,
+        "endLine": 22,
+        "endColumn": 3
+      }
+    ]
+  }
+]

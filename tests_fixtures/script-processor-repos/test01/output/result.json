@@ -1,0 +1,180 @@
+[
+  {
+    "filePath": "/output/test1.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'a' is not defined.",
+        "line": 1,
+        "column": 8,
+        "endLine": 1,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'v' is too short (< 2).",
+        "line": 2,
+        "column": 7,
+        "endLine": 2,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'v' is assigned a value but never used.",
+        "line": 2,
+        "column": 7,
+        "endLine": 2,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 2,
+        "column": 11,
+        "endLine": 2,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 2,
+        "column": 14,
+        "endLine": 3,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'v' is too short (< 2).",
+        "line": 4,
+        "column": 7,
+        "endLine": 4,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'v' is assigned a value but never used.",
+        "line": 4,
+        "column": 7,
+        "endLine": 4,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 4,
+        "column": 11,
+        "endLine": 4,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 4,
+        "column": 14,
+        "endLine": 5,
+        "endColumn": 1
+      }
+    ]
+  },
+  {
+    "filePath": "/output/test2.js",
+    "messages": [
+      {
+        "ruleId": "capitalized-comments",
+        "message": "Comments should not begin with a lowercase character.",
+        "line": 4,
+        "column": 1,
+        "endLine": 4,
+        "endColumn": 59
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'obj' is assigned a value but never used.",
+        "line": 5,
+        "column": 7,
+        "endLine": 5,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "no-multi-spaces",
+        "message": "Multiple spaces found before '='.",
+        "line": 5,
+        "column": 10,
+        "endLine": 5,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "lodash-template/prefer-escape-template-interpolations",
+        "message": "The escape micro-template interpolation is preferable.",
+        "line": 5,
+        "column": 16,
+        "endLine": 5,
+        "endColumn": 49
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'param' is not defined.",
+        "line": 5,
+        "column": 35,
+        "endLine": 5,
+        "endColumn": 40
+      },
+      {
+        "ruleId": "lodash-template/no-multi-spaces-in-scriptlet",
+        "message": "Multiple spaces found before `)`.",
+        "line": 5,
+        "column": 40,
+        "endLine": 5,
+        "endColumn": 45
+      },
+      {
+        "ruleId": "space-in-parens",
+        "message": "There should be no space before this paren.",
+        "line": 5,
+        "column": 40,
+        "endLine": 5,
+        "endColumn": 45
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 5,
+        "column": 49,
+        "endLine": 6,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "multiline-comment-style",
+        "message": "Expected a block comment instead of consecutive line comments.",
+        "line": 6,
+        "column": 1,
+        "endLine": 11,
+        "endColumn": 116
+      },
+      {
+        "ruleId": "no-trailing-spaces",
+        "message": "Trailing spaces not allowed.",
+        "line": 6,
+        "column": 45,
+        "endLine": 6,
+        "endColumn": 46
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 90. Maximum allowed is 80.",
+        "line": 8,
+        "column": 1,
+        "endLine": 8,
+        "endColumn": 91
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 115. Maximum allowed is 80.",
+        "line": 11,
+        "column": 1,
+        "endLine": 11,
+        "endColumn": 116
+      }
+    ]
+  }
+]

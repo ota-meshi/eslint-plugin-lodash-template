@@ -1,0 +1,92 @@
+[
+  {
+    "filePath": "/output-with-fix/test1.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'a' is not defined.",
+        "line": 1,
+        "column": 8,
+        "endLine": 1,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'v' is too short (< 2).",
+        "line": 2,
+        "column": 7,
+        "endLine": 2,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'v' is assigned a value but never used.",
+        "line": 2,
+        "column": 7,
+        "endLine": 2,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'v' is too short (< 2).",
+        "line": 4,
+        "column": 7,
+        "endLine": 4,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'v' is assigned a value but never used.",
+        "line": 4,
+        "column": 7,
+        "endLine": 4,
+        "endColumn": 8
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/test2.js",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'obj' is assigned a value but never used.",
+        "line": 5,
+        "column": 7,
+        "endLine": 5,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "lodash-template/prefer-escape-template-interpolations",
+        "message": "The escape micro-template interpolation is preferable.",
+        "line": 5,
+        "column": 13,
+        "endLine": 5,
+        "endColumn": 41
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'param' is not defined.",
+        "line": 5,
+        "column": 32,
+        "endLine": 5,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 90. Maximum allowed is 80.",
+        "line": 10,
+        "column": 1,
+        "endLine": 10,
+        "endColumn": 91
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 115. Maximum allowed is 80.",
+        "line": 13,
+        "column": 1,
+        "endLine": 13,
+        "endColumn": 116
+      }
+    ]
+  }
+]

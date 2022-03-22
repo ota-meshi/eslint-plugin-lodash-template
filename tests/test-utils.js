@@ -23,6 +23,10 @@ function listupFiles(dirpath) {
 }
 
 module.exports = {
+    isUpdateMode() {
+        // eslint-disable-next-line no-process-env -- test
+        return Boolean(process.env.UPDATE_FIXTURE)
+    },
     writeFile(expectFilepath, content) {
         // eslint-disable-next-line no-process-env -- test
         if (process.env.UPDATE_FIXTURE) {

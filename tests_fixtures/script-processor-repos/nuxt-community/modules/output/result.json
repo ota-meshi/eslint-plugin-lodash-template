@@ -1,0 +1,3846 @@
+[
+  {
+    "filePath": "/output/packages/google-tag-manager/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "strict",
+        "message": "'use strict' is unnecessary inside of modules.",
+        "line": 1,
+        "column": 1,
+        "endLine": 1,
+        "endColumn": 13
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 1,
+        "column": 13,
+        "endLine": 2,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'root' found.",
+        "line": 4,
+        "column": 5,
+        "endLine": 4,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'parserOptions' found.",
+        "line": 5,
+        "column": 5,
+        "endLine": 8,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'ecmaVersion' found.",
+        "line": 6,
+        "column": 9,
+        "endLine": 6,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'sourceType' found.",
+        "line": 7,
+        "column": 9,
+        "endLine": 7,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 7,
+        "column": 29,
+        "endLine": 7,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'env' found.",
+        "line": 9,
+        "column": 5,
+        "endLine": 12,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'browser' found.",
+        "line": 10,
+        "column": 9,
+        "endLine": 10,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'es6' found.",
+        "line": 11,
+        "column": 9,
+        "endLine": 11,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 11,
+        "column": 18,
+        "endLine": 11,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'extends' found.",
+        "line": 13,
+        "column": 5,
+        "endLine": 13,
+        "endColumn": 58
+      },
+      {
+        "ruleId": "array-element-newline",
+        "message": "There should be a linebreak after this element.",
+        "line": 13,
+        "column": 28,
+        "endLine": 13,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'overrides' found.",
+        "line": 14,
+        "column": 5,
+        "endLine": 33,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'files' found.",
+        "line": 16,
+        "column": 13,
+        "endLine": 16,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'processor' found.",
+        "line": 17,
+        "column": 13,
+        "endLine": 17,
+        "endColumn": 48
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 18,
+        "column": 13,
+        "endLine": 18,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'parserOptions' found.",
+        "line": 18,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'ecmaVersion' found.",
+        "line": 19,
+        "column": 17,
+        "endLine": 19,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'sourceType' found.",
+        "line": 20,
+        "column": 17,
+        "endLine": 20,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 20,
+        "column": 37,
+        "endLine": 20,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 22,
+        "column": 13,
+        "endLine": 22,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'globals' found.",
+        "line": 22,
+        "column": 13,
+        "endLine": 27,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'options' found.",
+        "line": 23,
+        "column": 17,
+        "endLine": 23,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'serialize' found.",
+        "line": 24,
+        "column": 17,
+        "endLine": 24,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 25,
+        "column": 17,
+        "endLine": 25,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'process' found.",
+        "line": 25,
+        "column": 17,
+        "endLine": 25,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'require' found.",
+        "line": 26,
+        "column": 17,
+        "endLine": 26,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 26,
+        "column": 30,
+        "endLine": 26,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'rules' found.",
+        "line": 28,
+        "column": 13,
+        "endLine": 31,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 30,
+        "column": 17,
+        "endLine": 30,
+        "endColumn": 72
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 30,
+        "column": 79,
+        "endLine": 30,
+        "endColumn": 80
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 31,
+        "column": 14,
+        "endLine": 31,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 32,
+        "column": 10,
+        "endLine": 32,
+        "endColumn": 11
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 33,
+        "column": 6,
+        "endLine": 33,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 34,
+        "column": 2,
+        "endLine": 35,
+        "endColumn": 1
+      }
+    ]
+  },
+  {
+    "filePath": "/output/packages/google-tag-manager/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 3,
+        "column": 11,
+        "endLine": 4,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 4,
+        "column": 1,
+        "endLine": 4,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "space-before-function-paren",
+        "message": "Missing space before function parentheses.",
+        "line": 4,
+        "column": 14,
+        "endLine": 4,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 4,
+        "column": 29,
+        "endLine": 5,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 5,
+        "column": 1,
+        "endLine": 5,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 5,
+        "column": 19,
+        "endLine": 6,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 6,
+        "column": 1,
+        "endLine": 6,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 6,
+        "column": 27,
+        "endLine": 7,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 6,
+        "column": 27,
+        "endLine": 7,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 7,
+        "column": 1,
+        "endLine": 7,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 8,
+        "column": 1,
+        "endLine": 8,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "lines-between-class-members",
+        "message": "Expected blank line between class members.",
+        "line": 8,
+        "column": 3,
+        "endLine": 19,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "space-before-function-paren",
+        "message": "Missing space before function parentheses.",
+        "line": 8,
+        "column": 7,
+        "endLine": 8,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 8,
+        "column": 10,
+        "endLine": 9,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 9,
+        "column": 1,
+        "endLine": 9,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 9,
+        "column": 66,
+        "endLine": 10,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 11,
+        "column": 1,
+        "endLine": 11,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 12 spaces but found 6.",
+        "line": 12,
+        "column": 1,
+        "endLine": 12,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'event' found.",
+        "line": 12,
+        "column": 7,
+        "endLine": 12,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 12,
+        "column": 14,
+        "endLine": 12,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 12 spaces but found 6.",
+        "line": 13,
+        "column": 1,
+        "endLine": 13,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 13,
+        "column": 7,
+        "endLine": 13,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 14,
+        "column": 1,
+        "endLine": 14,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 14,
+        "column": 7,
+        "endLine": 15,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 16,
+        "column": 1,
+        "endLine": 16,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 91. Maximum allowed is 80.",
+        "line": 16,
+        "column": 1,
+        "endLine": 16,
+        "endColumn": 92
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 16,
+        "column": 91,
+        "endLine": 17,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 12 spaces but found 6.",
+        "line": 17,
+        "column": 1,
+        "endLine": 17,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 17,
+        "column": 30,
+        "endLine": 18,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 17,
+        "column": 30,
+        "endLine": 18,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 18,
+        "column": 1,
+        "endLine": 18,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 18,
+        "column": 6,
+        "endLine": 19,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 19,
+        "column": 1,
+        "endLine": 19,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 21,
+        "column": 1,
+        "endLine": 21,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "space-before-function-paren",
+        "message": "Missing space before function parentheses.",
+        "line": 21,
+        "column": 19,
+        "endLine": 21,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 21,
+        "column": 22,
+        "endLine": 22,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 22,
+        "column": 1,
+        "endLine": 22,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'from' is defined but never used.",
+        "line": 22,
+        "column": 40,
+        "endLine": 22,
+        "endColumn": 44
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 22,
+        "column": 49,
+        "endLine": 23,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 12 spaces but found 6.",
+        "line": 23,
+        "column": 1,
+        "endLine": 23,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 23,
+        "column": 24,
+        "endLine": 24,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 16 spaces but found 8.",
+        "line": 24,
+        "column": 1,
+        "endLine": 24,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 137. Maximum allowed is 80.",
+        "line": 24,
+        "column": 1,
+        "endLine": 24,
+        "endColumn": 138
+      },
+      {
+        "ruleId": "object-curly-spacing",
+        "message": "There should be no space after '{'.",
+        "line": 24,
+        "column": 52,
+        "endLine": 24,
+        "endColumn": 53
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'event' found.",
+        "line": 24,
+        "column": 53,
+        "endLine": 24,
+        "endColumn": 71
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 24,
+        "column": 60,
+        "endLine": 24,
+        "endColumn": 71
+      },
+      {
+        "ruleId": "object-property-newline",
+        "message": "Object properties must go on a new line.",
+        "line": 24,
+        "column": 73,
+        "endLine": 24,
+        "endColumn": 81
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'pageType' found.",
+        "line": 24,
+        "column": 73,
+        "endLine": 24,
+        "endColumn": 93
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 24,
+        "column": 83,
+        "endLine": 24,
+        "endColumn": 93
+      },
+      {
+        "ruleId": "object-property-newline",
+        "message": "Object properties must go on a new line.",
+        "line": 24,
+        "column": 95,
+        "endLine": 24,
+        "endColumn": 102
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'pageUrl' found.",
+        "line": 24,
+        "column": 95,
+        "endLine": 24,
+        "endColumn": 115
+      },
+      {
+        "ruleId": "object-property-newline",
+        "message": "Object properties must go on a new line.",
+        "line": 24,
+        "column": 117,
+        "endLine": 24,
+        "endColumn": 126
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'routeName' found.",
+        "line": 24,
+        "column": 117,
+        "endLine": 24,
+        "endColumn": 135
+      },
+      {
+        "ruleId": "object-curly-spacing",
+        "message": "There should be no space before '}'.",
+        "line": 24,
+        "column": 135,
+        "endLine": 24,
+        "endColumn": 136
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 24,
+        "column": 138,
+        "endLine": 25,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 24,
+        "column": 138,
+        "endLine": 25,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 12 spaces but found 6.",
+        "line": 25,
+        "column": 1,
+        "endLine": 25,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 25,
+        "column": 9,
+        "endLine": 25,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 0.",
+        "line": 25,
+        "column": 10,
+        "endLine": 25,
+        "endColumn": 11
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 25,
+        "column": 12,
+        "endLine": 26,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 25,
+        "column": 12,
+        "endLine": 26,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 26,
+        "column": 1,
+        "endLine": 26,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 26,
+        "column": 7,
+        "endLine": 27,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 26,
+        "column": 7,
+        "endLine": 27,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 27,
+        "column": 1,
+        "endLine": 27,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 29,
+        "column": 1,
+        "endLine": 29,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "space-before-function-paren",
+        "message": "Missing space before function parentheses.",
+        "line": 29,
+        "column": 12,
+        "endLine": 29,
+        "endColumn": 13
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 29,
+        "column": 18,
+        "endLine": 30,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 30,
+        "column": 1,
+        "endLine": 30,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 30,
+        "column": 9,
+        "endLine": 31,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 12 spaces but found 6.",
+        "line": 31,
+        "column": 1,
+        "endLine": 31,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 31,
+        "column": 51,
+        "endLine": 32,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 16 spaces but found 8.",
+        "line": 32,
+        "column": 1,
+        "endLine": 32,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 32,
+        "column": 25,
+        "endLine": 32,
+        "endColumn": 48
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 32,
+        "column": 49,
+        "endLine": 33,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 32,
+        "column": 49,
+        "endLine": 33,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 12 spaces but found 6.",
+        "line": 33,
+        "column": 1,
+        "endLine": 33,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 12 spaces but found 6.",
+        "line": 34,
+        "column": 1,
+        "endLine": 34,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 34,
+        "column": 26,
+        "endLine": 34,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 34,
+        "column": 36,
+        "endLine": 35,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 16 spaces but found 8.",
+        "line": 35,
+        "column": 1,
+        "endLine": 35,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 35,
+        "column": 25,
+        "endLine": 35,
+        "endColumn": 52
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 35,
+        "column": 53,
+        "endLine": 36,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 35,
+        "column": 53,
+        "endLine": 36,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 12 spaces but found 6.",
+        "line": 36,
+        "column": 1,
+        "endLine": 36,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 12 spaces but found 6.",
+        "line": 37,
+        "column": 1,
+        "endLine": 37,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "no-prototype-builtins",
+        "message": "Do not access Object.prototype method 'hasOwnProperty' from target object.",
+        "line": 37,
+        "column": 16,
+        "endLine": 37,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 37,
+        "column": 31,
+        "endLine": 37,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 37,
+        "column": 41,
+        "endLine": 38,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 16 spaces but found 8.",
+        "line": 38,
+        "column": 1,
+        "endLine": 38,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 38,
+        "column": 25,
+        "endLine": 38,
+        "endColumn": 49
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 38,
+        "column": 50,
+        "endLine": 39,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 38,
+        "column": 50,
+        "endLine": 39,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 12 spaces but found 6.",
+        "line": 39,
+        "column": 1,
+        "endLine": 39,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 12 spaces but found 6.",
+        "line": 40,
+        "column": 1,
+        "endLine": 40,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 40,
+        "column": 43,
+        "endLine": 41,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 40,
+        "column": 43,
+        "endLine": 41,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 41,
+        "column": 1,
+        "endLine": 41,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 41,
+        "column": 19,
+        "endLine": 42,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 12 spaces but found 6.",
+        "line": 42,
+        "column": 1,
+        "endLine": 42,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 42,
+        "column": 7,
+        "endLine": 42,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 42,
+        "column": 21,
+        "endLine": 42,
+        "endColumn": 36
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 42,
+        "column": 37,
+        "endLine": 42,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 42,
+        "column": 42,
+        "endLine": 43,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 42,
+        "column": 42,
+        "endLine": 43,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 43,
+        "column": 1,
+        "endLine": 43,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 43,
+        "column": 6,
+        "endLine": 44,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 44,
+        "column": 1,
+        "endLine": 44,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 46,
+        "column": 1,
+        "endLine": 46,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "class-methods-use-this",
+        "message": "Expected 'this' to be used by class method 'hasDNT'.",
+        "line": 46,
+        "column": 3,
+        "endLine": 46,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "space-before-function-paren",
+        "message": "Missing space before function parentheses.",
+        "line": 46,
+        "column": 9,
+        "endLine": 46,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 46,
+        "column": 12,
+        "endLine": 47,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 47,
+        "column": 1,
+        "endLine": 47,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 47,
+        "column": 34,
+        "endLine": 47,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 48,
+        "column": 32,
+        "endLine": 48,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 49,
+        "column": 32,
+        "endLine": 49,
+        "endColumn": 35
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 50,
+        "column": 34,
+        "endLine": 50,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 119. Maximum allowed is 80.",
+        "line": 51,
+        "column": 1,
+        "endLine": 51,
+        "endColumn": 120
+      },
+      {
+        "ruleId": "no-extra-parens",
+        "message": "Unnecessary parentheses around expression.",
+        "line": 51,
+        "column": 7,
+        "endLine": 51,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 51,
+        "column": 120,
+        "endLine": 52,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 51,
+        "column": 120,
+        "endLine": 52,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 52,
+        "column": 1,
+        "endLine": 52,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 52,
+        "column": 4,
+        "endLine": 53,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "func-names",
+        "message": "Unexpected unnamed function.",
+        "line": 55,
+        "column": 16,
+        "endLine": 55,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "space-before-function-paren",
+        "message": "Missing space before function parentheses.",
+        "line": 55,
+        "column": 24,
+        "endLine": 55,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 55,
+        "column": 38,
+        "endLine": 56,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 56,
+        "column": 1,
+        "endLine": 56,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 56,
+        "column": 49,
+        "endLine": 57,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 58,
+        "column": 1,
+        "endLine": 58,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 59,
+        "column": 1,
+        "endLine": 59,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 59,
+        "column": 28,
+        "endLine": 59,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 59,
+        "column": 37,
+        "endLine": 60,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 60,
+        "column": 1,
+        "endLine": 60,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 60,
+        "column": 10,
+        "endLine": 60,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 60,
+        "column": 16,
+        "endLine": 60,
+        "endColumn": 17
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 60,
+        "column": 22,
+        "endLine": 61,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 62,
+        "column": 1,
+        "endLine": 62,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 62,
+        "column": 14,
+        "endLine": 63,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 62,
+        "column": 14,
+        "endLine": 63,
+        "endColumn": 1
+      }
+    ]
+  },
+  {
+    "filePath": "/output/packages/google-tag-manager/plugin.js",
+    "messages": [
+      {
+        "ruleId": "space-before-function-paren",
+        "message": "Missing space before function parentheses.",
+        "line": 4,
+        "column": 14,
+        "endLine": 4,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "lines-between-class-members",
+        "message": "Expected blank line between class members.",
+        "line": 8,
+        "column": 3,
+        "endLine": 19,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "space-before-function-paren",
+        "message": "Missing space before function parentheses.",
+        "line": 8,
+        "column": 7,
+        "endLine": 8,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "space-before-function-paren",
+        "message": "Missing space before function parentheses.",
+        "line": 21,
+        "column": 19,
+        "endLine": 21,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "space-before-function-paren",
+        "message": "Missing space before function parentheses.",
+        "line": 29,
+        "column": 12,
+        "endLine": 29,
+        "endColumn": 13
+      },
+      {
+        "ruleId": "no-prototype-builtins",
+        "message": "Do not access Object.prototype method 'hasOwnProperty' from target object.",
+        "line": 37,
+        "column": 16,
+        "endLine": 37,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 42,
+        "column": 7,
+        "endLine": 42,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "space-before-function-paren",
+        "message": "Missing space before function parentheses.",
+        "line": 46,
+        "column": 9,
+        "endLine": 46,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "space-before-function-paren",
+        "message": "Missing space before function parentheses.",
+        "line": 55,
+        "column": 24,
+        "endLine": 55,
+        "endColumn": 25
+      }
+    ]
+  },
+  {
+    "filePath": "/output/packages/markdownit/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "strict",
+        "message": "'use strict' is unnecessary inside of modules.",
+        "line": 1,
+        "column": 1,
+        "endLine": 1,
+        "endColumn": 13
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 1,
+        "column": 13,
+        "endLine": 2,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'root' found.",
+        "line": 4,
+        "column": 5,
+        "endLine": 4,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'parserOptions' found.",
+        "line": 5,
+        "column": 5,
+        "endLine": 8,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'ecmaVersion' found.",
+        "line": 6,
+        "column": 9,
+        "endLine": 6,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'sourceType' found.",
+        "line": 7,
+        "column": 9,
+        "endLine": 7,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 7,
+        "column": 29,
+        "endLine": 7,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'env' found.",
+        "line": 9,
+        "column": 5,
+        "endLine": 12,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'browser' found.",
+        "line": 10,
+        "column": 9,
+        "endLine": 10,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'es6' found.",
+        "line": 11,
+        "column": 9,
+        "endLine": 11,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 11,
+        "column": 18,
+        "endLine": 11,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'extends' found.",
+        "line": 13,
+        "column": 5,
+        "endLine": 13,
+        "endColumn": 58
+      },
+      {
+        "ruleId": "array-element-newline",
+        "message": "There should be a linebreak after this element.",
+        "line": 13,
+        "column": 28,
+        "endLine": 13,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'overrides' found.",
+        "line": 14,
+        "column": 5,
+        "endLine": 33,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'files' found.",
+        "line": 16,
+        "column": 13,
+        "endLine": 16,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'processor' found.",
+        "line": 17,
+        "column": 13,
+        "endLine": 17,
+        "endColumn": 48
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 18,
+        "column": 13,
+        "endLine": 18,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'parserOptions' found.",
+        "line": 18,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'ecmaVersion' found.",
+        "line": 19,
+        "column": 17,
+        "endLine": 19,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'sourceType' found.",
+        "line": 20,
+        "column": 17,
+        "endLine": 20,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 20,
+        "column": 37,
+        "endLine": 20,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 22,
+        "column": 13,
+        "endLine": 22,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'globals' found.",
+        "line": 22,
+        "column": 13,
+        "endLine": 27,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'options' found.",
+        "line": 23,
+        "column": 17,
+        "endLine": 23,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'serialize' found.",
+        "line": 24,
+        "column": 17,
+        "endLine": 24,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 25,
+        "column": 17,
+        "endLine": 25,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'process' found.",
+        "line": 25,
+        "column": 17,
+        "endLine": 25,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'require' found.",
+        "line": 26,
+        "column": 17,
+        "endLine": 26,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 26,
+        "column": 30,
+        "endLine": 26,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'rules' found.",
+        "line": 28,
+        "column": 13,
+        "endLine": 31,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 30,
+        "column": 17,
+        "endLine": 30,
+        "endColumn": 72
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 30,
+        "column": 79,
+        "endLine": 30,
+        "endColumn": 80
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 31,
+        "column": 14,
+        "endLine": 31,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 32,
+        "column": 10,
+        "endLine": 32,
+        "endColumn": 11
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 33,
+        "column": 6,
+        "endLine": 33,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 34,
+        "column": 2,
+        "endLine": 35,
+        "endColumn": 1
+      }
+    ]
+  },
+  {
+    "filePath": "/output/packages/markdownit/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 1,
+        "column": 24,
+        "endLine": 1,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 1,
+        "column": 37,
+        "endLine": 2,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "object-curly-spacing",
+        "message": "There should be no space after '{'.",
+        "line": 3,
+        "column": 18,
+        "endLine": 3,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'app' is defined but never used.",
+        "line": 3,
+        "column": 19,
+        "endLine": 3,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "object-curly-spacing",
+        "message": "There should be no space before '}'.",
+        "line": 3,
+        "column": 22,
+        "endLine": 3,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 3,
+        "column": 37,
+        "endLine": 4,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected indentation of 2 spaces but found 0 spaces.",
+        "line": 5,
+        "column": 1,
+        "endLine": 5,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 5,
+        "column": 34,
+        "endLine": 6,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected indentation of 2 spaces but found 0 spaces.",
+        "line": 6,
+        "column": 1,
+        "endLine": 6,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 6,
+        "column": 19,
+        "endLine": 7,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected indentation of 2 spaces but found 0 spaces.",
+        "line": 7,
+        "column": 1,
+        "endLine": 7,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 7,
+        "column": 29,
+        "endLine": 8,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected indentation of 2 spaces but found 0 spaces.",
+        "line": 8,
+        "column": 1,
+        "endLine": 8,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "multiline-ternary",
+        "message": "Expected newline between test and consequent of ternary expression.",
+        "line": 8,
+        "column": 11,
+        "endLine": 8,
+        "endColumn": 27
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 8,
+        "column": 11,
+        "endLine": 8,
+        "endColumn": 49
+      },
+      {
+        "ruleId": "multiline-ternary",
+        "message": "Expected newline between consequent and alternate of ternary expression.",
+        "line": 8,
+        "column": 30,
+        "endLine": 8,
+        "endColumn": 39
+      },
+      {
+        "ruleId": "no-undefined",
+        "message": "Unexpected use of undefined.",
+        "line": 8,
+        "column": 30,
+        "endLine": 8,
+        "endColumn": 39
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 8,
+        "column": 49,
+        "endLine": 9,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 10,
+        "column": 1,
+        "endLine": 10,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 10,
+        "column": 44,
+        "endLine": 11,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 0.",
+        "line": 11,
+        "column": 1,
+        "endLine": 11,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 12,
+        "column": 8,
+        "endLine": 12,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 13,
+        "column": 35,
+        "endLine": 13,
+        "endColumn": 41
+      },
+      {
+        "ruleId": "multiline-ternary",
+        "message": "Expected newline between test and consequent of ternary expression.",
+        "line": 14,
+        "column": 20,
+        "endLine": 14,
+        "endColumn": 27
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 14,
+        "column": 20,
+        "endLine": 14,
+        "endColumn": 52
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 14,
+        "column": 30,
+        "endLine": 14,
+        "endColumn": 36
+      },
+      {
+        "ruleId": "multiline-ternary",
+        "message": "Expected newline between consequent and alternate of ternary expression.",
+        "line": 14,
+        "column": 30,
+        "endLine": 14,
+        "endColumn": 44
+      },
+      {
+        "ruleId": "space-infix-ops",
+        "message": "Operator ':' must be spaced.",
+        "line": 14,
+        "column": 44,
+        "endLine": 14,
+        "endColumn": 45
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 14,
+        "column": 46,
+        "endLine": 14,
+        "endColumn": 52
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 14,
+        "column": 52,
+        "endLine": 15,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "multiline-ternary",
+        "message": "Expected newline between test and consequent of ternary expression.",
+        "line": 15,
+        "column": 18,
+        "endLine": 15,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 15,
+        "column": 18,
+        "endLine": 15,
+        "endColumn": 39
+      },
+      {
+        "ruleId": "multiline-ternary",
+        "message": "Expected newline between consequent and alternate of ternary expression.",
+        "line": 15,
+        "column": 28,
+        "endLine": 15,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 15,
+        "column": 28,
+        "endLine": 15,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 15,
+        "column": 39,
+        "endLine": 16,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 17,
+        "column": 1,
+        "endLine": 17,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 89. Maximum allowed is 80.",
+        "line": 17,
+        "column": 1,
+        "endLine": 17,
+        "endColumn": 90
+      },
+      {
+        "ruleId": "keyword-spacing",
+        "message": "Expected space(s) after \"for\".",
+        "line": 17,
+        "column": 37,
+        "endLine": 17,
+        "endColumn": 40
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'opt' is not defined.",
+        "line": 17,
+        "column": 41,
+        "endLine": 17,
+        "endColumn": 44
+      },
+      {
+        "ruleId": "brace-style",
+        "message": "Statement inside of curly braces should be on next line.",
+        "line": 17,
+        "column": 54,
+        "endLine": 17,
+        "endColumn": 55
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 17,
+        "column": 59,
+        "endLine": 17,
+        "endColumn": 60
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'opt' is not defined.",
+        "line": 17,
+        "column": 74,
+        "endLine": 17,
+        "endColumn": 77
+      },
+      {
+        "ruleId": "brace-style",
+        "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
+        "line": 17,
+        "column": 85,
+        "endLine": 17,
+        "endColumn": 86
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 17,
+        "column": 90,
+        "endLine": 18,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 0.",
+        "line": 18,
+        "column": 1,
+        "endLine": 18,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 19,
+        "column": 1,
+        "endLine": 19,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 19,
+        "column": 10,
+        "endLine": 19,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 19,
+        "column": 15,
+        "endLine": 19,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 19,
+        "column": 19,
+        "endLine": 20,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 19,
+        "column": 19,
+        "endLine": 20,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 20,
+        "column": 2,
+        "endLine": 21,
+        "endColumn": 1
+      }
+    ]
+  },
+  {
+    "filePath": "/output/packages/markdownit/plugin.js",
+    "messages": [
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected indentation of 2 spaces but found 0 spaces.",
+        "line": 5,
+        "column": 1,
+        "endLine": 5,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected indentation of 2 spaces but found 0 spaces.",
+        "line": 6,
+        "column": 1,
+        "endLine": 6,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected indentation of 2 spaces but found 0 spaces.",
+        "line": 7,
+        "column": 1,
+        "endLine": 7,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "lodash-template/scriptlet-indent",
+        "message": "Expected indentation of 2 spaces but found 0 spaces.",
+        "line": 8,
+        "column": 1,
+        "endLine": 8,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 2 spaces but found 0.",
+        "line": 11,
+        "column": 1,
+        "endLine": 11,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 12,
+        "column": 8,
+        "endLine": 12,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 13,
+        "column": 35,
+        "endLine": 13,
+        "endColumn": 41
+      },
+      {
+        "ruleId": "semi",
+        "message": "Extra semicolon.",
+        "line": 13,
+        "column": 42,
+        "endLine": 13,
+        "endColumn": 43
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 14,
+        "column": 30,
+        "endLine": 14,
+        "endColumn": 36
+      },
+      {
+        "ruleId": "space-infix-ops",
+        "message": "Operator ':' must be spaced.",
+        "line": 14,
+        "column": 44,
+        "endLine": 14,
+        "endColumn": 45
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 14,
+        "column": 46,
+        "endLine": 14,
+        "endColumn": 52
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 15,
+        "column": 28,
+        "endLine": 15,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "keyword-spacing",
+        "message": "Expected space(s) after \"for\".",
+        "line": 17,
+        "column": 37,
+        "endLine": 17,
+        "endColumn": 40
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'opt' is not defined.",
+        "line": 17,
+        "column": 41,
+        "endLine": 17,
+        "endColumn": 44
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'opt' is not defined.",
+        "line": 17,
+        "column": 74,
+        "endLine": 17,
+        "endColumn": 77
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 2 spaces but found 0.",
+        "line": 18,
+        "column": 1,
+        "endLine": 18,
+        "endColumn": 1
+      }
+    ]
+  },
+  {
+    "filePath": "/output/packages/toast/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "strict",
+        "message": "'use strict' is unnecessary inside of modules.",
+        "line": 1,
+        "column": 1,
+        "endLine": 1,
+        "endColumn": 13
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 1,
+        "column": 13,
+        "endLine": 2,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'root' found.",
+        "line": 4,
+        "column": 5,
+        "endLine": 4,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'parserOptions' found.",
+        "line": 5,
+        "column": 5,
+        "endLine": 8,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'ecmaVersion' found.",
+        "line": 6,
+        "column": 9,
+        "endLine": 6,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'sourceType' found.",
+        "line": 7,
+        "column": 9,
+        "endLine": 7,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 7,
+        "column": 29,
+        "endLine": 7,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'env' found.",
+        "line": 9,
+        "column": 5,
+        "endLine": 12,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'browser' found.",
+        "line": 10,
+        "column": 9,
+        "endLine": 10,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'es6' found.",
+        "line": 11,
+        "column": 9,
+        "endLine": 11,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 11,
+        "column": 18,
+        "endLine": 11,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'extends' found.",
+        "line": 13,
+        "column": 5,
+        "endLine": 13,
+        "endColumn": 58
+      },
+      {
+        "ruleId": "array-element-newline",
+        "message": "There should be a linebreak after this element.",
+        "line": 13,
+        "column": 28,
+        "endLine": 13,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'overrides' found.",
+        "line": 14,
+        "column": 5,
+        "endLine": 33,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'files' found.",
+        "line": 16,
+        "column": 13,
+        "endLine": 16,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'processor' found.",
+        "line": 17,
+        "column": 13,
+        "endLine": 17,
+        "endColumn": 48
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 18,
+        "column": 13,
+        "endLine": 18,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'parserOptions' found.",
+        "line": 18,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'ecmaVersion' found.",
+        "line": 19,
+        "column": 17,
+        "endLine": 19,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'sourceType' found.",
+        "line": 20,
+        "column": 17,
+        "endLine": 20,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 20,
+        "column": 37,
+        "endLine": 20,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 22,
+        "column": 13,
+        "endLine": 22,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'globals' found.",
+        "line": 22,
+        "column": 13,
+        "endLine": 27,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'options' found.",
+        "line": 23,
+        "column": 17,
+        "endLine": 23,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'serialize' found.",
+        "line": 24,
+        "column": 17,
+        "endLine": 24,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 25,
+        "column": 17,
+        "endLine": 25,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'process' found.",
+        "line": 25,
+        "column": 17,
+        "endLine": 25,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'require' found.",
+        "line": 26,
+        "column": 17,
+        "endLine": 26,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 26,
+        "column": 30,
+        "endLine": 26,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'rules' found.",
+        "line": 28,
+        "column": 13,
+        "endLine": 31,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 30,
+        "column": 17,
+        "endLine": 30,
+        "endColumn": 72
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 30,
+        "column": 79,
+        "endLine": 30,
+        "endColumn": 80
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 31,
+        "column": 14,
+        "endLine": 31,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 32,
+        "column": 10,
+        "endLine": 32,
+        "endColumn": 11
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 33,
+        "column": 6,
+        "endLine": 33,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 34,
+        "column": 2,
+        "endLine": 35,
+        "endColumn": 1
+      }
+    ]
+  },
+  {
+    "filePath": "/output/packages/toast/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 1,
+        "column": 17,
+        "endLine": 1,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 1,
+        "column": 22,
+        "endLine": 2,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "sort-imports",
+        "message": "Imports should be sorted alphabetically.",
+        "line": 2,
+        "column": 1,
+        "endLine": 2,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 2,
+        "column": 21,
+        "endLine": 2,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 2,
+        "column": 34,
+        "endLine": 3,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 4,
+        "column": 17,
+        "endLine": 4,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 4,
+        "column": 57,
+        "endLine": 5,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 6,
+        "column": 51,
+        "endLine": 7,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "keyword-spacing",
+        "message": "Expected space(s) after \"if\".",
+        "line": 7,
+        "column": 1,
+        "endLine": 7,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 7,
+        "column": 13,
+        "endLine": 8,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 8,
+        "column": 1,
+        "endLine": 8,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "arrow-parens",
+        "message": "Expected parentheses around arrow function argument.",
+        "line": 8,
+        "column": 19,
+        "endLine": 8,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 8,
+        "column": 29,
+        "endLine": 9,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 9,
+        "column": 1,
+        "endLine": 9,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 9,
+        "column": 38,
+        "endLine": 9,
+        "endColumn": 39
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 9,
+        "column": 54,
+        "endLine": 9,
+        "endColumn": 55
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 9,
+        "column": 70,
+        "endLine": 10,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 9,
+        "column": 70,
+        "endLine": 10,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 10,
+        "column": 1,
+        "endLine": 10,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 10,
+        "column": 5,
+        "endLine": 11,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 10,
+        "column": 5,
+        "endLine": 11,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "func-names",
+        "message": "Unexpected unnamed function.",
+        "line": 13,
+        "column": 16,
+        "endLine": 13,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 13,
+        "column": 39,
+        "endLine": 14,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 14,
+        "column": 1,
+        "endLine": 14,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 14,
+        "column": 10,
+        "endLine": 14,
+        "endColumn": 17
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 14,
+        "column": 18,
+        "endLine": 14,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 14,
+        "column": 31,
+        "endLine": 15,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 14,
+        "column": 31,
+        "endLine": 15,
+        "endColumn": 1
+      }
+    ]
+  },
+  {
+    "filePath": "/output/packages/toast/plugin.js",
+    "messages": [
+      {
+        "ruleId": "keyword-spacing",
+        "message": "Expected space(s) after \"if\".",
+        "line": 7,
+        "column": 1,
+        "endLine": 7,
+        "endColumn": 3
+      }
+    ]
+  },
+  {
+    "filePath": "/output/packages/yandex-metrika/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "strict",
+        "message": "'use strict' is unnecessary inside of modules.",
+        "line": 1,
+        "column": 1,
+        "endLine": 1,
+        "endColumn": 13
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 1,
+        "column": 13,
+        "endLine": 2,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'root' found.",
+        "line": 4,
+        "column": 5,
+        "endLine": 4,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'parserOptions' found.",
+        "line": 5,
+        "column": 5,
+        "endLine": 8,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'ecmaVersion' found.",
+        "line": 6,
+        "column": 9,
+        "endLine": 6,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'sourceType' found.",
+        "line": 7,
+        "column": 9,
+        "endLine": 7,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 7,
+        "column": 29,
+        "endLine": 7,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'env' found.",
+        "line": 9,
+        "column": 5,
+        "endLine": 12,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'browser' found.",
+        "line": 10,
+        "column": 9,
+        "endLine": 10,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'es6' found.",
+        "line": 11,
+        "column": 9,
+        "endLine": 11,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 11,
+        "column": 18,
+        "endLine": 11,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'extends' found.",
+        "line": 13,
+        "column": 5,
+        "endLine": 13,
+        "endColumn": 58
+      },
+      {
+        "ruleId": "array-element-newline",
+        "message": "There should be a linebreak after this element.",
+        "line": 13,
+        "column": 28,
+        "endLine": 13,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'overrides' found.",
+        "line": 14,
+        "column": 5,
+        "endLine": 33,
+        "endColumn": 6
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'files' found.",
+        "line": 16,
+        "column": 13,
+        "endLine": 16,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'processor' found.",
+        "line": 17,
+        "column": 13,
+        "endLine": 17,
+        "endColumn": 48
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 18,
+        "column": 13,
+        "endLine": 18,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'parserOptions' found.",
+        "line": 18,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'ecmaVersion' found.",
+        "line": 19,
+        "column": 17,
+        "endLine": 19,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'sourceType' found.",
+        "line": 20,
+        "column": 17,
+        "endLine": 20,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 20,
+        "column": 37,
+        "endLine": 20,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 22,
+        "column": 13,
+        "endLine": 22,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'globals' found.",
+        "line": 22,
+        "column": 13,
+        "endLine": 27,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'options' found.",
+        "line": 23,
+        "column": 17,
+        "endLine": 23,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'serialize' found.",
+        "line": 24,
+        "column": 17,
+        "endLine": 24,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 25,
+        "column": 17,
+        "endLine": 25,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'process' found.",
+        "line": 25,
+        "column": 17,
+        "endLine": 25,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'require' found.",
+        "line": 26,
+        "column": 17,
+        "endLine": 26,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 26,
+        "column": 30,
+        "endLine": 26,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'rules' found.",
+        "line": 28,
+        "column": 13,
+        "endLine": 31,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 30,
+        "column": 17,
+        "endLine": 30,
+        "endColumn": 72
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 30,
+        "column": 79,
+        "endLine": 30,
+        "endColumn": 80
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 31,
+        "column": 14,
+        "endLine": 31,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 32,
+        "column": 10,
+        "endLine": 32,
+        "endColumn": 11
+      },
+      {
+        "ruleId": "comma-dangle",
+        "message": "Unexpected trailing comma.",
+        "line": 33,
+        "column": 6,
+        "endLine": 33,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 34,
+        "column": 2,
+        "endLine": 35,
+        "endColumn": 1
+      }
+    ]
+  },
+  {
+    "filePath": "/output/packages/yandex-metrika/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "object-curly-spacing",
+        "message": "There should be no space after '{'.",
+        "line": 1,
+        "column": 18,
+        "endLine": 1,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'app' found.",
+        "line": 1,
+        "column": 19,
+        "endLine": 1,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "object-curly-spacing",
+        "message": "There should be no space after '{'.",
+        "line": 1,
+        "column": 25,
+        "endLine": 1,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "object-curly-spacing",
+        "message": "There should be no space before '}'.",
+        "line": 1,
+        "column": 32,
+        "endLine": 1,
+        "endColumn": 33
+      },
+      {
+        "ruleId": "object-curly-spacing",
+        "message": "There should be no space before '}'.",
+        "line": 1,
+        "column": 34,
+        "endLine": 1,
+        "endColumn": 35
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 1,
+        "column": 41,
+        "endLine": 2,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 2,
+        "column": 1,
+        "endLine": 2,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 2,
+        "column": 20,
+        "endLine": 3,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 4,
+        "column": 1,
+        "endLine": 4,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 4,
+        "column": 24,
+        "endLine": 5,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 6,
+        "column": 1,
+        "endLine": 6,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 6,
+        "column": 17,
+        "endLine": 7,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 6,
+        "column": 17,
+        "endLine": 7,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 7,
+        "column": 1,
+        "endLine": 7,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 7,
+        "column": 5,
+        "endLine": 8,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 9,
+        "column": 1,
+        "endLine": 9,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "space-before-function-paren",
+        "message": "Missing space before function parentheses.",
+        "line": 9,
+        "column": 18,
+        "endLine": 9,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 9,
+        "column": 21,
+        "endLine": 10,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 10,
+        "column": 1,
+        "endLine": 10,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 89. Maximum allowed is 80.",
+        "line": 10,
+        "column": 1,
+        "endLine": 10,
+        "endColumn": 90
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'Ya' is not defined.",
+        "line": 10,
+        "column": 48,
+        "endLine": 10,
+        "endColumn": 50
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 10,
+        "column": 90,
+        "endLine": 11,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 11,
+        "column": 1,
+        "endLine": 11,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 11,
+        "column": 36,
+        "endLine": 12,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 12 spaces but found 6.",
+        "line": 12,
+        "column": 1,
+        "endLine": 12,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 12,
+        "column": 19,
+        "endLine": 13,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 16 spaces but found 8.",
+        "line": 13,
+        "column": 1,
+        "endLine": 13,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 16 spaces but found 8.",
+        "line": 14,
+        "column": 1,
+        "endLine": 14,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 14,
+        "column": 15,
+        "endLine": 15,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 14,
+        "column": 15,
+        "endLine": 15,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 12 spaces but found 6.",
+        "line": 15,
+        "column": 1,
+        "endLine": 15,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 12 spaces but found 6.",
+        "line": 16,
+        "column": 1,
+        "endLine": 16,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 16,
+        "column": 60,
+        "endLine": 16,
+        "endColumn": 61
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 16 spaces but found 8.",
+        "line": 17,
+        "column": 1,
+        "endLine": 17,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "quote-props",
+        "message": "Unquoted property 'referer' found.",
+        "line": 17,
+        "column": 9,
+        "endLine": 17,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 16 spaces but found 8.",
+        "line": 18,
+        "column": 1,
+        "endLine": 18,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "no-warning-comments",
+        "message": "Unexpected 'todo' comment: 'TODO: pass title: <new page title>'.",
+        "line": 18,
+        "column": 9,
+        "endLine": 18,
+        "endColumn": 46
+      },
+      {
+        "ruleId": "multiline-comment-style",
+        "message": "Expected a block comment instead of consecutive line comments.",
+        "line": 18,
+        "column": 9,
+        "endLine": 19,
+        "endColumn": 103
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 16 spaces but found 8.",
+        "line": 19,
+        "column": 1,
+        "endLine": 19,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 102. Maximum allowed is 80.",
+        "line": 19,
+        "column": 1,
+        "endLine": 19,
+        "endColumn": 103
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 12 spaces but found 6.",
+        "line": 20,
+        "column": 1,
+        "endLine": 20,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 20,
+        "column": 9,
+        "endLine": 21,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 20,
+        "column": 9,
+        "endLine": 21,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 21,
+        "column": 1,
+        "endLine": 21,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 21,
+        "column": 7,
+        "endLine": 22,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 21,
+        "column": 7,
+        "endLine": 22,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 22,
+        "column": 1,
+        "endLine": 22,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 24,
+        "column": 1,
+        "endLine": 24,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 24,
+        "column": 39,
+        "endLine": 25,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 26,
+        "column": 1,
+        "endLine": 26,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 26,
+        "column": 13,
+        "endLine": 27,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 26,
+        "column": 13,
+        "endLine": 27,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 27,
+        "column": 1,
+        "endLine": 27,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 27,
+        "column": 10,
+        "endLine": 28,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 29,
+        "column": 1,
+        "endLine": 29,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "wrap-iife",
+        "message": "Move the invocation into the parens that contain the function.",
+        "line": 29,
+        "column": 5,
+        "endLine": 31,
+        "endColumn": 43
+      },
+      {
+        "ruleId": "func-names",
+        "message": "Unexpected unnamed function.",
+        "line": 29,
+        "column": 6,
+        "endLine": 29,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'w' is too short (< 2).",
+        "line": 29,
+        "column": 16,
+        "endLine": 29,
+        "endColumn": 17
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'c' is too short (< 2).",
+        "line": 29,
+        "column": 19,
+        "endLine": 29,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 29,
+        "column": 22,
+        "endLine": 30,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 12 spaces but found 6.",
+        "line": 30,
+        "column": 1,
+        "endLine": 30,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 30,
+        "column": 39,
+        "endLine": 31,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 30,
+        "column": 39,
+        "endLine": 31,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 8 spaces but found 4.",
+        "line": 31,
+        "column": 1,
+        "endLine": 31,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "function-call-argument-newline",
+        "message": "There should be a line break after this argument.",
+        "line": 31,
+        "column": 15,
+        "endLine": 31,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "quotes",
+        "message": "Strings must use doublequote.",
+        "line": 31,
+        "column": 16,
+        "endLine": 31,
+        "endColumn": 42
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 31,
+        "column": 43,
+        "endLine": 32,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 31,
+        "column": 43,
+        "endLine": 32,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "indent",
+        "message": "Expected indentation of 4 spaces but found 2.",
+        "line": 32,
+        "column": 1,
+        "endLine": 32,
+        "endColumn": 3
+      },
+      {
+        "ruleId": "padded-blocks",
+        "message": "Block must be padded by blank lines.",
+        "line": 32,
+        "column": 4,
+        "endLine": 33,
+        "endColumn": 1
+      },
+      {
+        "ruleId": "semi",
+        "message": "Missing semicolon.",
+        "line": 33,
+        "column": 2,
+        "endLine": 34,
+        "endColumn": 1
+      }
+    ]
+  },
+  {
+    "filePath": "/output/packages/yandex-metrika/plugin.js",
+    "messages": [
+      {
+        "ruleId": "space-before-function-paren",
+        "message": "Missing space before function parentheses.",
+        "line": 9,
+        "column": 18,
+        "endLine": 9,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'Ya' is not defined.",
+        "line": 10,
+        "column": 48,
+        "endLine": 10,
+        "endColumn": 50
+      }
+    ]
+  }
+]

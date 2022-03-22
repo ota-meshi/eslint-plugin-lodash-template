@@ -1,0 +1,613 @@
+[
+  {
+    "filePath": "/output-with-fix/packages/google-tag-manager/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/packages/google-tag-manager/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 95. Maximum allowed is 80.",
+        "line": 21,
+        "column": 1,
+        "endLine": 21,
+        "endColumn": 96
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'from' is defined but never used.",
+        "line": 31,
+        "column": 44,
+        "endLine": 31,
+        "endColumn": 48
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 84. Maximum allowed is 80.",
+        "line": 36,
+        "column": 1,
+        "endLine": 36,
+        "endColumn": 85
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "message": "No magic number: 0.",
+        "line": 42,
+        "column": 17,
+        "endLine": 42,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "no-prototype-builtins",
+        "message": "Do not access Object.prototype method 'hasOwnProperty' from target object.",
+        "line": 63,
+        "column": 22,
+        "endLine": 63,
+        "endColumn": 36
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 72,
+        "column": 13,
+        "endLine": 72,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "class-methods-use-this",
+        "message": "Expected 'this' to be used by class method 'hasDNT'.",
+        "line": 81,
+        "column": 5,
+        "endLine": 81,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-mixed-operators",
+        "message": "Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations.",
+        "line": 86,
+        "column": 38,
+        "endLine": 86,
+        "endColumn": 40
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 118. Maximum allowed is 80.",
+        "line": 87,
+        "column": 1,
+        "endLine": 87,
+        "endColumn": 119
+      },
+      {
+        "ruleId": "no-mixed-operators",
+        "message": "Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations.",
+        "line": 87,
+        "column": 70,
+        "endLine": 87,
+        "endColumn": 72
+      },
+      {
+        "ruleId": "func-names",
+        "message": "Unexpected unnamed function.",
+        "line": 93,
+        "column": 16,
+        "endLine": 93,
+        "endColumn": 25
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/packages/google-tag-manager/plugin.js",
+    "messages": [
+      {
+        "ruleId": "no-prototype-builtins",
+        "message": "Do not access Object.prototype method 'hasOwnProperty' from target object.",
+        "line": 38,
+        "column": 16,
+        "endLine": 38,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 43,
+        "column": 7,
+        "endLine": 43,
+        "endColumn": 20
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/packages/markdownit/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/packages/markdownit/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'app' is defined but never used.",
+        "line": 3,
+        "column": 18,
+        "endLine": 3,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 9,
+        "column": 17,
+        "endLine": 11,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "no-undefined",
+        "message": "Unexpected use of undefined.",
+        "line": 10,
+        "column": 11,
+        "endLine": 10,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 15,
+        "column": 12,
+        "endLine": 15,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 16,
+        "column": 39,
+        "endLine": 16,
+        "endColumn": 45
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 17,
+        "column": 24,
+        "endLine": 19,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 18,
+        "column": 13,
+        "endLine": 18,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 19,
+        "column": 13,
+        "endLine": 19,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-ternary",
+        "message": "Ternary operator used.",
+        "line": 20,
+        "column": 22,
+        "endLine": 22,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'opt' is not defined.",
+        "line": 25,
+        "column": 41,
+        "endLine": 25,
+        "endColumn": 44
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'opt' is not defined.",
+        "line": 27,
+        "column": 23,
+        "endLine": 27,
+        "endColumn": 26
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/packages/markdownit/plugin.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 12,
+        "column": 10,
+        "endLine": 12,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 13,
+        "column": 37,
+        "endLine": 13,
+        "endColumn": 43
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 14,
+        "column": 32,
+        "endLine": 14,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 14,
+        "column": 49,
+        "endLine": 14,
+        "endColumn": 55
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'config' is not defined.",
+        "line": 15,
+        "column": 30,
+        "endLine": 15,
+        "endColumn": 36
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'opt' is not defined.",
+        "line": 17,
+        "column": 42,
+        "endLine": 17,
+        "endColumn": 45
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'opt' is not defined.",
+        "line": 17,
+        "column": 75,
+        "endLine": 17,
+        "endColumn": 78
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/packages/toast/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/packages/toast/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "sort-imports",
+        "message": "Imports should be sorted alphabetically.",
+        "line": 2,
+        "column": 1,
+        "endLine": 2,
+        "endColumn": 35
+      },
+      {
+        "ruleId": "func-names",
+        "message": "Unexpected unnamed function.",
+        "line": 24,
+        "column": 16,
+        "endLine": 24,
+        "endColumn": 25
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/packages/toast/plugin.js",
+    "messages": []
+  },
+  {
+    "filePath": "/output-with-fix/packages/yandex-metrika/all-rules-test/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'module' is not defined.",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'root'.",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'env' should be before 'parserOptions'.",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
+        "line": 25,
+        "column": 13,
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
+        "line": 28,
+        "column": 17,
+        "endLine": 28,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "sort-keys",
+        "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
+        "line": 33,
+        "column": 17,
+        "endLine": 33,
+        "endColumn": 72
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/packages/yandex-metrika/all-rules-test/plugin.js",
+    "messages": [
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 94. Maximum allowed is 80.",
+        "line": 14,
+        "column": 1,
+        "endLine": 14,
+        "endColumn": 95
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'Ya' is not defined.",
+        "line": 14,
+        "column": 52,
+        "endLine": 14,
+        "endColumn": 54
+      },
+      {
+        "ruleId": "max-len",
+        "message": "This line has a length of 110. Maximum allowed is 80.",
+        "line": 30,
+        "column": 1,
+        "endLine": 30,
+        "endColumn": 111
+      },
+      {
+        "ruleId": "func-names",
+        "message": "Unexpected unnamed function.",
+        "line": 47,
+        "column": 10,
+        "endLine": 47,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'w' is too short (< 2).",
+        "line": 47,
+        "column": 20,
+        "endLine": 47,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'c' is too short (< 2).",
+        "line": 47,
+        "column": 23,
+        "endLine": 47,
+        "endColumn": 24
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/packages/yandex-metrika/plugin.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'Ya' is not defined.",
+        "line": 10,
+        "column": 48,
+        "endLine": 10,
+        "endColumn": 50
+      }
+    ]
+  }
+]

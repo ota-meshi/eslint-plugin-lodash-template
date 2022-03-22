@@ -1,8 +1,0 @@
-[
-  {
-    "ruleId": "keyword-spacing",
-    "message": "Expected space(s) after \"if\".",
-    "line": 7,
-    "column": 1
-  }
-]
