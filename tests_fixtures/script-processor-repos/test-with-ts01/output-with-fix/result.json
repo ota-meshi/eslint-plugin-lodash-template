@@ -1,0 +1,23 @@
+[
+  {
+    "filePath": "/output-with-fix/test1.ts",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'suppress' is not defined.",
+        "line": 2,
+        "column": 12,
+        "endLine": 2,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "message": "'Foo' is defined but never used.",
+        "line": 3,
+        "column": 15,
+        "endLine": 3,
+        "endColumn": 18
+      }
+    ]
+  }
+]
