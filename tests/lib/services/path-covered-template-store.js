@@ -26,7 +26,7 @@ function getPathCoveredTemplateStore(fileName) {
     const templates = new PathCoveredTemplateStore(
         result.ast,
         result.visitorKeys || visitorKeys,
-        microTemplate.template,
+        microTemplate,
     )
     return {
         templates,
