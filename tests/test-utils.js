@@ -29,7 +29,7 @@ module.exports = {
     },
     writeFile(expectFilepath, content) {
         // eslint-disable-next-line no-process-env -- test
-        if (process.env.UPDATE_FIXTURE) {
+        if (process.env.UPDATE_FIXTURE || !fs.existsSync(expectFilepath)) {
             fs.writeFileSync(expectFilepath, content, "utf8")
         }
     },

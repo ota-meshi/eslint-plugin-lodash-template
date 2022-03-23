@@ -1,6 +1,6 @@
 [
   {
-    "filePath": "/output-with-fix/branchs01.js",
+    "filePath": "/output-with-fix/branches01.js",
     "messages": [
       {
         "ruleId": "no-console",
@@ -32,6 +32,120 @@
         "line": 13,
         "column": 1,
         "endLine": 13,
+        "endColumn": 12
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/branches02.js",
+    "messages": [
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 5,
+        "column": 1,
+        "endLine": 5,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-negated-condition",
+        "message": "Unexpected negated condition.",
+        "line": 6,
+        "column": 4,
+        "endLine": 12,
+        "endColumn": 5
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 7,
+        "column": 1,
+        "endLine": 7,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 10,
+        "column": 1,
+        "endLine": 10,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 13,
+        "column": 1,
+        "endLine": 13,
+        "endColumn": 12
+      }
+    ]
+  },
+  {
+    "filePath": "/output-with-fix/branches03.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "message": "'x' is not defined.",
+        "line": 1,
+        "column": 8,
+        "endLine": 1,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'y' is not defined.",
+        "line": 1,
+        "column": 13,
+        "endLine": 1,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "id-length",
+        "message": "Identifier name 'a' is too short (< 2).",
+        "line": 2,
+        "column": 7,
+        "endLine": 2,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'x' is not defined.",
+        "line": 5,
+        "column": 8,
+        "endLine": 5,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "no-undef",
+        "message": "'y' is not defined.",
+        "line": 6,
+        "column": 8,
+        "endLine": 6,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 7,
+        "column": 1,
+        "endLine": 7,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 9,
+        "column": 1,
+        "endLine": 9,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "message": "Unexpected console statement.",
+        "line": 12,
+        "column": 1,
+        "endLine": 12,
         "endColumn": 12
       }
     ]
