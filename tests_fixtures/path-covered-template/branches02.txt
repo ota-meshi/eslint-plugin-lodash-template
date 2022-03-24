@@ -1,0 +1,29 @@
+--------(#1)--------
+                         
+                   
+import foo from "./foo";
+       
+console.log("main process");
+                    
+                              
+                     
+              
+    console.log(foo);
+    const NUMBER = 1;
+       
+console.log(NUMBER);
+
+--------(#2)--------
+                         
+                   
+                        
+       
+console.log("main process");
+                    
+    console.log("unused foo");
+    const NUMBER = 2;
+              
+                     
+                     
+       
+console.log(NUMBER);

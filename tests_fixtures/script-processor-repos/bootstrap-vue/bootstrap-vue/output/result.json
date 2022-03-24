@@ -781,14 +781,6 @@
     "filePath": "/output/nuxt/plugin.template.js",
     "messages": [
       {
-        "ruleId": "import/no-duplicates",
-        "message": "'bootstrap-vue' imported multiple times.",
-        "line": 4,
-        "column": 26,
-        "endLine": 4,
-        "endColumn": 41
-      },
-      {
         "ruleId": "lodash-template/scriptlet-indent",
         "message": "Expected relative indentation of 4 spaces but found 2 spaces.",
         "line": 12,
@@ -835,14 +827,6 @@
         "column": 3,
         "endLine": 17,
         "endColumn": 3
-      },
-      {
-        "ruleId": "import/no-duplicates",
-        "message": "'bootstrap-vue' imported multiple times.",
-        "line": 18,
-        "column": 8,
-        "endLine": 18,
-        "endColumn": 23
       },
       {
         "ruleId": "lodash-template/template-tag-spacing",

@@ -26,7 +26,7 @@ function getPathCoveredTemplateStore(fileName) {
     const templates = new PathCoveredTemplateStore(
         result.ast,
         result.visitorKeys || visitorKeys,
-        microTemplate.template,
+        microTemplate,
     )
     return {
         templates,
@@ -39,7 +39,7 @@ describe("PathCoveredTemplateStore test", () => {
     for (const name of fs
         .readdirSync(FIXTURE_DIR)
         .filter((s) => s.endsWith(".html"))) {
-        describe("Extracted texts should be valid.", () => {
+        describe("Extracted texts should be valid with HTML.", () => {
             it(name, () => {
                 const { templates, code, getLocFromIndex } =
                     getPathCoveredTemplateStore(name)
@@ -59,6 +59,40 @@ describe("PathCoveredTemplateStore test", () => {
                 const expectFilepath = path.join(
                     FIXTURE_DIR,
                     name.replace(/\.html$/u, ".txt"),
+                )
+                try {
+                    assert.strictEqual(
+                        texts.join("\n"),
+                        fs.readFileSync(expectFilepath, "utf8"),
+                    )
+                } catch (e) {
+                    testUtils.writeFile(expectFilepath, texts.join("\n"))
+                    throw e
+                }
+            })
+        })
+    }
+})
+
+describe("PathCoveredTemplateStore test", () => {
+    for (const name of fs
+        .readdirSync(FIXTURE_DIR)
+        .filter((s) => s.endsWith(".js"))) {
+        describe("Extracted texts should be valid with Script.", () => {
+            it(name, () => {
+                const { templates } = getPathCoveredTemplateStore(name)
+
+                const texts = []
+                for (const { template } of templates.getAllTemplates()) {
+                    if (!texts.includes(template)) {
+                        texts.push(`--------(#${texts.length / 2 + 1})--------`)
+                        texts.push(template)
+                    }
+                }
+
+                const expectFilepath = path.join(
+                    FIXTURE_DIR,
+                    name.replace(/\.js$/u, ".txt"),
                 )
                 try {
                     assert.strictEqual(
