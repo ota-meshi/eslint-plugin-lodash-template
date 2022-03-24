@@ -19,13 +19,14 @@
 
 <script>
 import EslintEditor from "vue-eslint-editor"
+import { Linter } from "eslint/lib/linter"
 import parser from "../../../../lib/parser/micro-template-eslint-parser"
-import plugin from "../../../../"
+import plugin from "../../../.."
 import htmlProcessor from "../../../../lib/processors/html"
 import scriptProcessor from "../../../../lib/processors/script"
 
 export default {
-    name: "EslintPluginLodashTemplateEditor",
+    name: "EslintPluginEditor",
     components: { EslintEditor },
     model: {
         prop: "code",
@@ -57,7 +58,6 @@ export default {
 
     data() {
         return {
-            eslint4b: null,
             format: {
                 insertSpaces: true,
                 tabSize: 2,
@@ -97,7 +97,7 @@ export default {
                 parser: "micro-template-eslint-parser",
                 parserOptions: {
                     sourceType: "module",
-                    ecmaVersion: 2019,
+                    ecmaVersion: 2021,
                     ...(this.ejs
                         ? {
                               templateSettings: {
@@ -140,11 +140,6 @@ export default {
                 scriptProcessor.postprocess(problemLists, this.fileName)
         },
         linter() {
-            if (!this.eslint4b) {
-                return null
-            }
-            const Linter = this.eslint4b
-
             const linter = new Linter()
 
             for (const k of Object.keys(plugin.rules)) {
@@ -165,21 +160,21 @@ export default {
         },
     },
 
-    async mounted() {
-        // Load linter asynchronously.
-        const { default: eslint4b } = await import("eslint4b")
-        this.eslint4b = eslint4b
-
+    mounted() {
         const editor = this.$refs.editor
 
         editor.$watch("monaco", () => {
             const { monaco } = editor
             // monaco.languages.j()
             monaco.languages.typescript.typescriptDefaults.setDiagnosticsOptions(
-                { validate: false },
+                {
+                    validate: false,
+                },
             )
             monaco.languages.typescript.javascriptDefaults.setDiagnosticsOptions(
-                { validate: false },
+                {
+                    validate: false,
+                },
             )
         })
         editor.$watch("codeEditor", () => {

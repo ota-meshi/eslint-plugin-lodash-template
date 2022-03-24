@@ -12,6 +12,7 @@
                 href="https://twitter.com/share"
                 class="twitter-share-button"
                 data-url="https://ota-meshi.github.io/eslint-plugin-lodash-template/"
+                data-text="eslint-plugin-lodash-template"
                 >Tweet</a
             >
             <div

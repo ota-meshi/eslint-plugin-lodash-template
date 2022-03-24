@@ -1,6 +1,6 @@
-// eslint-disable-next-line eslint-comments/disable-enable-pair -- demo
-/* eslint-disable node/no-unsupported-features/es-syntax -- demo */
-import pako from "../../../../node_modules/pako"
+/* eslint node/no-unsupported-features/es-syntax: off -- not node */
+
+import pako from "pako"
 
 /**
  * Deserialize a given serialized string then update this object.
@@ -20,12 +20,13 @@ export function deserializeState(serializedString) {
     }
 
     try {
-        // For backward compatibility, it can address non-compressed data.
-        const compressed = !serializedString.startsWith("eyJj")
-        const decodedText = window.atob(serializedString)
-        const jsonText = compressed
-            ? pako.inflate(decodedText, { to: "string" })
-            : decodedText
+        const compressedString = window.atob(serializedString)
+        const uint8Arr = pako.inflate(
+            Uint8Array.from(compressedString, (c) => c.charCodeAt(0)),
+        )
+
+        // eslint-disable-next-line node/no-unsupported-features/node-builtins -- ignore
+        const jsonText = new TextDecoder().decode(uint8Arr)
         const json = JSON.parse(jsonText)
 
         if (typeof json === "object" && json != null) {

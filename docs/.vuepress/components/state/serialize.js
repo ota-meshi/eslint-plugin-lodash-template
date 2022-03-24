@@ -1,6 +1,6 @@
-// eslint-disable-next-line eslint-comments/disable-enable-pair -- demo
-/* eslint-disable node/no-unsupported-features/es-syntax -- demo */
-import pako from "../../../../node_modules/pako"
+/* eslint node/no-unsupported-features/es-syntax: off -- not node */
+
+import pako from "pako"
 
 /**
  * Get only enabled rules to make the serialized data smaller.
@@ -29,7 +29,10 @@ export function serializeState(state) {
         ejs: state.ejs ? true : undefined,
     }
     const jsonString = JSON.stringify(saveData)
-    const compressedString = pako.deflate(jsonString, { to: "string" })
+
+    // eslint-disable-next-line node/no-unsupported-features/node-builtins -- ignore
+    const uint8Arr = new TextEncoder().encode(jsonString)
+    const compressedString = String.fromCharCode(...pako.deflate(uint8Arr))
     const base64 =
         (typeof window !== "undefined" && window.btoa(compressedString)) ||
         compressedString

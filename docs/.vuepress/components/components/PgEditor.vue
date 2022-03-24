@@ -1,22 +1,23 @@
 <template>
-    <eslint-plugin-lodash-template-editor
+    <eslint-plugin-editor
         ref="editor"
         :code="value"
         :rules="rules"
         :script="script"
         :ejs="ejs"
         fix
+        dark
         @input="$emit('input', $event)"
         @change="$emit('change', $event)"
     />
 </template>
 
 <script>
-import EslintPluginLodashTemplateEditor from "./EslintPluginLodashTemplateEditor"
+import EslintPluginEditor from "./EslintPluginEditor"
 
 export default {
     name: "PgEditor",
-    components: { EslintPluginLodashTemplateEditor },
+    components: { EslintPluginEditor },
     props: {
         value: {
             type: String,
@@ -39,5 +40,3 @@ export default {
     },
 }
 </script>
-
-<style scoped></style>

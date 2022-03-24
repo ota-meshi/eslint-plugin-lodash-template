@@ -1,7 +1,7 @@
 <template>
-    <eslint-plugin-lodash-template-editor
+    <eslint-plugin-editor
         ref="editor"
-        :code="code"
+        v-model="code"
         :style="{ height }"
         :rules="rules"
         dark
@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import EslintPluginLodashTemplateEditor from "./components/EslintPluginLodashTemplateEditor"
+import EslintPluginEditor from "./components/EslintPluginEditor"
 
 export default {
     name: "ESLintCodeBlock",
-    components: { EslintPluginLodashTemplateEditor },
+    components: { EslintPluginEditor },
     props: {
         fix: {
             type: Boolean,
@@ -30,19 +30,23 @@ export default {
             type: Boolean,
         },
     },
-
-    computed: {
-        code() {
-            return `${this.computeCodeFromSlot(this.$slots.default).trim()}\n`
-        },
-
-        height() {
-            const lines = this.code.split("\n").length
-            return `${Math.max(120, 20 * (1 + lines))}px`
-        },
+    data() {
+        return {
+            code: "",
+            height: "",
+        }
+    },
+    mounted() {
+        this.code = `${this.computeCodeFromSlot(this.$slots.default).trim()}\n`
+        const lines = this.code.split("\n").length
+        this.height = `${Math.max(120, 20 * (1 + lines))}px`
     },
 
     methods: {
+        /**
+         * @param {VNode[]} nodes
+         * @returns {string}
+         */
         computeCodeFromSlot(nodes) {
             if (!Array.isArray(nodes)) {
                 return ""

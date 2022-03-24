@@ -33,15 +33,22 @@
                 <div class="messages">
                     <ol>
                         <li
-                            v-for="msg in messages"
+                            v-for="(msg, i) in messages"
                             :key="
-                                msg.line + ':' + msg.column + ':' + msg.ruleId
+                                msg.line +
+                                ':' +
+                                msg.column +
+                                ':' +
+                                msg.ruleId +
+                                '@' +
+                                i
                             "
                             class="message"
+                            :class="getRule(msg.ruleId).classes"
                         >
                             [{{ msg.line }}:{{ msg.column }}]:
                             {{ msg.message }} (<a
-                                :href="getURL(msg.ruleId)"
+                                :href="getRule(msg.ruleId).url"
                                 target="_blank"
                             >
                                 {{ msg.ruleId }} </a
@@ -55,13 +62,11 @@
 </template>
 
 <script>
-import * as coreRules from "../../../node_modules/eslint4b/dist/core-rules"
-import plugin from "../../../lib/index"
 import PgEditor from "./components/PgEditor.vue"
 import RulesSettings from "./components/RulesSettings.vue"
 import SnsBar from "./components/SnsBar.vue"
 import { deserializeState, serializeState } from "./state"
-import { DEFAULT_RULES_CONFIG } from "./rules"
+import { DEFAULT_RULES_CONFIG, getRule } from "./rules"
 
 const DEFAULT_HTML_CODE = `<% /* global accounts, users */ %>
 <% accounts.forEach(({id, profile_image_url, from_user}, i) => { %>
@@ -91,16 +96,6 @@ const obj    = <%= JSON.stringify(options     ) %>
 
 export default obj
 `
-
-const ruleURLs = {}
-for (const k of Object.keys(plugin.rules)) {
-    const rule = plugin.rules[k]
-    ruleURLs[rule.meta.docs.ruleId] = rule.meta.docs.url
-}
-for (const k of Object.keys(coreRules)) {
-    const rule = coreRules[k]
-    ruleURLs[k] = rule.meta.docs.url
-}
 
 export default {
     name: "PlaygroundBlock",
@@ -160,8 +155,8 @@ export default {
         onChange({ messages }) {
             this.messages = messages
         },
-        getURL(ruleId) {
-            return ruleURLs[ruleId] || ""
+        getRule(ruleId) {
+            return getRule(ruleId)
         },
         onUrlHashChange() {
             const serializedString =
@@ -206,11 +201,14 @@ function equalsRules(a, b) {
     flex-wrap: wrap;
     height: calc(100% - 100px);
     border: 1px solid #cfd4db;
+    background-color: #282c34;
+    color: #fff;
 }
+
 .main-content > .rules-settings {
     height: 100%;
     overflow: auto;
-    width: 25%;
+    width: 30%;
     box-sizing: border-box;
 }
 
@@ -228,6 +226,7 @@ function equalsRules(a, b) {
     box-sizing: border-box;
     padding: 3px;
 }
+
 .main-content > .editor-content > .messages {
     height: 30%;
     width: 100%;
@@ -236,5 +235,13 @@ function equalsRules(a, b) {
     border-top: 1px solid #cfd4db;
     padding: 8px;
     font-size: 12px;
+}
+
+.eslint-core-rule a {
+    color: #8080f2;
+}
+
+.eslint-plugin-lodash-template-rule a {
+    color: #3492ff;
 }
 </style>

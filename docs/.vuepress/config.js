@@ -1,3 +1,4 @@
+const path = require("path")
 const { rules } = require("../../lib/utils/rules")
 const categories = require("../../tools/lib/categories")
 
@@ -45,9 +46,17 @@ module.exports = {
         return {
             resolve: {
                 alias: {
-                    eslint: require.resolve("./shim/eslint"),
+                    eslint$: require.resolve("./shim/eslint"),
                     crypto: require.resolve("./shim/crypto"),
                     module: require.resolve("./shim/module"),
+                    esquery: path.resolve(
+                        __dirname,
+                        "../../node_modules/esquery/dist/esquery.min.js",
+                    ),
+                    "@eslint/eslintrc/universal": path.resolve(
+                        __dirname,
+                        "../../node_modules/@eslint/eslintrc/dist/eslintrc-universal.cjs",
+                    ),
                 },
             },
         }

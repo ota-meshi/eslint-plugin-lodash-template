@@ -1,4 +1,4 @@
-const Linter = require("eslint4b")
+const { Linter } = require("eslint/lib/linter")
 
 module.exports = {
     Linter,
