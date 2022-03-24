@@ -34,7 +34,7 @@ This plugin supports code checking for templates like the examples below.
 - Enable [ESLint](http://eslint.org) in [Underscore.js](http://underscorejs.org/#template) and [Lodash](https://lodash.com/docs/#template)'s templates.
 - You can find issues specific to template tags.
 - Improves readability of HTML templates.
-- For JavaScript templates, enable [ESLint](http://eslint.org) both inside and outside the template tag. (*This is an experimental feature*)
+- For JavaScript (TypeScript) templates, enable [ESLint](http://eslint.org) both inside and outside the template tag. (*This is an experimental feature*)
 - Partial supports for [EJS](http://ejs.co/).
 
 ## Installation
@@ -87,7 +87,7 @@ This plugin provides 6 predefined configs:
 - `plugin:lodash-template/base` - Settings and rules to enable correct ESLint parsing
 - `plugin:lodash-template/best-practices` - Above, plus rules to improve dev experience
 - `plugin:lodash-template/recommended` - Above, plus rules to improve code readability
-- `plugin:lodash-template/recommended-with-html` - Above, plus rules to improve code readability with HTML tamplate
+- `plugin:lodash-template/recommended-with-html` - Above, plus rules to improve code readability with HTML template
 - `plugin:lodash-template/recommended-with-script` - `plugin:lodash-template/recommended` config, plus to enable ESLint parsing of JavaScript templates (*This is an experimental feature*)
 - `plugin:lodash-template/all` - All rules of this plugin are included
 
@@ -182,7 +182,7 @@ For example, to parse like [EJS](http://ejs.co/), set as follows,
 
 (This plugin do not provide complete support for [EJS](http://ejs.co/). e.g. the `include` directive.)
 
-### Customize target extentions
+### Customize target extensions
 
 Please set **.eslintrc.\*** as follows.
 
@@ -197,7 +197,7 @@ Please set **.eslintrc.\*** as follows.
 +    ]
 ```
 
-### For JavaScript Templates
+### For JavaScript (TypeScript) Templates
 
 (*This is an experimental feature*)
 
@@ -209,8 +209,8 @@ For example if you have a file like below.
 
 // if this plugin is not used, a parsing error will occur.
 const obj    = <%= JSON.stringify(options     ) %>
-//       ^^^^                          ^^^^^ 
-//         |                            |
+//       ^^^^                            ^^^^^ 
+//         |                              |
 //         |          If you don't use `"plugin:lodash-template/recommended-with-script"`,
 //         |          only the space after `options` is reported.
 //         |
@@ -245,13 +245,29 @@ If you do not want to use the included rules, set the details as follows.
     ]
 ```
 
+If you want to use it with TypeScript, you need to configure `parserOptions`.
+
+```diff
+    "overrides": [
+        {
+-            "files": ["**/your/templates/*.js"],
++            "files": ["**/your/templates/*.ts"],
++            "parserOptions": {
++                 "parser": "@typescript-eslint/parser",
++                 "sourceType": "module"
++            },
+            "extends": ["plugin:lodash-template/recommended-with-script"]
+        }
+    ]
+```
+
 ## FAQ
 
 ### Editor Settings
 
 About how to mark warnings on editor.
 
-* VSCode ([VS Code ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint))  
+- VSCode ([VS Code ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint))  
 
     **settings.json**:
 
@@ -261,7 +277,7 @@ About how to mark warnings on editor.
     }
     ```
 
-* Sublime Text3 ([SublimeLinter-eslint](https://packagecontrol.io/packages/SublimeLinter-eslint)) 
+- Sublime Text3 ([SublimeLinter-eslint](https://packagecontrol.io/packages/SublimeLinter-eslint)) 
 
     [Preference] > [Package Settings] > [SublimeLinter] > [Settings]
 
