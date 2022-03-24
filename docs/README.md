@@ -199,7 +199,7 @@ Please set **.eslintrc.\*** as follows.
 
 ### For JavaScript (TypeScript) Templates
 
-(*This is an experimental feature*)
+(*This is an experimental feature*. Also check for [known limitations](#known-limitations-in-script-templates).)
 
 For example if you have a file like below.
 
@@ -262,6 +262,179 @@ If you want to use it with TypeScript, you need to configure `parserOptions`.
 ```
 
 ## FAQ
+
+### Known Limitations in Script Templates
+
+Due to known limitations in script templates, you may need to rewrite some templates. Otherwise, you may not be able to use this plugin or some rules.
+
+#### Parsing Error
+
+Interpolation in the script template will try to replace it with an identifier and parse it.
+If you generate a complex script in interpolation, you may get a parsing error.
+
+:+1: The following script can be parsed well.
+
+```js
+let <%= idName %> = 42;
+export { <%= idName %> };
+```
+
+:-1: The following script cannot be parsed well.
+
+```js
+<%= 'let ' + idName %> = 42;
+export { <%= idName %> };
+```
+
+#### False Positives in Some Rules
+
+If you use branching in your template, the plugin will generate multiple script ASTs needed to cover all branches. (Then merge the results of validating these ASTs.)  
+This can confuse some rules and cause false positives.
+
+However, this is necessary to avoid script parsing errors.
+
+e.g.
+
+Template:
+
+```js
+const a = 'foo'
+<% if (x) { %>
+  const b = 1;
+<% } else { %>
+  const b = 2;
+<% } %>
+```
+
+Generated Script 1:
+
+```js
+
+const a = 'foo'
+
+  const b = 1;
+
+
+
+```
+
+Generated Script 2:
+
+```js
+
+const a = 'foo'
+
+
+
+  const b = 2;
+
+```
+
+If we use the following script, it is a parsing error.
+
+```js
+
+const a = 'foo'
+
+  const b = 1;
+
+  const b = 2; // <- Identifier 'b' has already been declared
+
+```
+
+The plugin also tries to generate scripts using branches that are as consistent as possible.
+
+e.g.
+
+Template:
+
+```js
+<% if (x.foo) { %>
+  const a = 'x.foo is true'
+<% } %>
+// ...
+<% if (x.foo) { %>
+  console.log(a)
+<% } else { %>
+  // process for x.foo is false
+<% } %>
+```
+
+Generated Script 1:
+
+```js
+
+  const a = 'x.foo is true'
+
+// ...
+
+  console.log(a)
+
+
+
+```
+
+Generated Script 2:
+
+```js
+
+
+
+// ...
+
+
+
+  // process for x.foo is false
+
+```
+
+However, branching conditions are compared using text, so even logically the same can be confusing.
+
+e.g.
+
+Template:
+
+```js
+<% if (x['foo']) { %>
+  const a = 'x.foo is true'
+<% } %>
+// ...
+<% if (x.foo) { %>
+  console.log(a)
+<% } else { %>
+  // process for x.foo is false
+<% } %>
+```
+
+Generated Script 1:
+
+```js
+
+  const a = 'x.foo is true'
+
+// ...
+
+  console.log(a)
+
+
+
+```
+
+Generated Script 2:
+
+```js
+
+  const a = 'x.foo is true'
+
+// ...
+
+
+
+  // process for x.foo is false
+
+```
+
+This template gets an error `'a' is assigned a value but never used.` from the `no-unused-vars` rule.
 
 ### Editor Settings
 
