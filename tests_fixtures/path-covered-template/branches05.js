@@ -8,7 +8,7 @@ const a = 'x && y'
     console.log(a);
 <% } %>
 
-<% if (y!==42) { %>
+<% if (Boolean(y!==42)) { %>
     console.log('!y');
 <% } else { %>
     console.log(a);
