@@ -222,8 +222,6 @@ Please set the global variable used in all templates as follows.
   }
 ```
 
-"html/html-extensions": [".html", ".we"], 
-
 Please write the global comment in the file as follows for the variable to be used with a specific template.
 
 ```diff
