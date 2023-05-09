@@ -76,7 +76,7 @@ jobs:
         node-version: 10.13.x
     - name: Install Target Packages
       run: |+
-        npm i -D eslint@^7
+        npm i -D eslint@^7 mocha@9
         npx rimraf node_modules
         npm install
     - name: Test
