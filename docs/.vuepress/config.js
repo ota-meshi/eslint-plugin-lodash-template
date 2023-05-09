@@ -49,6 +49,10 @@ module.exports = {
                     eslint$: require.resolve("./shim/eslint"),
                     crypto: require.resolve("./shim/crypto"),
                     module: require.resolve("./shim/module"),
+                    "eslint-visitor-keys$": path.resolve(
+                        __dirname,
+                        "./shim/eslint-visitor-keys",
+                    ),
                     esquery: path.resolve(
                         __dirname,
                         "../../node_modules/esquery/dist/esquery.min.js",
