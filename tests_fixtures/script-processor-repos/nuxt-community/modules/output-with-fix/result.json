@@ -64,6 +64,14 @@
     "filePath": "/output-with-fix/packages/google-tag-manager/all-rules-test/plugin.js",
     "messages": [
       {
+        "ruleId": "logical-assignment-operators",
+        "message": "Assignment (=) can be replaced with operator assignment (||=).",
+        "line": 14,
+        "column": 9,
+        "endLine": 14,
+        "endColumn": 70
+      },
+      {
         "ruleId": "max-len",
         "message": "This line has a length of 95. Maximum allowed is 80.",
         "line": 21,
@@ -594,6 +602,14 @@
         "column": 23,
         "endLine": 47,
         "endColumn": 24
+      },
+      {
+        "ruleId": "logical-assignment-operators",
+        "message": "Assignment (=) can be replaced with operator assignment (||=).",
+        "line": 49,
+        "column": 14,
+        "endLine": 49,
+        "endColumn": 31
       }
     ]
   },

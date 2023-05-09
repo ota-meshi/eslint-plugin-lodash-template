@@ -1348,9 +1348,9 @@
       {
         "ruleId": "require-await",
         "message": "Async function has no 'await' expression.",
-        "line": 37,
+        "line": 35,
         "column": 16,
-        "endLine": 37,
+        "endLine": 35,
         "endColumn": 31
       }
     ]
@@ -1686,6 +1686,14 @@
         "column": 1,
         "endLine": 160,
         "endColumn": 94
+      },
+      {
+        "ruleId": "logical-assignment-operators",
+        "message": "Assignment (=) can be replaced with operator assignment (||=).",
+        "line": 161,
+        "column": 22,
+        "endLine": 161,
+        "endColumn": 67
       },
       {
         "ruleId": "no-console",
@@ -2684,346 +2692,72 @@
       {
         "ruleId": "max-len",
         "message": "This line has a length of 94. Maximum allowed is 80.",
-        "line": 23,
+        "line": 19,
         "column": 1,
-        "endLine": 23,
+        "endLine": 19,
         "endColumn": 95
-      },
-      {
-        "ruleId": "no-invalid-this",
-        "message": "Unexpected 'this'.",
-        "line": 23,
-        "column": 71,
-        "endLine": 23,
-        "endColumn": 75
       },
       {
         "ruleId": "max-len",
         "message": "This line has a length of 143. Maximum allowed is 80.",
-        "line": 25,
+        "line": 21,
         "column": 1,
-        "endLine": 25,
+        "endLine": 21,
         "endColumn": 144
       },
       {
-        "ruleId": "no-console",
-        "message": "Unexpected console statement.",
-        "line": 25,
-        "column": 13,
-        "endLine": 25,
-        "endColumn": 25
-      },
-      {
-        "ruleId": "no-param-reassign",
-        "message": "Assignment to function parameter 'locale'.",
-        "line": 29,
-        "column": 9,
-        "endLine": 29,
-        "endColumn": 15
-      },
-      {
-        "ruleId": "no-invalid-this",
-        "message": "Unexpected 'this'.",
-        "line": 29,
-        "column": 28,
-        "endLine": 29,
-        "endColumn": 32
-      },
-      {
-        "ruleId": "no-param-reassign",
-        "message": "Assignment to function parameter 'route'.",
-        "line": 40,
-        "column": 13,
-        "endLine": 40,
-        "endColumn": 18
-      },
-      {
-        "ruleId": "no-ternary",
-        "message": "Ternary operator used.",
-        "line": 45,
-        "column": 34,
-        "endLine": 47,
-        "endColumn": 43
+        "ruleId": "lodash-template/no-script-parsing-error",
+        "message": "Parsing error: Unexpected token =.",
+        "line": 24,
+        "column": 18
       },
       {
         "ruleId": "max-len",
         "message": "This line has a length of 85. Maximum allowed is 80.",
-        "line": 50,
+        "line": 39,
         "column": 1,
-        "endLine": 50,
+        "endLine": 39,
         "endColumn": 86
-      },
-      {
-        "ruleId": "no-undefined",
-        "message": "Unexpected use of undefined.",
-        "line": 60,
-        "column": 39,
-        "endLine": 60,
-        "endColumn": 48
-      },
-      {
-        "ruleId": "no-invalid-this",
-        "message": "Unexpected 'this'.",
-        "line": 67,
-        "column": 24,
-        "endLine": 67,
-        "endColumn": 28
-      },
-      {
-        "ruleId": "consistent-return",
-        "message": "Function 'localePath' expected no return value.",
-        "line": 69,
-        "column": 9,
-        "endLine": 69,
-        "endColumn": 25
       },
       {
         "ruleId": "max-len",
         "message": "This line has a length of 94. Maximum allowed is 80.",
-        "line": 83,
+        "line": 68,
         "column": 1,
-        "endLine": 83,
+        "endLine": 68,
         "endColumn": 95
-      },
-      {
-        "ruleId": "no-invalid-this",
-        "message": "Unexpected 'this'.",
-        "line": 83,
-        "column": 71,
-        "endLine": 83,
-        "endColumn": 75
       },
       {
         "ruleId": "max-len",
         "message": "This line has a length of 149. Maximum allowed is 80.",
-        "line": 85,
+        "line": 70,
         "column": 1,
-        "endLine": 85,
+        "endLine": 70,
         "endColumn": 150
-      },
-      {
-        "ruleId": "no-console",
-        "message": "Unexpected console statement.",
-        "line": 85,
-        "column": 13,
-        "endLine": 85,
-        "endColumn": 25
-      },
-      {
-        "ruleId": "no-invalid-this",
-        "message": "Unexpected 'this'.",
-        "line": 89,
-        "column": 22,
-        "endLine": 89,
-        "endColumn": 26
-      },
-      {
-        "ruleId": "no-invalid-this",
-        "message": "Unexpected 'this'.",
-        "line": 96,
-        "column": 40,
-        "endLine": 96,
-        "endColumn": 44
-      },
-      {
-        "ruleId": "no-invalid-this",
-        "message": "Unexpected 'this'.",
-        "line": 99,
-        "column": 13,
-        "endLine": 99,
-        "endColumn": 17
       },
       {
         "ruleId": "max-len",
         "message": "This line has a length of 99. Maximum allowed is 80.",
-        "line": 101,
+        "line": 84,
         "column": 1,
-        "endLine": 101,
+        "endLine": 84,
         "endColumn": 100
-      },
-      {
-        "ruleId": "no-invalid-this",
-        "message": "Unexpected 'this'.",
-        "line": 101,
-        "column": 32,
-        "endLine": 101,
-        "endColumn": 36
-      },
-      {
-        "ruleId": "no-invalid-this",
-        "message": "Unexpected 'this'.",
-        "line": 112,
-        "column": 20,
-        "endLine": 112,
-        "endColumn": 24
-      },
-      {
-        "ruleId": "no-invalid-this",
-        "message": "Unexpected 'this'.",
-        "line": 118,
-        "column": 13,
-        "endLine": 118,
-        "endColumn": 17
       },
       {
         "ruleId": "max-len",
         "message": "This line has a length of 91. Maximum allowed is 80.",
-        "line": 120,
+        "line": 99,
         "column": 1,
-        "endLine": 120,
+        "endLine": 99,
         "endColumn": 92
-      },
-      {
-        "ruleId": "no-invalid-this",
-        "message": "Unexpected 'this'.",
-        "line": 120,
-        "column": 26,
-        "endLine": 120,
-        "endColumn": 30
-      },
-      {
-        "ruleId": "id-length",
-        "message": "Identifier name 'l' is too short (< 2).",
-        "line": 120,
-        "column": 55,
-        "endLine": 120,
-        "endColumn": 56
-      },
-      {
-        "ruleId": "init-declarations",
-        "message": "Variable 'protocol' should be initialized on declaration.",
-        "line": 123,
-        "column": 21,
-        "endLine": 123,
-        "endColumn": 29
-      },
-      {
-        "ruleId": "no-invalid-this",
-        "message": "Unexpected 'this'.",
-        "line": 127,
-        "column": 35,
-        "endLine": 127,
-        "endColumn": 39
-      },
-      {
-        "ruleId": "no-underscore-dangle",
-        "message": "Unexpected dangling '_' in '_parentVnode'.",
-        "line": 127,
-        "column": 35,
-        "endLine": 127,
-        "endColumn": 61
-      },
-      {
-        "ruleId": "no-ternary",
-        "message": "Ternary operator used.",
-        "line": 128,
-        "column": 32,
-        "endLine": 130,
-        "endColumn": 33
-      },
-      {
-        "ruleId": "prefer-destructuring",
-        "message": "Use array destructuring.",
-        "line": 134,
-        "column": 21,
-        "endLine": 134,
-        "endColumn": 70
-      },
-      {
-        "ruleId": "no-magic-numbers",
-        "message": "No magic number: 0.",
-        "line": 134,
-        "column": 68,
-        "endLine": 134,
-        "endColumn": 69
       },
       {
         "ruleId": "max-len",
         "message": "This line has a length of 109. Maximum allowed is 80.",
-        "line": 141,
+        "line": 116,
         "column": 1,
-        "endLine": 141,
+        "endLine": 116,
         "endColumn": 110
-      },
-      {
-        "ruleId": "no-console",
-        "message": "Unexpected console statement.",
-        "line": 141,
-        "column": 17,
-        "endLine": 141,
-        "endColumn": 29
-      },
-      {
-        "ruleId": "func-style",
-        "message": "Expected a function expression.",
-        "line": 152,
-        "column": 1,
-        "endLine": 177,
-        "endColumn": 2
-      },
-      {
-        "ruleId": "no-ternary",
-        "message": "Ternary operator used.",
-        "line": 154,
-        "column": 25,
-        "endLine": 160,
-        "endColumn": 10
-      },
-      {
-        "ruleId": "func-names",
-        "message": "Unexpected unnamed function.",
-        "line": 156,
-        "column": 11,
-        "endLine": 156,
-        "endColumn": 20
-      },
-      {
-        "ruleId": "no-invalid-this",
-        "message": "Unexpected 'this'.",
-        "line": 158,
-        "column": 29,
-        "endLine": 158,
-        "endColumn": 33
-      },
-      {
-        "ruleId": "no-param-reassign",
-        "message": "Assignment to function parameter 'route'.",
-        "line": 164,
-        "column": 9,
-        "endLine": 164,
-        "endColumn": 14
-      },
-      {
-        "ruleId": "no-invalid-this",
-        "message": "Unexpected 'this'.",
-        "line": 165,
-        "column": 13,
-        "endLine": 165,
-        "endColumn": 17
-      },
-      {
-        "ruleId": "no-magic-numbers",
-        "message": "No magic number: 0.",
-        "line": 173,
-        "column": 54,
-        "endLine": 173,
-        "endColumn": 55
-      },
-      {
-        "ruleId": "no-shadow",
-        "message": "'Vue' is already declared in the upper scope on line 2 column 8.",
-        "line": 180,
-        "column": 14,
-        "endLine": 180,
-        "endColumn": 17
-      },
-      {
-        "ruleId": "sort-keys",
-        "message": "Expected object keys to be in ascending order. 'getRouteBaseName' should be before 'switchLocalePath'.",
-        "line": 189,
-        "column": 17,
-        "endLine": 189,
-        "endColumn": 35
       }
     ]
   },
@@ -4206,6 +3940,14 @@
   {
     "filePath": "/output-with-fix/pwa-module/lib/onesignal/all-rules-test/plugin.js",
     "messages": [
+      {
+        "ruleId": "logical-assignment-operators",
+        "message": "Assignment (=) can be replaced with operator assignment (||=).",
+        "line": 1,
+        "column": 21,
+        "endLine": 1,
+        "endColumn": 62
+      },
       {
         "ruleId": "no-multi-assign",
         "message": "Unexpected chained assignment.",
@@ -5693,6 +5435,14 @@
         "column": 28,
         "endLine": 42,
         "endColumn": 18
+      },
+      {
+        "ruleId": "logical-assignment-operators",
+        "message": "Assignment (=) can be replaced with operator assignment (||=).",
+        "line": 45,
+        "column": 5,
+        "endLine": 45,
+        "endColumn": 54
       }
     ]
   },

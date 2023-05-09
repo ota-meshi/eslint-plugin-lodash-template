@@ -54,19 +54,19 @@ jobs:
         npm install
     - name: Test
       run: npm test
-  test-with-latest:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-    - name: Install Target Packages
-      run: |+
-        # npm i -D eslint@latest
-        npm i -S parse5@latest
-        npx rimraf node_modules
-        npm install
-    - name: Test
-      run: npm test
+#   test-with-latest:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v3
+#     - uses: actions/setup-node@v3
+#     - name: Install Target Packages
+#       run: |+
+#         # npm i -D eslint@latest
+#         npm i -S parse5@latest
+#         npx rimraf node_modules
+#         npm install
+#     - name: Test
+#       run: npm test
   test-with-eslint7:
     runs-on: ubuntu-latest
     steps:

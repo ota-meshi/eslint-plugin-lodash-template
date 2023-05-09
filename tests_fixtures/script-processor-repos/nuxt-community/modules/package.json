@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "eslint": "~8.13.0",
+    "eslint": "~8.40.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-lodash-template": "file:../../../..",
