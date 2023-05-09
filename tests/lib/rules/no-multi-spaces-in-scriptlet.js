@@ -1,14 +1,14 @@
-"use strict"
+"use strict";
 
-const RuleTester = require("eslint").RuleTester
-const rule = require("../../../lib/rules/no-multi-spaces-in-scriptlet")
+const RuleTester = require("eslint").RuleTester;
+const rule = require("../../../lib/rules/no-multi-spaces-in-scriptlet");
 
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
     parserOptions: {
         ecmaVersion: 2015,
     },
-})
+});
 
 tester.run("no-multi-spaces-in-scriptlet", rule, {
     valid: [
@@ -413,4 +413,4 @@ tester.run("no-multi-spaces-in-scriptlet", rule, {
             ],
         },
     ],
-})
+});

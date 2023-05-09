@@ -9,13 +9,13 @@ export default () =>
     {
         if (typeof window !== "undefined") {
             if (typeof window.global === "undefined") {
-                window.global = {}
+                window.global = {};
             }
             if (typeof window.process === "undefined") {
                 window.process = {
                     env: {},
                     cwd: () => undefined,
-                }
+                };
             }
         }
-    }
+    };

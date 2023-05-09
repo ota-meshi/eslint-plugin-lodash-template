@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import EslintPluginEditor from "./EslintPluginEditor"
+import EslintPluginEditor from "./EslintPluginEditor";
 
 export default {
     name: "PgEditor",
@@ -38,5 +38,5 @@ export default {
             type: Boolean,
         },
     },
-}
+};
 </script>

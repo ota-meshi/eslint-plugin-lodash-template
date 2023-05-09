@@ -1,6 +1,6 @@
 /* eslint node/no-unsupported-features/es-syntax: off -- not node */
 
-import pako from "pako"
+import pako from "pako";
 
 /**
  * Get only enabled rules to make the serialized data smaller.
@@ -10,10 +10,10 @@ import pako from "pako"
 function getEnabledRules(allRules) {
     return Object.keys(allRules).reduce((map, id) => {
         if (allRules[id] === "error") {
-            map[id] = 2
+            map[id] = 2;
         }
-        return map
-    }, {})
+        return map;
+    }, {});
 }
 
 /**
@@ -27,23 +27,23 @@ export function serializeState(state) {
         rules: state.rules ? getEnabledRules(state.rules) : undefined,
         script: state.script ? true : undefined,
         ejs: state.ejs ? true : undefined,
-    }
-    const jsonString = JSON.stringify(saveData)
+    };
+    const jsonString = JSON.stringify(saveData);
 
     // eslint-disable-next-line node/no-unsupported-features/node-builtins -- ignore
-    const uint8Arr = new TextEncoder().encode(jsonString)
-    const compressedString = String.fromCharCode(...pako.deflate(uint8Arr))
+    const uint8Arr = new TextEncoder().encode(jsonString);
+    const compressedString = String.fromCharCode(...pako.deflate(uint8Arr));
     const base64 =
         (typeof window !== "undefined" && window.btoa(compressedString)) ||
-        compressedString
+        compressedString;
 
     //eslint-disable-next-line no-console -- demo
     console.log(
         `The compress rate of serialized string: ${(
             (100 * base64.length) /
             jsonString.length
-        ).toFixed(1)}% (${jsonString.length}B → ${base64.length}B)`,
-    )
+        ).toFixed(1)}% (${jsonString.length}B → ${base64.length}B)`
+    );
 
-    return base64
+    return base64;
 }

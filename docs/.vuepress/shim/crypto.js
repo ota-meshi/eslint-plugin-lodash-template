@@ -1,17 +1,17 @@
-const md5 = require("js-md5")
+const md5 = require("js-md5");
 
 module.exports = {
     createHash() {
-        const hash = md5.create()
+        const hash = md5.create();
         return {
             update(encoding) {
-                hash.update(encoding)
+                hash.update(encoding);
                 return {
                     digest() {
-                        return hash.hex()
+                        return hash.hex();
                     },
-                }
+                };
             },
-        }
+        };
     },
-}
+};

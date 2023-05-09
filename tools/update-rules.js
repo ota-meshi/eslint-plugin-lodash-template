@@ -1,10 +1,10 @@
-"use strict"
+"use strict";
 
-const path = require("path")
-const fs = require("fs")
-const isWin = require("os").platform().startsWith("win")
-const { ESLint } = require("../tests/eslint-compat")
-const rules = require("./lib/load-rules")
+const path = require("path");
+const fs = require("fs");
+const isWin = require("os").platform().startsWith("win");
+const { ESLint } = require("../tests/eslint-compat");
+const rules = require("./lib/load-rules");
 
 let content = `
 "use strict"
@@ -17,7 +17,7 @@ const baseRules = [
     ruleName: "${rule.meta.docs.ruleName}",
     ruleId: "${rule.meta.docs.ruleId}",
     },
-    `,
+    `
         )
         .join("")}
 ]
@@ -47,22 +47,22 @@ function collectRules(category) {
 }
 
 module.exports = { rules, collectRules }
-`
+`;
 
-const filePath = path.resolve(__dirname, "../lib/utils/rules.js")
+const filePath = path.resolve(__dirname, "../lib/utils/rules.js");
 
 if (isWin) {
     content = content
         .replace(/\r?\n/gu, "\n")
         .replace(/\r/gu, "\n")
-        .replace(/\n/gu, "\r\n")
+        .replace(/\n/gu, "\r\n");
 }
 
 // Update file.
-fs.writeFileSync(filePath, content)
+fs.writeFileSync(filePath, content);
 
 // Format files.
-const linter = new ESLint({ fix: true })
+const linter = new ESLint({ fix: true });
 linter.lintFiles([filePath]).then((report) => {
-    ESLint.outputFixes(report)
-})
+    ESLint.outputFixes(report);
+});

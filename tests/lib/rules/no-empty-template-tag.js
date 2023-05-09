@@ -1,14 +1,14 @@
-"use strict"
+"use strict";
 
-const RuleTester = require("eslint").RuleTester
-const rule = require("../../../lib/rules/no-empty-template-tag")
+const RuleTester = require("eslint").RuleTester;
+const rule = require("../../../lib/rules/no-empty-template-tag");
 
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
     parserOptions: {
         ecmaVersion: 2015,
     },
-})
+});
 
 tester.run("no-empty-template-tag", rule, {
     valid: [
@@ -134,4 +134,4 @@ tester.run("no-empty-template-tag", rule, {
             errors: ["Empty micro-template tag."],
         },
     ],
-})
+});

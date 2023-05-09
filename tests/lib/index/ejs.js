@@ -1,14 +1,14 @@
-"use strict"
+"use strict";
 
-const assert = require("assert")
-const path = require("path")
-const { ESLint } = require("../../eslint-compat")
-const semver = require("semver")
-const eslintVersion = require("eslint/package.json").version
-const fs = require("fs")
-const testUtils = require("../../test-utils")
+const assert = require("assert");
+const path = require("path");
+const { ESLint } = require("../../eslint-compat");
+const semver = require("semver");
+const eslintVersion = require("eslint/package.json").version;
+const fs = require("fs");
+const testUtils = require("../../test-utils");
 
-const FIXTURE_DIR = path.join(__dirname, "../../../tests_fixtures/ejs")
+const FIXTURE_DIR = path.join(__dirname, "../../../tests_fixtures/ejs");
 
 /**
  * Assert the messages
@@ -17,18 +17,18 @@ const FIXTURE_DIR = path.join(__dirname, "../../../tests_fixtures/ejs")
  * @returns {void}
  */
 function assertMessages(actual, expected) {
-    const length = Math.max(actual.length, expected.length)
-    const expected2 = []
+    const length = Math.max(actual.length, expected.length);
+    const expected2 = [];
     for (let i = 0; i < length; i++) {
         expected2.push(
             expected[i]
                 ? Object.assign({}, actual[i], expected[i])
-                : expected[i],
-        )
+                : expected[i]
+        );
     }
 
-    assert.deepStrictEqual(actual, expected2)
-    assert.strictEqual(actual.length, expected.length)
+    assert.deepStrictEqual(actual, expected2);
+    assert.strictEqual(actual.length, expected.length);
 }
 
 /**
@@ -40,12 +40,12 @@ function stringifyMessages(messages) {
         messages,
         (key, value) => {
             if (["severity", "nodeType", "messageId", "fix"].includes(key)) {
-                return undefined
+                return undefined;
             }
-            return value
+            return value;
         },
-        2,
-    )
+        2
+    );
 }
 
 describe("ejs test", () => {
@@ -57,30 +57,30 @@ describe("ejs test", () => {
                 it(name, async () => {
                     const eslint = new ESLint({
                         cwd: FIXTURE_DIR,
-                    })
-                    const reportResults = await eslint.lintFiles([name])
+                    });
+                    const reportResults = await eslint.lintFiles([name]);
                     const messages = testUtils.sortMessages(
-                        reportResults[0].messages,
-                    )
+                        reportResults[0].messages
+                    );
 
                     const expectFilepath = path.join(
                         FIXTURE_DIR,
-                        `${name}.json`,
-                    )
+                        `${name}.json`
+                    );
                     try {
                         assertMessages(
                             messages,
-                            JSON.parse(fs.readFileSync(expectFilepath, "utf8")),
-                        )
+                            JSON.parse(fs.readFileSync(expectFilepath, "utf8"))
+                        );
                     } catch (e) {
                         testUtils.writeFile(
                             expectFilepath,
-                            stringifyMessages(messages),
-                        )
-                        throw e
+                            stringifyMessages(messages)
+                        );
+                        throw e;
                     }
-                })
+                });
             }
-        })
+        });
     }
-})
+});

@@ -1,14 +1,14 @@
-"use strict"
+"use strict";
 
-const RuleTester = require("eslint").RuleTester
-const rule = require("../../../lib/rules/element-name-casing")
+const RuleTester = require("eslint").RuleTester;
+const rule = require("../../../lib/rules/element-name-casing");
 
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
     parserOptions: {
         ecmaVersion: 2015,
     },
-})
+});
 
 tester.run("element-name-casing", rule, {
     valid: [
@@ -185,4 +185,4 @@ tester.run("element-name-casing", rule, {
             ],
         },
     ],
-})
+});

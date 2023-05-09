@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import EslintPluginEditor from "./components/EslintPluginEditor"
+import EslintPluginEditor from "./components/EslintPluginEditor";
 
 export default {
     name: "ESLintCodeBlock",
@@ -23,7 +23,7 @@ export default {
         rules: {
             type: Object,
             default() {
-                return {}
+                return {};
             },
         },
         script: {
@@ -34,12 +34,12 @@ export default {
         return {
             code: "",
             height: "",
-        }
+        };
     },
     mounted() {
-        this.code = `${this.computeCodeFromSlot(this.$slots.default).trim()}\n`
-        const lines = this.code.split("\n").length
-        this.height = `${Math.max(120, 20 * (1 + lines))}px`
+        this.code = `${this.computeCodeFromSlot(this.$slots.default).trim()}\n`;
+        const lines = this.code.split("\n").length;
+        this.height = `${Math.max(120, 20 * (1 + lines))}px`;
     },
 
     methods: {
@@ -49,15 +49,15 @@ export default {
          */
         computeCodeFromSlot(nodes) {
             if (!Array.isArray(nodes)) {
-                return ""
+                return "";
             }
             return nodes
                 .map(
                     (node) =>
-                        node.text || this.computeCodeFromSlot(node.children),
+                        node.text || this.computeCodeFromSlot(node.children)
                 )
-                .join("")
+                .join("");
         },
     },
-}
+};
 </script>

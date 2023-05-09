@@ -1,14 +1,14 @@
-"use strict"
+"use strict";
 
-const RuleTester = require("eslint").RuleTester
-const rule = require("../../../lib/rules/no-html-comments")
+const RuleTester = require("eslint").RuleTester;
+const rule = require("../../../lib/rules/no-html-comments");
 
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
     parserOptions: {
         ecmaVersion: 2015,
     },
-})
+});
 
 tester.run("no-html-comments", rule, {
     valid: [
@@ -70,4 +70,4 @@ tester.run("no-html-comments", rule, {
             errors: ["HTML comment are forbidden."],
         },
     ],
-})
+});

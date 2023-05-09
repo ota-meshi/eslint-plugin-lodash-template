@@ -1,8 +1,8 @@
-"use strict"
+"use strict";
 
-const assert = require("assert")
-const { ESLint } = require("../../eslint-compat")
-const testUtils = require("../../test-utils")
+const assert = require("assert");
+const { ESLint } = require("../../eslint-compat");
+const testUtils = require("../../test-utils");
 
 /**
  * Assert the messages
@@ -11,18 +11,18 @@ const testUtils = require("../../test-utils")
  * @returns {void}
  */
 function assertMessages(actual, expected) {
-    const length = Math.max(actual.length, expected.length)
-    const expected2 = []
+    const length = Math.max(actual.length, expected.length);
+    const expected2 = [];
     for (let i = 0; i < length; i++) {
         expected2.push(
             expected[i]
                 ? Object.assign({}, actual[i], expected[i])
-                : expected[i],
-        )
+                : expected[i]
+        );
     }
 
-    assert.deepStrictEqual(actual, expected2)
-    assert.strictEqual(actual.length, expected.length)
+    assert.deepStrictEqual(actual, expected2);
+    assert.strictEqual(actual.length, expected.length);
 }
 
 describe("comment-directive test", () => {
@@ -41,7 +41,7 @@ describe("comment-directive test", () => {
                 },
             },
             useEslintrc: false,
-        })
+        });
         const report = await cli.lintText(
             `
         <div>
@@ -51,15 +51,15 @@ describe("comment-directive test", () => {
           <% const b = 1; %>
         </div>
         `,
-            { filePath: "test.html" },
-        )
-        const messages = testUtils.sortMessages(report[0].messages)
+            { filePath: "test.html" }
+        );
+        const messages = testUtils.sortMessages(report[0].messages);
 
         assertMessages(messages, [
             {
                 message: "'b' is assigned a value but never used.",
                 line: 6,
             },
-        ])
-    })
-})
+        ]);
+    });
+});

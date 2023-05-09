@@ -1,14 +1,14 @@
-"use strict"
+"use strict";
 
-const RuleTester = require("eslint").RuleTester
-const rule = require("../../../lib/rules/no-duplicate-attributes")
+const RuleTester = require("eslint").RuleTester;
+const rule = require("../../../lib/rules/no-duplicate-attributes");
 
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
     parserOptions: {
         ecmaVersion: 2015,
     },
-})
+});
 
 tester.run("no-duplicate-attributes", rule, {
     valid: [
@@ -184,4 +184,4 @@ tester.run("no-duplicate-attributes", rule, {
             ],
         },
     ],
-})
+});

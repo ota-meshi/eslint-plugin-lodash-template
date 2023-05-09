@@ -1,14 +1,14 @@
-"use strict"
+"use strict";
 
-const RuleTester = require("eslint").RuleTester
-const rule = require("../../../lib/rules/attribute-name-casing")
+const RuleTester = require("eslint").RuleTester;
+const rule = require("../../../lib/rules/attribute-name-casing");
 
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
     parserOptions: {
         ecmaVersion: 2015,
     },
-})
+});
 
 tester.run("attribute-name-casing", rule, {
     valid: [
@@ -122,4 +122,4 @@ tester.run("attribute-name-casing", rule, {
             errors: ["Attribute `viewBox` must be 'kebab-case'."],
         },
     ],
-})
+});

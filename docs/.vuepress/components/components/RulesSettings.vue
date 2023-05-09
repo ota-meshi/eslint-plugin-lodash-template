@@ -15,21 +15,21 @@
                     :checked="
                         categories.every((category) =>
                             category.rules.every((rule) =>
-                                isErrorState(rule.ruleId),
-                            ),
+                                isErrorState(rule.ruleId)
+                            )
                         )
                     "
                     type="checkbox"
                     :indeterminate.prop="
                         categories.some((category) =>
                             category.rules.some((rule) =>
-                                isErrorState(rule.ruleId),
-                            ),
+                                isErrorState(rule.ruleId)
+                            )
                         ) &&
                         categories.some((category) =>
                             category.rules.some(
-                                (rule) => !isErrorState(rule.ruleId),
-                            ),
+                                (rule) => !isErrorState(rule.ruleId)
+                            )
                         )
                     "
                     @input="onAllClick($event)"
@@ -70,16 +70,16 @@
                             <input
                                 :checked="
                                     category.rules.every((rule) =>
-                                        isErrorState(rule.ruleId),
+                                        isErrorState(rule.ruleId)
                                     )
                                 "
                                 type="checkbox"
                                 :indeterminate.prop="
                                     !category.rules.every((rule) =>
-                                        isErrorState(rule.ruleId),
+                                        isErrorState(rule.ruleId)
                                     ) &&
                                     !category.rules.every(
-                                        (rule) => !isErrorState(rule.ruleId),
+                                        (rule) => !isErrorState(rule.ruleId)
                                     )
                                 "
                                 @input="onCategoryClick(category, $event)"
@@ -135,7 +135,7 @@
 </template>
 
 <script>
-import { categories } from "../rules"
+import { categories } from "../rules";
 
 export default {
     name: "RulesSettings",
@@ -154,11 +154,11 @@ export default {
                         {
                             close: true,
                         },
-                    ]
-                }),
+                    ];
+                })
             ),
             filterValue: "",
-        }
+        };
     },
     computed: {
         categories() {
@@ -166,58 +166,58 @@ export default {
                 return {
                     ...c,
                     rules: this.filterRules(c.rules),
-                }
-            })
+                };
+            });
         },
     },
     methods: {
         filterRules(rules) {
-            let filteredRules = rules
+            let filteredRules = rules;
             if (this.filterValue) {
                 filteredRules = filteredRules.filter((r) =>
-                    r.ruleId.includes(this.filterValue),
-                )
+                    r.ruleId.includes(this.filterValue)
+                );
             }
-            return filteredRules
+            return filteredRules;
         },
         onCategoryClick(category, e) {
-            const rules = Object.assign({}, this.rules)
+            const rules = Object.assign({}, this.rules);
             for (const rule of category.rules) {
                 if (e.target.checked) {
-                    rules[rule.ruleId] = "error"
+                    rules[rule.ruleId] = "error";
                 } else {
-                    delete rules[rule.ruleId]
+                    delete rules[rule.ruleId];
                 }
             }
-            this.$emit("update:rules", rules)
+            this.$emit("update:rules", rules);
         },
         onAllClick(e) {
-            const rules = Object.assign({}, this.rules)
+            const rules = Object.assign({}, this.rules);
             for (const category of this.categories) {
                 for (const rule of category.rules) {
                     if (e.target.checked) {
-                        rules[rule.ruleId] = "error"
+                        rules[rule.ruleId] = "error";
                     } else {
-                        delete rules[rule.ruleId]
+                        delete rules[rule.ruleId];
                     }
                 }
             }
-            this.$emit("update:rules", rules)
+            this.$emit("update:rules", rules);
         },
         onClick(ruleId, e) {
-            const rules = Object.assign({}, this.rules)
+            const rules = Object.assign({}, this.rules);
             if (e.target.checked) {
-                rules[ruleId] = "error"
+                rules[ruleId] = "error";
             } else {
-                delete rules[ruleId]
+                delete rules[ruleId];
             }
-            this.$emit("update:rules", rules)
+            this.$emit("update:rules", rules);
         },
         isErrorState(ruleId) {
-            return this.rules[ruleId] === "error" || this.rules[ruleId] === 2
+            return this.rules[ruleId] === "error" || this.rules[ruleId] === 2;
         },
     },
-}
+};
 </script>
 
 <style scoped>

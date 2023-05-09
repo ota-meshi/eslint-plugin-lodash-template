@@ -1,38 +1,38 @@
-"use strict"
+"use strict";
 
-const assert = require("assert")
-const path = require("path")
-const fs = require("fs")
-const parser = require("../../../lib/parser/micro-template-eslint-parser")
-const PathCoveredTemplateStore = require("../../../lib/services/path-covered-template-store")
-const visitorKeys = require("eslint-visitor-keys").KEYS
-const testUtils = require("../../test-utils")
+const assert = require("assert");
+const path = require("path");
+const fs = require("fs");
+const parser = require("../../../lib/parser/micro-template-eslint-parser");
+const PathCoveredTemplateStore = require("../../../lib/services/path-covered-template-store");
+const visitorKeys = require("eslint-visitor-keys").KEYS;
+const testUtils = require("../../test-utils");
 
 const FIXTURE_DIR = path.join(
     __dirname,
-    "../../../tests_fixtures/path-covered-template",
-)
+    "../../../tests_fixtures/path-covered-template"
+);
 
 /**
  * getPathCoveredTemplateStore
  * @param {string} fileName file name
  */
 function getPathCoveredTemplateStore(fileName) {
-    const filePath = path.join(FIXTURE_DIR, fileName)
-    const code = fs.readFileSync(filePath, "utf8")
-    const result = parser.parseTemplate(code, { filePath })
-    const microTemplate = result.services.getMicroTemplateService()
+    const filePath = path.join(FIXTURE_DIR, fileName);
+    const code = fs.readFileSync(filePath, "utf8");
+    const result = parser.parseTemplate(code, { filePath });
+    const microTemplate = result.services.getMicroTemplateService();
 
     const templates = new PathCoveredTemplateStore(
         result.ast,
         result.visitorKeys || visitorKeys,
-        microTemplate,
-    )
+        microTemplate
+    );
     return {
         templates,
         code,
         getLocFromIndex: (index) => microTemplate.getLocFromIndex(index),
-    }
+    };
 }
 
 describe("PathCoveredTemplateStore test", () => {
@@ -42,37 +42,38 @@ describe("PathCoveredTemplateStore test", () => {
         describe("Extracted texts should be valid with HTML.", () => {
             it(name, () => {
                 const { templates, code, getLocFromIndex } =
-                    getPathCoveredTemplateStore(name)
+                    getPathCoveredTemplateStore(name);
 
-                const texts = []
+                const texts = [];
                 for (let index = 0; index < code.length; index++) {
-                    const { template } = templates.getPathCoveredTemplate(index)
+                    const { template } =
+                        templates.getPathCoveredTemplate(index);
                     if (!texts.includes(template)) {
-                        const loc = getLocFromIndex(index)
+                        const loc = getLocFromIndex(index);
                         texts.push(
-                            `--------(index:${index},line:${loc.line},col:${loc.column})--------`,
-                        )
-                        texts.push(template)
+                            `--------(index:${index},line:${loc.line},col:${loc.column})--------`
+                        );
+                        texts.push(template);
                     }
                 }
 
                 const expectFilepath = path.join(
                     FIXTURE_DIR,
-                    name.replace(/\.html$/u, ".txt"),
-                )
+                    name.replace(/\.html$/u, ".txt")
+                );
                 try {
                     assert.strictEqual(
                         texts.join("\n"),
-                        fs.readFileSync(expectFilepath, "utf8"),
-                    )
+                        fs.readFileSync(expectFilepath, "utf8")
+                    );
                 } catch (e) {
-                    testUtils.writeFile(expectFilepath, texts.join("\n"))
-                    throw e
+                    testUtils.writeFile(expectFilepath, texts.join("\n"));
+                    throw e;
                 }
-            })
-        })
+            });
+        });
     }
-})
+});
 
 describe("PathCoveredTemplateStore test", () => {
     for (const name of fs
@@ -80,30 +81,32 @@ describe("PathCoveredTemplateStore test", () => {
         .filter((s) => s.endsWith(".js"))) {
         describe("Extracted texts should be valid with Script.", () => {
             it(name, () => {
-                const { templates } = getPathCoveredTemplateStore(name)
+                const { templates } = getPathCoveredTemplateStore(name);
 
-                const texts = []
+                const texts = [];
                 for (const { template } of templates.getAllTemplates()) {
                     if (!texts.includes(template)) {
-                        texts.push(`--------(#${texts.length / 2 + 1})--------`)
-                        texts.push(template)
+                        texts.push(
+                            `--------(#${texts.length / 2 + 1})--------`
+                        );
+                        texts.push(template);
                     }
                 }
 
                 const expectFilepath = path.join(
                     FIXTURE_DIR,
-                    name.replace(/\.js$/u, ".txt"),
-                )
+                    name.replace(/\.js$/u, ".txt")
+                );
                 try {
                     assert.strictEqual(
                         texts.join("\n"),
-                        fs.readFileSync(expectFilepath, "utf8"),
-                    )
+                        fs.readFileSync(expectFilepath, "utf8")
+                    );
                 } catch (e) {
-                    testUtils.writeFile(expectFilepath, texts.join("\n"))
-                    throw e
+                    testUtils.writeFile(expectFilepath, texts.join("\n"));
+                    throw e;
                 }
-            })
-        })
+            });
+        });
     }
-})
+});

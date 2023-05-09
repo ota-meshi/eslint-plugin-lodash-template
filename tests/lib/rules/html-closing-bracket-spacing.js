@@ -1,14 +1,14 @@
-"use strict"
+"use strict";
 
-const RuleTester = require("eslint").RuleTester
-const rule = require("../../../lib/rules/html-closing-bracket-spacing")
+const RuleTester = require("eslint").RuleTester;
+const rule = require("../../../lib/rules/html-closing-bracket-spacing");
 
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
     parserOptions: {
         ecmaVersion: 2015,
     },
-})
+});
 
 tester.run("html-closing-bracket-spacing", rule, {
     valid: [
@@ -160,4 +160,4 @@ tester.run("html-closing-bracket-spacing", rule, {
             ],
         },
     ],
-})
+});

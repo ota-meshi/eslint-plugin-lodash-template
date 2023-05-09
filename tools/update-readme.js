@@ -1,36 +1,36 @@
-"use strict"
+"use strict";
 
-const fs = require("fs")
-const path = require("path")
-const isWin = require("os").platform().startsWith("win")
-const rules = require("../lib/utils/rules").rules
-const categories = require("./lib/categories")
+const fs = require("fs");
+const path = require("path");
+const isWin = require("os").platform().startsWith("win");
+const rules = require("../lib/utils/rules").rules;
+const categories = require("./lib/categories");
 
 const uncategorizedRules = rules.filter(
-    (rule) => !rule.meta.docs.category && !rule.meta.deprecated,
-)
-const deprecatedRules = rules.filter((rule) => rule.meta.deprecated)
+    (rule) => !rule.meta.docs.category && !rule.meta.deprecated
+);
+const deprecatedRules = rules.filter((rule) => rule.meta.deprecated);
 
 //eslint-disable-next-line require-jsdoc -- ignore
 function toRuleRow(rule) {
     const mark = `${rule.meta.fixable ? ":wrench:" : ""}${
         rule.meta.deprecated ? ":warning:" : ""
-    }`
-    const link = `[${rule.meta.docs.ruleId}](./docs/rules/${rule.meta.docs.ruleName}.md)`
-    const description = rule.meta.docs.description || "(no description)"
+    }`;
+    const link = `[${rule.meta.docs.ruleId}](./docs/rules/${rule.meta.docs.ruleName}.md)`;
+    const description = rule.meta.docs.description || "(no description)";
 
-    return `| ${mark} | ${link} | ${description} |`
+    return `| ${mark} | ${link} | ${description} |`;
 }
 
 //eslint-disable-next-line require-jsdoc -- ignore
 function toDeprecatedRuleRow(rule) {
-    const link = `[${rule.meta.docs.ruleId}](./docs/rules/${rule.meta.docs.ruleName}.md)`
-    const replacedRules = rule.meta.docs.replacedBy || []
+    const link = `[${rule.meta.docs.ruleId}](./docs/rules/${rule.meta.docs.ruleName}.md)`;
+    const replacedRules = rule.meta.docs.replacedBy || [];
     const replacedBy = replacedRules
         .map((name) => `[lodash-template/${name}](./docs/rules/${name}.md)`)
-        .join(", ")
+        .join(", ");
 
-    return `| ${link} | ${replacedBy || "(no replacement)"} |`
+    return `| ${link} | ${replacedBy || "(no replacement)"} |`;
 }
 
 let rulesTableContent = categories
@@ -53,9 +53,9 @@ ${
 ${category.rules.map(toRuleRow).join("\n")}
 `
         : ""
-}`,
+}`
     )
-    .join("")
+    .join("");
 
 if (uncategorizedRules.length >= 1) {
     rulesTableContent += `
@@ -64,7 +64,7 @@ if (uncategorizedRules.length >= 1) {
 |    | Rule ID | Description |
 |:---|:--------|:------------|
 ${uncategorizedRules.map(toRuleRow).join("\n")}
-`
+`;
 }
 
 if (deprecatedRules.length >= 1) {
@@ -77,24 +77,24 @@ if (deprecatedRules.length >= 1) {
 | Rule ID | Replaced by |
 |:--------|:------------|
 ${deprecatedRules.map(toDeprecatedRuleRow).join("\n")}
-`
+`;
 }
 
-let insertText = `\n${rulesTableContent}\n`
+let insertText = `\n${rulesTableContent}\n`;
 if (isWin) {
     insertText = insertText
         .replace(/\r?\n/gu, "\n")
         .replace(/\r/gu, "\n")
-        .replace(/\n/gu, "\r\n")
+        .replace(/\n/gu, "\r\n");
 }
 
-const readmeFilePath = path.resolve(__dirname, "../README.md")
+const readmeFilePath = path.resolve(__dirname, "../README.md");
 fs.writeFileSync(
     readmeFilePath,
     fs
         .readFileSync(readmeFilePath, "utf8")
         .replace(
             /<!--RULES_TABLE_START-->[\s\S]*<!--RULES_TABLE_END-->/u,
-            `<!--RULES_TABLE_START-->${insertText}<!--RULES_TABLE_END-->`,
-        ),
-)
+            `<!--RULES_TABLE_START-->${insertText}<!--RULES_TABLE_END-->`
+        )
+);

@@ -62,11 +62,11 @@
 </template>
 
 <script>
-import PgEditor from "./components/PgEditor.vue"
-import RulesSettings from "./components/RulesSettings.vue"
-import SnsBar from "./components/SnsBar.vue"
-import { deserializeState, serializeState } from "./state"
-import { DEFAULT_RULES_CONFIG, getRule } from "./rules"
+import PgEditor from "./components/PgEditor.vue";
+import RulesSettings from "./components/RulesSettings.vue";
+import SnsBar from "./components/SnsBar.vue";
+import { deserializeState, serializeState } from "./state";
+import { DEFAULT_RULES_CONFIG, getRule } from "./rules";
 
 const DEFAULT_HTML_CODE = `<% /* global accounts, users */ %>
 <% accounts.forEach(({id, profile_image_url, from_user}, i) => { %>
@@ -82,7 +82,7 @@ const DEFAULT_HTML_CODE = `<% /* global accounts, users */ %>
 
 <% for ( var i = 0; i < users.length; i++ ) { %>
   <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
-<% } %>`
+<% } %>`;
 
 const DEFAULT_SCRIPT_CODE = `/* eslint no-multi-spaces: error, space-infix-ops: error, computed-property-spacing: error */
 <% /* global options, additionals */ %>
@@ -95,7 +95,7 @@ const obj    = <%= JSON.stringify(options     ) %>
 <%}%>
 
 export default obj
-`
+`;
 
 export default {
     name: "PlaygroundBlock",
@@ -103,8 +103,8 @@ export default {
     data() {
         const serializedString =
             (typeof window !== "undefined" && window.location.hash.slice(1)) ||
-            ""
-        const state = deserializeState(serializedString)
+            "";
+        const state = deserializeState(serializedString);
         return {
             code:
                 state.code ||
@@ -113,86 +113,86 @@ export default {
             script: state.script,
             ejs: state.ejs,
             messages: [],
-        }
+        };
     },
     computed: {
         serializedString() {
             const defaultCode = this.script
                 ? DEFAULT_SCRIPT_CODE
-                : DEFAULT_HTML_CODE
-            const defaultRules = DEFAULT_RULES_CONFIG
-            const code = defaultCode === this.code ? undefined : this.code
+                : DEFAULT_HTML_CODE;
+            const defaultRules = DEFAULT_RULES_CONFIG;
+            const code = defaultCode === this.code ? undefined : this.code;
             const rules = equalsRules(defaultRules, this.rules)
                 ? undefined
-                : this.rules
+                : this.rules;
             const serializedString = serializeState({
                 code,
                 rules,
                 script: this.script,
                 ejs: this.ejs,
-            })
-            return serializedString
+            });
+            return serializedString;
         },
     },
     watch: {
         serializedString(serializedString) {
             if (typeof window !== "undefined") {
-                window.location.replace(`#${serializedString}`)
+                window.location.replace(`#${serializedString}`);
             }
         },
     },
     mounted() {
         if (typeof window !== "undefined") {
-            window.addEventListener("hashchange", this.onUrlHashChange)
+            window.addEventListener("hashchange", this.onUrlHashChange);
         }
     },
     beforeDestroey() {
         if (typeof window !== "undefined") {
-            window.removeEventListener("hashchange", this.onUrlHashChange)
+            window.removeEventListener("hashchange", this.onUrlHashChange);
         }
     },
     methods: {
         onChange({ messages }) {
-            this.messages = messages
+            this.messages = messages;
         },
         getRule(ruleId) {
-            return getRule(ruleId)
+            return getRule(ruleId);
         },
         onUrlHashChange() {
             const serializedString =
                 (typeof window !== "undefined" &&
                     window.location.hash.slice(1)) ||
-                ""
+                "";
             if (serializedString !== this.serializedString) {
-                const state = deserializeState(serializedString)
+                const state = deserializeState(serializedString);
                 this.code =
                     state.code ||
-                    (state.script ? DEFAULT_SCRIPT_CODE : DEFAULT_HTML_CODE)
+                    (state.script ? DEFAULT_SCRIPT_CODE : DEFAULT_HTML_CODE);
                 this.rules =
-                    state.rules || Object.assign({}, DEFAULT_RULES_CONFIG)
-                this.script = state.script
+                    state.rules || Object.assign({}, DEFAULT_RULES_CONFIG);
+                this.script = state.script;
             }
         },
         onScriptCheck(evt) {
-            this.script = evt.target.checked
-            this.code = this.script ? DEFAULT_SCRIPT_CODE : DEFAULT_HTML_CODE
+            this.script = evt.target.checked;
+            this.code = this.script ? DEFAULT_SCRIPT_CODE : DEFAULT_HTML_CODE;
         },
     },
-}
+};
 
 function equalsRules(a, b) {
-    const akeys = Object.keys(a).filter((k) => a[k] !== "off")
-    const bkeys = Object.keys(b).filter((k) => b[k] !== "off")
+    const akeys = Object.keys(a).filter((k) => a[k] !== "off");
+    const bkeys = Object.keys(b).filter((k) => b[k] !== "off");
     if (akeys.length !== bkeys.length) {
-        return false
+        return false;
     }
 
     for (const k of akeys) {
         if (a[k] !== b[k]) {
-            return false
+            return false;
         }
     }
-    return true
+    return true;
 }
 </script>
 <style scoped>
