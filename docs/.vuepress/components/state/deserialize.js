@@ -1,6 +1,6 @@
 /* eslint node/no-unsupported-features/es-syntax: off -- not node */
 
-import pako from "pako"
+import pako from "pako";
 
 /**
  * Deserialize a given serialized string then update this object.
@@ -13,43 +13,43 @@ export function deserializeState(serializedString) {
         rules: undefined,
         script: false,
         ejs: false,
-    }
+    };
 
     if (serializedString === "") {
-        return state
+        return state;
     }
 
     try {
-        const compressedString = window.atob(serializedString)
+        const compressedString = window.atob(serializedString);
         const uint8Arr = pako.inflate(
-            Uint8Array.from(compressedString, (c) => c.charCodeAt(0)),
-        )
+            Uint8Array.from(compressedString, (c) => c.charCodeAt(0))
+        );
 
         // eslint-disable-next-line node/no-unsupported-features/node-builtins -- ignore
-        const jsonText = new TextDecoder().decode(uint8Arr)
-        const json = JSON.parse(jsonText)
+        const jsonText = new TextDecoder().decode(uint8Arr);
+        const json = JSON.parse(jsonText);
 
         if (typeof json === "object" && json != null) {
             if (typeof json.code === "string") {
-                state.code = json.code
+                state.code = json.code;
             }
             if (typeof json.rules === "object" && json.rules != null) {
-                state.rules = {}
+                state.rules = {};
                 for (const id of Object.keys(json.rules)) {
-                    state.rules[id] = json.rules[id] === 2 ? "error" : "off"
+                    state.rules[id] = json.rules[id] === 2 ? "error" : "off";
                 }
             }
             if (typeof json.script === "boolean") {
-                state.script = json.script
+                state.script = json.script;
             }
             if (typeof json.ejs === "boolean") {
-                state.ejs = json.ejs
+                state.ejs = json.ejs;
             }
         }
     } catch (error) {
         // eslint-disable-next-line no-console -- demo
-        console.error(error)
+        console.error(error);
     }
 
-    return state
+    return state;
 }

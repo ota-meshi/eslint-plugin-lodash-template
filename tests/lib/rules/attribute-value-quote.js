@@ -1,14 +1,14 @@
-"use strict"
+"use strict";
 
-const RuleTester = require("eslint").RuleTester
-const rule = require("../../../lib/rules/attribute-value-quote")
+const RuleTester = require("eslint").RuleTester;
+const rule = require("../../../lib/rules/attribute-value-quote");
 
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
     parserOptions: {
         ecmaVersion: 2015,
     },
-})
+});
 
 tester.run("attribute-value-quote", rule, {
     valid: [
@@ -174,4 +174,4 @@ tester.run("attribute-value-quote", rule, {
             errors: ["Expected to be enclosed by double quotes."],
         },
     ],
-})
+});

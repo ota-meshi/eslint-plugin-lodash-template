@@ -37,53 +37,53 @@
 </template>
 
 <script>
-let timeoutId = null
+let timeoutId = null;
 
 function setup() {
     if (timeoutId) {
-        clearTimeout(timeoutId)
+        clearTimeout(timeoutId);
     }
     timeoutId = setTimeout(() => {
-        ;(function (d, s, id) {
-            const [fjs] = d.getElementsByTagName(s)
+        (function (d, s, id) {
+            const [fjs] = d.getElementsByTagName(s);
             if (d.getElementById(id)) {
-                return
+                return;
             }
-            const js = d.createElement(s)
-            js.id = id
-            js.src = "https://buttons.github.io/buttons.js"
-            fjs.parentNode.insertBefore(js, fjs)
-        })(document, "script", "gh-buttons")
-        ;(function (d, s, id) {
-            const [fjs] = d.getElementsByTagName(s)
+            const js = d.createElement(s);
+            js.id = id;
+            js.src = "https://buttons.github.io/buttons.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, "script", "gh-buttons");
+        (function (d, s, id) {
+            const [fjs] = d.getElementsByTagName(s);
             if (d.getElementById(id)) {
-                return
+                return;
             }
-            const js = d.createElement(s)
-            js.id = id
+            const js = d.createElement(s);
+            js.id = id;
             js.src =
-                "https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10"
-            fjs.parentNode.insertBefore(js, fjs)
-        })(document, "script", "facebook-jssdk")
-        ;(function (d, s, id) {
-            const [fjs] = d.getElementsByTagName(s)
-            const p = /^http:/u.test(d.location) ? "http" : "https"
+                "https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10";
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, "script", "facebook-jssdk");
+        (function (d, s, id) {
+            const [fjs] = d.getElementsByTagName(s);
+            const p = /^http:/u.test(d.location) ? "http" : "https";
             if (!d.getElementById(id)) {
-                const js = d.createElement(s)
-                js.id = id
-                js.src = `${p}://platform.twitter.com/widgets.js`
-                fjs.parentNode.insertBefore(js, fjs)
+                const js = d.createElement(s);
+                js.id = id;
+                js.src = `${p}://platform.twitter.com/widgets.js`;
+                fjs.parentNode.insertBefore(js, fjs);
             }
-        })(document, "script", "twitter-wjs")
-    }, 500)
+        })(document, "script", "twitter-wjs");
+    }, 500);
 }
 
 export default {
     name: "SnsBar",
     mounted() {
-        setup()
+        setup();
     },
-}
+};
 </script>
 
 <style scoped lang="postcss">

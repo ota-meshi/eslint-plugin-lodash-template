@@ -18,12 +18,12 @@
 </template>
 
 <script>
-import EslintEditor from "vue-eslint-editor"
-import { Linter } from "eslint/lib/linter"
-import parser from "../../../../lib/parser/micro-template-eslint-parser"
-import plugin from "../../../.."
-import htmlProcessor from "../../../../lib/processors/html"
-import scriptProcessor from "../../../../lib/processors/script"
+import EslintEditor from "vue-eslint-editor";
+import { Linter } from "eslint/lib/linter";
+import parser from "../../../../lib/parser/micro-template-eslint-parser";
+import plugin from "../../../..";
+import htmlProcessor from "../../../../lib/processors/html";
+import scriptProcessor from "../../../../lib/processors/script";
 
 export default {
     name: "EslintPluginEditor",
@@ -42,7 +42,7 @@ export default {
         rules: {
             type: Object,
             default() {
-                return {}
+                return {};
             },
         },
         script: {
@@ -62,7 +62,7 @@ export default {
                 insertSpaces: true,
                 tabSize: 2,
             },
-        }
+        };
     },
 
     computed: {
@@ -113,94 +113,94 @@ export default {
                           }
                         : {}),
                 },
-            }
+            };
         },
         fileName() {
-            return !this.script ? "a.html" : "a.js"
+            return !this.script ? "a.html" : "a.js";
         },
         language() {
-            return !this.script ? "html" : "javascript"
+            return !this.script ? "html" : "javascript";
         },
         preprocess() {
-            const script = this.script
+            const script = this.script;
             if (!script) {
                 return (rawText) =>
-                    htmlProcessor.preprocess(rawText, this.fileName)
+                    htmlProcessor.preprocess(rawText, this.fileName);
             }
             return (rawText) =>
-                scriptProcessor.preprocess(rawText, this.fileName)
+                scriptProcessor.preprocess(rawText, this.fileName);
         },
         postprocess() {
-            const script = this.script
+            const script = this.script;
             if (!script) {
                 return (problemLists) =>
-                    htmlProcessor.postprocess(problemLists, this.fileName)
+                    htmlProcessor.postprocess(problemLists, this.fileName);
             }
             return (problemLists) =>
-                scriptProcessor.postprocess(problemLists, this.fileName)
+                scriptProcessor.postprocess(problemLists, this.fileName);
         },
         linter() {
-            const linter = new Linter()
+            const linter = new Linter();
 
             for (const k of Object.keys(plugin.rules)) {
-                const rule = plugin.rules[k]
-                linter.defineRule(rule.meta.docs.ruleId, rule)
+                const rule = plugin.rules[k];
+                linter.defineRule(rule.meta.docs.ruleId, rule);
             }
-            linter.defineParser("micro-template-eslint-parser", parser)
+            linter.defineParser("micro-template-eslint-parser", parser);
 
-            const vm = this
+            const vm = this;
             // verifyAndFixだけpreprocess・postprocessをサポートしていない様子
-            const verifyAndFix = linter.verifyAndFix.bind(linter)
+            const verifyAndFix = linter.verifyAndFix.bind(linter);
             linter.verifyAndFix = function (...args) {
-                args[2].preprocess = vm.preprocess
-                args[2].postprocess = vm.postprocess
-                return verifyAndFix(...args)
-            }
-            return linter
+                args[2].preprocess = vm.preprocess;
+                args[2].postprocess = vm.postprocess;
+                return verifyAndFix(...args);
+            };
+            return linter;
         },
     },
 
     mounted() {
-        const editor = this.$refs.editor
+        const editor = this.$refs.editor;
 
         editor.$watch("monaco", () => {
-            const { monaco } = editor
+            const { monaco } = editor;
             // monaco.languages.j()
             monaco.languages.typescript.typescriptDefaults.setDiagnosticsOptions(
                 {
                     validate: false,
-                },
-            )
+                }
+            );
             monaco.languages.typescript.javascriptDefaults.setDiagnosticsOptions(
                 {
                     validate: false,
-                },
-            )
-        })
+                }
+            );
+        });
         editor.$watch("codeEditor", () => {
             if (editor.codeEditor) {
                 editor.codeEditor.onDidChangeModelDecorations(() =>
-                    this.onDidChangeModelDecorations(editor.codeEditor),
-                )
+                    this.onDidChangeModelDecorations(editor.codeEditor)
+                );
             }
-        })
+        });
         editor.$watch("fixedCodeEditor", () => {
             if (editor.fixedCodeEditor) {
                 editor.fixedCodeEditor.onDidChangeModelDecorations(() =>
-                    this.onDidChangeModelDecorations(editor.fixedCodeEditor),
-                )
+                    this.onDidChangeModelDecorations(editor.fixedCodeEditor)
+                );
             }
-        })
+        });
     },
 
     methods: {
         onDidChangeModelDecorations(editor) {
-            const { monaco } = this.$refs.editor
-            const model = editor.getModel()
-            monaco.editor.setModelMarkers(model, "javascript", [])
+            const { monaco } = this.$refs.editor;
+            const model = editor.getModel();
+            monaco.editor.setModelMarkers(model, "javascript", []);
         },
     },
-}
+};
 </script>
 
 <style scoped>

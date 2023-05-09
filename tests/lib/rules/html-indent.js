@@ -1,14 +1,14 @@
-"use strict"
+"use strict";
 
-const fs = require("fs")
-const path = require("path")
-const RuleTester = require("eslint").RuleTester
-const rule = require("../../../lib/rules/html-indent")
+const fs = require("fs");
+const path = require("path");
+const RuleTester = require("eslint").RuleTester;
+const rule = require("../../../lib/rules/html-indent");
 
 const FIXTURE_ROOT = path.resolve(
     __dirname,
-    "../../../tests_fixtures/html-indent/",
-)
+    "../../../tests_fixtures/html-indent/"
+);
 
 /**
  * Load test patterns from fixtures.
@@ -27,26 +27,29 @@ const FIXTURE_ROOT = path.resolve(
  */
 function loadPatterns(additionalValid, additionalInvalid) {
     const valid = fs.readdirSync(FIXTURE_ROOT).map((filename) => {
-        const code0 = fs.readFileSync(path.join(FIXTURE_ROOT, filename), "utf8")
-        const code = code0.replace(/^<!--(.+?)-->/u, `<!--${filename}-->`)
-        const baseObj = JSON.parse(/^<!--(.+?)-->/u.exec(code0)[1])
-        return Object.assign(baseObj, { code, filename })
-    })
+        const code0 = fs.readFileSync(
+            path.join(FIXTURE_ROOT, filename),
+            "utf8"
+        );
+        const code = code0.replace(/^<!--(.+?)-->/u, `<!--${filename}-->`);
+        const baseObj = JSON.parse(/^<!--(.+?)-->/u.exec(code0)[1]);
+        return Object.assign(baseObj, { code, filename });
+    });
     const invalid = valid
         .map((pattern) => {
             const kind =
                 (pattern.options && pattern.options[0]) === "tab"
                     ? "tab"
-                    : "space"
-            const output = pattern.code
+                    : "space";
+            const output = pattern.code;
             const lines = output.split("\n").map((text, number) => ({
                 number,
                 text,
                 indentSize: (/^[\t ]+/u.exec(text) || [""])[0].length,
-            }))
+            }));
             const code = lines
                 .map((line) => line.text.replace(/^[\t ]+/u, ""))
-                .join("\n")
+                .join("\n");
             const errors = lines
                 .map((line) =>
                     line.indentSize === 0
@@ -58,18 +61,18 @@ function loadPatterns(additionalValid, additionalInvalid) {
                                   line.indentSize === 1 ? "" : "s"
                               } but found 0 ${kind}s.`,
                               line: line.number + 1,
-                          },
+                          }
                 )
-                .filter(Boolean)
+                .filter(Boolean);
 
-            return Object.assign({}, pattern, { code, output, errors })
+            return Object.assign({}, pattern, { code, output, errors });
         })
-        .filter(Boolean)
+        .filter(Boolean);
 
     return {
         valid: valid.concat(additionalValid),
         invalid: invalid.concat(additionalInvalid),
-    }
+    };
 }
 
 /**
@@ -78,17 +81,17 @@ function loadPatterns(additionalValid, additionalInvalid) {
  * @returns {string} The template literal, with spaces removed from all lines
  */
 function unIndent(strings) {
-    const templateValue = strings[0]
+    const templateValue = strings[0];
     const lines = templateValue
         .replace(/^\n/u, "")
         .replace(/\n\s*$/u, "")
-        .split("\n")
+        .split("\n");
     const lineIndents = lines
         .filter((line) => line.trim())
-        .map((line) => line.match(/ */u)[0].length)
-    const minLineIndent = Math.min.apply(null, lineIndents)
+        .map((line) => line.match(/ */u)[0].length);
+    const minLineIndent = Math.min.apply(null, lineIndents);
 
-    return lines.map((line) => line.slice(minLineIndent)).join("\n")
+    return lines.map((line) => line.slice(minLineIndent)).join("\n");
 }
 
 const tester = new RuleTester({
@@ -96,7 +99,7 @@ const tester = new RuleTester({
     parserOptions: {
         ecmaVersion: 2015,
     },
-})
+});
 
 tester.run(
     "html-indent",
@@ -348,6 +351,6 @@ text
                 ],
                 filename: "test.html",
             },
-        ],
-    ),
-)
+        ]
+    )
+);

@@ -1,5 +1,5 @@
-const { Linter } = require("eslint/lib/linter")
+const { Linter } = require("eslint/lib/linter");
 
 module.exports = {
     Linter,
-}
+};

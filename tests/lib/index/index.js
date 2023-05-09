@@ -1,16 +1,16 @@
-"use strict"
+"use strict";
 
-const assert = require("assert")
-const path = require("path")
-const { ESLint, Linter } = require("../..//eslint-compat")
-const semver = require("semver")
-const eslintVersion = require("eslint/package.json").version
-const fs = require("fs")
-const plugin = require("../../..")
-const rule = require("../../../lib/rules/no-empty-template-tag")
+const assert = require("assert");
+const path = require("path");
+const { ESLint, Linter } = require("../..//eslint-compat");
+const semver = require("semver");
+const eslintVersion = require("eslint/package.json").version;
+const fs = require("fs");
+const plugin = require("../../..");
+const rule = require("../../../lib/rules/no-empty-template-tag");
 
-const FIXTURE_DIR = path.join(__dirname, "../../../tests_fixtures/index")
-const CONFIG_PATH = path.join(FIXTURE_DIR, ".eslintrc.js")
+const FIXTURE_DIR = path.join(__dirname, "../../../tests_fixtures/index");
+const CONFIG_PATH = path.join(FIXTURE_DIR, ".eslintrc.js");
 
 /**
  * Assert the messages
@@ -19,81 +19,81 @@ const CONFIG_PATH = path.join(FIXTURE_DIR, ".eslintrc.js")
  * @returns {void}
  */
 function assertMessages(actual, expected) {
-    const length = Math.max(actual.length, expected.length)
-    const expected2 = []
+    const length = Math.max(actual.length, expected.length);
+    const expected2 = [];
     for (let i = 0; i < length; i++) {
         expected2.push(
             expected[i]
                 ? Object.assign({}, actual[i], expected[i])
-                : expected[i],
-        )
+                : expected[i]
+        );
     }
 
-    assert.deepStrictEqual(actual, expected2)
-    assert.strictEqual(actual.length, expected.length)
+    assert.deepStrictEqual(actual, expected2);
+    assert.strictEqual(actual.length, expected.length);
 }
 
 describe("index test", () => {
     it("processor extension should be html", () => {
-        assert(Object.keys(plugin.processors).length, 1)
-        assert.ok(Boolean(plugin.processors[".html"]), "don't have html")
-    })
+        assert(Object.keys(plugin.processors).length, 1);
+        assert.ok(Boolean(plugin.processors[".html"]), "don't have html");
+    });
     it("If it passes through the processor, it must be processed by the parser.", () => {
-        const linter = new Linter()
+        const linter = new Linter();
         const config = {
             parser: "micro-template-eslint-parser",
             parserOptions: { ecmaVersion: 2015 },
             rules: {
                 "no-empty-template-tag": "error",
             },
-        }
+        };
         const options = {
             preprocess(code) {
-                return plugin.processors.base.preprocess(code, "test.ejs")
+                return plugin.processors.base.preprocess(code, "test.ejs");
             },
             postprocess(messages) {
-                return plugin.processors.base.postprocess(messages, "test.ejs")
+                return plugin.processors.base.postprocess(messages, "test.ejs");
             },
-        }
+        };
         linter.defineParser(
             "micro-template-eslint-parser",
-            require("../../../lib/parser/micro-template-eslint-parser"),
-        )
-        linter.defineRule("no-empty-template-tag", rule)
+            require("../../../lib/parser/micro-template-eslint-parser")
+        );
+        linter.defineRule("no-empty-template-tag", rule);
         const messagesEjs = linter.verify("'use strict'<%%>", config, {
             filename: "test.ejs",
             ...options,
-        })
+        });
 
-        assert.strictEqual(messagesEjs[0].ruleId, "no-empty-template-tag")
-    })
+        assert.strictEqual(messagesEjs[0].ruleId, "no-empty-template-tag");
+    });
     it("If it does not pass through the processor, it will not be processed by the parser.", () => {
-        const linter = new Linter()
+        const linter = new Linter();
         const config = {
             parser: "micro-template-eslint-parser",
             parserOptions: { ecmaVersion: 2015 },
             rules: {
                 "no-empty-template-tag": "error",
             },
-        }
+        };
         linter.defineParser(
             "micro-template-eslint-parser",
-            require("../../../lib/parser/micro-template-eslint-parser"),
-        )
-        linter.defineRule("no-empty-template-tag", rule)
+            require("../../../lib/parser/micro-template-eslint-parser")
+        );
+        linter.defineRule("no-empty-template-tag", rule);
         const messagesEjs = linter.verify("'use strict'<%%>", config, {
             filename: "test.ejs",
-        })
+        });
 
-        assert.strictEqual(messagesEjs[0].ruleId, null) // parse error
+        assert.strictEqual(messagesEjs[0].ruleId, null); // parse error
 
         const messagesEjb = linter.verify("'use strict'<%%>", config, {
             filename: "test.ejb",
-        })
+        });
 
-        assert.strictEqual(messagesEjb[0].ruleId, null) // parse error
-    })
-})
+        assert.strictEqual(messagesEjb[0].ruleId, null); // parse error
+    });
+});
 
 describe("Basic tests", () => {
     if (semver.satisfies(eslintVersion, ">=7.0.0-rc")) {
@@ -103,9 +103,9 @@ describe("Basic tests", () => {
                     cwd: FIXTURE_DIR,
                     overrideConfigFile: CONFIG_PATH,
                     useEslintrc: false,
-                })
-                const reportResults = await cli.lintFiles(["hello.html"])
-                const messages = reportResults[0].messages
+                });
+                const reportResults = await cli.lintFiles(["hello.html"]);
+                const messages = reportResults[0].messages;
 
                 assertMessages(messages, [
                     {
@@ -235,40 +235,40 @@ describe("Basic tests", () => {
                         message: "Unexpected string concatenation.",
                         ruleId: "prefer-template",
                     },
-                ])
-            })
+                ]);
+            });
 
             if (semver.satisfies(eslintVersion, ">=7.0.0-rc")) {
                 it("should fix errors with --fix option", async () => {
-                    const baseFilepath = path.join(FIXTURE_DIR, "hello.html")
+                    const baseFilepath = path.join(FIXTURE_DIR, "hello.html");
                     const testFilepath = path.join(
                         FIXTURE_DIR,
-                        "hello.html.fixtarget.html",
-                    )
+                        "hello.html.fixtarget.html"
+                    );
                     // copy
-                    fs.copyFileSync(baseFilepath, testFilepath)
+                    fs.copyFileSync(baseFilepath, testFilepath);
 
                     const cli = new ESLint({
                         cwd: FIXTURE_DIR,
                         fix: true,
                         overrideConfigFile: CONFIG_PATH,
                         useEslintrc: false,
-                    })
+                    });
                     await ESLint.outputFixes(
-                        await cli.lintFiles(["hello.html.fixtarget.html"]),
-                    )
+                        await cli.lintFiles(["hello.html.fixtarget.html"])
+                    );
 
-                    const actual = fs.readFileSync(testFilepath, "utf8")
-                    fs.unlinkSync(testFilepath)
+                    const actual = fs.readFileSync(testFilepath, "utf8");
+                    fs.unlinkSync(testFilepath);
                     const expected = fs.readFileSync(
                         path.join(FIXTURE_DIR, "hello.html.fixed.html"),
-                        "utf8",
-                    )
+                        "utf8"
+                    );
 
-                    assert.deepStrictEqual(actual.trim(), expected.trim())
-                })
+                    assert.deepStrictEqual(actual.trim(), expected.trim());
+                });
             }
-        })
+        });
     }
     describe("About fixtures/comment-directive.html", () => {
         it("should no errors", async () => {
@@ -276,13 +276,13 @@ describe("Basic tests", () => {
                 cwd: FIXTURE_DIR,
                 overrideConfigFile: CONFIG_PATH,
                 useEslintrc: false,
-            })
-            const report = await cli.lintFiles(["comment-directive.html"])
-            const messages = report[0].messages
+            });
+            const report = await cli.lintFiles(["comment-directive.html"]);
+            const messages = report[0].messages;
 
-            assertMessages(messages, [])
-        })
-    })
+            assertMessages(messages, []);
+        });
+    });
     describe("About fixtures/no-error", () => {
         for (const name of fs
             .readdirSync(FIXTURE_DIR)
@@ -292,12 +292,12 @@ describe("Basic tests", () => {
                     cwd: FIXTURE_DIR,
                     overrideConfigFile: CONFIG_PATH,
                     useEslintrc: false,
-                })
-                const report = await cli.lintFiles([name])
-                const messages = report[0].messages
+                });
+                const report = await cli.lintFiles([name]);
+                const messages = report[0].messages;
 
-                assertMessages(messages, [])
-            })
+                assertMessages(messages, []);
+            });
         }
-    })
-})
+    });
+});

@@ -1,19 +1,19 @@
-"use strict"
+"use strict";
 
 // @ts-check
-const eslint = require("eslint")
+const eslint = require("eslint");
 
 module.exports = {
     ESLint: eslint.ESLint || getESLintClassForV6(),
     RuleTester: eslint.RuleTester,
     Linter: eslint.Linter,
-}
+};
 
 /** @returns {typeof eslint.ESLint} */
 function getESLintClassForV6() {
     class ESLintForV6 {
         static get version() {
-            return eslint.CLIEngine.version
+            return eslint.CLIEngine.version;
         }
 
         /** @param {eslint.ESLint.Options} options */
@@ -34,7 +34,7 @@ function getESLintClassForV6() {
                 reportUnusedDisableDirectives,
                 plugins: pluginsMap,
                 ...otherOptions
-            } = options || {}
+            } = options || {};
             /** @type {eslint.CLIEngine.Options} */
             const newOptions = {
                 fix: Boolean(fix),
@@ -51,17 +51,17 @@ function getESLintClassForV6() {
                 rules: rules
                     ? Object.entries(rules).reduce((o, [ruleId, opt]) => {
                           if (opt) {
-                              o[ruleId] = opt
+                              o[ruleId] = opt;
                           }
-                          return o
+                          return o;
                       }, /** @type {NonNullable<eslint.CLIEngine.Options["rules"]>} */ ({}))
                     : undefined,
                 ...overrideConfig,
-            }
-            this.engine = new eslint.CLIEngine(newOptions)
+            };
+            this.engine = new eslint.CLIEngine(newOptions);
 
             for (const [name, plugin] of Object.entries(pluginsMap || {})) {
-                this.engine.addPlugin(name, plugin)
+                this.engine.addPlugin(name, plugin);
             }
         }
 
@@ -73,9 +73,9 @@ function getESLintClassForV6() {
         async lintText(...params) {
             const result = this.engine.executeOnText(
                 params[0],
-                params[1].filePath,
-            )
-            return result.results
+                params[1].filePath
+            );
+            return result.results;
         }
 
         /**
@@ -85,9 +85,9 @@ function getESLintClassForV6() {
         // eslint-disable-next-line require-await -- ignore
         async lintFiles(...params) {
             const result = this.engine.executeOnFiles(
-                Array.isArray(params[0]) ? params[0] : [params[0]],
-            )
-            return result.results
+                Array.isArray(params[0]) ? params[0] : [params[0]]
+            );
+            return result.results;
         }
 
         /**
@@ -98,11 +98,11 @@ function getESLintClassForV6() {
         static async outputFixes(...params) {
             return eslint.CLIEngine.outputFixes({
                 results: params[0],
-            })
+            });
         }
     }
 
     /** @type {typeof eslint.ESLint} */
-    const eslintClass = /** @type {any} */ (ESLintForV6)
-    return eslintClass
+    const eslintClass = /** @type {any} */ (ESLintForV6);
+    return eslintClass;
 }

@@ -1,14 +1,14 @@
-"use strict"
+"use strict";
 
-const RuleTester = require("eslint").RuleTester
-const rule = require("../../../lib/rules/max-attributes-per-line")
+const RuleTester = require("eslint").RuleTester;
+const rule = require("../../../lib/rules/max-attributes-per-line");
 
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
     parserOptions: {
         ecmaVersion: 2015,
     },
-})
+});
 
 tester.run("max-attributes-per-line", rule, {
     valid: [
@@ -292,4 +292,4 @@ age="30" job="Vet"></div></body>`,
             ],
         },
     ],
-})
+});

@@ -1,13 +1,13 @@
-const path = require("path")
-const { rules } = require("../../lib/utils/rules")
-const categories = require("../../tools/lib/categories")
+const path = require("path");
+const { rules } = require("../../lib/utils/rules");
+const categories = require("../../tools/lib/categories");
 
 const uncategorizedRules = rules.filter(
-    (rule) => !rule.meta.docs.category && !rule.meta.deprecated,
-)
-const deprecatedRules = rules.filter((rule) => rule.meta.deprecated)
+    (rule) => !rule.meta.docs.category && !rule.meta.deprecated
+);
+const deprecatedRules = rules.filter((rule) => rule.meta.deprecated);
 
-const extraCategories = []
+const extraCategories = [];
 if (uncategorizedRules.length > 0) {
     extraCategories.push({
         title: "Uncategorized",
@@ -17,9 +17,9 @@ if (uncategorizedRules.length > 0) {
                 meta: {
                     docs: { ruleId, ruleName },
                 },
-            }) => [`/rules/${ruleName}`, ruleId],
+            }) => [`/rules/${ruleName}`, ruleId]
         ),
-    })
+    });
 }
 if (deprecatedRules.length > 0) {
     extraCategories.push({
@@ -30,9 +30,9 @@ if (deprecatedRules.length > 0) {
                 meta: {
                     docs: { ruleId, ruleName },
                 },
-            }) => [`/rules/${ruleName}`, ruleId],
+            }) => [`/rules/${ruleName}`, ruleId]
         ),
-    })
+    });
 }
 
 module.exports = {
@@ -51,19 +51,19 @@ module.exports = {
                     module: require.resolve("./shim/module"),
                     "eslint-visitor-keys$": path.resolve(
                         __dirname,
-                        "./shim/eslint-visitor-keys",
+                        "./shim/eslint-visitor-keys"
                     ),
                     esquery: path.resolve(
                         __dirname,
-                        "../../node_modules/esquery/dist/esquery.min.js",
+                        "../../node_modules/esquery/dist/esquery.min.js"
                     ),
                     "@eslint/eslintrc/universal": path.resolve(
                         __dirname,
-                        "../../node_modules/@eslint/eslintrc/dist/eslintrc-universal.cjs",
+                        "../../node_modules/@eslint/eslintrc/dist/eslintrc-universal.cjs"
                     ),
                 },
             },
-        }
+        };
     },
 
     head: [["link", { rel: "icon", type: "image/png", href: "/logo.png" }]],
@@ -105,7 +105,7 @@ module.exports = {
                                 meta: {
                                     docs: { ruleId, ruleName },
                                 },
-                            }) => [`/rules/${ruleName}`, ruleId],
+                            }) => [`/rules/${ruleName}`, ruleId]
                         ),
                     }))
                     .filter((menu) => Boolean(menu.children.length)),
@@ -117,4 +117,4 @@ module.exports = {
             "/": ["/", "/rules/", "/playground/", "/services/", "/migration/"],
         },
     },
-}
+};

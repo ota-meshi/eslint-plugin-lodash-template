@@ -1,14 +1,14 @@
-"use strict"
+"use strict";
 
-const RuleTester = require("eslint").RuleTester
-const rule = require("../../../lib/rules/no-space-attribute-equal-sign")
+const RuleTester = require("eslint").RuleTester;
+const rule = require("../../../lib/rules/no-space-attribute-equal-sign");
 
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
     parserOptions: {
         ecmaVersion: 2015,
     },
-})
+});
 
 tester.run("no-space-attribute-equal-sign", rule, {
     valid: [
@@ -74,4 +74,4 @@ tester.run("no-space-attribute-equal-sign", rule, {
             errors: ["Equal signs in must not be spaced."],
         },
     ],
-})
+});

@@ -1,25 +1,25 @@
-"use strict"
+"use strict";
 
-const fs = require("fs")
-const path = require("path")
-const logger = console
+const fs = require("fs");
+const path = require("path");
+const logger = console;
 
 // main
-;((ruleId) => {
+((ruleId) => {
     if (ruleId == null) {
-        logger.error("Usage: npm run new <RuleID>")
-        process.exitCode = 1
-        return
+        logger.error("Usage: npm run new <RuleID>");
+        process.exitCode = 1;
+        return;
     }
     if (!/^[\w-]+$/u.test(ruleId)) {
-        logger.error("Invalid RuleID '%s'.", ruleId)
-        process.exitCode = 1
-        return
+        logger.error("Invalid RuleID '%s'.", ruleId);
+        process.exitCode = 1;
+        return;
     }
 
-    const ruleFile = path.resolve(__dirname, `../lib/rules/${ruleId}.js`)
-    const testFile = path.resolve(__dirname, `../tests/lib/rules/${ruleId}.js`)
-    const docFile = path.resolve(__dirname, `../docs/rules/${ruleId}.md`)
+    const ruleFile = path.resolve(__dirname, `../lib/rules/${ruleId}.js`);
+    const testFile = path.resolve(__dirname, `../tests/lib/rules/${ruleId}.js`);
+    const docFile = path.resolve(__dirname, `../docs/rules/${ruleId}.md`);
 
     fs.writeFileSync(
         ruleFile,
@@ -39,8 +39,8 @@ module.exports = {
         return {}
     },
 }
-`,
-    )
+`
+    );
     fs.writeFileSync(
         testFile,
         `"use strict"
@@ -59,8 +59,8 @@ tester.run("${ruleId}", rule, {
     valid: [],
     invalid: [],
 })
-`,
-    )
+`
+    );
     fs.writeFileSync(
         docFile,
         `#  (lodash-template/${ruleId})
@@ -79,6 +79,6 @@ This rule reports ??? as errors.
 \`\`\`js
 \`\`\`
 
-`,
-    )
-})(process.argv[2])
+`
+    );
+})(process.argv[2]);

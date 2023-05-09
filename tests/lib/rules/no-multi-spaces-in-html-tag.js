@@ -1,14 +1,14 @@
-"use strict"
+"use strict";
 
-const RuleTester = require("eslint").RuleTester
-const rule = require("../../../lib/rules/no-multi-spaces-in-html-tag")
+const RuleTester = require("eslint").RuleTester;
+const rule = require("../../../lib/rules/no-multi-spaces-in-html-tag");
 
 const tester = new RuleTester({
     parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
     parserOptions: {
         ecmaVersion: 2020,
     },
-})
+});
 
 tester.run("no-multi-spaces-in-html-tag", rule, {
     valid: [
@@ -188,4 +188,4 @@ tester.run("no-multi-spaces-in-html-tag", rule, {
             ],
         },
     ],
-})
+});
