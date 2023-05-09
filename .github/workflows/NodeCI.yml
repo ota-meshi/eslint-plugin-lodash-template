@@ -49,7 +49,7 @@ jobs:
     - name: Install Target Packages
       run: |+
         npm i -D eslint@6.0.0 mocha@7
-        npm i -S parse5@5.0.0
+        npm i -S parse5@6.0.0
         npx rimraf node_modules
         npm install
     - name: Test
