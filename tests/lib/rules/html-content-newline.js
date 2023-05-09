@@ -571,12 +571,6 @@ content
                     line: 3,
                     column: 16,
                 },
-                {
-                    message:
-                        'Expected 1 line break before opening bracket of the "div" element, but no line breaks found.',
-                    line: 3,
-                    column: 16,
-                },
             ],
         },
         {
@@ -598,12 +592,6 @@ content
                 {
                     message:
                         'Expected no line breaks after closing bracket of the "div" element, but 1 line break found.',
-                    line: 2,
-                    column: 20,
-                },
-                {
-                    message:
-                        'Expected no line breaks before opening bracket of the "div" element, but 1 line break found.',
                     line: 2,
                     column: 20,
                 },

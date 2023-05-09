@@ -362,12 +362,6 @@ comment
                     line: 2,
                     column: 17,
                 },
-                {
-                    message:
-                        "Expected 1 line break before `-->`, but no line breaks found.",
-                    line: 2,
-                    column: 17,
-                },
             ],
         },
         {
@@ -389,12 +383,6 @@ comment
                 {
                     message:
                         "Expected no line breaks after `<!--`, but 1 line break found.",
-                    line: 2,
-                    column: 17,
-                },
-                {
-                    message:
-                        "Expected no line breaks before `-->`, but 1 line break found.",
                     line: 2,
                     column: 17,
                 },
