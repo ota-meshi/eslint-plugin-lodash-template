@@ -11948,6 +11948,18 @@
     "filePath": "/output/device-module/lib/plugin.js",
     "messages": [
       {
+        "ruleId": null,
+        "message": "Unused eslint-disable directive (no problems were reported).",
+        "line": 4,
+        "column": 1
+      },
+      {
+        "ruleId": null,
+        "message": "Unused eslint-disable directive (no problems were reported).",
+        "line": 14,
+        "column": 1
+      },
+      {
         "ruleId": "require-await",
         "message": "Async function has no 'await' expression.",
         "line": 37,
@@ -14473,6 +14485,14 @@
         "column": 1,
         "endLine": 120,
         "endColumn": 11
+      },
+      {
+        "ruleId": "logical-assignment-operators",
+        "message": "Assignment (=) can be replaced with operator assignment (||=).",
+        "line": 120,
+        "column": 12,
+        "endLine": 120,
+        "endColumn": 57
       },
       {
         "ruleId": "semi",
@@ -22610,6 +22630,14 @@
         "column": 5,
         "endLine": 21,
         "endColumn": 11
+      },
+      {
+        "ruleId": "logical-assignment-operators",
+        "message": "Assignment (=) can be replaced with operator assignment (||=).",
+        "line": 21,
+        "column": 5,
+        "endLine": 21,
+        "endColumn": 45
       },
       {
         "ruleId": "no-invalid-this",
@@ -31001,7 +31029,7 @@
       },
       {
         "ruleId": "unicorn/no-array-for-each",
-        "message": "Use `for…of` instead of `Array#forEach(…)`.",
+        "message": "Use `for…of` instead of `.forEach(…)`.",
         "line": 9,
         "column": 25,
         "endLine": 9,
@@ -31803,6 +31831,14 @@
   {
     "filePath": "/output/pwa-module/lib/onesignal/all-rules-test/plugin.js",
     "messages": [
+      {
+        "ruleId": "logical-assignment-operators",
+        "message": "Assignment (=) can be replaced with operator assignment (||=).",
+        "line": 1,
+        "column": 21,
+        "endLine": 1,
+        "endColumn": 62
+      },
       {
         "ruleId": "no-multi-assign",
         "message": "Unexpected chained assignment.",
@@ -40825,6 +40861,14 @@
         "column": 1,
         "endLine": 34,
         "endColumn": 3
+      },
+      {
+        "ruleId": "logical-assignment-operators",
+        "message": "Assignment (=) can be replaced with operator assignment (||=).",
+        "line": 34,
+        "column": 3,
+        "endLine": 34,
+        "endColumn": 52
       },
       {
         "ruleId": "semi",

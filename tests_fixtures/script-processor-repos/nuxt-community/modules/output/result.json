@@ -440,6 +440,14 @@
         "endColumn": 5
       },
       {
+        "ruleId": "logical-assignment-operators",
+        "message": "Assignment (=) can be replaced with operator assignment (||=).",
+        "line": 9,
+        "column": 5,
+        "endLine": 9,
+        "endColumn": 66
+      },
+      {
         "ruleId": "semi",
         "message": "Missing semicolon.",
         "line": 9,
@@ -3739,6 +3747,14 @@
         "column": 1,
         "endLine": 30,
         "endColumn": 7
+      },
+      {
+        "ruleId": "logical-assignment-operators",
+        "message": "Assignment (=) can be replaced with operator assignment (||=).",
+        "line": 30,
+        "column": 8,
+        "endLine": 30,
+        "endColumn": 25
       },
       {
         "ruleId": "semi",
