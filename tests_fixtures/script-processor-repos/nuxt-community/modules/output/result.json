@@ -1445,6 +1445,14 @@
     "filePath": "/output/packages/google-tag-manager/plugin.js",
     "messages": [
       {
+        "ruleId": "no-multiple-empty-lines",
+        "message": "Too many blank lines at the beginning of file. Max of 0 allowed.",
+        "line": 1,
+        "column": 1,
+        "endLine": 2,
+        "endColumn": 1
+      },
+      {
         "ruleId": "space-before-function-paren",
         "message": "Missing space before function parentheses.",
         "line": 4,
