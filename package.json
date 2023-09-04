@@ -68,7 +68,7 @@
     "devDependencies": {
         "@changesets/changelog-github": "^0.4.6",
         "@changesets/cli": "^2.24.2",
-        "@ota-meshi/eslint-plugin": "^0.13.0",
+        "@ota-meshi/eslint-plugin": "^0.15.0",
         "@vuepress/plugin-pwa": "^1.4.1",
         "cpx": "^1.5.0",
         "cross-env": "^7.0.2",
