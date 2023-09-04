@@ -23,7 +23,7 @@ function assertMessages(actual, expected) {
         expected2.push(
             expected[i]
                 ? Object.assign({}, actual[i], expected[i])
-                : expected[i]
+                : expected[i],
         );
     }
 
@@ -44,7 +44,7 @@ function stringifyMessages(messages) {
             }
             return value;
         },
-        2
+        2,
     );
 }
 
@@ -60,22 +60,22 @@ describe("ejs test", () => {
                     });
                     const reportResults = await eslint.lintFiles([name]);
                     const messages = testUtils.sortMessages(
-                        reportResults[0].messages
+                        reportResults[0].messages,
                     );
 
                     const expectFilepath = path.join(
                         FIXTURE_DIR,
-                        `${name}.json`
+                        `${name}.json`,
                     );
                     try {
                         assertMessages(
                             messages,
-                            JSON.parse(fs.readFileSync(expectFilepath, "utf8"))
+                            JSON.parse(fs.readFileSync(expectFilepath, "utf8")),
                         );
                     } catch (e) {
                         testUtils.writeFile(
                             expectFilepath,
-                            stringifyMessages(messages)
+                            stringifyMessages(messages),
                         );
                         throw e;
                     }

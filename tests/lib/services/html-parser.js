@@ -31,12 +31,12 @@ describe("html-parser test", () => {
             try {
                 assert.deepStrictEqual(
                     ast,
-                    JSON.parse(fs.readFileSync(expectFilepath, "utf8"))
+                    JSON.parse(fs.readFileSync(expectFilepath, "utf8")),
                 );
             } catch (e) {
                 testUtils.writeFile(
                     expectFilepath,
-                    JSON.stringify(ast, null, 2)
+                    JSON.stringify(ast, null, 2),
                 );
                 throw e;
             }
@@ -71,7 +71,7 @@ function normalizeNode(node) {
         }
         if (Array.isArray(value)) {
             result[key] = value.map((val) =>
-                isNode(val) ? normalizeNode(val) : val
+                isNode(val) ? normalizeNode(val) : val,
             );
         } else if (isNode(value)) {
             result[key] = normalizeNode(value);

@@ -7,7 +7,7 @@ const rule = require("../../../lib/rules/scriptlet-indent");
 
 const FIXTURE_ROOT = path.resolve(
     __dirname,
-    "../../../tests_fixtures/scriptlet-indent/"
+    "../../../tests_fixtures/scriptlet-indent/",
 );
 
 /**
@@ -29,7 +29,7 @@ function loadPatterns(additionalValid, additionalInvalid) {
     const valid = fs.readdirSync(FIXTURE_ROOT).map((filename) => {
         const code0 = fs.readFileSync(
             path.join(FIXTURE_ROOT, filename),
-            "utf8"
+            "utf8",
         );
         const code = code0.replace(/^<!--(.+?)-->/u, `<!--${filename}-->`);
         const baseObj = JSON.parse(/^<!--(.+?)-->/u.exec(code0)[1]);
@@ -61,7 +61,7 @@ function loadPatterns(additionalValid, additionalInvalid) {
                                   line.indentSize === 1 ? "" : "s"
                               } but found 0 ${kind}s.`,
                               line: line.number + 1,
-                          }
+                          },
                 )
                 .filter(Boolean);
 
@@ -395,6 +395,6 @@ tester.run(
                 </div>
                 `,
             },
-        ]
-    )
+        ],
+    ),
 );

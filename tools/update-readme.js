@@ -7,7 +7,7 @@ const rules = require("../lib/utils/rules").rules;
 const categories = require("./lib/categories");
 
 const uncategorizedRules = rules.filter(
-    (rule) => !rule.meta.docs.category && !rule.meta.deprecated
+    (rule) => !rule.meta.docs.category && !rule.meta.deprecated,
 );
 const deprecatedRules = rules.filter((rule) => rule.meta.deprecated);
 
@@ -53,7 +53,7 @@ ${
 ${category.rules.map(toRuleRow).join("\n")}
 `
         : ""
-}`
+}`,
     )
     .join("");
 
@@ -95,6 +95,6 @@ fs.writeFileSync(
         .readFileSync(readmeFilePath, "utf8")
         .replace(
             /<!--RULES_TABLE_START-->[\s\S]*<!--RULES_TABLE_END-->/u,
-            `<!--RULES_TABLE_START-->${insertText}<!--RULES_TABLE_END-->`
-        )
+            `<!--RULES_TABLE_START-->${insertText}<!--RULES_TABLE_END-->`,
+        ),
 );

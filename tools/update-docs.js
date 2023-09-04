@@ -24,7 +24,7 @@ function getPresets(category) {
 
     const presets = [categoryConfig.configId];
     const subTargets = configs.filter((conf) =>
-        conf.extends.find((ext) => ext.name === category)
+        conf.extends.find((ext) => ext.name === category),
     );
     for (const sub of subTargets) {
         for (const name of getPresets(sub.name)) {
@@ -69,12 +69,12 @@ class DocFile {
         if (deprecated) {
             if (replacedBy) {
                 const replacedRules = replacedBy.map(
-                    (name) => `[lodash-template/${name}](${name}.md) rule`
+                    (name) => `[lodash-template/${name}](${name}.md) rule`,
                 );
                 notes.push(
                     `- :warning: This rule was **deprecated** and replaced by ${formatItems(
-                        replacedRules
-                    )}.`
+                        replacedRules,
+                    )}.`,
                 );
             } else {
                 notes.push("- :warning: This rule was **deprecated**.");
@@ -82,15 +82,15 @@ class DocFile {
         } else {
             const presets = Array.from(
                 new Set(
-                    getPresets(category).concat(["plugin:lodash-template/all"])
-                )
+                    getPresets(category).concat(["plugin:lodash-template/all"]),
+                ),
             );
 
             if (presets.length) {
                 notes.push(
                     `- :gear: This rule is included in ${formatItems(
-                        presets.map((c) => `\`"${c}"\``)
-                    )}.`
+                        presets.map((c) => `\`"${c}"\``),
+                    )}.`,
                 );
             }
             // const presets = categories
@@ -102,7 +102,7 @@ class DocFile {
         }
         if (fixable) {
             notes.push(
-                "- :wrench: The `--fix` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by this rule."
+                "- :wrench: The `--fix` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by this rule.",
             );
         }
 
@@ -144,7 +144,7 @@ class DocFile {
 
         this.content = this.content.replace(
             /<eslint-code-block\s(:?fix\S*)?\s*/gu,
-            `<eslint-code-block ${meta.fixable ? "fix " : ""}`
+            `<eslint-code-block ${meta.fixable ? "fix " : ""}`,
         );
         return this;
     }
@@ -153,11 +153,11 @@ class DocFile {
         // Adjust the necessary blank lines before and after the code block so that GitHub can recognize `.md`.
         this.content = this.content.replace(
             /(<eslint-code-block([\s\S]*?)>)\n+```/gu,
-            "$1\n\n```"
+            "$1\n\n```",
         );
         this.content = this.content.replace(
             /```\n+<\/eslint-code-block>/gu,
-            "```\n\n</eslint-code-block>"
+            "```\n\n</eslint-code-block>",
         );
         return this;
     }
