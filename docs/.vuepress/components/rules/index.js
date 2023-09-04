@@ -2,6 +2,7 @@
 /* eslint-disable n/no-unsupported-features/es-syntax -- DEMO */
 // eslint-disable-next-line n/no-missing-import -- DEMO
 import { Linter } from "eslint/lib/linter";
+// eslint-disable-next-line n/no-missing-import -- DEMO
 import plugin from "../../../../";
 
 // eslint-disable-next-line n/no-unsupported-features/es-builtins -- ignore
