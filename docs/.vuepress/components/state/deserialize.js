@@ -1,5 +1,4 @@
-/* eslint node/no-unsupported-features/es-syntax: off -- not node */
-
+/* eslint n/no-unsupported-features/es-syntax: off -- not node */
 import pako from "pako";
 
 /**
@@ -25,7 +24,7 @@ export function deserializeState(serializedString) {
             Uint8Array.from(compressedString, (c) => c.charCodeAt(0))
         );
 
-        // eslint-disable-next-line node/no-unsupported-features/node-builtins -- ignore
+        // eslint-disable-next-line n/no-unsupported-features/node-builtins -- ignore
         const jsonText = new TextDecoder().decode(uint8Arr);
         const json = JSON.parse(jsonText);
 

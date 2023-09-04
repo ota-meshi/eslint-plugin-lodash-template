@@ -1,4 +1,4 @@
-/* eslint node/no-unsupported-features/es-syntax: off -- not node */
+/* eslint n/no-unsupported-features/es-syntax: off -- not node */
 
 import pako from "pako";
 
@@ -30,7 +30,7 @@ export function serializeState(state) {
     };
     const jsonString = JSON.stringify(saveData);
 
-    // eslint-disable-next-line node/no-unsupported-features/node-builtins -- ignore
+    // eslint-disable-next-line n/no-unsupported-features/node-builtins -- ignore
     const uint8Arr = new TextEncoder().encode(jsonString);
     const compressedString = String.fromCharCode(...pako.deflate(uint8Arr));
     const base64 =

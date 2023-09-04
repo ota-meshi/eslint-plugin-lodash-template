@@ -1,9 +1,10 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair -- DEMO
-/* eslint-disable node/no-unsupported-features/es-syntax -- DEMO */
+/* eslint-disable n/no-unsupported-features/es-syntax -- DEMO */
+// eslint-disable-next-line n/no-missing-import -- DEMO
 import { Linter } from "eslint/lib/linter";
 import plugin from "../../../../";
 
-// eslint-disable-next-line node/no-unsupported-features/es-builtins -- ignore
+// eslint-disable-next-line n/no-unsupported-features/es-builtins -- ignore
 const coreRules = Object.fromEntries(new Linter().getRules());
 
 const CATEGORY_TITLES = {
