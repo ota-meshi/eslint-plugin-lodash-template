@@ -95,7 +95,7 @@
         "mocha": "^10.0.0",
         "nyc": "^15.0.1",
         "pako": "^2.0.0",
-        "prettier": "^2.0.5",
+        "prettier": "^3.0.3",
         "semver": "^7.3.2",
         "typescript": "^5.0.0",
         "vue-eslint-editor": "^1.1.0",

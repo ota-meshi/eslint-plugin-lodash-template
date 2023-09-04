@@ -10,7 +10,7 @@ const testUtils = require("../../test-utils");
 
 const FIXTURE_DIR = path.join(
     __dirname,
-    "../../../tests_fixtures/path-covered-template"
+    "../../../tests_fixtures/path-covered-template",
 );
 
 /**
@@ -26,7 +26,7 @@ function getPathCoveredTemplateStore(fileName) {
     const templates = new PathCoveredTemplateStore(
         result.ast,
         result.visitorKeys || visitorKeys,
-        microTemplate
+        microTemplate,
     );
     return {
         templates,
@@ -51,7 +51,7 @@ describe("PathCoveredTemplateStore test", () => {
                     if (!texts.includes(template)) {
                         const loc = getLocFromIndex(index);
                         texts.push(
-                            `--------(index:${index},line:${loc.line},col:${loc.column})--------`
+                            `--------(index:${index},line:${loc.line},col:${loc.column})--------`,
                         );
                         texts.push(template);
                     }
@@ -59,12 +59,12 @@ describe("PathCoveredTemplateStore test", () => {
 
                 const expectFilepath = path.join(
                     FIXTURE_DIR,
-                    name.replace(/\.html$/u, ".txt")
+                    name.replace(/\.html$/u, ".txt"),
                 );
                 try {
                     assert.strictEqual(
                         texts.join("\n"),
-                        fs.readFileSync(expectFilepath, "utf8")
+                        fs.readFileSync(expectFilepath, "utf8"),
                     );
                 } catch (e) {
                     testUtils.writeFile(expectFilepath, texts.join("\n"));
@@ -87,7 +87,7 @@ describe("PathCoveredTemplateStore test", () => {
                 for (const { template } of templates.getAllTemplates()) {
                     if (!texts.includes(template)) {
                         texts.push(
-                            `--------(#${texts.length / 2 + 1})--------`
+                            `--------(#${texts.length / 2 + 1})--------`,
                         );
                         texts.push(template);
                     }
@@ -95,12 +95,12 @@ describe("PathCoveredTemplateStore test", () => {
 
                 const expectFilepath = path.join(
                     FIXTURE_DIR,
-                    name.replace(/\.js$/u, ".txt")
+                    name.replace(/\.js$/u, ".txt"),
                 );
                 try {
                     assert.strictEqual(
                         texts.join("\n"),
-                        fs.readFileSync(expectFilepath, "utf8")
+                        fs.readFileSync(expectFilepath, "utf8"),
                     );
                 } catch (e) {
                     testUtils.writeFile(expectFilepath, texts.join("\n"));

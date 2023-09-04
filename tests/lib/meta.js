@@ -16,7 +16,7 @@ describe("Test for meta object", () => {
         it(`"${name}" processor should have a meta object.`, () => {
             assert.deepStrictEqual(
                 processor.meta.version,
-                expectedMeta.version
+                expectedMeta.version,
             );
             assert.deepStrictEqual(typeof processor.meta.name, "string");
         });

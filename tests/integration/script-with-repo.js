@@ -26,7 +26,7 @@ const eslintVersion = require("eslint/package.json").version;
 
 const FIXTURE_DIR = path.join(
     __dirname,
-    "../../tests_fixtures/script-processor-repos"
+    "../../tests_fixtures/script-processor-repos",
 );
 const ESLINT = `.${path.sep}node_modules${path.sep}.bin${path.sep}eslint`;
 
@@ -145,11 +145,11 @@ describe("script test", () => {
                             } else {
                                 fs.writeFileSync(
                                     RESULT_PATH,
-                                    JSON.stringify(results, null, 2)
+                                    JSON.stringify(results, null, 2),
                                 );
                             }
                             resolve();
-                        }
+                        },
                     );
                 });
             });
@@ -181,11 +181,11 @@ describe("script test", () => {
                             } else {
                                 fs.writeFileSync(
                                     RESULT_PATH,
-                                    JSON.stringify(results, null, 2)
+                                    JSON.stringify(results, null, 2),
                                 );
                             }
                             resolve();
-                        }
+                        },
                     );
                 });
             });
@@ -197,7 +197,7 @@ function processError(stderr) {
     console.error(stderr);
     const matchConfig =
         /ESLint couldn't find the config "(@?[-a-z]+|@[-a-z]+\/[-a-z]+)" to extend from./u.exec(
-            stderr
+            stderr,
         );
     if (matchConfig) {
         const config = matchConfig[1];
@@ -212,7 +212,7 @@ function processError(stderr) {
                         `npm i -D ${config.replace("/", "/eslint-config-")}`,
                         {
                             stdio: "inherit",
-                        }
+                        },
                     );
                 }
             } else {
@@ -247,7 +247,7 @@ function stdoutToResult(stdout, fixtureDir) {
         return {
             filePath: result.filePath.slice(fixtureDir.length),
             messages: testUtils.sortMessages(
-                normalizeMessages(result.messages)
+                normalizeMessages(result.messages),
             ),
         };
     });
@@ -271,7 +271,7 @@ function normalizeMessages(messages) {
                 }
                 return value;
             },
-            2
-        )
+            2,
+        ),
     );
 }

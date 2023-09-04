@@ -73,7 +73,7 @@ function getESLintClassForV6() {
         async lintText(...params) {
             const result = this.engine.executeOnText(
                 params[0],
-                params[1].filePath
+                params[1].filePath,
             );
             return result.results;
         }
@@ -85,7 +85,7 @@ function getESLintClassForV6() {
         // eslint-disable-next-line require-await -- ignore
         async lintFiles(...params) {
             const result = this.engine.executeOnFiles(
-                Array.isArray(params[0]) ? params[0] : [params[0]]
+                Array.isArray(params[0]) ? params[0] : [params[0]],
             );
             return result.results;
         }

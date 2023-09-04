@@ -13,7 +13,7 @@ function listupFiles(dirpath) {
         const filepath = path.join(dirpath, name);
         if (fs.statSync(filepath).isDirectory()) {
             results.push(
-                ...listupFiles(filepath).map((n) => path.join(name, n))
+                ...listupFiles(filepath).map((n) => path.join(name, n)),
             );
         } else {
             results.push(name);
