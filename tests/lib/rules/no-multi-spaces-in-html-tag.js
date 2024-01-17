@@ -176,16 +176,41 @@ tester.run("no-multi-spaces-in-html-tag", rule, {
             output: `
             <input
                 <% if (a) { %>
-                    id="id"  class="foo"   type="text"   value="text value"
+                    id="id" class="foo" type="text" value="text value"
                 <% } else { %>
                     class="foo2" type="text2"
                 <% } %>
                    >
             `,
             errors: [
-                // "Multiple spaces found before `value=\"text value\"`.",
+                'Multiple spaces found before `class="foo"`.',
+                'Multiple spaces found before `type="text"`.',
+                'Multiple spaces found before `value="text value"`.',
                 'Multiple spaces found before `type="text2"`.',
             ],
+        },
+        // duplication attr
+        {
+            filename: "test.html",
+            code: `
+            <input
+                <% if (a) { %>
+                    id="id" class="foo" type="text" value="text value"
+                <% } else { %>
+                    class="foo2"   type="text2"
+                <% } %>
+                   >
+            `,
+            output: `
+            <input
+                <% if (a) { %>
+                    id="id" class="foo" type="text" value="text value"
+                <% } else { %>
+                    class="foo2" type="text2"
+                <% } %>
+                   >
+            `,
+            errors: ['Multiple spaces found before `type="text2"`.'],
         },
     ],
 });
