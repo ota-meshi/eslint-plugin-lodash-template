@@ -2,7 +2,7 @@
 
 const assert = require("assert");
 const path = require("path");
-const { ESLint } = require("../../eslint-compat");
+const { LegacyESLint } = require("../../eslint-compat");
 const semver = require("semver");
 const eslintVersion = require("eslint/package.json").version;
 const fs = require("fs");
@@ -55,7 +55,7 @@ describe("ejs test", () => {
                 .listupFiles(FIXTURE_DIR)
                 .filter((s) => s.endsWith(".ejs"))) {
                 it(name, async () => {
-                    const eslint = new ESLint({
+                    const eslint = new LegacyESLint({
                         cwd: FIXTURE_DIR,
                     });
                     const reportResults = await eslint.lintFiles([name]);

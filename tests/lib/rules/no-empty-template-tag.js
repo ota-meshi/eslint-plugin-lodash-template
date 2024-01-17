@@ -1,11 +1,11 @@
 "use strict";
 
-const RuleTester = require("eslint").RuleTester;
+const RuleTester = require("../../eslint-compat").RuleTester;
 const rule = require("../../../lib/rules/no-empty-template-tag");
 
 const tester = new RuleTester({
-    parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
-    parserOptions: {
+    languageOptions: {
+        parser: require("../../../lib/parser/micro-template-eslint-parser"),
         ecmaVersion: 2015,
     },
 });
@@ -57,12 +57,6 @@ tester.run("no-empty-template-tag", rule, {
             filename: "test.html",
             code: "{{}}",
             output: null,
-            parserOptions: {
-                ecmaVersion: 2015,
-                templateSettings: {
-                    interpolate: ["{{", "}}"],
-                },
-            },
             errors: [
                 {
                     message: "Empty micro-template tag.",
@@ -72,66 +66,84 @@ tester.run("no-empty-template-tag", rule, {
                     endColumn: 5,
                 },
             ],
+            languageOptions: {
+                ecmaVersion: 2015,
+                parserOptions: {
+                    templateSettings: {
+                        interpolate: ["{{", "}}"],
+                    },
+                },
+            },
         },
         {
             filename: "test.html",
             code: "{{}}",
             output: null,
-            parserOptions: {
+            errors: ["Empty micro-template tag."],
+            languageOptions: {
                 ecmaVersion: 2015,
-                templateSettings: {
-                    interpolate: "\\{\\{([\\s\\S]+?)\\}\\}",
+                parserOptions: {
+                    templateSettings: {
+                        interpolate: "\\{\\{([\\s\\S]+?)\\}\\}",
+                    },
                 },
             },
-            errors: ["Empty micro-template tag."],
         },
         {
             filename: "test.html",
             code: "{{}}",
             output: null,
-            parserOptions: {
+            errors: ["Empty micro-template tag."],
+            languageOptions: {
                 ecmaVersion: 2015,
-                templateSettings: {
-                    interpolate: "\\{\\{([\\s\\S]*?)\\}\\}",
+                parserOptions: {
+                    templateSettings: {
+                        interpolate: "\\{\\{([\\s\\S]*?)\\}\\}",
+                    },
                 },
             },
-            errors: ["Empty micro-template tag."],
         },
         {
             filename: "test.html",
             code: "{{}}",
             output: null,
-            parserOptions: {
+            errors: ["Empty micro-template tag."],
+            languageOptions: {
                 ecmaVersion: 2015,
-                templateSettings: {
-                    interpolate: "\\{\\{([\\S\\s]+?)\\}\\}",
+                parserOptions: {
+                    templateSettings: {
+                        interpolate: "\\{\\{([\\S\\s]+?)\\}\\}",
+                    },
                 },
             },
-            errors: ["Empty micro-template tag."],
         },
         {
             filename: "test.html",
             code: "{{}}",
             output: null,
-            parserOptions: {
+            errors: ["Empty micro-template tag."],
+            languageOptions: {
                 ecmaVersion: 2015,
-                templateSettings: {
-                    interpolate: "\\{\\{([\\S\\s]*?)\\}\\}",
+                parserOptions: {
+                    templateSettings: {
+                        interpolate: "\\{\\{([\\S\\s]*?)\\}\\}",
+                    },
                 },
             },
-            errors: ["Empty micro-template tag."],
         },
         {
             filename: "test.html",
             code: "<%  %>",
             output: null,
-            parserOptions: {
+            errors: ["Empty micro-template tag."],
+            languageOptions: {
                 ecmaVersion: 2015,
-                templateSettings: {
-                    interpolate: "\\{\\{(unknown)\\}\\}",
+                parserOptions: {
+                    templateSettings: {
+                        interpolate: "\\{\\{(unknown)\\}\\}",
+                    },
                 },
             },
-            errors: ["Empty micro-template tag."],
         },
     ],
 });

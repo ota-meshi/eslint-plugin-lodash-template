@@ -17,7 +17,7 @@ You can use the type definition of this AST:
 ```ts
 
 export function create(context) {
-    const microTemplateService = context.parserServices.getMicroTemplateService()
+    const microTemplateService = sourceCode.parserServices.getMicroTemplateService()
     return {
         "Program:exit"() {
             microTemplateService.traverseMicroTemplates({

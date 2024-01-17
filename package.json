@@ -103,6 +103,7 @@
         "vuepress": "^1.4.1"
     },
     "dependencies": {
+        "eslint-compat-utils": "^0.4.1",
         "esquery": "^1.0.1",
         "parse5": "^6.0.0"
     },

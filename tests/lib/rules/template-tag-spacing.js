@@ -1,11 +1,11 @@
 "use strict";
 
-const RuleTester = require("eslint").RuleTester;
+const RuleTester = require("../../eslint-compat").RuleTester;
 const rule = require("../../../lib/rules/template-tag-spacing");
 
 const tester = new RuleTester({
-    parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
-    parserOptions: {
+    languageOptions: {
+        parser: require("../../../lib/parser/micro-template-eslint-parser"),
         ecmaVersion: 2015,
     },
 });
@@ -167,12 +167,6 @@ tester.run("template-tag-spacing", rule, {
             filename: "test.html",
             code: "<div>{{text}}</div>",
             output: "<div>{{ text }}</div>",
-            parserOptions: {
-                ecmaVersion: 2015,
-                templateSettings: {
-                    interpolate: ["{{", "}}"],
-                },
-            },
             errors: [
                 {
                     message:
@@ -191,38 +185,50 @@ tester.run("template-tag-spacing", rule, {
                     endColumn: 14,
                 },
             ],
+            languageOptions: {
+                ecmaVersion: 2015,
+                parserOptions: {
+                    templateSettings: {
+                        interpolate: ["{{", "}}"],
+                    },
+                },
+            },
         },
         {
             filename: "test.html",
             code: "<@-inner@><%=inner%>",
             output: "<@- inner @><%= inner %>",
-            parserOptions: {
-                ecmaVersion: 2015,
-                templateSettings: {
-                    interpolate: "<[%@][=|-]([\\s\\S]+?)[%@]>",
-                },
-            },
             errors: [
                 "Expected 1 space after `<@-`, but no spaces found.",
                 "Expected 1 space before `@>`, but no spaces found.",
                 "Expected 1 space after `<%=`, but no spaces found.",
                 "Expected 1 space before `%>`, but no spaces found.",
             ],
+            languageOptions: {
+                ecmaVersion: 2015,
+                parserOptions: {
+                    templateSettings: {
+                        interpolate: "<[%@][=|-]([\\s\\S]+?)[%@]>",
+                    },
+                },
+            },
         },
         {
             filename: "test.html",
             code: "<___>",
             output: "<_ _ _>",
-            parserOptions: {
-                ecmaVersion: 2015,
-                templateSettings: {
-                    interpolate: "<_([\\s\\S]+?)_>",
-                },
-            },
             errors: [
                 "Expected 1 space after `<_`, but no spaces found.",
                 "Expected 1 space before `_>`, but no spaces found.",
             ],
+            languageOptions: {
+                ecmaVersion: 2015,
+                parserOptions: {
+                    templateSettings: {
+                        interpolate: "<_([\\s\\S]+?)_>",
+                    },
+                },
+            },
         },
     ],
 });

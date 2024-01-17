@@ -1,7 +1,7 @@
 "use strict";
 
 const assert = require("assert");
-const { ESLint } = require("../../eslint-compat");
+const { LegacyESLint } = require("../../eslint-compat");
 const testUtils = require("../../test-utils");
 
 /**
@@ -27,7 +27,7 @@ function assertMessages(actual, expected) {
 
 describe("comment-directive test", () => {
     it("has description", async () => {
-        const cli = new ESLint({
+        const cli = new LegacyESLint({
             cwd: __dirname,
             baseConfig: {
                 extends: ["plugin:lodash-template/base"],
