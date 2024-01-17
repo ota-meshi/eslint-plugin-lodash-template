@@ -2,7 +2,7 @@
 
 const assert = require("assert");
 const path = require("path");
-const { ESLint, Linter } = require("../..//eslint-compat");
+const { LegacyESLint, Linter } = require("../..//eslint-compat");
 const semver = require("semver");
 const eslintVersion = require("eslint/package.json").version;
 const fs = require("fs");
@@ -41,46 +41,43 @@ describe("index test", () => {
     it("If it passes through the processor, it must be processed by the parser.", () => {
         const linter = new Linter();
         const config = {
-            parser: "micro-template-eslint-parser",
-            parserOptions: { ecmaVersion: 2015 },
+            plugins: {
+                "lodash-template": { rules: { "no-empty-template-tag": rule } },
+            },
+            languageOptions: {
+                parser: require("../../../lib/parser/micro-template-eslint-parser"),
+                ecmaVersion: 2015,
+            },
             rules: {
-                "no-empty-template-tag": "error",
+                "lodash-template/no-empty-template-tag": "error",
             },
+            files: ["**"],
+            processor: plugin.processors.base,
         };
-        const options = {
-            preprocess(code) {
-                return plugin.processors.base.preprocess(code, "test.ejs");
-            },
-            postprocess(messages) {
-                return plugin.processors.base.postprocess(messages, "test.ejs");
-            },
-        };
-        linter.defineParser(
-            "micro-template-eslint-parser",
-            require("../../../lib/parser/micro-template-eslint-parser"),
-        );
-        linter.defineRule("no-empty-template-tag", rule);
         const messagesEjs = linter.verify("'use strict'<%%>", config, {
             filename: "test.ejs",
-            ...options,
         });
 
-        assert.strictEqual(messagesEjs[0].ruleId, "no-empty-template-tag");
+        assert.strictEqual(
+            messagesEjs[0].ruleId,
+            "lodash-template/no-empty-template-tag",
+        );
     });
     it("If it does not pass through the processor, it will not be processed by the parser.", () => {
         const linter = new Linter();
         const config = {
-            parser: "micro-template-eslint-parser",
-            parserOptions: { ecmaVersion: 2015 },
-            rules: {
-                "no-empty-template-tag": "error",
+            plugins: {
+                "lodash-template": { rules: { "no-empty-template-tag": rule } },
             },
+            languageOptions: {
+                parser: require("../../../lib/parser/micro-template-eslint-parser"),
+                ecmaVersion: 2015,
+            },
+            rules: {
+                "lodash-template/no-empty-template-tag": "error",
+            },
+            files: ["**"],
         };
-        linter.defineParser(
-            "micro-template-eslint-parser",
-            require("../../../lib/parser/micro-template-eslint-parser"),
-        );
-        linter.defineRule("no-empty-template-tag", rule);
         const messagesEjs = linter.verify("'use strict'<%%>", config, {
             filename: "test.ejs",
         });
@@ -99,7 +96,7 @@ describe("Basic tests", () => {
     if (semver.satisfies(eslintVersion, ">=7.0.0-rc")) {
         describe("About fixtures/hello.html", () => {
             it("should notify errors", async () => {
-                const cli = new ESLint({
+                const cli = new LegacyESLint({
                     cwd: FIXTURE_DIR,
                     overrideConfigFile: CONFIG_PATH,
                     useEslintrc: false,
@@ -248,13 +245,13 @@ describe("Basic tests", () => {
                     // copy
                     fs.copyFileSync(baseFilepath, testFilepath);
 
-                    const cli = new ESLint({
+                    const cli = new LegacyESLint({
                         cwd: FIXTURE_DIR,
                         fix: true,
                         overrideConfigFile: CONFIG_PATH,
                         useEslintrc: false,
                     });
-                    await ESLint.outputFixes(
+                    await LegacyESLint.outputFixes(
                         await cli.lintFiles(["hello.html.fixtarget.html"]),
                     );
 
@@ -272,7 +269,7 @@ describe("Basic tests", () => {
     }
     describe("About fixtures/comment-directive.html", () => {
         it("should no errors", async () => {
-            const cli = new ESLint({
+            const cli = new LegacyESLint({
                 cwd: FIXTURE_DIR,
                 overrideConfigFile: CONFIG_PATH,
                 useEslintrc: false,
@@ -288,7 +285,7 @@ describe("Basic tests", () => {
             .readdirSync(FIXTURE_DIR)
             .filter((s) => s.indexOf("no-error-") === 0)) {
             it(`should no errors /${name}`, async () => {
-                const cli = new ESLint({
+                const cli = new LegacyESLint({
                     cwd: FIXTURE_DIR,
                     overrideConfigFile: CONFIG_PATH,
                     useEslintrc: false,

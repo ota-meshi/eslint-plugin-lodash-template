@@ -100,9 +100,11 @@
         "semver": "^7.3.2",
         "typescript": "^5.0.0",
         "vue-eslint-editor": "^1.1.0",
+        "vue-eslint-parser": "^9.4.0",
         "vuepress": "^1.4.1"
     },
     "dependencies": {
+        "eslint-compat-utils": "^0.4.1",
         "esquery": "^1.0.1",
         "parse5": "^6.0.0"
     },

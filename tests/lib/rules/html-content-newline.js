@@ -1,11 +1,11 @@
 "use strict";
 
-const RuleTester = require("eslint").RuleTester;
+const RuleTester = require("../../eslint-compat").RuleTester;
 const rule = require("../../../lib/rules/html-content-newline");
 
 const tester = new RuleTester({
-    parser: require.resolve("../../../lib/parser/micro-template-eslint-parser"),
-    parserOptions: {
+    languageOptions: {
+        parser: require("../../../lib/parser/micro-template-eslint-parser"),
         ecmaVersion: 2015,
     },
 });
