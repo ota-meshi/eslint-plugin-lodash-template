@@ -5,9 +5,7 @@ const rule = require("../../../lib/rules/no-irregular-whitespace");
 
 const tester = new RuleTester({
     languageOptions: {
-        parser: require(
-            "../../../lib/parser/micro-template-eslint-parser",
-        ),
+        parser: require("../../../lib/parser/micro-template-eslint-parser"),
         ecmaVersion: 2015,
     },
 });
