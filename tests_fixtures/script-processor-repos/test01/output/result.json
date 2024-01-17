@@ -109,36 +109,12 @@
         "endColumn": 8
       },
       {
-        "ruleId": "quotes",
-        "message": "Strings must use doublequote.",
-        "line": 2,
-        "column": 11,
-        "endLine": 2,
-        "endColumn": 19
-      },
-      {
-        "ruleId": "semi",
-        "message": "Missing semicolon.",
-        "line": 2,
-        "column": 19,
-        "endLine": 3,
-        "endColumn": 1
-      },
-      {
         "ruleId": "no-undef",
         "message": "'x' is not defined.",
         "line": 5,
         "column": 8,
         "endLine": 5,
         "endColumn": 9
-      },
-      {
-        "ruleId": "indent",
-        "message": "Expected indentation of 0 spaces but found 4.",
-        "line": 6,
-        "column": 1,
-        "endLine": 6,
-        "endColumn": 5
       },
       {
         "ruleId": "no-undef",
@@ -157,14 +133,6 @@
         "endColumn": 12
       },
       {
-        "ruleId": "indent",
-        "message": "Expected indentation of 0 spaces but found 4.",
-        "line": 8,
-        "column": 1,
-        "endLine": 8,
-        "endColumn": 5
-      },
-      {
         "ruleId": "no-console",
         "message": "Unexpected console statement.",
         "line": 9,
@@ -173,36 +141,12 @@
         "endColumn": 12
       },
       {
-        "ruleId": "quotes",
-        "message": "Strings must use doublequote.",
-        "line": 9,
-        "column": 13,
-        "endLine": 9,
-        "endColumn": 17
-      },
-      {
-        "ruleId": "indent",
-        "message": "Expected indentation of 0 spaces but found 4.",
-        "line": 10,
-        "column": 1,
-        "endLine": 10,
-        "endColumn": 5
-      },
-      {
         "ruleId": "no-console",
         "message": "Unexpected console statement.",
         "line": 12,
         "column": 1,
         "endLine": 12,
         "endColumn": 12
-      },
-      {
-        "ruleId": "quotes",
-        "message": "Strings must use doublequote.",
-        "line": 12,
-        "column": 13,
-        "endLine": 12,
-        "endColumn": 17
       }
     ]
   },
@@ -234,22 +178,6 @@
         "endColumn": 8
       },
       {
-        "ruleId": "quotes",
-        "message": "Strings must use doublequote.",
-        "line": 2,
-        "column": 11,
-        "endLine": 2,
-        "endColumn": 19
-      },
-      {
-        "ruleId": "semi",
-        "message": "Missing semicolon.",
-        "line": 2,
-        "column": 19,
-        "endLine": 3,
-        "endColumn": 1
-      },
-      {
         "ruleId": "no-negated-condition",
         "message": "Unexpected negated condition.",
         "line": 5,
@@ -272,14 +200,6 @@
         "column": 1,
         "endLine": 6,
         "endColumn": 12
-      },
-      {
-        "ruleId": "quotes",
-        "message": "Strings must use doublequote.",
-        "line": 6,
-        "column": 13,
-        "endLine": 6,
-        "endColumn": 17
       },
       {
         "ruleId": "no-console",
@@ -312,14 +232,6 @@
         "column": 1,
         "endLine": 12,
         "endColumn": 12
-      },
-      {
-        "ruleId": "quotes",
-        "message": "Strings must use doublequote.",
-        "line": 12,
-        "column": 13,
-        "endLine": 12,
-        "endColumn": 17
       },
       {
         "ruleId": "no-console",
@@ -363,22 +275,6 @@
         "column": 7,
         "endLine": 5,
         "endColumn": 8
-      },
-      {
-        "ruleId": "quotes",
-        "message": "Strings must use doublequote.",
-        "line": 5,
-        "column": 11,
-        "endLine": 5,
-        "endColumn": 14
-      },
-      {
-        "ruleId": "semi",
-        "message": "Missing semicolon.",
-        "line": 5,
-        "column": 14,
-        "endLine": 6,
-        "endColumn": 1
       }
     ]
   },
@@ -430,22 +326,6 @@
         "column": 7,
         "endLine": 4,
         "endColumn": 8
-      },
-      {
-        "ruleId": "quotes",
-        "message": "Strings must use doublequote.",
-        "line": 4,
-        "column": 11,
-        "endLine": 4,
-        "endColumn": 14
-      },
-      {
-        "ruleId": "semi",
-        "message": "Missing semicolon.",
-        "line": 4,
-        "column": 14,
-        "endLine": 5,
-        "endColumn": 1
       }
     ]
   },
@@ -477,22 +357,6 @@
         "endColumn": 8
       },
       {
-        "ruleId": "quotes",
-        "message": "Strings must use doublequote.",
-        "line": 2,
-        "column": 11,
-        "endLine": 2,
-        "endColumn": 14
-      },
-      {
-        "ruleId": "semi",
-        "message": "Missing semicolon.",
-        "line": 2,
-        "column": 14,
-        "endLine": 3,
-        "endColumn": 1
-      },
-      {
         "ruleId": "id-length",
         "message": "Identifier name 'v' is too short (< 2).",
         "line": 4,
@@ -507,22 +371,6 @@
         "column": 7,
         "endLine": 4,
         "endColumn": 8
-      },
-      {
-        "ruleId": "quotes",
-        "message": "Strings must use doublequote.",
-        "line": 4,
-        "column": 11,
-        "endLine": 4,
-        "endColumn": 14
-      },
-      {
-        "ruleId": "semi",
-        "message": "Missing semicolon.",
-        "line": 4,
-        "column": 14,
-        "endLine": 5,
-        "endColumn": 1
       }
     ]
   },
@@ -578,49 +426,9 @@
         "endColumn": 45
       },
       {
-        "ruleId": "space-in-parens",
-        "message": "There should be no space before this paren.",
-        "line": 5,
-        "column": 40,
-        "endLine": 5,
-        "endColumn": 45
-      },
-      {
-        "ruleId": "semi",
-        "message": "Missing semicolon.",
-        "line": 5,
-        "column": 49,
-        "endLine": 6,
-        "endColumn": 1
-      },
-      {
         "ruleId": "multiline-comment-style",
         "message": "Expected a block comment instead of consecutive line comments.",
         "line": 6,
-        "column": 1,
-        "endLine": 11,
-        "endColumn": 116
-      },
-      {
-        "ruleId": "no-trailing-spaces",
-        "message": "Trailing spaces not allowed.",
-        "line": 6,
-        "column": 45,
-        "endLine": 6,
-        "endColumn": 46
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 90. Maximum allowed is 80.",
-        "line": 8,
-        "column": 1,
-        "endLine": 8,
-        "endColumn": 91
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 115. Maximum allowed is 80.",
-        "line": 11,
         "column": 1,
         "endLine": 11,
         "endColumn": 116

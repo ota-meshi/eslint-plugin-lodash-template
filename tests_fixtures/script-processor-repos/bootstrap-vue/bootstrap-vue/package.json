@@ -1,12 +1,13 @@
 {
   "devDependencies": {
-    "eslint": "~8.49.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jest": "^27.0.0",
+    "@stylistic/eslint-plugin": "~1.5.3",
+    "eslint": "~8.56.0",
+    "eslint-config-standard": "~17.0.0",
+    "eslint-plugin-import": "~2.25.4",
+    "eslint-plugin-jest": "~27.0.0",
     "eslint-plugin-lodash-template": "file:../../../..",
-    "eslint-plugin-n": "^16.0.0",
-    "eslint-plugin-promise": "^6.0.0"
+    "eslint-plugin-n": "~16.0.0",
+    "eslint-plugin-promise": "~6.0.0"
   },
   "description": "test for https://github.com/bootstrap-vue/bootstrap-vue",
   "repository": {

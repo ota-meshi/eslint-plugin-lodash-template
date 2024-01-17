@@ -29,33 +29,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -72,28 +72,12 @@
         "endColumn": 70
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 95. Maximum allowed is 80.",
-        "line": 21,
-        "column": 1,
-        "endLine": 21,
-        "endColumn": 96
-      },
-      {
         "ruleId": "no-unused-vars",
         "message": "'from' is defined but never used.",
         "line": 31,
         "column": 44,
         "endLine": 31,
         "endColumn": 48
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 84. Maximum allowed is 80.",
-        "line": 36,
-        "column": 1,
-        "endLine": 36,
-        "endColumn": 85
       },
       {
         "ruleId": "no-magic-numbers",
@@ -128,30 +112,6 @@
         "endColumn": 12
       },
       {
-        "ruleId": "no-mixed-operators",
-        "message": "Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations.",
-        "line": 86,
-        "column": 38,
-        "endLine": 86,
-        "endColumn": 40
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 118. Maximum allowed is 80.",
-        "line": 87,
-        "column": 1,
-        "endLine": 87,
-        "endColumn": 119
-      },
-      {
-        "ruleId": "no-mixed-operators",
-        "message": "Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations.",
-        "line": 87,
-        "column": 70,
-        "endLine": 87,
-        "endColumn": 72
-      },
-      {
         "ruleId": "func-names",
         "message": "Unexpected unnamed function.",
         "line": 93,
@@ -167,17 +127,17 @@
       {
         "ruleId": "no-prototype-builtins",
         "message": "Do not access Object.prototype method 'hasOwnProperty' from target object.",
-        "line": 37,
+        "line": 38,
         "column": 16,
-        "endLine": 37,
+        "endLine": 38,
         "endColumn": 30
       },
       {
         "ruleId": "no-console",
         "message": "Unexpected console statement.",
-        "line": 42,
+        "line": 43,
         "column": 7,
-        "endLine": 42,
+        "endLine": 43,
         "endColumn": 20
       }
     ]
@@ -212,33 +172,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -435,33 +395,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -521,33 +481,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -556,28 +516,12 @@
     "filePath": "/output-with-fix/packages/yandex-metrika/all-rules-test/plugin.js",
     "messages": [
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 94. Maximum allowed is 80.",
-        "line": 14,
-        "column": 1,
-        "endLine": 14,
-        "endColumn": 95
-      },
-      {
         "ruleId": "no-undef",
         "message": "'Ya' is not defined.",
         "line": 14,
         "column": 52,
         "endLine": 14,
         "endColumn": 54
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 110. Maximum allowed is 80.",
-        "line": 30,
-        "column": 1,
-        "endLine": 30,
-        "endColumn": 111
       },
       {
         "ruleId": "func-names",

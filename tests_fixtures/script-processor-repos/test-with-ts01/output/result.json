@@ -3,14 +3,6 @@
     "filePath": "/output/test1.ts",
     "messages": [
       {
-        "ruleId": "quotes",
-        "message": "Strings must use doublequote.",
-        "line": 1,
-        "column": 16,
-        "endLine": 1,
-        "endColumn": 21
-      },
-      {
         "ruleId": "no-undef",
         "message": "'suppress' is not defined.",
         "line": 2,

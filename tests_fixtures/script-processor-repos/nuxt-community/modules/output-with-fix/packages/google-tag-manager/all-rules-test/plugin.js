@@ -81,10 +81,10 @@ class GTM {
     hasDNT () {
 
         return window.doNotTrack === "1" ||
-      navigator.doNotTrack === "yes" ||
-      navigator.doNotTrack === "1" ||
-      navigator.msDoNotTrack === "1" ||
-      window.external && window.external.msTrackingProtectionEnabled && window.external.msTrackingProtectionEnabled();
+          navigator.doNotTrack === "yes" ||
+          navigator.doNotTrack === "1" ||
+          navigator.msDoNotTrack === "1" ||
+          window.external && window.external.msTrackingProtectionEnabled && window.external.msTrackingProtectionEnabled();
 
     }
 

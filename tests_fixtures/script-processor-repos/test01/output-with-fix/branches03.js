@@ -1,13 +1,13 @@
 <% if (x && y) { %>
-const a = "x && y";
+const a = 'x && y'
 <% } %>
 
 <% if (x) { %>
-<% if (y) { %>
+    <% if (y) { %>
 console.log(a);
+    <% } else { %>
+console.log('!y');
+    <% } %>
 <% } else { %>
-console.log("!y");
-<% } %>
-<% } else { %>
-console.log("!x");
+console.log('!x');
 <% } %>

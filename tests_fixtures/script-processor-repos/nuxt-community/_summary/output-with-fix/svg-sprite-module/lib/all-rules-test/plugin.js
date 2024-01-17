@@ -20,7 +20,7 @@ function getIcon (info) {
 
     const {icon, sprite} = info;
     return require('<%= relativeToBuild(options._output) %>/' + sprite + ".svg") +
-            `#i-${generateName(icon)}`;
+      `#i-${generateName(icon)}`;
 
 }
 
