@@ -14,7 +14,7 @@ description: "enforce consistent indentation to scriptlet in micro-template tag.
 
 This rule enforces a consistent indentation style to script in micro-template tag. The default style is 2 spaces.
 
-<eslint-code-block fix :rules="{'lodash-template/script-indent': ['error']}">
+<eslint-code-block fix :rules="{'lodash-template/scriptlet-indent': ['error']}">
 
 ```html
 <!-- ✓ GOOD -->
@@ -42,7 +42,7 @@ This rule enforces a consistent indentation style to script in micro-template ta
 
 ```json
 {
-  "lodash-template/script-indent": ["error", type, {
+  "lodash-template/scriptlet-indent": ["error", type, {
     "startIndent": 1,
     "switchCase": 0
   }]
@@ -55,7 +55,7 @@ This rule enforces a consistent indentation style to script in micro-template ta
 
 ### Examples for this rule with `{startIndent: 0}`:
 
-<eslint-code-block fix :rules="{'lodash-template/script-indent': ['error', 2, {startIndent: 0}]}">
+<eslint-code-block fix :rules="{'lodash-template/scriptlet-indent': ['error', 2, {startIndent: 0}]}">
 
 ```html
 <!-- ✓ GOOD -->
@@ -72,7 +72,7 @@ This rule enforces a consistent indentation style to script in micro-template ta
 
 ### Examples for this rule with `{startIndent: 2}`:
 
-<eslint-code-block fix :rules="{'lodash-template/script-indent': ['error', 2, {startIndent: 2}]}">
+<eslint-code-block fix :rules="{'lodash-template/scriptlet-indent': ['error', 2, {startIndent: 2}]}">
 
 ```html
 <!-- ✓ GOOD -->
