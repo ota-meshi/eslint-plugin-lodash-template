@@ -8,7 +8,7 @@
     "endColumn": 9
   },
   {
-    "ruleId": "comma-spacing",
+    "ruleId": "@stylistic/comma-spacing",
     "message": "A space is required after ','.",
     "line": 4,
     "column": 23,
@@ -16,7 +16,7 @@
     "endColumn": 24
   },
   {
-    "ruleId": "function-call-argument-newline",
+    "ruleId": "@stylistic/function-call-argument-newline",
     "message": "There should be a line break after this argument.",
     "line": 4,
     "column": 24,
@@ -24,7 +24,7 @@
     "endColumn": 24
   },
   {
-    "ruleId": "arrow-spacing",
+    "ruleId": "@stylistic/arrow-spacing",
     "message": "Missing space before =>.",
     "line": 4,
     "column": 29,
@@ -32,7 +32,7 @@
     "endColumn": 30
   },
   {
-    "ruleId": "arrow-spacing",
+    "ruleId": "@stylistic/arrow-spacing",
     "message": "Missing space after =>.",
     "line": 4,
     "column": 32,

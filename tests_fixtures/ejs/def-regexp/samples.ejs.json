@@ -40,13 +40,15 @@
     "endColumn": 7
   },
   {
-    "ruleId": "space-before-function-paren",
+    "ruleId": "@stylistic/space-before-function-paren",
     "message": "Missing space before function parentheses.",
     "line": 6,
-    "column": 28
+    "column": 28,
+    "endLine": 6,
+    "endColumn": 29
   },
   {
-    "ruleId": "space-before-blocks",
+    "ruleId": "@stylistic/space-before-blocks",
     "message": "Missing space before opening brace.",
     "line": 6,
     "column": 34,
@@ -54,7 +56,7 @@
     "endColumn": 7
   },
   {
-    "ruleId": "function-call-argument-newline",
+    "ruleId": "@stylistic/function-call-argument-newline",
     "message": "There should be a line break after this argument.",
     "line": 7,
     "column": 29,
@@ -62,16 +64,16 @@
     "endColumn": 30
   },
   {
-    "ruleId": "object-shorthand",
-    "message": "Expected property shorthand.",
+    "ruleId": "@stylistic/quote-props",
+    "message": "Unquoted property 'user' found.",
     "line": 7,
     "column": 31,
     "endLine": 7,
     "endColumn": 41
   },
   {
-    "ruleId": "quote-props",
-    "message": "Unquoted property 'user' found.",
+    "ruleId": "object-shorthand",
+    "message": "Expected property shorthand.",
     "line": 7,
     "column": 31,
     "endLine": 7,

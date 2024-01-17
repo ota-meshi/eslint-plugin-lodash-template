@@ -118,7 +118,7 @@ describe("Basic tests", () => {
                         line: 4,
                     },
                     {
-                        ruleId: "comma-spacing",
+                        ruleId: "@stylistic/comma-spacing",
                         message: "A space is required after ','.",
                         column: 22,
                         endColumn: 23,
@@ -126,7 +126,7 @@ describe("Basic tests", () => {
                         line: 4,
                     },
                     {
-                        ruleId: "function-call-argument-newline",
+                        ruleId: "@stylistic/function-call-argument-newline",
                         line: 4,
                         column: 23,
                         messageId: "missingLineBreak",
@@ -134,7 +134,7 @@ describe("Basic tests", () => {
                         endColumn: 23,
                     },
                     {
-                        ruleId: "arrow-spacing",
+                        ruleId: "@stylistic/arrow-spacing",
                         message: "Missing space before =>.",
                         column: 28,
                         endColumn: 29,
@@ -142,7 +142,7 @@ describe("Basic tests", () => {
                         line: 4,
                     },
                     {
-                        ruleId: "arrow-spacing",
+                        ruleId: "@stylistic/arrow-spacing",
                         message: "Missing space after =>.",
                         line: 4,
                         endLine: 4,

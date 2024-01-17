@@ -6,7 +6,7 @@ module.exports = {
     ecmaVersion: 2018
   },
   env: {},
-  extends: ["eslint:all", "plugin:lodash-template/base"],
+  extends: ["eslint:all", "plugin:lodash-template/base", "plugin:@stylistic/all-extends"],
   overrides: [
     {
       files: ["*.ejs"],

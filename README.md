@@ -81,18 +81,44 @@ module.exports = {
 
 This plugin does special handling for the following rule warnings in the template.
 
-| Rule ID                                                                            | Process Description                           | Another way this plugin supports                                                                                                                                                                          |
-| :--------------------------------------------------------------------------------- | :-------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`indent`](https://eslint.org/docs/rules/indent)                                   | Disable warnings                              | [`lodash-template/scriptlet-indent`](./docs/rules/scriptlet-indent.md) rule,<br>[`lodash-template/html-indent`](./docs/rules/html-indent.md) rule                                                         |
-| [`strict`](https://eslint.org/docs/rules/strict)                                   | Disable warnings                              | --                                                                                                                                                                                                        |
-| [`no-empty`](https://eslint.org/docs/rules/no-empty)                               | Disable warnings                              | --                                                                                                                                                                                                        |
-| [`max-statements-per-line`](https://eslint.org/docs/rules/max-statements-per-line) | Disable warnings                              | --                                                                                                                                                                                                        |
-| [`padded-blocks`](https://eslint.org/docs/rules/padded-blocks)                     | Disable warnings                              | --                                                                                                                                                                                                        |
-| [`no-implicit-globals`](https://eslint.org/docs/rules/no-implicit-globals)         | Disable warnings                              | --                                                                                                                                                                                                        |
-| [`no-multi-spaces`](https://eslint.org/docs/rules/no-multi-spaces)                 | Disable warnings                              | [`lodash-template/no-multi-spaces-in-scriptlet`](./docs/rules/no-multi-spaces-in-scriptlet.md) rule,<br>[`lodash-template/no-multi-spaces-in-html-tag`](./docs/rules/no-multi-spaces-in-html-tag.md) rule |
-| [`no-unused-expressions`](https://eslint.org/docs/rules/no-unused-expressions)     | Disable warnings within interpolate(<%=...%>) | --                                                                                                                                                                                                        |
-| [`quotes`](https://eslint.org/docs/rules/quotes)                                   | Disable warnings if doublequote is set        | --                                                                                                                                                                                                        |
-| [`no-irregular-whitespace`](https://eslint.org/docs/rules/no-irregular-whitespace) | Disable warnings outside template tags        | [`lodash-template/no-irregular-whitespace`](./docs/rules/no-irregular-whitespace.md) rule                                                                                                                 |
+| Rule ID                                | Process Description                           | Another way this plugin supports                                                                               |
+| :------------------------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------- |
+| [`indent`]                             | Disable warnings                              | [`lodash-template/scriptlet-indent`] rule,<br>[`lodash-template/html-indent`]rule                              |
+| [`@stylistic/indent`]                  | Disable warnings                              | [`lodash-template/scriptlet-indent`] rule,<br>[`lodash-template/html-indent`] rule                             |
+| [`strict`]                             | Disable warnings                              | --                                                                                                             |
+| [`no-empty`]                           | Disable warnings                              | --                                                                                                             |
+| [`max-statements-per-line`]            | Disable warnings                              | --                                                                                                             |
+| [`@stylistic/max-statements-per-line`] | Disable warnings                              | --                                                                                                             |
+| [`padded-blocks`]                      | Disable warnings                              | --                                                                                                             |
+| [`@stylistic/padded-blocks`]           | Disable warnings                              | --                                                                                                             |
+| [`no-implicit-globals`]                | Disable warnings                              | --                                                                                                             |
+| [`no-multi-spaces`]                    | Disable warnings                              | [`lodash-template/no-multi-spaces-in-scriptlet`] rule,<br>[`lodash-template/no-multi-spaces-in-html-tag`] rule |
+| [`@stylistic/no-multi-spaces`]         | Disable warnings                              | [`lodash-template/no-multi-spaces-in-scriptlet`] rule,<br>[`lodash-template/no-multi-spaces-in-html-tag`] rule |
+| [`no-unused-expressions`]              | Disable warnings within interpolate(<%=...%>) | --                                                                                                             |
+| [`quotes`]                             | Disable warnings if doublequote is set        | --                                                                                                             |
+| [`@stylistic/quotes`]                  | Disable warnings if doublequote is set        | --                                                                                                             |
+| [`no-irregular-whitespace`]            | Disable warnings outside template tags        | [`lodash-template/no-irregular-whitespace`] rule                                                               |
+
+[`indent`]: https://eslint.org/docs/rules/indent
+[`lodash-template/scriptlet-indent`]: ./docs/rules/scriptlet-indent.md
+[`lodash-template/html-indent`]: ./docs/rules/html-indent.md
+[`@stylistic/indent`]: https://eslint.style/rules/default/indent
+[`strict`]: https://eslint.org/docs/rules/strict
+[`no-empty`]: https://eslint.org/docs/rules/no-empty
+[`max-statements-per-line`]: https://eslint.org/docs/rules/max-statements-per-line
+[`@stylistic/max-statements-per-line`]: https://eslint.style/rules/default/max-statements-per-line
+[`padded-blocks`]: https://eslint.org/docs/rules/padded-blocks
+[`@stylistic/padded-blocks`]: https://eslint.style/rules/default/padded-blocks
+[`no-implicit-globals`]: https://eslint.org/docs/rules/no-implicit-globals
+[`no-multi-spaces`]: https://eslint.org/docs/rules/no-multi-spaces
+[`@stylistic/no-multi-spaces`]: https://eslint.style/rules/default/no-multi-spaces
+[`lodash-template/no-multi-spaces-in-scriptlet`]: ./docs/rules/no-multi-spaces-in-scriptlet.md
+[`lodash-template/no-multi-spaces-in-html-tag`]: ./docs/rules/no-multi-spaces-in-html-tag.md
+[`no-unused-expressions`]: https://eslint.org/docs/rules/no-unused-expressions
+[`quotes`]: https://eslint.org/docs/rules/quotes
+[`@stylistic/quotes`]: https://eslint.style/rules/default/quotes
+[`no-irregular-whitespace`]: https://eslint.org/docs/rules/no-irregular-whitespace
+[`lodash-template/no-irregular-whitespace`]: ./docs/rules/no-irregular-whitespace.md
 
 ## Configs
 
