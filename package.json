@@ -92,7 +92,7 @@
         "eslint-visitor-keys": "^3.0.0",
         "espree": "^9.0.0",
         "if-node-version": "^1.1.1",
-        "js-md5": "^0.7.3",
+        "js-md5": "^0.8.0",
         "mocha": "^10.0.0",
         "nyc": "^15.0.1",
         "pako": "^2.0.0",
