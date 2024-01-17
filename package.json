@@ -63,7 +63,7 @@
         "rules"
     ],
     "peerDependencies": {
-        "eslint": ">=6.0.0"
+        "eslint": ">=8.0.0"
     },
     "devDependencies": {
         "@changesets/changelog-github": "^0.4.6",
@@ -113,7 +113,7 @@
         ]
     },
     "engines": {
-        "node": "^8.10.0 || ^10.13.0 || ^12.13.0 || ^13.0.0 || >=14.0.0"
+        "node": ">=18.0.0"
     },
     "publishConfig": {
         "access": "public"
