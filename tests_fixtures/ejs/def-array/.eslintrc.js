@@ -3,7 +3,8 @@ module.exports = {
     "env": {},
     "extends": [
         "eslint:all",
-        "plugin:lodash-template/all"
+        "plugin:lodash-template/all",
+        "plugin:@stylistic/all-extends"
     ],
     "overrides": [
         {

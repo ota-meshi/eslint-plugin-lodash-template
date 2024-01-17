@@ -6,7 +6,7 @@ module.exports = {
         ecmaVersion: 2018,
     },
     env: {},
-    extends: ["eslint:all", "plugin:lodash-template/all"],
+    extends: ["eslint:all", "plugin:lodash-template/all", "plugin:@stylistic/all-extends"],
     rules: {
         "linebreak-style": "off",
         "max-len": "off",

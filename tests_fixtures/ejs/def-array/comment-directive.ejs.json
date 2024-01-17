@@ -1,22 +1,26 @@
 [
   {
-    "ruleId": "max-len",
-    "message": "This line has a length of 85. Maximum allowed is 80.",
-    "line": 2,
-    "column": 1
-  },
-  {
-    "ruleId": "no-tabs",
-    "message": "Unexpected tab character.",
-    "line": 16,
-    "column": 1
-  },
-  {
     "ruleId": "no-undef",
     "message": "'name' is not defined.",
     "line": 18,
     "column": 23,
     "endLine": 18,
     "endColumn": 27
+  },
+  {
+    "ruleId": "@stylistic/function-call-argument-newline",
+    "message": "There should be a line break after this argument.",
+    "line": 28,
+    "column": 95,
+    "endLine": 28,
+    "endColumn": 96
+  },
+  {
+    "ruleId": "@stylistic/brace-style",
+    "message": "Statement inside of curly braces should be on next line.",
+    "line": 28,
+    "column": 106,
+    "endLine": 28,
+    "endColumn": 107
   }
 ]
