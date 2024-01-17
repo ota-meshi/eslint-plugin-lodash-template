@@ -63,10 +63,10 @@ module.exports = {
                 return b.endLine != null
                     ? 1
                     : a.ruleId > b.ruleId
-                    ? 1
-                    : a.ruleId < b.ruleId
-                    ? -1
-                    : 0;
+                      ? 1
+                      : a.ruleId < b.ruleId
+                        ? -1
+                        : 0;
             }
             if (b.endLine == null) {
                 return -1;
