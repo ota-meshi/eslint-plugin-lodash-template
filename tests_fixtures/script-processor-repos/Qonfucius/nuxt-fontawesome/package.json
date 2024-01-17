@@ -3,7 +3,7 @@
     "@stylistic/eslint-plugin": "~1.5.3",
     "eslint": "~8.56.0",
     "eslint-config-airbnb-base": "~15.0.0",
-    "eslint-plugin-import": "~2.25.4",
+    "eslint-plugin-import": "~2.29.0",
     "eslint-plugin-lodash-template": "file:../../../.."
   },
   "description": "test for https://github.com/Qonfucius/nuxt-fontawesome",
