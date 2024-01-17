@@ -1,4 +1,3 @@
-
 // Google Tag Manager Class to be injected
 class GTM {
   constructor (ctx, options) {

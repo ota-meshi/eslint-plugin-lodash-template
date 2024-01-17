@@ -64,6 +64,10 @@ module.exports = {
                         __dirname,
                         "../../node_modules/eslint-compat-utils/dist/index.cjs",
                     ),
+                    parse5$: path.resolve(
+                        __dirname,
+                        "../../node_modules/parse5/dist/cjs/index.js",
+                    ),
                 },
             },
         };
@@ -75,7 +79,9 @@ module.exports = {
         jsRule.exclude
             .clear()
             .add((filepath) => {
-                if (/node_modules\/(?:minimatch|yaml)\//u.test(filepath)) {
+                if (
+                    /node_modules\/(?:minimatch|yaml|parse5)\//u.test(filepath)
+                ) {
                     return false;
                 }
                 for (const fn of original) {
