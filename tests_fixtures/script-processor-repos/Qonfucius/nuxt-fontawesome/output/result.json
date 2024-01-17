@@ -11,7 +11,7 @@
         "endColumn": 13
       },
       {
-        "ruleId": "semi",
+        "ruleId": "@stylistic/semi",
         "message": "Missing semicolon.",
         "line": 1,
         "column": 13,
@@ -27,7 +27,7 @@
         "endColumn": 7
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'root' found.",
         "line": 4,
         "column": 5,
@@ -43,7 +43,7 @@
         "endColumn": 18
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'parserOptions' found.",
         "line": 5,
         "column": 5,
@@ -51,7 +51,7 @@
         "endColumn": 6
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'ecmaVersion' found.",
         "line": 6,
         "column": 9,
@@ -59,7 +59,7 @@
         "endColumn": 26
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'sourceType' found.",
         "line": 7,
         "column": 9,
@@ -67,7 +67,7 @@
         "endColumn": 29
       },
       {
-        "ruleId": "comma-dangle",
+        "ruleId": "@stylistic/comma-dangle",
         "message": "Unexpected trailing comma.",
         "line": 7,
         "column": 29,
@@ -83,7 +83,7 @@
         "endColumn": 8
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'env' found.",
         "line": 9,
         "column": 5,
@@ -91,7 +91,7 @@
         "endColumn": 6
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'browser' found.",
         "line": 10,
         "column": 9,
@@ -99,7 +99,7 @@
         "endColumn": 22
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'es6' found.",
         "line": 11,
         "column": 9,
@@ -107,7 +107,7 @@
         "endColumn": 18
       },
       {
-        "ruleId": "comma-dangle",
+        "ruleId": "@stylistic/comma-dangle",
         "message": "Unexpected trailing comma.",
         "line": 11,
         "column": 18,
@@ -115,15 +115,15 @@
         "endColumn": 19
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'extends' found.",
         "line": 13,
         "column": 5,
         "endLine": 13,
-        "endColumn": 58
+        "endColumn": 91
       },
       {
-        "ruleId": "array-element-newline",
+        "ruleId": "@stylistic/array-element-newline",
         "message": "There should be a linebreak after this element.",
         "line": 13,
         "column": 28,
@@ -131,7 +131,15 @@
         "endColumn": 29
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/array-element-newline",
+        "message": "There should be a linebreak after this element.",
+        "line": 13,
+        "column": 58,
+        "endLine": 13,
+        "endColumn": 59
+      },
+      {
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'overrides' found.",
         "line": 14,
         "column": 5,
@@ -139,7 +147,7 @@
         "endColumn": 6
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'files' found.",
         "line": 16,
         "column": 13,
@@ -147,7 +155,7 @@
         "endColumn": 26
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'processor' found.",
         "line": 17,
         "column": 13,
@@ -163,7 +171,7 @@
         "endColumn": 26
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'parserOptions' found.",
         "line": 18,
         "column": 13,
@@ -171,7 +179,7 @@
         "endColumn": 14
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'ecmaVersion' found.",
         "line": 19,
         "column": 17,
@@ -179,7 +187,7 @@
         "endColumn": 34
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'sourceType' found.",
         "line": 20,
         "column": 17,
@@ -187,7 +195,7 @@
         "endColumn": 37
       },
       {
-        "ruleId": "comma-dangle",
+        "ruleId": "@stylistic/comma-dangle",
         "message": "Unexpected trailing comma.",
         "line": 20,
         "column": 37,
@@ -203,7 +211,7 @@
         "endColumn": 20
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'globals' found.",
         "line": 22,
         "column": 13,
@@ -211,7 +219,7 @@
         "endColumn": 14
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'options' found.",
         "line": 23,
         "column": 17,
@@ -219,7 +227,7 @@
         "endColumn": 30
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'serialize' found.",
         "line": 24,
         "column": 17,
@@ -235,7 +243,7 @@
         "endColumn": 24
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'process' found.",
         "line": 25,
         "column": 17,
@@ -243,7 +251,7 @@
         "endColumn": 30
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'require' found.",
         "line": 26,
         "column": 17,
@@ -251,7 +259,7 @@
         "endColumn": 30
       },
       {
-        "ruleId": "comma-dangle",
+        "ruleId": "@stylistic/comma-dangle",
         "message": "Unexpected trailing comma.",
         "line": 26,
         "column": 30,
@@ -259,7 +267,7 @@
         "endColumn": 31
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'rules' found.",
         "line": 28,
         "column": 13,
@@ -275,7 +283,7 @@
         "endColumn": 72
       },
       {
-        "ruleId": "comma-dangle",
+        "ruleId": "@stylistic/comma-dangle",
         "message": "Unexpected trailing comma.",
         "line": 30,
         "column": 79,
@@ -283,7 +291,7 @@
         "endColumn": 80
       },
       {
-        "ruleId": "comma-dangle",
+        "ruleId": "@stylistic/comma-dangle",
         "message": "Unexpected trailing comma.",
         "line": 31,
         "column": 14,
@@ -291,7 +299,7 @@
         "endColumn": 15
       },
       {
-        "ruleId": "comma-dangle",
+        "ruleId": "@stylistic/comma-dangle",
         "message": "Unexpected trailing comma.",
         "line": 32,
         "column": 10,
@@ -299,7 +307,7 @@
         "endColumn": 11
       },
       {
-        "ruleId": "comma-dangle",
+        "ruleId": "@stylistic/comma-dangle",
         "message": "Unexpected trailing comma.",
         "line": 33,
         "column": 6,
@@ -307,7 +315,7 @@
         "endColumn": 7
       },
       {
-        "ruleId": "semi",
+        "ruleId": "@stylistic/semi",
         "message": "Missing semicolon.",
         "line": 34,
         "column": 2,
@@ -340,7 +348,7 @@
         "endColumn": 69
       },
       {
-        "ruleId": "object-curly-spacing",
+        "ruleId": "@stylistic/object-curly-spacing",
         "message": "There should be no space after '{'.",
         "line": 2,
         "column": 9,
@@ -356,7 +364,7 @@
         "endColumn": 25
       },
       {
-        "ruleId": "object-curly-spacing",
+        "ruleId": "@stylistic/object-curly-spacing",
         "message": "There should be no space before '}'.",
         "line": 2,
         "column": 25,
@@ -364,7 +372,7 @@
         "endColumn": 26
       },
       {
-        "ruleId": "quotes",
+        "ruleId": "@stylistic/quotes",
         "message": "Strings must use doublequote.",
         "line": 2,
         "column": 33,
@@ -372,7 +380,7 @@
         "endColumn": 68
       },
       {
-        "ruleId": "object-curly-spacing",
+        "ruleId": "@stylistic/object-curly-spacing",
         "message": "There should be no space after '{'.",
         "line": 3,
         "column": 9,
@@ -380,7 +388,7 @@
         "endColumn": 10
       },
       {
-        "ruleId": "object-curly-spacing",
+        "ruleId": "@stylistic/object-curly-spacing",
         "message": "There should be no space before '}'.",
         "line": 3,
         "column": 25,
@@ -388,7 +396,7 @@
         "endColumn": 26
       },
       {
-        "ruleId": "quotes",
+        "ruleId": "@stylistic/quotes",
         "message": "Strings must use doublequote.",
         "line": 3,
         "column": 33,
@@ -396,7 +404,7 @@
         "endColumn": 63
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'package' found.",
         "line": 5,
         "column": 28,
@@ -404,7 +412,7 @@
         "endColumn": 39
       },
       {
-        "ruleId": "key-spacing",
+        "ruleId": "@stylistic/key-spacing",
         "message": "Missing space before value for key 'package'.",
         "line": 5,
         "column": 36,
@@ -412,7 +420,7 @@
         "endColumn": 39
       },
       {
-        "ruleId": "indent",
+        "ruleId": "@stylistic/indent",
         "message": "Expected indentation of 0 spaces but found 2.",
         "line": 6,
         "column": 1,
@@ -420,7 +428,7 @@
         "endColumn": 3
       },
       {
-        "ruleId": "indent",
+        "ruleId": "@stylistic/indent",
         "message": "Expected indentation of 0 spaces but found 4.",
         "line": 7,
         "column": 1,
@@ -428,7 +436,7 @@
         "endColumn": 5
       },
       {
-        "ruleId": "indent",
+        "ruleId": "@stylistic/indent",
         "message": "Expected indentation of 0 spaces but found 6.",
         "line": 8,
         "column": 1,
@@ -436,7 +444,7 @@
         "endColumn": 7
       },
       {
-        "ruleId": "object-curly-spacing",
+        "ruleId": "@stylistic/object-curly-spacing",
         "message": "There should be no space after '{'.",
         "line": 8,
         "column": 15,
@@ -460,7 +468,7 @@
         "endColumn": 25
       },
       {
-        "ruleId": "object-curly-spacing",
+        "ruleId": "@stylistic/object-curly-spacing",
         "message": "There should be no space before '}'.",
         "line": 8,
         "column": 25,
@@ -484,7 +492,7 @@
         "endColumn": 42
       },
       {
-        "ruleId": "indent",
+        "ruleId": "@stylistic/indent",
         "message": "Expected indentation of 0 spaces but found 4.",
         "line": 9,
         "column": 1,
@@ -492,7 +500,7 @@
         "endColumn": 5
       },
       {
-        "ruleId": "indent",
+        "ruleId": "@stylistic/indent",
         "message": "Expected indentation of 0 spaces but found 2.",
         "line": 10,
         "column": 1,
@@ -500,7 +508,7 @@
         "endColumn": 3
       },
       {
-        "ruleId": "indent",
+        "ruleId": "@stylistic/indent",
         "message": "Expected indentation of 0 spaces but found 4.",
         "line": 11,
         "column": 1,
@@ -548,7 +556,7 @@
         "endColumn": 51
       },
       {
-        "ruleId": "function-call-argument-newline",
+        "ruleId": "@stylistic/function-call-argument-newline",
         "message": "There should be a line break after this argument.",
         "line": 11,
         "column": 52,
@@ -580,7 +588,7 @@
         "endColumn": 73
       },
       {
-        "ruleId": "indent",
+        "ruleId": "@stylistic/indent",
         "message": "Expected indentation of 0 spaces but found 2.",
         "line": 12,
         "column": 1,
@@ -588,7 +596,7 @@
         "endColumn": 3
       },
       {
-        "ruleId": "quote-props",
+        "ruleId": "@stylistic/quote-props",
         "message": "Unquoted property 'package' found.",
         "line": 17,
         "column": 28,
@@ -596,7 +604,7 @@
         "endColumn": 39
       },
       {
-        "ruleId": "key-spacing",
+        "ruleId": "@stylistic/key-spacing",
         "message": "Missing space before value for key 'package'.",
         "line": 17,
         "column": 36,
@@ -604,7 +612,7 @@
         "endColumn": 39
       },
       {
-        "ruleId": "indent",
+        "ruleId": "@stylistic/indent",
         "message": "Expected indentation of 0 spaces but found 4.",
         "line": 19,
         "column": 1,
@@ -628,7 +636,7 @@
         "endColumn": 37
       },
       {
-        "ruleId": "indent",
+        "ruleId": "@stylistic/indent",
         "message": "Expected indentation of 0 spaces but found 2.",
         "line": 20,
         "column": 1,
@@ -636,7 +644,7 @@
         "endColumn": 3
       },
       {
-        "ruleId": "indent",
+        "ruleId": "@stylistic/indent",
         "message": "Expected indentation of 0 spaces but found 4.",
         "line": 21,
         "column": 1,
@@ -684,7 +692,7 @@
         "endColumn": 56
       },
       {
-        "ruleId": "function-call-argument-newline",
+        "ruleId": "@stylistic/function-call-argument-newline",
         "message": "There should be a line break after this argument.",
         "line": 21,
         "column": 57,
@@ -700,7 +708,7 @@
         "endColumn": 63
       },
       {
-        "ruleId": "indent",
+        "ruleId": "@stylistic/indent",
         "message": "Expected indentation of 0 spaces but found 2.",
         "line": 22,
         "column": 1,
@@ -724,7 +732,7 @@
         "endColumn": 42
       },
       {
-        "ruleId": "function-call-argument-newline",
+        "ruleId": "@stylistic/function-call-argument-newline",
         "message": "There should be a line break after this argument.",
         "line": 25,
         "column": 44,

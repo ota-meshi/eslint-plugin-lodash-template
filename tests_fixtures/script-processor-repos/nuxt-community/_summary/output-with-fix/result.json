@@ -33,33 +33,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -106,33 +106,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -147,14 +147,6 @@
         "column": 1,
         "endLine": 3,
         "endColumn": 31
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 91. Maximum allowed is 80.",
-        "line": 4,
-        "column": 1,
-        "endLine": 4,
-        "endColumn": 92
       },
       {
         "ruleId": "max-lines-per-function",
@@ -173,44 +165,12 @@
         "endColumn": 9
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 97. Maximum allowed is 80.",
-        "line": 21,
-        "column": 1,
-        "endLine": 21,
-        "endColumn": 98
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 113. Maximum allowed is 80.",
-        "line": 22,
-        "column": 1,
-        "endLine": 22,
-        "endColumn": 114
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 87. Maximum allowed is 80.",
-        "line": 27,
-        "column": 1,
-        "endLine": 27,
-        "endColumn": 88
-      },
-      {
         "ruleId": "no-magic-numbers",
         "message": "No magic number: 2.",
         "line": 37,
         "column": 9,
         "endLine": 37,
         "endColumn": 10
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 131. Maximum allowed is 80.",
-        "line": 61,
-        "column": 1,
-        "endLine": 61,
-        "endColumn": 132
       },
       {
         "ruleId": "no-undefined",
@@ -245,36 +205,12 @@
         "endColumn": 22
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 87. Maximum allowed is 80.",
-        "line": 85,
-        "column": 1,
-        "endLine": 85,
-        "endColumn": 88
-      },
-      {
         "ruleId": "no-console",
         "message": "Unexpected console statement.",
         "line": 108,
         "column": 17,
         "endLine": 108,
         "endColumn": 28
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 110. Maximum allowed is 80.",
-        "line": 110,
-        "column": 1,
-        "endLine": 110,
-        "endColumn": 111
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 148. Maximum allowed is 80.",
-        "line": 137,
-        "column": 1,
-        "endLine": 137,
-        "endColumn": 149
       },
       {
         "ruleId": "max-params",
@@ -309,22 +245,6 @@
         "endColumn": 37
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 110. Maximum allowed is 80.",
-        "line": 148,
-        "column": 1,
-        "endLine": 148,
-        "endColumn": 111
-      },
-      {
-        "ruleId": "no-mixed-operators",
-        "message": "Unexpected mix of '+' and '*'. Use parentheses to clarify the intended order of operations.",
-        "line": 148,
-        "column": 68,
-        "endLine": 148,
-        "endColumn": 69
-      },
-      {
         "ruleId": "no-magic-numbers",
         "message": "No magic number: 86400.",
         "line": 148,
@@ -341,28 +261,12 @@
         "endColumn": 82
       },
       {
-        "ruleId": "no-mixed-operators",
-        "message": "Unexpected mix of '+' and '*'. Use parentheses to clarify the intended order of operations.",
-        "line": 148,
-        "column": 83,
-        "endLine": 148,
-        "endColumn": 84
-      },
-      {
         "ruleId": "id-length",
         "message": "Identifier name 'e' is too short (< 2).",
         "line": 179,
         "column": 30,
         "endLine": 179,
         "endColumn": 31
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 104. Maximum allowed is 80.",
-        "line": 193,
-        "column": 1,
-        "endLine": 193,
-        "endColumn": 105
       },
       {
         "ruleId": "id-length",
@@ -420,33 +324,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -461,14 +365,6 @@
         "column": 1,
         "endLine": 3,
         "endColumn": 23
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 95. Maximum allowed is 80.",
-        "line": 6,
-        "column": 1,
-        "endLine": 6,
-        "endColumn": 96
       },
       {
         "ruleId": "no-undef",
@@ -509,14 +405,6 @@
         "column": 22,
         "endLine": 27,
         "endColumn": 36
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 105. Maximum allowed is 80.",
-        "line": 28,
-        "column": 1,
-        "endLine": 28,
-        "endColumn": 106
       },
       {
         "ruleId": "no-console",
@@ -575,33 +463,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -770,14 +658,6 @@
         "endColumn": 49
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 98. Maximum allowed is 80.",
-        "line": 170,
-        "column": 1,
-        "endLine": 170,
-        "endColumn": 99
-      },
-      {
         "ruleId": "require-unicode-regexp",
         "message": "Use the 'u' flag.",
         "line": 170,
@@ -858,15 +738,7 @@
         "endColumn": 25
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 118. Maximum allowed is 80.",
-        "line": 199,
-        "column": 1,
-        "endLine": 199,
-        "endColumn": 119
-      },
-      {
-        "ruleId": "no-extra-parens",
+        "ruleId": "@stylistic/no-extra-parens",
         "message": "Unnecessary parentheses around expression.",
         "line": 199,
         "column": 28,
@@ -874,7 +746,7 @@
         "endColumn": 29
       },
       {
-        "ruleId": "multiline-ternary",
+        "ruleId": "@stylistic/multiline-ternary",
         "message": "Expected newline between test and consequent of ternary expression.",
         "line": 199,
         "column": 29,
@@ -890,7 +762,7 @@
         "endColumn": 14
       },
       {
-        "ruleId": "indent",
+        "ruleId": "@stylistic/indent",
         "message": "Expected indentation of 8 spaces but found 0.",
         "line": 200,
         "column": 1,
@@ -962,7 +834,7 @@
         "endColumn": 16
       },
       {
-        "ruleId": "no-extra-parens",
+        "ruleId": "@stylistic/no-extra-parens",
         "message": "Unnecessary parentheses around expression.",
         "line": 273,
         "column": 11,
@@ -1074,33 +946,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -1108,22 +980,6 @@
   {
     "filePath": "/output-with-fix/device-module/lib/all-rules-test/plugin.js",
     "messages": [
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 336. Maximum allowed is 80.",
-        "line": 7,
-        "column": 1,
-        "endLine": 7,
-        "endColumn": 337
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 1631. Maximum allowed is 80.",
-        "line": 10,
-        "column": 1,
-        "endLine": 10,
-        "endColumn": 1632
-      },
       {
         "ruleId": "func-style",
         "message": "Expected a function expression.",
@@ -1157,22 +1013,6 @@
         "endColumn": 10
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 373. Maximum allowed is 80.",
-        "line": 22,
-        "column": 1,
-        "endLine": 22,
-        "endColumn": 374
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 1641. Maximum allowed is 80.",
-        "line": 24,
-        "column": 1,
-        "endLine": 24,
-        "endColumn": 1642
-      },
-      {
         "ruleId": "func-style",
         "message": "Expected a function expression.",
         "line": 26,
@@ -1187,14 +1027,6 @@
         "column": 28,
         "endLine": 26,
         "endColumn": 29
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 84. Maximum allowed is 80.",
-        "line": 28,
-        "column": 1,
-        "endLine": 28,
-        "endColumn": 85
       },
       {
         "ruleId": "no-magic-numbers",
@@ -1283,14 +1115,6 @@
         "column": 13,
         "endLine": 49,
         "endColumn": 23
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 150. Maximum allowed is 80.",
-        "line": 53,
-        "column": 1,
-        "endLine": 53,
-        "endColumn": 151
       },
       {
         "ruleId": "func-names",
@@ -1389,33 +1213,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -1640,22 +1464,6 @@
         "endColumn": 10
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 87. Maximum allowed is 80.",
-        "line": 121,
-        "column": 1,
-        "endLine": 121,
-        "endColumn": 88
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 134. Maximum allowed is 80.",
-        "line": 122,
-        "column": 1,
-        "endLine": 122,
-        "endColumn": 135
-      },
-      {
         "ruleId": "id-length",
         "message": "Identifier name 'k' is too short (< 2).",
         "line": 122,
@@ -1678,14 +1486,6 @@
         "column": 9,
         "endLine": 153,
         "endColumn": 15
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 93. Maximum allowed is 80.",
-        "line": 160,
-        "column": 1,
-        "endLine": 160,
-        "endColumn": 94
       },
       {
         "ruleId": "logical-assignment-operators",
@@ -1752,33 +1552,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -1867,14 +1667,6 @@
         "endColumn": 39
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 89. Maximum allowed is 80.",
-        "line": 43,
-        "column": 1,
-        "endLine": 43,
-        "endColumn": 90
-      },
-      {
         "ruleId": "id-length",
         "message": "Identifier name 'v' is too short (< 2).",
         "line": 47,
@@ -1891,15 +1683,7 @@
         "endColumn": 70
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 98. Maximum allowed is 80.",
-        "line": 52,
-        "column": 1,
-        "endLine": 52,
-        "endColumn": 99
-      },
-      {
-        "ruleId": "no-confusing-arrow",
+        "ruleId": "@stylistic/no-confusing-arrow",
         "message": "Arrow function used ambiguously with a conditional expression.",
         "line": 52,
         "column": 47,
@@ -1907,7 +1691,7 @@
         "endColumn": 97
       },
       {
-        "ruleId": "multiline-ternary",
+        "ruleId": "@stylistic/multiline-ternary",
         "message": "Expected newline between test and consequent of ternary expression.",
         "line": 52,
         "column": 56,
@@ -1931,7 +1715,7 @@
         "endColumn": 80
       },
       {
-        "ruleId": "multiline-ternary",
+        "ruleId": "@stylistic/multiline-ternary",
         "message": "Expected newline between consequent and alternate of ternary expression.",
         "line": 52,
         "column": 83,
@@ -1995,23 +1779,7 @@
         "endColumn": 31
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 86. Maximum allowed is 80.",
-        "line": 77,
-        "column": 1,
-        "endLine": 77,
-        "endColumn": 87
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 119. Maximum allowed is 80.",
-        "line": 80,
-        "column": 1,
-        "endLine": 80,
-        "endColumn": 120
-      },
-      {
-        "ruleId": "no-confusing-arrow",
+        "ruleId": "@stylistic/no-confusing-arrow",
         "message": "Arrow function used ambiguously with a conditional expression.",
         "line": 80,
         "column": 56,
@@ -2019,7 +1787,7 @@
         "endColumn": 118
       },
       {
-        "ruleId": "multiline-ternary",
+        "ruleId": "@stylistic/multiline-ternary",
         "message": "Expected newline between test and consequent of ternary expression.",
         "line": 80,
         "column": 69,
@@ -2043,7 +1811,7 @@
         "endColumn": 97
       },
       {
-        "ruleId": "multiline-ternary",
+        "ruleId": "@stylistic/multiline-ternary",
         "message": "Expected newline between consequent and alternate of ternary expression.",
         "line": 80,
         "column": 100,
@@ -2067,36 +1835,12 @@
         "endColumn": 65
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 83. Maximum allowed is 80.",
-        "line": 90,
-        "column": 1,
-        "endLine": 90,
-        "endColumn": 84
-      },
-      {
         "ruleId": "no-use-before-define",
         "message": "'setCookie' was used before it was defined.",
         "line": 93,
         "column": 13,
         "endLine": 93,
         "endColumn": 22
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 83. Maximum allowed is 80.",
-        "line": 103,
-        "column": 1,
-        "endLine": 103,
-        "endColumn": 84
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 85. Maximum allowed is 80.",
-        "line": 117,
-        "column": 1,
-        "endLine": 117,
-        "endColumn": 86
       },
       {
         "ruleId": "sort-keys",
@@ -2177,22 +1921,6 @@
         "column": 1,
         "endLine": 199,
         "endColumn": 2
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 82. Maximum allowed is 80.",
-        "line": 185,
-        "column": 1,
-        "endLine": 185,
-        "endColumn": 83
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 85. Maximum allowed is 80.",
-        "line": 191,
-        "column": 1,
-        "endLine": 191,
-        "endColumn": 86
       }
     ]
   },
@@ -2234,33 +1962,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -2301,22 +2029,6 @@
         "endColumn": 23
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 81. Maximum allowed is 80.",
-        "line": 42,
-        "column": 1,
-        "endLine": 42,
-        "endColumn": 82
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 85. Maximum allowed is 80.",
-        "line": 43,
-        "column": 1,
-        "endLine": 43,
-        "endColumn": 86
-      },
-      {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'actions' should be before 'state'.",
         "line": 45,
@@ -2331,22 +2043,6 @@
         "column": 17,
         "endLine": 101,
         "endColumn": 24
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 97. Maximum allowed is 80.",
-        "line": 103,
-        "column": 1,
-        "endLine": 103,
-        "endColumn": 98
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 87. Maximum allowed is 80.",
-        "line": 113,
-        "column": 1,
-        "endLine": 113,
-        "endColumn": 88
       },
       {
         "ruleId": "consistent-return",
@@ -2405,14 +2101,6 @@
         "endColumn": 6
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 83. Maximum allowed is 80.",
-        "line": 223,
-        "column": 1,
-        "endLine": 223,
-        "endColumn": 84
-      },
-      {
         "ruleId": "require-atomic-updates",
         "message": "Possible race condition: `app.i18n.locale` might be assigned based on an outdated state of `app`.",
         "line": 239,
@@ -2467,14 +2155,6 @@
         "column": 18,
         "endLine": 312,
         "endColumn": 21
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 91. Maximum allowed is 80.",
-        "line": 317,
-        "column": 1,
-        "endLine": 317,
-        "endColumn": 92
       },
       {
         "ruleId": "no-ternary",
@@ -2541,52 +2221,12 @@
         "endColumn": 30
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 115. Maximum allowed is 80.",
-        "line": 348,
-        "column": 1,
-        "endLine": 348,
-        "endColumn": 116
-      },
-      {
         "ruleId": "no-magic-numbers",
         "message": "No magic number: 1.",
         "line": 348,
         "column": 87,
         "endLine": 348,
         "endColumn": 88
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 98. Maximum allowed is 80.",
-        "line": 352,
-        "column": 1,
-        "endLine": 352,
-        "endColumn": 99
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 98. Maximum allowed is 80.",
-        "line": 354,
-        "column": 1,
-        "endLine": 354,
-        "endColumn": 99
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 108. Maximum allowed is 80.",
-        "line": 356,
-        "column": 1,
-        "endLine": 356,
-        "endColumn": 109
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 81. Maximum allowed is 80.",
-        "line": 357,
-        "column": 1,
-        "endLine": 357,
-        "endColumn": 82
       },
       {
         "ruleId": "no-magic-numbers",
@@ -2603,22 +2243,6 @@
         "column": 21,
         "endLine": 359,
         "endColumn": 22
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 86. Maximum allowed is 80.",
-        "line": 362,
-        "column": 1,
-        "endLine": 362,
-        "endColumn": 87
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 107. Maximum allowed is 80.",
-        "line": 364,
-        "column": 1,
-        "endLine": 364,
-        "endColumn": 108
       },
       {
         "ruleId": "no-magic-numbers",
@@ -2645,30 +2269,6 @@
         "endColumn": 22
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 87. Maximum allowed is 80.",
-        "line": 378,
-        "column": 1,
-        "endLine": 378,
-        "endColumn": 88
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 85. Maximum allowed is 80.",
-        "line": 385,
-        "column": 1,
-        "endLine": 385,
-        "endColumn": 86
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 84. Maximum allowed is 80.",
-        "line": 389,
-        "column": 1,
-        "endLine": 389,
-        "endColumn": 85
-      },
-      {
         "ruleId": "no-underscore-dangle",
         "message": "Unexpected dangling '_' in '__detectBrowserLanguage'.",
         "line": 412,
@@ -2682,82 +2282,10 @@
     "filePath": "/output-with-fix/nuxt-i18n/src/plugins/all-rules-test/routing.js",
     "messages": [
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 87. Maximum allowed is 80.",
-        "line": 12,
-        "column": 1,
-        "endLine": 12,
-        "endColumn": 88
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 94. Maximum allowed is 80.",
-        "line": 19,
-        "column": 1,
-        "endLine": 19,
-        "endColumn": 95
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 143. Maximum allowed is 80.",
-        "line": 21,
-        "column": 1,
-        "endLine": 21,
-        "endColumn": 144
-      },
-      {
         "ruleId": "lodash-template/no-script-parsing-error",
         "message": "Parsing error: Unexpected token =.",
         "line": 24,
         "column": 18
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 85. Maximum allowed is 80.",
-        "line": 39,
-        "column": 1,
-        "endLine": 39,
-        "endColumn": 86
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 94. Maximum allowed is 80.",
-        "line": 68,
-        "column": 1,
-        "endLine": 68,
-        "endColumn": 95
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 149. Maximum allowed is 80.",
-        "line": 70,
-        "column": 1,
-        "endLine": 70,
-        "endColumn": 150
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 99. Maximum allowed is 80.",
-        "line": 84,
-        "column": 1,
-        "endLine": 84,
-        "endColumn": 100
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 91. Maximum allowed is 80.",
-        "line": 99,
-        "column": 1,
-        "endLine": 99,
-        "endColumn": 92
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 109. Maximum allowed is 80.",
-        "line": 116,
-        "column": 1,
-        "endLine": 116,
-        "endColumn": 110
       }
     ]
   },
@@ -2874,33 +2402,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -2933,36 +2461,12 @@
         "endColumn": 21
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 87. Maximum allowed is 80.",
-        "line": 32,
-        "column": 1,
-        "endLine": 32,
-        "endColumn": 88
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 81. Maximum allowed is 80.",
-        "line": 34,
-        "column": 1,
-        "endLine": 34,
-        "endColumn": 82
-      },
-      {
         "ruleId": "no-underscore-dangle",
         "message": "Unexpected dangling '_' in '__detectBrowserLanguage'.",
         "line": 34,
         "column": 40,
         "endLine": 34,
         "endColumn": 72
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 87. Maximum allowed is 80.",
-        "line": 43,
-        "column": 1,
-        "endLine": 43,
-        "endColumn": 88
       },
       {
         "ruleId": "no-ternary",
@@ -2984,14 +2488,6 @@
         "column": 3,
         "endLine": 10,
         "endColumn": 4
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 116. Maximum allowed is 80.",
-        "line": 5,
-        "column": 1,
-        "endLine": 5,
-        "endColumn": 117
       },
       {
         "ruleId": "no-undefined",
@@ -3050,81 +2546,49 @@
         "ruleId": "no-invalid-this",
         "message": "Unexpected 'this'.",
         "line": 16,
-        "column": 6,
+        "column": 14,
         "endLine": 16,
-        "endColumn": 10
+        "endColumn": 18
       },
       {
         "ruleId": "no-invalid-this",
         "message": "Unexpected 'this'.",
         "line": 17,
-        "column": 6,
+        "column": 14,
         "endLine": 17,
-        "endColumn": 10
+        "endColumn": 18
       },
       {
         "ruleId": "no-invalid-this",
         "message": "Unexpected 'this'.",
         "line": 18,
-        "column": 6,
+        "column": 14,
         "endLine": 18,
-        "endColumn": 10
+        "endColumn": 18
       },
       {
         "ruleId": "no-invalid-this",
         "message": "Unexpected 'this'.",
         "line": 19,
-        "column": 5,
+        "column": 13,
         "endLine": 19,
-        "endColumn": 9
-      },
-      {
-        "ruleId": "no-mixed-operators",
-        "message": "Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations.",
-        "line": 19,
-        "column": 52,
-        "endLine": 19,
-        "endColumn": 54
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 94. Maximum allowed is 80.",
-        "line": 20,
-        "column": 1,
-        "endLine": 20,
-        "endColumn": 95
+        "endColumn": 17
       },
       {
         "ruleId": "no-invalid-this",
         "message": "Unexpected 'this'.",
         "line": 20,
-        "column": 5,
+        "column": 15,
         "endLine": 20,
-        "endColumn": 9
-      },
-      {
-        "ruleId": "no-mixed-operators",
-        "message": "Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations.",
-        "line": 20,
-        "column": 42,
-        "endLine": 20,
-        "endColumn": 44
+        "endColumn": 19
       },
       {
         "ruleId": "no-invalid-this",
         "message": "Unexpected 'this'.",
         "line": 20,
-        "column": 45,
+        "column": 55,
         "endLine": 20,
-        "endColumn": 49
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 103. Maximum allowed is 80.",
-        "line": 27,
-        "column": 1,
-        "endLine": 27,
-        "endColumn": 104
+        "endColumn": 59
       },
       {
         "ruleId": "no-invalid-this",
@@ -3175,28 +2639,12 @@
         "endColumn": 48
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 120. Maximum allowed is 80.",
-        "line": 53,
-        "column": 1,
-        "endLine": 53,
-        "endColumn": 121
-      },
-      {
         "ruleId": "no-console",
         "message": "Unexpected console statement.",
         "line": 53,
         "column": 21,
         "endLine": 53,
         "endColumn": 33
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 88. Maximum allowed is 80.",
-        "line": 66,
-        "column": 1,
-        "endLine": 66,
-        "endColumn": 89
       },
       {
         "ruleId": "no-invalid-this",
@@ -3223,14 +2671,6 @@
         "endColumn": 23
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 82. Maximum allowed is 80.",
-        "line": 88,
-        "column": 1,
-        "endLine": 88,
-        "endColumn": 83
-      },
-      {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'content' should be before 'property'.",
         "line": 89,
@@ -3253,14 +2693,6 @@
         "column": 18,
         "endLine": 97,
         "endColumn": 22
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 100. Maximum allowed is 80.",
-        "line": 98,
-        "column": 1,
-        "endLine": 98,
-        "endColumn": 101
       },
       {
         "ruleId": "id-length",
@@ -3300,36 +2732,12 @@
         "endColumn": 24
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 88. Maximum allowed is 80.",
-        "line": 8,
-        "column": 1,
-        "endLine": 8,
-        "endColumn": 89
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 88. Maximum allowed is 80.",
-        "line": 27,
-        "column": 1,
-        "endLine": 27,
-        "endColumn": 89
-      },
-      {
         "ruleId": "id-length",
         "message": "Identifier name 'l' is too short (< 2).",
         "line": 27,
         "column": 52,
         "endLine": 27,
         "endColumn": 53
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 124. Maximum allowed is 80.",
-        "line": 36,
-        "column": 1,
-        "endLine": 36,
-        "endColumn": 125
       },
       {
         "ruleId": "no-inline-comments",
@@ -3364,28 +2772,12 @@
         "endColumn": 34
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 107. Maximum allowed is 80.",
-        "line": 58,
-        "column": 1,
-        "endLine": 58,
-        "endColumn": 108
-      },
-      {
         "ruleId": "no-console",
         "message": "Unexpected console statement.",
         "line": 58,
         "column": 17,
         "endLine": 58,
         "endColumn": 29
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 86. Maximum allowed is 80.",
-        "line": 76,
-        "column": 1,
-        "endLine": 76,
-        "endColumn": 87
       },
       {
         "ruleId": "no-console",
@@ -3396,28 +2788,12 @@
         "endColumn": 21
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 127. Maximum allowed is 80.",
-        "line": 87,
-        "column": 1,
-        "endLine": 87,
-        "endColumn": 128
-      },
-      {
         "ruleId": "no-console",
         "message": "Unexpected console statement.",
         "line": 87,
         "column": 13,
         "endLine": 87,
         "endColumn": 25
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 126. Maximum allowed is 80.",
-        "line": 91,
-        "column": 1,
-        "endLine": 91,
-        "endColumn": 127
       },
       {
         "ruleId": "no-console",
@@ -3554,33 +2930,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -3603,22 +2979,6 @@
         "column": 27,
         "endLine": 7,
         "endColumn": 30
-      },
-      {
-        "ruleId": "no-mixed-operators",
-        "message": "Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations.",
-        "line": 16,
-        "column": 41,
-        "endLine": 16,
-        "endColumn": 43
-      },
-      {
-        "ruleId": "no-mixed-operators",
-        "message": "Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations.",
-        "line": 16,
-        "column": 57,
-        "endLine": 16,
-        "endColumn": 59
       }
     ]
   },
@@ -3669,33 +3029,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -3820,33 +3180,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -3906,33 +3266,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -4041,33 +3401,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -4228,14 +3588,6 @@
         "endColumn": 11
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 92. Maximum allowed is 80.",
-        "line": 91,
-        "column": 1,
-        "endLine": 91,
-        "endColumn": 93
-      },
-      {
         "ruleId": "no-undef",
         "message": "'workbox' is not defined.",
         "line": 91,
@@ -4250,14 +3602,6 @@
         "column": 1,
         "endLine": 98,
         "endColumn": 8
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 87. Maximum allowed is 80.",
-        "line": 102,
-        "column": 1,
-        "endLine": 102,
-        "endColumn": 88
       },
       {
         "ruleId": "no-undef",
@@ -4295,14 +3639,6 @@
         "column": 9,
         "endLine": 3,
         "endColumn": 25
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 86. Maximum allowed is 80.",
-        "line": 9,
-        "column": 1,
-        "endLine": 9,
-        "endColumn": 87
       },
       {
         "ruleId": "no-ternary",
@@ -4478,33 +3814,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -4657,14 +3993,6 @@
         "endColumn": 68
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 89. Maximum allowed is 80.",
-        "line": 177,
-        "column": 1,
-        "endLine": 177,
-        "endColumn": 90
-      },
-      {
         "ruleId": "no-underscore-dangle",
         "message": "Unexpected dangling '_' in '_eventBus'.",
         "line": 177,
@@ -4777,33 +4105,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -4811,22 +4139,6 @@
   {
     "filePath": "/output-with-fix/router-module/lib/all-rules-test/plugin.js",
     "messages": [
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 81. Maximum allowed is 80.",
-        "line": 1,
-        "column": 1,
-        "endLine": 1,
-        "endColumn": 82
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 83. Maximum allowed is 80.",
-        "line": 4,
-        "column": 1,
-        "endLine": 4,
-        "endColumn": 84
-      },
       {
         "ruleId": "sort-imports",
         "message": "Expected 'multiple' syntax before 'single' syntax.",
@@ -4879,33 +4191,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -4938,23 +4250,7 @@
         "endColumn": 25
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 88. Maximum allowed is 80.",
-        "line": 16,
-        "column": 1,
-        "endLine": 16,
-        "endColumn": 89
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 127. Maximum allowed is 80.",
-        "line": 18,
-        "column": 1,
-        "endLine": 18,
-        "endColumn": 128
-      },
-      {
-        "ruleId": "no-confusing-arrow",
+        "ruleId": "@stylistic/no-confusing-arrow",
         "message": "Arrow function used ambiguously with a conditional expression.",
         "line": 18,
         "column": 73,
@@ -4970,7 +4266,7 @@
         "endColumn": 112
       },
       {
-        "ruleId": "operator-linebreak",
+        "ruleId": "@stylistic/operator-linebreak",
         "message": "'?' should be placed at the beginning of the line.",
         "line": 18,
         "column": 127,
@@ -4986,15 +4282,7 @@
         "endColumn": 11
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 113. Maximum allowed is 80.",
-        "line": 19,
-        "column": 1,
-        "endLine": 19,
-        "endColumn": 114
-      },
-      {
-        "ruleId": "multiline-ternary",
+        "ruleId": "@stylistic/multiline-ternary",
         "message": "Expected newline between consequent and alternate of ternary expression.",
         "line": 19,
         "column": 11,
@@ -5074,33 +4362,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -5131,14 +4419,6 @@
         "column": 13,
         "endLine": 13,
         "endColumn": 26
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 82. Maximum allowed is 80.",
-        "line": 22,
-        "column": 1,
-        "endLine": 22,
-        "endColumn": 83
       },
       {
         "ruleId": "no-undef",
@@ -5229,22 +4509,6 @@
         "endColumn": 14
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 95. Maximum allowed is 80.",
-        "line": 84,
-        "column": 1,
-        "endLine": 84,
-        "endColumn": 96
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 100. Maximum allowed is 80.",
-        "line": 86,
-        "column": 1,
-        "endLine": 86,
-        "endColumn": 101
-      },
-      {
         "ruleId": "no-ternary",
         "message": "Ternary operator used.",
         "line": 92,
@@ -5259,14 +4523,6 @@
         "column": 22,
         "endLine": 103,
         "endColumn": 19
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 91. Maximum allowed is 80.",
-        "line": 108,
-        "column": 1,
-        "endLine": 108,
-        "endColumn": 92
       },
       {
         "ruleId": "sort-keys",
@@ -5333,33 +4589,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]
@@ -5397,36 +4653,12 @@
         "endColumn": 78
       },
       {
-        "ruleId": "max-len",
-        "message": "This line has a length of 81. Maximum allowed is 80.",
-        "line": 18,
-        "column": 1,
-        "endLine": 18,
-        "endColumn": 82
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 108. Maximum allowed is 80.",
-        "line": 31,
-        "column": 1,
-        "endLine": 31,
-        "endColumn": 109
-      },
-      {
         "ruleId": "no-magic-numbers",
         "message": "No magic number: 0.",
         "line": 31,
         "column": 106,
         "endLine": 31,
         "endColumn": 107
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 87. Maximum allowed is 80.",
-        "line": 32,
-        "column": 1,
-        "endLine": 32,
-        "endColumn": 88
       },
       {
         "ruleId": "no-ternary",

@@ -10,7 +10,7 @@ module.exports = {
         browser: true,
         es6: true,
     },
-    extends: ["eslint:all", "plugin:lodash-template/all"],
+    extends: ["eslint:all", "plugin:lodash-template/all", "plugin:@stylistic/all-extends"],
     overrides: [
         {
             files: "*.js",

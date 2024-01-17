@@ -120,9 +120,9 @@
         "ruleId": "no-undef",
         "message": "'y' is not defined.",
         "line": 6,
-        "column": 8,
+        "column": 12,
         "endLine": 6,
-        "endColumn": 9
+        "endColumn": 13
       },
       {
         "ruleId": "no-console",
@@ -391,7 +391,7 @@
         "line": 5,
         "column": 13,
         "endLine": 5,
-        "endColumn": 41
+        "endColumn": 42
       },
       {
         "ruleId": "no-undef",
@@ -400,22 +400,6 @@
         "column": 32,
         "endLine": 5,
         "endColumn": 37
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 90. Maximum allowed is 80.",
-        "line": 10,
-        "column": 1,
-        "endLine": 10,
-        "endColumn": 91
-      },
-      {
-        "ruleId": "max-len",
-        "message": "This line has a length of 115. Maximum allowed is 80.",
-        "line": 13,
-        "column": 1,
-        "endLine": 13,
-        "endColumn": 116
       }
     ]
   }

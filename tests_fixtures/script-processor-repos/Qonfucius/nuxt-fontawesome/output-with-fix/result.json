@@ -29,33 +29,33 @@
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'parserOptions' should be before 'processor'.",
-        "line": 21,
+        "line": 22,
         "column": 13,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 28
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'globals' should be before 'parserOptions'.",
-        "line": 25,
+        "line": 26,
         "column": 13,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 22
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'process' should be before 'serialize'.",
-        "line": 28,
+        "line": 29,
         "column": 17,
-        "endLine": 28,
+        "endLine": 29,
         "endColumn": 26
       },
       {
         "ruleId": "sort-keys",
         "message": "Expected object keys to be in ascending order. 'lodash-template/prefer-escape-template-interpolations' should be before 'one-var'.",
-        "line": 33,
+        "line": 34,
         "column": 17,
-        "endLine": 33,
+        "endLine": 34,
         "endColumn": 72
       }
     ]

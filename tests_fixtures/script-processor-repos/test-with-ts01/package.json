@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@stylistic/eslint-plugin": "~1.5.3",
     "@typescript-eslint/parser": "^6.0.0",
     "eslint": "~8.56.0",
     "eslint-plugin-lodash-template": "file:../../.."
