@@ -1,11 +1,8 @@
-// eslint-disable-next-line eslint-comments/disable-enable-pair -- DEMO
-/* eslint-disable n/no-unsupported-features/es-syntax -- DEMO */
 // eslint-disable-next-line n/no-missing-import -- DEMO
 import { Linter } from "eslint/lib/linter";
 // eslint-disable-next-line n/no-missing-import -- DEMO
 import plugin from "../../../../";
 
-// eslint-disable-next-line n/no-unsupported-features/es-builtins -- ignore
 const coreRules = Object.fromEntries(new Linter().getRules());
 
 const CATEGORY_TITLES = {
@@ -93,12 +90,12 @@ categories.sort((a, b) =>
     a.categoryOrder > b.categoryOrder
         ? 1
         : a.categoryOrder < b.categoryOrder
-        ? -1
-        : a.title > b.title
-        ? 1
-        : a.title < b.title
-        ? -1
-        : 0,
+          ? -1
+          : a.title > b.title
+            ? 1
+            : a.title < b.title
+              ? -1
+              : 0,
 );
 
 export const DEFAULT_RULES_CONFIG = allRules.reduce((c, r) => {
