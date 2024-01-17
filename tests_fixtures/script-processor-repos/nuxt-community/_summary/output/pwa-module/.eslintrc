@@ -17,8 +17,8 @@
         "lodash-template/no-invalid-template-interpolation": "error",
         "lodash-template/no-semi-in-template-interpolation": "error",
         "lodash-template/no-irregular-whitespace": "error",
-        "lodash-template/no-multi-spaces-in-script": "error",
-        "lodash-template/script-indent": "error",
+        "lodash-template/no-multi-spaces-in-scriptlet": "error",
+        "lodash-template/scriptlet-indent": "error",
         "lodash-template/template-tag-spacing": "error"
       },
       "parserOptions": {
