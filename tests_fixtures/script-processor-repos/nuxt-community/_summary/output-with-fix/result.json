@@ -2578,17 +2578,17 @@
         "ruleId": "no-invalid-this",
         "message": "Unexpected 'this'.",
         "line": 20,
-        "column": 15,
+        "column": 13,
         "endLine": 20,
-        "endColumn": 19
+        "endColumn": 17
       },
       {
         "ruleId": "no-invalid-this",
         "message": "Unexpected 'this'.",
         "line": 20,
-        "column": 55,
+        "column": 53,
         "endLine": 20,
-        "endColumn": 59
+        "endColumn": 57
       },
       {
         "ruleId": "no-invalid-this",
