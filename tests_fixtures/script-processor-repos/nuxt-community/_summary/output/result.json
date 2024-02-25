@@ -25968,14 +25968,6 @@
         "endColumn": 9
       },
       {
-        "ruleId": "@stylistic/indent-binary-ops",
-        "message": "Expected indentation of 6 spaces",
-        "line": 17,
-        "column": 1,
-        "endLine": 17,
-        "endColumn": 5
-      },
-      {
         "ruleId": "@stylistic/no-extra-parens",
         "message": "Unnecessary parentheses around expression.",
         "line": 17,

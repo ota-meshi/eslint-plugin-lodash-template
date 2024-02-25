@@ -17,7 +17,7 @@ export const nuxtI18nSeo = function () {
             !this.$i18n.locale ||
             !this.$i18n.locales ||
             this.$options[COMPONENT_OPTIONS_KEY] === false ||
-              this.$options[COMPONENT_OPTIONS_KEY] && this.$options[COMPONENT_OPTIONS_KEY].seo === false
+            this.$options[COMPONENT_OPTIONS_KEY] && this.$options[COMPONENT_OPTIONS_KEY].seo === false
     ) {
 
         return {};
