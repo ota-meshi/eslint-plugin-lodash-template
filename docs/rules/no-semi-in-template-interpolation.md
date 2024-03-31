@@ -14,17 +14,14 @@ description: "disallow the semicolon at the end of expression in micro template 
 
 This rule disallow the semicolon at the end of expression in micro template interpolation.
 
-<eslint-code-block fix :rules="{'lodash-template/no-semi-in-template-interpolation': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/no-semi-in-template-interpolation": "error" */ %>
 <!-- ✓ GOOD -->
 <%= text %>
 
 <!-- ✗ BAD -->
 <%= text; %>
 ```
-
-</eslint-code-block>
 
 ## Implementation
 

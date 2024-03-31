@@ -16,9 +16,8 @@ This rule disallow spacing around equal signs in attribute.
 
 HTML5 allows spaces around equal signs. But space-less is easier to read, and groups entities better together.
 
-<eslint-code-block fix :rules="{'lodash-template/no-space-attribute-equal-sign': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/no-space-attribute-equal-sign": "error" */ %>
 <!-- ✓ GOOD -->
 <input class="item">
 
@@ -26,11 +25,9 @@ HTML5 allows spaces around equal signs. But space-less is easier to read, and gr
 <input class = "item">
 ```
 
-</eslint-code-block>
-
 ## Further Reading
 
-* [HTML5 Style Guide - W3Schools *Spaces and Equal Signs*](https://www.w3schools.com/html/html5_syntax.asp)
+- [HTML5 Style Guide - W3Schools *Spaces and Equal Signs*](https://www.w3schools.com/html/html5_syntax.asp)
 
 ## Implementation
 

@@ -14,9 +14,8 @@ description: "require or disallow a line break before and after HTML comment con
 
 This rule enforces a line break (or no line break) before and after HTML comment contents.
 
-<eslint-code-block fix :rules="{'lodash-template/html-comment-content-newline': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/html-comment-content-newline": "error" */ %>
 <!-- ✓ GOOD -->
 <!-- singleline comment -->
 <!--
@@ -35,8 +34,6 @@ This rule enforces a line break (or no line break) before and after HTML comment
   comment -->
 ```
 
-</eslint-code-block>
-
 ## Options
 
 ```json
@@ -49,15 +46,13 @@ This rule enforces a line break (or no line break) before and after HTML comment
 ```
 
 - `singleline` ... the configuration for single-line comments.
-    - `"ignore"` ... Don't enforce line breaks style before and after the comments.
-    - `"never"` ... disallow line breaks before and after the comments. This is the default.
-    - `"always"` ... require one line break before and after the comments.
+  - `"ignore"` ... Don't enforce line breaks style before and after the comments.
+  - `"never"` ... disallow line breaks before and after the comments. This is the default.
+  - `"always"` ... require one line break before and after the comments.
 - `multiline` ... the configuration for multiline comments.
-    - `"ignore"` ... Don't enforce line breaks style before and after the comments.
-    - `"never"` ... disallow line breaks before and after the comments.
-    - `"always"` ... require one line break before and after the comments. This is the default.
-
-<eslint-code-block fix :rules="{}">
+  - `"ignore"` ... Don't enforce line breaks style before and after the comments.
+  - `"never"` ... disallow line breaks before and after the comments.
+  - `"always"` ... require one line break before and after the comments. This is the default.
 
 ```html
 <% /* eslint
@@ -86,11 +81,9 @@ This rule enforces a line break (or no line break) before and after HTML comment
 
 ```
 
-</eslint-code-block>
-
 ## Further Reading
 
-* [HTML5 Style Guide - W3Schools *HTML Comments*](https://www.w3schools.com/html/html5_syntax.asp)
+- [HTML5 Style Guide - W3Schools *HTML Comments*](https://www.w3schools.com/html/html5_syntax.asp)
 
 ## Implementation
 

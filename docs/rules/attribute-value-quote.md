@@ -14,9 +14,8 @@ description: "enforce quotes style of HTML attributes. (ex. :ok: `<div class=\"a
 
 This rule enforces the quotes style of HTML attributes.
 
-<eslint-code-block fix :rules="{'lodash-template/attribute-value-quote': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/attribute-value-quote": "error" */ %>
 <!-- ✓ GOOD -->
 <img src="./logo.png">
 
@@ -24,8 +23,6 @@ This rule enforces the quotes style of HTML attributes.
 <img src='./logo.png'>
 <img src=./logo.png>
 ```
-
-</eslint-code-block>
 
 ## Options
 
@@ -42,9 +39,8 @@ This rule enforces the quotes style of HTML attributes.
 
 ### Examples for this rule with `"single"` option:
 
-<eslint-code-block fix :rules="{'lodash-template/attribute-value-quote': ['error', 'single']}">
-
 ```html
+<% /* eslint "lodash-template/attribute-value-quote": ["error", "single"] */ %>
 <!-- ✓ GOOD -->
 <img src='./logo.png'>
 
@@ -52,14 +48,11 @@ This rule enforces the quotes style of HTML attributes.
 <img src="./logo.png">
 <img src=./logo.png>
 ```
-
-</eslint-code-block>
 
 ### Examples for this rule with `"either"` option:
 
-<eslint-code-block fix :rules="{'lodash-template/attribute-value-quote': ['error', 'either']}">
-
 ```html
+<% /* eslint "lodash-template/attribute-value-quote": ["error", "either"] */ %>
 <!-- ✓ GOOD -->
 <img src="./logo.png">
 <img src='./logo.png'>
@@ -68,12 +61,10 @@ This rule enforces the quotes style of HTML attributes.
 <img src=./logo.png>
 ```
 
-</eslint-code-block>
-
 ## Further Reading
 
-* [Google HTML/CSS Style Guide *HTML Quotation Marks*](https://google.github.io/styleguide/htmlcssguide.html#HTML_Quotation_Marks)
-* [HTML5 Style Guide - W3Schools *Quote Attribute Values*](https://www.w3schools.com/html/html5_syntax.asp)
+- [Google HTML/CSS Style Guide *HTML Quotation Marks*](https://google.github.io/styleguide/htmlcssguide.html#HTML_Quotation_Marks)
+- [HTML5 Style Guide - W3Schools *Quote Attribute Values*](https://www.w3schools.com/html/html5_syntax.asp)
 
 ## Implementation
 

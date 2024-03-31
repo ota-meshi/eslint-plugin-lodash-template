@@ -14,9 +14,8 @@ description: "enforce unified spacing in micro-template tag. (ex. :ok: `<%= prop
 
 This rule aims to enforce unified spacing in micro-template interpolate/evaluate.
 
-<eslint-code-block fix :rules="{'lodash-template/template-tag-spacing': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/template-tag-spacing": "error" */ %>
 <!-- ✓ GOOD -->
 <div><%= text %></div>
 
@@ -25,12 +24,9 @@ This rule aims to enforce unified spacing in micro-template interpolate/evaluate
 <div><%=text%></div>
 ```
 
-</eslint-code-block>
-
 ## Options
 
 Default spacing is set to `always`
-
 
 ```json
 {
@@ -40,9 +36,8 @@ Default spacing is set to `always`
 
 ### `"always"` - Expect one space between expression and curly brackets.
 
-<eslint-code-block fix :rules="{'lodash-template/template-tag-spacing': ['error', 'always']}">
-
 ```html
+<% /* eslint "lodash-template/template-tag-spacing": ["error", "always"] */ %>
 <!-- ✓ GOOD -->
 <div><%= text %></div>
 
@@ -50,14 +45,11 @@ Default spacing is set to `always`
 <div><%=   text   %></div>
 <div><%=text%></div>
 ```
-
-</eslint-code-block>
 
 ### `"never"` - Expect no spaces between expression and curly brackets.
 
-<eslint-code-block fix :rules="{'lodash-template/template-tag-spacing': ['error', 'never']}">
-
 ```html
+<%/* eslint "lodash-template/template-tag-spacing": ["error", "never"] */%>
 <!-- ✓ GOOD -->
 <div><%=text%></div>
 
@@ -65,8 +57,6 @@ Default spacing is set to `always`
 <div><%=   text   %></div>
 <div><%= text %></div>
 ```
-
-</eslint-code-block>
 
 ## Implementation
 

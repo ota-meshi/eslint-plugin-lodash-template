@@ -16,9 +16,8 @@ This rule reports duplicate attributes.
 When duplicate arguments exist, only the last one is valid.
 It's possibly mistakes.
 
-<eslint-code-block :rules="{'lodash-template/no-duplicate-attributes': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/no-duplicate-attributes": "error" */ %>
 <!-- ✓ GOOD -->
 <div
   foo="abc"
@@ -30,8 +29,6 @@ It's possibly mistakes.
   foo="def"
 ></div>
 ```
-
-</eslint-code-block>
 
 ## Implementation
 

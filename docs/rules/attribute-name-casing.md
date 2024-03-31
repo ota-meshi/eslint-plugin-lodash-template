@@ -14,9 +14,8 @@ description: "enforce HTML attribute name casing. (ex. :ok: `<div foo-bar>` :ng:
 
 This rule enforces attribute name casing style (kebab-case).
 
-<eslint-code-block fix :rules="{'lodash-template/attribute-name-casing': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/attribute-name-casing": "error" */ %>
 <!-- ✓ GOOD -->
 <div foo-bar="abc">
 
@@ -24,8 +23,6 @@ This rule enforces attribute name casing style (kebab-case).
 <div fooBar="abc">
 <div FOO-BAR="abc">
 ```
-
-</eslint-code-block>
 
 ## Options
 
@@ -40,31 +37,25 @@ This rule enforces attribute name casing style (kebab-case).
 
 ### Examples for this rule with `"ignore": ["onClick"]` option:
 
-<eslint-code-block fix :rules="{'lodash-template/attribute-name-casing': ['error', {'ignore': ['onClick']}]}">
-
 ```html
+<% /* eslint "lodash-template/attribute-name-casing": ["error", {"ignore": ["onClick"]}] */ %>
 <!-- ✓ GOOD -->
 <div onClick="abc">
 ```
 
-</eslint-code-block>
-
 ### Examples for this rule with `"ignoreSvgCamelCaseAttributes": true,` (default)
 
-<eslint-code-block fix :rules="{'lodash-template/attribute-name-casing': ['error', {'ignoreSvgCamelCaseAttributes': true}]}">
-
 ```html
+<% /* eslint "lodash-template/attribute-name-casing": ["error", {"ignoreSvgCamelCaseAttributes": true}] */ %>
 <!-- ✓ GOOD -->
 <svg viewBox="0 0 100 100"></svg>
 ```
 
-</eslint-code-block>
-
 ## Further Reading
 
-* [Google HTML/CSS Style Guide *Capitalization*](https://google.github.io/styleguide/htmlcssguide.html#Capitalization)
-* [HTML - MDN - Mozilla *`data-*`*](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
-* [HTML5 *Embedding custom non-visible data with the `data-*` attributes*](https://www.w3.org/TR/html5/dom.html#embedding-custom-non-visible-data-with-the-data-attributes)
+- [Google HTML/CSS Style Guide *Capitalization*](https://google.github.io/styleguide/htmlcssguide.html#Capitalization)
+- [HTML - MDN - Mozilla *`data-*`*](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
+- [HTML5 *Embedding custom non-visible data with the `data-*` attributes*](https://www.w3.org/TR/html5/dom.html#embedding-custom-non-visible-data-with-the-data-attributes)
 
 ## Implementation
 

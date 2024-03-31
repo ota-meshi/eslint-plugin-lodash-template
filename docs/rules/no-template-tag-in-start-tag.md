@@ -13,9 +13,8 @@ description: "disallow template tag in start tag outside attribute values. (ex. 
 
 This rule reports the template tag that is in the start tag, outside attribute values.
 
-<eslint-code-block :rules="{'lodash-template/no-template-tag-in-start-tag': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/no-template-tag-in-start-tag": "error" */ %>
 <!-- ✓ GOOD -->
 <input disabled >
 
@@ -33,8 +32,6 @@ This rule reports the template tag that is in the start tag, outside attribute v
 >
 ```
 
-</eslint-code-block>
-
 ## Options
 
 ```json
@@ -47,9 +44,8 @@ This rule reports the template tag that is in the start tag, outside attribute v
 
 ### Examples for this rule with `{arrowEvaluateTag: true}` option:
 
-<eslint-code-block :rules="{'lodash-template/no-template-tag-in-start-tag': ['error', {arrowEvaluateTag: true}]}">
-
 ```html
+<% /* eslint "lodash-template/no-template-tag-in-start-tag": ["error", {"arrowEvaluateTag": true}] */ %>
 <!-- ✓ GOOD -->
 <input disabled >
 <input
@@ -58,8 +54,6 @@ This rule reports the template tag that is in the start tag, outside attribute v
   <% } %>
 >
 ```
-
-</eslint-code-block>
 
 ## Implementation
 

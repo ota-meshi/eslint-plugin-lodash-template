@@ -50,13 +50,13 @@ module.exports = {
             },
         },
         {
-            files: ["docs/.vuepress/**"],
+            files: ["docs/.vitepress/**"],
             parser: "vue-eslint-parser",
             parserOptions: {
                 sourceType: "module",
                 ecmaVersion: 2020,
             },
-            extends: ["plugin:@ota-meshi/+vue2", "plugin:@ota-meshi/+prettier"],
+            extends: ["plugin:@ota-meshi/+vue3", "plugin:@ota-meshi/+prettier"],
             globals: {
                 window: true,
             },
@@ -71,6 +71,14 @@ module.exports = {
                 "@mysticatea/node/file-extension-in-import": "off",
                 "@mysticatea/node/no-unsupported-features/es-syntax": "off",
             },
+        },
+        {
+            files: ["docs/.vitepress/**/*.mts", "docs/.vitepress/**/*.ts"],
+            parser: "@typescript-eslint/parser",
+            extends: [
+                "plugin:@ota-meshi/+typescript",
+                "plugin:@typescript-eslint/disable-type-checked",
+            ],
         },
     ],
 };
