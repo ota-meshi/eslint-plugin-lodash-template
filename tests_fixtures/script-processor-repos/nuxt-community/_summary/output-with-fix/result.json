@@ -70,7 +70,16 @@
   },
   {
     "filePath": "/output-with-fix/analytics-module/lib/plugin.js",
-    "messages": []
+    "messages": [
+      {
+        "ruleId": "import/default",
+        "message": "No default export found in imported module \"vue\".",
+        "line": 1,
+        "column": 8,
+        "endLine": 1,
+        "endColumn": 11
+      }
+    ]
   },
   {
     "filePath": "/output-with-fix/apollo-module/.eslintrc.js",
@@ -4062,6 +4071,14 @@
     "filePath": "/output-with-fix/recaptcha-module/lib/plugin.js",
     "messages": [
       {
+        "ruleId": "import/default",
+        "message": "No default export found in imported module \"vue\".",
+        "line": 2,
+        "column": 8,
+        "endLine": 2,
+        "endColumn": 11
+      },
+      {
         "ruleId": "vue/multi-word-component-names",
         "message": "Component name \"Recaptcha\" should always be multi-word.",
         "line": 134,
@@ -4319,6 +4336,14 @@
     "filePath": "/output-with-fix/sentry-module/lib/sentry.client.js",
     "messages": [
       {
+        "ruleId": "import/default",
+        "message": "No default export found in imported module \"vue\".",
+        "line": 1,
+        "column": 8,
+        "endLine": 1,
+        "endColumn": 14
+      },
+      {
         "ruleId": "no-unused-vars",
         "message": "'VueLib' is defined but never used.",
         "line": 1,
@@ -4545,6 +4570,14 @@
   {
     "filePath": "/output-with-fix/svg-sprite-module/lib/plugin.js",
     "messages": [
+      {
+        "ruleId": "import/default",
+        "message": "No default export found in imported module \"vue\".",
+        "line": 1,
+        "column": 8,
+        "endLine": 1,
+        "endColumn": 11
+      },
       {
         "ruleId": "no-undef",
         "message": "'relativeToBuild' is not defined.",

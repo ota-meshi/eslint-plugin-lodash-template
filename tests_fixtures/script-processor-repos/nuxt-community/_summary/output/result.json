@@ -626,6 +626,14 @@
     "filePath": "/output/analytics-module/lib/plugin.js",
     "messages": [
       {
+        "ruleId": "import/default",
+        "message": "No default export found in imported module \"vue\".",
+        "line": 1,
+        "column": 8,
+        "endLine": 1,
+        "endColumn": 11
+      },
+      {
         "ruleId": "object-curly-spacing",
         "message": "A space is required after '{'.",
         "line": 11,
@@ -35702,6 +35710,14 @@
     "filePath": "/output/recaptcha-module/lib/plugin.js",
     "messages": [
       {
+        "ruleId": "import/default",
+        "message": "No default export found in imported module \"vue\".",
+        "line": 2,
+        "column": 8,
+        "endLine": 2,
+        "endColumn": 11
+      },
+      {
         "ruleId": "arrow-parens",
         "message": "Unexpected parentheses around single function argument having a body with no curly braces.",
         "line": 110,
@@ -37150,6 +37166,14 @@
   {
     "filePath": "/output/sentry-module/lib/sentry.client.js",
     "messages": [
+      {
+        "ruleId": "import/default",
+        "message": "No default export found in imported module \"vue\".",
+        "line": 1,
+        "column": 8,
+        "endLine": 1,
+        "endColumn": 14
+      },
       {
         "ruleId": "no-unused-vars",
         "message": "'VueLib' is defined but never used.",
@@ -39312,6 +39336,14 @@
   {
     "filePath": "/output/svg-sprite-module/lib/plugin.js",
     "messages": [
+      {
+        "ruleId": "import/default",
+        "message": "No default export found in imported module \"vue\".",
+        "line": 1,
+        "column": 8,
+        "endLine": 1,
+        "endColumn": 11
+      },
       {
         "ruleId": "no-undef",
         "message": "'relativeToBuild' is not defined.",
