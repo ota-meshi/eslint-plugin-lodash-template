@@ -14,9 +14,8 @@ description: "enforce consistent indentation to scriptlet in micro-template tag.
 
 This rule enforces a consistent indentation style to script in micro-template tag. The default style is 2 spaces.
 
-<eslint-code-block fix :rules="{'lodash-template/scriptlet-indent': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/scriptlet-indent": "error" */ %>
 <!-- ✓ GOOD -->
 <% for (
     let i = 0;
@@ -36,8 +35,6 @@ This rule enforces a consistent indentation style to script in micro-template ta
 <% } %>
 ```
 
-</eslint-code-block>
-
 ## Options
 
 ```json
@@ -55,9 +52,8 @@ This rule enforces a consistent indentation style to script in micro-template ta
 
 ### Examples for this rule with `{startIndent: 0}`:
 
-<eslint-code-block fix :rules="{'lodash-template/scriptlet-indent': ['error', 2, {startIndent: 0}]}">
-
 ```html
+<% /* eslint "lodash-template/scriptlet-indent": ["error", 2, {"startIndent": 0}] */ %>
 <!-- ✓ GOOD -->
 <% for (
   let i = 0;
@@ -68,13 +64,10 @@ This rule enforces a consistent indentation style to script in micro-template ta
 <% } %>
 ```
 
-</eslint-code-block>
-
 ### Examples for this rule with `{startIndent: 2}`:
 
-<eslint-code-block fix :rules="{'lodash-template/scriptlet-indent': ['error', 2, {startIndent: 2}]}">
-
 ```html
+<% /* eslint "lodash-template/scriptlet-indent": ["error", 2, {"startIndent": 2}] */ %>
 <!-- ✓ GOOD -->
 <% for (
       let i = 0;
@@ -84,8 +77,6 @@ This rule enforces a consistent indentation style to script in micro-template ta
   <div class="<%= arr[i] %>"></div>
 <% } %>
 ```
-
-</eslint-code-block>
 
 ## Implementation
 

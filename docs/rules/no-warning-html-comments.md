@@ -13,13 +13,10 @@ description: "disallow specified warning terms in HTML comments. (ex. :ng: `<!--
 
 This rule reports HTML comments that include any of the predefined terms specified in its configuration.
 
-<eslint-code-block :rules="{'lodash-template/no-warning-html-comments': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/no-warning-html-comments": "error" */ %>
 <!-- TODO -->
 ```
-
-</eslint-code-block>
 
 ## Implementation
 

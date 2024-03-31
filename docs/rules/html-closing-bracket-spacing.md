@@ -14,15 +14,13 @@ description: "require or disallow a space before tag's closing brackets. (ex. :o
 
 This rule enforces consistent spacing style before closing brackets `>` of tags.
 
-
 ```html
 <div class="foo"> or <div class="foo" >
 <input class="foo"/> or <input class="foo" />
 ```
 
-<eslint-code-block fix :rules="{'lodash-template/html-closing-bracket-spacing': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/html-closing-bracket-spacing": "error" */ %>
 <!-- ✓ GOOD -->
 <input>
 <input foo>
@@ -42,8 +40,6 @@ This rule enforces consistent spacing style before closing brackets `>` of tags.
 <input foo="bar"/>
 ```
 
-</eslint-code-block>
-
 ## Options
 
 
@@ -58,16 +54,14 @@ This rule enforces consistent spacing style before closing brackets `>` of tags.
 ```
 
 - `startTag` (`"always" | "never"`) ... Setting for the `>` of start tags (e.g. `<div>`). Default is `"never"`.
-    - `"always"` ... requires one or more spaces.
-    - `"never"` ... disallows spaces.
+  - `"always"` ... requires one or more spaces.
+  - `"never"` ... disallows spaces.
 - `endTag` (`"always" | "never"`) ... Setting for the `>` of end tags (e.g. `</div>`). Default is `"never"`.
-    - `"always"` ... requires one or more spaces.
-    - `"never"` ... disallows spaces.
+  - `"always"` ... requires one or more spaces.
+  - `"never"` ... disallows spaces.
 - `selfClosingTag` (`"always" | "never"`) ... Setting for the `/>` of self-closing tags (e.g. `<br/>`). Default is `"always"`.
-    - `"always"` ... requires one or more spaces.
-    - `"never"` ... disallows spaces.
-
-<eslint-code-block fix :rules="{}">
+  - `"always"` ... requires one or more spaces.
+  - `"never"` ... disallows spaces.
 
 ```html
 <% /* eslint
@@ -86,8 +80,6 @@ This rule enforces consistent spacing style before closing brackets `>` of tags.
 <input foo />
 <input foo="bar" />
 ```
-
-</eslint-code-block>
 
 ## Implementation
 

@@ -13,9 +13,8 @@ description: "prefer escape micro-template interpolations. (ex. :ok: `<%- ... %>
 
 This rule reports no escape micro-template interpolates.
 
-<eslint-code-block :rules="{'lodash-template/prefer-escape-template-interpolations': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/prefer-escape-template-interpolations": "error" */ %>
 <!-- ✓ GOOD -->
 <div><%- text %></div>
 <div><% print(html) %></div>
@@ -23,8 +22,6 @@ This rule reports no escape micro-template interpolates.
 <!-- ✗ BAD -->
 <div><%= text %></div>
 ```
-
-</eslint-code-block>
 
 ## Implementation
 

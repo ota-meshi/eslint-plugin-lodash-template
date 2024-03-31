@@ -14,9 +14,8 @@ description: "disallow multiple spaces in scriptlet. (ex. :ng: `<% if···(test
 
 This rule aims to disallow multiple whitespace in script which are not used for indentation.
 
-<eslint-code-block fix :rules="{'lodash-template/no-multi-spaces-in-scriptlet': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/no-multi-spaces-in-scriptlet": "error" */ %>
 <!-- ✓ GOOD -->
 <%
 var a = 1;
@@ -44,11 +43,9 @@ a ?  b: c
 %>
 ```
 
-</eslint-code-block>
-
 ## Further Reading
 
-* [ESLint `no-multi-spaces` rule](https://eslint.org/docs/rules/no-multi-spaces)
+- [ESLint `no-multi-spaces` rule](https://eslint.org/docs/rules/no-multi-spaces)
 
 ## Implementation
 

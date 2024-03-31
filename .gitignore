@@ -1,13 +1,7 @@
 node_modules
 .nyc_output
 coverage
-docs/.vuepress/dist
 *.tgz
 
-assets
-service
-404.html
-service-worker.js
-playground
-index.html
-.test-result-list.txt
+/docs/.vitepress/dist
+/docs/.vitepress/cache

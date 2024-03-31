@@ -18,9 +18,8 @@ This rule aims to enforce a number of attributes per line in HTML.
 It checks all the elements and verifies that the number of attributes per line does not exceed the defined maximum.
 An attribute is considered to be in a new line when there is a line break between two attributes.
 
-<eslint-code-block fix :rules="{'lodash-template/max-attributes-per-line': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/max-attributes-per-line": "error" */ %>
 <!-- ✓ GOOD -->
 <input foo="1">
 
@@ -48,8 +47,6 @@ An attribute is considered to be in a new line when there is a line break betwee
 >
 ```
 
-</eslint-code-block>
-
 ## Options
 
 ```json
@@ -67,8 +64,6 @@ An attribute is considered to be in a new line when there is a line break betwee
 ### `allowFirstLine`
 
 For multi-line declarations, defines if allows attributes to be put in the first line. (Default false)
-
-<eslint-code-block fix :rules="{}">
 
 ```html
 <% /* eslint
@@ -91,13 +86,9 @@ For multi-line declarations, defines if allows attributes to be put in the first
 >
 ```
 
-</eslint-code-block>
-
 ### `singleline`
 
 Number of maximum attributes per line when the opening tag is in a single line. (Default is 1)
-
-<eslint-code-block fix :rules="{}">
 
 ```html
 <% /* eslint
@@ -113,13 +104,9 @@ Number of maximum attributes per line when the opening tag is in a single line. 
 <input foo="1" bar="2">
 ```
 
-</eslint-code-block>
-
 ### `multiline`
 
 Number of maximum attributes per line when a tag is in multiple lines. (Default is 1)
-
-<eslint-code-block fix :rules="{}">
 
 ```html
 <% /* eslint
@@ -139,8 +126,6 @@ Number of maximum attributes per line when a tag is in multiple lines. (Default 
   foo="1" bar="2"
 >
 ```
-
-</eslint-code-block>
 
 ## Implementation
 

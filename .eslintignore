@@ -5,6 +5,7 @@
 /assets
 /samples
 /tests_fixtures
-/docs/.vuepress/dist
 !/.vscode
-!/docs/.vuepress
+!/docs/.vitepress
+/docs/.vitepress/dist
+/docs/.vitepress/cache

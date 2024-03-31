@@ -13,9 +13,8 @@ description: "disallow empty micro-template tag. (ex. :ng: `<% %>`)"
 
 This rule reports empty micro-template interpolate/evaluate.
 
-<eslint-code-block :rules="{'lodash-template/no-empty-template-tag': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/no-empty-template-tag": "error" */ %>
 <!-- ✓ GOOD -->
 <div><%= text %></div>
 
@@ -24,8 +23,6 @@ This rule reports empty micro-template interpolate/evaluate.
 <div><%
 %></div>
 ```
-
-</eslint-code-block>
 
 ## Implementation
 

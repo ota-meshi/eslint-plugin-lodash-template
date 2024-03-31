@@ -14,9 +14,8 @@ description: "enforce HTML element name casing. (ex. :ok: `<xxx-element>` :ng: `
 
 This rule enforces element name casing style (kebab-case).
 
-<eslint-code-block fix :rules="{'lodash-template/element-name-casing': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/element-name-casing": "error" */ %>
 <!-- ✓ GOOD -->
 <div>
 <xxx-element>
@@ -26,11 +25,9 @@ This rule enforces element name casing style (kebab-case).
 <xxxElement>
 ```
 
-</eslint-code-block>
-
 ## Further Reading
 
-* [Web Components | MDN  *Using custom elements*](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)
+- [Web Components | MDN  *Using custom elements*](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)
 
 ## Implementation
 

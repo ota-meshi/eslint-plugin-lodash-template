@@ -9,13 +9,12 @@
     ],
     "typescript.validate.enable": false,
     "javascript.validate.enable": false,
-    // "eslint.workingDirectories": ["./", "./docs/.vuepress"],
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": "explicit"
     },
     "[html]": {
         "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": false
+            "source.fixAll.eslint": "never"
         }
     }
 }

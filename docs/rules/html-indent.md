@@ -14,9 +14,8 @@ description: "enforce consistent HTML indentation."
 
 This rule enforces a consistent HTML indentation style. The default style is 2 spaces.
 
-<eslint-code-block fix :rules="{'lodash-template/html-indent': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/html-indent": "error" */ %>
 <!-- ✓ GOOD -->
 <div>
   <div class="foo">
@@ -31,8 +30,6 @@ This rule enforces a consistent HTML indentation style. The default style is 2 s
     </div>
 </div>
 ```
-
-</eslint-code-block>
 
 ## Options
 
@@ -51,9 +48,8 @@ This rule enforces a consistent HTML indentation style. The default style is 2 s
 
 ### Examples for this rule with `{ attribute: 1, closeBracket: 1 }` option:
 
-<eslint-code-block fix :rules="{'lodash-template/html-indent': ['error', 2, { 'attribute': 1, 'closeBracket': 1 }]}">
-
 ```html
+<% /* eslint "lodash-template/html-indent": ["error", 2, { "attribute": 1, "closeBracket": 1 }] */ %>
 <!-- ✓ GOOD -->
 <div>
   <div
@@ -67,13 +63,10 @@ This rule enforces a consistent HTML indentation style. The default style is 2 s
 </div>
 ```
 
-</eslint-code-block>
-
 ### Examples for this rule with `{ attribute: 2, closeBracket: 1 }` option:
 
-<eslint-code-block fix :rules="{'lodash-template/html-indent': ['error', 2, {'attribute': 2, 'closeBracket': 1}]}">
-
 ```html
+<% /* eslint "lodash-template/html-indent": ["error", 2, { "attribute": 2, "closeBracket": 1 }] */ %>
 <!-- ✓ GOOD -->
 <div>
   <div
@@ -86,8 +79,6 @@ This rule enforces a consistent HTML indentation style. The default style is 2 s
   </div>
 </div>
 ```
-
-</eslint-code-block>
 
 ## Implementation
 

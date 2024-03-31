@@ -13,15 +13,12 @@ description: "disallow HTML comments. (ex. :ng: `<!-- comment -->`)"
 
 This rule reports HTML comments.
 
-<eslint-code-block :rules="{'lodash-template/no-html-comments': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/no-html-comments": "error" */ %>
 <% /* ✓ GOOD */ %>
 
 <!-- ✗ BAD -->
 ```
-
-</eslint-code-block>
 
 ## Implementation
 

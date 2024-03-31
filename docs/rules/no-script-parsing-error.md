@@ -12,11 +12,10 @@ description: "disallow parsing errors in template"
 ## Rule Details
 
 This rule reports syntax errors in JavaScript template.  
-This rule works when verification of ["JavaScript Templates"](../README.md#for-javascript-templates) is enabled.
-
-<eslint-code-block script :rules="{'lodash-template/no-script-parsing-error': ['error']}">
+This rule works when verification of ["JavaScript Templates"](../index.md#for-javascript-templates) is enabled.
 
 ```js
+/* eslint "lodash-template/no-script-parsing-error": "error" */
 /* ✓ GOOD */
 <% if (a) { %>
   const a = 'ABC'
@@ -25,19 +24,14 @@ This rule works when verification of ["JavaScript Templates"](../README.md#for-j
 <% } %>
 ```
 
-</eslint-code-block>
-
-<eslint-code-block script :rules="{'lodash-template/no-script-parsing-error': ['error']}">
-
 ```js
+/* eslint "lodash-template/no-script-parsing-error": "error" */
 /* ✗ BAD */
 <% if (a) { %>
   const a = 'ABC'
 <% } %>
 const a = 'DEF'
 ```
-
-</eslint-code-block>
 
 ## Implementation
 

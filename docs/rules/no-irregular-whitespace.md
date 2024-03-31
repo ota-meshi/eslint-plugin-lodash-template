@@ -14,9 +14,8 @@ description: "disallow irregular whitespace outside the template tags."
 
 This rule disallows the irregular whitespaces.
 
-<eslint-code-block fix :rules="{'lodash-template/no-irregular-whitespace': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/no-irregular-whitespace": "error" */ %>
 <!-- ✓ GOOD -->
 <div id="item-id" class="item-content">
 </div >
@@ -25,8 +24,6 @@ This rule disallows the irregular whitespaces.
 <div　id="item-id"　class="item-content">
 </div　>
 ```
-
-</eslint-code-block>
 
 ## Options
 
@@ -42,13 +39,13 @@ This rule disallows the irregular whitespaces.
 
 This rule has an object option for exceptions:
 
-* `"skipComments": true` allows any whitespace characters in HTML comments
-* `"skipAttrValues": true` allows any whitespace characters in HTML attribute values
-* `"skipText": true` allows any whitespace characters in HTML texts
+- `"skipComments": true` allows any whitespace characters in HTML comments
+- `"skipAttrValues": true` allows any whitespace characters in HTML attribute values
+- `"skipText": true` allows any whitespace characters in HTML texts
 
 ## Further Reading
 
-* [ESLint `no-irregular-whitespace` rule](https://eslint.org/docs/rules/no-irregular-whitespace)
+- [ESLint `no-irregular-whitespace` rule](https://eslint.org/docs/rules/no-irregular-whitespace)
 
 ## Implementation
 

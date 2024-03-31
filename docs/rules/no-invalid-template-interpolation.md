@@ -13,9 +13,8 @@ description: "disallow other than expression in micro-template interpolation. (e
 
 This rule disallow other than expression in micro-template interpolation.
 
-<eslint-code-block :rules="{'lodash-template/no-invalid-template-interpolation': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/no-invalid-template-interpolation": "error" */ %>
 <!-- ✓ GOOD -->
 <% if (a) { %>
   <div></div>
@@ -30,8 +29,6 @@ This rule disallow other than expression in micro-template interpolation.
 
 <div><%= /**/ %></div>
 ```
-
-</eslint-code-block>
 
 ## Implementation
 

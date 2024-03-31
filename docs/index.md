@@ -27,7 +27,7 @@ This plugin supports code checking for templates like the examples below.
 <% } %>
 ```
 
-[***Playground on the Web***](./playground/README.md)
+[***Playground on the Web***](https://eslint-online-playground.netlify.app/#eNqNUk2P2jAQ/SujSIiPDUm3hx7SQC/tuZeqlw1CxhkSbx3bsg2lQvz3jp2EAtVKqxxizbx5783HOXGW53hinZGYtb6TSZGUE8gX0Ei9YxIY5/qgvEvh4NA6WOQwWVeKMGMm22v7jfF2NjuLOgVj9V5I3IqONbg9WJnC3upuG8ovKYg5rNZwjiQAZS2OIOpVRaIreoRwAlwy54bYTMAEPsJqBc/wBaaAR1TTAqbTecRGloFnLGusqLfPwKRpGVjRtP6KI6TomisyJrEmSRrDIPif/6iTj0I5Kb0p+gl0hw0DrpVHGs2trlmXu3XJoLW4J3wetK6D6Xt5DJU5WxdlvltDyHg8+Rg0j17GBy3lEsei4pv2AjM4MgsCVvDhM/3KfouZRNX4liJPTzD/tw0pbhwGzYh+EZtsnEP0eI0q1uHgs8ypuLcQ2ZI0ydBJobzl2aujs+p0faAjw5PR1jtydCafoSlUtSvgpUp6fGGR666jaNhMClVi5KERqpC6Zq5deqRjZR7zG9zyt/DtMtxvlWzSwGuYJZffjRdaEXvUIjXesZ9knoIFEQcaR9cRKyrv9MFy/PHHYEj2fqsk5C4RoY9oac0Y3caKgbby4WT6JhYZvtLiexfho4Pi6Jy2UfGhh95yD+1F3iC957yd2nun47gVhprdDGrhR+8Lbcow/ouunUS0ok2RASCvNR6/ogkMigsk/TjGcHnjqkLoboq3yWVvbPlg7L4mlJCTS3L5C/4egQw=)
 
 ## Features
 
@@ -86,8 +86,8 @@ This plugin does special handling for the following rule warnings in the templat
 | [`no-irregular-whitespace`]            | Disable warnings outside template tags        | [`lodash-template/no-irregular-whitespace`] rule                                                               |
 
 [`indent`]: https://eslint.org/docs/rules/indent
-[`lodash-template/scriptlet-indent`]: ./docs/rules/scriptlet-indent.md
-[`lodash-template/html-indent`]: ./docs/rules/html-indent.md
+[`lodash-template/scriptlet-indent`]: ./rules/scriptlet-indent.md
+[`lodash-template/html-indent`]: ./rules/html-indent.md
 [`@stylistic/indent`]: https://eslint.style/rules/default/indent
 [`strict`]: https://eslint.org/docs/rules/strict
 [`no-empty`]: https://eslint.org/docs/rules/no-empty
@@ -98,13 +98,13 @@ This plugin does special handling for the following rule warnings in the templat
 [`no-implicit-globals`]: https://eslint.org/docs/rules/no-implicit-globals
 [`no-multi-spaces`]: https://eslint.org/docs/rules/no-multi-spaces
 [`@stylistic/no-multi-spaces`]: https://eslint.style/rules/default/no-multi-spaces
-[`lodash-template/no-multi-spaces-in-scriptlet`]: ./docs/rules/no-multi-spaces-in-scriptlet.md
-[`lodash-template/no-multi-spaces-in-html-tag`]: ./docs/rules/no-multi-spaces-in-html-tag.md
+[`lodash-template/no-multi-spaces-in-scriptlet`]: ./rules/no-multi-spaces-in-scriptlet.md
+[`lodash-template/no-multi-spaces-in-html-tag`]: ./rules/no-multi-spaces-in-html-tag.md
 [`no-unused-expressions`]: https://eslint.org/docs/rules/no-unused-expressions
 [`quotes`]: https://eslint.org/docs/rules/quotes
 [`@stylistic/quotes`]: https://eslint.style/rules/default/quotes
 [`no-irregular-whitespace`]: https://eslint.org/docs/rules/no-irregular-whitespace
-[`lodash-template/no-irregular-whitespace`]: ./docs/rules/no-irregular-whitespace.md
+[`lodash-template/no-irregular-whitespace`]: ./rules/no-irregular-whitespace.md
 
 ## Configs
 
@@ -119,7 +119,7 @@ This plugin provides 6 predefined configs:
 
 ## All Rules
 
-Please see [All Rules](./rules/README.md)
+Please see [All Rules](./rules/index.md)
 
 ## Plugin Option
 
@@ -170,6 +170,8 @@ The ESLint standard suppression method can also be used by using template tag, a
 
 For example, if you set [Lodash `templateSettings`](https://lodash.com/docs/#templateSettings) as follows,
 
+<div v-pre>
+
 ```js
 _.templateSettings = {
     evaluate:    /{{([\s\S]+?)}}/g,
@@ -189,6 +191,8 @@ please set `parserOptions`(ex. **.eslintrc.\***) as follows.
 +         },
       },
 ```
+
+</div>
 
 For example, to parse like [EJS](http://ejs.co/), set as follows,
 
@@ -243,7 +247,7 @@ const obj    = <%= JSON.stringify(options     ) %>
 //         + When using `"plugin:lodash-template/recommended-with-script"`, the space after `obj` is also reported.
 ```
 
-[***Playground on the Web***](https://ota-meshi.github.io/eslint-plugin-lodash-template/playground/#eJyrVipOLsosKFGyKikqTa0FAC0nBcw=)
+[***Playground on the Web***](https://eslint-online-playground.netlify.app/#eNqdVMFu2zAM/RVCQLAti+270e60y3ZYDxu2Q9UirkzHymTRkOQ2QZd/H2W5qBM0w1rlEMUk33t8pPMovFMF7qquN5hvvShFsQT0RtsAlrJuMEFnvq8U+hLQOXKwLKS9WMBznqG68m0WkEGqgMVJXaZt5pXTfTAYnkFg8UlaaYsCdAOh1R56M2y0Bb5ZCjB4rFdQQV85r+1mqnvQxgApNbhcWkXWB6C7LfC5hIvFJXz9fvUt98FxhW7276kPmpNiHD6MjMyXzi2f6friifFbmBUA/PlXPofPJX9pYE8D1GTfjX3BWorUbHnqnUNFXYe2xjp70KGdnJNivTqHTtbs2UCE0W6omoAO1lPn62inw55cwJotm0Mc/foIv1q0rC56/SZ9L2i42478lfE0FyFWIk+741Rauo7qgRcQdzHH8ywfeTcC7gIz8eJdS5Hyyxm/FCv4f51t6IwUN+yiDHGl0F0lh8rExWyqq34iLxvZkoEjjOfGxgoZPA1O4Y99jzGY9EoRY4cxg+55QXUdX5PrVDHBytBokx6LZY5b/6QifnpH/IZ4ciPjSQ9JckpNJGdAjzHnrr12ijcTW/zi+4EnxQP9XW3inwNZnhQLANZa4/1n7COCVRqZf7QxLtLTqOKjIxfnwSwJy06EHdfEElZyEIe/wU2LAg==)
 
 #### Configuring
 
@@ -503,7 +507,7 @@ Please use GitHub's Issues/PRs.
 
 ### `parserServices`
 
-[Information provided by `parserServices` on this plugin](./services/README.md)  
+[Information provided by `parserServices` on this plugin](./services/index.md)  
 
 ### Development Tools
 

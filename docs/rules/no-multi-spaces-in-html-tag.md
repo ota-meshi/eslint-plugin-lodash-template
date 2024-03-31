@@ -14,9 +14,8 @@ description: "disallow multiple spaces in HTML tags. (ex. :ng: `<input···type
 
 This rule aims to disallow multiple whitespace in a between attributes which are not used for indentation.
 
-<eslint-code-block fix :rules="{'lodash-template/no-multi-spaces-in-html-tag': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/no-multi-spaces-in-html-tag": "error" */ %>
 <!-- ✓ GOOD -->
 <input
   class="foo"
@@ -29,8 +28,6 @@ This rule aims to disallow multiple whitespace in a between attributes which are
 <input     class="foo"
       type="text"         >
 ```
-
-</eslint-code-block>
 
 ## Implementation
 

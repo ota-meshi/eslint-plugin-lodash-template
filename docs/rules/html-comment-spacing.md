@@ -14,9 +14,8 @@ description: "enforce unified spacing in HTML comment. (ex. :ok: `<!-- comment -
 
 This rule aims to enforce unified spacing in HTML comment.
 
-<eslint-code-block fix :rules="{'lodash-template/html-comment-spacing': ['error']}">
-
 ```html
+<% /* eslint "lodash-template/html-comment-spacing": "error" */ %>
 <!-- ✓ GOOD -->
 <!-- comment -->
 
@@ -24,8 +23,6 @@ This rule aims to enforce unified spacing in HTML comment.
 <!--   comment   -->
 <!--comment-->
 ```
-
-</eslint-code-block>
 
 ## Options
 
@@ -39,9 +36,8 @@ Default spacing is set to `always`
 
 ### `"always"` - Expect one space between comment and curly brackets.
 
-<eslint-code-block fix :rules="{'lodash-template/html-comment-spacing': ['error', 'always']}">
-
 ```html
+<% /* eslint "lodash-template/html-comment-spacing": ["error", "always"] */ %>
 <!-- ✓ GOOD -->
 <!-- comment -->
 
@@ -50,21 +46,16 @@ Default spacing is set to `always`
 <!--comment-->
 ```
 
-</eslint-code-block>
-
 ### `"never"` - Expect no spaces between comment and curly brackets.
 
-<eslint-code-block fix :rules="{'lodash-template/html-comment-spacing': ['error', 'never']}">
-
 ```html
+<% /* eslint "lodash-template/html-comment-spacing": ["error", "never"] */ %>
 <!--✓ GOOD-->
 <!--comment-->
 
 <!-- ✗ BAD -->
 <!-- comment -->
 ```
-
-</eslint-code-block>
 
 ## Implementation
 

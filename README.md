@@ -33,7 +33,7 @@ This plugin supports code checking for templates like the examples below.
 <% } %>
 ```
 
-[***Playground on the Web***](https://ota-meshi.github.io/eslint-plugin-lodash-template/playground/)
+[***Playground on the Web***](https://eslint-online-playground.netlify.app/#eNqNUk2P2jAQ/SujSIiPDUm3hx7SQC/tuZeqlw1CxhkSbx3bsg2lQvz3jp2EAtVKqxxizbx5783HOXGW53hinZGYtb6TSZGUE8gX0Ei9YxIY5/qgvEvh4NA6WOQwWVeKMGMm22v7jfF2NjuLOgVj9V5I3IqONbg9WJnC3upuG8ovKYg5rNZwjiQAZS2OIOpVRaIreoRwAlwy54bYTMAEPsJqBc/wBaaAR1TTAqbTecRGloFnLGusqLfPwKRpGVjRtP6KI6TomisyJrEmSRrDIPif/6iTj0I5Kb0p+gl0hw0DrpVHGs2trlmXu3XJoLW4J3wetK6D6Xt5DJU5WxdlvltDyHg8+Rg0j17GBy3lEsei4pv2AjM4MgsCVvDhM/3KfouZRNX4liJPTzD/tw0pbhwGzYh+EZtsnEP0eI0q1uHgs8ypuLcQ2ZI0ydBJobzl2aujs+p0faAjw5PR1jtydCafoSlUtSvgpUp6fGGR666jaNhMClVi5KERqpC6Zq5deqRjZR7zG9zyt/DtMtxvlWzSwGuYJZffjRdaEXvUIjXesZ9knoIFEQcaR9cRKyrv9MFy/PHHYEj2fqsk5C4RoY9oac0Y3caKgbby4WT6JhYZvtLiexfho4Pi6Jy2UfGhh95yD+1F3iC957yd2nun47gVhprdDGrhR+8Lbcow/ouunUS0ok2RASCvNR6/ogkMigsk/TjGcHnjqkLoboq3yWVvbPlg7L4mlJCTS3L5C/4egQw=)
 
 output sample(on SublimeText):
 
@@ -343,7 +343,7 @@ const obj    = <%= JSON.stringify(options     ) %>
 //         + When using `"plugin:lodash-template/recommended-with-script"`, the space after `obj` is also reported.
 ```
 
-[***Playground on the Web***](https://ota-meshi.github.io/eslint-plugin-lodash-template/playground/#eJyrVipOLsosKFGyKikqTa0FAC0nBcw=)
+[***Playground on the Web***](https://eslint-online-playground.netlify.app/#eNqdVMFu2zAM/RVCQLAti+270e60y3ZYDxu2Q9UirkzHymTRkOQ2QZd/H2W5qBM0w1rlEMUk33t8pPMovFMF7qquN5hvvShFsQT0RtsAlrJuMEFnvq8U+hLQOXKwLKS9WMBznqG68m0WkEGqgMVJXaZt5pXTfTAYnkFg8UlaaYsCdAOh1R56M2y0Bb5ZCjB4rFdQQV85r+1mqnvQxgApNbhcWkXWB6C7LfC5hIvFJXz9fvUt98FxhW7276kPmpNiHD6MjMyXzi2f6friifFbmBUA/PlXPofPJX9pYE8D1GTfjX3BWorUbHnqnUNFXYe2xjp70KGdnJNivTqHTtbs2UCE0W6omoAO1lPn62inw55cwJotm0Mc/foIv1q0rC56/SZ9L2i42478lfE0FyFWIk+741Rauo7qgRcQdzHH8ywfeTcC7gIz8eJdS5Hyyxm/FCv4f51t6IwUN+yiDHGl0F0lh8rExWyqq34iLxvZkoEjjOfGxgoZPA1O4Y99jzGY9EoRY4cxg+55QXUdX5PrVDHBytBokx6LZY5b/6QifnpH/IZ4ciPjSQ9JckpNJGdAjzHnrr12ijcTW/zi+4EnxQP9XW3inwNZnhQLANZa4/1n7COCVRqZf7QxLtLTqOKjIxfnwSwJy06EHdfEElZyEIe/wU2LAg==)
 
 #### Configuring
 
@@ -607,7 +607,7 @@ Please use GitHub's Issues/PRs.
 
 ### `parserServices`
 
-[Information provided by `parserServices` on this plugin](./docs/services/README.md)  
+[Information provided by `parserServices` on this plugin](./docs/services/index.md)  
 
 ### Development Tools
 
