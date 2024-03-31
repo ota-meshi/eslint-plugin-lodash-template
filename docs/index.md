@@ -86,8 +86,8 @@ This plugin does special handling for the following rule warnings in the templat
 | [`no-irregular-whitespace`]            | Disable warnings outside template tags        | [`lodash-template/no-irregular-whitespace`] rule                                                               |
 
 [`indent`]: https://eslint.org/docs/rules/indent
-[`lodash-template/scriptlet-indent`]: ./docs/rules/scriptlet-indent.md
-[`lodash-template/html-indent`]: ./docs/rules/html-indent.md
+[`lodash-template/scriptlet-indent`]: ./rules/scriptlet-indent.md
+[`lodash-template/html-indent`]: ./rules/html-indent.md
 [`@stylistic/indent`]: https://eslint.style/rules/default/indent
 [`strict`]: https://eslint.org/docs/rules/strict
 [`no-empty`]: https://eslint.org/docs/rules/no-empty
@@ -98,13 +98,13 @@ This plugin does special handling for the following rule warnings in the templat
 [`no-implicit-globals`]: https://eslint.org/docs/rules/no-implicit-globals
 [`no-multi-spaces`]: https://eslint.org/docs/rules/no-multi-spaces
 [`@stylistic/no-multi-spaces`]: https://eslint.style/rules/default/no-multi-spaces
-[`lodash-template/no-multi-spaces-in-scriptlet`]: ./docs/rules/no-multi-spaces-in-scriptlet.md
-[`lodash-template/no-multi-spaces-in-html-tag`]: ./docs/rules/no-multi-spaces-in-html-tag.md
+[`lodash-template/no-multi-spaces-in-scriptlet`]: ./rules/no-multi-spaces-in-scriptlet.md
+[`lodash-template/no-multi-spaces-in-html-tag`]: ./rules/no-multi-spaces-in-html-tag.md
 [`no-unused-expressions`]: https://eslint.org/docs/rules/no-unused-expressions
 [`quotes`]: https://eslint.org/docs/rules/quotes
 [`@stylistic/quotes`]: https://eslint.style/rules/default/quotes
 [`no-irregular-whitespace`]: https://eslint.org/docs/rules/no-irregular-whitespace
-[`lodash-template/no-irregular-whitespace`]: ./docs/rules/no-irregular-whitespace.md
+[`lodash-template/no-irregular-whitespace`]: ./rules/no-irregular-whitespace.md
 
 ## Configs
 
