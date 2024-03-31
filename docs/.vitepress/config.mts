@@ -36,6 +36,9 @@ export default async (): Promise<UserConfig<DefaultTheme.Config>> => {
             "ESLint plugin for John Resig-style micro template, Lodash's template, Underscore's template and EJS.",
         head: [],
         lastUpdated: true,
+        vite: {
+            publicDir: path.resolve(dirname, "./public"),
+        },
         markdown: {
             codeTransformers: [
                 transformerTwoslash({
