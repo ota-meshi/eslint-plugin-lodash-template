@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@stylistic/eslint-plugin": "~1.7.0",
+    "@stylistic/eslint-plugin": "~1.8.0",
     "eslint": "~8.57.0",
     "eslint-plugin-lodash-template": "file:../../.."
   },
