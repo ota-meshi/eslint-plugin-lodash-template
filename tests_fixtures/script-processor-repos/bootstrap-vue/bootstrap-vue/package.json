@@ -4,7 +4,7 @@
     "eslint": "~8.57.0",
     "eslint-config-standard": "~17.1.0",
     "eslint-plugin-import": "~2.29.0",
-    "eslint-plugin-jest": "~28.3.0",
+    "eslint-plugin-jest": "~28.5.0",
     "eslint-plugin-lodash-template": "file:../../../..",
     "eslint-plugin-n": "~17.4.0",
     "eslint-plugin-promise": "~6.1.0"
