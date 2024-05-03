@@ -83,7 +83,7 @@
         "eslint-plugin-json-schema-validator": "^5.0.0",
         "eslint-plugin-jsonc": "^2.0.0",
         "eslint-plugin-lodash-template": "file:.",
-        "eslint-plugin-markdown": "^4.0.0",
+        "eslint-plugin-markdown": "^5.0.0",
         "eslint-plugin-n": "^17.0.0",
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-node-dependencies": "^0.12.0",
