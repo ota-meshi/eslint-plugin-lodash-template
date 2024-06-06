@@ -4,7 +4,7 @@
     "@nuxtjs/eslint-config-typescript": "~12.1.0",
     "@stylistic/eslint-plugin": "~2.0.0",
     "eslint": "~8.57.0",
-    "eslint-plugin-jest": "~28.5.0",
+    "eslint-plugin-jest": "~28.6.0",
     "eslint-plugin-lodash-template": "file:../../../..",
     "eslint-plugin-unicorn": "~53.0.0"
   },
