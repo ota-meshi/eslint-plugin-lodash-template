@@ -6,7 +6,7 @@
     "eslint": "~8.57.0",
     "eslint-plugin-jest": "~28.6.0",
     "eslint-plugin-lodash-template": "file:../../../..",
-    "eslint-plugin-unicorn": "~53.0.0"
+    "eslint-plugin-unicorn": "~54.0.0"
   },
   "description": "test for https://github.com/nuxt-community",
   "repository": {
