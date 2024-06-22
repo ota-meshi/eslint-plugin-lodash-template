@@ -1,5 +1,11 @@
 # eslint-plugin-lodash-template
 
+## 1.1.0
+
+### Minor Changes
+
+- [#348](https://github.com/ota-meshi/eslint-plugin-lodash-template/pull/348) [`8dfbb9b`](https://github.com/ota-meshi/eslint-plugin-lodash-template/commit/8dfbb9bb85bdf4b4fc0ba44a558eca36cf943235) Thanks [@ota-meshi](https://github.com/ota-meshi)! - feat: add flat config
+
 ## 1.0.0
 
 ### Major Changes
