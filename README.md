@@ -61,6 +61,18 @@ See [documents](https://ota-meshi.github.io/eslint-plugin-lodash-template/).
 
 Create `.eslintrc.*` file to configure rules. See also: [http://eslint.org/docs/user-guide/configuring](http://eslint.org/docs/user-guide/configuring).
 
+Example **eslint.config.js**:
+
+```js
+import lodashTemplate from 'eslint-plugin-lodash-template'
+export default [
+    {
+        files: ['**/*.html'],
+        ...lodashTemplate.configs['flat/recommended-with-html']
+    }
+]
+```
+
 Example **.eslintrc.js**:
 
 ```js
@@ -121,6 +133,20 @@ This plugin does special handling for the following rule warnings in the templat
 [`lodash-template/no-irregular-whitespace`]: ./docs/rules/no-irregular-whitespace.md
 
 ## Configs
+
+### For `eslint.config.js`
+
+This plugin provides 7 predefined configs:
+
+- `*.configs['flat/base']` - Settings and rules to enable correct ESLint parsing
+- `*.configs['flat/base-with-ejs']` - Settings and rules to enable correct ESLint parsing for EJS
+- `*.configs['flat/best-practices']` - Above, plus rules to improve dev experience
+- `*.configs['flat/recommended']` - Above, plus rules to improve code readability
+- `*.configs['flat/recommended-with-html']` - Above, plus rules to improve code readability with HTML template
+- `*.configs['flat/recommended-with-script']` - `*.configs['flat/recommended']` config, plus to enable ESLint parsing of JavaScript templates (*This is an experimental feature*)
+- `*.configs['flat/all']` - All rules of this plugin are included
+
+### For `.eslintrc.*`
 
 This plugin provides 6 predefined configs:
 
