@@ -6,7 +6,7 @@
     "eslint-plugin-import": "~2.29.0",
     "eslint-plugin-lodash-template": "file:../../../..",
     "eslint-plugin-n": "~17.9.0",
-    "eslint-plugin-promise": "~6.2.0"
+    "eslint-plugin-promise": "~6.4.0"
   },
   "description": "test for https://github.com/nuxt-community/modules",
   "repository": {
