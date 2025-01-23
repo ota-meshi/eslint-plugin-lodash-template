@@ -1,5 +1,11 @@
 # eslint-plugin-lodash-template
 
+## 1.1.1
+
+### Patch Changes
+
+- [#379](https://github.com/ota-meshi/eslint-plugin-lodash-template/pull/379) [`ac00295`](https://github.com/ota-meshi/eslint-plugin-lodash-template/commit/ac0029538dbb0ef698b8bd47518fe4ae4dc32920) Thanks [@ota-meshi](https://github.com/ota-meshi)! - fix: wrong report for surrogate pair
+
 ## 1.1.0
 
 ### Minor Changes
