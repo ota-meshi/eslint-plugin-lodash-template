@@ -74,6 +74,14 @@ tester.run("no-semi-in-template-interpolation", rule, {
           <div>
         <% } %>
         `,
+        `
+        <p>Hello! 💰</p>
+        <a href="<%= href %>"></a>
+        `,
+        `
+        <p>Hello! AA</p>
+        <a href="<%= href %>"></a>
+        `,
     ],
     invalid: [
         {
