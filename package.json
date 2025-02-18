@@ -70,7 +70,7 @@
         "@changesets/cli": "^2.24.2",
         "@eslint-community/eslint-utils": "^4.4.0",
         "@ota-meshi/eslint-plugin": "^0.15.0",
-        "@shikijs/vitepress-twoslash": "^2.0.0",
+        "@shikijs/vitepress-twoslash": "^3.0.0",
         "@stylistic/eslint-plugin": "~2.0.0",
         "@typescript-eslint/eslint-plugin": "^8.0.0",
         "cpx2": "^8.0.0",
