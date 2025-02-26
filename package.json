@@ -100,7 +100,7 @@
         "pako": "^2.0.0",
         "prettier": "^3.0.3",
         "semver": "^7.3.2",
-        "twoslash-eslint": "^0.2.5",
+        "twoslash-eslint": "^0.3.0",
         "typescript": "^5.0.0",
         "vitepress": "^1.0.1",
         "vue-eslint-parser": "^9.4.0"
