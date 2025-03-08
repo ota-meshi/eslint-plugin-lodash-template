@@ -20,7 +20,7 @@ export default tseslint.config(
         },
     },
 
-    eslintPluginLodashTemplate.configs["flat/all"],
+    eslintPluginLodashTemplate.configs.all,
     eslintPluginOtaMeshi.config({
         node: true,
         packageJson: true,
