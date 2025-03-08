@@ -1,15 +1,15 @@
 {
-  "$schema": "https://unpkg.com/@changesets/config/schema.json",
-  "changelog": [
-    "@changesets/changelog-github",
-    {
-      "repo": "ota-meshi/eslint-plugin-lodash-template"
-    }
-  ],
-  "commit": false,
-  "linked": [],
-  "baseBranch": "main",
-  "updateInternalDependencies": "patch",
-  "bumpVersionsWithWorkspaceProtocolOnly": true,
-  "ignore": []
+    "$schema": "https://unpkg.com/@changesets/config/schema.json",
+    "changelog": [
+        "@changesets/changelog-github",
+        {
+            "repo": "ota-meshi/eslint-plugin-lodash-template"
+        }
+    ],
+    "commit": false,
+    "linked": [],
+    "baseBranch": "main",
+    "updateInternalDependencies": "patch",
+    "bumpVersionsWithWorkspaceProtocolOnly": true,
+    "ignore": []
 }

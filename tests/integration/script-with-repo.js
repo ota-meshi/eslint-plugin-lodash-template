@@ -1,5 +1,3 @@
-// eslint-disable-next-line eslint-comments/disable-enable-pair -- ignore
-/* eslint-disable require-jsdoc -- ignore */
 "use strict";
 
 const assert = require("assert");

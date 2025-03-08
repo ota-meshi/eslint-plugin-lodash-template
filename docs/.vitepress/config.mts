@@ -120,6 +120,7 @@ export default async (): Promise<UserConfig<DefaultTheme.Config>> => {
                     },
 
                     // Rules in no category.
+                    // eslint-disable-next-line no-extra-parens -- false positive ?
                     ...(rules.some((rule) => rule.meta.deprecated)
                         ? [
                               {
