@@ -64,7 +64,7 @@ export default async (): Promise<UserConfig<DefaultTheme.Config>> => {
                             },
                             {
                                 files: ["*.js", "**/*.js"],
-                                processor: "lodash-template/script",
+                                processor: plugin.processors.script,
                                 rules: {
                                     "lodash-template/no-script-parsing-error":
                                         "error",
@@ -72,7 +72,7 @@ export default async (): Promise<UserConfig<DefaultTheme.Config>> => {
                             },
                             {
                                 files: ["*.html", "**/*.html"],
-                                processor: "lodash-template/html",
+                                processor: plugin.processors.html,
                             },
                         ],
                     }),
