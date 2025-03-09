@@ -1,8 +1,10 @@
 "use strict";
 
-const assert = require("assert");
-const { LegacyESLint } = require("../../eslint-compat");
+const assert = require("node:assert");
+const stylisticJs = require("@stylistic/eslint-plugin-js");
+const { ESLint } = require("../../eslint-compat");
 const testUtils = require("../../test-utils");
+const eslintPluginLodashTemplate = require("../../../lib");
 
 /**
  * Assert the messages
@@ -27,27 +29,39 @@ function assertMessages(actual, expected) {
 
 describe("comment-directive test", () => {
     it("has description", async () => {
-        const cli = new LegacyESLint({
+        const cli = new ESLint({
             cwd: __dirname,
-            baseConfig: {
-                extends: ["plugin:lodash-template/base"],
-                parserOptions: {
-                    sourceType: "script",
-                    ecmaVersion: 2020,
+            overrideConfigFile: true,
+            overrideConfig: [
+                {
+                    files: ["*.html"],
+                    ...eslintPluginLodashTemplate.configs.base,
+                    processor: eslintPluginLodashTemplate.processors.html,
                 },
-                rules: {
-                    semi: ["error", "never"],
-                    "no-unused-vars": "error",
+                {
+                    files: ["*.html"],
+                    plugins: {
+                        "@stylistic/js": stylisticJs,
+                    },
+                    languageOptions: {
+                        parserOptions: {
+                            sourceType: "script",
+                            ecmaVersion: 2020,
+                        },
+                    },
+                    rules: {
+                        "@stylistic/js/semi": ["error", "never"],
+                        "no-unused-vars": "error",
+                    },
                 },
-            },
-            useEslintrc: false,
+            ],
         });
         const report = await cli.lintText(
             `
         <div>
-          <!-- eslint-disable-next-line semi, no-unused-vars -->
+          <!-- eslint-disable-next-line @stylistic/js/semi, no-unused-vars -->
           <% const a = 1; %>
-          <!-- eslint-disable-next-line semi -- no-unused-vars -->
+          <!-- eslint-disable-next-line @stylistic/js/semi -- no-unused-vars -->
           <% const b = 1; %>
         </div>
         `,
