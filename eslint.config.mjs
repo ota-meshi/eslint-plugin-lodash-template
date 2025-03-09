@@ -105,7 +105,6 @@ export default tseslint.config(
             "node_modules/**",
             "playground/node_modules/**",
             "assets/**",
-            "samples/**",
             "tests_fixtures/**",
             "docs/.vitepress/dist/**",
             "docs/.vitepress/cache/**",
