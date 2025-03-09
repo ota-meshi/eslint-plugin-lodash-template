@@ -4,7 +4,9 @@ sidebarDepth: 0
 title: "lodash-template/element-name-casing"
 description: "enforce HTML element name casing. (ex. :ok: `<xxx-element>` :ng: `<xxxElement>` `<DIV>`)"
 ---
+
 # lodash-template/element-name-casing
+
 > enforce HTML element name casing. (ex. :ok: `<xxx-element>` :ng: `<xxxElement>` `<DIV>`)
 
 - :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
@@ -14,6 +16,7 @@ description: "enforce HTML element name casing. (ex. :ok: `<xxx-element>` :ng: `
 
 This rule enforces element name casing style (kebab-case).
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/element-name-casing": "error" */ %>
 <!-- ✓ GOOD -->
@@ -27,7 +30,7 @@ This rule enforces element name casing style (kebab-case).
 
 ## Further Reading
 
-- [Web Components | MDN  *Using custom elements*](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)
+- [Web Components | MDN _Using custom elements_](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)
 
 ## Implementation
 

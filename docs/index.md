@@ -2,40 +2,48 @@
 
 ESLint plugin for John Resig-style micro templating.
 
-[![NPM license](https://img.shields.io/npm/l/eslint-plugin-lodash-template.svg)](https://www.npmjs.com/package/eslint-plugin-lodash-template)
-[![NPM version](https://img.shields.io/npm/v/eslint-plugin-lodash-template.svg)](https://www.npmjs.com/package/eslint-plugin-lodash-template)
-[![NPM downloads](https://img.shields.io/npm/dm/eslint-plugin-lodash-template.svg)](http://www.npmtrends.com/eslint-plugin-lodash-template)
+[![npm license]](https://www.npmjs.com/package/eslint-plugin-lodash-template)
+[![npm version](https://img.shields.io/npm/v/eslint-plugin-lodash-template.svg)](https://www.npmjs.com/package/eslint-plugin-lodash-template)
+[![npm downloads](https://img.shields.io/badge/dynamic/json.svg?label=downloads&colorB=green&suffix=/day&query=$.downloads&uri=https://api.npmjs.org//downloads/point/last-day/eslint-plugin-lodash-template&maxAge=3600)](https://www.npmtrends.com/eslint-plugin-lodash-template)
+[![npm downloads]](https://www.npmtrends.com/eslint-plugin-lodash-template)
+[![npm downloads](https://img.shields.io/npm/dm/eslint-plugin-lodash-template.svg)](https://www.npmtrends.com/eslint-plugin-lodash-template)
+[![npm downloads](https://img.shields.io/npm/dy/eslint-plugin-lodash-template.svg)](https://www.npmtrends.com/eslint-plugin-lodash-template)
+[![npm downloads](https://img.shields.io/npm/dt/eslint-plugin-lodash-template.svg)](https://www.npmtrends.com/eslint-plugin-lodash-template)
+[![Build Status]](https://github.com/ota-meshi/eslint-plugin-lodash-template/actions?query=workflow%3ACI)
+[![Coverage Status]](https://coveralls.io/github/ota-meshi/eslint-plugin-lodash-template?branch=master)
 
-It can be used in projects using [Underscore.js](http://underscorejs.org/#template) and [Lodash](https://lodash.com/docs/#template)'s template.
+It can be used in projects using [Underscore.js](https://underscorejs.org/#template) and [Lodash](https://lodash.com/docs/#template)'s template.
 
 This plugin supports code checking for templates like the examples below.
 
 ```html
 <div id="<%= id %>" class="<%= (i % 2 == 1 ? ' even': '') %>">
-  <div class="grid_1 alpha right">
-    <img class="righted" src="<%= profile_image_url %>"/>
-  </div>
-  <div class="grid_6 omega contents">
-    <p><b><a href="/<%= from_user %>"><%= from_user %></a>:</b> <%= text %></p>
-  </div>
+    <div class="grid_1 alpha right">
+        <img class="righted" src="<%= profile_image_url %>" />
+    </div>
+    <div class="grid_6 omega contents">
+        <p>
+            <b><a href="/<%= from_user %>"><%= from_user %></a>:</b> <%= text %>
+        </p>
+    </div>
 </div>
 ```
 
 ```html
 <% for ( var i = 0; i < users.length; i++ ) { %>
-  <li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
+<li><a href="<%= users[i].url %>"><%= users[i].name %></a></li>
 <% } %>
 ```
 
-[***Playground on the Web***](https://eslint-online-playground.netlify.app/#eNqNUk2P2jAQ/SujSIiPDUm3hx7SQC/tuZeqlw1CxhkSbx3bsg2lQvz3jp2EAtVKqxxizbx5783HOXGW53hinZGYtb6TSZGUE8gX0Ei9YxIY5/qgvEvh4NA6WOQwWVeKMGMm22v7jfF2NjuLOgVj9V5I3IqONbg9WJnC3upuG8ovKYg5rNZwjiQAZS2OIOpVRaIreoRwAlwy54bYTMAEPsJqBc/wBaaAR1TTAqbTecRGloFnLGusqLfPwKRpGVjRtP6KI6TomisyJrEmSRrDIPif/6iTj0I5Kb0p+gl0hw0DrpVHGs2trlmXu3XJoLW4J3wetK6D6Xt5DJU5WxdlvltDyHg8+Rg0j17GBy3lEsei4pv2AjM4MgsCVvDhM/3KfouZRNX4liJPTzD/tw0pbhwGzYh+EZtsnEP0eI0q1uHgs8ypuLcQ2ZI0ydBJobzl2aujs+p0faAjw5PR1jtydCafoSlUtSvgpUp6fGGR666jaNhMClVi5KERqpC6Zq5deqRjZR7zG9zyt/DtMtxvlWzSwGuYJZffjRdaEXvUIjXesZ9knoIFEQcaR9cRKyrv9MFy/PHHYEj2fqsk5C4RoY9oac0Y3caKgbby4WT6JhYZvtLiexfho4Pi6Jy2UfGhh95yD+1F3iC957yd2nun47gVhprdDGrhR+8Lbcow/ouunUS0ok2RASCvNR6/ogkMigsk/TjGcHnjqkLoboq3yWVvbPlg7L4mlJCTS3L5C/4egQw=)
+[**_Playground on the Web_**](https://eslint-online-playground.netlify.app/#eNqNU01v2kAQ/SsjSxGEELvpoQdqaA+tVPXSQ6P2gBFa1oO9dD+s3TWiQvz3zq4NCTREERK2Z968N377vE+c5RnumGokprVXMpkk+Q1kI6ikWTEJjHPTau/G0Dq0DkYZ3MwKTZhjJ10b+5Xxejjci3IMjTVrIXEpFKtw2Vo5hrU1ahnGD2MQtzCdwT6SAOSl2IIopwWJTukmlBPgkjnX14YCbuA9TKfwAJ9gALhFPZjAYHAbsZGl5zmOVVaUywdgsqkZWFHV/oQjpFDVCRmbWJIk2dAL/rd/1MmOQhkpXRX9AEZhxYAb7ZGsea7bzPLVLGdQW1wTPgtaJ2O6d7ks5RmbTfJsNYPQ8bjzsdhc7nK8oUM5RFt0vKdzgSFsmQUBU3j3kS55d4qpRF35mip3d3D7dBpSPNswaEb0XCzSow9xx1NVM4X9nnlGw90KkS0ZJ+ik0D4lM9aiStXGUbaEaoz10LW+u/i6MPjcPWcbNyh0D5GmZK5+REom89gDO9x9I9tK6PsOcu97DM0WGndxusQ1a6WHOdX8Ua1fxaUWuVEKdYnlOADOtV6C/Ra+/kafR4DTwD780RzTVUsx+dF4YbSbQF8nSa7YL3KJyhMokkDrKIZRLfycaS3Hx78NhrYyZSuxSLruIVwO50ohksQ/L5LRKBvFL7VIFpHudSRuKIUdsPCUbY7OGTu5sDc9dVzkfgPx23ivWPmTW9H4k8oi5qVh/A+ZScxGU1RIFsibErdfsAmTmgsk0ehyyH/RJyyUzizumk+hugJ4NUznM2GEjuWQHP4B2WO+Uw==)
 
 ## Features
 
-- Enable [ESLint](http://eslint.org) in [Underscore.js](http://underscorejs.org/#template) and [Lodash](https://lodash.com/docs/#template)'s templates.
+- Enable [ESLint](https://eslint.org) in [Underscore.js](https://underscorejs.org/#template) and [Lodash](https://lodash.com/docs/#template)'s templates.
 - You can find issues specific to template tags.
 - Improves readability of HTML templates.
-- For JavaScript (TypeScript) templates, enable [ESLint](http://eslint.org) both inside and outside the template tag. (*This is an experimental feature*)
-- Partial supports for [EJS](http://ejs.co/).
+- For JavaScript (TypeScript) templates, enable [ESLint](https://eslint.org) both inside and outside the template tag. (_This is an experimental feature_)
+- Partial supports for [EJS](https://ejs.co/).
 
 ## Installation
 
@@ -45,34 +53,18 @@ npm install --save-dev eslint eslint-plugin-lodash-template
 
 ## Usage
 
-Create `.eslintrc.*` file to configure rules. See also: [http://eslint.org/docs/user-guide/configuring](http://eslint.org/docs/user-guide/configuring).
+Create `eslint.config.*` file to configure rules. See also: [https://eslint.org/docs/latest/use/configure/configuration-files](https://eslint.org/docs/latest/use/configure/configuration-files).
 
-Example **eslint.config.js**:
+Example **`eslint.config.*`**:
 
 ```js
-import lodashTemplate from 'eslint-plugin-lodash-template'
+import lodashTemplate from "eslint-plugin-lodash-template";
 export default [
     {
-        files: ['**/*.html'],
-        ...lodashTemplate.configs['flat/recommended-with-html']
-    }
-]
-```
-
-Example **.eslintrc.js**:
-
-```js
-module.exports = {
-  extends: [
-    // add more generic rulesets here, such as:
-    // 'eslint:recommended',
-    'plugin:lodash-template/recommended-with-html'
-  ],
-  rules: {
-    // override/add rules settings here, such as:
-    // 'lodash-template/no-warning-html-comments': 'error'
-  }
-}
+        files: ["**/*.html"],
+        ...lodashTemplate.configs.recommendedWithHtml,
+    },
+];
 ```
 
 ### Attention
@@ -120,28 +112,15 @@ This plugin does special handling for the following rule warnings in the templat
 
 ## Configs
 
-### For `eslint.config.js`
+This plugin provides 7 predefined configs to use in `eslint.config.js`:
 
-This plugin provides 7 predefined configs:
-
-- `*.configs['flat/base']` - Settings and rules to enable correct ESLint parsing
-- `*.configs['flat/base-with-ejs']` - Settings and rules to enable correct ESLint parsing for EJS
-- `*.configs['flat/best-practices']` - Above, plus rules to improve dev experience
-- `*.configs['flat/recommended']` - Above, plus rules to improve code readability
-- `*.configs['flat/recommended-with-html']` - Above, plus rules to improve code readability with HTML template
-- `*.configs['flat/recommended-with-script']` - `*.configs['flat/recommended']` config, plus to enable ESLint parsing of JavaScript templates (*This is an experimental feature*)
-- `*.configs['flat/all']` - All rules of this plugin are included
-
-### For `.eslintrc.*`
-
-This plugin provides 6 predefined configs:
-
-- `plugin:lodash-template/base` - Settings and rules to enable correct ESLint parsing
-- `plugin:lodash-template/best-practices` - Above, plus rules to improve dev experience
-- `plugin:lodash-template/recommended` - Above, plus rules to improve code readability
-- `plugin:lodash-template/recommended-with-html` - Above, plus rules to improve code readability with HTML template
-- `plugin:lodash-template/recommended-with-script` - `plugin:lodash-template/recommended` config, plus to enable ESLint parsing of JavaScript templates (*This is an experimental feature*)
-- `plugin:lodash-template/all` - All rules of this plugin are included
+- `*.configs.base` - Settings and rules to enable correct ESLint parsing
+- `*.configs.baseWithEjs` - Settings and rules to enable correct ESLint parsing for EJS
+- `*.configs.bestPractices` - Above, plus rules to improve dev experience
+- `*.configs.recommended` - Above, plus rules to improve code readability
+- `*.configs.recommendedWithHtml` - Above, plus rules to improve code readability with HTML template
+- `*.configs.recommendedWithScript` - `*.configs.recommended` config, plus to enable ESLint parsing of JavaScript templates (_This is an experimental feature_)
+- `*.configs.all` - All rules of this plugin are included
 
 ## All Rules
 
@@ -153,14 +132,17 @@ Please see [All Rules](./rules/index.md)
 
 Please set the global variable used in all templates as follows.
 
-**.eslintrc.\***:
+**`eslint.config.*`**:
 
-```diff
-  {
-      "settings": {
-+         "lodash-template/globals": ["variableName"]
-      }
-  }
+```js
+import lodashTemplate from "eslint-plugin-lodash-template";
+export default [
+    {
+        settings: {
+            "lodash-template/globals": ["variableName"],
+        },
+    },
+];
 ```
 
 Please write the global comment in the file as follows for the variable to be used with a specific template.
@@ -176,14 +158,16 @@ Please write the global comment in the file as follows for the variable to be us
 
 Please set as follows.
 
-**.eslintrc.\***:
+**`eslint.config.*`**:
 
-```diff
-  {
-      "settings": {
-+         "lodash-template/ignoreRules": ["no-undef", "no-tabs"]
-      }
-  }
+```js
+export default [
+    {
+        settings: {
+            "lodash-template/ignoreRules": ["no-undef", "no-tabs"],
+        },
+    },
+];
 ```
 
 The ESLint standard suppression method can also be used by using template tag, as follows.
@@ -200,62 +184,77 @@ For example, if you set [Lodash `templateSettings`](https://lodash.com/docs/#tem
 
 ```js
 _.templateSettings = {
-    evaluate:    /{{([\s\S]+?)}}/g,
+    evaluate: /{{([\s\S]+?)}}/g,
     interpolate: /{{=([\s\S]+?)}}/g,
-    escape:      /{{-([\s\S]+?)}}/g
+    escape: /{{-([\s\S]+?)}}/g,
 };
 ```
 
-please set `parserOptions`(ex. **.eslintrc.\***) as follows.
+please set `parserOptions` in your **`eslint.config.*`** as follows:
 
-```diff
-      parserOptions: {
-+         templateSettings: {
-+             evaluate:    ["{{", "}}"],
-+             interpolate: ["{{=", "}}"],
-+             escape:      ["{{-", "}}"],
-+         },
-      },
+```js
+export default [
+    {
+        languageOptions: {
+            parserOptions: {
+                templateSettings: {
+                    evaluate: ["{{", "}}"],
+                    interpolate: ["{{=", "}}"],
+                    escape: ["{{-", "}}"],
+                },
+            },
+        },
+    },
+];
 ```
 
-</div>
+For example, to parse like [EJS](https://ejs.co/), set as follows:
 
-For example, to parse like [EJS](http://ejs.co/), set as follows,
+(Alternatively, you can use `lodashTemplate.configs.baseWithEjs`.)
 
-(If `plugin:lodash-template/***` is set in `extends`, it is automatically applied to the extension `.ejs`.)
-
-```diff
-      parserOptions: {
-+         templateSettings: {
-+             evaluate:    [ ["<%", "<%_"], ["%>", "-%>", "_%>"] ],
-+             interpolate: [  "<%-",        ["%>", "-%>", "_%>"] ],
-+             escape:      [  "<%=",        ["%>", "-%>", "_%>"] ],
-+             comment:     [  "<%#",        ["%>", "-%>", "_%>"] ],
-+             literal:     [  "<%%" ],
-+         },
-      },
+```js
+export default [
+    {
+        files: ["**/*.ejs"],
+        languageOptions: {
+            parserOptions: {
+                templateSettings: {
+                    evaluate: [
+                        ["<%", "<%_"],
+                        ["%>", "-%>", "_%>"],
+                    ],
+                    interpolate: ["<%-", ["%>", "-%>", "_%>"]],
+                    escape: ["<%=", ["%>", "-%>", "_%>"]],
+                    comment: ["<%#", ["%>", "-%>", "_%>"]],
+                    literal: ["<%%"],
+                },
+            },
+        },
+    },
+];
 ```
 
-(This plugin do not provide complete support for [EJS](http://ejs.co/). e.g. the `include` directive.)
+(This plugin do not provide complete support for [EJS](https://ejs.co/). e.g. the `include` directive.)
 
 ### Customize target extensions
 
-Please set **.eslintrc.\*** as follows.
+Please configure in your **`eslint.config.*`** as follows:
 
-(For example, for [EJS](http://ejs.co/).)
+(For example, for [EJS](https://ejs.co/).)
 
-```diff
-+    "overrides": [
-+        {
-+            "files": ["*.ejs"],
-+            "processor": "lodash-template/html"
-+        }
-+    ]
+```js
+import lodashTemplate from "eslint-plugin-lodash-template";
+export default [
+    {
+        files: ["**/*.ejs"],
+        processor: lodashTemplate.processors.html,
+    },
+];
 ```
 
 ### For JavaScript (TypeScript) Templates
 
-(*This is an experimental feature*. Also check for [known limitations](#known-limitations-in-script-templates).)
+(_This is an experimental feature_. Also check for [known limitations](#known-limitations-in-script-templates).)
 
 For example if you have a file like below.
 
@@ -265,56 +264,68 @@ For example if you have a file like below.
 
 // if this plugin is not used, a parsing error will occur.
 const obj    = <%= JSON.stringify(options     ) %>
-//       ^^^^                            ^^^^^ 
+//       ^^^^                            ^^^^^
 //         |                              |
-//         |          If you don't use `"plugin:lodash-template/recommended-with-script"`,
+//         |          If you don't use lodashTemplate.configs.recommendedWithScript,
 //         |          only the space after `options` is reported.
 //         |
-//         + When using `"plugin:lodash-template/recommended-with-script"`, the space after `obj` is also reported.
+//         + When using lodashTemplate.configs.recommendedWithScript, the space after `obj` is also reported.
 ```
 
-[***Playground on the Web***](https://eslint-online-playground.netlify.app/#eNqdVMFu2zAM/RVCQLAti+270e60y3ZYDxu2Q9UirkzHymTRkOQ2QZd/H2W5qBM0w1rlEMUk33t8pPMovFMF7qquN5hvvShFsQT0RtsAlrJuMEFnvq8U+hLQOXKwLKS9WMBznqG68m0WkEGqgMVJXaZt5pXTfTAYnkFg8UlaaYsCdAOh1R56M2y0Bb5ZCjB4rFdQQV85r+1mqnvQxgApNbhcWkXWB6C7LfC5hIvFJXz9fvUt98FxhW7276kPmpNiHD6MjMyXzi2f6friifFbmBUA/PlXPofPJX9pYE8D1GTfjX3BWorUbHnqnUNFXYe2xjp70KGdnJNivTqHTtbs2UCE0W6omoAO1lPn62inw55cwJotm0Mc/foIv1q0rC56/SZ9L2i42478lfE0FyFWIk+741Rauo7qgRcQdzHH8ywfeTcC7gIz8eJdS5Hyyxm/FCv4f51t6IwUN+yiDHGl0F0lh8rExWyqq34iLxvZkoEjjOfGxgoZPA1O4Y99jzGY9EoRY4cxg+55QXUdX5PrVDHBytBokx6LZY5b/6QifnpH/IZ4ciPjSQ9JckpNJGdAjzHnrr12ijcTW/zi+4EnxQP9XW3inwNZnhQLANZa4/1n7COCVRqZf7QxLtLTqOKjIxfnwSwJy06EHdfEElZyEIe/wU2LAg==)
+[**_Playground on the Web_**](https://eslint-online-playground.netlify.app/#eNqdU8tu2zAQ/JUFAcOta0l3ISl66KHNoTkkaA5hAjPSyqZLkQJJNTES/3uWFBM/YBtBaMB67MzOcjh6Zs5WBT6JtlOYLx0rWTEBdEpqD9pkba+8zFwnKnQloLXGwqTg+mwEG5wytXCLzCM1ER6LPV4mdeYqKzuv0G+awOg711wXBcgG/EI66FQ/lxroThsPvcN6CgI6YZ3U88R7lEqBqare5lxXRjsP5mEJtM7hbHQOF1eXf3LnLTFks/piOi8JFOrwNSqS3rDuaaXbgyvU72GLAPByCk/lY+DfDaxMD7XR47gvmHE2bLbc985iZdoWdY119ij9IjnH2Wx6rLvRakUGIkS7QTQeLczSzmfBToudsR5rsmy7xc7TN7hZoKbpgtefmu/ADA/LqC+UM9tDsCkbopPTCTZynrcxebINiJSqCweNNS2MfwzPxdKNuU6QYarrNFQCDrhsGDzbG5y4XONTZNfYCMon3NI7/6aWRnH51g7Jcu53tQ7BbsiHX75VAU6E5/BHPKHnvZjj5XAQJaT3JFm14i9Sqo0ugbPQ1pGDUS38nOlthderDkO5NXWvkLOhug6X9a5SI1X4Om85m0yKSb6gUTi7i+1OI3Hp3oDcd9bQx+qMLffszd8rLvb+QOOP9T1i5VVM1LvKXcwLxeofmUmdjaaokCyQNzX+/4ldYOpKIolGl0OceUpYeLVj8VDchOoI4GSYdjmBQseyZutXHHXISQ==)
 
 #### Configuring
 
-Please set **.eslintrc.\*** as follows.
+Please configure in your **`eslint.config.*`** as follows:
 
-```diff
-+    "overrides": [
-+        {
-+            "files": ["**/your/templates/*.js"],
-+            "extends": ["plugin:lodash-template/recommended-with-script"]
-+        }
-+    ]
+```js
+import lodashTemplate from "eslint-plugin-lodash-template";
+export default [
+    {
+        files: ["**/your/templates/*.js"],
+        ...lodashTemplate.configs.recommendedWithScript,
+    },
+];
 ```
 
-If you do not want to use the included rules, set the details as follows.
+If you do not want to use the included rules, set the details as follows:
 
-```diff
-    "overrides": [
-        {
-            "files": ["**/your/templates/*.js"],
--            "extends": ["plugin:lodash-template/recommended-with-script"],
-+            "extends": ["plugin:lodash-template/base"],
-+            "processor": "lodash-template/script"
-        }
-    ]
+```js
+import lodashTemplate from "eslint-plugin-lodash-template";
+export default [
+    {
+        files: ["**/your/templates/*.js"],
+        ...lodashTemplate.configs.base,
+        processor: lodashTemplate.processors.script,
+        rules: {
+            "lodash-template/no-invalid-template-interpolation": "error",
+            // other rules...
+        },
+    },
+];
 ```
 
-If you want to use it with TypeScript, you need to configure `parserOptions`.
+If you want to use it with TypeScript, you need to configure `parserOptions`:
 
-```diff
-    "overrides": [
-        {
--            "files": ["**/your/templates/*.js"],
-+            "files": ["**/your/templates/*.ts"],
-+            "parserOptions": {
-+                 "parser": "@typescript-eslint/parser",
-+                 "sourceType": "module"
-+            },
-            "extends": ["plugin:lodash-template/recommended-with-script"]
-        }
-    ]
+```js
+import lodashTemplate from "eslint-plugin-lodash-template";
+import tseslint from "typescript-eslint";
+
+export default [
+    {
+        files: ["**/your/templates/*.ts"],
+        ...lodashTemplate.configs.recommendedWithScript,
+    },
+    {
+        files: ["**/your/templates/*.ts"],
+        languageOptions: {
+            parserOptions: {
+                parser: tseslint.parser,
+                sourceType: "module",
+            },
+        },
+    },
+];
 ```
 
 ## FAQ
@@ -365,37 +376,27 @@ const a = 'foo'
 Generated Script 1:
 
 ```js
+const a = "foo";
 
-const a = 'foo'
-
-  const b = 1;
-
-
-
+const b = 1;
 ```
 
 Generated Script 2:
 
 ```js
+const a = "foo";
 
-const a = 'foo'
-
-
-
-  const b = 2;
-
+const b = 2;
 ```
 
 If we use the following script, it is a parsing error.
 
 ```js
+const a = "foo";
 
-const a = 'foo'
+const b = 1;
 
-  const b = 1;
-
-  const b = 2; // <- Identifier 'b' has already been declared
-
+const b = 2; // <- Identifier 'b' has already been declared
 ```
 
 The plugin also tries to generate scripts using branches that are as consistent as possible.
@@ -419,29 +420,19 @@ Template:
 Generated Script 1:
 
 ```js
-
-  const a = 'x.foo is true'
+const a = "x.foo is true";
 
 // ...
 
-  console.log(a)
-
-
-
+console.log(a);
 ```
 
 Generated Script 2:
 
 ```js
-
-
-
 // ...
 
-
-
-  // process for x.foo is false
-
+// process for x.foo is false
 ```
 
 However, branching conditions are compared using text, so even logically the same can be confusing.
@@ -465,48 +456,40 @@ Template:
 Generated Script 1:
 
 ```js
-
-  const a = 'x.foo is true'
+const a = "x.foo is true";
 
 // ...
 
-  console.log(a)
-
-
-
+console.log(a);
 ```
 
 Generated Script 2:
 
 ```js
-
-  const a = 'x.foo is true'
+const a = "x.foo is true";
 
 // ...
 
-
-
-  // process for x.foo is false
-
+// process for x.foo is false
 ```
 
 This template gets an error `'a' is assigned a value but never used.` from the `no-unused-vars` rule.
 
-### Editor Settings
+### Editor Settings with HTML templates
 
 About how to mark warnings on editor.
 
-- VSCode ([VS Code ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint))  
+- VSCode ([VS Code ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint))
 
     **settings.json**:
 
     ```json
     {
-        "eslint.validate": [ "javascript", "javascriptreact", { "language": "html", "autoFix": true } ]
+        "eslint.validate": ["javascript", "javascriptreact", "html"]
     }
     ```
 
-- Sublime Text3 ([SublimeLinter-eslint](https://packagecontrol.io/packages/SublimeLinter-eslint)) 
+- Sublime Text3 ([SublimeLinter-eslint](https://packagecontrol.io/packages/SublimeLinter-eslint))
 
     [Preference] > [Package Settings] > [SublimeLinter] > [Settings]
 
@@ -533,13 +516,21 @@ Please use GitHub's Issues/PRs.
 
 ### `parserServices`
 
-[Information provided by `parserServices` on this plugin](./services/index.md)  
+[Information provided by `parserServices` on this plugin](./services/index.md)
 
 ### Development Tools
 
-- `npm test` runs tests and measures coverage.  
-- `npm run update` runs in order to update readme and recommended configuration.  
+- `npm test` runs tests and measures coverage.
+- `npm run update` runs in order to update readme and recommended configuration.
 
 ## License
 
-See the [LICENSE](https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/LICENSE) file for license rights and limitations (MIT).
+See the [LICENSE] file for license rights and limitations (MIT).
+
+[license]: https://github.com/ota-meshi/eslint-plugin-lodash-template/blob/master/LICENSE
+[npm license]: https://img.shields.io/npm/l/eslint-plugin-lodash-template.svg
+[npm version]: https://img.shields.io/npm/v/eslint-plugin-lodash-template.svg
+[npm downloads]: https://img.shields.io/npm/dw/eslint-plugin-lodash-template.svg
+[Build Status]: https://github.com/ota-meshi/eslint-plugin-lodash-template/workflows/CI/badge.svg?branch=master
+[Coverage Status]: https://coveralls.io/repos/github/ota-meshi/eslint-plugin-lodash-template/badge.svg?branch=master
+[Greenkeeper badge]: https://badges.greenkeeper.io/ota-meshi/eslint-plugin-lodash-template.svg

@@ -4,7 +4,9 @@ sidebarDepth: 0
 title: "lodash-template/no-semi-in-template-interpolation"
 description: "disallow the semicolon at the end of expression in micro template interpolation.(ex. :ok: `<%= text %>` :ng: `<%= text; %>`)"
 ---
+
 # lodash-template/no-semi-in-template-interpolation
+
 > disallow the semicolon at the end of expression in micro template interpolation.(ex. :ok: `<%= text %>` :ng: `<%= text; %>`)
 
 - :gear: This rule is included in all of `"plugin:lodash-template/best-practices"`, `"plugin:lodash-template/recommended"`, `"plugin:lodash-template/recommended-with-html"`, `"plugin:lodash-template/recommended-with-script"` and `"plugin:lodash-template/all"`.
@@ -14,6 +16,7 @@ description: "disallow the semicolon at the end of expression in micro template 
 
 This rule disallow the semicolon at the end of expression in micro template interpolation.
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/no-semi-in-template-interpolation": "error" */ %>
 <!-- ✓ GOOD -->

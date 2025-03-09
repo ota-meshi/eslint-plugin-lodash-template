@@ -256,9 +256,9 @@
       },
       {
         "ruleId": "lodash-template/no-script-parsing-error",
-        "message": "Parsing error: Unexpected character '''.",
+        "message": "Parsing error: Unexpected character '#'.",
         "line": 3,
-        "column": 12
+        "column": 11
       },
       {
         "ruleId": "id-length",
@@ -291,9 +291,9 @@
       },
       {
         "ruleId": "lodash-template/no-script-parsing-error",
-        "message": "Parsing error: Unexpected character '''.",
+        "message": "Parsing error: Unexpected character '#'.",
         "line": 2,
-        "column": 12
+        "column": 11
       },
       {
         "ruleId": "lodash-template/prefer-escape-template-interpolations",

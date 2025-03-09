@@ -4,7 +4,9 @@ sidebarDepth: 0
 title: "lodash-template/no-duplicate-attributes"
 description: "disallow duplication of HTML attributes. (ex. :ng: `<div foo foo>`)"
 ---
+
 # lodash-template/no-duplicate-attributes
+
 > disallow duplication of HTML attributes. (ex. :ng: `<div foo foo>`)
 
 - :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
@@ -16,6 +18,7 @@ This rule reports duplicate attributes.
 When duplicate arguments exist, only the last one is valid.
 It's possibly mistakes.
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/no-duplicate-attributes": "error" */ %>
 <!-- ✓ GOOD -->

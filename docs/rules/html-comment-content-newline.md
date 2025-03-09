@@ -4,7 +4,9 @@ sidebarDepth: 0
 title: "lodash-template/html-comment-content-newline"
 description: "require or disallow a line break before and after HTML comment contents"
 ---
+
 # lodash-template/html-comment-content-newline
+
 > require or disallow a line break before and after HTML comment contents
 
 - :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
@@ -36,24 +38,28 @@ This rule enforces a line break (or no line break) before and after HTML comment
 
 ## Options
 
-```json
+```js
 {
-  "lodash-template/html-comment-content-newline": ["error", {
-    "singleline": "never",
-    "multiline": "always",
-  }]
+    "lodash-template/html-comment-content-newline": [
+        "error",
+        {
+            "singleline": "never",
+            "multiline": "always"
+        }
+    ]
 }
 ```
 
 - `singleline` ... the configuration for single-line comments.
-  - `"ignore"` ... Don't enforce line breaks style before and after the comments.
-  - `"never"` ... disallow line breaks before and after the comments. This is the default.
-  - `"always"` ... require one line break before and after the comments.
+    - `"ignore"` ... Don't enforce line breaks style before and after the comments.
+    - `"never"` ... disallow line breaks before and after the comments. This is the default.
+    - `"always"` ... require one line break before and after the comments.
 - `multiline` ... the configuration for multiline comments.
-  - `"ignore"` ... Don't enforce line breaks style before and after the comments.
-  - `"never"` ... disallow line breaks before and after the comments.
-  - `"always"` ... require one line break before and after the comments. This is the default.
+    - `"ignore"` ... Don't enforce line breaks style before and after the comments.
+    - `"never"` ... disallow line breaks before and after the comments.
+    - `"always"` ... require one line break before and after the comments. This is the default.
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint
   lodash-template/html-comment-content-newline: ["error", {
@@ -83,7 +89,7 @@ This rule enforces a line break (or no line break) before and after HTML comment
 
 ## Further Reading
 
-- [HTML5 Style Guide - W3Schools *HTML Comments*](https://www.w3schools.com/html/html5_syntax.asp)
+- [HTML5 Style Guide - W3Schools _HTML Comments_](https://www.w3schools.com/html/html5_syntax.asp)
 
 ## Implementation
 

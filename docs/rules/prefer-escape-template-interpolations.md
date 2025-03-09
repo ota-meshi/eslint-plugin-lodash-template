@@ -4,7 +4,9 @@ sidebarDepth: 0
 title: "lodash-template/prefer-escape-template-interpolations"
 description: "prefer escape micro-template interpolations. (ex. :ok: `<%- ... %>`, :ng: `<%= ... %>`)"
 ---
+
 # lodash-template/prefer-escape-template-interpolations
+
 > prefer escape micro-template interpolations. (ex. :ok: `<%- ... %>`, :ng: `<%= ... %>`)
 
 - :gear: This rule is included in `"plugin:lodash-template/all"`.
@@ -13,6 +15,7 @@ description: "prefer escape micro-template interpolations. (ex. :ok: `<%- ... %>
 
 This rule reports no escape micro-template interpolates.
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/prefer-escape-template-interpolations": "error" */ %>
 <!-- ✓ GOOD -->

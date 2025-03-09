@@ -4,7 +4,9 @@ sidebarDepth: 0
 title: "lodash-template/no-irregular-whitespace"
 description: "disallow irregular whitespace outside the template tags."
 ---
+
 # lodash-template/no-irregular-whitespace
+
 > disallow irregular whitespace outside the template tags.
 
 - :gear: This rule is included in all of `"plugin:lodash-template/recommended"`, `"plugin:lodash-template/recommended-with-html"`, `"plugin:lodash-template/recommended-with-script"` and `"plugin:lodash-template/all"`.
@@ -14,6 +16,7 @@ description: "disallow irregular whitespace outside the template tags."
 
 This rule disallows the irregular whitespaces.
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/no-irregular-whitespace": "error" */ %>
 <!-- ✓ GOOD -->
@@ -27,13 +30,16 @@ This rule disallows the irregular whitespaces.
 
 ## Options
 
-```json
+```js
 {
-  "lodash-template/no-irregular-whitespace": ["error", {
-    "skipComments": false,
-    "skipAttrValues": false,
-    "skipText": false
-  }]
+    "lodash-template/no-irregular-whitespace": [
+        "error",
+        {
+            "skipComments": false,
+            "skipAttrValues": false,
+            "skipText": false
+        }
+    ]
 }
 ```
 

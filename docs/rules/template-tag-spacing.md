@@ -4,7 +4,9 @@ sidebarDepth: 0
 title: "lodash-template/template-tag-spacing"
 description: "enforce unified spacing in micro-template tag. (ex. :ok: `<%= prop %>`, :ng: `<%=prop%>`)"
 ---
+
 # lodash-template/template-tag-spacing
+
 > enforce unified spacing in micro-template tag. (ex. :ok: `<%= prop %>`, :ng: `<%=prop%>`)
 
 - :gear: This rule is included in all of `"plugin:lodash-template/recommended"`, `"plugin:lodash-template/recommended-with-html"`, `"plugin:lodash-template/recommended-with-script"` and `"plugin:lodash-template/all"`.
@@ -20,7 +22,7 @@ This rule aims to enforce unified spacing in micro-template interpolate/evaluate
 <div><%= text %></div>
 
 <!-- ✗ BAD -->
-<div><%=   text   %></div>
+<div><%= text %></div>
 <div><%=text%></div>
 ```
 
@@ -28,7 +30,7 @@ This rule aims to enforce unified spacing in micro-template interpolate/evaluate
 
 Default spacing is set to `always`
 
-```json
+```js
 {
   "lodash-template/micro-template-interpolation-spacing": ["error", "always" | "never"]
 }
@@ -36,6 +38,7 @@ Default spacing is set to `always`
 
 ### `"always"` - Expect one space between expression and curly brackets.
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/template-tag-spacing": ["error", "always"] */ %>
 <!-- ✓ GOOD -->
@@ -48,6 +51,7 @@ Default spacing is set to `always`
 
 ### `"never"` - Expect no spaces between expression and curly brackets.
 
+<!-- prettier-ignore -->
 ```html
 <%/* eslint "lodash-template/template-tag-spacing": ["error", "never"] */%>
 <!-- ✓ GOOD -->

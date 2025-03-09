@@ -4,7 +4,9 @@ sidebarDepth: 0
 title: "lodash-template/html-content-newline"
 description: "require or disallow a line break before and after HTML contents"
 ---
+
 # lodash-template/html-content-newline
+
 > require or disallow a line break before and after HTML contents
 
 - :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
@@ -14,6 +16,7 @@ description: "require or disallow a line break before and after HTML contents"
 
 This rule enforces a line break (or no line break) before and after HTML contents.
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/html-content-newline": "error" */ %>
 <!-- ✓ GOOD -->
@@ -37,27 +40,31 @@ This rule enforces a line break (or no line break) before and after HTML content
 
 ## Options
 
-```json
+```js
 {
-  "lodash-template/html-content-newline": ["error", {
-    "singleline": "ignore",
-    "multiline": "always",
-    "ignoreNames": ["pre", "textarea"]
-  }]
+    "lodash-template/html-content-newline": [
+        "error",
+        {
+            "singleline": "ignore",
+            "multiline": "always",
+            "ignoreNames": ["pre", "textarea"]
+        }
+    ]
 }
 ```
 
 - `singleline` ... the configuration for single-line elements. It's a single-line element if startTag, endTag and contents are single-line.
-  - `"ignore"` ... Don't enforce line breaks style before and after the contents. This is the default.
-  - `"never"` ... disallow line breaks before and after the contents.
-  - `"always"` ... require one line break before and after the contents.
+    - `"ignore"` ... Don't enforce line breaks style before and after the contents. This is the default.
+    - `"never"` ... disallow line breaks before and after the contents.
+    - `"always"` ... require one line break before and after the contents.
 - `multiline` ... the configuration for multiline elements. It's a multiline element if startTag, endTag or contents are multiline.
-  - `"ignore"` ... Don't enforce line breaks style before and after the contents.
-  - `"never"` ... disallow line breaks before and after the contents.
-  - `"always"` ... require one line break before and after the contents. This is the default.
+    - `"ignore"` ... Don't enforce line breaks style before and after the contents.
+    - `"never"` ... disallow line breaks before and after the contents.
+    - `"always"` ... require one line break before and after the contents. This is the default.
 - `ignoreNames` ... the configuration for element names to ignore line breaks style.  
-    default `["pre", "textarea"]`
+   default `["pre", "textarea"]`
 
+<!-- prettier-ignore -->
 ```html
 <% /*eslint
   lodash-template/html-content-newline: ["error", {

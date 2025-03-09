@@ -4,7 +4,9 @@ sidebarDepth: 0
 title: "lodash-template/html-indent"
 description: "enforce consistent HTML indentation."
 ---
+
 # lodash-template/html-indent
+
 > enforce consistent HTML indentation.
 
 - :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
@@ -14,6 +16,7 @@ description: "enforce consistent HTML indentation."
 
 This rule enforces a consistent HTML indentation style. The default style is 2 spaces.
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/html-indent": "error" */ %>
 <!-- ✓ GOOD -->
@@ -33,7 +36,7 @@ This rule enforces a consistent HTML indentation style. The default style is 2 s
 
 ## Options
 
-```json
+```js
 {
   "lodash-template/html-indent": ["error", type, {
     "attribute": 1,
@@ -48,6 +51,7 @@ This rule enforces a consistent HTML indentation style. The default style is 2 s
 
 ### Examples for this rule with `{ attribute: 1, closeBracket: 1 }` option:
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/html-indent": ["error", 2, { "attribute": 1, "closeBracket": 1 }] */ %>
 <!-- ✓ GOOD -->
@@ -65,6 +69,7 @@ This rule enforces a consistent HTML indentation style. The default style is 2 s
 
 ### Examples for this rule with `{ attribute: 2, closeBracket: 1 }` option:
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/html-indent": ["error", 2, { "attribute": 2, "closeBracket": 1 }] */ %>
 <!-- ✓ GOOD -->

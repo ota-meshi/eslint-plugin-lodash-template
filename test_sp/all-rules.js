@@ -6,27 +6,32 @@ const processor = require("../lib/processors/micro-template-processor");
 const parser = require("../lib/parser/micro-template-eslint-parser");
 const rules = require("../lib/utils/rules").rules;
 
-const configRules = {};
 const linter = new Linter();
-for (const rule of rules) {
-    const ruleId = rule.meta.docs.ruleId;
-    linter.defineRule(ruleId, rule);
-    configRules[ruleId] = "error";
-}
-linter.defineParser("micro-template-eslint-parser", parser);
+
 const config = {
-    parser: "micro-template-eslint-parser",
-    parserOptions: {
-        ecmaVersion: 2015,
+    languageOptions: {
+        parser,
+        parserOptions: {
+            ecmaVersion: 2015,
+        },
     },
-    rules: configRules,
+    plugins: {
+        "lodash-template": {
+            rules: Object.fromEntries(
+                rules.map((rule) => [rule.meta.docs.ruleName, rule]),
+            ),
+        },
+    },
+    rules: Object.fromEntries(
+        rules.map((rule) => [rule.meta.docs.ruleId, "error"]),
+    ),
 };
 const options = {
     filename: "test.html",
     preprocess: processor.preprocess,
     postprocess: processor.postprocess,
 };
-describe("speed test.", () => {
+describe("speed test", () => {
     const code = `
 <% /* global accounts, users */ %>
 <!-- comment -->
