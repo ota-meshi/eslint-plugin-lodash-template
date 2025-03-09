@@ -2,9 +2,11 @@
 pageClass: "rule-details"
 sidebarDepth: 0
 title: "lodash-template/no-multi-spaces-in-html-tag"
-description: "disallow multiple spaces in HTML tags. (ex. :ng: `<input···type=\"text\">`)"
+description: 'disallow multiple spaces in HTML tags. (ex. :ng: `<input···type="text">`)'
 ---
+
 # lodash-template/no-multi-spaces-in-html-tag
+
 > disallow multiple spaces in HTML tags. (ex. :ng: `<input···type="text">`)
 
 - :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
@@ -14,6 +16,7 @@ description: "disallow multiple spaces in HTML tags. (ex. :ng: `<input···type
 
 This rule aims to disallow multiple whitespace in a between attributes which are not used for indentation.
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/no-multi-spaces-in-html-tag": "error" */ %>
 <!-- ✓ GOOD -->

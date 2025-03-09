@@ -4,7 +4,9 @@ sidebarDepth: 0
 title: "lodash-template/scriptlet-indent"
 description: "enforce consistent indentation to scriptlet in micro-template tag."
 ---
+
 # lodash-template/scriptlet-indent
+
 > enforce consistent indentation to scriptlet in micro-template tag.
 
 - :gear: This rule is included in all of `"plugin:lodash-template/recommended"`, `"plugin:lodash-template/recommended-with-html"`, `"plugin:lodash-template/recommended-with-script"` and `"plugin:lodash-template/all"`.
@@ -14,6 +16,7 @@ description: "enforce consistent indentation to scriptlet in micro-template tag.
 
 This rule enforces a consistent indentation style to script in micro-template tag. The default style is 2 spaces.
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/scriptlet-indent": "error" */ %>
 <!-- ✓ GOOD -->
@@ -37,7 +40,7 @@ This rule enforces a consistent indentation style to script in micro-template ta
 
 ## Options
 
-```json
+```js
 {
   "lodash-template/scriptlet-indent": ["error", type, {
     "startIndent": 1,
@@ -52,6 +55,7 @@ This rule enforces a consistent indentation style to script in micro-template ta
 
 ### Examples for this rule with `{startIndent: 0}`:
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/scriptlet-indent": ["error", 2, {"startIndent": 0}] */ %>
 <!-- ✓ GOOD -->
@@ -66,6 +70,7 @@ This rule enforces a consistent indentation style to script in micro-template ta
 
 ### Examples for this rule with `{startIndent: 2}`:
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/scriptlet-indent": ["error", 2, {"startIndent": 2}] */ %>
 <!-- ✓ GOOD -->
