@@ -109,7 +109,6 @@
     "dependencies": {
         "eslint-compat-utils": "^0.6.4",
         "esquery": "^1.0.1",
-        "minimatch": "^9.0.5",
         "parse5": "^7.0.0"
     },
     "nyc": {
