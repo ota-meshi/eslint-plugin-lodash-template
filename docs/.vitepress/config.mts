@@ -4,6 +4,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { transformerTwoslash } from "@shikijs/vitepress-twoslash";
 import { createTwoslasher as createTwoslasherESLint } from "twoslash-eslint";
+import ejsLanguage from "./lib/ejs.tmlanguage.mjs";
 
 type RuleModule = {
     meta: { docs: { ruleId: string; ruleName: string }; deprecated?: boolean };
@@ -11,6 +12,14 @@ type RuleModule = {
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
+
+const categoryTitles = {
+    base: "Base Rules",
+    "best-practices": "Best Practices",
+    recommended: "Recommended",
+    "recommended-with-html": "Recommended with HTML template",
+    [undefined]: "Uncategorized",
+};
 
 function ruleToSidebarItem({
     meta: {
@@ -40,12 +49,16 @@ export default async (): Promise<UserConfig<DefaultTheme.Config>> => {
             publicDir: path.resolve(dirname, "./public"),
         },
         markdown: {
+            languages: [ejsLanguage],
             codeTransformers: [
                 transformerTwoslash({
                     explicitTrigger: false, // Required for v-menu to work.
                     langs: ["html", "js"],
                     filter(lang, code) {
-                        if (lang.startsWith("html") || lang.startsWith("js")) {
+                        if (
+                            !lang.startsWith("json") &&
+                            (lang.startsWith("html") || lang.startsWith("js"))
+                        ) {
                             return code.includes("eslint");
                         }
                         return false;
@@ -111,13 +124,19 @@ export default async (): Promise<UserConfig<DefaultTheme.Config>> => {
                         text: "Rules",
                         items: [{ text: "Available Rules", link: "/rules/" }],
                     },
-                    {
-                        text: "Node.js Dependency Rules",
-                        collapsed: false,
-                        items: rules
-                            .filter((rule) => !rule.meta.deprecated)
-                            .map(ruleToSidebarItem),
-                    },
+                    ...Object.entries(categoryTitles).map(
+                        ([category, title]) => ({
+                            text: title,
+                            collapsed: false,
+                            items: rules
+                                .filter(
+                                    (rule) =>
+                                        String(rule.meta.docs.category) ===
+                                            category && !rule.meta.deprecated,
+                                )
+                                .map(ruleToSidebarItem),
+                        }),
+                    ),
 
                     // Rules in no category.
                     ...(rules.some((rule) => rule.meta.deprecated)
