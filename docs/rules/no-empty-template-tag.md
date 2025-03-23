@@ -4,7 +4,9 @@ sidebarDepth: 0
 title: "lodash-template/no-empty-template-tag"
 description: "disallow empty micro-template tag. (ex. :ng: `<% %>`)"
 ---
+
 # lodash-template/no-empty-template-tag
+
 > disallow empty micro-template tag. (ex. :ng: `<% %>`)
 
 - :gear: This rule is included in all of `"plugin:lodash-template/best-practices"`, `"plugin:lodash-template/recommended"`, `"plugin:lodash-template/recommended-with-html"`, `"plugin:lodash-template/recommended-with-script"` and `"plugin:lodash-template/all"`.
@@ -13,6 +15,7 @@ description: "disallow empty micro-template tag. (ex. :ng: `<% %>`)"
 
 This rule reports empty micro-template interpolate/evaluate.
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/no-empty-template-tag": "error" */ %>
 <!-- ✓ GOOD -->

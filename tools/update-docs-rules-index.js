@@ -11,7 +11,7 @@ const uncategorizedRules = rules.filter(
 );
 const deprecatedRules = rules.filter((rule) => rule.meta.deprecated);
 
-//eslint-disable-next-line require-jsdoc -- ignore
+// eslint-disable-next-line jsdoc/require-jsdoc -- ignore
 function toRuleRow(rule) {
     const mark = `${rule.meta.fixable ? ":wrench:" : ""}${
         rule.meta.deprecated ? ":warning:" : ""
@@ -22,7 +22,7 @@ function toRuleRow(rule) {
     return `| ${link} | ${description} | ${mark} |`;
 }
 
-//eslint-disable-next-line require-jsdoc -- ignore
+// eslint-disable-next-line jsdoc/require-jsdoc -- ignore
 function toDeprecatedRuleRow(rule) {
     const link = `[${rule.meta.docs.ruleId}](./${rule.meta.docs.ruleName}.md)`;
     const replacedRules = rule.meta.docs.replacedBy || [];

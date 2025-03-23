@@ -4,7 +4,9 @@ sidebarDepth: 0
 title: "lodash-template/no-template-tag-in-start-tag"
 description: "disallow template tag in start tag outside attribute values. (ex. :ng: `<input <%= 'disabled' %> >`)"
 ---
+
 # lodash-template/no-template-tag-in-start-tag
+
 > disallow template tag in start tag outside attribute values. (ex. :ng: `<input <%= 'disabled' %> >`)
 
 - :gear: This rule is included in `"plugin:lodash-template/all"`.
@@ -13,6 +15,7 @@ description: "disallow template tag in start tag outside attribute values. (ex. 
 
 This rule reports the template tag that is in the start tag, outside attribute values.
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/no-template-tag-in-start-tag": "error" */ %>
 <!-- ✓ GOOD -->
@@ -34,16 +37,20 @@ This rule reports the template tag that is in the start tag, outside attribute v
 
 ## Options
 
-```json
+```js
 {
-  "lodash-template/no-template-tag-in-start-tag": ["error", {
-    "arrowEvaluateTag": false,
-  }]
+    "lodash-template/no-template-tag-in-start-tag": [
+        "error",
+        {
+            "arrowEvaluateTag": false
+        }
+    ]
 }
 ```
 
 ### Examples for this rule with `{arrowEvaluateTag: true}` option:
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/no-template-tag-in-start-tag": ["error", {"arrowEvaluateTag": true}] */ %>
 <!-- ✓ GOOD -->

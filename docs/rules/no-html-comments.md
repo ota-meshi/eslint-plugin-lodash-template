@@ -4,7 +4,9 @@ sidebarDepth: 0
 title: "lodash-template/no-html-comments"
 description: "disallow HTML comments. (ex. :ng: `<!-- comment -->`)"
 ---
+
 # lodash-template/no-html-comments
+
 > disallow HTML comments. (ex. :ng: `<!-- comment -->`)
 
 - :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
@@ -13,6 +15,7 @@ description: "disallow HTML comments. (ex. :ng: `<!-- comment -->`)"
 
 This rule reports HTML comments.
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/no-html-comments": "error" */ %>
 <% /* ✓ GOOD */ %>

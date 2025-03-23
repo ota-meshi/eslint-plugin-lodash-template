@@ -4,7 +4,9 @@ sidebarDepth: 0
 title: "lodash-template/html-comment-spacing"
 description: "enforce unified spacing in HTML comment. (ex. :ok: `<!-- comment -->`, :ng: `<!--comment-->`)"
 ---
+
 # lodash-template/html-comment-spacing
+
 > enforce unified spacing in HTML comment. (ex. :ok: `<!-- comment -->`, :ng: `<!--comment-->`)
 
 - :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
@@ -14,6 +16,7 @@ description: "enforce unified spacing in HTML comment. (ex. :ok: `<!-- comment -
 
 This rule aims to enforce unified spacing in HTML comment.
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/html-comment-spacing": "error" */ %>
 <!-- ✓ GOOD -->
@@ -28,7 +31,7 @@ This rule aims to enforce unified spacing in HTML comment.
 
 Default spacing is set to `always`
 
-```json
+```js
 {
   "lodash-template/html-comment-spacing": ["error", "always" | "never"]
 }
@@ -36,6 +39,7 @@ Default spacing is set to `always`
 
 ### `"always"` - Expect one space between comment and curly brackets.
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/html-comment-spacing": ["error", "always"] */ %>
 <!-- ✓ GOOD -->
@@ -48,6 +52,7 @@ Default spacing is set to `always`
 
 ### `"never"` - Expect no spaces between comment and curly brackets.
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/html-comment-spacing": ["error", "never"] */ %>
 <!--✓ GOOD-->

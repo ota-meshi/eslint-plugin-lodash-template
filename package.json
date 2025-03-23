@@ -5,7 +5,7 @@
     "main": "lib/index.js",
     "scripts": {
         "lint": "npm run eslint",
-        "eslint": "eslint . --ext .js,.mts,.vue,.json",
+        "eslint": "eslint .",
         "test:lib": "mocha \"tests/lib/**/*.js\" --reporter dot --timeout 60000",
         "test:integration": "mocha \"tests/integration/**/*.js\" --reporter dot --timeout 60000",
         "test:all": "npm run test:lib && npm run test:integration",
@@ -14,7 +14,7 @@
         "test:rules": "mocha \"tests/lib/rules/**/*.js\" --reporter dot --timeout 60000",
         "update": "node ./tools/update.js && npm run lint:fix && npm run test",
         "updateonly": "node ./tools/update.js && npm run lint:fix",
-        "lint:fix": "eslint . --ext .js,.mts,.vue,.json --fix",
+        "lint:fix": "eslint . --fix",
         "test:sp": "mocha \"test_sp/**/*.js\" --reporter dot",
         "new": "node ./tools/new-rule.js",
         "copy:images": "cpx \"logo.*\" \"docs/\\.vitepress/public\" -u",
@@ -63,23 +63,24 @@
         "rules"
     ],
     "peerDependencies": {
-        "eslint": ">=8.0.0"
+        "eslint": "^9.0.0"
     },
     "devDependencies": {
         "@changesets/changelog-github": "^0.5.0",
         "@changesets/cli": "^2.24.2",
-        "@eslint-community/eslint-utils": "^4.4.0",
-        "@ota-meshi/eslint-plugin": "^0.15.0",
+        "@eslint-community/eslint-utils": "^4.4.1",
+        "@ota-meshi/eslint-plugin": "^0.17.6",
         "@shikijs/vitepress-twoslash": "^3.0.0",
-        "@stylistic/eslint-plugin": "~2.0.0",
-        "@typescript-eslint/eslint-plugin": "^8.0.0",
+        "@stylistic/eslint-plugin": "^3.1.0",
+        "@stylistic/eslint-plugin-js": "^3.1.0",
         "cpx2": "^8.0.0",
         "cross-env": "^7.0.2",
-        "eslint": "~8.57.0",
+        "eslint": "^9.22.0",
         "eslint-config-prettier": "^10.0.0",
         "eslint-plugin-es": "^4.0.0",
         "eslint-plugin-eslint-comments": "^3.2.0",
         "eslint-plugin-eslint-plugin": "^6.0.0",
+        "eslint-plugin-jsdoc": "^50.6.3",
         "eslint-plugin-json-schema-validator": "^5.0.0",
         "eslint-plugin-jsonc": "^2.0.0",
         "eslint-plugin-lodash-template": "file:.",
@@ -99,14 +100,14 @@
         "nyc": "^17.0.0",
         "pako": "^2.0.0",
         "prettier": "^3.0.3",
-        "semver": "^7.3.2",
         "twoslash-eslint": "^0.3.0",
         "typescript": "^5.0.0",
+        "typescript-eslint": "^8.26.0",
         "vitepress": "^1.0.1",
         "vue-eslint-parser": "^10.0.0"
     },
     "dependencies": {
-        "eslint-compat-utils": "^0.6.0",
+        "eslint-compat-utils": "^0.6.4",
         "esquery": "^1.0.1",
         "parse5": "^7.0.0"
     },
@@ -118,7 +119,7 @@
         ]
     },
     "engines": {
-        "node": ">=18.0.0"
+        "node": ">=18.18.0"
     },
     "publishConfig": {
         "access": "public"

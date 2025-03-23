@@ -1,14 +1,10 @@
-// eslint-disable-next-line eslint-comments/disable-enable-pair -- ignore
-/* eslint-disable require-jsdoc -- ignore */
 "use strict";
 
-const assert = require("assert");
-const cp = require("child_process");
-const path = require("path");
-const fs = require("fs");
+const assert = require("node:assert");
+const cp = require("node:child_process");
+const path = require("node:path");
+const fs = require("node:fs");
 const testUtils = require("../test-utils");
-const semver = require("semver");
-const eslintVersion = require("eslint/package.json").version;
 
 // cp.execSync("npm pack", { stdio: "inherit" })
 // const orgTgzName = path.resolve(
@@ -93,9 +89,6 @@ function setup(dir, outDir) {
 }
 
 describe("script test", () => {
-    if (!semver.satisfies(eslintVersion, ">=8")) {
-        return;
-    }
     for (const { fixtureDir, entryName } of iterateFixtures(FIXTURE_DIR)) {
         const OUT = path.join(fixtureDir, "output");
         const OUT_WITH_FIX = path.join(fixtureDir, "output-with-fix");
@@ -122,7 +115,7 @@ describe("script test", () => {
                 setup(fixtureDir, OUT);
                 return new Promise((resolve, reject) => {
                     cp.exec(
-                        `${ESLINT} output -f json`,
+                        `${ESLINT} output/ --format json`,
                         { cwd: fixtureDir, maxBuffer: Infinity },
                         (error, stdout, stderr) => {
                             let results;
@@ -158,7 +151,7 @@ describe("script test", () => {
                 setup(fixtureDir, OUT_WITH_FIX);
                 return new Promise((resolve, reject) => {
                     cp.exec(
-                        `${ESLINT} output-with-fix --fix -f json`,
+                        `${ESLINT} output-with-fix/ --fix --format json`,
                         { cwd: fixtureDir, maxBuffer: Infinity },
                         (error, stdout, stderr) => {
                             let results;

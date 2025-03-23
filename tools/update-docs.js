@@ -5,7 +5,7 @@ const path = require("path");
 const rules = require("../lib/utils/rules").rules;
 const configs = require("./lib/load-configs");
 
-//eslint-disable-next-line require-jsdoc -- ignore
+// eslint-disable-next-line jsdoc/require-jsdoc -- ignore
 function formatItems(items) {
     if (items.length <= 2) {
         return items.join(" and ");
@@ -15,7 +15,7 @@ function formatItems(items) {
     }`;
 }
 
-//eslint-disable-next-line require-jsdoc -- ignore
+// eslint-disable-next-line jsdoc/require-jsdoc -- ignore
 function getPresets(category) {
     const categoryConfig = configs.find((conf) => conf.name === category);
     if (!categoryConfig) {
@@ -34,7 +34,7 @@ function getPresets(category) {
     return presets;
 }
 
-//eslint-disable-next-line require-jsdoc -- ignore
+// eslint-disable-next-line jsdoc/require-jsdoc -- ignore
 function yamlValue(val) {
     if (typeof val === "string") {
         return `"${val.replace(/"/gu, '\\"')}"`;

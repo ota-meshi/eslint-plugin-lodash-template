@@ -4,7 +4,9 @@ sidebarDepth: 0
 title: "lodash-template/attribute-name-casing"
 description: "enforce HTML attribute name casing. (ex. :ok: `<div foo-bar>` :ng: `<div fooBar>` `<div FOO-BAR>`)"
 ---
+
 # lodash-template/attribute-name-casing
+
 > enforce HTML attribute name casing. (ex. :ok: `<div foo-bar>` :ng: `<div fooBar>` `<div FOO-BAR>`)
 
 - :gear: This rule is included in `"plugin:lodash-template/recommended-with-html"` and `"plugin:lodash-template/all"`.
@@ -14,6 +16,7 @@ description: "enforce HTML attribute name casing. (ex. :ok: `<div foo-bar>` :ng:
 
 This rule enforces attribute name casing style (kebab-case).
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/attribute-name-casing": "error" */ %>
 <!-- ✓ GOOD -->
@@ -26,7 +29,7 @@ This rule enforces attribute name casing style (kebab-case).
 
 ## Options
 
-```json
+```js
 {
   "lodash-template/attribute-name-casing": ["error", {
     "ignore": [],
@@ -37,6 +40,7 @@ This rule enforces attribute name casing style (kebab-case).
 
 ### Examples for this rule with `"ignore": ["onClick"]` option:
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/attribute-name-casing": ["error", {"ignore": ["onClick"]}] */ %>
 <!-- ✓ GOOD -->
@@ -45,6 +49,7 @@ This rule enforces attribute name casing style (kebab-case).
 
 ### Examples for this rule with `"ignoreSvgCamelCaseAttributes": true,` (default)
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/attribute-name-casing": ["error", {"ignoreSvgCamelCaseAttributes": true}] */ %>
 <!-- ✓ GOOD -->
@@ -53,9 +58,9 @@ This rule enforces attribute name casing style (kebab-case).
 
 ## Further Reading
 
-- [Google HTML/CSS Style Guide *Capitalization*](https://google.github.io/styleguide/htmlcssguide.html#Capitalization)
-- [HTML - MDN - Mozilla *`data-*`*](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
-- [HTML5 *Embedding custom non-visible data with the `data-*` attributes*](https://www.w3.org/TR/html5/dom.html#embedding-custom-non-visible-data-with-the-data-attributes)
+- [Google HTML/CSS Style Guide _Capitalization_](https://google.github.io/styleguide/htmlcssguide.html#Capitalization)
+- [HTML - MDN - Mozilla _`data-_`\*](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
+- [HTML5 _Embedding custom non-visible data with the `data-_` attributes\*](https://www.w3.org/TR/html5/dom.html#embedding-custom-non-visible-data-with-the-data-attributes)
 
 ## Implementation
 

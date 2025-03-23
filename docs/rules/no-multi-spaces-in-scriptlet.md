@@ -4,7 +4,9 @@ sidebarDepth: 0
 title: "lodash-template/no-multi-spaces-in-scriptlet"
 description: "disallow multiple spaces in scriptlet. (ex. :ng: `<% if···(test)···{ %>`)"
 ---
+
 # lodash-template/no-multi-spaces-in-scriptlet
+
 > disallow multiple spaces in scriptlet. (ex. :ng: `<% if···(test)···{ %>`)
 
 - :gear: This rule is included in all of `"plugin:lodash-template/recommended"`, `"plugin:lodash-template/recommended-with-html"`, `"plugin:lodash-template/recommended-with-script"` and `"plugin:lodash-template/all"`.
@@ -14,6 +16,7 @@ description: "disallow multiple spaces in scriptlet. (ex. :ng: `<% if···(test
 
 This rule aims to disallow multiple whitespace in script which are not used for indentation.
 
+<!-- prettier-ignore -->
 ```html
 <% /* eslint "lodash-template/no-multi-spaces-in-scriptlet": "error" */ %>
 <!-- ✓ GOOD -->
