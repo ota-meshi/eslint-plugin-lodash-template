@@ -14,7 +14,7 @@
         "test:rules": "mocha \"tests/lib/rules/**/*.js\" --reporter dot --timeout 60000",
         "update": "node ./tools/update.js && npm run lint:fix && npm run test",
         "updateonly": "node ./tools/update.js && npm run lint:fix",
-        "lint:fix": "eslint . --ext .js,.mts,.vue,.json --fix",
+        "lint:fix": "eslint . --fix",
         "test:sp": "mocha \"test_sp/**/*.js\" --reporter dot",
         "new": "node ./tools/new-rule.js",
         "copy:images": "cpx \"logo.*\" \"docs/\\.vitepress/public\" -u",
