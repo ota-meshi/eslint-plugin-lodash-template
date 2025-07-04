@@ -6,7 +6,7 @@
     "eslint-plugin-import": "~2.32.0",
     "eslint-plugin-jest": "~29.0.0",
     "eslint-plugin-lodash-template": "file:../../../..",
-    "eslint-plugin-n": "~17.20.0",
+    "eslint-plugin-n": "~17.21.0",
     "eslint-plugin-promise": "~7.2.0"
   },
   "description": "test for https://github.com/bootstrap-vue/bootstrap-vue",
