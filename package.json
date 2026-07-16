@@ -108,7 +108,7 @@
     "dependencies": {
         "eslint-compat-utils": "^0.6.0",
         "esquery": "^1.0.1",
-        "parse5": "^7.0.0"
+        "parse5": "^8.0.0"
     },
     "nyc": {
         "exclude": [
